@@ -1,0 +1,12 @@
+.wy-side-nav-search {
+  background-color: #999999;
+}
+
+.wy-nav-top {
+  background-color: #999999;
+}
+
+/* We don't want to show prev/next links */
+.rst-footer-buttons {
+  display: none;
+}
