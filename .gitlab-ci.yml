@@ -23,6 +23,9 @@ before_script:
 
 Build docs:
   stage: build
+  artifacts:
+    paths:
+      - _build
   script:
     - ansible-playbook build.yml
  
