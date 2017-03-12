@@ -1,0 +1,14 @@
+---
+
+- include: inventory.yml
+
+- name: destroy manual
+  hosts: manual
+  vars_files:
+    - vars.yml
+  tasks:
+  tasks:
+    - name: remove manual
+      file:
+        path: "{{ manual_path }}"
+        state: absent

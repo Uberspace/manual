@@ -1,0 +1,47 @@
+---
+image: stefobark/sphinxdocker
+
+variables:
+  SSH_KEY_PATH: /tmp/.ssh-key
+  MANUAL_HOST: corona.uberspace.de
+  MANUAL_USERNAME: docs
+  MANUAL_PATH: /var/www/virtual/$MANUAL_USERNAME/$CI_BUILD_REF_SLUG.$MANUAL_USERNAME.$MANUAL_HOST
+
+
+stages:
+  - build
+  - deploy
+  - cleanup
+
+before_script:
+  - umask 077; echo "$SSH_KEY" | tr -d '\r' > $SSH_KEY_PATH
+  - mkdir ~/.ssh && echo $KNOWN_HOSTS > ~/.ssh/known_hosts
+
+  # Dependencies
+  - pip install --quiet -r requirements.txt
+  - git submodule update --quiet --init --recursive
+
+Build docs:
+  stage: build
+  script:
+    - ansible-playbook build.yml
+ 
+Deploy docs to staging:
+  stage: deploy
+  except:
+    - stable
+  script:
+    - ansible-playbook deploy.yml 
+  environment:
+    name: manual/$CI_BUILD_REF_SLUG
+    url: http://$CI_BUILD_REF_SLUG.$MANUAL_USERNAME.$MANUAL_HOST
+    on_stop: Delete testing docs
+
+Delete testing docs:
+  stage: cleanup
+  when: manual
+  script:
+    - ansible-playbook destroy.yml
+  environment:
+    name: manual/$CI_BUILD_REF_SLUG
+    action: stop
