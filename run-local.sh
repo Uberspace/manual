@@ -14,7 +14,7 @@ if [ -z "$SSH_KEY" ]; then
 fi
 
 ansible-playbook build.yml $@
-ansible-playbook deploy.yml $@
+ansible-playbook deploy-staging.yml $@
 
 echo ""
 echo "check out http://$CI_BUILD_REF_SLUG.$MANUAL_USERNAME.$HOST"
