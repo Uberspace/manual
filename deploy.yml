@@ -28,3 +28,10 @@
           RewriteEngine On
           RewriteRule ^$ /en/ [R]
         dest: "{{ manual_path }}/.htaccess"
+
+    - name: Correct Ownership of DocumentRoot
+      file:
+        path: "{{ manual_path }}"
+        state: directory
+        recurse: yes
+        mode: 0755
