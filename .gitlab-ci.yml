@@ -4,7 +4,7 @@ image: uberspace/ansible:ansible-2.1
 variables:
   SSH_KEY_PATH: /tmp/.ssh-key
   MANUAL_HOST: corona.uberspace.de
-  MANUAL_USERNAME: docs
+  MANUAL_USERNAME: manual
   MANUAL_PATH: /var/www/virtual/$MANUAL_USERNAME/$CI_BUILD_REF_SLUG.$MANUAL_USERNAME.$MANUAL_HOST
 
 
@@ -21,7 +21,7 @@ before_script:
   - pip install --quiet -r requirements.txt
   - git submodule update --quiet --init --recursive
 
-Build docs:
+Build manual:
   stage: build
   artifacts:
     paths:
@@ -29,7 +29,7 @@ Build docs:
   script:
     - ansible-playbook build.yml
  
-Deploy docs to staging:
+Deploy manual to staging:
   stage: deploy
   except:
     - stable
@@ -40,7 +40,7 @@ Deploy docs to staging:
     url: http://$CI_BUILD_REF_SLUG.$MANUAL_USERNAME.$MANUAL_HOST
     on_stop: Delete testing docs
 
-Deploy docs to production:
+Deploy manual to production:
   stage: deploy
   only:
     - stable
@@ -48,9 +48,9 @@ Deploy docs to production:
     - ansible-playbook deploy-stable.yml 
   environment:
     name: manual/$CI_BUILD_REF_SLUG
-    url: https://docs.corona.uberspace.de
+    url: http://manual.uberspace.de
 
-Delete testing docs:
+Delete staging manual:
   stage: cleanup
   when: manual
   script:
