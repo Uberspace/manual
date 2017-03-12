@@ -2,7 +2,7 @@
 
 export CI_BUILD_REF=local-`hostname -fs`-`git rev-parse --short HEAD`
 export CI_BUILD_REF_SLUG=local-`hostname -fs`-`git rev-parse --short HEAD`
-export MANUAL_USERNAME=docs
+export MANUAL_USERNAME=manual
 export HOST=corona.uberspace.de
 export MANUAL_PATH=/var/www/virtual/$MANUAL_USERNAME/$CI_BUILD_REF_SLUG.$MANUAL_USERNAME.$HOST
 

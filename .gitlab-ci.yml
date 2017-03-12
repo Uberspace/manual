@@ -46,6 +46,9 @@ Deploy docs to production:
     - stable
   script:
     - ansible-playbook deploy-stable.yml 
+  environment:
+    name: manual/$CI_BUILD_REF_SLUG
+    url: https://docs.corona.uberspace.de
 
 Delete testing docs:
   stage: cleanup
