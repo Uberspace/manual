@@ -1,0 +1,32 @@
+---
+
+- include: inventory.yml
+
+- name: deploy manual to production
+  hosts: manual
+  vars_files:
+    - vars.yml
+  tasks:
+    - name: copy manual to host
+      synchronize:
+        src: "_build/html/{{ item }}"
+        dest: "/var/www/virtual/{{ manual_user }}/html"
+        recursive: yes
+        delete: yes
+      with_items:
+        - en
+        - de
+
+    - name: create .htaccess
+      copy: 
+        content: |
+          RewriteEngine On
+          RewriteRule ^$ /en/ [R]
+        dest: "/var/www/virtual/{{ manual_user }}/html/.htaccess"
+
+    - name: Correct Ownership of DocumentRoot
+      file:
+        path: "/var/www/virtual/{{ manual_user }}/html"
+        state: directory
+        recurse: yes
+        mode: 0755

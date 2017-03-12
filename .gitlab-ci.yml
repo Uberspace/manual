@@ -34,11 +34,18 @@ Deploy docs to staging:
   except:
     - stable
   script:
-    - ansible-playbook deploy.yml 
+    - ansible-playbook deploy-staging.yml 
   environment:
     name: manual/$CI_BUILD_REF_SLUG
     url: http://$CI_BUILD_REF_SLUG.$MANUAL_USERNAME.$MANUAL_HOST
     on_stop: Delete testing docs
+
+Deploy docs to production:
+  stage: deploy
+  only:
+    - stable
+  script:
+    - ansible-playbook deploy-stable.yml 
 
 Delete testing docs:
   stage: cleanup
