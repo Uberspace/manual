@@ -15,6 +15,6 @@ session in which you want to work with this project.
 
 ### Building
 ```
-sphinx-build lang/en html/en
-sphinx-build lang/de html/de
+make html
 ```
+The HTML pages are in `_build/html`
