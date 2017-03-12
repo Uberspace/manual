@@ -1,0 +1,30 @@
+---
+
+- include: inventory.yml
+
+- name: deploy manual
+  hosts: manual
+  vars_files:
+    - vars.yml
+  tasks:
+    - name: create document root
+      file:
+        path: "{{ manual_path }}"
+        state: directory
+
+    - name: copy manual to host
+      synchronize:
+        src: "_build/html/{{ item }}"
+        dest: "{{ manual_path }}"
+        recursive: yes
+        delete: yes
+      with_items:
+        - en
+        - de
+
+    - name: create .htaccess
+      copy: 
+        content: |
+          RewriteEngine On
+          RewriteRule ^$ /en/ [R]
+        dest: "{{ manual_path }}/.htaccess"

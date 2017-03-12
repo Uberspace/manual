@@ -1,0 +1,7 @@
+---
+
+ssh_key: "{{ lookup('env', 'SSH_KEY') }}"
+manual_path: "{{ lookup('env', 'MANUAL_PATH') }}"
+host: corona.uberspace.de 
+manual_user: docs
+ci_build_ref_slug: "{{ lookup('env', 'CI_BUILD_REF_SLUG') }}"

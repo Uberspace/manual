@@ -1,0 +1,23 @@
+---
+
+- name: Add manual host to absible config
+  hosts: localhost
+  connection: local
+  gather_facts: no
+  vars_files:
+    - vars.yml
+  tasks:
+    - name: Drop private-key
+      copy: 
+        content: |
+          {{ ssh_key }}
+          
+        dest: '/tmp/sshkey'
+        mode: 0600
+
+    - name: Add manual host to ansible inventory
+      add_host: name=manual
+                ansible_host="{{ host }}"
+                ansible_user="{{ manual_user }}"
+                ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+                ansible_ssh_private_key_file=/tmp/sshkey

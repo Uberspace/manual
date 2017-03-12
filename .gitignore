@@ -8,3 +8,6 @@ venv
 
 # Sphinx
 _build
+
+# CI
+.sshkey
