@@ -38,7 +38,7 @@ Deploy manual to staging:
   environment:
     name: manual/$CI_BUILD_REF_SLUG
     url: http://$CI_BUILD_REF_SLUG.$MANUAL_USERNAME.$MANUAL_HOST
-    on_stop: Delete testing docs
+    on_stop: Delete tstaging manual
 
 Deploy manual to production:
   stage: deploy
