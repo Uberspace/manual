@@ -20,6 +20,7 @@ Once you've set up your domain using the uberspace-add-domain tool, the tool pro
 Sample Outputs
 --------------
 Web::
+
  [isabell@philae ~]$ uberspace-add-domain -d isabell.example -w
  The webserver's configuration has been adpated.
  Now you can use the following records for your dns:
@@ -27,6 +28,7 @@ Web::
      AAAA -> 2a00:d0c0:200:0:b9:1a:9c:37
 
 Mail::
+
  [isabell@philae ~]$ uberspace-add-domain -d isabell.example -m
  The mailserver's configuration has been adapted.
  Now you can use the following record for your dns:
