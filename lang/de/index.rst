@@ -8,6 +8,14 @@ Wir versuchen es dir so einfach wie möglich zu machen, etwas zustande zu bekomm
 
 .. toctree::
    :maxdepth: 1
+   :caption: Dein erster Tag
+
+   für Ubernauten <firstday-ubernauts>
+   für Einsteiger <firstday-newbies>
+   für Nerds <firstday-nerds>
+
+.. toctree::
+   :maxdepth: 1
    :caption: Intro
 
    firstday

@@ -8,9 +8,11 @@ Our goal is to make it as easy as possible for you to get stuff done, so let's j
 
 .. toctree::
    :maxdepth: 1
-   :caption: Intro
+   :caption: Your first day
 
-   firstday
+   for Ubernauts <firstday-ubernauts>
+   for newbies <firstday-newbies>
+   for nerds <firstday-nerds>
 
 .. toctree::
    :maxdepth: 1
