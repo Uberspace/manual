@@ -38,7 +38,7 @@ session in which you want to work with this project.
 4. Write pretty documentation. Keep in mind that we're doing English first and German afterwards. *Only* change files that correspond to the issue.
 5. Commit your changes in your branch and check the staging environment.
 6. repeat.
-7. When you're happy create a [merge request](https://git.uber.space/uberspace/manual/merge_requests/new) and assign it to kim. Source branch is your working branch, target branch is master.
+7. When you're happy create a [merge request](https://git.uber.space/uberspace/manual/merge_requests/new), assign it to kim and set "Remove source branch when merge request is accepted". Source branch is your working branch, target branch is master.
 8. When Kim is happy the merge request gets accepted.
 9. When Kim is not happy go to 4. Communicate and discuss in the issues comments.
 
