@@ -17,4 +17,4 @@ Kurz gesagt ist Uberspace das Richtige für dich, wenn du...
 
 * mehr über Linux und die Shell lernen möchtest
 * wenn du etwas ins Web bringen und dabei mit den Tools deiner Wahl arbeiten möchtest
-* wenn du Hilfe zur Selbsthilfe bevorzugst, statt dass jemand alles für dich erledigt
+* wenn du Hilfe zur Selbsthilfe einer vorgefertigten Lösung vorziehst
