@@ -10,35 +10,19 @@ Wir versuchen es dir so einfach wie möglich zu machen, etwas zustande zu bekomm
    :maxdepth: 1
    :caption: Dein erster Tag
 
-   für Ubernauten <firstday-ubernauts>
    für Einsteiger <firstday-newbies>
-   für Nerds <firstday-nerds>
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Intro
-
-   firstday
 
 .. toctree::
    :maxdepth: 1
    :caption: System
 
-   ssh
-   ressources
-
 .. toctree::
    :maxdepth: 1
    :caption: Web
 
-   apache
-   php
-
 .. toctree::
    :maxdepth: 1
    :caption: Mail
-
-   mailserver
 
 .. toctree::
    :maxdepth: 1
@@ -51,7 +35,6 @@ Wir versuchen es dir so einfach wie möglich zu machen, etwas zustande zu bekomm
    :caption: Programmiersprachen
 
    php
-
 
 
 Indices und Tabellen
