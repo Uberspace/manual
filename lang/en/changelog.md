@@ -1,7 +1,7 @@
 # Changes in Uberspace 7
 This document will track major changes in the project.
 
-## [Unreleased] 
+## [7.0.6.2] - 2017-05-03
 ### Added
 * we say goodbye to `daemontools` and hello to `supervisord`! For the impatient:
   * setup daemons in `~/etc/services.d/`, create a `*.ini` file for [each daemon](http://supervisord.org/running.html#adding-a-program)
@@ -18,8 +18,8 @@ This document will track major changes in the project.
 * provide PHP module: `bcmath`
 
 ### Fixed
-* Some of the `uberspace-*` scripts were horribly slow. This is due to the fact that the scripts are written in Ansible and the loading of modules and fact gathering takes time. With the recent changes in we're down to <5s for each script.
-* Experimental fix for webserver sometimes delivering the wrong certificate. We'll keep an eye on that issue.
+* some of the `uberspace-*` scripts were horribly slow. This is due to the fact that the scripts are written in Ansible and the loading of modules and fact gathering takes time. With the recent changes in we're down to <5s for each script.
+* fix for webserver sometimes delivering the wrong certificate
 
 ## [7.0.5] - 2017-04-03
 ### Added
