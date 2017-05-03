@@ -10,29 +10,23 @@ Our goal is to make it as easy as possible for you to get stuff done, so let's j
    :maxdepth: 1
    :caption: Your first day
 
-   for Ubernauts <firstday-ubernauts>
    for newbies <firstday-newbies>
-   for nerds <firstday-nerds>
 
 .. toctree::
    :maxdepth: 1
    :caption: System
 
    ssh
-   ressources
 
 .. toctree::
    :maxdepth: 1
    :caption: Web
 
-   apache
-   php
+   domains
 
 .. toctree::
    :maxdepth: 1
    :caption: Mail
-
-   mailserver
 
 .. toctree::
    :maxdepth: 1
