@@ -36,7 +36,7 @@ templates_path = ['_templates']
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
 #
-source_suffix = ['.rst']
+source_suffix = ['.rst', '.md']
 
 # The encoding of source files.
 #
@@ -344,4 +344,9 @@ texinfo_documents = [
 # texinfo_no_detailmenu = False
 
 programoutput_prompt_template = '[eliza@dolittle ~]$ {command}\n{output}\n[eliza@dolittle ~]$'
+
+source_parsers = {
+   '.md': 'recommonmark.parser.CommonMarkParser',
+}
+
 
