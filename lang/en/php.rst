@@ -27,6 +27,7 @@ You can also check your current PHP version by creating a PHP file that calls th
 .. code-block:: php
    :caption: phpinfo.php
    :name: phpinfo.php
+   
    <?php
    phpinfo();
    ?>
