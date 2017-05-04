@@ -5,13 +5,50 @@ PHP
 
 We provide PHP in different versions, selectable via the command line tool :code:`uberspace-select-version`. 
 
-Every fresh setup Uberspace account uses :ref:`standard_php_version`.
+Every fresh setup Uberspace account uses the :ref:`standard_php_version`.
+
+*************************
+Which version am I using?
+*************************
+
+You can always check which PHP version you're currently using.
+
+On the command line
+===================
+
+.. command-output:: php --version
+   :shell:
+
+On the web
+==========
+
+You can also check your current PHP version by creating a PHP file that calls the function :code:`phpversion()`:
+
+.. code-block:: php
+   :caption: phpinfo.php
+   :name: phpinfo.php
+   <?php
+   phpinfo();
+   ?>
+
+If you name this file phpinfo.php and place it in your document root, you can access it at https://username.host.uberspace.de/phpinfo.php. Your current PHP version is printed in the top line. You can also see many other 
+
+*****************************
+Which versions are available?
+*****************************
+
+To find out which versions are currently installed, run this command:
+
+.. command-output:: ls -l /bin/php*
+   :shell:
+
+:code:`php56` corresponds to PHP 5.6, :code:`php7` to the latest version of PHP 7, and :code:`php71` to PHP 7.1 and so on.
 
 **************
-Select version
+Change version
 **************
 
-You can select the PHP version with :code:`uberspace-select-version php <version>`. You can choose between major and minor versions, you can't select certain patch versions.
+You can select the PHP version with :code:`uberspace-select-version php <version>`. You can choose between major (such as 7) and minor versions (e.g. 7.1), you can't select certain patch versions (e.g. 7.1.4).
 
 PHP 7
 =====
@@ -21,7 +58,7 @@ PHP 7
 latest PHP 7
 ------------
 
-If you always want to use the latest and greatest PHP 7 (e.g. PHP 7.1, PHP 7.2, PHP 7.3, ...), use the following command:
+If you always want to use the latest and greatest PHP 7 (e.g. PHP 7.1, PHP 7.2, PHP 7.3, …), use the following command:
 
   .. command-output:: uberspace-select-version php 7
      :shell:
