@@ -19,7 +19,7 @@ Once you've set up your domain using the uberspace-add-domain tool, the tool pro
 
 Sample Outputs
 --------------
-Web::
+.. code-block:: shell
 
  [isabell@philae ~]$ uberspace-add-domain -d isabell.example -w
  The webserver's configuration has been adpated.
@@ -27,7 +27,7 @@ Web::
      A -> 185.26.156.55
      AAAA -> 2a00:d0c0:200:0:b9:1a:9c:37
 
-Mail::
+.. code-block:: shell
 
  [isabell@philae ~]$ uberspace-add-domain -d isabell.example -m
  The mailserver's configuration has been adapted.
