@@ -35,6 +35,7 @@ PHP 7.0
 If you want to use PHP 7.0, use the following command: 
 
   .. command-output:: uberspace-select-version php 7.0
+     :shell:
 
 You will get the latest patch updates automatically.
 
