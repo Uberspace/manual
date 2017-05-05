@@ -22,12 +22,11 @@ On the command line
 On the web
 ==========
 
-You can also check your current PHP version by creating a PHP file that calls the function :code:`phpversion()`:
+You can also check your current PHP version by creating a PHP file that calls the function :code:`phpinfo()`:
 
 .. code-block:: php
-   :caption: phpinfo.php
    :name: phpinfo.php
-   
+
    <?php
    phpinfo();
    ?>
