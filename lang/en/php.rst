@@ -31,7 +31,7 @@ You can also check your current PHP version by creating a PHP file that calls th
    phpinfo();
    ?>
 
-If you name this file phpinfo.php and place it in your document root, you can access it at https://username.host.uberspace.de/phpinfo.php. Your current PHP version is printed in the top line. You can also see many other 
+If you name this file phpinfo.php and place it in your document root, you can access it at https://username.uber.space/phpinfo.php. Your current PHP version is printed in the top line. You can also see many other 
 
 **************
 Change version
