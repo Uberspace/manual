@@ -33,17 +33,6 @@ You can also check your current PHP version by creating a PHP file that calls th
 
 If you name this file phpinfo.php and place it in your document root, you can access it at https://username.host.uberspace.de/phpinfo.php. Your current PHP version is printed in the top line. You can also see many other 
 
-*****************************
-Which versions are available?
-*****************************
-
-To find out which versions are currently installed, run this command:
-
-.. command-output:: ls -l /bin/php*
-   :shell:
-
-:code:`php56` corresponds to PHP 5.6, :code:`php7` to the latest version of PHP 7, and :code:`php71` to PHP 7.1 and so on.
-
 **************
 Change version
 **************
