@@ -281,7 +281,7 @@ The dashboard will put this public key into the ``~/.ssh/authorized_keys`` file 
 Your work with PuTTYgen is done here and you can safely close it. Let's head over to PuTTY!
 
 Connecting with your private key
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+................................
 
 If you already have a session for profile created, load it (just load, don't connect yet).
 
@@ -309,7 +309,7 @@ And that's it! From now on, whenever PuTTY tries to login with your private key,
 
 
 Using connection multiplexing
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------
 
 When using SSH, *connecting* is the most resource-consuming part of the session because that's where the more complicated parts of the crypto stuff happen.
 If you find yourself in the situation that you need to open *many* SSH connections to the same destination (both in parallel or serialized),
