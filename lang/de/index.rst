@@ -16,6 +16,8 @@ Wir versuchen es dir so einfach wie möglich zu machen, etwas zustande zu bekomm
    :maxdepth: 1
    :caption: System
 
+   ssh
+
 .. toctree::
    :maxdepth: 1
    :caption: Web
