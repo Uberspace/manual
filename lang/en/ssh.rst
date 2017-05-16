@@ -106,12 +106,9 @@ For this guide we're using PuTTY, but feel free to use any other SSH client of y
 Downloading PuTTY
 ~~~~~~~~~~~~~~~~~
 
-First, download the `development version of the MSI installer <https://tartarus.org/~simon/putty-snapshots/x86/putty-installer.msi>`_
+First, download the *MSI (Windows installer)* package from the `PuTTY download page <https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html>`_
 which includes all PuTTY tools we're going to use (PuTTY itself, the PuTTYgen key pair generator and the Pageant SSH agent).
-
-We're suggesting the development version over the current stable version because of its support for ED25519 key pairs which are preferred over RSA keys.
-If you're more comfortable using the `current stable version <https://the.earth.li/~sgtatham/putty/latest/x86/putty-0.67-installer.msi>`_ be reminded
-that we highly suggest to generate RSA keys with 4096 to be pretty safe for at least the next few years.
+The 32-bit version works on all Windows installations; if you have a 64-bit Windows installation you can download the 64-bit version instead.
 
 Installing the PuTTY tool suite should be pretty common; you don't need to do anything special here - just accept the defaults.
 

@@ -112,14 +112,9 @@ In dieser Einführung verwenden wir PuTTY, aber du kannst natürlich auch jeden 
 PuTTY herunterladen
 ~~~~~~~~~~~~~~~~~~~
 
-Bitte lade dir die `Entwicklungsversion des MSI-Installers <https://tartarus.org/~simon/putty-snapshots/x86/putty-installer.msi>`_
-herunter, der alle PuTTY-Tools beinhaltet, die wir im Folgenden ansprechen werden (PuTTY selbst, den PuTTYgen-Schlüsselgenerator sowie den Pageant-SSH-Agenten).
-
-Wir empfehlen dir die Entwicklerversion statt der aktuellen stabilen Version wegen ihrer Unterstützung für ED25519-Schlüssel,
-die wir gegenüber RSA-Schlüsseln bevorzugen.
-Wenn du lieber die `aktuelle stabile Version <https://the.earth.li/~sgtatham/putty/latest/x86/putty-0.67-installer.msi>`_ verwenden möchtest,
-solltest du später bei der Schlüsselgenerierung RSA-Schlüssel mit einer Schlüsselgröße von 4096 Bit verwenden, die für die nächsten Jahre
-noch als ziemlich sicher gelten dürften.
+Bitte lade dir das Paket *MSI (Windows Installer)* von der `PuTTY-Download-Seite <https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html>`_
+herunter, das alle PuTTY-Tools beinhaltet, die wir im Folgenden ansprechen werden (PuTTY selbst, den PuTTYgen-Schlüsselgenerator sowie den Pageant-SSH-Agenten).
+Die 32-Bit-Version läuft auf allen Windows-Installationen; wenn du ein 64-Bit-Windows hat, kannst du natürlich auch die 64-Bit-Version von PuTTY herunterladen.
 
 Der Installationsprozess der PuTTY-Toolsammlung sollte nichts Ungewöhnliches beinhalten; akzeptiere einfach alle vorgeschlagenen Standardeinstellungen.
 
