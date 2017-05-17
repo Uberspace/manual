@@ -1,4 +1,3 @@
-
 ###
 PHP
 ###
@@ -7,14 +6,13 @@ We provide PHP in different versions, selectable via the command line tool :code
 
 Every fresh setup Uberspace account uses :ref:`standard_php_version`.
 
-**************
 Select version
-**************
+==============
 
 You can select the PHP version with :code:`uberspace-select-version php <version>`. You can choose between major and minor versions, you can't select certain patch versions.
 
 PHP 7
-=====
+-----
 
 .. _standard_php_version:
 
@@ -39,7 +37,7 @@ If you want to use PHP 7.0, use the following command:
 You will get the latest patch updates automatically.
 
 PHP 5
-=====
+-----
 
 If you still need to use PHP 5, use one of the following commands:
 
