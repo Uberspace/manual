@@ -54,6 +54,9 @@ Our goal is to make it as easy as possible for you to get stuff done, so let's j
    :caption: Programming languages
 
    PHP <lang-php>
+   Python <lang-python>
+   NodeJS <lang-nodejs>
+   Ruby <lang-ruby>
 
 .. toctree::
    :maxdepth: 1
