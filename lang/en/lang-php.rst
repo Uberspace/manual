@@ -25,8 +25,11 @@ If you always want to use the latest and greatest PHP 7 (e.g. PHP 7.1, PHP 7.2, 
   [eliza@dolittle ~]$ uberspace-select-version php 7
   Selected PHP version 7
   The new configuration is adapted immediately. Minor updates will be applied automatically.
+  [eliza@dolittle ~]$ 
 
 If you want to pin to a specific minor release, use the following command: 
+
+.. code-block:: console
 
   [eliza@dolittle ~]$ uberspace-select-version php 7.1
   Selected PHP version 7.1
