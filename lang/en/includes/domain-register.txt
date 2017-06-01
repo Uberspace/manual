@@ -1,0 +1,4 @@
+Registering Domains
+===================
+
+Uberspace is strictly a hosting provider, which is why we don't offer domain registrations. You can, of course, use any domain that you registered with an external domain provider with your Uberspace account. At the end of this article is a list of some popular domain providers.
