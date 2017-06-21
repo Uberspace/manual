@@ -14,4 +14,3 @@ Domains
 
 You can use your own domains with your Uberspace. Please refer to the relevant `web server <web-domains.html>`_ and `mail server <mail-domains.html>`_ articles to find out how.
 
-..What sophisticated options do I have compared to other shared hosters?
