@@ -42,3 +42,4 @@ To remove a domain, use the ``uberspace-del-domain`` tool:
  isabell.example
  isabell.uber.space
 
+This will list all domains and sub-domains currently set up for this account, including the default ``$USER.uber.space``.
