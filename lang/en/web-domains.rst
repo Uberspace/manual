@@ -31,4 +31,14 @@ To remove a domain, use the ``uberspace-del-domain`` tool:
  [isabell@philae ~]$ uberspace-del-domain -d isabell.example -w
  The server's configuration has been adapted.
 
- 
+ Listing Your Domains
+ ====================
+
+ If you want to find out which domains are currently set up for the web server on your Uberspace account, use the ``uberspace-list-domains`` command:
+
+ .. code-block:: shell
+
+ [isabell@philae ~]$ uberspace-list-domains -w
+ isabell.example
+ isabell.uber.space
+
