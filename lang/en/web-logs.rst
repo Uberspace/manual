@@ -20,3 +20,8 @@ To protect user's privacy, we only log the first 16 bits of an IPv4 address and 
 error_log
 ---------
 
+.. code-block:: none
+
+	[21-Jun-2017 18:40:00] WARNING: [pool www] child 27290 said into stderr: "NOTICE: PHP message: PHP Parse error:  syntax error, unexpected '.', expecting end of file in /var/www/virtual/isabell/html/test.php on line 2"
+
+At the moment, we only provide errors logged by PHP_FPM. Each entry provides the date and time the error occured and the PHP error message, referencing the offending file and line number. 
