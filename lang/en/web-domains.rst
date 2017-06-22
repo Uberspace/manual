@@ -5,7 +5,7 @@ Domains
 Setting Up Your Domain
 ======================
 
-In order to use a domain for web with your Uberspace, you need to first set it up using our ``uberspace-add-domain`` tool.
+In order to use a domain for web with your Uberspace, you need to first set it up using our ``uberspace-add-domain`` tool. You can only add fully qualified domain names (FQDNs), wildcard domains are not available.
 
 .. code-block:: shell
 
@@ -21,3 +21,14 @@ Once you've set up your domain using the uberspace-add-domain tool, the tool pro
 .. include:: includes/domain-providers.txt
 .. include:: includes/domain-register.txt
 
+Removing a Domain
+=================
+
+To remove a domain, use the ``uberspace-del-domain`` tool:
+
+.. code-block:: shell
+
+ [isabell@philae ~]$ uberspace-del-domain -d isabell.example -w
+ The server's configuration has been adapted.
+
+ 
