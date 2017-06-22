@@ -43,3 +43,8 @@ To remove a domain, use the ``uberspace-del-domain`` tool:
  isabell.uber.space
 
 This will list all domains and sub-domains currently set up for this account, including the default ``$USER.uber.space``.
+
+Where Do I Put My Files?
+========================
+
+All files that you want to publish under your domains belong in the `document root <web-documentroot>`_. Please refer to the `document root <web-documentroot>`_ article for further details.
