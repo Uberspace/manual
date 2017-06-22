@@ -5,7 +5,7 @@ Domains
 Setting Up Your Domain
 ======================
 
-In order to use a domain for web with your Uberspace, you need to first set it up using our ``uberspace-add-domain`` tool. You can only add fully qualified domain names (FQDNs), wildcard domains are not available.
+In order to use a domain for web with your Uberspace, you need to first set it up using our ``uberspace-add-domain`` tool. You can only add fully qualified domain names (FQDNs), wildcard domains are not available. All domains set up on a Uberspace account share the same `document root <web-documentroot>`_.
 
 .. code-block:: shell
 
