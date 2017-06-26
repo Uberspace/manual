@@ -25,12 +25,6 @@ And then start your daemon:
  [eliza@doolittle ~]$ supervisorctl update
  my-daemon: added process group
 
-If you want to verify that your new daemon is running, use ``supervisorctl status``:
-
-.. code-block bash ::
- [eliza@doolittle ~]$ supervisorctl status
- my-daemon                              RUNNING   pid 16337, uptime 0:00:04
-
 Start / Stop a Service
 ======================
 
@@ -49,11 +43,28 @@ To start a non-running service or stop a running one, use ``supervisorctl start 
 Remove a Service
 ================
 
+To remove a service, you need to stop it first, then you can remove it using ``supervisorctl``:
+
+.. code-block bash ::
+ [eliza@doolittle ~]$ supervisorctl stop my-daemon
+ my-daemon: stopped
+ [eliza@doolittle ~]$ supervisorctl remove my-daemon
+ my-daemon: removed process group
+
 List Services
 =============
+
+To get an overview of your services and their current status, run ``supvervisorctl status``:
+
+.. code-block bash ::
+ [eliza@doolittle ~]$ supervisorctl status
+ my-daemon                              RUNNING   pid 16337, uptime 0:00:04
+
 
 Service Files
 =============
 
 Logging
 =======
+
+``supervisord`` logs are stored in ``~/logs/``. You can use ``supvervisorctl tail my-daemon`` to view the log for ``my-daemon``. 
