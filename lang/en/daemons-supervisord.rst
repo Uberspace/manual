@@ -68,3 +68,9 @@ Logging
 =======
 
 ``supervisord`` logs are stored in ``~/logs/``. You can use ``supvervisorctl tail my-daemon`` to view the log for ``my-daemon``. 
+
+Further Reading
+===============
+
+* check the global config if you’re curious: ``/etc/supervisord.conf``.
+* Check out the `official supervisord documentation <http://supervisord.org/>`_.
