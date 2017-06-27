@@ -6,7 +6,7 @@ Requests to your website are logged automatically to files placed in ``/var/www/
 access_log
 ----------
 
-The ``access_log`` logs all connections to your website are logged. 
+The ``access_log`` logs all connections to your website. 
 
 .. code-block:: none
 
