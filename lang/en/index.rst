@@ -22,6 +22,7 @@ Our goal is to make it as easy as possible for you to get stuff done, so let's j
    backup <basics-backup>
    quota <basics-quota>
    home directory <basics-home>
+   shell <basics-shell>
 
 .. toctree::
    :maxdepth: 1
