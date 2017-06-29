@@ -7,15 +7,13 @@ IMAP / POP3 / SMTP Ports
 
 To accecss your mails with a mail client, use these ports and settings:
 
-+----------+----------+-----+
-| Protocol | STARTTLS | TLS |
-+==========+==========+=====+
-| IMAP     | 143      | 993 |
-+----------+----------+-----+
-| POP3     | 110      | 995 |
-+----------+----------+-----+
-| SMTP     | 587      | ⛔  |
-+----------+----------+-----+
+========  ========  ===
+Protocol  STARTTLS  TLS
+========  ========  ===
+IMAP      143       993
+POP3      110       995
+SMTP      587       ⛔
+
 
 Unencrypted connections without either STARTTLS or TLS are not accepted.
 
