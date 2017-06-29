@@ -7,7 +7,7 @@ A shell is the user interface used to control an operating system. Uberspace rel
 Changing the Shell
 ==================
 
-By default, all new Uberspace accounts use the `Bash` shell. You can use the ``chsh`` command to switch to a different shell:
+By default, all new Uberspace accounts use the `Bash <https://www.gnu.org/software/bash/>`_ shell. You can use the ``chsh`` command to switch to a different shell:
 
 .. code-block bash ::
  [eliza@doolittle ~]$ chsh --shell /bin/zsh 
