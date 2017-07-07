@@ -1,0 +1,18 @@
+####
+SFTP
+####
+
+The *Secure File Transfer Protocol* is an encrypted protocol to exchange files between two computers, i.e. your own computer and the Uberspace host. 
+
+What About FTP?
+===============
+
+FTP is an outdated protocol that does not use encryption in its standard implementation. While there are implementations such as FTP over SSL (FTPS), we believe that using a more modern protocol is the better choice.
+
+SFTP Clients
+============
+
+* `Cyberduck <https://cyberduck.io/>`_, a macOS and Windows client.
+* `FileZilla <https://filezilla-project.org>`_, a multi-platform client available for Windows, Linux and macOS.
+* `WinSCP <https://winscp.net/>`_, a Windows-only client.
+
