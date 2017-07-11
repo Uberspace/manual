@@ -2,7 +2,7 @@
 SFTP
 ####
 
-The *Secure File Transfer Protocol* is an encrypted protocol to exchange files between two computers, i.e. your own computer and the Uberspace host. 
+The *Secure File Transfer Protocol* is an encrypted protocol to exchange files between two computers, e.g. your own computer and the Uberspace host. 
 
 What About FTP?
 ===============
