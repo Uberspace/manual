@@ -57,12 +57,14 @@ This is your `MySQL <database-mysql>`_ settings file.
 .ssh
 ----
 
-
+The `.ssh` directory contains you `SSH <basics-ssh>`_ configuration.
 
 tmp
 ---
 
-
+A directory for temporary files.
 
 .zshrc
 ------
+
+The configuration file for the `Z Shell <basics-shell>`_.
