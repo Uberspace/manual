@@ -47,7 +47,7 @@ Maildir
 .my.cnf
 -------
 
-
+This is your `MySQL <database-mysql>`_ settings file.
 
 .qmail*
 -------
