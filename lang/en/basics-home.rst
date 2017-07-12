@@ -20,7 +20,7 @@ The `.bash_profile`, `.bashrc` and `.bash_logout` files are the configuration, s
 .emacs
 ------
 
-
+The `.emacs` file is the configuration for the `emacs` editor. 
 
 etc
 ---
