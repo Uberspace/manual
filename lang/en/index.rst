@@ -68,7 +68,7 @@ Our goal is to make it as easy as possible for you to get stuff done, so let's j
    runwhen <daemons-runwhen>
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 0
    :caption: Meta
 
    Changelog <changelog>
