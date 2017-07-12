@@ -37,7 +37,7 @@ html
 logs
 ----
 
-
+A directory to store log files.
 
 Maildir
 -------
