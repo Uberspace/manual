@@ -37,12 +37,12 @@ html
 logs
 ----
 
-A directory to store log files.
+A directory to store log files. 
 
 Maildir
 -------
 
-
+Your emails and IMAP folders are stored in this directory.
 
 .my.cnf
 -------
@@ -52,7 +52,7 @@ This is your `MySQL <database-mysql>`_ settings file.
 .qmail*
 -------
 
-
+`.qmail` files (“dotqmail files”) are used to add email aliases or forwarding addresses.
 
 .ssh
 ----
