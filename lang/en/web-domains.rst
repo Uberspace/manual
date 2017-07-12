@@ -2,8 +2,8 @@
 Domains
 #######
 
-Setting Up Your Domain
-======================
+Adding Your Domain
+==================
 
 In order to use a domain for web with your Uberspace, you need to first set it up using our ``uberspace-add-domain`` tool. You can only add fully qualified domain names (`FQDNs <https://en.wikipedia.org/wiki/Fully_qualified_domain_name>`_), wildcard domains are not available. All domains set up on a Uberspace account share the same `document root <web-documentroot>`_.
 
@@ -21,7 +21,7 @@ Once you've set up your domain using the uberspace-add-domain tool, the tool pro
 .. include:: includes/domain-providers.txt
 .. include:: includes/domain-register.txt
 
-Removing a Domain
+Deleting a Domain
 =================
 
 To remove a domain, use the ``uberspace-del-domain`` tool:
