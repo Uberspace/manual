@@ -1,6 +1,10 @@
 # Changes in Uberspace 7
 This document will track major changes in the project.
 
+### Added
+
+* Add changelog to sidebar navigation.
+
 ## [7.0.8] - 2017-06-26
 
 ### Added
