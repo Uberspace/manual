@@ -3,11 +3,18 @@
 Webserver
 #########
 
-*************
-Document Root
-*************
+*********
+Log Files
+*********
 
-If you want to publish documents on the web, you need to place them in your account's DocumentRoot. This is a folder that you can find at ``/var/www/virtual/<USERNAME>/html/``, so if your user name is ``eliza``, this would be ``/var/www/virtual/eliza/html/``.
+You can enable access to your account's ``access_log`` and ``error_log``. Both are, by default, deactivated.
 
-Files named either ``index.html`` or ``index.php`` are automatically shown when accessing ``https://eliza.uber.space``. 
+access_log
+==========
 
+To enable your ``access_log``, run the command ``uberspace-configure-acces_log enable``. Any future requests to your website will be logged in ``~/logs/access_log``. To disable it, run ``uberspace-configure-access_log disable``, and to see the current status, run ``uberspace-configure-access_log status``.
+
+error_log
+=========
+
+To enable your ``error_log``, run the command ``uberspace-configure-error_log enable``. Any future requests to your website that result in an HTTP error will be logged in ``~/logs/error_log``. To disable it, run ``uberspace-configure-error_log disable``, and to see the current status, run ``uberspace-configure-error_log status``.
