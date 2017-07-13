@@ -1,6 +1,8 @@
 # Changes in Uberspace 7
 This document will track major changes in the project.
 
+## [Unreleased]
+
 ### Added
 
 * Add changelog to sidebar navigation.
