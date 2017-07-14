@@ -1,11 +1,19 @@
 # Changes in Uberspace 7
 This document will track major changes in the project.
 
-## [Unreleased]
+## [7.0.8.1] - 2017-07-13
 
 ### Added
+* The changelog is now linked in the sidebar navigation.
+* We provide `git` version 2 from [IUS repo](https://ius.io/GettingStarted/).
+* We now set `session.use_strict_mode = 1` in global `php.ini` to combat session fixation attacks.
 
-* Add changelog to sidebar navigation.
+### Fixed
+* nginx and php log errors to different files now.
+* php session files are getting cleaned up now.
+* We changed our `ssl_ciphers` to make it possible for `java8` to connect via HTTPS.
+* Apache does not parse IP addresses in `x-forwarded-for` headers correctly, this is a bug in [mod_rpaf](https://github.com/gnif/mod_rpaf/pull/45). To work around that we disabled `keepalive` between Apache<=>nginx (not nginx<=>users) for now.
+* Many connections to a single virtualhost can shut down the whole webserver. We now rate-limit the maximum connections for each user.
 
 ## [7.0.8] - 2017-06-26
 
