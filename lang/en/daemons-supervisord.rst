@@ -60,10 +60,6 @@ To get an overview of your services and their current status, run ``supvervisorc
  [eliza@doolittle ~]$ supervisorctl status
  my-daemon                              RUNNING   pid 16337, uptime 0:00:04
 
-
-Service Files
-=============
-
 Logging
 =======
 
