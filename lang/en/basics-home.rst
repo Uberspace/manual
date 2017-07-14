@@ -27,7 +27,7 @@ The configuration file for the ``emacs`` editor.
 etc
 ---
 
-The ``etc`` folder is reserved for configuration files of any kind. Most importantly, this includes your `supervisord <daemons-supervisord>``_ configuration in ``etc/services.d``.
+The ``etc`` folder is reserved for configuration files of any kind. Most importantly, this includes your `supervisord <daemons-supervisord>`_ configuration in ``etc/services.d``.
 
 html
 ----
