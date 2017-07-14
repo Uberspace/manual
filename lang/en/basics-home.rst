@@ -22,7 +22,7 @@ In many contexts, the tilde `~` can be used as a placeholder for your home direc
 .emacs
 ------
 
-The `.emacs` file is the configuration for the `emacs` editor. 
+The configuration file for the `emacs` editor. 
 
 etc
 ---
