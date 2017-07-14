@@ -18,7 +18,8 @@ Our goal is to make it as easy as possible for you to get stuff done, so let's j
    :maxdepth: 1
    :caption: Basics
 
-   SSH/SFTP <basics-ssh>
+   SSH <basics-ssh>
+   SFTP <basics-sftp>
    backup <basics-backup>
    quota <basics-quota>
    home directory <basics-home>
