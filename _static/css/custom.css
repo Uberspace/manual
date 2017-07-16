@@ -6,6 +6,10 @@
   background-color: #999999;
 }
 
+.wy-nav-side {
+  padding-bottom: 3em;
+}
+
 /* We don't want to show prev/next links */
 .rst-footer-buttons {
   display: none;
