@@ -6,6 +6,11 @@
   background-color: #999999;
 }
 
+/* ensure that the last link in menu is not covered by the version chooser */
+.wy-nav-side {
+  padding-bottom: 3em;
+}
+
 /* We don't want to show prev/next links */
 .rst-footer-buttons {
   display: none;
