@@ -6,6 +6,7 @@
   background-color: #999999;
 }
 
+/* ensure that the last link in menu is not covered by the version chooser */
 .wy-nav-side {
   padding-bottom: 3em;
 }
