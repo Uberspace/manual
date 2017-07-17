@@ -50,6 +50,7 @@ Deploy manual to staging:
   stage: deploy
   except:
     - stable
+    - master
   script:
     - ansible-playbook deploy-staging.yml 
   environment:
@@ -61,6 +62,7 @@ Deploy manual to production:
   stage: deploy
   only:
     - stable
+    - master
   script:
     - ansible-playbook deploy-stable.yml 
   environment:
