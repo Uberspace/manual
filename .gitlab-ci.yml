@@ -7,7 +7,6 @@ variables:
   MANUAL_USERNAME: manual
   MANUAL_PATH: /var/www/virtual/$MANUAL_USERNAME/$CI_BUILD_REF_SLUG.$MANUAL_USERNAME.$MANUAL_HOST
 
-
 stages:
   - build
   - deploy
@@ -20,14 +19,32 @@ before_script:
   # Dependencies
   - pip install --quiet -r requirements.txt
   - git submodule update --quiet --init --recursive
+  - yum install -y centos-release-scl
+  - yum install -y git19
+  - scl enable git19 bash
+  - export PATH=/opt/rh/git19/root/usr/bin:$PATH
 
-Build manual:
+Build stable and master manual:
   stage: build
+  only:
+    - stable
+    - master
   artifacts:
     paths:
       - _build
   script:
-    - ansible-playbook build.yml
+    - ansible-playbook -v build-stable.yml
+
+Build staging manual:
+  stage: build
+  except:
+    - stable
+    - master
+  artifacts:
+    paths:
+      - _build
+  script:
+    - ansible-playbook -v build-staging.yml
  
 Deploy manual to staging:
   stage: deploy

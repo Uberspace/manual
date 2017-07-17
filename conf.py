@@ -346,8 +346,27 @@ texinfo_documents = [
 
 programoutput_prompt_template = '[eliza@dolittle ~]$ {command}\n{output}\n[eliza@dolittle ~]$'
 
+# settings for versioning
+# https://robpol86.github.io/sphinxcontrib-versioning/settings.html#cmdoption-b
+
+# https://robpol86.github.io/sphinxcontrib-versioning/banner.html#banner
+scv_show_banner = True
+
+# The branch/tag considered to be the latest/current version. 
+scv_banner_main_ref = 'stable'
+
+# Override banner-main-ref to be the most recent committed tag. I
+scv_banner_recent_tag = True
+
+# The branch/tag at the root of DESTINATION
+scv_root_ref = 'stable'
+
+# we version via branches.
+scv_priority = 'branches'
+
+# Filter out branches not matching the pattern.
+scv_whitelist_branches = ('stable','master')
+
 source_parsers = {
    '.md': 'recommonmark.parser.CommonMarkParser',
 }
-
-
