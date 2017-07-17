@@ -39,7 +39,7 @@ Changing your password
 ----------------------
 
 Your password can be changed with the `SET PASSWORD <https://mariadb.com/kb/en/mariadb/set-password/>`_ SQL statement.
-Tools like Adminer or phpMyAdmin provide you with a web-based way of doing that (if you installed them), but it can easily done on the shell as well:
+Tools like Adminer or phpMyAdmin provide you with a web-based way of doing that (if you installed them), but it can easily be done on the shell as well:
 
 .. code-block:: shell
 
@@ -76,7 +76,7 @@ Additional databases
 In addition to the default database named like your Uberspace you can also create an unlimited number of additional databases
 prefixed with your username and ``_`` - if your username is ``eliza`` you can create databases named like ``eliza_blog``, ``eliza_shop``.
 
-New databases can created with the `CREATE DATABASE <https://mariadb.com/kb/en/mariadb/create-database/>`_ SQL statement.
+New databases can be created with the `CREATE DATABASE <https://mariadb.com/kb/en/mariadb/create-database/>`_ SQL statement.
 Tools like Adminer or phpMyAdmin provide you with a web-based way of doing that (if you installed them), but it can easily done on the shell as well:
 
 .. code-block:: shell
@@ -152,7 +152,7 @@ Given that you already created a database named ``eliza_copy`` you can copy all 
 
   [eliza@dolittle ~]$ mysqldump eliza | mysql eliza_copy
 
-This will also work over SSH - for example to dump a database on some other host you're having shell access to as well, this is what you're able to do to import all tables of a remote database names ``otherdatabase`` into your local database ``eliza`` (overwriting existing tables, if any):
+This will also work over SSH - for example to dump a database on some other host you're having shell access to as well, this is what you're able to do to import all tables of a remote database named ``otherdatabase`` into your local database ``eliza`` (overwriting existing tables, if any):
 
 .. code-block:: shell
 
@@ -174,7 +174,7 @@ Using Linux, macOS or any other Unix
 On Linux, macOS and practically every other Unix operating system, `OpenSSH <https://www.openssh.com/>`_
 comes preinstalled so you can use it out of the box.
 
-This is how you can initiate a SSH connection offering a tunnel fort pport 3306,
+This is how you can initiate a SSH connection offering a tunnel for port 3306,
 your local workstation is represented by a ``[localuser@localhost ~]$`` prompt:
 
 .. code-block:: console

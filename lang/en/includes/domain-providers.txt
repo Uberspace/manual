@@ -1,9 +1,12 @@
 Domain Providers
 ================
 
-* `INWX <https://inwx.de>`_
-  * `How do I set-up a MX record? <https://kb.inwx.com/index.php?action=artikel&cat=22&id=212&artlang=en&highlight=mx>`_  
-  * `How can I forward a domain to an IP address (A/AAAA record)? <https://kb.inwx.com/?action=artikel&cat=22&id=214&artlang=en&highlight=a%5C-record>`_
-* `Namecheap <https://www.namecheap.com/>`_
+`INWX <https://inwx.de>`_
+---------------------------
+  * `How do I set-up a MX record? <https://kb.inwx.com/?action=artikel&cat=3&id=39&artlang=de>`_  
+  * `How can I forward a domain to an IP address (A/AAAA record)? <https://kb.inwx.com/?action=artikel&cat=3&id=14&artlang=de>`_
+
+`Namecheap <https://www.namecheap.com/>`_
+-----------------------------------------
   * `How can I set up MX records required for mail service? <https://www.namecheap.com/support/knowledgebase/article.aspx/322/2237/how-can-i-set-up-mx-records-required-for-mail-service>`_
   * `How do I set up host records for a domain? <https://www.namecheap.com/support/knowledgebase/article.aspx/434/2237/how-do-i-set-up-host-records-for-a-domain>`_ 
