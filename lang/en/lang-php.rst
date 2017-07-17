@@ -12,7 +12,7 @@ Versions
 
 default
 -------
-If you don't select a certain version, our default will be used. We decided to default to Version 7.0, what is considered to be stable by the developers.
+If you don't select a certain version, our default will be used. We decided to default to Version 7.1, what is considered to be stable by the developers.
 
 select version
 --------------

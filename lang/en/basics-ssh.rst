@@ -12,7 +12,7 @@ Introduction
 
 Here at Uberspace, many administrative tasks are preferably done on the shell, a text-based command line interface.
 At first glance this might seem complex or even confusing for people that are more used to web interfaces,
-but for many developers, web designers and generally advanced users the shell is the preferred way of interacting with a server
+but for many developers, web designers and generally advanced users, the shell is the preferred way of interacting with a server
 because it offers nearly unimaginable possibilities that even *we* haven't been thinking about.
 
 If you're completely new to using a shell - don't fear! It's easy to get started,
@@ -27,7 +27,7 @@ Login data
 You'll need three pieces of information to connect with your account by SSH:
 
 #. A **username** - this is the username you've chosen yourself when registering an account with us.
-#. A **hostname** - this is the hosting system we're created your account on.
+#. A **hostname** - this is the hosting system we've created your account on.
    You can find this hostname under the `Datasheet <https://uberspace.de/dashboard/datasheet>`_ section.
    It's always in the form ``<something>.uberspace.de``.
 #. A **password** or **private key** - as a newbie, simply set a password under the `Logins <https://uberspace.de/dashboard/authentication>`_ section.
@@ -58,7 +58,7 @@ your local workstation is represented by a ``[localuser@localhost ~]$`` prompt:
   [eliza@dolittle ~]$
 
 What you're first seeing is the fingerprint of the host key of the server you're about to connect.
-Please check your `datasheet <https://uberspace.de/dashboard/datasheet>`_ which shows the fingerprint you *should* be seeing here.
+Please check your `Datasheet <https://uberspace.de/dashboard/datasheet>`_ which shows the fingerprint you *should* be seeing here.
 If you're presented with a different fingerprint, please check if you have mistyped the hostname, which is the most common error.
 If the hostname is correct but you're still getting the wrong fingerprint, please `contact us <mailto:hallo@uberspace.de>`_.
 
@@ -132,7 +132,7 @@ First connection
 ~~~~~~~~~~~~~~~~
 
 On your first connection PuTTY will present you the fingerprint of the host key of the server you're about to connect.
-Please check your `datasheet <https://uberspace.de/dashboard/datasheet>`_ which shows the fingerprint you *should* be seeing here.
+Please check your `Datasheet <https://uberspace.de/dashboard/datasheet>`_ which shows the fingerprint you *should* be seeing here.
 If you're presented with a different fingerprint, please check if you have mistyped the hostname, which is the most common error.
 If the hostname is correct but you're still getting the wrong fingerprint, please `contact us <mailto:hallo@uberspace.de>`_.
 

@@ -74,5 +74,5 @@ Logging
 Further Reading
 ===============
 
-* check the global config if you’re curious: ``/etc/supervisord.conf``.
+* Check the global config if you’re curious: ``/etc/supervisord.conf``.
 * Check out the `official supervisord documentation <http://supervisord.org/>`_.
