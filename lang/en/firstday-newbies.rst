@@ -1,3 +1,4 @@
+.. _firstday-newbies:
 #############################
 Your first day... for newbies
 #############################

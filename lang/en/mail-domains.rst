@@ -1,3 +1,4 @@
+.. _mail-domains:
 #######
 Domains
 #######

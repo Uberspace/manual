@@ -1,3 +1,4 @@
+.. _basics-shell:
 #########
 The Shell
 #########

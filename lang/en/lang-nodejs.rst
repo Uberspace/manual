@@ -1,4 +1,4 @@
-..
+.. _lang-nodejs:
   #####
   Title
   #####

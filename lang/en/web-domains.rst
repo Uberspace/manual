@@ -1,3 +1,4 @@
+.. _web-domains:
 #######
 Domains
 #######

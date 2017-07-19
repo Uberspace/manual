@@ -1,3 +1,4 @@
+.. _firstday-nerds:
 ###########################
 Your first day... for nerds
 ###########################

@@ -1,3 +1,4 @@
+.. _mail-access:
 ####################
 Accessing Your Mails
 ####################
