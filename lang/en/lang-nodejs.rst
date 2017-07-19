@@ -1,7 +1,8 @@
-.. _lang-nodejs:
-  #####
-  Title
-  #####
+.. _nodejs:
+
+  ######
+  NodeJS
+  ######
 
   Introduction
   ============

@@ -1,1 +1,5 @@
-.. _mail-spam:
+.. _spam:
+
+####
+Spam
+####

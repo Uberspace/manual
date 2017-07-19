@@ -1,1 +1,5 @@
-.. _lang-ruby:
+.. _ruby:
+
+####
+Ruby
+####

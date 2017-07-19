@@ -1,1 +1,5 @@
-.. _daemons-cron:
+.. _cron:
+
+####
+Cron
+####

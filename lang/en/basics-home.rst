@@ -1,4 +1,5 @@
-.. _basics-home:
+.. _home:
+
 ##############
 Home Directory
 ##############
@@ -16,7 +17,7 @@ Default Files and Folders
 .bash*
 ------
 
-The ``.bash_profile``, ``.bashrc`` and ``.bash_logout`` files are the configuration, startup and logout scripts for the `Bash shell <basics-shell>`_. ``.bash_profile`` is a script that is executed when you log in via `SSH <basics-ssh>`_ and will include ``.bashrc``. If you want to run any commands automatically whenever you log in, add them to ``.bash_profile``. ``.bash_logout`` is executed when you log out. After your first login, ``.bash_history`` will be added automatically and logs all you shell commands so you can re-run them later.
+The ``.bash_profile``, ``.bashrc`` and ``.bash_logout`` files are the configuration, startup and logout scripts for the :ref:`shell`. ``.bash_profile`` is a script that is executed when you log in via :ref:`ssh` and will include ``.bashrc``. If you want to run any commands automatically whenever you log in, add them to ``.bash_profile``. ``.bash_logout`` is executed when you log out. After your first login, ``.bash_history`` will be added automatically and logs all you shell commands so you can re-run them later.
 
 In many contexts, the tilde ``~`` can be used as a placeholder for your home directory.
 
@@ -28,12 +29,12 @@ The configuration file for the ``emacs`` editor.
 etc
 ---
 
-The ``etc`` folder is reserved for configuration files of any kind. Most importantly, this includes your `supervisord <daemons-supervisord>`_ configuration in ``etc/services.d``.
+The ``etc`` folder is reserved for configuration files of any kind. Most importantly, this includes your :ref:`supervisord: configuration in ``etc/services.d``.
 
 html
 ----
 
-``html`` is a symbolic link to your `document root <web-documentroot>`_. Anything in there is accessible to the web server, and thus to the public.
+``html`` is a symbolic link to your :ref:`documentroot`. Anything in there is accessible to the web server, and thus to the public.
 
 logs
 ----
@@ -48,7 +49,7 @@ Your emails and IMAP folders are stored in this directory.
 .my.cnf
 -------
 
-This is your `MySQL <database-mysql>`_ settings file.
+This is your :ref:`mysql` settings file.
 
 .qmail*
 -------
@@ -58,7 +59,7 @@ This is your `MySQL <database-mysql>`_ settings file.
 .ssh
 ----
 
-The ``.ssh`` directory contains you `SSH <basics-ssh>`_ configuration.
+The ``.ssh`` directory contains your :ref:`ssh` configuration.
 
 tmp
 ---
@@ -68,4 +69,4 @@ A directory for temporary files.
 .zshrc
 ------
 
-The configuration file for the `Z Shell <basics-shell>`_.
+The configuration file for the :ref:`Z Shell <shell>`.

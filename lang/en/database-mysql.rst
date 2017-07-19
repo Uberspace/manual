@@ -1,4 +1,5 @@
-.. _db-mysql:
+.. _mysql:
+
 #####
 MySQL
 #####

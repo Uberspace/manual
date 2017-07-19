@@ -1,4 +1,5 @@
 .. _firstday-nerds:
+
 ###########################
 Your first day... for nerds
 ###########################
@@ -13,5 +14,5 @@ If you want to publish a website using your Uberspace, you can do so by placing 
 Domains
 =======
 
-You can use your own domains with your Uberspace. Please refer to the relevant `web server <web-domains.html>`_ and `mail server <mail-domains.html>`_ articles to find out how.
+You can use your own domains with your Uberspace. Please refer to the relevant :ref:`web server <web-domains>` and :ref:`mail server <mail-domains>` articles to find out how.
 

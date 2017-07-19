@@ -1,1 +1,5 @@
-.. _basics-quota:
+.. _quota:
+
+#####
+Quota
+#####

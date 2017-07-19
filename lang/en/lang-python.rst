@@ -1,1 +1,5 @@
-.. _lang-python:
+.. _python:
+
+######
+Python
+######

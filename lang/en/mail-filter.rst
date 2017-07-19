@@ -1,1 +1,5 @@
-.. _mail-filter:
+.. _mailfilters:
+
+############
+Mail Filters
+############

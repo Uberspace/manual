@@ -1,1 +1,5 @@
-.. _web-docroot:
+.. _docroot:
+
+#############
+Document Root
+#############

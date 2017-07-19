@@ -1,4 +1,5 @@
-.. _daemons-supervisord:
+.. _supervisord:
+
 ###########
 supervisord
 ###########
