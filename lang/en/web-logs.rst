@@ -16,11 +16,14 @@ To enable or disable your access_log, use these commands:
 
 .. code-block:: bash
 
- [isabell@doolittle ~]$ uberspace web accesslog enable
- The webserver's configuration has been adapted.
- Logs are written to ~/logs/
- [isabell@doolittle ~]$ uberspace web accesslog disable
- The webserver's configuration has been adapted.
+ [isabell@doolittle ~]$ uberspace-configure-access_log enable
+ access_log is enabled.
+ [isabell@doolittle ~]$ uberspace-configure-access_log status
+ access_log is enabled.
+ [isabell@doolittle ~]$ uberspace-configure-access_log disable
+ access_log is disabled.
+ [isabell@doolittle ~]$ uberspace-configure-access_log status
+ access_log is disabled.
 
 Contents of the access_log
 --------------------------
@@ -39,18 +42,21 @@ error_log
 Enabling and disabling
 ----------------------
 
-These are actually two log files, ``error_log_php`` and ``error_log_apache``. To enable or disable your error_logs, use these commands:
+At the moment, we only log PHP errors to ``/var/virtual/$USER/logs/error_log``. To enable or disable your error_logs, use these commands:
 
 .. code-block:: bash
 
- [isabell@doolittle ~]$ uberspace web errorlog enable
- The webserver's configuration has been adapted.
- Logs are written to ~/logs/
- [isabell@doolittle ~]$ uberspace web errorlog disable
- The webserver's configuration has been adapted.
+ [isabell@doolittle ~]$ uberspace-configure-error_log enable
+ error_log is enabled.
+ [isabell@doolittle ~]$ uberspace-configure-error_log status
+ error_log is enabled
+ [isabell@doolittle ~]$ uberspace-configure-error_log disable
+ error_log is disabled.
+ [isabell@doolittle ~]$ uberspace-configure-error_log status
+ error_log is disabled.
 
-Contents of the error_log_php
------------------------------
+Contents of the error_log
+-------------------------
 
 
 .. code-block:: none
@@ -58,18 +64,6 @@ Contents of the error_log_php
 	[21-Jun-2017 18:40:00] WARNING: [pool www] child 27290 said into stderr: "NOTICE: PHP message: PHP Parse error:  syntax error, unexpected '.', expecting end of file in /var/www/virtual/isabell/html/test.php on line 2"
 
 At the moment, we only provide errors logged by PHP_FPM. Each entry provides the date and time the error occured and the PHP error message, referencing the offending file and line number. 
-
-Contents of the error_log_apache
---------------------------------
-
-This file logs any errors encountered by the Apache web server itself, for example if a requested file does not exist or if access to it is restricted:
-
-.. code-block:: none
-
- [Thu Jul 20 15:33:52 2017] [error] [client 104.193.0.0] Directory index forbidden by Options directive: /var/www/virtual/isabell/html/
- [Thu Jul 20 15:51:52 2017] [error] [client 62.210.0.0] File does not exist: /var/www/virtual/isabell/html/404.html
-
-Each entry contains date and time of the request, the client's (redacted) IP address and the error message.
 
 Privacy
 =======
