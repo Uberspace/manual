@@ -1,3 +1,5 @@
+.. _web-domains:
+
 #######
 Domains
 #######
@@ -5,7 +7,7 @@ Domains
 Adding Your Domain
 ==================
 
-In order to use a domain for web with your Uberspace, you need to first set it up using our ``uberspace-add-domain`` tool. You can only add fully qualified domain names (`FQDNs <https://en.wikipedia.org/wiki/Fully_qualified_domain_name>`_), wildcard domains are not available. All domains set up on a Uberspace account share the same `document root <web-documentroot>`_.
+In order to use a domain for web with your Uberspace, you need to first set it up using our ``uberspace-add-domain`` tool. You can only add fully qualified domain names (`FQDNs <https://en.wikipedia.org/wiki/Fully_qualified_domain_name>`_), wildcard domains are not available. All domains set up on a Uberspace account share the same :ref:`docroot`.
 
 .. code-block:: shell
 
@@ -47,4 +49,4 @@ This will list all domains and sub-domains currently set up for this account, in
 Where Do I Put My Files?
 ========================
 
-All files that you want to publish under your domains belong in the `document root <web-documentroot>`_. Please refer to the `document root <web-documentroot>`_ article for further details.
+All files that you want to publish under your domains belong in the :ref:`docroot`. Please refer to the :ref:`docroot` article for further details.

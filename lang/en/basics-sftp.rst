@@ -1,10 +1,12 @@
+.. _sftp:
+
 ####
 SFTP
 ####
 
 The *Secure File Transfer Protocol* is an encrypted protocol to exchange files between two computers, e.g. your own computer and the Uberspace host. 
 
-Since SFTP is based on SSH, you can use the same `login data <basics-ssh.html#login-data>`_.
+Since SFTP is based on SSH, you can use the SSH :ref:`ssh-login-data`.
 
 What About FTP?
 ===============
@@ -21,4 +23,4 @@ SFTP Clients
 ⚠️ SSH commands
 ==============
 
-Some SFTP clients offer rudimentary “shells” to run commands on the server via SSH. While this may work for some non-interactive commands, it can cause problems when using interactive tools and other commands. We generally recommend to use a full-featured `SSH <basics-ssh.html>`_ client to run commands on the server.
+Some SFTP clients offer rudimentary “shells” to run commands on the server via SSH. While this may work for some non-interactive commands, it can cause problems when using interactive tools and other commands. We generally recommend to use a full-featured :ref:`ssh` client to run commands on the server.

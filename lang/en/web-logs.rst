@@ -1,3 +1,5 @@
+.. _web-logs:
+
 Web server logs
 ===============
 
