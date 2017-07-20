@@ -4,7 +4,7 @@
 Web server logs
 ###############
 
-The web server logs are disabled by default. Once you enable them, they are written to ``/var/www/virtual/$USER/logs/`` (so if your user name is isabell, that would be ``/var/www/virtual/isabell/logs/``) in real-time.
+The web server logs are disabled by default. Once you enable them, they are written to ``~/logs/`` in real-time.
 
 access_log
 ==========
