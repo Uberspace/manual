@@ -34,10 +34,10 @@ The ``access_log`` logs all connections to your website.
 Each entry contains the client's (redacted) IP address, date and time of the request, the actual HTTP request sent and the ``user agent``, i.e. the browser and operating system used by the client.
 
 error_log
----------
+=========
 
 Enabling and disabling
-======================
+----------------------
 
 These are actually two log files, ``error_log_php`` and ``error_log_apache``. To enable or disable your error_logs, use these commands:
 
