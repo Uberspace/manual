@@ -1,12 +1,32 @@
 .. _web-logs:
 
+###############
 Web server logs
-===============
+###############
 
-Requests to your website are logged automatically to files placed in ``/var/www/virtual/$USER/logs/`` (so if your user name is isabell, that would be ``/var/www/virtual/isabell/logs/``) in real-time.
+The web server logs are disabled by default. Once you enable them, they are written to ``~/logs/`` in real-time.
 
 access_log
-----------
+==========
+
+Enabling and disabling
+----------------------
+
+To enable or disable your access_log, use these commands:
+
+.. code-block:: bash
+
+ [isabell@doolittle ~]$ uberspace-configure-access_log enable
+ access_log is enabled.
+ [isabell@doolittle ~]$ uberspace-configure-access_log status
+ access_log is enabled.
+ [isabell@doolittle ~]$ uberspace-configure-access_log disable
+ access_log is disabled.
+ [isabell@doolittle ~]$ uberspace-configure-access_log status
+ access_log is disabled.
+
+Contents of the access_log
+--------------------------
 
 The ``access_log`` logs all connections to your website. 
 
@@ -16,14 +36,36 @@ The ``access_log`` logs all connections to your website.
 
 Each entry contains the client's (redacted) IP address, date and time of the request, the actual HTTP request sent and the ``user agent``, i.e. the browser and operating system used by the client.
 
-To protect user's privacy, we only log the first 16 bits of an IPv4 address and the first 32 bits of an IPv6 address, respectively, nulling the rest. Thus, an IPv4 address such as ``82.98.87.93`` and an IPv6 address such as ``2a02:2e0:3fc:52:0:62:5768:38`` are logged as ``82.98.0.0`` and ``2a02:2e0::`` in the actual log file.
-
-
 error_log
----------
+=========
+
+Enabling and disabling
+----------------------
+
+At the moment, we only log PHP errors to ``/var/virtual/$USER/logs/error_log``. To enable or disable your error_logs, use these commands:
+
+.. code-block:: bash
+
+ [isabell@doolittle ~]$ uberspace-configure-error_log enable
+ error_log is enabled.
+ [isabell@doolittle ~]$ uberspace-configure-error_log status
+ error_log is enabled
+ [isabell@doolittle ~]$ uberspace-configure-error_log disable
+ error_log is disabled.
+ [isabell@doolittle ~]$ uberspace-configure-error_log status
+ error_log is disabled.
+
+Contents of the error_log
+-------------------------
+
 
 .. code-block:: none
 
 	[21-Jun-2017 18:40:00] WARNING: [pool www] child 27290 said into stderr: "NOTICE: PHP message: PHP Parse error:  syntax error, unexpected '.', expecting end of file in /var/www/virtual/isabell/html/test.php on line 2"
 
 At the moment, we only provide errors logged by PHP_FPM. Each entry provides the date and time the error occured and the PHP error message, referencing the offending file and line number. 
+
+Privacy
+=======
+
+To protect user's privacy, we only log the first 16 bits of an IPv4 address and the first 32 bits of an IPv6 address, respectively, nulling the rest. Thus, ``uberspace.de``'s IPv4 address, ``82.98.87.93`` and its IPv6 address ``2a02:2e0:3fc:52:0:62:5768:38`` are logged as ``82.98.0.0`` and ``2a02:2e0::`` in the actual log files.
