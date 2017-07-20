@@ -18,7 +18,7 @@ To enable or disable your access_log, use these commands:
 
  [isabell@doolittle ~]$ uberspace web accesslog enable
  The webserver's configuration has been adapted.
- Logs are written to ~/logs/"
+ Logs are written to ~/logs/
  [isabell@doolittle ~]$ uberspace web accesslog disable
  The webserver's configuration has been adapted.
 
@@ -45,7 +45,7 @@ These are actually two log files, ``error_log_php`` and ``error_log_apache``. To
 
  [isabell@doolittle ~]$ uberspace web errorlog enable
  The webserver's configuration has been adapted.
- Logs are written to ~/logs/"
+ Logs are written to ~/logs/
  [isabell@doolittle ~]$ uberspace web errorlog disable
  The webserver's configuration has been adapted.
 
