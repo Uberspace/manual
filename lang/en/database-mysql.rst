@@ -10,7 +10,6 @@ To avoid confusion, MariaDB uses the same command names you already know, like `
 
 Our default setup provides you with a database and a user named like your Uberspace, but you can create additional databases later.
 
-
 Login credentials
 =================
 
@@ -159,6 +158,11 @@ This will also work over SSH - for example to dump a database on some other host
 .. code-block:: shell
 
   [eliza@dolittle ~]$ ssh otheruser@some.other.host mysqldump otherdatabase | mysql eliza
+
+Barracuda File Format
+=====================
+
+We are using the newest MySQL file format, `Barracuda <https://mariadb.com/kb/en/mariadb/xtradbinnodb-file-format/>`_. For tables using none of the new features, the format is still Antelope.
 
 
 Connecting from outside
