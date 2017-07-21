@@ -60,7 +60,7 @@ Simply run
 php.ini
 =======
 
-We generally use a standard `php.ini` configuration with only slight modifications:
+We generally use a standard ``php.ini`` configuration with only slight modifications:
 
 .. code-block:: none
  realpath_cache_ttl = 300
