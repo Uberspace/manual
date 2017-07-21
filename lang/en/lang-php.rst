@@ -62,7 +62,7 @@ php.ini
 
 We generally use a standard `php.ini` configuration with only slight modifications:
 
-.. code-block:: ini
+.. code-block:: none
  realpath_cache_ttl = 300
  max_execution_time = 600
  max_input_time = 600
