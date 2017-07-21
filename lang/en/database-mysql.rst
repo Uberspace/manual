@@ -159,10 +159,18 @@ This will also work over SSH - for example to dump a database on some other host
 
   [eliza@dolittle ~]$ ssh otheruser@some.other.host mysqldump otherdatabase | mysql eliza
 
-Barracuda File Format
-=====================
+Custom settings
+===============
+
+Barracuda file format
+---------------------
 
 We are using the newest MySQL file format, `Barracuda <https://mariadb.com/kb/en/mariadb/xtradbinnodb-file-format/>`_. For tables using none of the new features, the format is still Antelope.
+
+UTF-8
+-----
+
+The default encoding for MySQL is still ``latin-1´´, which can cause a lot of problems if you typically use Unicode characters and forget to explicitly set the encoding to UTF-8 every time. Therefore, we changed the default encoding to ``utf-8``.
 
 
 Connecting from outside
