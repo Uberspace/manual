@@ -70,7 +70,7 @@ We generally use a standard ``php.ini`` configuration with only slight modificat
  memory_limit = 256M
  date.timezone = Europe/Berlin
 
-This fits the needs of popular PHP software, such as Wordpress or Nextcloud, so they work out of the box and you don't have to create your own `php.ini` with these settings. We also set the timezone so error logs have the correct times.
+This fits the needs of popular PHP software, such as Wordpress or Nextcloud, so they work out of the box and you don't have to create your own ``php.ini`` with these settings. We also set the timezone so error logs have the correct times.
 
 .. 
   Connection to webserver
