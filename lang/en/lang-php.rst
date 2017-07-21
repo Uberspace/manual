@@ -57,6 +57,21 @@ Simply run
       with Zend OPcache v7.1.4, Copyright (c) 1999-2017, by Zend Technologies
   [eliza@dolittle ~]$ 
 
+php.ini
+=======
+
+We generally use a standard `php.ini` configuration with only slight modifications:
+
+.. code-block:: ini
+ realpath_cache_ttl = 300
+ max_execution_time = 600
+ max_input_time = 600
+ max_input_vars = 1500
+ memory_limit = 256M
+ date.timezone = Europe/Berlin
+
+This fits the needs of popular PHP software, such as Wordpress or Nextcloud, so they work out of the box and you don't have to create your own `php.ini` with these settings. We also set the timezone so error logs have the correct times.
+
 .. 
   Connection to webserver
   =======================
