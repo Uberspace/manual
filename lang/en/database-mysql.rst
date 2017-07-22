@@ -170,7 +170,7 @@ We are using the newest MySQL file format, `Barracuda <https://mariadb.com/kb/en
 UTF-8
 -----
 
-The default encoding for MySQL is still ``latin-1``, which can cause a lot of problems if you typically use Unicode characters and forget to explicitly set the encoding to UTF-8 every time. Therefore, we changed the default encoding to ``utf-8``.
+The default encoding for MySQL is still ``latin-1``, which can cause a lot of problems if you typically use Unicode characters and forget to explicitly set the encoding to UTF-8 every time. Therefore, we changed the default encoding to ``utf8mb4``, which enables you to use all ``UTF-8`` characters, including emojis😊.
 
 
 Connecting from outside
