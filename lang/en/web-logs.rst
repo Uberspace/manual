@@ -4,7 +4,7 @@
 Web server logs
 ###############
 
-The web server logs are disabled by default. Once you enable them, they are written to ``~/logs/`` in real-time.
+The web server logs are disabled by default. Once you enable them, they are written to ``/var/www/virtual/$USER/logs`` (so if your user name is `isabell`, this would be ``/var/www/virtual/isabell/logs``) in real-time.
 
 access_log
 ==========
@@ -42,7 +42,7 @@ error_log
 Enabling and disabling
 ----------------------
 
-At the moment, we only log PHP errors to ``/var/virtual/$USER/logs/error_log``. To enable or disable your error_logs, use these commands:
+At the moment, we only log PHP errors. To enable or disable your error_logs, use these commands:
 
 .. code-block:: bash
 
