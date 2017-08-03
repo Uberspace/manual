@@ -11,7 +11,7 @@ Create a Service
 
 To create a new service, place a ``.ini`` file for each new service in ``~/etc/services.d/``. So if you want to add a service called my-daemon that runs an executable located at ``~/bin/my-daemon``, place the file ``my-daemon.ini`` in ``~/etc/services.d/`` and edit it:
 
-.. code-block:: none
+.. code-block:: ini
 
  [program:my-daemon]
  command=~/bin/my-daemon
