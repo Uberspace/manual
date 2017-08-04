@@ -1,6 +1,21 @@
 # Changes in Uberspace 7
 This document will track major changes in the project.
 
+## [7.0.9] - 2017-08-02
+
+### Added
+* `access_log` and `error_log` can be enabled and disabled now.
+
+### Changed
+* We are using the newest MySQL file format [Barracuda](https://mariadb.com/kb/en/mariadb/xtradbinnodb-file-format/).
+* We are now using UTF-8 by default in MariaDB.
+* `access_log` and `error_log` are disabled by default.
+* We adapted php.ini settings for common CMSes: drupal, Typo3, Magento, owncloud
+
+### Fixed
+* Websocket proxy connections can divert random requests. It is not known what exactly causes apache to do this, but we strongly suspect a bug. For now the fix is deactivating `mod_proxy_wstunnel` for the connections to Apache.
+* A graceful restart in Apache causes it to not accept any new requests until all old requests have been finished. This causes the server to be unresponsive for an undefined amount of time in some cases. We now set `GracefulShutDownTimeout 5` in the Apache config.
+
 ## [7.0.8.1] - 2017-07-13
 
 ### Added
