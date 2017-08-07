@@ -8,7 +8,7 @@ This document will track major changes in the project.
 
 ### Changed
 * We are using the newest MySQL file format [Barracuda](https://mariadb.com/kb/en/mariadb/xtradbinnodb-file-format/).
-* We are now using UTF-8 by default in MariaDB.
+* We are now using `utf8mb4` by default in MariaDB.
 * `access_log` and `error_log` are disabled by default.
 * We adapted php.ini settings for common CMSes: drupal, Typo3, Magento, owncloud
 
