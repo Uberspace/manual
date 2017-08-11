@@ -1,0 +1,1 @@
+.. warning:: Some SFTP clients offer rudimentary “shells” to run commands on the server via SSH. While this may work for some non-interactive commands, it can cause problems when using interactive tools and other commands. We generally recommend to use a full-featured :ref:`ssh` client to run commands on the server.

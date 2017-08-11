@@ -23,6 +23,8 @@ we're here to help, and we're pretty sure you will get used to it quickly, never
 To connect to the shell of your account, Secure Shell (SSH) is the way to go.
 As a widely-used protocol it is supported by clients on basically all operating systems, even on smartphones.
 
+.. include:: includes/sftp-warning.rst
+
 .. _ssh-login-data:
 
 Login data
