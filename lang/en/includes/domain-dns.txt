@@ -1,6 +1,5 @@
-What Is DNS?
-============
+.. note::
 
-The Domain Name System (DNS) is a directory used to look up information about a host name. It usually includes at least a so-called A record, which contains the IPv4 address assigned to this host. The AAAA record does the same for IPv6 addresses. If the domain should be able to receive e-mails, a mail exchange server is specified in the MX record. 
+   The Domain Name System (DNS) is a directory used to look up information about a host name. It usually includes at least a so-called A record, which contains the IPv4 address assigned to this host. The AAAA record does the same for IPv6 addresses. If the domain should be able to receive e-mails, a mail exchange server is specified in the MX record. 
 
-There are other types of DNS records used to specify various services for this domain. Wikipedia provides a `list <https://en.wikipedia.org/wiki/List_of_DNS_record_types>`_ if you're curious.
+   There are other types of DNS records used to specify various services for this domain. Wikipedia provides a `list <https://en.wikipedia.org/wiki/List_of_DNS_record_types>`_ if you're curious.
