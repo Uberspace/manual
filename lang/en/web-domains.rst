@@ -4,8 +4,10 @@
 Domains
 #######
 
-Adding Your Domain
-==================
+.. include:: includes/domain-register.txt
+
+Setup
+=====
 
 In order to use a domain for web with your Uberspace, you need to first set it up using our ``uberspace-add-domain`` tool. You can only add fully qualified domain names (`FQDNs <https://en.wikipedia.org/wiki/Fully_qualified_domain_name>`_), wildcard domains are not available. All domains set up on a Uberspace account share the same :ref:`docroot`.
 
@@ -20,11 +22,9 @@ In order to use a domain for web with your Uberspace, you need to first set it u
 Once you've set up your domain using the uberspace-add-domain tool, the tool provides you with the ``A`` and ``AAAA`` records that need to be configured in your registrar's nameserver.
 
 .. include:: includes/domain-dns.txt
-.. include:: includes/domain-providers.txt
-.. include:: includes/domain-register.txt
 
-Deleting a Domain
-=================
+Removal
+=======
 
 To remove a domain, use the ``uberspace-del-domain`` tool:
 
@@ -33,8 +33,8 @@ To remove a domain, use the ``uberspace-del-domain`` tool:
  [isabell@philae ~]$ uberspace-del-domain -d isabell.example -w
  The server's configuration has been adapted.
 
-Listing Your Domains
-====================
+Listing
+=======
 
 If you want to find out which domains are currently set up for the web server on your Uberspace account, use the ``uberspace-list-domains`` command:
 
@@ -46,7 +46,5 @@ If you want to find out which domains are currently set up for the web server on
 
 This will list all domains and sub-domains currently set up for this account, including the default ``$USER.uber.space``.
 
-Where Do I Put My Files?
-========================
+.. include:: includes/domain-providers.txt
 
-All files that you want to publish under your domains belong in the :ref:`docroot`. Please refer to the :ref:`docroot` article for further details.
