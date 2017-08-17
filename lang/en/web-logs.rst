@@ -36,6 +36,8 @@ The ``access_log`` logs all connections to your website.
 
 Each entry contains the client's (redacted) IP address, date and time of the request, the actual HTTP request sent and the ``user agent``, i.e. the browser and operating system used by the client.
 
+.. _web-logs-error:
+
 error_log
 =========
 
