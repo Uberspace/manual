@@ -21,7 +21,7 @@ Versions
 
 Release types 
 -------------
-Each release branch of PHP is fully supported for two years from its initial stable release. During this period, reported bugs and security issues are fixed and are released in regular point releases. We provide all currently supported versions: 5.6, 7.0 and 7.1.
+Each release branch of PHP is fully supported for two years beginning with its initial stable release. We provide different point releases and apply security updates on a regular basis. Currently, these PHP versions are available: 5.6, 7.0 and 7.1.
 
 Standard version
 ----------------
@@ -102,7 +102,7 @@ We use the `PHP FastCGI Process Manager (FPM) <http://de2.php.net/manual/en/inst
 How to publish
 --------------
 
-Put your PHP files into your :ref:`DocumentRoot <docroot>`, the file extension should be ``.php``, for security reasons we don't parse PHP code in every file. 
+Put your PHP files into your :ref:`DocumentRoot <docroot>`. The file extension should be ``.php``. For security reasons we don't parse PHP code in every file. 
 
 ----
 
@@ -114,7 +114,7 @@ Configuration
 Provided configuration
 ----------------------
 
-We use a standard ``php.ini`` configuration with slight modifications to fit the needs of :ref:`popular software <php-popular-software>`:
+We use a standard ``php.ini`` configuration with minimal modifications to fit the needs of :ref:`popular software <php-popular-software>`:
 
 .. code-block:: ini
 
@@ -134,14 +134,14 @@ You can provide your own config files in ``~/etc/php.d``. All files with the ext
 
 .. tip:: You need to reload PHP whenever you change your configuration files: ``uberspace-restart-php`` checks your configuration for sanity and reloads your PHP instance.
 
-You can adjust `configuration directives <http://php.net/manual/en/ini.list.php>`_ for all modes: ``PHP_INI_SYSTEM``, ``PHP_INI_USER``, ``PHP_INI_PERDIR`` and ``PHP_INI_ALL``. YPut as many directives as you want into these files.
+You can adjust `configuration directives <http://php.net/manual/en/ini.list.php>`_ for all modes: ``PHP_INI_SYSTEM``, ``PHP_INI_USER``, ``PHP_INI_PERDIR`` and ``PHP_INI_ALL``. Put as many directives as you want into these files.
 
 Example
 ^^^^^^^
 
 .. sidebar:: Hint 
 
-  This example would work without ``uberspace-restart-php`` because the command line ``php`` reads the configuration at execution time. In order to use the configuration with the webserver you need to reload PHP-FPM.
+  This example would work without ``uberspace-restart-php`` because the command line ``php`` reads the configuration at execution time. The webserver runs PHP via a daemon that needs to be restarted to parse the new configuration.
 
 In the :ref:`configuration <php-provided-configuration>` we set ``timezone`` to ``Europe/Berlin``. Let's say you want to set the timezone directive to ``UTC``: Create a file ``~/etc/php.d/timezone.ini`` with your new settings and reload your configuration.
 
@@ -213,5 +213,5 @@ Popular software
 Debugging
 =========
 
-* If you need to debug your PHP application, the :ref:`errorlog <web-logs-error>` is a good place to start.
+* If you want to debug your PHP application, the :ref:`errorlog <web-logs-error>` is a good place to start.
 * Make sure your application is compatible with the :ref:`selected PHP version <php-change-version>`.
