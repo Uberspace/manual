@@ -19,7 +19,7 @@ PHP is a server-side scripting language designed primarily for web development b
 Versions
 ========
 
-Release Types 
+Release types 
 -------------
 Each release branch of PHP is fully supported for two years from its initial stable release. During this period, reported bugs and security issues are fixed and are released in regular point releases. We provide all currently supported versions: 5.6, 7.0 and 7.1.
 
@@ -56,7 +56,7 @@ If you always want to use the latest and greatest PHP 7 (e.g. PHP 7.1, PHP 7.2, 
   The new configuration is adapted immediately. Minor updates will be applied automatically.
   [eliza@dolittle ~]$ 
 
-selected version
+Selected version
 ----------------
 
 Simply run
@@ -69,7 +69,7 @@ Simply run
   Zend Engine v3.1.0, Copyright (c) 1998-2017 Zend Technologies
       with Zend OPcache v7.1.4, Copyright (c) 1999-2017, by Zend Technologies
 
-Update Policy
+Update policy
 -------------
 
 We update all versions on a regular basis. Once the `security support <http://php.net/supported-versions.php>`_ ends, the branch reaches its end of life, is no longer supported and will be removed from our servers.
@@ -111,7 +111,7 @@ Configuration
 
 .. _php-provided-configuration:
 
-provided configuration
+Provided configuration
 ----------------------
 
 We use a standard ``php.ini`` configuration with slight modifications to fit the needs of :ref:`popular software <php-popular-software>`:
@@ -127,7 +127,7 @@ We use a standard ``php.ini`` configuration with slight modifications to fit the
 
 We also set the timezone so error logs have the correct times.
 
-own configuration
+Own configuration
 -----------------
 
 You can provide your own config files in ``~/etc/php.d``. All files with the extension ``.ini`` will be loaded *additionally* to the stock configuration and existing directives will be overridden.
@@ -168,8 +168,7 @@ In this case fix the value and run ``uberspace-restart-php`` again.
  
  PHP Warning:  Unknown: Invalid date.timezone value 'idontexist', we selected the timezone 'UTC' for now. in Unknown on line 0
 
-
-provided modules
+Provided modules
 ----------------
 
 We provide the following modules:
