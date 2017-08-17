@@ -59,7 +59,7 @@ If you always want to use the latest and greatest PHP 7 (e.g. PHP 7.1, PHP 7.2, 
 selected version
 ----------------
 
-Simply run
+You can check the selected version by executing ``php`` on the command line:
 
 .. code-block:: console
 
@@ -102,7 +102,7 @@ We use the `PHP FastCGI Process Manager (FPM) <http://de2.php.net/manual/en/inst
 How to publish
 --------------
 
-Simply put your PHP files into your :ref:`DocumentRoot <docroot>`, the file extension should be ``.php``, for security reasons we don't parse PHP code in every file. 
+Put your PHP files into your :ref:`DocumentRoot <docroot>`, the file extension should be ``.php``, for security reasons we don't parse PHP code in every file. 
 
 ----
 
