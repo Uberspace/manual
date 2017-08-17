@@ -1,6 +1,13 @@
 # Changes in Uberspace 7
 This document will track major changes in the project.
 
+## [7.0.10] - 2017-08-17
+
+### Added
+* We now have a webmail interface.
+* Users are now able to provide their own `php.ini` files that are loaded in addition to the stock config.
+* Incoming mails are filtered with the `ix.dnsbl.manitu.net` and `bl.spamcop.net` blacklists to reduce SPAM.
+
 ## [7.0.9] - 2017-08-02
 
 ### Added
