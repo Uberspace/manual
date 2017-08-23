@@ -4,12 +4,14 @@
 Domains
 #######
 
+Every Uberspace account gets its own domain in the form of ``$USER.$SERVER.uberspace.de``. You can setup as many additional domains as you like.
+
 .. include:: includes/domain-register.txt
 
 Setup
 =====
 
-In order to use a domain for web with your Uberspace, you need to first set it up using our ``uberspace-add-domain`` tool. You can only add fully qualified domain names (`FQDNs <https://en.wikipedia.org/wiki/Fully_qualified_domain_name>`_), wildcard domains are not available. All domains set up on a Uberspace account share the same :ref:`docroot`.
+In order to use your own domain for web with your Uberspace, you need to first set it up using our ``uberspace-add-domain`` tool. You can only add fully qualified domain names (`FQDNs <https://en.wikipedia.org/wiki/Fully_qualified_domain_name>`_), wildcard domains are not available. All domains set up on a Uberspace account share the same :ref:`docroot`.
 
 .. code-block:: shell
 
