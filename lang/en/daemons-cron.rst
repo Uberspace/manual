@@ -1,5 +1,4 @@
 .. _cron:
-<<<<<<< lang/en/daemons-cron.rst
 
 ####
 Cron
@@ -153,5 +152,3 @@ To append the log file, use ``>>``:
 .. code-block:: none
 
  15 * * * * /path/to/your/job/script.pl >> /path/to/your/logfile 2>&1
-=======
->>>>>>> lang/en/daemons-cron.rst
