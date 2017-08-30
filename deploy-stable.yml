@@ -21,6 +21,9 @@
       copy: 
         content: |
           RewriteEngine On
+          RewriteCond %{HTTPS} !=on
+          RewriteCond %{ENV:HTTPS} !=on
+          RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
           RewriteRule ^$ /en/ [R]
         dest: "/var/www/virtual/{{ manual_user }}/html/.htaccess"
 
