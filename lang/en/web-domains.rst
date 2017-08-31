@@ -4,7 +4,7 @@
 Domains
 #######
 
-Every Uberspace account gets its own domain in the form of ``$USER.$SERVER.uberspace.de``. You can setup as many additional domains as you like.
+Every Uberspace account gets its own domain in the form of ``$USER.uber.space``. You can setup as many additional domains as you like.
 
 .. include:: includes/domain-register.txt
 
