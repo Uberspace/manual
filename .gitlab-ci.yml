@@ -1,5 +1,5 @@
 ---
-image: uberspace/ansible:ansible-2.1
+image: uberspace/ansible:2.1
 
 variables:
   SSH_KEY_PATH: /tmp/.ssh-key
