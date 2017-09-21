@@ -1,6 +1,14 @@
 # Changes in Uberspace 7
 This document will track major changes in the project.
 
+## [7.0.11] - 2017-09-21
+
+### Added
+* `$user.uber.space`-domains in addition to `$user.server.uberspace.de`-domains.
+
+### Changed
+* Webserver logs are now stored in `~/logs/webserver`
+
 ## [7.0.10] - 2017-08-17
 
 ### Added
