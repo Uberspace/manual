@@ -11,11 +11,11 @@ Every Uberspace account gets its own domain in the form of ``$USER.uber.space``.
 Setup
 =====
 
-In order to use your own domain for web with your Uberspace, you need to first set it up using our ``uberspace-add-domain`` tool. You can only add fully qualified domain names (`FQDNs <https://en.wikipedia.org/wiki/Fully_qualified_domain_name>`_), wildcard domains are not available. All domains set up on a Uberspace account share the same :ref:`docroot`.
+In order to use your own domain for web with your Uberspace, you need to first set it up using our ``uberspace`` tool. You can only add fully qualified domain names (`FQDNs <https://en.wikipedia.org/wiki/Fully_qualified_domain_name>`_), wildcard domains are not available. All domains set up on a Uberspace account share the same :ref:`docroot`.
 
 .. code-block:: shell
 
- [isabell@philae ~]$ uberspace-add-domain -d isabell.example -w
+ [isabell@philae ~]$ uberspace web domain add -d isabell.example
  The webserver's configuration has been adpated.
  Now you can use the following records for your dns:
      A -> 185.26.156.55
@@ -32,17 +32,17 @@ To remove a domain, use the ``uberspace-del-domain`` tool:
 
 .. code-block:: shell
 
- [isabell@philae ~]$ uberspace-del-domain -d isabell.example -w
+ [isabell@philae ~]$ uberspace web domain del -d isabell.example
  The server's configuration has been adapted.
 
 Listing
 =======
 
-If you want to find out which domains are currently set up for the web server on your Uberspace account, use the ``uberspace-list-domains`` command:
+If you want to find out which domains are currently set up for the web server on your Uberspace account, use the ``uberspace`` command:
 
 .. code-block:: shell
 
- [isabell@philae ~]$ uberspace-list-domains -w
+ [isabell@philae ~]$ uberspace web domain list
  isabell.example
  isabell.uber.space
 
