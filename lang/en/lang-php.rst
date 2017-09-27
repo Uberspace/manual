@@ -31,18 +31,18 @@ If you don't select a certain version, our default will be used. We decided to d
 
 Change version
 --------------
-You can select the PHP version with :code:`uberspace-select-version php <version>`. You can choose between release branches:
+You can select the PHP version with :code:`uberspace tools version use php <version>`. You can choose between release branches:
 
 .. code-block:: console
 
-  [eliza@dolittle ~]$ uberspace-select-version php 7.1
+  [eliza@dolittle ~]$ uberspace tools version use php 7.1
   Selected PHP version 7.1
   The new configuration is adapted immediately. Patch updates will be applied automatically.
   [eliza@dolittle ~]$ 
 
 .. code-block:: console
 
-  [eliza@dolittle ~]$ uberspace-select-version php 5.6
+  [eliza@dolittle ~]$ uberspace tools version use php 5.6
   Selected PHP version 5.6
   The new configuration is adapted immediately. Patch updates will be applied automatically.
   [eliza@dolittle ~]$ 
@@ -51,7 +51,7 @@ If you always want to use the latest and greatest PHP 7 (e.g. PHP 7.1, PHP 7.2, 
 
 .. code-block:: console
 
-  [eliza@dolittle ~]$ uberspace-select-version php 7
+  [eliza@dolittle ~]$ uberspace tools version use php 7
   Selected PHP version 7
   The new configuration is adapted immediately. Minor updates will be applied automatically.
   [eliza@dolittle ~]$ 
