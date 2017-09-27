@@ -4,7 +4,7 @@
 Web server logs
 ###############
 
-The web server logs are disabled by default. Once you enable them, they are written to ``/var/www/virtual/$USER/logs`` (so if your user name is `isabell`, this would be ``/var/www/virtual/isabell/logs``) in real-time.
+The web server logs are disabled by default. Once you enable them, they are written to ``/home/$USER/logs/webserver`` (so if your user name is `isabell`, this would be ``/home/isabell/logs/webserver``) in real-time.
 
 access_log
 ==========
@@ -16,13 +16,13 @@ To enable or disable your access_log, use these commands:
 
 .. code-block:: bash
 
- [isabell@doolittle ~]$ uberspace-configure-access_log enable
+ [isabell@doolittle ~]$ uberspace-configure-log enable
  access_log is enabled.
- [isabell@doolittle ~]$ uberspace-configure-access_log status
+ [isabell@doolittle ~]$ uberspace-configure-log access status
  access_log is enabled.
- [isabell@doolittle ~]$ uberspace-configure-access_log disable
+ [isabell@doolittle ~]$ uberspace-configure-log access disable
  access_log is disabled.
- [isabell@doolittle ~]$ uberspace-configure-access_log status
+ [isabell@doolittle ~]$ uberspace-configure-log access status
  access_log is disabled.
 
 Contents of the access_log
@@ -48,13 +48,13 @@ At the moment, we only log PHP errors. To enable or disable your error_logs, use
 
 .. code-block:: bash
 
- [isabell@doolittle ~]$ uberspace-configure-error_log enable
+ [isabell@doolittle ~]$ uberspace-configure-log error enable
  error_log is enabled.
- [isabell@doolittle ~]$ uberspace-configure-error_log status
+ [isabell@doolittle ~]$ uberspace-configure-log error status
  error_log is enabled
- [isabell@doolittle ~]$ uberspace-configure-error_log disable
+ [isabell@doolittle ~]$ uberspace-configure-log error disable
  error_log is disabled.
- [isabell@doolittle ~]$ uberspace-configure-error_log status
+ [isabell@doolittle ~]$ uberspace-configure-log error status
  error_log is disabled.
 
 Contents of the error_log
