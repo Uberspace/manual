@@ -16,7 +16,7 @@ To enable or disable your access_log, use these commands:
 
 .. code-block:: bash
 
- [isabell@doolittle ~]$ uberspace-configure-log enable
+ [isabell@doolittle ~]$ uberspace-configure-log access enable
  access_log is enabled.
  [isabell@doolittle ~]$ uberspace-configure-log access status
  access_log is enabled.
