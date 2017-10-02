@@ -4,13 +4,6 @@
 Accessing Your Mails
 ####################
 
-Webmail
-=======
-
-Each Uberspace server has its own `rainloop <http://www.rainloop.net>`_ webmail interface. 
-
-Point your browser to webmail.<\ :term:`your Hostname`\ >.uberspace.de and login with your credentials. 
-
 Client settings
 ===============
 
