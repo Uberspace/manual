@@ -185,7 +185,7 @@ Using OpenSSH
 ~~~~~~~~~~~~~
 
 Generate a key pair on your local system - you can safely accept the default filename if you don't have a key pair yet.
-You have two enter a passphrase **blindly**, this is correct and intended. You have to enter it twice to make sure it's entered without any typos.
+You have to enter a passphrase **blindly**, this is correct and intended. You have to enter it twice to make sure it's entered without any typos.
 
 .. code-block:: console
 
