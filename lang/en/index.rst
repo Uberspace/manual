@@ -6,6 +6,9 @@ Nice to have you!
 
 Our goal is to make it as easy as possible for you to get stuff done, so let's jump into the details.
 
+Check out our glossary :ref:`glossary <genindex>` and the :ref:`changelog`.
+
+
 .. toctree::
    :hidden:
    :maxdepth: 1
@@ -81,12 +84,3 @@ Our goal is to make it as easy as possible for you to get stuff done, so let's j
    :caption: Meta
 
    Changelog <changelog>
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
