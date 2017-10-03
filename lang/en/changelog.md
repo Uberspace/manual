@@ -1,6 +1,28 @@
 # Changes in Uberspace 7
 This document will track major changes in the project.
 
+🎉 [Public Beta!](https://blog.uberspace.de/wip-die-u7-public-beta/) 🎉
+
+## [7.0.12] - 2017-03-10
+
+### Added
+
+* The Dashboard can now talk to the Uberspace 7 servers, create users, delete users and change passwords.
+* We now provide `lynx`, `w3m`.
+* New PHP extensions: `soap` and `posix`.
+
+### Changed
+
+* We increased the maximum concurrent webserver connections from each IP address to 15 with a burst of 150 for a short period to be within the [HTTP/2](https://stackoverflow.com/questions/39759054/how-many-concurrent-requests-should-we-multiplex-in-http-2/39761194#39761194) specification.
+* The webmail interface used to be reachable via `webmail.servername.uberspace.de` and we got the certificates from Let's Encrypt. Unfortunatelly we ran into the [rate limiting](https://letsencrypt.org/docs/rate-limits/) and can't get any certificates for `uberspace.de` anymore. For now we had to disable the webmail interface and we will look into the issus to find a workaround. On the bright side we had to refactor the certificate deployment process and so far it's rock solid 😎.
+
+### Fixed
+
+* Composer sees that `/bin/php` is a symlink and directly calls the symlink target instead of `/bin/php`. The result was that our wrapper doesn't know it's supposed to execute php. Using a hardlink instead of a symlink fixed it.
+* `something.uber.space` can't be added via `uberspace-add-domain` anymore.
+* HTTP basic auth headers are now passed to PHP.
+* Adding a domain to the email configuration didn't trigger a qmail reload. 
+
 ## [7.0.11] - 2017-09-21
 
 ### Added
