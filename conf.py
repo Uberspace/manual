@@ -31,6 +31,7 @@ html_last_updated_fmt = '%b %d, %Y'
 html_context = {
   'css_files': ['_static/css/custom.css'],
 }
+html_show_copyright = False
 
 # settings for versioning
 # https://robpol86.github.io/sphinxcontrib-versioning/settings.html#cmdoption-b

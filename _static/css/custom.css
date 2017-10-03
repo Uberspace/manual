@@ -6,6 +6,10 @@
   background-size: 70%;
 }
 
+.document {
+  min-height: 500px;
+}
+
 footer {
   text-align: center;
   font-size: 80%;
