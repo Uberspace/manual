@@ -15,6 +15,7 @@ This document will track major changes in the project.
 
 * We increased the maximum concurrent webserver connections from each IP address to 15 with a burst of 150 for a short period to be within the [HTTP/2](https://stackoverflow.com/questions/39759054/how-many-concurrent-requests-should-we-multiplex-in-http-2/39761194#39761194) specification.
 * The webmail interface used to be reachable via `webmail.servername.uberspace.de` and we got the certificates from Let's Encrypt. Unfortunatelly we ran into the [rate limiting](https://letsencrypt.org/docs/rate-limits/) and can't get any certificates for `uberspace.de` anymore. For now we had to disable the webmail interface and we will look into the issus to find a workaround. On the bright side we had to refactor the certificate deployment process and so far it's rock solid 😎.
+* We did some work on the manual.
 
 ### Fixed
 
