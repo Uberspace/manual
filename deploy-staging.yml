@@ -20,7 +20,6 @@
         delete: yes
       with_items:
         - en
-        - de
 
     - name: create .htaccess
       copy: 
