@@ -10,6 +10,3 @@
 
     - name: Make Sphinx docs en
       command: sphinx-versioning build lang/en _build/html/en
-
-    - name: Make Sphinx docs de
-      command: sphinx-versioning build lang/de _build/html/de
