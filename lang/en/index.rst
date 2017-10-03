@@ -1,12 +1,16 @@
-########################
-Welcome to Uberspace! 🚀
-########################
+#####################
+Welcome to Uberspace!
+#####################
 
 Nice to have you!
 
 Our goal is to make it as easy as possible for you to get stuff done, so let's jump into the details.
 
+Check out the :ref:`glossary <genindex>` and the :doc:`changelog`.
+
+
 .. toctree::
+   :hidden:
    :maxdepth: 1
    :caption: Your first day
 
@@ -15,6 +19,7 @@ Our goal is to make it as easy as possible for you to get stuff done, so let's j
    for nerds <firstday-nerds>
 
 .. toctree::
+   :hidden:
    :maxdepth: 1
    :caption: Basics
 
@@ -26,6 +31,7 @@ Our goal is to make it as easy as possible for you to get stuff done, so let's j
    shell <basics-shell>
 
 .. toctree::
+   :hidden:
    :maxdepth: 1
    :caption: Web
 
@@ -36,6 +42,7 @@ Our goal is to make it as easy as possible for you to get stuff done, so let's j
    logs <web-logs>
 
 .. toctree::
+   :hidden:
    :maxdepth: 1
    :caption: Mail
 
@@ -46,12 +53,14 @@ Our goal is to make it as easy as possible for you to get stuff done, so let's j
    filtering <mail-filter>
 
 .. toctree::
+   :hidden:
    :maxdepth: 1
    :caption: Database
 
    MySQL <database-mysql>
 
 .. toctree::
+   :hidden:
    :maxdepth: 1
    :caption: Programming languages
 
@@ -61,6 +70,7 @@ Our goal is to make it as easy as possible for you to get stuff done, so let's j
    Ruby <lang-ruby>
 
 .. toctree::
+   :hidden:
    :maxdepth: 1
    :caption: Daemons
 
@@ -69,16 +79,8 @@ Our goal is to make it as easy as possible for you to get stuff done, so let's j
    runwhen <daemons-runwhen>
 
 .. toctree::
+   :hidden:
    :maxdepth: 1
    :caption: Meta
 
    Changelog <changelog>
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
