@@ -6,7 +6,7 @@ Nice to have you!
 
 Our goal is to make it as easy as possible for you to get stuff done, so let's jump into the details.
 
-Check out our glossary :ref:`glossary <genindex>` and the :ref:`changelog`.
+Check out the :ref:`glossary <genindex>` and the :doc:`changelog`.
 
 
 .. toctree::
