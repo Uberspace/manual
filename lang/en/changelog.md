@@ -1,12 +1,11 @@
 # Changes in Uberspace 7
 This document will track major changes in the project.
 
-🎉 [Public Beta!](https://blog.uberspace.de/wip-die-u7-public-beta/) 🎉
-
-## [7.0.12] - 2017-03-10
+## [7.0.12] - 2017-10-03
 
 ### Added
 
+* 🎉 [Public Beta!](https://blog.uberspace.de/wip-die-u7-public-beta/) 🎉
 * The Dashboard can now talk to the Uberspace 7 servers, create users, delete users and change passwords.
 * We now provide `lynx`, `w3m`.
 * New PHP extensions: `soap` and `posix`.
