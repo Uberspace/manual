@@ -53,9 +53,9 @@ nav li {
   padding-left: 10px;
 }
 
-/* make sure menu is always visible, even with version switcher */
+/* ensure that the last link in menu is not covered by the version chooser */
 .wy-nav-side {
-  padding-bottom: 3em, 0em;
+  padding-bottom: 3em;
 }
 
 /* search box */
