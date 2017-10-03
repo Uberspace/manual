@@ -45,6 +45,10 @@ footer {
   color:  #999999;
 }
 
+nav li {
+  padding-left: 10px;
+}
+
 /* make sure menu is always visible, even with version switcher */
 .wy-nav-side {
   padding-bottom: 3em, 0em;
