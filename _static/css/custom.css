@@ -1,16 +1,4 @@
-
-.wy-side-nav-search {
-  padding-top: 170px;
-  background-image: url("../images/rocket.svg");
-  background-position: top;
-  background-repeat: no-repeat; 
-  background-color: #222222;
-}
-
-.wy-nav-side {
-  padding-bottom: 3em, 0em;
-}
-
+/* footer */
 .wy-nav-content {
   background-image: url("../images/footer.svg");
   background-position: bottom;
@@ -24,12 +12,13 @@ footer {
   color: #222222;
 }
 
-.wy-side-nav-search img {
-  background-color: #e2001a;
-}
-
-.wy-side-nav-search input[type=text] {
-  border-color: #84000f;
+/* navigation */
+.wy-side-nav-search {
+  padding-top: 170px;
+  background-image: url("../images/rocket.svg");
+  background-position: top;
+  background-repeat: no-repeat; 
+  background-color: #222222;
 }
 
 .wy-menu-vertical a:active {
@@ -56,3 +45,12 @@ footer {
   color:  #999999;
 }
 
+/* make sure menu is always visible, even with version switcher */
+.wy-nav-side {
+  padding-bottom: 3em, 0em;
+}
+
+/* search box */
+.wy-side-nav-search input[type=text] {
+  border-color: #84000f;
+}
