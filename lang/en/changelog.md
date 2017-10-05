@@ -1,6 +1,16 @@
 # Changes in Uberspace 7
 This document will track major changes in the project.
 
+## [7.0.13] - 2017-10-05
+
+### Changed
+
+* Several users ran into `429` errors. We removed the connection limits for now and will look into that later. 
+
+### Fixed
+
+* Apache and PHP: `ProxyPassMatch` directives are evaluated first, this brings several problems: for instance `.htaccess` files can't be evaluated anymore before the PHP scripts are run. Using `FilesMatch` and `SetHandler` solves the issue.
+
 ## [7.0.12] - 2017-10-03
 
 ### Added
