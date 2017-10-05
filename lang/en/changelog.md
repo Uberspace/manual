@@ -5,7 +5,7 @@ This document will track major changes in the project.
 
 ### Changed
 
-* Several users ran into `429` errors. We removed the connection limits for now and will look into that later. 
+* Webserver: Several users ran into `429` errors. We removed the connection limits for now and will look into that later. 
 
 ### Fixed
 
