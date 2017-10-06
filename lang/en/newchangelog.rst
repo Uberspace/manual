@@ -150,7 +150,7 @@ Backstage
 * We've upgraded all ``uberspace-`` scripts to [paternoster v2](github.com/uberspace/paternoster).
 * Since ``te512042.019e71729061e1f03aef698f89da225d00559bbd-1310.testing.ubrspc.de`` is not a very handy hostname, we now use shorter ones like ``565743.vagrant.ubrspc.de`` within our testing setup.
 * Nginx rightly complained about a duplicated MIME type in our config. We learned that ``text/html`` is implied, so we no longer add it to the list of gzip-able files explictly.
-* A `bug within ``vagrant-google`` <https://github.com/mitchellh/vagrant-google/issues/159>`_ caused our workflows to be a bit cumbersome. So we `fixed it <https://github.com/mitchellh/vagrant-google/pull/167>`_.
+* A `bug within vagrant-google <https://github.com/mitchellh/vagrant-google/issues/159>`_ caused our workflows to be a bit cumbersome. So we `fixed it <https://github.com/mitchellh/vagrant-google/pull/167>`_.
 * An oversight caused us to issue certificates with non-unique serial numbers during testing. While those certificates never reached production, they're more random now.
 
 ----
