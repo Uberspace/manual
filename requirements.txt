@@ -4,3 +4,4 @@ sphinx_rtd_theme
 sphinxcontrib-programoutput
 sphinxcontrib-versioning
 sphinxcontrib-versioning
+recommonmark
