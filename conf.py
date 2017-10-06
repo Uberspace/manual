@@ -1,12 +1,8 @@
 # general settings
 import sphinx_rtd_theme
 
-source_parsers = {
-   '.md': 'recommonmark.parser.CommonMarkParser',
-}
-
 templates_path = ['_templates']
-source_suffix = ['.rst', '.md']
+source_suffix = ['.rst']
 master_doc = 'index'
 project = 'Uberspace 7 manual'
 copyright = '2017, Uberspace.de'
