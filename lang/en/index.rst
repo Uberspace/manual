@@ -84,3 +84,4 @@ Check out the :ref:`glossary <genindex>` and the :doc:`changelog`.
    :caption: Meta
 
    Changelog <changelog>
+   New Changelog <changelogrst>
