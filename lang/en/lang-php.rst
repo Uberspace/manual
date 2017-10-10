@@ -47,15 +47,6 @@ You can select the PHP version with :code:`uberspace tools version use php <vers
   The new configuration is adapted immediately. Patch updates will be applied automatically.
   [eliza@dolittle ~]$ 
 
-If you always want to use the latest and greatest PHP 7 (e.g. PHP 7.1, PHP 7.2, PHP 7.3, ...), use the following command:
-
-.. code-block:: console
-
-  [eliza@dolittle ~]$ uberspace tools version use php 7
-  Selected PHP version 7
-  The new configuration is adapted immediately. Minor updates will be applied automatically.
-  [eliza@dolittle ~]$ 
-
 Selected version
 ----------------
 
