@@ -1,13 +1,28 @@
-#####################
-Welcome to Uberspace!
-#####################
+  .. image:: ../../images/big-rocket.svg
+      :align: right
 
-Nice to have you!
+##################
+Uberspace 7 manual
+##################
 
-Our goal is to make it as easy as possible for you to get stuff done, so let's jump into the details.
+Uberspace is a hosting platform targeted at people who want to look behind the scenes, do things we didn’t anticipate and generally prefer working with a text-based console. Our objective is to not only host the content you’d like to see on the web, but also to introduce you to Linux and basic shell usage.
 
-Check out the :ref:`glossary <genindex>` and the :doc:`changelog`.
+----
 
+Version |release| Changelog:
+============================
+
+.. container:: 
+
+   .. include:: changelog.rst
+      :start-after: .. _lastchange:
+      :end-before: .. _oldentries:
+
+   Released |today|.
+
+   For more information see the :doc:`full changelog <changelog>`.
+
+.. note:: Please keep in mind that Uberspace 7 is considered **beta**.
 
 .. toctree::
    :hidden:
