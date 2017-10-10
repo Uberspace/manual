@@ -13,7 +13,7 @@ In order to use your own domain for mail with your Uberspace, you need to first 
 
 .. code-block:: shell
 
- [isabell@philae ~]$ uberspace mail domain add -d isabell.example
+ [isabell@philae ~]$ uberspace mail domain add isabell.example
  The mailserver's configuration has been adapted.
  Now you can use the following record for your dns:
    MX -> philae.uberspace.de
@@ -29,7 +29,7 @@ To remove a domain, use the ``uberspace`` tool:
 
 .. code-block:: shell
 
- [isabell@philae ~]$ uberspace mail domain del -d isabell.example 
+ [isabell@philae ~]$ uberspace mail domain del isabell.example 
  The server's configuration has been adapted.
 
 Listing

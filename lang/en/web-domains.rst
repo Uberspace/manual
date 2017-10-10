@@ -15,24 +15,24 @@ In order to use your own domain for web with your Uberspace, you need to first s
 
 .. code-block:: shell
 
- [isabell@philae ~]$ uberspace web domain add -d isabell.example
+ [isabell@philae ~]$ uberspace web domain add isabell.example
  The webserver's configuration has been adpated.
  Now you can use the following records for your dns:
      A -> 185.26.156.55
      AAAA -> 2a00:d0c0:200:0:b9:1a:9c:37
 
-Once you've set up your domain using the uberspace-add-domain tool, the tool provides you with the ``A`` and ``AAAA`` records that need to be configured in your registrar's nameserver.
+Once you've set up your domain using the ``uberspace`` tool, the tool provides you with the ``A`` and ``AAAA`` records that need to be configured in your registrar's nameserver.
 
 .. include:: includes/domain-dns.txt
 
 Removal
 =======
 
-To remove a domain, use the ``uberspace-del-domain`` tool:
+To remove a domain, use the ``uberspace`` tool:
 
 .. code-block:: shell
 
- [isabell@philae ~]$ uberspace web domain del -d isabell.example
+ [isabell@philae ~]$ uberspace web domain del isabell.example
  The server's configuration has been adapted.
 
 Listing
