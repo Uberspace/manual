@@ -8,6 +8,12 @@ Our goal is to make it as easy as possible for you to get stuff done, so let's j
 
 Check out the :ref:`glossary <genindex>` and the :doc:`changelog`.
 
+----
+
+.. include:: changelog.rst
+   start-after: ----
+   end-before: ----
+
 
 .. toctree::
    :hidden:

@@ -8,8 +8,6 @@ This document will track major changes in the project.
 
 ----
 
-.. _lastchange:
-
 [7.0.14] - 2017-10-10
 =====================
 
