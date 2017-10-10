@@ -29,7 +29,7 @@ Changed
 Fixed
 -----
 
-* ``uberspace domain web list`` now includes ``user.uber.space``.
+* ``uberspace web domain list`` now includes ``user.uber.space``.
 *  We did not apply the MySQL config file properly, therefore ``innodb_file_format`` was not set. It is ``Barracuda`` now.
 
 ----
