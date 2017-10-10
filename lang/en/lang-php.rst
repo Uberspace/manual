@@ -31,18 +31,18 @@ If you don't select a certain version, our default will be used. We decided to d
 
 Change version
 --------------
-You can select the PHP version with :code:`uberspace-select-version php <version>`. You can choose between release branches:
+You can select the PHP version with :code:`uberspace tools version use php <version>`. You can choose between release branches:
 
 .. code-block:: console
 
-  [eliza@dolittle ~]$ uberspace-select-version php 7.1
+  [eliza@dolittle ~]$ uberspace tools version use php 7.1
   Selected PHP version 7.1
   The new configuration is adapted immediately. Patch updates will be applied automatically.
   [eliza@dolittle ~]$ 
 
 .. code-block:: console
 
-  [eliza@dolittle ~]$ uberspace-select-version php 5.6
+  [eliza@dolittle ~]$ uberspace tools version use php 5.6
   Selected PHP version 5.6
   The new configuration is adapted immediately. Patch updates will be applied automatically.
   [eliza@dolittle ~]$ 
@@ -51,7 +51,7 @@ If you always want to use the latest and greatest PHP 7 (e.g. PHP 7.1, PHP 7.2, 
 
 .. code-block:: console
 
-  [eliza@dolittle ~]$ uberspace-select-version php 7
+  [eliza@dolittle ~]$ uberspace tools version use php 7
   Selected PHP version 7
   The new configuration is adapted immediately. Minor updates will be applied automatically.
   [eliza@dolittle ~]$ 
@@ -132,7 +132,7 @@ Own configuration
 
 You can provide your own config files in ``~/etc/php.d``. All files with the extension ``.ini`` will be loaded *additionally* to the stock configuration and existing directives will be overridden.
 
-.. tip:: You need to reload PHP whenever you change your configuration files: ``uberspace-restart-php`` checks your configuration for sanity and reloads your PHP instance.
+.. tip:: You need to reload PHP whenever you change your configuration files: ``uberspace tools reload php`` checks your configuration for sanity and reloads your PHP instance.
 
 You can adjust `configuration directives <http://php.net/manual/en/ini.list.php>`_ for all modes: ``PHP_INI_SYSTEM``, ``PHP_INI_USER``, ``PHP_INI_PERDIR`` and ``PHP_INI_ALL``. Put as many directives as you want into these files.
 
@@ -141,20 +141,20 @@ Example
 
 .. sidebar:: Hint 
 
-  This example would work without ``uberspace-restart-php`` because the command line ``php`` reads the configuration at execution time. The webserver runs PHP via a daemon that needs to be restarted to parse the new configuration.
+  This example would work without ``uberspace tools reload php`` because the command line ``php`` reads the configuration at execution time. The webserver runs PHP via a daemon that needs to be restarted to parse the new configuration.
 
 In the :ref:`configuration <php-provided-configuration>` we set ``timezone`` to ``Europe/Berlin``. Let's say you want to set the timezone directive to ``UTC``: Create a file ``~/etc/php.d/timezone.ini`` with your new settings and reload your configuration.
 
-When there is an error in your configuration, ``uberspace-restart-php`` tells you what to do. In this case we won't reload your configuration to make sure the invalid configuration does not break your PHP setup.
+When there is an error in your configuration, ``uberspace tools reload php`` tells you what to do. In this case we won't reload your configuration to make sure the invalid configuration does not break your PHP setup.
 
-In this case fix the value and run ``uberspace-restart-php`` again.
+In this case fix the value and run ``uberspace tools reload php`` again.
 
 .. code-block:: console
 
  [eliza@dolittle ~]$ php -i | grep date.timezone
  date.timezone => Europe/Berlin => Europe/Berlin
  [eliza@dolittle ~]$ echo "date.timezone = UTC" > ~/etc/php.d/timezone.ini
- [eliza@dolittle ~]$ uberspace-restart-php 
+ [eliza@dolittle ~]$ uberspace tools reload php
  Your php configuration has been loaded.
  [eliza@dolittle ~]$ php -i | grep date.timezone
  date.timezone => UTC => UTC 
@@ -163,7 +163,7 @@ In this case fix the value and run ``uberspace-restart-php`` again.
 
  [eliza@dolittle ~]$ cat ~/etc/php.d/timezone.ini 
  date.timezone = idontexist
- [eliza@dolittle ~]$ uberspace-restart-php 
+ [eliza@dolittle ~]$ uberspace tools reload php
  Your php configuration is invalid an cannot be loaded. Please examine the following output.
  
  PHP Warning:  Unknown: Invalid date.timezone value 'idontexist', we selected the timezone 'UTC' for now. in Unknown on line 0

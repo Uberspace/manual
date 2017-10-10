@@ -16,13 +16,13 @@ To enable or disable your access_log, use these commands:
 
 .. code-block:: bash
 
- [isabell@doolittle ~]$ uberspace-configure-log access enable
+ [isabell@doolittle ~]$ uberspace web log access enable
  access_log is enabled.
- [isabell@doolittle ~]$ uberspace-configure-log access status
+ [isabell@doolittle ~]$ uberspace web log access status
  access_log is enabled.
- [isabell@doolittle ~]$ uberspace-configure-log access disable
+ [isabell@doolittle ~]$ uberspace web log access disable
  access_log is disabled.
- [isabell@doolittle ~]$ uberspace-configure-log access status
+ [isabell@doolittle ~]$ uberspace web log access status
  access_log is disabled.
 
 Contents of the access_log
@@ -48,13 +48,13 @@ At the moment, we only log PHP errors. To enable or disable your error_logs, use
 
 .. code-block:: bash
 
- [isabell@doolittle ~]$ uberspace-configure-log error enable
+ [isabell@doolittle ~]$ uberspace web log error enable
  error_log is enabled.
- [isabell@doolittle ~]$ uberspace-configure-log error status
+ [isabell@doolittle ~]$ uberspace web log error status
  error_log is enabled
- [isabell@doolittle ~]$ uberspace-configure-log error disable
+ [isabell@doolittle ~]$ uberspace web log error disable
  error_log is disabled.
- [isabell@doolittle ~]$ uberspace-configure-log error status
+ [isabell@doolittle ~]$ uberspace web log error status
  error_log is disabled.
 
 Contents of the error_log
