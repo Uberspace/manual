@@ -27,6 +27,19 @@ Standard version
 ----------------
 If you don't select a certain version, our default will be used. We decided to default to version 7.1, which is considered to be stable by the developers.
 
+Show available versions
+-----------------------
+
+Use ``uberspace tools version list php`` to show all selectable versions:
+
+.. code:code-block:: console
+
+  [eliza@dolittle ~]$ uberspace tools version list php
+  - 5.6
+  - 7.0
+  - 7.1
+  [eliza@dolittle ~]$ 
+
 .. _php-change-version:
 
 Change version
@@ -50,15 +63,13 @@ You can select the PHP version with :code:`uberspace tools version use php <vers
 Selected version
 ----------------
 
-You can check the selected version by executing ``php`` on the command line:
+You can check the selected version by executing ``uberspace tools version show php`` on the command line:
 
 .. code-block:: console
 
-  [eliza@dolittle ~]$ php --version
-  PHP 7.1.4 (cli) (built: Apr 11 2017 18:26:18) ( NTS )
-  Copyright (c) 1997-2017 The PHP Group
-  Zend Engine v3.1.0, Copyright (c) 1998-2017 Zend Technologies
-      with Zend OPcache v7.1.4, Copyright (c) 1999-2017, by Zend Technologies
+  [eliza@dolittle ~]$ uberspace tools version show php
+  Using 'PHP' version: '7.1'
+  [eliza@dolittle ~]$ 
 
 Update policy
 -------------
