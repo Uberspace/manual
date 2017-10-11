@@ -21,11 +21,6 @@ The ``.bash_profile``, ``.bashrc`` and ``.bash_logout`` files are the configurat
 
 In many contexts, the tilde ``~`` can be used as a placeholder for your home directory.
 
-.emacs
-------
-
-The configuration file for the ``emacs`` editor. 
-
 etc
 ---
 
