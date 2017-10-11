@@ -3,8 +3,8 @@ Domain Providers
 
 `INWX <https://inwx.de>`_
 ---------------------------
-  * `How do I set-up a MX record? <https://kb.inwx.com/index.php?action=artikel&cat=22&id=212&artlang=en>`_  
-  * `How can I forward a domain to an IP address (A/AAAA record)? <https://kb.inwx.com/?action=artikel&cat=22&id=214&artlang=en>`_
+  * `How do I set-up a MX record? <https://kb.inwx.com/?solution_id=1211>`_  
+  * `How can I forward a domain to an IP address (A/AAAA record)? <https://kb.inwx.com/?solution_id=1213>`_
 
 `Namecheap <https://www.namecheap.com/>`_
 -----------------------------------------
