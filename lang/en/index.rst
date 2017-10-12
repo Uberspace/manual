@@ -12,6 +12,10 @@ Uberspace is a hosting platform targeted at people who want to look behind the s
 Version |release| Changelog:
 ============================
 
+.. note:: Please keep in mind that Uberspace 7 is considered **beta**.
+   
+  That means that we're far from feature complete at the moment. We're working on implementing (in no specific order) vmailmgr, node.js, ruby, erlang, PostgreSQL, CouchDB, MongoDB, backups, Adminer, phpMyAdmin, maildrop, custom backends instead of apache, open ports in the firewall, gitolite, redis, SpamAssassin, webmail, ...
+
 .. container:: 
 
    .. include:: changelog.rst
@@ -21,8 +25,6 @@ Version |release| Changelog:
    Released |today|.
 
    For more information see the :doc:`full changelog <changelog>`.
-
-.. note:: Please keep in mind that Uberspace 7 is considered **beta**.
 
 .. toctree::
    :hidden:
