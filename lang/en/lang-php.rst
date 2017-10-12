@@ -32,7 +32,7 @@ Show available versions
 
 Use ``uberspace tools version list php`` to show all selectable versions:
 
-.. code:code-block:: console
+.. code-block:: console
 
   [eliza@dolittle ~]$ uberspace tools version list php
   - 5.6
