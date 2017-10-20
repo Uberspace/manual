@@ -6,29 +6,30 @@ Web server logs
 
 The web server logs are disabled by default. Once you enable them, they are written to ``/home/$USER/logs/webserver`` (so if your user name is `isabell`, this would be ``/home/isabell/logs/webserver``) in real-time.
 
-access_log
+
+Access Log
 ==========
 
 Enabling and disabling
 ----------------------
 
-To enable or disable your access_log, use these commands:
+To enable or disable your access log, use these commands:
 
 .. code-block:: bash
 
  [isabell@doolittle ~]$ uberspace web log access enable
- access_log is enabled.
+ access log is enabled
  [isabell@doolittle ~]$ uberspace web log access status
- access_log is enabled.
+ access log is enabled
  [isabell@doolittle ~]$ uberspace web log access disable
- access_log is disabled.
+ access log is disabled
  [isabell@doolittle ~]$ uberspace web log access status
- access_log is disabled.
+ access log is disabled
 
 Contents of the access_log
 --------------------------
 
-The ``access_log`` logs all connections to your website. 
+The ``access_log`` logs all connections to your website:
 
 .. code-block:: none
 
@@ -36,36 +37,70 @@ The ``access_log`` logs all connections to your website.
 
 Each entry contains the client's (redacted) IP address, date and time of the request, the actual HTTP request sent and the ``user agent``, i.e. the browser and operating system used by the client.
 
+
 .. _web-logs-error:
 
-error_log
-=========
+Error Log: Apache
+=================
 
 Enabling and disabling
 ----------------------
 
-At the moment, we only log PHP errors. To enable or disable your error_logs, use these commands:
+To enable or disable your Apache error log, use these commands:
 
 .. code-block:: bash
 
- [isabell@doolittle ~]$ uberspace web log error enable
- error_log is enabled.
- [isabell@doolittle ~]$ uberspace web log error status
- error_log is enabled
- [isabell@doolittle ~]$ uberspace web log error disable
- error_log is disabled.
- [isabell@doolittle ~]$ uberspace web log error status
- error_log is disabled.
+ [isabell@doolittle ~]$ uberspace web log apache_error enable
+ apache error log is enabled
+ [isabell@doolittle ~]$ uberspace web log apache_error status
+ apache error log is enabled
+ [isabell@doolittle ~]$ uberspace web log apache_error disable
+ apache error log is disabled
+ [isabell@doolittle ~]$ uberspace web log apache_error status
+ apache error log is disabled
 
-Contents of the error_log
--------------------------
+Contents of the error_log_apache
+--------------------------------
 
+The ``error_log_apache`` logs errors encountered by Apache while handling your website — probably mostly problems with `.htaccess` files:
+
+.. code-block:: none
+
+    [Thu Oct 19 16:41:00 2017] [alert] [pid 11908] config.c(2143): [client 82.98.0.0] /var/www/virtual/isabell/html/.htaccess: Invalid command 'xxo', perhaps misspelled or defined by a module not included in the server configuration
+
+Each entry provides the date and time the error occurred, the log level, process ID and the location of the error in the source, followed by the client's IP and the error message.
+
+
+Error Log: PHP
+==============
+
+Enabling and disabling
+----------------------
+
+To enable or disable your PHP error log, use these commands:
+
+.. code-block:: bash
+
+ [isabell@doolittle ~]$ uberspace web log php_error enable
+ php error log is enabled
+ [isabell@doolittle ~]$ uberspace web log php_error status
+ php error log is enabled
+ [isabell@doolittle ~]$ uberspace web log php_error disable
+ php error log is disabled
+ [isabell@doolittle ~]$ uberspace web log php_error status
+ php error log is disabled
+
+Contents of the error_log_php
+-----------------------------
+
+The ``error_log_php`` logs errors encountered by PHP on your website:
 
 .. code-block:: none
 
 	[21-Jun-2017 18:40:00] WARNING: [pool www] child 27290 said into stderr: "NOTICE: PHP message: PHP Parse error:  syntax error, unexpected '.', expecting end of file in /var/www/virtual/isabell/html/test.php on line 2"
 
-At the moment, we only provide errors logged by PHP_FPM. Each entry provides the date and time the error occured and the PHP error message, referencing the offending file and line number. 
+At the moment, we only provide errors logged by PHP_FPM. Each entry provides the date and time the error occurred and the PHP error message, referencing the offending file and line number.
+
 
 Privacy
 =======
