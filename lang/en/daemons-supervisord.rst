@@ -9,12 +9,12 @@ We use ``supervisord`` to monitor services. A service, or daemon, is a program t
 Create a Service
 ================
 
-To create a new service, place a ``.ini`` file for each new service in ``~/etc/services.d/``. So if you want to add a service called my-daemon that runs an executable located at ``~/bin/my-daemon``, place the file ``my-daemon.ini`` in ``~/etc/services.d/`` and edit it:
+To create a new service, place a ``.ini`` file for each new service in ``~/etc/services.d/``. So if you want to add a service called my-daemon that runs an executable located at ``/home/eliza/bin/my-daemon``, place the file ``my-daemon.ini`` in ``~/etc/services.d/`` and edit it:
 
 .. code-block:: ini
 
  [program:my-daemon]
- command=~/bin/my-daemon
+ command=/home/eliza/bin/my-daemon
 
 Afterwards, ask ``supervisord`` to look for new ``.ini`` files:
 
@@ -61,7 +61,7 @@ To remove a service, you need to stop it first, then you can remove it using ``s
 List Services
 =============
 
-To get an overview of your services and their current status, run ``supvervisorctl status``:
+To get an overview of your services and their current status, run ``supervisorctl status``:
 
 .. code-block:: bash
 
@@ -71,7 +71,7 @@ To get an overview of your services and their current status, run ``supvervisorc
 Logging
 =======
 
-``supervisord`` logs are stored in ``~/logs/``. You can use ``supvervisorctl tail my-daemon`` to view the log for ``my-daemon``. 
+``supervisord`` logs are stored in ``~/logs/``. You can use ``supervisorctl tail my-daemon`` to view the log for ``my-daemon``. 
 
 Further Reading
 ===============
