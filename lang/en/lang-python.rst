@@ -49,3 +49,14 @@ We update all versions on a regular basis. Once the `security support <https://d
 +--------+---------------------+-----------------------------+
 | 3.6    | Bug fixes           | December 2021               |
 +--------+---------------------+-----------------------------+
+
+pip
+===
+
+pip is Python's package manager, used to install and manage additional packages. You can only install software to your :ref:`home directory <home>`, so please always use the :code:`--user` option when running pip.
+
+Versions
+--------
+
+In order to install the correct package corresponding to the Python version you want to use, you should run the correct binary. For example, to install a package for Python 2.7, use :code:`pip2.7 package-name --user`. To install for Python 3.6, use :code:`pip3.6 package-name --user`.
+
