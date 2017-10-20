@@ -58,5 +58,15 @@ pip is Python's package manager, used to install and manage additional packages.
 Versions
 --------
 
-In order to install the correct package corresponding to the Python version you want to use, you should run the correct binary. For example, to install a package for Python 2.7, use :code:`pip2.7 package-name --user`. To install for Python 3.6, use :code:`pip3.6 package-name --user`.
+In order to install the correct package corresponding to the Python version you want to use, you should run the correct binary. For example, to install a package for Python 2.7, use :code:`pip2.7`:
+
+.. code-block:: console
+
+  [eliza@dolitte ~] pip2.7 package-name --user 
+
+To install for Python 3.6, use :code:`pip3.6`:
+
+.. code-block:: console
+
+  [eliza@dolitte ~] pip3.6 package-name --user 
 
