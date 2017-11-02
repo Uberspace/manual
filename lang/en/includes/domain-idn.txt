@@ -1,4 +1,3 @@
 .. note::
 
-   If you want to add or remove an `internationalized domain name (IDN) <https://en.wikipedia.org/wiki/Internationalized_domain_name>`_, please use the 
-ASCII representation (“punycode”). For example, please use ``xn--bcher-kva.tld`` instead of ``bücher.tld``.
+   If you want to add or remove an `internationalized domain name (IDN) <https://en.wikipedia.org/wiki/Internationalized_domain_name>`_, please use the ASCII representation (“punycode”). For example, please use ``xn--bcher-kva.tld`` instead of ``bücher.tld``.
