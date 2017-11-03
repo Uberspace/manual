@@ -25,6 +25,8 @@ Once you've set up your domain using the ``uberspace`` tool, the tool provides y
 
 .. include:: includes/domain-dns.txt
 
+.. include:: includes/domain-idn.txt
+
 Removal
 =======
 

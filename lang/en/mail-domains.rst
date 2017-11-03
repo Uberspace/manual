@@ -22,6 +22,9 @@ Once you’ve set up your domain using the uberspace mail domain add tool, the t
 
 .. include:: includes/domain-dns.txt
 
+.. include:: includes/domain-idn.txt
+
+
 Removal
 =======
 
