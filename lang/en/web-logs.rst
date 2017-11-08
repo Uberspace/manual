@@ -99,7 +99,7 @@ The ``error_log_php`` logs errors encountered by PHP on your website:
 
 	[21-Jun-2017 18:40:00] WARNING: [pool www] child 27290 said into stderr: "NOTICE: PHP message: PHP Parse error:  syntax error, unexpected '.', expecting end of file in /var/www/virtual/isabell/html/test.php on line 2"
 
-At the moment, we only provide errors logged by PHP_FPM. Each entry provides the date and time the error occurred and the PHP error message, referencing the offending file and line number.
+We provide errors logged by PHP_FPM. Each entry provides the date and time the error occurred and the PHP error message, referencing the offending file and line number.
 
 
 Privacy
