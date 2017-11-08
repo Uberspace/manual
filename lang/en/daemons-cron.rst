@@ -16,7 +16,7 @@ Your cronjobs are stored in your ``crontab``. This is a table that contains all 
  * * * * *     /path/to/your/job
  ┬ ┬ ┬ ┬ ┬
  │ │ │ │ │
- │ │ │ │ └──── Day of the week (0-7) (Subday can be 0 or 7)
+ │ │ │ │ └──── Day of the week (0-7) (Sunday can be 0 or 7)
  │ │ │ └────── Month (1-12)
  │ │ └──────── Day of the month (1-31)
  │ └────────── Hour (0-23)
