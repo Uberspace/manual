@@ -8,10 +8,28 @@ This document will track major changes in the project.
 
 ----
 
-[7.0.14] - 2017-10-10
+[7.0.15] - 2017-11-14
 =====================
 
 .. _lastchange:
+
+Added
+-----
+
+* Error logging for ``.htaccess`` files can be enabled now.
+
+
+Fixed
+-----
+
+* The ``uberspace`` command now always uses the python provided by the system.
+
+.. _oldentries:
+
+----
+
+[7.0.14] - 2017-10-10
+=====================
 
 Added
 -----
@@ -32,9 +50,7 @@ Fixed
 * ``uberspace web domain list`` now includes ``user.uber.space``.
 *  We did not apply the MySQL config file properly, therefore ``innodb_file_format`` was not set. It is ``Barracuda`` now.
 
-----
 
-.. _oldentries:
 
 [7.0.13] - 2017-10-05
 =====================
