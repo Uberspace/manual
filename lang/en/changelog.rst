@@ -8,10 +8,27 @@ This document will track major changes in the project.
 
 ----
 
-[7.0.15] - 2017-11-14
+[7.0.16] - 2017-11-17
 =====================
 
 .. _lastchange:
+
+Added
+-----
+
+* PHP 7.2 Release Candidates
+
+Fixed
+-----
+
+* New [Let's Encrypt license](https://letsencrypt.org/documents/LE-SA-v1.2-November-15-2017.pdf) lead to a few cases, where the automatic certificate retrieval did not work. We now accept the latest license.
+
+.. _oldentries:
+
+----
+
+[7.0.15] - 2017-11-14
+=====================
 
 Added
 -----
@@ -24,7 +41,6 @@ Fixed
 
 * The ``uberspace`` command now always uses the python provided by the system.
 
-.. _oldentries:
 
 ----
 
