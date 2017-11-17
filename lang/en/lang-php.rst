@@ -21,7 +21,7 @@ Versions
 
 Release types 
 -------------
-Each release branch of PHP is fully supported for two years beginning with its initial stable release. We provide different point releases and apply security updates on a regular basis. Currently, these PHP versions are available: 5.6, 7.0 and 7.1.
+Each release branch of PHP is fully supported for two years beginning with its initial stable release. We provide different point releases and apply security updates on a regular basis. Currently, these PHP versions are available: 5.6, 7.0, 7.1, and 7.2.
 
 Standard version
 ----------------
@@ -38,7 +38,10 @@ Use ``uberspace tools version list php`` to show all selectable versions:
   - 5.6
   - 7.0
   - 7.1
+  - 7.2
   [eliza@dolittle ~]$ 
+
+.. warning:: Since PHP 7.2 is a `release candidate <https://en.wikipedia.org/wiki/Software_release_life_cycle#Release_candidate>`_ it is considered a `development version and should not be used in production <http://php.net/archive/2017.php#id2017-11-09-1>`_.
 
 .. _php-change-version:
 
@@ -84,6 +87,8 @@ We update all versions on a regular basis. Once the `security support <http://ph
 | 7.0    | Active support      | 3 Dec 2018             |
 +--------+---------------------+------------------------+ 
 | 7.1    | Active support      | 1 Dec 2019             | 
++--------+---------------------+------------------------+ 
+| 7.2    | Release candidate   | to be determined       | 
 +--------+---------------------+------------------------+
 
 ----
