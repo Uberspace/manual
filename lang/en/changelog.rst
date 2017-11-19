@@ -8,10 +8,22 @@ This document will track major changes in the project.
 
 ----
 
-[7.0.16] - 2017-11-17
+[7.0.17] - 2017-11-17
 =====================
 
 .. _lastchange:
+
+Fixed
+-----
+
+* ``git`` commands from non ``git-core`` now work as well.
+
+.. _oldentries:
+
+----
+
+[7.0.16] - 2017-11-17
+=====================
 
 Added
 -----
@@ -22,8 +34,6 @@ Fixed
 -----
 
 * New `Let's Encrypt license <https://letsencrypt.org/documents/LE-SA-v1.2-November-15-2017.pdf>`_ lead to a few cases, where the automatic certificate retrieval did not work. We now accept the latest license.
-
-.. _oldentries:
 
 ----
 
@@ -40,7 +50,6 @@ Fixed
 -----
 
 * The ``uberspace`` command now always uses the python provided by the system.
-
 
 ----
 
@@ -66,7 +75,7 @@ Fixed
 * ``uberspace web domain list`` now includes ``user.uber.space``.
 *  We did not apply the MySQL config file properly, therefore ``innodb_file_format`` was not set. It is ``Barracuda`` now.
 
-
+----
 
 [7.0.13] - 2017-10-05
 =====================
