@@ -35,5 +35,6 @@ We provide the following configuration:
 
 Own configuration
 -----------------
+.. _htaccess:
 
 You can provide your own configuration with ``.htaccess`` files. Check the `Directive Quick Reference <http://httpd.apache.org/docs/2.4/mod/quickreference.html>`_ for possible configuration directives. Keep in mind that the third column needs to contain ``h`` for ``.htaccess``.
