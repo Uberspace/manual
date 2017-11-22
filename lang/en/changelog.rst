@@ -8,17 +8,27 @@ This document will track major changes in the project.
 
 ----
 
-[7.0.17] - 2017-11-17
+[7.0.18] - 2017-11-18
 =====================
 
 .. _lastchange:
+
+Added
+-----
+
+* We now provide nodeJS 6, 8 and 9.
+
+.. _oldentries:
+
+----
+
+[7.0.17] - 2017-11-17
+=====================
 
 Fixed
 -----
 
 * ``git`` commands from non ``git-core`` now work as well.
-
-.. _oldentries:
 
 ----
 
