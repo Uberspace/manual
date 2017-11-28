@@ -26,6 +26,11 @@ etc
 
 The ``etc`` folder is reserved for configuration files of any kind. Most importantly, this includes your :ref:`supervisord: configuration in ``etc/services.d``.
 
+bin
+---
+
+Within the ``bin`` directory executables installed by custom tools or written by yourself can be stored. They can then be called like normal commands.
+
 html
 ----
 
