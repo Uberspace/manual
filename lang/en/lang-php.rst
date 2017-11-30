@@ -178,7 +178,7 @@ In this case fix the value and run ``uberspace tools restart php`` again.
 Provided modules
 ----------------
 
-We provide the following modules: ``pecl-zip``, ``pecl-apcu``, ``mcrypt``, ``mbstring``, ``intl``, ``xml``, ``json``, ``tidy``, ``gd``, ``mysqlnd``, ``pgsql``, ``imap``, ``bcmath``, ``soap``, ``posix``, ``shmop``, ``sysvmsg``, ``sysvsem``, ``sysvshm``
+We provide the following modules: ``pecl-zip``, ``pecl-apcu``, ``mcrypt``, ``mbstring``, ``intl``, ``xml``, ``json``, ``tidy``, ``gd``, ``mysqlnd``, ``pgsql``, ``imap``, ``bcmath``, ``soap``, ``posix``, ``shmop``, ``sysvmsg``, ``sysvsem``, ``sysvshm``, ``imagick`` (ImageMagick)
 
 .. _php-popular-software:
 
