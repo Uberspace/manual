@@ -8,7 +8,7 @@ This document will track major changes in the project.
 
 ----
 
-[7.0.18] - 2017-11-18
+[7.0.19] - 2017-11-30
 =====================
 
 .. _lastchange:
@@ -16,9 +16,21 @@ This document will track major changes in the project.
 Added
 -----
 
-* We now provide nodeJS 6, 8 and 9.
+* We now provide the ImageMagick and GraphicsMagick library
+* We now provide the `imagick` pecl module in all PHP versions
 
 .. _oldentries:
+
+----
+
+[7.0.18] - 2017-11-18
+=====================
+
+Added
+-----
+
+* We now provide nodeJS 6, 8 and 9.
+
 
 ----
 
