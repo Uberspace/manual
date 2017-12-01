@@ -41,8 +41,6 @@ Use ``uberspace tools version list php`` to show all selectable versions:
   - 7.2
   [eliza@dolittle ~]$ 
 
-.. warning:: Since PHP 7.2 is a `release candidate <https://en.wikipedia.org/wiki/Software_release_life_cycle#Release_candidate>`_ it is considered a `development version and should not be used in production <http://php.net/archive/2017.php#id2017-11-09-1>`_.
-
 .. _php-change-version:
 
 Change version
@@ -88,7 +86,7 @@ We update all versions on a regular basis. Once the `security support <http://ph
 +--------+---------------------+------------------------+ 
 | 7.1    | Active support      | 1 Dec 2019             | 
 +--------+---------------------+------------------------+ 
-| 7.2    | Release candidate   | to be determined       | 
+| 7.2    | Active support      | 30 Nov 2019            | 
 +--------+---------------------+------------------------+
 
 ----

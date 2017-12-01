@@ -18,6 +18,14 @@ Added
 
 * We now provide the ImageMagick and GraphicsMagick library
 * We now provide the `imagick` pecl module in all PHP versions
+* We now provide PHP 7.2 
+* Due to high demand pseudo DocumentRoots are back again
+* ``~/bin`` directory
+  
+Changed
+-------
+
+* ``PHP_INI_SCAN_DIR`` now includes files from ``/home/{USER}/etc/php.d`` first to support ioncube
 
 .. _oldentries:
 
