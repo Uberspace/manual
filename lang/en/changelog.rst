@@ -8,10 +8,33 @@ This document will track major changes in the project.
 
 ----
 
-[7.0.19] - 2017-11-30
+[7.0.20] - 2017-12-08
 =====================
 
 .. _lastchange:
+
+Added
+-----
+
+* We now support maildrop, which enables you to apply advanced filtering to incoming mails.
+* Common errors like configuring the permissions on your home directory to be too open are now detected and corrected silently. A notification mechanism will be added later.
+
+Changed
+-------
+
+* Domains without explicit NS-Records were not able to receive emails. We now ask for SOA instead. 
+
+Fixed
+-----
+
+* An erroneous systemd configuration caused the mail service to quit when it was reloaded during manual intervention. The configuration has been updated to state that the service does not support reloads.
+
+.. _oldentries:
+
+----
+
+[7.0.19] - 2017-11-30
+=====================
 
 Added
 -----
@@ -26,8 +49,6 @@ Changed
 -------
 
 * ``PHP_INI_SCAN_DIR`` now includes files from ``/home/{USER}/etc/php.d`` first to support ioncube
-
-.. _oldentries:
 
 ----
 
