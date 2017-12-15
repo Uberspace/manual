@@ -46,6 +46,12 @@ Maildir
 
 Your emails and IMAP folders are stored in this directory.
 
+
+users
+-----
+
+Your additional :ref:`mailboxes`. This folder only exists if you set up mailboxes with ``uberspace mail user add``.
+
 .my.cnf
 -------
 
