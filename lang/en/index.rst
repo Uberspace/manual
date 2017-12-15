@@ -85,6 +85,7 @@ Version |release| Changelog:
    Python <lang-python>
    NodeJS <lang-nodejs>
    Ruby <lang-ruby>
+   .NET Core <lang-dotnet>
 
 .. toctree::
    :hidden:
