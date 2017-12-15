@@ -29,13 +29,20 @@ We provide .NET Core 2.0 and apply security updates on a regular basis.
 Update policy
 -------------
 
-We update all versions on a regular basis. Once the `support <https://www.microsoft.com/net/support/policy>`_ ends, the branch reaches its end of life, is no longer supported and will be removed from our servers. Even-numbered versions are long-term support (LTS) versions.
+We update all versions on a regular basis. Once the `support <https://www.microsoft.com/net/support/policy>`_ ends, the branch reaches its end of life, is no longer supported and will be removed from our servers. 
 
 +--------+-------------------------+------------------+ 
 | Branch | State                   | Supported Until  | 
 +========+=========================+==================+ 
 | 2      | Current release         | August 2020      | 
 +--------+-------------------------+------------------+ 
+
+----
+
+Getting started
+===============
+
+Check out the `Hello, Console App! <https://docs.microsoft.com/en-us/dotnet/core/tutorials/using-with-xplat-cli>`_.
 
 ----
 
@@ -50,11 +57,6 @@ In order to make your .NET application accessable from the outside, you need to 
   RewriteRule ^dotnet/(.*) http://localhost:61625/$1 [P]
 
 ----
-
-Getting started
-===============
-
-Check out the `Hello, Console App! <https://docs.microsoft.com/en-us/dotnet/core/tutorials/using-with-xplat-cli>`_.
 
 Caveats
 =======
