@@ -6,7 +6,7 @@ Changes in Uberspace 7
 
 This document will track major changes in the project.
 
-[7.0.21] - 2017-12-15
+[7.0.21] - 2017-12-19
 =====================
 
 .. _lastchange:
@@ -18,6 +18,12 @@ Added
 * You can use :ref:`additional mailboxes <mailboxes>`.
 * In addition to ``$USER@uber.space``, you can now also receive mails for ``$MAILBOX@$USER.uber.space``.
 * We now provide :ref:`.NET <dotnet>`.
+* When you log into an Uberspace 7 server, you are now presented with the current version as well as a couple of useful links.
+
+Fixed
+-----
+
+* We now support HTTPS connections form android phones running a version between 7.0 and 7.1.1.
 
 .. _oldentries:
 
