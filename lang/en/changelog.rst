@@ -6,12 +6,31 @@ Changes in Uberspace 7
 
 This document will track major changes in the project.
 
+[7.0.21] - 2017-12-19
+=====================
+
+.. _lastchange:
+
+Added
+-----
+
+* We now provide mercurial.
+* You can use :ref:`additional mailboxes <mailboxes>`.
+* In addition to ``$USER@uber.space``, you can now also receive mails for ``$MAILBOX@$USER.uber.space``.
+* We now provide :ref:`.NET <dotnet>`.
+* When you log into an Uberspace 7 server, you are now presented with the current version as well as a couple of useful links.
+
+Fixed
+-----
+
+* We now support HTTPS connections form android phones running a version between 7.0 and 7.1.1.
+
+.. _oldentries:
+
 ----
 
 [7.0.20] - 2017-12-08
 =====================
-
-.. _lastchange:
 
 Added
 -----
@@ -28,8 +47,6 @@ Fixed
 -----
 
 * An erroneous systemd configuration caused the mail service to quit when it was reloaded during manual intervention. The configuration has been updated to state that the service does not support reloads.
-
-.. _oldentries:
 
 ----
 
