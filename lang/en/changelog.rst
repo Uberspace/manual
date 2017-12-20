@@ -26,7 +26,7 @@ Changed
 Fixed
 -----
 
-* Usernames did have a minimal length of two. This is wrong. We changed it to two, so it matches Uberspace 6.
+* Usernames did have a minimal length of two. This is wrong. We changed it to one, so it matches Uberspace 6.
 * Because of an oversight, VMailMgr was never correctly set up for existing users users. This has been corrected.
 * The vMailMgr wrappers now support Unicode and the char–limits for password have been removed. A warning is displayed though, if non–ASCII chars are used. 
 
