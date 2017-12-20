@@ -6,10 +6,36 @@ Changes in Uberspace 7
 
 This document will track major changes in the project.
 
-[7.0.21] - 2017-12-19
+
+[7.0.22] - 2017-12-20
 =====================
 
 .. _lastchange:
+
+Added
+-----
+
+* In preparation for a public status dashboard, our servers now have additional black box monitoring.
+* Popular default ports like 9001 are now blocked. 
+
+Changed
+-------
+
+* The maximum number of processes/threads is now 400 instead of 300, which allows weechat to be compiled using linuxbrew.
+
+Fixed
+-----
+
+* Usernames did have a minimal length of two. This is wrong. We changed it to two, so it matches Uberspace 6.
+* Because of an oversight, VMailMgr was never correctly set up for existing users users. This has been corrected.
+* The vMailMgr wrappers now support Unicode and the char–limits for password have been removed. A warning is displayed though, if non–ASCII chars are used. 
+
+.. _oldentries:
+
+----
+
+[7.0.21] - 2017-12-19
+=====================
 
 Added
 -----
@@ -24,8 +50,6 @@ Fixed
 -----
 
 * We now support HTTPS connections form android phones running a version between 7.0 and 7.1.1.
-
-.. _oldentries:
 
 ----
 
