@@ -68,7 +68,7 @@ you can also execute ``my_print_defaults clientreadonly`` to show it, like that:
   --password=SomeOtherStrongPassword
 
 Unfortunately you cannot change the password of the read-only user yourself (it's read-only!).
-If you really need to change it, please contact hello@uberspace.de.
+If you really need to change it, please contact hallo@uberspace.de.
 
 
 Additional databases
