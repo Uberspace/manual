@@ -6,11 +6,22 @@ Changes in Uberspace 7
 
 This document will track major changes in the project.
 
-
-[7.0.22] - 2017-12-20
+[7.0.23] - 2017-01-03
 =====================
 
 .. _lastchange:
+
+Fixed
+-----
+
+* Under rare conditions some users did not get a let’s encrypt certificate for a small percentage of their requests. This has been corrected.
+
+.. _oldentries:
+
+----
+
+[7.0.22] - 2017-12-20
+=====================
 
 Added
 -----
@@ -29,8 +40,6 @@ Fixed
 * Usernames did have a minimal length of two. This is wrong. We changed it to one, so it matches Uberspace 6.
 * Because of an oversight, VMailMgr was never correctly set up for existing users users. This has been corrected.
 * The vMailMgr wrappers now support Unicode and the char–limits for password have been removed. A warning is displayed though, if non–ASCII chars are used. 
-
-.. _oldentries:
 
 ----
 
