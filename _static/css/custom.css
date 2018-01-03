@@ -70,3 +70,8 @@ nav li {
 .wy-side-nav-search input[type=text] {
   border-color: #84000f;
 }
+
+/* logo box for languages */
+.sidebar + .section > .section:first-of-type > div {
+  max-width: 55%;
+}
