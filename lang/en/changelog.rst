@@ -6,17 +6,46 @@ Changes in Uberspace 7
 
 This document will track major changes in the project.
 
-[7.0.23] - 2017-01-03
+
+[7.0.24] - 2018-01-16
 =====================
 
 .. _lastchange:
+
+Added
+-----
+
+* All servers now come with pandoc (to convert document formats), tree (to view your directory structures in a pretty way), and imapsync (to transfer emails between IMAP accounts) installed.
+* We now provide development headers for the ncurses GUI library.
+* We now provide the “gmp” module for php.
+* For your network debugging needs, we now offer traceroute and mtr.
+
+Changed
+-------
+
+* The $PATH of qmail is now extended by standard directories like /bin, so maildrop can be called without specifying its full path.
+* We now automatically restart php-fpm of your web services on updates or when new php modules are added.
+* Apache now uses the “event” multi processing module instead of the old “prefork”. This allows us to handle more requests in parallel.
+* The number of HTTP slots, which can be used by a single uberspace is now limited, so a single uberspace cannot overload our webservers.
+
+Fixed
+-----
+
+* After numerous attempts to install “git submodules” and various other git sub-commands, we now got it. finally. maybe.
+* On reboot, supervisord user services might be started before MySQL, causing some of them to fail. They are now only started, once MySQL is fully booted.
+* Generating the nginx config takes too long in some cases, causing a timeout and nginx to be permanently down. We increased the timeout. The faulty script will be optimized at a later date. 
+
+.. _oldentries:
+
+----
+
+[7.0.23] - 2018-01-03
+=====================
 
 Fixed
 -----
 
 * Under rare conditions some users did not get a let’s encrypt certificate for a small percentage of their requests. This has been corrected.
-
-.. _oldentries:
 
 ----
 
