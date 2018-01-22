@@ -15,7 +15,7 @@ Added
 -----
 
 * We now provide ImageMagick commands like “convert” on the command line.
-* We now provide  :ref:`Ruby <ruby>` in user selectable versions: 2.3, 2.4 and 2.5.
+* We now provide :ref:`Ruby <ruby>` in user selectable versions: 2.3, 2.4 and 2.5.
   
 Fixed
 -----
