@@ -6,11 +6,28 @@ Changes in Uberspace 7
 
 This document will track major changes in the project.
 
-
-[7.0.24] - 2018-01-16
+[7.0.25] - 2018-01-22
 =====================
 
 .. _lastchange:
+
+Added
+-----
+
+* We now provide ImageMagick commands like “convert” on the command line.
+* We now provide :ref:`Ruby <ruby>` in user selectable versions: 2.3, 2.4 and 2.5.
+  
+Fixed
+-----
+
+* The :ref:`PHP-FPM <php>` and :ref:`supervisor <supervisord>` user services now run under their user's :ref:`ressource restrictions <resources>`. 
+
+----
+
+.. _oldentries:
+
+[7.0.24] - 2018-01-16
+=====================
 
 Added
 -----
@@ -34,8 +51,6 @@ Fixed
 * After numerous attempts to install “git submodules” and various other git sub-commands, we now got it. finally. maybe.
 * On reboot, supervisord user services might be started before MySQL, causing some of them to fail. They are now only started, once MySQL is fully booted.
 * Generating the nginx config takes too long in some cases, causing a timeout and nginx to be permanently down. We increased the timeout. The faulty script will be optimized at a later date. 
-
-.. _oldentries:
 
 ----
 
