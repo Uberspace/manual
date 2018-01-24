@@ -6,10 +6,30 @@ Changes in Uberspace 7
 
 This document will track major changes in the project.
 
-[7.0.25] - 2018-01-22
+[7.0.26] - 2018-01-24
 =====================
 
 .. _lastchange:
+
+Added
+-----
+
+* We now provide `phpMyAdmin <https://mysql.uberspace.de/phpmyadmin/>`_ and `adminer <https://mysql.uberspace.de/adminer/>`_.
+  
+Changed
+-------
+
+* The who/last/lastlog commands (and thus display of other user sessions) are now disabled.
+
+Fixed
+-----
+
+* We now support the following special characters in mailbox names: dots (.), plus signs (+), hyphens (-) and underscores (_).
+
+.. _oldentries:
+
+[7.0.25] - 2018-01-22
+=====================
 
 Added
 -----
@@ -23,8 +43,6 @@ Fixed
 * The :ref:`PHP-FPM <php>` and :ref:`supervisor <supervisord>` user services now run under their user's :ref:`ressource restrictions <resources>`. 
 
 ----
-
-.. _oldentries:
 
 [7.0.24] - 2018-01-16
 =====================
