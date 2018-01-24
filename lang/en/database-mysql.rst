@@ -10,6 +10,11 @@ To avoid confusion, MariaDB uses the same command names you already know, like `
 
 Our default setup provides you with a database and a user named like your Uberspace, but you can create additional databases later.
 
+Webinterface
+============
+
+You can manage your databases via `phpMyAdmin <https://mysql.uberspace.de/phpmyadmin/>`_ or `adminer <https://mysql.uberspace.de/adminer/>`_.
+
 Login credentials
 =================
 
