@@ -6,10 +6,22 @@ Changes in Uberspace 7
 
 This document will track major changes in the project.
 
-[7.0.26] - 2018-01-24
+[7.0.27] - 2018-01-25
 =====================
 
 .. _lastchange:
+
+Fixed
+-----
+
+* Supervisord is now restated after 10 seconds in case it is killed or crashes.
+
+.. _oldentries:
+
+----
+
+[7.0.26] - 2018-01-24
+=====================
 
 Added
 -----
@@ -25,8 +37,6 @@ Fixed
 -----
 
 * We now support the following special characters in mailbox names: dots (.), plus signs (+), hyphens (-) and underscores (_).
-
-.. _oldentries:
 
 ----
 
