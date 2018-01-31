@@ -6,17 +6,33 @@ Changes in Uberspace 7
 
 This document will track major changes in the project.
 
-[7.0.27] - 2018-01-25
+[7.0.28] - 2018-01-31
 =====================
 
 .. _lastchange:
+
+Added
+-----
+
+* Not all apps need MySQL, so we also provide sqlite development headers for your smaller database needs.
+* we new provide getmail, mutt and gnutls-devel so you can get your mail, check your mail and compile crypto applications, 
+
+Changed
+-------
+
+* ``Uberspace mail domain add`` now emphasizes on the fact that you need to use the MX value provided by us.
+
+.. _oldentries:
+
+----
+
+[7.0.27] - 2018-01-25
+=====================
 
 Fixed
 -----
 
 * Supervisord is now restated after 10 seconds in case it is killed or crashes.
-
-.. _oldentries:
 
 ----
 
