@@ -6,10 +6,22 @@ Changes in Uberspace 7
 
 This document will track major changes in the project.
 
-[7.0.28] - 2018-01-31
+[7.0.29] - 2018-02-02
 =====================
 
 .. _lastchange:
+
+Added
+-----
+
+* In addition to the end-user sqlite we now also provide the matching development headers.
+
+.. _oldentries:
+
+----
+
+[7.0.28] - 2018-01-31
+=====================
 
 Added
 -----
@@ -21,8 +33,6 @@ Changed
 -------
 
 * ``Uberspace mail domain add`` now emphasizes on the fact that you need to use the MX value provided by us.
-
-.. _oldentries:
 
 ----
 
