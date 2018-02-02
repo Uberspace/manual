@@ -11,7 +11,7 @@ Every Uberspace account gets its own domain in the form of ``$USER.uber.space``.
 Setup
 =====
 
-In order to use your own domain for web with your Uberspace, you need to first set it up using our ``uberspace`` tool. You can only add fully qualified domain names (`FQDNs <https://en.wikipedia.org/wiki/Fully_qualified_domain_name>`_), wildcard domains are not available. All domains set up on a Uberspace account share the same :ref:`docroot`.
+In order to use your own domain for web with your Uberspace, you need to first set it up using our ``uberspace`` tool. You can only add fully qualified domain names (`FQDNs <https://en.wikipedia.org/wiki/Fully_qualified_domain_name>`_), wildcard domains are not available. By default, all domains set up on a Uberspace account share the same :ref:`docroot`. Please refer to :ref:`docroot` for instructions on how to use seperate Document Roots for your domains.
 
 .. code-block:: shell
 
