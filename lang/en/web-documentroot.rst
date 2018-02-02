@@ -22,6 +22,9 @@ You can create folders (and symlinks) in the form of ``/var/www/virtual/<usernam
 
   RewriteBase /
 
+
+.. warning:: Do not delete ``/var/www/virtual/<username>/html``. If this folder doesn't exist, the RewriteRules implementing the additional DocumentRoots don't work, so all your domains will be unaccessable.
+
 Permissions
 ===========
 
