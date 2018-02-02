@@ -43,6 +43,7 @@ For this introduction we're assuming your username is ``eliza`` and you're on ``
 
 We're now guiding you through your first successful connection to your account. Fasten seat belts!
 
+.. tip:: If your client supports ``SHA256`` fingerprints, we strongly recommend to make sure that the fingerprint shown in the `Datasheet <https://uberspace.de/dashboard/datasheet>`_ matches the one shown by your client. If you only see an ``MD5`` fingerprint, your client doesn't support ``SHA256`` and there is now secure way to verify the server's identity.
 
 .. _ssh-using-linux:
 
@@ -57,9 +58,9 @@ your local workstation is represented by a ``[localuser@localhost ~]$`` prompt:
 
   [localuser@localhost ~]$ ssh eliza@dolittle.uberspace.de
   The authenticity of host 'dolittle.uberspace.de (ip.ip.ip.ip)' can't be established.
-  RSA key fingerprint is fp:fp:fp:fp:fp:fp:fp:fp:fp:fp:fp:fp:fp:fp:fp:fp.
+  ED25519 key fingerprint is SHA256:DtwUpr0MzHCZBej70iWO9CyzxXRDPK3jr14PJPMQIP4.
   Are you sure you want to continue connecting (yes/no)? yes
-  Warning: Permanently added 'dolittle.uberspace.de,ip.ip.ip.ip' (RSA) to the list of known hosts.
+  Warning: Permanently added 'dolittle.uberspace.de,ip.ip.ip.ip' (ED25519) to the list of known hosts.
   eliza@dolittle.uberspace.de's password: 
   [eliza@dolittle ~]$
 
