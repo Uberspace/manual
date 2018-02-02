@@ -137,17 +137,7 @@ Click the "Save" button. From now on, you can simply double-click on your saved 
 First connection
 ~~~~~~~~~~~~~~~~
 
-On your first connection PuTTY will present you the fingerprint of the host key of the server you're about to connect.
-Please check your `Datasheet <https://uberspace.de/dashboard/datasheet>`_ which shows the fingerprint you *should* be seeing here.
-If you're presented with a different fingerprint, please check if you have mistyped the hostname, which is the most common error.
-If the hostname is correct but you're still getting the wrong fingerprint, please `contact us <mailto:hallo@uberspace.de>`_.
-
-This part is important because you're about to send your password to the host, so you should make sure it's the *correct* host
-and you're not accidentially giving your password to some unknown party which would compromise it.
-
-If the fingerprint is correct, click `Yes`. PuTTY will remember the fingerprint for you so you won't get asked again to check it.
-It will complain *loudly* if the host key (and thus its fingerprint) suddenly changes, which should never happen through the lifetime of a host.
-If you ever experience such a situation, please don't continue and `contact us <mailto:hallo@uberspace.de>`_ instead.
+On your first connection PuTTY will present you the ``MD5`` fingerprint of the host key of the server you're about to connect. Unfortunately, checking the ``SHA256`` fingerprint is not possible with PuTTY, because it only supports insecure ``MD5`` fingerprints.
 
 Next you're getting asked for your password. Nothing is shown while entering it; that's absolutely correct and works as intended - just **enter it blindly** and press Enter!
 This is what you should be seeing inside the PuTTY terminal window:
