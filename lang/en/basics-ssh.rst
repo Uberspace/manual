@@ -43,7 +43,7 @@ For this introduction we're assuming your username is ``eliza`` and you're on ``
 
 We're now guiding you through your first successful connection to your account. Fasten seat belts!
 
-.. tip:: If your client supports ``SHA256`` fingerprints, we strongly recommend to make sure that the fingerprint shown in the `Datasheet <https://uberspace.de/dashboard/datasheet>`_ matches the one shown by your client. If you only see an ``MD5`` fingerprint, your client doesn't support ``SHA256`` and there is now secure way to verify the server's identity.
+.. tip:: If your client supports ``SHA256`` fingerprints, we strongly recommend to make sure that the fingerprint shown in the `Datasheet <https://uberspace.de/dashboard/datasheet>`_ matches the one shown by your client. If you only see an ``MD5`` fingerprint, your client doesn't support ``SHA256`` and there is no secure way to verify the server's identity.
 
 .. _ssh-using-linux:
 
