@@ -32,6 +32,11 @@ To add a new mailbox to your Uberspace, run the ``uberspace mail user add`` comm
 .. tip::
   Nothing is shown while entering your password; that’s absolutely correct and works as intended – just enter it blindly and press Enter!
 
+.. warning::
+  While some special characters such as ``.``, ``+``, ``-``, ``_`` are allowed in mailbox names, there are `rules <https://en.wikipedia.org/wiki/Email_address#Local-part>`_ limiting their usage. Please make sure your mailbox name adheres to these rules.
+
+.. tip:: We strongly recommend to use only `ASCII characters <https://en.wikipedia.org/wiki/ASCII#Printable_characters>`_ in your password. Non-ASCII characters may work in some circumstances, but this depends on the encoding used by your client being compatible with the one used by the mail server.
+
 List existing mailboxes
 -----------------------
 
