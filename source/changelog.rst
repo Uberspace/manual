@@ -8,7 +8,9 @@ This document will track major changes in the project.
 
 {# add/edit files in source/changelog to generate new changelog entries #}
 {% for entry in changelog_entries %}
+
 ----
+
 [{{ entry.version }}] - {{ entry.date }}
 =========
 
@@ -18,9 +20,6 @@ This document will track major changes in the project.
 
 {{ entry.text }}
 
-{% if not loop.last %}
-
-{% endif %}
 {% if loop.first %}
 .. _oldentries:
 {% endif %}
