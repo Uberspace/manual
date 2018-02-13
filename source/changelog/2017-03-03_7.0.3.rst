@@ -1,0 +1,9 @@
+Added
+-----
+
+* PHP 7.1
+
+Changed
+-------
+
+* make PHP 7.1 standard

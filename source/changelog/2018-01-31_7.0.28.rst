@@ -1,0 +1,10 @@
+Added
+-----
+
+* Not all apps need MySQL, so we also provide sqlite development headers for your smaller database needs.
+* we new provide getmail, mutt and gnutls-devel so you can get your mail, check your mail and compile crypto applications, 
+
+Changed
+-------
+
+* ``Uberspace mail domain add`` now emphasizes on the fact that you need to use the MX value provided by us.

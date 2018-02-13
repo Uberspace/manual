@@ -1,0 +1,3 @@
+Each file in this directory becomes one changelog entry. The files must be in
+the format of `YYYY-MM-DD_VERSION.rst` (e.g. `2018-01-01_7.0.31.rst`). Each file
+contains rst-code, which is rendered to the documentation.

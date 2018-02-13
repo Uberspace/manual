@@ -13,18 +13,14 @@ Uberspace is a hosting platform targeted at people who want to look behind the s
 
   We're working on implementing (in no specific order) erlang, PostgreSQL, CouchDB, MongoDB, backups, custom backends instead of apache, open ports in the firewall, gitolite, redis, SpamAssassin, webmail, ...
 
-Version |release| Changelog:
+Version {{ newest_changelog_entry.version }} Changelog:
 ============================
 
-.. container:: 
+{{ newest_changelog_entry.text }}
 
-   .. include:: changelog.rst
-      :start-after: .. _lastchange:
-      :end-before: .. _oldentries:
+Released {{ newest_changelog_entry.date }}.
 
-   Released |today|.
-
-   For more information see the :doc:`full changelog <changelog>`.
+For more information see the :doc:`full changelog <changelog>`.
 
 .. toctree::
    :hidden:

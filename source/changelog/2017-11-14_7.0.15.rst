@@ -1,0 +1,10 @@
+Added
+-----
+
+* Error logging for ``.htaccess`` files can be enabled now.
+
+
+Fixed
+-----
+
+* The ``uberspace`` command now always uses the python provided by the system.

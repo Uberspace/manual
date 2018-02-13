@@ -1,0 +1,13 @@
+Added
+-----
+
+* redirect HTTP requests to HTTPS
+* adapt ``$PATH`` to prioritize home bin: ``PATH=$HOME/.local/bin:$HOME/bin:$PATH``
+* implement option to change shell via ``chsh`` without password
+* provide PHP module: ``bcmath``
+
+Fixed
+-----
+
+* some of the ``uberspace-*`` scripts were horribly slow. This is due to the fact that the scripts are written in Ansible and the loading of modules and fact gathering takes time. With the recent changes in we're down to <5s for each script.
+* fix for webserver sometimes delivering the wrong certificate

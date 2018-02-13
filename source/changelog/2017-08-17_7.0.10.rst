@@ -1,0 +1,6 @@
+Added
+-----
+
+* We now have a webmail interface.
+* Users are now able to provide their own ``php.ini`` files that are loaded in addition to the stock config.
+* Incoming mails are filtered with the ``ix.dnsbl.manitu.net`` and ``bl.spamcop.net`` blacklists to reduce SPAM.

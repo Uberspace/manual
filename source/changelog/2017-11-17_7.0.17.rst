@@ -1,0 +1,4 @@
+Fixed
+-----
+
+* ``git`` commands from non ``git-core`` now work as well.
