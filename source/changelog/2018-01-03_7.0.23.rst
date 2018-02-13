@@ -1,0 +1,4 @@
+Fixed
+-----
+
+* Under rare conditions some users did not get a let’s encrypt certificate for a small percentage of their requests. This has been corrected.

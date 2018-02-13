@@ -1,0 +1,18 @@
+Added
+-----
+
+* We now provide ``zsh``.
+* Our brand new ``uberspace`` command.
+
+Changed
+-------
+
+* We replaced ``user.server.uberspace.de`` with ``user.uber.space`` in the webserver config.
+* We migrated all ``uberspace-*-*`` tools to the new ``uberspace`` command.
+* The ``max_allowed_packet`` setting for MySQL is ``16777216`` now to allow importing large database dumps.
+
+Fixed
+-----
+
+* ``uberspace web domain list`` now includes ``user.uber.space``.
+*  We did not apply the MySQL config file properly, therefore ``innodb_file_format`` was not set. It is ``Barracuda`` now.

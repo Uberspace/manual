@@ -1,0 +1,4 @@
+Fixed
+-----
+
+* Supervisord is now restated after 10 seconds in case it is killed or crashes.

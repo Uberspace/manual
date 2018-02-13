@@ -1,0 +1,14 @@
+Added
+-----
+
+* We now provide `phpMyAdmin <https://mysql.uberspace.de/phpmyadmin/>`_ and `adminer <https://mysql.uberspace.de/adminer/>`_.
+  
+Changed
+-------
+
+* The who/last/lastlog commands (and thus display of other user sessions) are now disabled.
+
+Fixed
+-----
+
+* We now support the following special characters in mailbox names: dots (.), plus signs (+), hyphens (-) and underscores (_).

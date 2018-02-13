@@ -1,0 +1,5 @@
+Added
+-----
+
+* own domains with mailserver via ``uberspace-add-domain -m``
+* access mail via IMAP and POP3

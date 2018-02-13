@@ -1,0 +1,10 @@
+Added
+-----
+
+* provide ``libunwind``, ``libicu``, ``screen``, ``ncdu``
+* provide PHP modules: ``pecl-zip``, ``pecl-apcu``, ``mcrypt``, ``mbstring``, ``intl``, ``xml``, ``json``, ``tidy``, ``gd``, ``mysqlnd``, ``pgsql``, ``imap``
+
+Fixed
+-----
+
+* ``uberspace-add-domain -v`` leaked all user names and corresponding domains.

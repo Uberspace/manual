@@ -1,0 +1,4 @@
+Added
+-----
+
+* In addition to the end-user sqlite we now also provide the matching development headers.

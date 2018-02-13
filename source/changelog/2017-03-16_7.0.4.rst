@@ -1,0 +1,5 @@
+Added
+-----
+
+* relay mail via SMTP
+* provide symlink ``~/html`` for convenience

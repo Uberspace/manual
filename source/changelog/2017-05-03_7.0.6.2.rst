@@ -1,0 +1,9 @@
+Added
+-----
+
+* we say goodbye to ``daemontools`` and hello to ``supervisord``! For the impatient:
+  * setup daemons in ``~/etc/services.d/``, create a ``*.ini`` file for `each daemon <http://supervisord.org/running.html#adding-a-program)>`_
+  * control deamons with `supervisorctl status <http://supervisord.org/running.html#running-supervisorctl>`_.
+  * see logs in ``~/logs/``
+  * check the global config if you're curious: ``/etc/supervisord.conf``
+  * check the `official documentation <http://supervisord.org>`_

@@ -1,0 +1,9 @@
+Added
+-----
+
+* ``$user.uber.space``-domains in addition to ``$user.server.uberspace.de``-domains.
+
+Changed
+-------
+
+* Webserver logs are now stored in ``~/logs/webserver``
