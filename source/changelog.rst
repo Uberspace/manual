@@ -8,6 +8,7 @@ This document will track major changes in the project.
 
 {# add/edit files in source/changelog to generate new changelog entries #}
 {% for entry in changelog_entries %}
+----
 [{{ entry.version }}] - {{ entry.date }}
 =========
 
@@ -19,14 +20,8 @@ This document will track major changes in the project.
 
 {% if not loop.last %}
 
-----
 {% endif %}
 {% if loop.first %}
 .. _oldentries:
 {% endif %}
 {% endfor %}
-
-----
-
-The format is based on `Keep a Changelog <http://keepachangelog.com/>`_.
-and this project adheres to `Semantic Versioning <http://semver.org/>`_.
