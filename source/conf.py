@@ -108,7 +108,7 @@ def _read_changelog_files():
             'text': open(path).read().decode('utf-8'),
         })
 
-    entries.sort(key=lambda e: e['date'])
+    entries.sort(key=lambda e: e['date'], reverse=True)
     return entries
 
 
