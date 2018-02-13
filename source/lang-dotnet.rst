@@ -2,7 +2,7 @@
 
 .. sidebar:: Logo
   
-  .. image:: ../../images/logo_dotnet.png 
+  .. image:: _static/images/logo_dotnet.png 
       :align: center
 
 #########

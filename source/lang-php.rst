@@ -2,7 +2,7 @@
 
 .. sidebar:: Logo
   
-  .. image:: ../../images/logo_php.png 
+  .. image:: _static/images/logo_php.png 
       :align: center
 
 ###

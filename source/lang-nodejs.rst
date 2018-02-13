@@ -2,7 +2,7 @@
 
 .. sidebar:: Logo
   
-  .. image:: ../../images/logo_nodejs.png 
+  .. image:: _static/images/logo_nodejs.png 
       :align: center
 
 #######

@@ -1,4 +1,4 @@
-  .. image:: ../../images/big-rocket.svg
+  .. image:: _static/images/big-rocket.svg
       :align: right
 
 ##################

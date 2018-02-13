@@ -88,7 +88,7 @@ There are a couple of aliases that can be used instead of the numeric definition
 | 
 
 Adding, Modifying, and Deleting a Cronjob
----------------------------------------
+-----------------------------------------
 
 If you want to add or modify a new cronjob, you need to edit your ``crontab``. To do this, use the command ``crontab -e``. This will launch your standard editor and you can add a new job or modify an existing one. 
 

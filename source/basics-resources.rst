@@ -5,6 +5,7 @@ System Resources
 ################
 
 .. _quota:
+
 Storage
 =======
 
@@ -22,12 +23,14 @@ In order to avoid hitting this limit, you can check your current storage usage u
 What do theses values mean? You can ignore the Filesystem column. The blocks column shows you how much storage you're currently using. Quota shows the 10 GB soft limit and the limit column shows the hard limit of 11 GB. Finally, if you are using more than 10 GB, the grace column shows you how much time you have left to fix this.
 
 .. _ram:
+
 RAM
 ===
 
 You can use up to 1536 MB (1.5 GB) of RAM. If you try to use more than this limit, your process will be killed. We reserve the right to ask nicely to reduce your usage if it is impacting other users or the overall performance of the host.
 
 .. _cpu:
+
 CPU
 ===
 
