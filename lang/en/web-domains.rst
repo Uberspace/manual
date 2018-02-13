@@ -23,6 +23,8 @@ In order to use your own domain for web with your Uberspace, you need to first s
 
 Once you've set up your domain using the ``uberspace`` tool, the tool provides you with the ``A`` and ``AAAA`` records that need to be configured in your registrar's nameserver.
 
+.. tip:: Any subdomain that you wish to use needs to be added individually. So in order to also use ``www.isabell.example``, you need to run ``uberspace web domain add www.isabell.example`` as well.
+
 .. include:: includes/domain-dns.txt
 
 .. include:: includes/domain-idn.txt
