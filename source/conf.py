@@ -81,6 +81,39 @@ todo_include_todos = False
 
 # -- Options for HTML output ----------------------------------------------
 
+def _read_changelog_files():
+    import os
+    import os.path
+
+    entries = []
+
+    changelog_dir = os.path.join(
+        os.path.dirname(__file__),
+        'changelog',
+    )
+
+    for name in os.listdir(changelog_dir):
+        path = os.path.join(changelog_dir, name)
+
+        if not name.endswith('.rst'):
+            continue
+
+        base, _ = os.path.splitext(name)
+        date, sep, version = base.partition('_')
+
+        if not sep:
+            print("invalid filename: " + path)
+
+        entries.append({
+            'date': date,
+            'version': version,
+            'text': open(path).read(),
+        })
+
+    entries.sort(key=lambda e: e['date'])
+    return entries
+
+
 html_theme = 'sphinx_rtd_theme'
 html_theme_options = {
   'display_version': False,
@@ -91,6 +124,7 @@ html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 html_last_updated_fmt = '%b %d, %Y'
 html_context = {
   'css_files': ['_static/css/custom.css'],
+  'changelog_entries': _read_changelog_files(),
 }
 html_show_copyright = False
 html_favicon = '_static/favicon.ico'
@@ -134,3 +168,15 @@ man_pages = [
     (master_doc, 'uberspace7manual', 'Uberspace 7 manual Documentation',
      [author], 1)
 ]
+
+def rstjinja(app, docname, source):
+    """
+    Render our pages as jinja templates.
+    """
+    source[0] = app.builder.templates.render_string(
+        source[0], app.config.html_context
+    )
+
+
+def setup(app):
+    app.connect("source-read", rstjinja)

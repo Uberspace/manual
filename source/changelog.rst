@@ -6,20 +6,25 @@ Changes in Uberspace 7
 
 This document will track major changes in the project.
 
-[7.0.30] - 2018-02-09
-=====================
+{# add/edit files in source/changelog to generate new changelog entries #}
+{% for entry in changelog_entries %}
+[{{ entry.version }}] - {{ entry.date }}
+=========
 
+{% if loop.first %}
 .. _lastchange:
+{% endif %}
 
-Changed
--------
+{{ entry.text }}
 
-* If a domain is accepted by nginx, we now always provide a let's encrypt certificate for it trough auto-ssl. We hope this will prevent the case, where sometimes a correctly added domain won't get a certificate. 
-* As promised in 7.0.24 the nginx config generation now happens way faster, resulting in quicker reboots und easier debugging.
-
-.. _oldentries:
+{% if not loop.last %}
 
 ----
+{% endif %}
+{% if loop.first %}
+.. _oldentries:
+{% endif %}
+{% endfor %}
 
 [7.0.29] - 2018-02-02
 =====================
