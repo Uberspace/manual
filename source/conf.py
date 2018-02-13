@@ -114,6 +114,8 @@ def _read_changelog_files():
     return entries
 
 
+changelog_entries = _read_changelog_files()
+
 html_theme = 'sphinx_rtd_theme'
 html_theme_options = {
   'display_version': False,
@@ -124,7 +126,8 @@ html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 html_last_updated_fmt = '%b %d, %Y'
 html_context = {
   'css_files': ['_static/css/custom.css'],
-  'changelog_entries': _read_changelog_files(),
+  'changelog_entries': changelog_entries,
+  'newest_changelog_entry': changelog_entries[-1],
 }
 html_show_copyright = False
 html_favicon = '_static/favicon.ico'

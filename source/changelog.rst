@@ -14,13 +14,5 @@ This document will track major changes in the project.
 [{{ entry.version }}] - {{ entry.date }}
 =========
 
-{% if loop.first %}
-.. _lastchange:
-{% endif %}
-
 {{ entry.text }}
-
-{% if loop.first %}
-.. _oldentries:
-{% endif %}
 {% endfor %}
