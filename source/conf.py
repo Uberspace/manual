@@ -76,6 +76,10 @@ pygments_style = 'sphinx'
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = False
 
+html_extra_path = [
+    'changelog_feeds',
+]
+
 
 # -- Options for HTML output ----------------------------------------------
 
@@ -184,3 +188,51 @@ def rstjinja(app, docname, source):
 
 def setup(app):
     app.connect("source-read", rstjinja)
+
+
+def _build_feed(changelog_entries, format):
+    from feedgen.feed import FeedGenerator
+
+    BASE_URL = 'https://manual.uberspace.de/en/changelog.'
+    HTML_URL = BASE_URL + 'html'
+
+    fg = FeedGenerator()
+    fg.id(HTML_URL)
+    fg.title('Uberspace 7 Updates')
+    fg.link(href=HTML_URL, rel='alternate')
+    fg.link(href=BASE_URL + format, rel='self')
+    fg.language('en')
+
+    for entry in changelog_entries:
+        deeplink = '{}#{}'.format(HTML_URL, entry['version'])
+        fe = fg.add_entry()
+        fe.id(deeplink)
+        fe.title('[{}] - {}'.format(entry['version'], entry['date']))
+        fe.link(href=deeplink)
+
+    if format == 'atom':
+        return fg.atom_str(pretty=True)
+    else:
+        raise Exception('unkown feed format: ' + str(format))
+
+
+def write_changelog_feeds():
+    import os.path
+
+    feeds = [
+        'atom',
+    ]
+
+    for format in feeds:
+        path = os.path.join(
+            os.path.dirname(__file__),
+            'changelog_feeds',
+            'changelog.' + format,
+        )
+
+        with open(path, 'w') as f:
+            feed = _build_feed(changelog_entries, 'atom')
+            f.write(feed)
+
+
+write_changelog_feeds()
