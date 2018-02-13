@@ -61,17 +61,7 @@ nav li {
   padding-left: 10px;
 }
 
-/* ensure that the last link in menu is not covered by the version chooser */
-.wy-nav-side {
-  padding-bottom: 3em;
-}
-
 /* search box */
 .wy-side-nav-search input[type=text] {
   border-color: #84000f;
-}
-
-/* logo box for languages */
-.sidebar + .section > .section:first-of-type > div {
-  max-width: 55%;
 }

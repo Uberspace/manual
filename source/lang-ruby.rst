@@ -1,8 +1,6 @@
-.. _ruby:
-
 .. sidebar:: Logo
   
-  .. image:: ../../images/logo_ruby.png 
+  .. image:: _static/images/logo_ruby.png 
       :align: center
 
 ####

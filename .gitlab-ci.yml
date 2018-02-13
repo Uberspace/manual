@@ -1,79 +1,54 @@
 ---
-image: uberspace/ansible:2.1
+image: uberspace/ansible:2.4
+
 
 variables:
-  SSH_KEY_PATH: /tmp/.ssh-key
-  MANUAL_HOST: corona.uberspace.de
-  MANUAL_USERNAME: manual
-  MANUAL_PATH: /var/www/virtual/$MANUAL_USERNAME/$CI_BUILD_REF_SLUG.$MANUAL_USERNAME.$MANUAL_HOST
+  DEPLOYMENT_SSH_KEY_PATH: /tmp/.deployment-ssh-key
+
 
 stages:
   - build
   - deploy
-  - cleanup
+
 
 before_script:
-  - umask 077; echo "$SSH_KEY" | tr -d '\r' > $SSH_KEY_PATH
-  - mkdir ~/.ssh && echo $KNOWN_HOSTS > ~/.ssh/known_hosts
-
+  # GitLab inserts a \r for each newline into our private key. This confuses the ssh client.
+  - umask 077; echo "$SSH_KEY" | tr -d '\r' > $DEPLOYMENT_SSH_KEY_PATH
   # Dependencies
   - pip install --quiet -r requirements.txt
-  - git submodule update --quiet --init --recursive
-  - yum install -y centos-release-scl
-  - yum install -y git19
-  - scl enable git19 bash
-  - export PATH=/opt/rh/git19/root/usr/bin:$PATH
 
-Build stable and master manual:
+
+Build HTML:
   stage: build
-  only:
-    - stable
-    - master
+  script:
+    - make html
   artifacts:
     paths:
-      - _build
-  script:
-    - ansible-playbook -v build-stable.yml
+      - build
 
-Build staging manual:
-  stage: build
-  except:
-    - stable
-    - master
-  artifacts:
-    paths:
-      - _build
-  script:
-    - ansible-playbook -v build-staging.yml
- 
-Deploy manual to staging:
+
+Deploy to staging:
   stage: deploy
   except:
     - stable
-    - master
   script:
-    - ansible-playbook deploy-staging.yml 
+    - ansible-playbook deploy.yml --private-key=$DEPLOYMENT_SSH_KEY_PATH
+  variables:
+    MANUAL_DOMAIN: $CI_BUILD_REF_SLUG.manual.corona.uberspace.de
   environment:
     name: manual/$CI_BUILD_REF_SLUG
-    url: http://$CI_BUILD_REF_SLUG.$MANUAL_USERNAME.$MANUAL_HOST
-    on_stop: Delete staging manual
+    url: http://$CI_BUILD_REF_SLUG.manual.corona.uberspace.de
+    #on_stop: Delete staging manual
 
-Deploy manual to production:
+
+Deploy to production:
   stage: deploy
   only:
     - stable
-    - master
   script:
-    - ansible-playbook deploy-stable.yml 
+    - ansible-playbook deploy.yml --private-key=$DEPLOYMENT_SSH_KEY_PATH
+  variables:
+    MANUAL_DOMAIN: manual.uberspace.de
   environment:
-    name: manual/$CI_BUILD_REF_SLUG
-    url: http://manual.uberspace.de
-
-Delete staging manual:
-  stage: cleanup
-  when: manual
-  script:
-    - ansible-playbook destroy.yml
-  environment:
-    name: manual/$CI_BUILD_REF_SLUG
-    action: stop
+    name: production
+    url: https://manual.uberspace.de

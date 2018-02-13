@@ -5,11 +5,16 @@
 # virtualenv
 venv
 
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+
 # ansible
 *.retry
 
 # Sphinx
-_build
+build
 
 # CI
 .sshkey

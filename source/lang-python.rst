@@ -2,7 +2,7 @@
 
 .. sidebar:: Logo
   
-  .. image:: ../../images/logo_python.png 
+  .. image:: _static/images/logo_python.png 
       :align: center
 
 ######
