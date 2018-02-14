@@ -10,6 +10,7 @@ This document will track major changes in the project.
 {% for entry in changelog_entries %}
 
 ----
+.. _{{ entry.version }}
 
 [{{ entry.version }}] - {{ entry.date }}
 =========
