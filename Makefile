@@ -14,6 +14,10 @@ help:
 
 .PHONY: help Makefile
 
+serve:
+	sphinx-autobuild --ignore '*.atom' -b html $(SOURCEDIR) $(BUILDDIR)/html
+
+
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
 %: Makefile
