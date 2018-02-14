@@ -125,13 +125,13 @@ html_last_updated_fmt = '%b %d, %Y'
 html_context = {
   'css_files': ['_static/css/custom.css'],
   'changelog_entries': changelog_entries,
-  'newest_changelog_entry': changelog_entries[-1],
+  'newest_changelog_entry': changelog_entries[0],
 }
 html_show_copyright = False
 html_favicon = '_static/favicon.ico'
 
 
-release = changelog_entries[-1]['version']
+release = changelog_entries[0]['version']
 
 
 # Theme options are theme-specific and customize the look and feel of a theme
