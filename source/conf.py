@@ -204,7 +204,7 @@ def _build_feed(changelog_entries, format):
     fg.language('en')
 
     for entry in changelog_entries:
-        deeplink = '{}#{}'.format(HTML_URL, entry['version'])
+        deeplink = '{}#v{}'.format(HTML_URL, entry['version'].replace('.', '-'))
         fe = fg.add_entry()
         fe.id(deeplink)
         fe.title('[{}] - {}'.format(entry['version'], entry['date']))
