@@ -131,7 +131,7 @@ html_show_copyright = False
 html_favicon = '_static/favicon.ico'
 
 
-release = changelog_entries[-1]['version']
+release = changelog_entries[0]['version']
 
 
 # Theme options are theme-specific and customize the look and feel of a theme
