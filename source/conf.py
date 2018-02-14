@@ -209,6 +209,7 @@ def _build_feed(changelog_entries, format):
         fe.id(deeplink)
         fe.title('[{}] - {}'.format(entry['version'], entry['date']))
         fe.link(href=deeplink)
+        fe.content(entry['text'])
 
     if format == 'atom':
         return fg.atom_str(pretty=True)
