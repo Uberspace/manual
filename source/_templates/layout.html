@@ -19,3 +19,9 @@
 </script>
 <!-- End Piwik Code -->
 {% endblock %}
+
+{% if title == "Changelog" %}
+{% block extrahead %} 
+  <link rel="alternate" type="application/rss+xml" title="Changelog RSS feed" href="changelog.atom"/>
+{% endblock %} 
+{% endif %}
