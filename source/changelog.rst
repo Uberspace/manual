@@ -1,8 +1,8 @@
 .. _changelog:
 
-######################
-Changes in Uberspace 7
-######################
+#########
+Changelog
+#########
 
 This document will track major changes in the project.
 
