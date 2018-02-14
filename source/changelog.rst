@@ -11,6 +11,8 @@ This document will track major changes in the project.
 
 ----
 
+.. _v{{ entry.version }}:
+
 [{{ entry.version }}] - {{ entry.date }}
 =========
 
