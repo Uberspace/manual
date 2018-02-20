@@ -214,7 +214,7 @@ but the conventional SSH password of your Uberspace.
 
 .. code-block:: console
 
-  [localuser@localhost ~]$ ssh-copy-id -i id_ed25519.pub eliza@dolittle.uberspace.de
+  [localuser@localhost ~]$ ssh-copy-id -i ~/.ssh/id_ed25519.pub eliza@dolittle.uberspace.de
   /usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "id_ed25519.pub"
   /usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
   /usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
