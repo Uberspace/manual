@@ -4,6 +4,11 @@
 Accessing Your Mails
 ####################
 
+Webmail
+=======
+
+You can access your mails using the `webmail interface <https://webmail.uberspace.de>`_. Use your full email address and the corresponding password to login. This works with your ``@uber.space`` address as well as with any addresses using your own :ref:`mail-domains`.
+
 Client settings
 ===============
 
