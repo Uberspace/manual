@@ -86,7 +86,7 @@ We update all versions on a regular basis. Once the `security support <http://ph
 +--------+---------------------+------------------------+ 
 | 7.1    | Active support      | 1 Dec 2019             | 
 +--------+---------------------+------------------------+ 
-| 7.2    | Active support      | 30 Nov 2019            | 
+| 7.2    | Active support      | 30 Nov 2020            | 
 +--------+---------------------+------------------------+
 
 ----
