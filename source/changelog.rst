@@ -1,8 +1,8 @@
 .. _changelog:
 
-######################
-Changes in Uberspace 7
-######################
+#########
+Changelog
+#########
 
 This document will track major changes in the project.
 
@@ -10,6 +10,8 @@ This document will track major changes in the project.
 {% for entry in changelog_entries %}
 
 ----
+
+.. _v{{ entry.version }}:
 
 [{{ entry.version }}] - {{ entry.date }}
 =========

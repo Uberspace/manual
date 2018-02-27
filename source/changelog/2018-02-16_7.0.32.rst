@@ -1,0 +1,16 @@
+Added
+-----
+
+* We now provide ImageMagick development headers as well as perl bindings. 
+* We now provide libuuid development headers. 
+* We now provide the irssi IRC client. 
+
+Fixed
+-----
+
+* Maildrop can now be used in .qmail files without specifying the full path. This should have been fixed in 7.0.24, but we misread the systemd documentation, so here we go again. 
+* The message shown on websites hosted on deactivated accounts is now correctly displayed in browsers. 
+
+Changed
+-------
+* ~/php.d is now loaded last, so it can override values set in the global php.ini. To load extensions like ioncube, which insist on being loaded first, use the newly introduced php.early.d. 

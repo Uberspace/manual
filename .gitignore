@@ -18,3 +18,7 @@ build
 
 # CI
 .sshkey
+
+# ignore generated changelog feeds
+source/changelog_feeds/*
+!source/changelog_feeds/.gitkeep
