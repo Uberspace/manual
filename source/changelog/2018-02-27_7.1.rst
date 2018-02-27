@@ -1,0 +1,9 @@
+Added
+-----
+
+* SPAM filtering for incoming mails
+
+Fixed
+-----
+
+* IMAP/POP3/SMTP login with <user>@uber.space now works as it should
