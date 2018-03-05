@@ -16,7 +16,8 @@ In order to use your own domain for mail with your Uberspace, you need to first 
  [isabell@philae ~]$ uberspace mail domain add isabell.example
  The mailserver's configuration has been adapted.
  Now you can use the following record for your dns:
-   MX -> philae.uberspace.de
+   MX  -> philae.uberspace.de
+   TXT -> v=spf1 mx ~all
 
 Once you’ve set up your domain using the uberspace mail domain add tool, the tool provides you with the ``MX`` record that needs to be configured in your registrar’s nameserver.
 
