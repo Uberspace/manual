@@ -2,8 +2,16 @@ Added
 -----
 
 * SPAM filtering for incoming mails
+* All incoming email is now spamchecked via rspamd. Mails with a spam score higher than 15 are rejected.
 
 Fixed
 -----
 
-* IMAP/POP3/SMTP login with <user>@uber.space now works as it should
+* Webmail now works with mail addresses like charlie@user.uber.space
+* The webmail client now supports uploading attachments
+* We now support IMAP / POP3 / SMTP login with `<user>@uber.space`
+
+Changed
+-------
+
+* The output of “uberspace mail domain add” now includes a sample SPF record. 
