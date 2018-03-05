@@ -1,7 +1,7 @@
 Fixed
 -----
 
-* Because of a configuration error php-fpm logs were recorded to a non-user-accessible default location, even when the user did not turn them on. This has been resolved and all logs have been deleted. !432
+* Because of a configuration error php-fpm logs were recorded to a non-user-accessible default location, even when the user did not turn them on. This has been resolved and all logs have been deleted.
 
 Added
 -----
