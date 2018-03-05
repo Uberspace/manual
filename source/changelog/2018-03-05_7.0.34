@@ -1,0 +1,14 @@
+Fixed
+-----
+
+* Because of a configuration error php-fpm logs were recorded to a non-user-accessible default location, even when the user did not turn them on. This has been resolved and all logs have been deleted. !432
+
+Added
+-----
+
+* Sometimes you want to assert ownership. We now provide the “whois”-tool, so you can do that.
+
+Changed
+-------
+
+* We switched our MTA on port 25 to haraka, to enable spam filtering in the future.
