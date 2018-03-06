@@ -22,7 +22,7 @@ Your cronjobs are stored in your ``crontab``. This is a table that contains all 
  │ └────────── Hour (0-23)
  └──────────── Minute (0-59)
 
-An asterisk (``*``) means that any value is valid, so if all columns contain an asterisk, the job will be started every second, regardless of date, time, etc.
+An asterisk (``*``) means that any value is valid, so if all columns contain an asterisk, the job will be started every minute, regardless of date, time, etc.
 
 Please note that hours are always in 24-hour format, so 10 is 10 a.m., if you want 10 p.m., you need to enter 22 in the hour column.
 
