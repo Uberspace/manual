@@ -4,7 +4,7 @@
 Filtering mails
 ###############
 
-We filter incoming mails with `Rspamd <hhttps://rspamd.com>`_ which uses `multiple <https://rspamd.com/comparison.html>`_ filtering and statistical methods to generate a spam score, including (but not limited to) SPF, DMARC and DNS blacklists. The score is then added to the mail header.
+We filter incoming mails with `Rspamd <hhttps://rspamd.com>`_ which uses `multiple <https://rspamd.com/comparison.html>`_ filtering and statistical methods to generate a spam score, including (but not limited to) SPF, DMARC and DNS blacklists. Mails with a score >= 15 get rejected. 
 
 Configure spam filter
 =====================
@@ -23,4 +23,4 @@ Use ``uberspace mail spamfilter`` to configure the filter for your account:
 Header
 ======
 
-Keep in mind that we only add the score to the mail header: ``X-Rspamd-Bar``, ``X-Rspamd-Report`` and ``X-Rspamd-Score``. You can use maildrop to sort the mails. 
+We add the score to the mail header: ``X-Rspamd-Bar``, ``X-Rspamd-Report`` and ``X-Rspamd-Score``. You can use maildrop to sort the mails. 
