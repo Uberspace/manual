@@ -23,6 +23,16 @@ Once you’ve set up your domain using the uberspace mail domain add tool, the t
 
 .. warning:: Please use only the provided host name for your ``MX`` record. If you use any other host name for your ``MX``, the mailserver will not accept your domain.
 
+SPF record
+----------
+
+The `Sender Policy Framwork <https://tools.ietf.org/html/rfc4408>`_ (SPF) is a system that allows mailservers to check if another mail server is allowed to send mails for a specific domain. To specify which servers are allowed to send mails for your domain, a ``TXT`` DNS record is set. Adding  Uberspace host to the list of allowed servers for your domain might increase your chances of passing spam filters. Assuming you have set your Uberspace host as your domain's ``MX``, you can set a ``TXT``-type record for your domain using this snippet:
+
+.. code-block:: none
+
+ v=spf1 mx ~all
+
+This instructs other mail servers to accept mails from your domain if they originate from your domain's MX and to deliver any mails that claim to be from your domain but originate from a different server to the spam folder.
 
 .. include:: includes/domain-dns.txt
 
