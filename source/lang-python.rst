@@ -62,11 +62,11 @@ In order to install the correct package corresponding to the Python version you 
 
 .. code-block:: console
 
-  [eliza@dolitte ~] pip2.7 package-name --user 
+  [eliza@dolitte ~] pip2.7 install package-name --user 
 
 To install for Python 3.6, use :code:`pip3.6`:
 
 .. code-block:: console
 
-  [eliza@dolitte ~] pip3.6 package-name --user 
+  [eliza@dolitte ~] pip3.6 install package-name --user 
 
