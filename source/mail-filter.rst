@@ -23,4 +23,4 @@ Use ``uberspace mail spamfilter`` to configure the filter for your account:
 Header
 ======
 
-We add the score to the mail header: ``X-Rspamd-Bar``, ``X-Rspamd-Report`` and ``X-Rspamd-Score``. You can use maildrop to sort the mails. 
+We add the score to the mail header: ``X-Rspamd-Bar``, ``X-Rspamd-Report`` and ``X-Rspamd-Score``.
