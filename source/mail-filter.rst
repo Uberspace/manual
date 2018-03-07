@@ -4,12 +4,23 @@
 Filtering mails
 ###############
 
-DNS blacklists
-==============
+We filter incoming mails with `Rspamd <hhttps://rspamd.com>`_ which uses `multiple <https://rspamd.com/comparison.html>`_ filtering and statistical methods to generate a spam score, including (but not limited to) SPF, DMARC and DNS blacklists. Mails with a score >= 15 get rejected. 
 
-We try to minimize incoming SPAM mails by filtering with two blacklists: The `DNSBL (DNS-based blacklist) of NiX Spam <http://www.dnsbl.manitu.net>`_ and the `SpamCop Blocking List <https://www.spamcop.net/bl.shtml>`_. These blacklists have existed for a long time, are queried by almost every mail provider, and are generally considered legitimate.
+Configure spam filter
+=====================
 
-Privacy
--------
+Use ``uberspace mail spamfilter`` to configure the filter for your account:
 
-With DNS blacklists we don't look into the mail itself, neither header nor content. If the delivering mailserver is on a blacklist we just don't accept the mail at all and bounce it.
+.. code-block:: console
+
+  [eliza@dolittle ~]$ uberspace mail spamfilter status
+  spam filtering enabled. 
+  [eliza@dolittle ~]$ uberspace mail spamfilter disable
+  spam filtering disabled.
+  [eliza@dolittle ~]$ uberspace mail spamfilter enable
+  spam filtering enabled. 
+
+Header
+======
+
+We add the score to the mail header: ``X-Rspamd-Bar``, ``X-Rspamd-Report`` and ``X-Rspamd-Score``.
