@@ -145,7 +145,7 @@ This is the default directory for ``php.ini`` files. Any files inside this direc
 ~/etc/php.early.d
 ^^^^^^^^^^^^^^^^^^^^^
 
-If your application requires its directives to be loaded before the rest of the configuration, put these directives into a ``.ini`` file and place it in ``~/etc/php.early.d``. 
+If your application requires its directives to be loaded before the rest of the configuration, create the ``~/etc/php.early.d`` directory. Then put these directives into a ``.ini`` file and place it there. 
 
 .. tip:: You need to reload PHP whenever you change your configuration files: ``uberspace tools restart php`` checks your configuration for sanity and restarts your PHP instance.
 
