@@ -8,6 +8,7 @@ HTTPS
 =====
 
 .. tip:: We enforce HTTPS and redirect HTTP to HTTPS. 
+  We use HTTP status code 302 because we do not want to lock external domains into HTTPS forever; if we used 301, it would be much harder for our users to use the domain with another hosting provider with HTTP.
 
 Every Uberspace has its own valid certificate. Every :ref:`external domain <web-domains>` gets a valid certificate from `Let's Encrypt <https://letsencrypt.org>`_ automatically.
 
