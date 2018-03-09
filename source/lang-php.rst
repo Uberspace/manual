@@ -135,7 +135,17 @@ We also set the timezone so error logs have the correct times.
 Own configuration
 -----------------
 
-You can provide your own config files in ``~/etc/php.d``. All files with the extension ``.ini`` will be loaded *additionally* to the stock configuration and existing directives will be overridden.
+There are two configuration directories for ``php.ini`` files in your uberspace account: ``~/etc/php.d`` and ``~/etc/php.early.d``. In most cases, you will only need ``~/etc/php.d``, but some applications require their directives to be at the start of the configuration. Only in those cases will you need ``~/etc/php.early.d``.
+
+~/etc/php.d
+^^^^^^^^^^^^^^^
+
+This is the default directory for ``php.ini`` files. Any files inside this directory will be loaded *additonally* to the existing, global configuration and will overwrite the default values.
+
+~/etc/php.early.d
+^^^^^^^^^^^^^^^^^^^^^
+
+If your application requires its directives to be loaded before the rest of the configuration, create the ``~/etc/php.early.d`` directory. Then put these directives into a ``.ini`` file and place it there. 
 
 .. tip:: You need to reload PHP whenever you change your configuration files: ``uberspace tools restart php`` checks your configuration for sanity and restarts your PHP instance.
 
