@@ -65,3 +65,14 @@ nav li {
 .wy-side-nav-search input[type=text] {
   border-color: #84000f;
 }
+
+
+/* Main Page - Rocket */
+
+.rst-content .document img[src='_images/big-rocket.svg'] {
+    float: right;
+    width: 50%;
+    height: 50%;
+    shape-outside: url(/_images/big-rocket.svg);
+    shape-margin: 1em;
+}
