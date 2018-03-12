@@ -73,6 +73,6 @@ nav li {
     float: right;
     width: 50%;
     height: 50%;
-    shape-outside: url(/_images/big-rocket.svg);
+    shape-outside: url(/en/_images/big-rocket.svg);
     shape-margin: 1em;
 }
