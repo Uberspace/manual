@@ -1,9 +1,8 @@
-  .. image:: _static/images/big-rocket.svg
-      :align: right
-
 ##################
 Uberspace 7 manual
 ##################
+
+.. image:: _static/images/big-rocket.svg
 
 Uberspace is a hosting platform targeted at people who want to look behind the scenes, do things we didn’t anticipate and generally prefer working with a text-based console. Our objective is to not only host the content you’d like to see on the web, but also to introduce you to Linux and basic shell usage.
 
