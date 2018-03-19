@@ -1,0 +1,14 @@
+Added
+-----
+
+* To support users with file transfer related things, we now install lftp and ncftp by default.
+
+Changed
+-------
+
+* dmesg output is now hidden for normal users, as it was on U6.
+
+Fixed
+-----
+
+* uberspace mail filter status is now working as documented
