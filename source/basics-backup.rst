@@ -16,7 +16,7 @@ We keep daily backups of the last seven days, and weekly backups going back seve
 Restoring from the backup
 =========================
 
-If you need to restore files or need a MySQL dump from the backup, please contact `hallo@uberspace.de <mailto:hallo@uberspace.de>`_. Please include the following information in your email:
+If you need to restore files from the backup, please contact `hallo@uberspace.de <mailto:hallo@uberspace.de>`_. Please include the following information in your email:
 
 - the path to the file(s) / folder(s) you need restored 
 - the date of the backup you want to restore
