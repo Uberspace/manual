@@ -1,0 +1,3 @@
+.. note:: 
+
+   Apache 2.4 will add the DirectoryIndex (index.html) to all requests without a folder or file name. To avoid this, add ``DirectoryIndex disabled`` to your .htaccess
