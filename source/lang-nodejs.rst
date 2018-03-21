@@ -102,7 +102,7 @@ In order to make your Node.js application accessable from the outside, you need 
   RewriteEngine On
   RewriteRule ^nodejs/(.*) http://localhost:61624/$1 [P]
 
-.. include:: includes/htaccess-documentindex.txt
+.. include:: includes/htaccess-directoryindex.txt
 
 ----
 

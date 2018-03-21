@@ -56,7 +56,7 @@ In order to make your .NET application accessable from the outside, you need to 
   RewriteEngine On
   RewriteRule ^dotnet/(.*) http://localhost:61625/$1 [P]
 
-.. include:: includes/htaccess-documentindex.txt
+.. include:: includes/htaccess-directoryindex.txt
 
 ----
 
