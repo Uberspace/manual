@@ -99,6 +99,8 @@ In order to make your Ruby application accessable from the outside, you need to 
   RewriteEngine On
   RewriteRule ^ruby/(.*) http://localhost:61624/$1 [P]
 
+.. include:: includes/htaccess-directoryindex.txt
+
 ----
 
 .. _gem:
