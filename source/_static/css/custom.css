@@ -76,3 +76,9 @@ nav li {
     shape-outside: url(/en/_images/big-rocket.svg);
     shape-margin: 1em;
 }
+
+/* logo box for languages */
+.sidebar + .section > .section:first-of-type > div {
+  max-width: 55%;
+}
+
