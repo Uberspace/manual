@@ -34,10 +34,10 @@ Deploy to staging:
   script:
     - ansible-playbook deploy.yml --private-key=$DEPLOYMENT_SSH_KEY_PATH
   variables:
-    MANUAL_DOMAIN: $CI_BUILD_REF_SLUG.manual.corona.uberspace.de
+    MANUAL_DOMAIN: $CI_BUILD_REF_SLUG.manual.uberspace.de
   environment:
     name: manual/$CI_BUILD_REF_SLUG
-    url: http://$CI_BUILD_REF_SLUG.manual.corona.uberspace.de
+    url: http://$CI_BUILD_REF_SLUG.manual.uberspace.de
     #on_stop: Delete staging manual
 
 
