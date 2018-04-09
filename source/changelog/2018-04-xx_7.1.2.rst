@@ -1,6 +1,0 @@
-Added
------
-
-* We now provide composer
-* We now provide wp-cli
-

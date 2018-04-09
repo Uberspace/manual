@@ -1,0 +1,7 @@
+Added
+-----
+
+* We now install composer to help you manage your PHP dependencies
+* We now install WP-CLI to manage Wordpress installations.
+* We now provide libpng-dev
+
