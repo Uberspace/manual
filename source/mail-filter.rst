@@ -14,11 +14,11 @@ Use ``uberspace mail spamfilter`` to configure the filter for your account:
 .. code-block:: console
 
   [eliza@dolittle ~]$ uberspace mail spamfilter status
-  spam filtering enabled. 
+  Mail filter enabled.
   [eliza@dolittle ~]$ uberspace mail spamfilter disable
-  spam filtering disabled.
+  Mail filter disabled.
   [eliza@dolittle ~]$ uberspace mail spamfilter enable
-  spam filtering enabled. 
+  Mail filter enabled.
 
 Header
 ======
