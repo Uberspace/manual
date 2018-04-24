@@ -30,7 +30,7 @@
     - name: symlink analytics
       file:
         src: /var/www/virtual/{{ ansible_user }}/analytics
-        dest: /var/www/virtual/{{ ansible_user }}/{{ lookup('env', 'MANUAL_DOMAIN') }}
+        dest: /var/www/virtual/{{ ansible_user }}/{{ lookup('env', 'MANUAL_DOMAIN') }}/analytics
         owner: "{{ ansible_user }}"
         group: "{{ ansible_user }}"
         state: link
