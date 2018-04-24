@@ -26,6 +26,14 @@
           RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
           RewriteRule ^$ /en/ [R]
         dest: "{{ manual_path }}/.htaccess"
+        
+    - name: symlink analytics
+      file:
+        src: /var/www/virtual/{{ ansible_user }}/analytics
+        dest: /var/www/virtual/{{ ansible_user }}/{{ lookup('env', 'MANUAL_DOMAIN') }}/analytics
+        owner: "{{ ansible_user }}"
+        group: "{{ ansible_user }}"
+        state: link
 
     - name: Correct Ownership of DocumentRoot
       file:
