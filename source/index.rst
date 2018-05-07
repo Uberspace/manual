@@ -95,5 +95,5 @@ For more information see the :doc:`full changelog <changelog>`.
    :caption: Meta
 
    Changelog <changelog>
-   Uberlab👩‍🔬 <https://lab.uberspace.de/en/>
+   👩‍🔬 Uberlab <https://lab.uberspace.de/en/>
 
