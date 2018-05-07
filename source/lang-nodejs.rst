@@ -112,3 +112,17 @@ npm
 ===
 
 ``npm``, or the `node package manager`, is used to install and manage additional packages. We have preconfigured ``npm`` to install packages to your :ref:`home` when using the global (``-g``) option.
+
+----
+
+Popular software
+================
+
++--------------------------------------------------------------------+----------------------------+ 
+| Name                                                               | Kind                       | 
++====================================================================+============================+
+| `Ghost <https://lab.uberspace.de/en/guide_ghost.html>`_            | Blog                       | 
++--------------------------------------------------------------------+----------------------------+ 
+| `Etherpad Lite <https://lab.uberspace.de/en/guide_etherpad.html>`_ | collaborative writing tool |
++--------------------------------------------------------------------+----------------------------+ 
+
