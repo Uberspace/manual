@@ -1,0 +1,10 @@
+Added
+-----
+
+* We now provide fetchmail for your mail fetching pleasure.
+* We now provide goaccess.
+
+Fixed
+-----
+
+* Mailbox names now can start with a number.
