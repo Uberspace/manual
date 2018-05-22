@@ -99,4 +99,5 @@ For more information see the :doc:`full changelog <changelog>`.
 
    Changelog <changelog>
    ⚛️ Uberlab <https://lab.uberspace.de/en/>
+   Imprint <https://uberspace.de/imprint>
 
