@@ -4,7 +4,7 @@
 Your first day... for nerds
 ###########################
 
-If you've opened this page, you probably know already how to use a Linux account and only need a few details to get startet.
+If you've opened this page, you probably know already how to use a Linux account and only need a few details to get started.
 
 Websites
 ========
