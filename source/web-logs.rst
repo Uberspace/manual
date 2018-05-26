@@ -35,7 +35,7 @@ The ``access_log`` logs all connections to your website:
 
     82.98.0.0 - - [22/Jun/2017:09:42:10 +0200] "GET / HTTP/2.0" 200 136 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
 
-Each entry contains the client's (redacted) IP address, date and time of the request, the actual HTTP request sent and the ``user agent``, i.e. the browser and operating system used by the client.
+Each entry contains the client's (redacted) IP address, date and time of the request, the actual HTTP request sent, the referrer and the ``user agent``, i.e. the browser and operating system used by the client.
 
 
 .. _web-logs-error:
