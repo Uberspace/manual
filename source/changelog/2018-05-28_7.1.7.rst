@@ -1,0 +1,9 @@
+Added
+-----
+
+* We now provide PHP-GNUPG 🔐 
+
+Changed
+-------
+
+* Reject mails to invalid recipients on valid domains early, instead of bouncing them. 
