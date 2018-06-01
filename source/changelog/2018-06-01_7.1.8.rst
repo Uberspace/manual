@@ -1,0 +1,11 @@
+Added
+-----
+
+* We now provide the glances monitoring tool.
+* We now provide PHP-PEAR.
+* We now provide jq.
+
+Changed
+-------
+
+* The path to binaries from PHP composer packages, which are globally installed by users, is now included in the `PATH` environment variable.
