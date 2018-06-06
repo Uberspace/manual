@@ -1,0 +1,5 @@
+Added
+-----
+
+* We now provide gdbm-devel
+* We now provide libcurl-devel
