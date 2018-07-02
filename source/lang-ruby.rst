@@ -77,15 +77,15 @@ Update policy
 
 We update all versions on a regular basis. Once the `support <https://www.ruby-lang.org/en/downloads/branches/>`_ reaches its end of life (eol), the branch is no longer supported and will be removed from our servers. 
 
-+--------+--------------------+------------------+ 
-| Branch | State              | Supported Until  | 
-+========+====================+==================+ 
-| 2.3    | normal maintenance | To be determined | 
-+--------+--------------------+------------------+ 
-| 2.4    | normal maintenance | To be determined |
-+--------+--------------------+------------------+ 
-| 2.5    | normal maintenance | To be determined | 
-+--------+--------------------+------------------+ 
++--------+----------------------+------------------+ 
+| Branch | State                | Supported Until  | 
++========+======================+==================+ 
+| 2.3    | security maintenance | 2019-03-31       | 
++--------+----------------------+------------------+ 
+| 2.4    | normal maintenance   | To be determined |
++--------+----------------------+------------------+ 
+| 2.5    | normal maintenance   | To be determined | 
++--------+----------------------+------------------+ 
 
 ----
 
