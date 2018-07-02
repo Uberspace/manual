@@ -15,6 +15,8 @@ To create a new service, place a ``.ini`` file for each new service in ``~/etc/s
 
  [program:my-daemon]
  command=/home/eliza/bin/my-daemon
+ autostart=yes
+ autorestart=yes
 
 Afterwards, ask ``supervisord`` to look for new ``.ini`` files:
 
