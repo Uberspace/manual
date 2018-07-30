@@ -1,0 +1,14 @@
+Added
+-----
+
+* SELinux is now enabled globally. In case you experience any unexpected "403 Forbidden" or "Permission denied" errors, please contact our support.
+* Backups are now available at `/backup`
+* We now provide `mtop`
+* We now provide cpanm and other basic perl tools
+* We now provide php-xmlrpc
+* We now provide dos2unix and unix2dos
+* We now provide librsync and librsync-devel
+
+Changed
+-------
+* The local-part of mail addresses is now case-insenstive
