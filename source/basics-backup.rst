@@ -16,7 +16,7 @@ We keep daily backups of the last seven days, and weekly backups going back seve
 Restoring from the backup
 =========================
 
-You can access your host's backup at ``/backup`: 
+You can access your host's backup at ``/backup``: 
 
 .. code-block:: console
 
