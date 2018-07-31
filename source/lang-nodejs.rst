@@ -42,6 +42,7 @@ Use ``uberspace tools version list node`` to show all selectable versions:
   - 6
   - 8
   - 9
+  - 10
   [eliza@dolittle ~]$ 
 
 .. _node-change-version:
@@ -59,8 +60,8 @@ You can select the Node.js version with ``uberspace tools version use node <vers
 
 .. code-block:: bash
 
-  [eliza@dolittle ~]$ uberspace tools version use node 9
-  Selected node version 9
+  [eliza@dolittle ~]$ uberspace tools version use node 10
+  Selected node version 10
   The new configuration is adapted immediately. Patch updates will be applied automatically.
   [eliza@dolittle ~]$ 
 
@@ -78,7 +79,7 @@ You can check the selected version by executing ``uberspace tools version show n
 Update policy
 -------------
 
-We update all versions on a regular basis. Once the `support <https://github.com/nodejs/Release#release-schedule>`_ ends, the branch reaches its end of life, is no longer supported and will be removed from our servers. Even-numbered versions are long-term support (LTS) versions.
+We update all versions on a regular basis. Once the `support <https://github.com/nodejs/Release#release-schedule>`_ ends, the branch reaches its end of life (EOL), is no longer supported and will be removed from our servers. Even-numbered versions are long-term support (LTS) versions.
 
 +--------+-------------------------+------------------+ 
 | Branch | State                   | Supported Until  | 
@@ -87,7 +88,9 @@ We update all versions on a regular basis. Once the `support <https://github.com
 +--------+-------------------------+------------------+ 
 | 8      | LTS                     | December 2019    |
 +--------+-------------------------+------------------+ 
-| 9      | Current release, no LTS | To be determined | 
+| 9      | EOL                     | June 2018        | 
++--------+-------------------------+------------------+ 
+| 10     | LTS                     | April 2021       |
 +--------+-------------------------+------------------+ 
 
 ----
