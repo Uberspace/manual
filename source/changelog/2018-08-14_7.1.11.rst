@@ -1,0 +1,4 @@
+Added
+-----
+
+* We now provide poppler and Node.js 10
