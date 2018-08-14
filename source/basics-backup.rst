@@ -59,6 +59,8 @@ If the output of your dry run looks good, you can restore the backup:
 
   [eliza@doolittle ~]$ rsync --verbose --recursive --links --perms --times --hard-links --acls --xattrs /backup/daily.3/var/www/virtual/eliza/html/blog/ /var/www/virtual/eliza/html/blog/
 
+.. note:: Because the backup is mounted as an NFS share, it has a different `SELinux` context than your target directory. To avoid permission problems, run ``restorecon -R`` on your restored data, e.g. ``restorecon -R /var/www/virtual/eliza/html/blog/``.
+
 If you need help, don't hesitate to contact us at hallo@uberspace.de.
 
 .. warning:: Do not use symlinks such as ``~/html`` when restoring your backup – that won't work because the backed-up symlink still points to the actual target ``/var/www/virtual/$USER/html`` instead of the target's backup (``/backup/daily.3/var/www/virtual/$USER/html``).
