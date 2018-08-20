@@ -1,0 +1,4 @@
+Added
+-----
+
+* We now provide lame-devel, libmad-devel, libogg-devel, libsamplerate-devel, libvorbis-devel and taglib-devel
