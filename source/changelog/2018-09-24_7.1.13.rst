@@ -1,0 +1,9 @@
+Added
+-----
+
+* _Poppler_, a PDF rendering library. 
+* _luarocks_,  a package manager for the Lua programming language. 
+* We provide mb2md so you can easily convert mbox files to Maildirs.
+* Update .net to 2.1
+* 🐟 We now provide the fish shell 
+* New packages: lua-devel, tcl-devel, gnuplot, lame-devel, libmad-devel, libogg-devel, libsamplerate-devel, libvorbis-devel, taglib-devel, e2fsprogs-devel, expat-devel, jpegoptim, optipng
