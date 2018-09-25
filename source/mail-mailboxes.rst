@@ -15,7 +15,7 @@ Every Uberspace account gets its own mailbox in the form of ``$USER@$SERVER.uber
 Additional mailboxes
 ====================
 
-You can use additonal mailboxes in the form of ``$MAILBOX@$USER.uber.space``. If you have :ref:`set up additional domains <mail-domains>`, ``$MAILBOX@$DOMAIN`` will also work.
+You can use additional mailboxes in the form of ``$MAILBOX@$USER.uber.space``. If you have :ref:`set up additional domains <mail-domains>`, ``$MAILBOX@$DOMAIN`` will also work.
 
 Setup a new mailbox
 -------------------
