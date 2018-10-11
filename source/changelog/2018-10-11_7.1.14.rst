@@ -1,0 +1,12 @@
+Added
+-----
+
+* We now provide cairo-devel and darcs
+* MariaDB SQL backups are now accessible by users
+
+Changed
+-------
+
+* We limit outgoing mails via SMTP to 500 per hour
+* We lowered the max age for files in /tmp from 10 days to 1 day
+* We no longer accept sub domains from other users for ``uberspace domain <web|mail> add``
