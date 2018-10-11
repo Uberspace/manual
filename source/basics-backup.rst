@@ -97,7 +97,7 @@ Dated backups can be found in ``/mysql_backup/old/$USER``:
 Restoring from the backup
 -------------------------
 
-You can use ``xzcat`` and ``mysql`` to restore dumps. Let's say you want to reset _every database_ to the latest backup:
+You can use ``xzcat`` and ``mysql`` to restore dumps. Let's say you want to reset every database to the latest backup:
 
 .. code-block:: console
 
