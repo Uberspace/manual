@@ -2,7 +2,7 @@ Added
 -----
 
 * We now provide cairo-devel and darcs
-* MariaDB SQL backups are now accessible by users
+* :ref:`MariaDB SQL backups <mysql_backup>` are now accessible by users
 
 Changed
 -------
