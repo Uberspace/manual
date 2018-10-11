@@ -81,6 +81,8 @@ The last backup is stored in ``/mysql_backup/current/$USER`` and not dated:
   
 Dated backups can be found in ``/mysql_backup/old/$USER``:
 
+.. code-block:: console
+
   [eliza@doolittle ~]# ls -l /mysql_backup/old/eliza
   total 516
   -rw-r-----. 2 root eliza    596 Oct 09 04:23 eliza.2018-10-09.sql.xz
@@ -94,6 +96,8 @@ Restoring from the backup
 -------------------------
 
 You can use ``xzcat`` and ``mysql`` to restore dumps. Let's say you want to reset _every database_ to the latest backup:
+
+.. code-block:: console
 
   [eliza@doolittle ~]# xzcat /mysql_backup/current/eliza/*.sql.xz | mysql eliza
   [eliza@doolittle ~]# 
