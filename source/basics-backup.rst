@@ -14,9 +14,9 @@ Files
 We keep daily backups of the last seven days, and weekly backups going back seven weeks.
 
 Restoring from the backup
-=========================
+-------------------------
 
-You can access your host's backup at ``/backup``: 
+You can access your hosts backup at ``/backup``: 
 
 .. code-block:: console
 
@@ -64,3 +64,43 @@ If the output of your dry run looks good, you can restore the backup:
 If you need help, don't hesitate to contact us at hallo@uberspace.de.
 
 .. warning:: Do not use symlinks such as ``~/html`` when restoring your backup – that won't work because the backed-up symlink still points to the actual target ``/var/www/virtual/$USER/html`` instead of the target's backup (``/backup/daily.3/var/www/virtual/$USER/html``).
+
+MySQL
+=====
+
+.. _mysql_backup:
+
+We dump and backup all databases every day at 4:20 and keep backups of the last 21 days. You can access your hosts database backups at ``/mysql_backup``. 
+
+The last backup is stored in ``/mysql_backup/current/$USER`` and not dated:
+
+.. code-block:: console
+
+  [eliza@doolittle ~]# ls -l /mysql_backup/current/eliza
+  total 56
+  -rw-r-----. 2 root eliza 520200 Oct 11 04:23 eliza_nextcloud.sql.xz
+  -rw-r-----. 2 root eliza    596 Oct 11 04:23 eliza.sql.xz
+  
+Dated backups can be found in ``/mysql_backup/old/$USER``:
+
+.. code-block:: console
+
+  [eliza@doolittle ~]# ls -l /mysql_backup/old/eliza
+  total 516
+  -rw-r-----. 2 root eliza    596 Oct 09 04:23 eliza.2018-10-09.sql.xz
+  -rw-r-----. 2 root eliza 520200 Oct 09 04:23 eliza_nextcloud.2018-10-09.sql.xz
+  -rw-r-----. 2 root eliza    596 Oct 10 04:23 eliza.2018-10-10.sql.xz
+  -rw-r-----. 2 root eliza 520200 Oct 10 04:23 eliza_nextcloud.2018-10-10.sql.xz
+  -rw-r-----. 2 root eliza    596 Oct 11 04:23 eliza.2018-10-11.sql.xz
+  -rw-r-----. 2 root eliza 520200 Oct 11 04:23 eliza_nextcloud.2018-10-11.sql.xz
+
+Restoring from the backup
+-------------------------
+
+You can use ``xzcat`` and ``mysql`` to restore dumps. Let's say you want to reset _every database_ to the latest backup:
+
+.. code-block:: console
+
+  [eliza@doolittle ~]# xzcat /mysql_backup/current/eliza/*.sql.xz | mysql eliza
+  [eliza@doolittle ~]# 
+  

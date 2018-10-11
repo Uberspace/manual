@@ -103,9 +103,8 @@ If you don't see any output, it's a good thing; MariaDB only complains if someth
 Working with dumps
 ==================
 
-Dumps are the default way of exporting/importing databases.
-You can use them as a backup or to migrate an existing database dumped on another host to your Uberspace or vice-versa.
-
+Dumps are the default way of exporting/importing databases. 
+You can use them as a backup or to migrate an existing database dumped on another host to your Uberspace or vice-versa. We dump all databases every day and keep them as :ref:`backup <mysql_backup>`.
 
 Creating dumps
 --------------
