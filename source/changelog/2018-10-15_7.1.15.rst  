@@ -1,0 +1,9 @@
+Added
+-----
+
+* We now provide the php ldap module
+
+Changed
+-------
+
+* We updated MariaDB to version 10.3
