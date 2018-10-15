@@ -1,8 +1,8 @@
 .. _php:
 
 .. sidebar:: Logo
-  
-  .. image:: _static/images/logo_php.png 
+
+  .. image:: _static/images/logo_php.png
       :align: center
 
 ###
@@ -12,14 +12,14 @@ PHP
 Introduction
 ============
 
-PHP is a server-side scripting language designed primarily for web development but also used as a general-purpose programming language. 
+PHP is a server-side scripting language designed primarily for web development but also used as a general-purpose programming language.
 
 ----
 
 Versions
 ========
 
-Release types 
+Release types
 -------------
 Each release branch of PHP is fully supported for two years beginning with its initial stable release. We provide different point releases and apply security updates on a regular basis. Currently, these PHP versions are available: 5.6, 7.0, 7.1, and 7.2.
 
@@ -39,7 +39,7 @@ Use ``uberspace tools version list php`` to show all selectable versions:
   - 7.0
   - 7.1
   - 7.2
-  [eliza@dolittle ~]$ 
+  [eliza@dolittle ~]$
 
 .. _php-change-version:
 
@@ -52,14 +52,14 @@ You can select the PHP version with :code:`uberspace tools version use php <vers
   [eliza@dolittle ~]$ uberspace tools version use php 7.1
   Selected PHP version 7.1
   The new configuration is adapted immediately. Patch updates will be applied automatically.
-  [eliza@dolittle ~]$ 
+  [eliza@dolittle ~]$
 
 .. code-block:: console
 
   [eliza@dolittle ~]$ uberspace tools version use php 5.6
   Selected PHP version 5.6
   The new configuration is adapted immediately. Patch updates will be applied automatically.
-  [eliza@dolittle ~]$ 
+  [eliza@dolittle ~]$
 
 Selected version
 ----------------
@@ -70,23 +70,23 @@ You can check the selected version by executing ``uberspace tools version show p
 
   [eliza@dolittle ~]$ uberspace tools version show php
   Using 'PHP' version: '7.1'
-  [eliza@dolittle ~]$ 
+  [eliza@dolittle ~]$
 
 Update policy
 -------------
 
 We update all versions on a regular basis. Once the `security support <http://php.net/supported-versions.php>`_ ends, the branch reaches its end of life, is no longer supported and will be removed from our servers.
 
-+--------+---------------------+------------------------+ 
-| Branch | State               | Security Support Until | 
-+========+=====================+========================+ 
-| 5.6    | Security fixes only | 31 Dec 2018            | 
-+--------+---------------------+------------------------+ 
++--------+---------------------+------------------------+
+| Branch | State               | Security Support Until |
++========+=====================+========================+
+| 5.6    | Security fixes only | 31 Dec 2018            |
++--------+---------------------+------------------------+
 | 7.0    | Active support      | 3 Dec 2018             |
-+--------+---------------------+------------------------+ 
-| 7.1    | Active support      | 1 Dec 2019             | 
-+--------+---------------------+------------------------+ 
-| 7.2    | Active support      | 30 Nov 2020            | 
++--------+---------------------+------------------------+
+| 7.1    | Active support      | 1 Dec 2019             |
++--------+---------------------+------------------------+
+| 7.2    | Active support      | 30 Nov 2020            |
 +--------+---------------------+------------------------+
 
 ----
@@ -107,7 +107,7 @@ We use the `PHP FastCGI Process Manager (FPM) <http://de2.php.net/manual/en/inst
 How to publish
 --------------
 
-Put your PHP files into your :ref:`DocumentRoot <docroot>`. The file extension should be ``.php``. For security reasons we don't parse PHP code in every file. 
+Put your PHP files into your :ref:`DocumentRoot <docroot>`. The file extension should be ``.php``. For security reasons we don't parse PHP code in every file.
 
 ----
 
@@ -145,7 +145,7 @@ This is the default directory for ``php.ini`` files. Any files inside this direc
 ~/etc/php.early.d
 ^^^^^^^^^^^^^^^^^^^^^
 
-If your application requires its directives to be loaded before the rest of the configuration, create the ``~/etc/php.early.d`` directory. Then put these directives into a ``.ini`` file and place it there. 
+If your application requires its directives to be loaded before the rest of the configuration, create the ``~/etc/php.early.d`` directory. Then put these directives into a ``.ini`` file and place it there.
 
 .. tip:: You need to reload PHP whenever you change your configuration files: ``uberspace tools restart php`` checks your configuration for sanity and restarts your PHP instance.
 
@@ -154,7 +154,7 @@ You can adjust `configuration directives <http://php.net/manual/en/ini.list.php>
 Example
 ^^^^^^^
 
-.. sidebar:: Hint 
+.. sidebar:: Hint
 
   This example would work without ``uberspace tools restart php`` because the command line ``php`` reads the configuration at execution time. The webserver runs PHP via a daemon that needs to be restarted to parse the new configuration.
 
@@ -172,21 +172,21 @@ In this case fix the value and run ``uberspace tools restart php`` again.
  [eliza@dolittle ~]$ uberspace tools restart php
  Your php configuration has been loaded.
  [eliza@dolittle ~]$ php -i | grep date.timezone
- date.timezone => UTC => UTC 
+ date.timezone => UTC => UTC
 
 .. code-block:: console
 
- [eliza@dolittle ~]$ cat ~/etc/php.d/timezone.ini 
+ [eliza@dolittle ~]$ cat ~/etc/php.d/timezone.ini
  date.timezone = idontexist
  [eliza@dolittle ~]$ uberspace tools restart php
  Your php configuration is invalid an cannot be loaded. Please examine the following output.
- 
+
  PHP Warning:  Unknown: Invalid date.timezone value 'idontexist', we selected the timezone 'UTC' for now. in Unknown on line 0
 
 Provided modules
 ----------------
 
-We provide the following modules: ``pecl-zip``, ``pecl-apcu``, ``mcrypt``, ``mbstring``, ``intl``, ``xml``, ``json``, ``tidy``, ``gd``, ``mysqlnd``, ``pgsql``, ``imap``, ``bcmath``, ``soap``, ``posix``, ``shmop``, ``sysvmsg``, ``sysvsem``, ``sysvshm``, ``imagick``, ``ldap``, ``process``, ``gmp``, ``pecl-gnupg``, ``pear``, ``xmlrpc``, ``ldap``
+We provide the following modules: ``bcmath``, ``gd``, ``gmp``, ``imagick``, ``imap``, ``intl``, ``json``, ``ldap``, ``mbstring``, ``mcrypt``, ``mysqlnd``, ``pear``, ``pecl-apcu``, ``pecl-gnupg``, ``pecl-zip``, ``pgsql``, ``posix``, ``process``, ``shmop``, ``soap``, ``sysvmsg``, ``sysvsem``, ``sysvshm``, ``tidy``, ``xml``, ``xmlrpc``.
 
 .. _php-popular-software:
 
@@ -195,19 +195,19 @@ We provide the following modules: ``pecl-zip``, ``pecl-apcu``, ``mcrypt``, ``mbs
 Popular software
 ================
 
-+--------------------------------------------------------------------+---------------------------+ 
-| Name                                                               | Kind                      | 
++--------------------------------------------------------------------+---------------------------+
+| Name                                                               | Kind                      |
 +====================================================================+===========================+
-| `Wordpress <https://lab.uberspace.de/en/guide_wordpress.html>`_    | content management system | 
-+--------------------------------------------------------------------+---------------------------+ 
+| `Wordpress <https://lab.uberspace.de/en/guide_wordpress.html>`_    | content management system |
++--------------------------------------------------------------------+---------------------------+
 | `Nextcloud <https://lab.uberspace.de/en/guide_nextcloud.html>`_    | file hosting services     |
-+--------------------------------------------------------------------+---------------------------+ 
++--------------------------------------------------------------------+---------------------------+
 | `Magento <https://magento.com>`_                                   | online shop               |
-+--------------------------------------------------------------------+---------------------------+ 
++--------------------------------------------------------------------+---------------------------+
 | `Drupal <https://www.drupal.org>`_                                 | content management system |
-+--------------------------------------------------------------------+---------------------------+ 
++--------------------------------------------------------------------+---------------------------+
 | `Joomla <https://www.joomla.org>`_                                 | content management system |
-+--------------------------------------------------------------------+---------------------------+ 
++--------------------------------------------------------------------+---------------------------+
 
 ----
 
