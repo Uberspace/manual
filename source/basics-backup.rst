@@ -16,7 +16,7 @@ We keep daily backups of the last seven days, and weekly backups going back seve
 Restoring from the backup
 -------------------------
 
-You can access your hosts backup at ``/backup``: 
+You can access your hosts backup at ``/backup``:
 
 .. code-block:: console
 
@@ -70,7 +70,7 @@ MySQL
 
 .. _mysql_backup:
 
-We dump and backup all databases every day at 4:20 and keep backups of the last 21 days. You can access your hosts database backups at ``/mysql_backup``. 
+We dump and backup all databases every day at 4:20 and keep backups of the last 21 days. You can access your hosts database backups at ``/mysql_backup``.
 
 The last backup is stored in ``/mysql_backup/current/$USER`` and not dated:
 
@@ -80,19 +80,19 @@ The last backup is stored in ``/mysql_backup/current/$USER`` and not dated:
   total 56
   -rw-r-----. 2 root eliza 520200 Oct 11 04:23 eliza_nextcloud.sql.xz
   -rw-r-----. 2 root eliza    596 Oct 11 04:23 eliza.sql.xz
-  
+
 Dated backups can be found in ``/mysql_backup/old/$USER``:
 
 .. code-block:: console
 
   [eliza@doolittle ~]# ls -l /mysql_backup/old/eliza
   total 516
-  -rw-r-----. 2 root eliza    596 Oct 09 04:23 eliza.2018-10-09.sql.xz
-  -rw-r-----. 2 root eliza 520200 Oct 09 04:23 eliza_nextcloud.2018-10-09.sql.xz
-  -rw-r-----. 2 root eliza    596 Oct 10 04:23 eliza.2018-10-10.sql.xz
-  -rw-r-----. 2 root eliza 520200 Oct 10 04:23 eliza_nextcloud.2018-10-10.sql.xz
-  -rw-r-----. 2 root eliza    596 Oct 11 04:23 eliza.2018-10-11.sql.xz
-  -rw-r-----. 2 root eliza 520200 Oct 11 04:23 eliza_nextcloud.2018-10-11.sql.xz
+  -rw-r-----. 2 root eliza    596 Oct 09 04:23 eliza.2018-10-09.1539051623.sql.xz
+  -rw-r-----. 2 root eliza 520200 Oct 09 04:23 eliza_nextcloud.2018-10-09.1539051623.sql.xz
+  -rw-r-----. 2 root eliza    596 Oct 10 04:23 eliza.2018-10-10.1539138023.sql.xz
+  -rw-r-----. 2 root eliza 520200 Oct 10 04:23 eliza_nextcloud.2018-10-10.1539138023.sql.xz
+  -rw-r-----. 2 root eliza    596 Oct 11 04:23 eliza.2018-10-11.1539224423.sql.xz
+  -rw-r-----. 2 root eliza 520200 Oct 11 04:23 eliza_nextcloud.2018-10-11.1539224423.sql.xz
 
 Restoring from the backup
 -------------------------
@@ -102,5 +102,4 @@ You can use ``xzcat`` and ``mysql`` to restore dumps. Let's say you want to rese
 .. code-block:: console
 
   [eliza@doolittle ~]# xzcat /mysql_backup/current/eliza/*.sql.xz | mysql eliza
-  [eliza@doolittle ~]# 
-  
+  [eliza@doolittle ~]#
