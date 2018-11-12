@@ -11,8 +11,6 @@ Uberspace is a hosting platform targeted at people who want to look behind the s
 .. tip:: If you're looking for guides and how to install certain tools like `Ghost <https://lab.uberspace.de/en/guide_ghost.html>`_ and `Wordpress <https://lab.uberspace.de/en/guide_wordpress.html>`_ check out the `⚛️ Uberlab <https://lab.uberspace.de/en/>`_!
 
 
-.. note:: We're working on implementing (in no specific order) erlang, PostgreSQL, CouchDB, MongoDB, backups, custom backends instead of apache, open ports in the firewall, gitolite, redis, ...
-
 Version {{ newest_changelog_entry.version }} Changelog:
 ============================
 
@@ -91,6 +89,13 @@ For more information see the :doc:`full changelog <changelog>`.
    supervisord <daemons-supervisord>
    Cron jobs <daemons-cron>
    runwhen <daemons-runwhen>
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+   :caption: Background
+
+   Network <background-network>
 
 .. toctree::
    :hidden:
