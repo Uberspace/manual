@@ -9,15 +9,11 @@ venv
 pip-log.txt
 pip-delete-this-directory.txt
 
-
 # ansible
 *.retry
 
 # Sphinx
 build
-
-# CI
-.sshkey
 
 # ignore generated changelog feeds
 source/changelog_feeds/*
