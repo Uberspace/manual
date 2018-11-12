@@ -109,7 +109,7 @@ def _read_changelog_files():
         entries.append({
             'date': date,
             'version': version,
-            'text': open(path).read().decode('utf-8'),
+            'text': open(path).read(),
         })
 
     entries.sort(key=lambda e: e['date'], reverse=True)
@@ -232,7 +232,7 @@ def write_changelog_feeds():
         )
 
         with open(path, 'w') as f:
-            feed = _build_feed(changelog_entries, 'atom')
+            feed = _build_feed(changelog_entries, 'atom').decode('utf-8')
             f.write(feed)
 
 
