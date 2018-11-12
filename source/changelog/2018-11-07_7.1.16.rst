@@ -1,0 +1,9 @@
+Added:
+------
+
+* We now allow users to set variables in their SSH session environment
+
+Changed:
+--------
+
+* The `/mysql_backup/{current,old}` directories are now user readable. Also backups now include the UNIX time in their timestamp.
