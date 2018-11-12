@@ -39,8 +39,6 @@ In the default configuration the default backend is :ref:`apache <docroot>`:
 
 .. code-block:: shell
 
-.. code-block:: shell
-
   [isabell@philae ~]$ uberspace web backend set / --apache
   Set backend for / to apache.
   
@@ -68,15 +66,8 @@ In this example requests to ``/ep`` are routed to an application listening on po
 
 .. code-block:: shell
 
-<<<<<<< HEAD
   [isabell@philae ~]$ uberspace web backend set /ep --http --port 9000
   Set backend for /ep to port 9000, make sure something is listening.
-=======
-.. code-block:: shell
-
-  [isabell@philae ~]$ uberspace web backend set /ep --http --port 61310
-  Set backend for /ep to port 61310, make sure something is listening.
->>>>>>> :bug: add code blocks
 
   [isabell@philae ~]$ uberspace web backend list
   /ep http:9000 => OK, listening: PID 42, node-red
@@ -106,13 +97,8 @@ You also can setup backends for specific domains. Make sure :ref:`your domain <w
 
 .. code-block:: shell
 
-<<<<<<< HEAD
   [isabell@philae ~]$ uberspace web backend set allcolorsarebeautiful.de --http --port 9000
-  Set backend for allcolorsarebeautiful.de/ to port 61880, make sure something is listening.
-=======
-  [isabell@philae ~]$ uberspace web backend set allcoloursarebeautiful.de --http --port 61310
-  Set backend for allcoloursarebeautiful.de/ to port 61880, make sure something is listening.
->>>>>>> :bug: add code blocks
+  Set backend for allcolorsarebeautiful.de/ to port 9000, make sure something is listening.
 
   [isabell@philae ~]$ uberspace web backend list                                                      
   allcolorsarebeautiful.de/ http:9000 => OK, listening: PID 42, node-red
