@@ -1,3 +1,3 @@
 [[redirects]]
-  from = "/en/"
+  from = "/en/*"
   to = "/:splat"
