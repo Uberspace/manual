@@ -1,7 +1,7 @@
 /* footer */
 .wy-nav-content {
   position: relative;
-  background-image: url("../images/footer.svg");
+  background-image: url("/_static/images/footer.svg");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: 75%;
@@ -27,7 +27,7 @@ footer {
 /* navigation */
 .wy-side-nav-search {
   padding-top: 170px;
-  background-image: url("../images/rocket.svg");
+  background-image: url("/_static/images/rocket.svg");
   background-position: top;
   background-repeat: no-repeat;
   background-color: #222222;
@@ -40,7 +40,7 @@ footer {
 }
 
 .wy-menu-vertical header, .wy-menu-vertical p.caption :first-child::before {
-  content: url("../images/icn-rocket.svg");
+  content: url("/_static/images/icn-rocket.svg");
   margin-left: -.1618em;
   width: 30px;
   float: left;
@@ -69,11 +69,11 @@ nav li {
 
 /* Main Page - Rocket */
 
-.rst-content .document img[src='_images/big-rocket.svg'] {
+.rst-content .document img[src$='_images/big-rocket.svg'] {
     float: right;
     width: 50%;
-    height: 50%;
-    shape-outside: url(/en/_images/big-rocket.svg);
+    height: auto;
+    shape-outside: url(/_static/images/big-rocket.svg);
     shape-margin: 1em;
 }
 
