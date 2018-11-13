@@ -98,6 +98,11 @@ connections.
   The curious ``100.64.9.2`` IP address above is due to our networking setup.
   Feel free to :ref:`read up on it <network>`, if you'd like to know more!
 
+
+Other backend types like ``--static`` or ones specific to a domain work in a
+very similar way. They are documented over in the :ref:`web backends <backends>`
+article.
+
 httpd
 =====
 
