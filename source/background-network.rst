@@ -4,6 +4,21 @@
 Network 
 #######
 
+::
+
+              _
+            (`  ).              .---Host:-stardust--.              .-----user@stardust--.
+            (     ).            |                   |              |                    |
+          _(       '`.          |       veth_user_o >===internal===> veth_user          |
+      .=(`( Internet )          |        100.64.9.1 |              |  100.64.9.2        |
+      ((    (..__.:'-' ===WAN===> eth0              |              | lo                 |
+      `(       ) )              | 185.26.156.62     |              |  127.0.0.1         |
+        ` __.:'   )             |                   |              |                    |
+               --'              '-------------------'              '--------------------'
+                                                                      ||     ||     ||
+                                                                      \/     \/     \/
+  .                                                                 nodejs  nginx  gogs
+
 As is common with hosting providers, your uberspace is outfitted with a more or
 less direct connection to the world wide web. It can be used to download all
 kinds of things like new software to install on it, or - as you'll probably do
