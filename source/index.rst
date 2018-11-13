@@ -96,6 +96,7 @@ For more information see the :doc:`full changelog <changelog>`.
    :caption: Background
 
    Network <background-network>
+   HTTP Stack <background-http-stack>
 
 .. toctree::
    :hidden:
