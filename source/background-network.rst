@@ -67,7 +67,7 @@ but rather from the IPv6 ULA_ or IPv4 `Carrier-grade NAT`_ ranges. This is
 because uberspaces are not directly connected to the internet, but are placed
 within their own little `network namespace`_, similarily to how docker handles
 networking for its containers. This gives them their own ``veth_...`` interface
-and funnily enough, their down loopback / ``127.0.0.1``.
+and funnily enough, their own loopback / ``127.0.0.1``.
 
 Placing each uberspace in their own networking world has a number of advantages:
 
