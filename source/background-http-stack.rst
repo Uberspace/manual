@@ -14,7 +14,7 @@ employing two of them back-to-back: nginx_ and `Apache httpd`_.
 
                  _
                (`  ).
-              (     ).                .-------.        .-------.
+              (     ).                 .-------.        .-------.
              _(       '`.  ----------> | nginx | -----> | httpd |
          .=(`( Internet )              '-------'        '-------'
          ((    (..__.:'-'                  |                => php via php-fpm
