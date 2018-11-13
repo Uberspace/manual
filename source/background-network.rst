@@ -96,6 +96,69 @@ Placing each uberspace in their own networking world has a number of advantages:
   address, user services can easily be reached via ``100.64.x.y:63141``. This
   enables us to provide cool features like :ref:`web backends <backends>`.
 
+Sidequest: Pluggable authentication modules (PAM)
+=================================================
+
+.. note::
+
+  This section expends on the technical implementation of network namespaces in
+  our setup. If you only look for a higher-level understanding of the topic, can
+  safely skip to the next one.
+
+To make sure our setup actually works, it is very important that all user
+sessions, processes and services are started within the right network namespace.
+There are many ways to modify the behavior of interactive sessions and a few to
+affect 3rd-party systemd services like :ref:`php-fpm <php>` or :ref:`supervisord`.
+Eventually we decided on a solution, which can handle both use cases in a single
+mechanism: a custom `PAM module <PAM_>`_.
+
+Interactive Sessions
+--------------------
+
+While there are lots of possible ways to execute code before or during an
+interactive session (``/etc/profile``, sshds ``ForceCommand``, shell wrappers,
+...), PAM is comparatively simple. Since all entrypoints like SSH or sudo
+already support and use it by default, not a lot of trickery is required here:
+
+.. code-block:: console
+
+  [root@7399782766919198857 ~]# cat /etc/pam.d/sshd
+  #%PAM-1.0
+  (...)
+  # do not ever place root into a network namespace
+  session [success=1 default=ignore] pam_succeed_if.so quiet uid eq 0
+  session required pam_python.so /lib64/security/pam_netns.py
+
+We utilize pam_python_ to run our very own custom PAM module. It creates the
+needed namespace, interfaces and routes on demand and then places the session
+within the created namespace. All subsequently started processes simply inherit
+it.
+
+systemd Services
+----------------
+
+Placing a generic systemd service into a network namespace is trickier. The
+`nsenter command`_ can execute a command and pace it into the desired namespace.
+There is just one catch: it needs to be executed as root. Since our services
+should . PAM is way simpler in this case:
+
+.. code-block:: console
+
+  [root@7399782766919198857 ~]# cat /etc/systemd/system/supervisord@.service
+  [Unit]
+  Description=Provides a supervisord instance for each user.
+  (...)
+
+  [Service]
+  ExecStart=/usr/bin/supervisord -c $SUPERVISOR_CONFIG
+  (...)
+  User=%I
+  PAMName=su-l
+
+Systemd provides a `PAMName=`_ directive directive. Together with the rather
+popular `User=`_, it executes a process under the right user, while "logging
+that user in" using PAM. Exactly what we need. :)
+
 Impact on users
 ===============
 
@@ -127,5 +190,10 @@ artist goes by the name ``a:f``. Thank you!
 .. _Carrier-grade NAT: https://en.wikipedia.org/wiki/Carrier-grade_NAT
 .. _ULA: https://en.wikipedia.org/wiki/Unique_local_address
 .. _network namespace: https://lwn.net/Articles/580893/
+.. _PAM: https://en.wikipedia.org/wiki/PAM
+.. _pam_python: http://pam-python.sourceforge.net/
+.. _nsenter command: http://man7.org/linux/man-pages/man1/nsenter.1.html
+.. _PAMName=: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#PAMName=
+.. _USer=: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#User=
 .. _networkns article: https://blog.scottlowe.org/2013/09/04/introducing-linux-network-namespaces/
 .. _asciicloud: https://www.asciiart.eu/nature/clouds
