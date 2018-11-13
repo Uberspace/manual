@@ -40,6 +40,9 @@ does just what you'd expect:
   selbst aus, wieviel du dafür zahlst." />
   (...)
 
+Network Namespaces
+==================
+
 The sending side of things looks a little different. If you know your way around
 standard linux networking tools like ip_ or traceroute_, you might have noticed
 a few strange IPs:
@@ -90,6 +93,9 @@ Placing each uberspace in their own networking world has a number of advantages:
 * **Mapping of services**. Since every user has their own ``100.64.x.y`` IP
   address, user services can easily be reached via ``100.64.x.y:63141``. This
   enables us to provide cool features like :ref:`web backends <backends>`.
+
+Impact on users
+===============
 
 While this architecture shouldn't restrict you in any way (ping us at hallo@uberspace.de,
 if it does!), there a few things to watch out for:
