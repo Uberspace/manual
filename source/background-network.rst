@@ -69,6 +69,16 @@ within their own little `network namespace`_, similarily to how docker handles
 networking for its containers. This gives them their own ``veth_...`` interface
 and funnily enough, their own loopback / ``127.0.0.1``.
 
+.. note::
+
+  `Network namespaces <network namespace_>`_ are a feature of the linux kernel.
+  In a normal setup there is just a single setup of network interfaces,
+  firewall rules and routing tables. Network namespaces change that fundamental
+  assumption. With network namespaces, a system can have multiple separate
+  instances of network stacks that operate independent of each other. In our
+  setup, all services and sessions for a uberspace are placed in their own
+  namespace.
+
 Placing each uberspace in their own networking world has a number of advantages:
 
 * Your **networking is seperated**. Even when you run services that open ports,
@@ -94,8 +104,13 @@ if it does!), there a few things to watch out for:
 Other than these small caveats, networking on your uberspace should work like it
 does on any other machine: happy pinging!
 
+Parts of the network namespace explaination are adapted from the article
+`"Introducing Linux Network Namespaces" <networkns article_>`_ by Scott Lowe.
+Thank you!
+
 .. _ip: https://linux.die.net/man/8/ip
 .. _traceroute: https://linux.die.net/man/8/traceroute
 .. _Carrier-grade NAT: https://en.wikipedia.org/wiki/Carrier-grade_NAT
 .. _ULA: https://en.wikipedia.org/wiki/Unique_local_address
 .. _network namespace: https://lwn.net/Articles/580893/
+.. _networkns article: https://blog.scottlowe.org/2013/09/04/introducing-linux-network-namespaces/
