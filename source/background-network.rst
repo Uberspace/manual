@@ -101,7 +101,7 @@ Sidequest: Pluggable authentication modules (PAM)
 
 .. note::
 
-  This section expends on the technical implementation of network namespaces in
+  This section explains the technical implementation of network namespaces in
   our setup. If you only look for a higher-level understanding of the topic, can
   safely skip to the next one.
 
@@ -140,7 +140,8 @@ systemd Services
 Placing a generic systemd service into a network namespace is trickier. The
 `nsenter command`_ can execute a command and pace it into the desired namespace.
 There is just one catch: it needs to be executed as root. Since our services
-should . PAM is way simpler in this case:
+should run as the user they are for, things get tricky there. Even though its
+main use case is authentication, PAM can also help here:
 
 .. code-block:: console
 
@@ -156,8 +157,8 @@ should . PAM is way simpler in this case:
   PAMName=su-l
 
 Systemd provides a `PAMName=`_ directive directive. Together with the rather
-popular `User=`_, it executes a process under the right user, while "logging
-that user in" using PAM. Exactly what we need. :)
+popular `User=`_, it executes a process as the right user, while using PAM to
+run the set the network namespace. Exactly what we need. :)
 
 System services
 ===============
