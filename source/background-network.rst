@@ -79,14 +79,14 @@ Placing each uberspace in their own networking world has a number of advantages:
   ensuring a safe and comfortable ride for everyone.
 * **Mapping of services**. Since every user has their own ``100.64.x.y`` IP
   address, user services can easily be reached via ``100.64.x.y:63141``. This
-  enables us to provide cool features like :ref:`web backends <web-backends>`.
+  enables us to provide cool features like :ref:`web backends <backends>`.
 
 While this architecture shouldn't restrict you in any way (ping us at hallo@uberspace.de,
 if it does!), there a few things to watch out for:
 
 * You have your own seperate ``127.0.0.1``. If you services listens on that, it
   is only reachable within your uberspace. If you want to make use of our
-  :ref:`web backends <web-backends>`, be sure to listen on ``0.0.0.0``.
+  :ref:`web backends <backends>`, be sure to listen on ``0.0.0.0``.
 * When using the "classic" ``.htaccess`` method of providing your own web
   services via apache, using ``127.0.0.1`` won't work for similar reasons.
   Please use the newer web backends.
