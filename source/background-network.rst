@@ -159,6 +159,23 @@ Systemd provides a `PAMName=`_ directive directive. Together with the rather
 popular `User=`_, it executes a process under the right user, while "logging
 that user in" using PAM. Exactly what we need. :)
 
+System services
+===============
+
+We provide a number of services so you don't have to do everything yourself:
+nginx, MySQL, SSH, POP3, IMAP, SMTP and so on. Like any process, these services
+can only be in one namespace at a time and that is most certainly not the one of
+your uberspace. Sites running in php-fpm or daemons run with supervisord
+therefore cannot connect to MySQL on ``127.0.0.0.1:3306``, because there is none
+on *their* ``127.0.0.1``. The services can be reached using ``$HOSTNAME:3306``,
+but that seems rather inconvenient.
+
+Because we'd like to provide an easy-to-use setup, these services are proxied
+into every single namespace using a small Go tool based on googles tcpproxy_
+library. Since this is all happening locally, it shouldn't behave differently
+than a direct connection. This setup also enables us to move some of those
+services off the uberspace hosts onto dedicated machines in the future.
+
 Impact on users
 ===============
 
@@ -195,5 +212,6 @@ artist goes by the name ``a:f``. Thank you!
 .. _nsenter command: http://man7.org/linux/man-pages/man1/nsenter.1.html
 .. _PAMName=: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#PAMName=
 .. _USer=: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#User=
+.. _tcpproxy: https://github.com/google/tcpproxy
 .. _networkns article: https://blog.scottlowe.org/2013/09/04/introducing-linux-network-namespaces/
 .. _asciicloud: https://www.asciiart.eu/nature/clouds
