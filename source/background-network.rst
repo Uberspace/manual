@@ -8,7 +8,7 @@ Network
 
               _
             (`  ).              .---Host:-stardust--.              .-----user@stardust--.
-            (     ).            |                   |              |                    |
+           (     ).             |                   |              |                    |
           _(       '`.          |       veth_user_o >===internal===> veth_user          |
       .=(`( Internet )          |        100.64.9.1 |              |  100.64.9.2        |
       ((    (..__.:'-' ===WAN===> eth0              |              | lo                 |
@@ -110,9 +110,15 @@ if it does!), there a few things to watch out for:
 Other than these small caveats, networking on your uberspace should work like it
 does on any other machine: happy pinging!
 
+Acknowledgements
+================
+
 Parts of the network namespace explaination are adapted from the article
 `"Introducing Linux Network Namespaces" <networkns article_>`_ by Scott Lowe.
 Thank you!
+
+The ASCII art cloud has been copied from `asciiart.eu <asciicloud_>`_. The
+artist goes by the name ``a:f``. Thank you!
 
 .. _ip: https://linux.die.net/man/8/ip
 .. _traceroute: https://linux.die.net/man/8/traceroute
@@ -120,3 +126,4 @@ Thank you!
 .. _ULA: https://en.wikipedia.org/wiki/Unique_local_address
 .. _network namespace: https://lwn.net/Articles/580893/
 .. _networkns article: https://blog.scottlowe.org/2013/09/04/introducing-linux-network-namespaces/
+.. _asciicloud: https://www.asciiart.eu/nature/clouds
