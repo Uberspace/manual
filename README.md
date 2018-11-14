@@ -34,3 +34,9 @@ $ make serve
 
 This will start a local webserver on http://127.0.0.1:8000, which
 always serves the most recent version.
+
+## License
+
+All text and code in this repository is licensed under [CC-BY-NC-SA 4.0][].
+
+[CC-BY-NC-SA 4.0]: https://creativecommons.org/licenses/by-nc-sa/4.0/
