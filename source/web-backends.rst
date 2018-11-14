@@ -4,7 +4,7 @@
 custom backends
 ###############
 
-.. tip:: The application needs to listen on interface ``::`` or ``0.0.0.0`` (``127.0.0.1``, ``localhost`` or ``::1`` is **not** working!) at any port between 1024 and 65535. 
+.. tip:: The application needs to listen on interface ``::`` or ``0.0.0.0`` (using ``127.0.0.1``, ``localhost`` or ``::1`` does **not** work!) at any port between 1024 and 65535. 
 
 You can connect your applications directly to our frontend to make them accessible from the outside. We don't limit the number of custom backends.
 
