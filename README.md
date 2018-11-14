@@ -2,7 +2,7 @@
 
 Welcome to our manual! :tada:
 
-This is where we host the source code of the hosted version over at https://manual.uberspace.de. Changes are mainly done by the team as new features are added and bugs are fixed, but you are more than welcome to contribute!
+This is where we host the source code of the official version over at https://manual.uberspace.de. Changes are mainly done by the team as new features are added and bugs are fixed, but you are more than welcome to contribute!
 
 ## Development
 
