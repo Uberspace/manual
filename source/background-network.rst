@@ -188,7 +188,7 @@ if it does!), there a few things to watch out for:
   :ref:`web backends <backends>`, be sure to listen on ``0.0.0.0``.
 * When using the "classic" ``.htaccess`` method of providing your own web
   services via apache, using ``127.0.0.1`` won't work for similar reasons.
-  Please use the newer web backends.
+  Please use web backends instead.
 
 Other than these small caveats, networking on your uberspace should work like it
 does on any other machine: happy pinging!
