@@ -49,7 +49,7 @@ For more information see the :doc:`full changelog <changelog>`.
    DocumentRoot <web-documentroot>
    domains <web-domains>
    security <web-security>
-   custom backends <web-backends>
+   web backends <web-backends>
    logs <web-logs>
 
 .. toctree::

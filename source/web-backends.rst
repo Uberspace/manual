@@ -1,16 +1,16 @@
 .. _backends:
 
-###############
-custom backends
-###############
+############
+web backends
+############
 
 .. tip:: The application needs to listen on interface ``::`` or ``0.0.0.0`` (using ``127.0.0.1``, ``localhost`` or ``::1`` does **not** work!) at any port between 1024 and 65535. 
 
-You can connect your applications directly to our frontend to make them accessible from the outside. We don't limit the number of custom backends.
+You can connect your applications directly to our frontend to make them accessible from the outside. We don't limit the number of web backends.
 
 .. sidebar:: advantages
 
-  Using custom backends has several advantages over a proxy RewriteRule: WebSockets work, no X-Forwarded-Host header and it's **much** faster.
+  Using web backends has several advantages over a proxy RewriteRule: WebSockets work, no X-Forwarded-Host header and it's **much** faster.
 
 Every Uberspace account gets its own virtual network interface, check out the :ref:`background article <network>` for details.  
 
@@ -26,7 +26,7 @@ In order to use your own backend, you first need to set it up using the ``ubersp
 
   [isabell@philae ~]$ uberspace web backend 
   
-  Manage custom backends in web server configuration.
+  Manage web backends in web server configuration.
   
   Possible commands:
     del — Delete web backed for a given domain and path.
@@ -134,7 +134,7 @@ The longest matched path for a domain wins so you don't need to worry about the 
 Removal
 =======
 
-You can remove custom backends with ``uberspace web backend del``:
+You can remove web backends with ``uberspace web backend del``:
 
 .. code-block:: shell
 

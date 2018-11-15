@@ -98,7 +98,7 @@ We update all versions on a regular basis. Once the `support <https://github.com
 Connection to webserver
 =======================
 
-.. include:: includes/custom-backend.rst
+.. include:: includes/web-backend.rst
 
 ----
 
