@@ -26,7 +26,7 @@ In order to use your own backend, you first need to set it up using the ``ubersp
 
   [isabell@philae ~]$ uberspace web backend 
   
-  Manage web backends in web server configuration.
+  Manage backends in web server configuration.
   
   Possible commands:
     del — Delete web backed for a given domain and path.
@@ -52,8 +52,9 @@ To set the default backend to an application listening on port 1024 (for example
 .. code-block:: shell
 
   [isabell@philae ~]$ uberspace web backend set / --http --port 1024   
-  Set backend for / to port 1024, make sure something is listening.
-  
+  Set backend for / to port 1024; please make sure something is listening!
+  You can always check the status of your backend using "uberspace web backend list".
+
   [isabell@philae ~]$ uberspace web backend list
   / http:1024 => OK, listening: PID 42, nginx
 
@@ -67,7 +68,8 @@ In this example requests to ``/ep`` are routed to an application listening on po
 .. code-block:: shell
 
   [isabell@philae ~]$ uberspace web backend set /ep --http --port 9000
-  Set backend for /ep to port 9000, make sure something is listening.
+  Set backend for /ep to port 9000; please make sure something is listening!
+  You can always check the status of your backend using "uberspace web backend list".
 
   [isabell@philae ~]$ uberspace web backend list
   /ep http:9000 => OK, listening: PID 42, node-red
@@ -80,7 +82,8 @@ Some applications don't serve assets due to performance reasons. In this example
 .. code-block:: shell
 
   [isabell@philae ~]$ uberspace web backend set / --http --port 9000
-  Set backend for / to port 9000, make sure something is listening.
+  Set backend for / to port 1024; please make sure something is listening!
+  You can always check the status of your backend using "uberspace web backend list".
 
   [isabell@philae ~]$ uberspace web backend set /assets --apache
   Set backend for /assets to apache
@@ -98,7 +101,8 @@ You also can setup backends for specific domains. Make sure :ref:`your domain <w
 .. code-block:: shell
 
   [isabell@philae ~]$ uberspace web backend set allcolorsarebeautiful.de --http --port 9000
-  Set backend for allcolorsarebeautiful.de/ to port 9000, make sure something is listening.
+  Set backend for allcolorsarebeautiful.de/ to port 9000; please make sure something is listening!
+  You can always check the status of your backend using "uberspace web backend list".
 
   [isabell@philae ~]$ uberspace web backend list                                                      
   allcolorsarebeautiful.de/ http:9000 => OK, listening: PID 42, node-red
@@ -117,8 +121,9 @@ Of course you can combine specific paths and domains. This is a more advanced ex
   Set backend for allcolorsarebeautiful.de/ep/assets to apache
   
   [isabell@philae ~]$ uberspace web backend set allcolorsarebeautiful.de/ep --http --port 9000
-  Set backend for allcolorsarebeautiful.de/ep to port 9000, make sure something is listening.
-  
+  Set backend for allcolorsarebeautiful.de/ep to port 9000; please make sure something is listening!
+  You can always check the status of your backend using "uberspace web backend list".
+
   [isabell@philae ~]$ uberspace web backend set / --http --port 1024
   Set backend for / to port 1024, make sure something is listening.
 
