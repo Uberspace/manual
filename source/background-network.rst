@@ -189,6 +189,8 @@ if it does!), there a few things to watch out for:
 * When using the "classic" ``.htaccess`` method of providing your own web
   services via apache, using ``127.0.0.1`` won't work for similar reasons.
   Please use web backends instead.
+* Connections between uberspaces on the same host are not supported. You can use
+  `SSH port forwarding <portforwarding>`_ instead.
 
 Other than these small caveats, networking on your uberspace should work like it
 does on any other machine: happy pinging!
@@ -214,5 +216,6 @@ artist goes by the name ``a:f``. Thank you!
 .. _PAMName=: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#PAMName=
 .. _USer=: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#User=
 .. _tcpproxy: https://github.com/google/tcpproxy
+.. _portforwarding: https://help.ubuntu.com/community/SSH/OpenSSH/PortForwarding
 .. _networkns article: https://blog.scottlowe.org/2013/09/04/introducing-linux-network-namespaces/
 .. _asciicloud: https://www.asciiart.eu/nature/clouds
