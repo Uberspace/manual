@@ -1,1 +1,4 @@
-Setup a :ref:`web backend <backends>` to publish your application. The application needs to listen on interface ``0.0.0.0`` at any port between 1024 and 65535.
+In order to make your application accessable from the outside, you need to
+connect it to the webserver, using a :ref:`web backend <backends>`. Please note
+that your application must listen on the IP ``0.0.0.0``. You can choose any port
+between 1024 and 65535.
