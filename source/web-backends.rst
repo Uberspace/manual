@@ -136,6 +136,25 @@ Of course you can combine specific paths and domains. This is a more advanced ex
 
 The longest matched path for a domain wins so you don't need to worry about the order of the backends.
 
+prefix handling
+---------------
+
+By default, the whole path (e.g. ``/ep/assets/style.css``) is passed onto the backend. Some applications
+require that only the part after their prefix (``/assets/style.css`` in this case) reaches them. To enable
+this behavior, add ``--remove-prefix``:
+
+.. code-block:: shell
+
+  [isabell@philae ~]$ uberspace web backend set allcolorsarebeautiful.de/ep --http --port 9000 --remove-prefix
+  Set backend for allcolorsarebeautiful.de/ep to port 9000; please make sure something is listening!
+  You can always check the status of your backend using "uberspace web backend list".
+
+  [isabell@philae ~]$ uberspace web backend list
+  allcolorsarebeautiful.de/ep http:9000, --remove-prefix => OK, listening: PID 23, node-red
+  / apache
+
+  [isabell@philae ~]$
+
 Removal
 =======
 
