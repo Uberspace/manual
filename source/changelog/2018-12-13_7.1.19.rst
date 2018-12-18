@@ -1,0 +1,9 @@
+Added
+-----
+
+* .NET Core is now available in Version 2.2
+
+Fixed
+-----
+
+* An internal API key was readable to local users. We fixed the permissions, reset the keys on all hosts and made sure that future hosts are setup correctly. 
