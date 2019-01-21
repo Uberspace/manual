@@ -24,18 +24,18 @@ Versions
 Release types 
 -------------
 
-We provide .NET Core 2.1 and apply security updates on a regular basis. 
+We provide .NET Core 2.2 and apply security updates on a regular basis. 
 
 Update policy
 -------------
 
 We update all versions on a regular basis. Once the `support <https://www.microsoft.com/net/support/policy>`_ ends, the branch reaches its end of life, is no longer supported and will be removed from our servers. 
 
-+--------+-------+----------------------------+ 
-| Branch | State | Supported Until            | 
-+========+=======+============================+ 
-| 2.1    | LTS   | At least until August 2021 | 
-+--------+-------+----------------------------+ 
++--------+-----------+----------------------------+ 
+| Branch | State     | Supported Until            | 
++========+===========+============================+ 
+| 2.2    | Current   | No date specified          | 
++--------+-----------+----------------------------+ 
 
 ----
 
