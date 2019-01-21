@@ -101,11 +101,11 @@ You also can setup backends for specific domains. Make sure :ref:`your domain <w
 .. code-block:: shell
 
   [isabell@philae ~]$ uberspace web backend set allcolorsarebeautiful.de --http --port 9000
-  Set backend for allcolorsarebeautiful.de/ to port 9000; please make sure something is listening!
+  Set backend for allcolorsarebeautiful.example/ to port 9000; please make sure something is listening!
   You can always check the status of your backend using "uberspace web backend list".
 
   [isabell@philae ~]$ uberspace web backend list                                                      
-  allcolorsarebeautiful.de/ http:9000 => OK, listening: PID 42, node-red
+  allcolorsarebeautiful.example/ http:9000 => OK, listening: PID 42, node-red
   / apache (default)
 
   [isabell@philae ~]$
@@ -117,19 +117,19 @@ Of course you can combine specific paths and domains. This is a more advanced ex
 
 .. code-block:: shell
 
-  [isabell@philae ~]$ uberspace web backend set allcolorsarebeautiful.de/ep/assets --apache
-  Set backend for allcolorsarebeautiful.de/ep/assets to apache
+  [isabell@philae ~]$ uberspace web backend set allcolorsarebeautiful.example/ep/assets --apache
+  Set backend for allcolorsarebeautiful.example/ep/assets to apache
   
-  [isabell@philae ~]$ uberspace web backend set allcolorsarebeautiful.de/ep --http --port 9000
-  Set backend for allcolorsarebeautiful.de/ep to port 9000; please make sure something is listening!
+  [isabell@philae ~]$ uberspace web backend set allcolorsarebeautiful.example/ep --http --port 9000
+  Set backend for allcolorsarebeautiful.example/ep to port 9000; please make sure something is listening!
   You can always check the status of your backend using "uberspace web backend list".
 
   [isabell@philae ~]$ uberspace web backend set / --http --port 1024
   Set backend for / to port 1024, make sure something is listening.
 
   [isabell@philae ~]$ uberspace web backend list
-  allcolorsarebeautiful.de/ep/assets apache
-  allcolorsarebeautiful.de/ep http:9000 => OK, listening: PID 23, node-red
+  allcolorsarebeautiful.example/ep/assets apache
+  allcolorsarebeautiful.example/ep http:9000 => OK, listening: PID 23, node-red
   / http:1024 => OK, listening: PID 42, nginx
   
   [isabell@philae ~]$ 
@@ -145,12 +145,12 @@ this behavior, add ``--remove-prefix``:
 
 .. code-block:: shell
 
-  [isabell@philae ~]$ uberspace web backend set allcolorsarebeautiful.de/ep --http --port 9000 --remove-prefix
-  Set backend for allcolorsarebeautiful.de/ep to port 9000; please make sure something is listening!
+  [isabell@philae ~]$ uberspace web backend set allcolorsarebeautiful.example/ep --http --port 9000 --remove-prefix
+  Set backend for allcolorsarebeautiful.example/ep to port 9000; please make sure something is listening!
   You can always check the status of your backend using "uberspace web backend list".
 
   [isabell@philae ~]$ uberspace web backend list
-  allcolorsarebeautiful.de/ep http:9000, --remove-prefix => OK, listening: PID 23, node-red
+  allcolorsarebeautiful.example/ep http:9000, --remove-prefix => OK, listening: PID 23, node-red
   / apache
 
   [isabell@philae ~]$
@@ -163,10 +163,10 @@ You can remove web backends with ``uberspace web backend del``:
 .. code-block:: shell
 
   [isabell@philae ~]$ uberspace web backend list
-  allcolorsarebeautiful.de/ http:9000 => OK, listening: PID 42, node-red
+  allcolorsarebeautiful.example/ http:9000 => OK, listening: PID 42, node-red
   / http:9001 => OK, listening: PID 12611, nc -6 -l :: 9001
 
-  [isabell@philae ~]$ uberspace web backend del allcolorsarebeautiful.de
+  [isabell@philae ~]$ uberspace web backend del allcolorsarebeautiful.example
   The web backend has been deleted.
 
   [isabell@philae ~]$ uberspace web backend del /
