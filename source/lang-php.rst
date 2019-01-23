@@ -21,7 +21,7 @@ Versions
 
 Release types
 -------------
-Each release branch of PHP is fully supported for two years beginning with its initial stable release. We provide different point releases and apply security updates on a regular basis. Currently, these PHP versions are available: 5.6, 7.0, 7.1, and 7.2.
+Each release branch of PHP is fully supported for two years beginning with its initial stable release. We provide different point releases and apply security updates on a regular basis. Currently, these PHP versions are available: 7.1, and 7.2.
 
 Standard version
 ----------------
@@ -35,8 +35,6 @@ Use ``uberspace tools version list php`` to show all selectable versions:
 .. code-block:: console
 
   [eliza@dolittle ~]$ uberspace tools version list php
-  - 5.6
-  - 7.0
   - 7.1
   - 7.2
   [eliza@dolittle ~]$
@@ -56,8 +54,8 @@ You can select the PHP version with :code:`uberspace tools version use php <vers
 
 .. code-block:: console
 
-  [eliza@dolittle ~]$ uberspace tools version use php 5.6
-  Selected PHP version 5.6
+  [eliza@dolittle ~]$ uberspace tools version use php 7.2
+  Selected PHP version 7.2
   The new configuration is adapted immediately. Patch updates will be applied automatically.
   [eliza@dolittle ~]$
 
@@ -80,10 +78,6 @@ We update all versions on a regular basis. Once the `security support <http://ph
 +--------+---------------------+------------------------+
 | Branch | State               | Security Support Until |
 +========+=====================+========================+
-| 5.6    | Security fixes only | 31 Dec 2018            |
-+--------+---------------------+------------------------+
-| 7.0    | Active support      | 3 Dec 2018             |
-+--------+---------------------+------------------------+
 | 7.1    | Active support      | 1 Dec 2019             |
 +--------+---------------------+------------------------+
 | 7.2    | Active support      | 30 Nov 2020            |
@@ -191,6 +185,21 @@ We provide the following modules: ``bcmath``, ``gd``, ``gmp``, ``imagick``, ``im
 .. _php-popular-software:
 
 ----
+
+Package Manager
+===============
+
+Every host comes with a preinstalled version of `Composer <https://getcomposer.org/>`_. This tool enables dependency management in PHP. It allows you to declare the libraries your project depends on and it will manage (install/update/remove) them for you.
+
+Composer may use several sources to look for packages. These sources are called repositories. The default repository is `Packagist <https://packagist.org/>`_.
+
+.. tip::
+  Refer to the `Composer Basic Usage guide <https://getcomposer.org/doc/01-basic-usage.md>`_ for further information. Almost all common PHP projects support Composer nowdays and provide an example installation command.
+  
+Update policy
+-------------
+
+We only provide a single version of composer and update it on a regular basis. 
 
 Popular software
 ================
