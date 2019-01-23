@@ -193,9 +193,13 @@ Every host comes with a preinstalled version of `Composer <https://getcomposer.o
 
 Composer may use several sources to look for packages. These sources are called repositories. The default repository is `Packagist <https://packagist.org/>`_.
 
-The basic workflow to add a PHP library to your project is: look for the package on Packagist, run ``composer require <package-name>``.
+.. tip::
+  Refer to the `Composer Basic Usage guide <https://getcomposer.org/doc/01-basic-usage.md>`_ for further information. Almost all common PHP projects support Composer nowdays and provide an example installation command.
+  
+Update policy
+-------------
 
-Almost all common PHP projects support Composer nowdays and provide an example installation command.
+We only provide a single version of composer and update it on a regular basis. 
 
 Popular software
 ================
