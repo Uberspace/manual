@@ -60,6 +60,29 @@ To set the default backend to an application listening on port 1024 (for example
 
   [isabell@philae ~]$ 
 
+available options
+-----------------
+
++-----------------+-------------+---------------------------------------------+ 
+| parameter       | value       | description                                 | 
++=================+=============+=============================================+ 
+| --apache        | N/A         | sets the backend to apache                  |
+|                 |             | (Default - use for htaccess/Wordpress/etc.) |
++-----------------+-------------+---------------------------------------------+ 
+| --static        | N/A         | Use the nginx static file server            |
+|                 |             | (faster, but no .htaccess)                  | 
++-----------------+-------------+---------------------------------------------+
+| --http          | N/A         | provide a custom http backend listening on  | 
+|                 |             | a port provided via --port                  | 
++-----------------+-------------+---------------------------------------------+
+| --port          | Portnumber  | Set the port your custom http backend       |
+|                 | (e.g. 8080) | listens on (make sure your backend expects  |
+|                 |             | requests on this port)                      |
++-----------------+-------------+---------------------------------------------+
+| --remove-prefix | N/A         | removes the prefixed path before passing    |
+|                 |             | the url to the backend                      |
++-----------------+-------------+---------------------------------------------+
+
 specific path
 -------------
 
