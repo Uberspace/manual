@@ -68,9 +68,6 @@ available options
 +=================+=============+=============================================+ 
 | --apache        | N/A         | sets the backend to apache                  |
 |                 |             | (Default - use for htaccess/Wordpress/etc.) |
-+-----------------+-------------+---------------------------------------------+ 
-| --static        | N/A         | Use the nginx static file server            |
-|                 |             | (faster, but no .htaccess)                  | 
 +-----------------+-------------+---------------------------------------------+
 | --http          | N/A         | provide a custom http backend listening on  | 
 |                 |             | a port provided via --port                  | 
