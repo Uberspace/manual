@@ -100,7 +100,7 @@ You also can setup backends for specific domains. Make sure :ref:`your domain <w
 
 .. code-block:: shell
 
-  [isabell@philae ~]$ uberspace web backend set allcolorsarebeautiful.de --http --port 9000
+  [isabell@philae ~]$ uberspace web backend set allcolorsarebeautiful.example --http --port 9000
   Set backend for allcolorsarebeautiful.example/ to port 9000; please make sure something is listening!
   You can always check the status of your backend using "uberspace web backend list".
 
