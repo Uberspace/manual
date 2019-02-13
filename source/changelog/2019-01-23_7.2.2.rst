@@ -1,0 +1,12 @@
+Changed
+-------
+* deprecate Node 9, we set version 10 for all affected users
+* update to Ruby Bundler 2
+* limit user runtime directories to 25MB
+
+Fixed
+-----
+* Fix PHP FPM open_basedir 
+* increase the max values for semaphore parameters to prevent Apache outages
+* keep SQL dumps for 21 days as promised 
+* a lot of cleanup and polish here and there (fix for MariaDB restarts, changed Supervisord PATH, ...)

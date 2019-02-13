@@ -186,6 +186,21 @@ We provide the following modules: ``bcmath``, ``gd``, ``gmp``, ``imagick``, ``im
 
 ----
 
+Package Manager
+===============
+
+Every host comes with a preinstalled version of `Composer <https://getcomposer.org/>`_. This tool enables dependency management in PHP. It allows you to declare the libraries your project depends on and it will manage (install/update/remove) them for you.
+
+Composer may use several sources to look for packages. These sources are called repositories. The default repository is `Packagist <https://packagist.org/>`_.
+
+.. tip::
+  Refer to the `Composer Basic Usage guide <https://getcomposer.org/doc/01-basic-usage.md>`_ for further information. Almost all common PHP projects support Composer nowdays and provide an example installation command.
+  
+Update policy
+-------------
+
+We only provide a single version of composer and update it on a regular basis. 
+
 Popular software
 ================
 
