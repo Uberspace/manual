@@ -1,0 +1,11 @@
+Added
+-----
+* PHP 7.3
+
+Changed
+-------
+* deprecated PHP 5.6 & PHP 7.0, migrated all users to 7.1
+
+Fixed
+-----
+* lots of internal stuff: fixed not rebooting systems (waiting for ...), fixed not booting systems (logind stuck), fixed stuck supervisord instances, fixed all the things!
