@@ -48,7 +48,7 @@ For more information see the :doc:`full changelog <changelog>`.
    DocumentRoot <web-documentroot>
    domains <web-domains>
    security <web-security>
-   custom backends <web-backends>
+   web backends <web-backends>
    logs <web-logs>
 
 .. toctree::
@@ -88,6 +88,14 @@ For more information see the :doc:`full changelog <changelog>`.
    supervisord <daemons-supervisord>
    Cron jobs <daemons-cron>
    runwhen <daemons-runwhen>
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+   :caption: Background
+
+   Network <background-network>
+   HTTP Stack <background-http-stack>
 
 .. toctree::
    :hidden:

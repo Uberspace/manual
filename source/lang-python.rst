@@ -50,6 +50,11 @@ We update all versions on a regular basis. Once the `security support <https://d
 | 3.6    | Bug fixes           | December 2021               |
 +--------+---------------------+-----------------------------+
 
+Connection to webserver
+=======================
+
+.. include:: includes/web-backend.rst
+
 pip
 ===
 
