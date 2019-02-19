@@ -49,7 +49,14 @@ Check out the `Hello, Console App! <https://docs.microsoft.com/en-us/dotnet/core
 Connection to webserver
 =======================
 
-.. include:: includes/web-backend.rst
+In order to make your .NET application accessable from the outside, you need to connect it to the webserver. This is done using a proxy ``RewriteRule`` to forward requests to the application's network port. For example, if your application is listening on port 61625 and you want it to be accessable at ``https://<user>.uber.space/dotnet/``, place an :ref:`.htaccess <htaccess>` file looking like this in your :ref:`docroot`:
+
+.. code-block:: apacheconf
+
+  RewriteEngine On
+  RewriteRule ^dotnet/(.*) http://localhost:61625/$1 [P]
+
+.. include:: includes/htaccess-directoryindex.txt
 
 ----
 

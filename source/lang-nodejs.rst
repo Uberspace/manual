@@ -95,7 +95,14 @@ We update all versions on a regular basis. Once the `support <https://github.com
 Connection to webserver
 =======================
 
-.. include:: includes/web-backend.rst
+In order to make your Node.js application accessable from the outside, you need to connect it to the webserver. This is done using a proxy ``RewriteRule`` to forward requests to the application's network port. For example, if your application is listening on port 61624 and you want it to be accessable at ``https://<user>.uber.space/nodejs/``, place an :ref:`.htaccess <htaccess>` file looking like this in your :ref:`docroot`:
+
+.. code-block:: apacheconf
+
+  RewriteEngine On
+  RewriteRule ^nodejs/(.*) http://localhost:61624/$1 [P]
+
+.. include:: includes/htaccess-directoryindex.txt
 
 ----
 

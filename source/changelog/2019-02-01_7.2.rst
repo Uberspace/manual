@@ -1,9 +1,0 @@
-Added
------
-
-* web backends
-
-Changed
--------
-
-* every account now has its own isolated network stack
