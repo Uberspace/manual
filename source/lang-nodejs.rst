@@ -41,7 +41,6 @@ Use ``uberspace tools version list node`` to show all selectable versions:
   [eliza@dolittle ~]$ uberspace tools version list node
   - 6
   - 8
-  - 9
   - 10
   [eliza@dolittle ~]$ 
 
@@ -87,8 +86,6 @@ We update all versions on a regular basis. Once the `support <https://github.com
 | 6      | Maintenance LTS         | April 2019       | 
 +--------+-------------------------+------------------+ 
 | 8      | LTS                     | December 2019    |
-+--------+-------------------------+------------------+ 
-| 9      | EOL                     | June 2018        | 
 +--------+-------------------------+------------------+ 
 | 10     | LTS                     | April 2021       |
 +--------+-------------------------+------------------+ 
