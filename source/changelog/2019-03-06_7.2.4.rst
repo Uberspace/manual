@@ -1,0 +1,7 @@
+Added
+-----
+* We now provide Xvfb and readline-devel
+
+Changed
+-------
+* lower OOM-Killer score for our own services like MariaDB to prevent restarts
