@@ -1,0 +1,7 @@
+Added
+-----
+* we now provide elixir
+
+Changed
+-------
+* `uberspace tools restart php` now also restarts the socket in case PHP hangs and can't be restarted by users.
