@@ -177,6 +177,18 @@ library. Since this is all happening locally, it shouldn't behave differently
 than a direct connection. This setup also enables us to move some of those
 services off the uberspace hosts onto dedicated machines in the future.
 
+Uberspace IP adresses
+=====================
+
+As you can see in the graphic all the way up this article, each user gets their
+own, private IP address, like ``100.64.9.2``. They are the only way to contact
+services running within a uberspace. While these IP adresses are stable, we
+don't think that they're particularly pretty or easy to remember. Most of the
+internet uses hostnames to remember IP adresses, so do we: each uberspace also
+comes with a (locally reachable only) hostname: ``$USERNAME.local.uberspace.de``.
+This hostname isn't used by us in any way, but can be utilized to write
+``.htaccess`` proxies, in case web backends do not suffice.
+
 Impact on users
 ===============
 
