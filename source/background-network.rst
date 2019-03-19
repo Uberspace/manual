@@ -202,7 +202,7 @@ if it does!), there a few things to watch out for:
   services via apache, using ``127.0.0.1`` won't work for similar reasons.
   Please use web backends instead.
 * Connections between uberspaces on the same host are not supported. You can use
-  `SSH port forwarding <portforwarding>`_ instead.
+  `SSH port forwarding <portforwarding_>`_ instead.
 
 Other than these small caveats, networking on your uberspace should work like it
 does on any other machine: happy pinging!
