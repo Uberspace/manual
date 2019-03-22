@@ -1,0 +1,7 @@
+# These rules will change if you change your site’s custom domains or HTTPS settings
+
+# Redirect domain aliases to primary domain
+https://manual-72.uberspace.de/* https://manual.uberspace.de/:splat 301!
+
+# Optional: Redirect default Netlify subdomain to primary domain
+https://manual-uberspace-de.netlify.com/* https://manual.uberspace.de/:splat 301!
