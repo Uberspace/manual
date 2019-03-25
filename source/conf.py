@@ -76,10 +76,6 @@ pygments_style = 'sphinx'
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = False
 
-html_extra_path = [
-    'changelog_feeds',
-]
-
 
 # -- Options for HTML output ----------------------------------------------
 
@@ -148,7 +144,10 @@ release = changelog_entries[0]['version']
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
-html_extra_path = ['_redirects']
+html_extra_path = [
+    'changelog_feeds',
+    '_redirects',
+]
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
