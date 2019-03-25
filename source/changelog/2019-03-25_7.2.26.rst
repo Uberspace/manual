@@ -1,0 +1,11 @@
+Added
+-----
+
+* We now provide moreutils, clojure and libidn-devel
+
+Fixed
+-----
+
+* reworked network namespaces to save *lots of* RAM
+* one character usernames crashed signup process
+* healtcheck tests bailed over deleted users
