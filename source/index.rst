@@ -49,6 +49,7 @@ For more information see the :doc:`full changelog <changelog>`.
    security <web-security>
    web backends <web-backends>
    logs <web-logs>
+   Tor <web-tor>
 
 .. toctree::
    :hidden:
