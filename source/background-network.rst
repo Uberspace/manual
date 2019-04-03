@@ -1,7 +1,7 @@
 .. _network:
 
 #######
-Network 
+Network
 #######
 
 ::
@@ -62,7 +62,7 @@ a few strange IPs:
     link/ether 1a:25:85:03:bc:3a brd ff:ff:ff:ff:ff:ff link-netnsid 0
     inet 100.64.9.2/30 scope global veth_dbcheck
        valid_lft forever preferred_lft forever
-    inet6 fd75:6272:7370:9::2/64 scope global 
+    inet6 fd75:6272:7370:9::2/64 scope global
        valid_lft forever preferred_lft forever
 
 These adresses (``100.64.x.y``, ``fed75::xxx::2``) aren't ordinary public ones,
@@ -156,9 +156,9 @@ main use case is authentication, PAM can also help here:
   User=%I
   PAMName=su-l
 
-Systemd provides a `PAMName=`_ directive directive. Together with the rather
-popular `User=`_, it executes a process as the right user, while using PAM to
-run the set the network namespace. Exactly what we need. :)
+Systemd provides a `PAMName=`_ directive. Together with the rather popular
+`User=`_, it executes a process as the right user, while using PAM to set the
+network namespace. Exactly what we need. :)
 
 System services
 ===============
