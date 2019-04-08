@@ -1,0 +1,13 @@
+Added
+-----
+* introduce "deprecated" flag for tool versions
+
+Changed
+-------
+* Deprecate Ruby 2.3
+* gather only minimal facts for uberspace commands to boost performance
+* enforce SQL passwords for users
+
+Fixed
+-----
+* We switched to restrictdocroot.so in our PHP-FPM setup because open_basedir slows apps down considerably
