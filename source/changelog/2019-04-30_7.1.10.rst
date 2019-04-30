@@ -1,0 +1,14 @@
+Added
+-----
+* Ruby 2.6
+* We now allow *.<user>.uber.space-subdomains in webserver
+
+Changed
+-------
+* changed oom score of SSH so users can login even when there is no memory left
+* deprecate NodeJS 6
+
+Fixed
+-----
+* websockets in .net projects now actually work
+* large uploads work again, we changed mod_requestTimeout from 20 to 900

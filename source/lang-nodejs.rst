@@ -25,7 +25,7 @@ Versions
 Release types 
 -------------
 
-We provide different releases and apply security updates on a regular basis. Currently, these Node.js versions are available: 6, 8, 9 and 10.
+We provide different releases and apply security updates on a regular basis. Currently, these Node.js versions are available: 8, 9 and 10.
 
 Standard version
 ----------------
@@ -39,7 +39,6 @@ Use ``uberspace tools version list node`` to show all selectable versions:
 .. code-block:: bash
 
   [eliza@dolittle ~]$ uberspace tools version list node
-  - 6
   - 8
   - 10
   [eliza@dolittle ~]$ 
@@ -49,13 +48,6 @@ Use ``uberspace tools version list node`` to show all selectable versions:
 Change version
 --------------
 You can select the Node.js version with ``uberspace tools version use node <version>``. You can choose between release branches:
-
-.. code-block:: bash
-
-  [eliza@dolittle ~]$ uberspace tools version use node 6
-  Selected node version 6
-  The new configuration is adapted immediately. Patch updates will be applied automatically.
-  [eliza@dolittle ~]$ 
 
 .. code-block:: bash
 
@@ -83,8 +75,6 @@ We update all versions on a regular basis. Once the `support <https://github.com
 +--------+-------------------------+------------------+ 
 | Branch | State                   | Supported Until  | 
 +========+=========================+==================+ 
-| 6      | Maintenance LTS         | April 2019       | 
-+--------+-------------------------+------------------+ 
 | 8      | LTS                     | December 2019    |
 +--------+-------------------------+------------------+ 
 | 10     | LTS                     | April 2021       |
