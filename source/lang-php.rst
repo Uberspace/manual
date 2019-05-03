@@ -207,19 +207,7 @@ We only provide a single version of composer and update it on a regular basis.
 Popular software
 ================
 
-+--------------------------------------------------------------------+---------------------------+
-| Name                                                               | Kind                      |
-+====================================================================+===========================+
-| `Wordpress <https://lab.uberspace.de/en/guide_wordpress.html>`_    | content management system |
-+--------------------------------------------------------------------+---------------------------+
-| `Nextcloud <https://lab.uberspace.de/en/guide_nextcloud.html>`_    | file hosting services     |
-+--------------------------------------------------------------------+---------------------------+
-| `Magento <https://magento.com>`_                                   | online shop               |
-+--------------------------------------------------------------------+---------------------------+
-| `Drupal <https://www.drupal.org>`_                                 | content management system |
-+--------------------------------------------------------------------+---------------------------+
-| `Joomla <https://www.joomla.org>`_                                 | content management system |
-+--------------------------------------------------------------------+---------------------------+
+Check out the `⚛️ Uberlab <https://lab.uberspace.de/tags/lang-php>`_ for guides!
 
 ----
 

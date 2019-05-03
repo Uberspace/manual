@@ -75,3 +75,12 @@ To install for Python 3.6, use :code:`pip3.6`:
 
   [eliza@dolitte ~] pip3.6 install package-name --user 
 
+----
+
+Popular software
+================
+
+Check out the `⚛️ Uberlab <https://lab.uberspace.de/tags/lang-python>`_ for guides!
+
+
+

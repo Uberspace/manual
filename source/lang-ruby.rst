@@ -105,3 +105,10 @@ gem
 ===
 
 ``gem`` is a package manager that can be used to install and manage additional libraries, known as `gems`. We have preconfigured ``gem`` to install libraries to your :ref:`home`.
+
+----
+
+Popular software
+================
+
+Check out the `⚛️ Uberlab <https://lab.uberspace.de/tags/lang-ruby>`_ for guides!
