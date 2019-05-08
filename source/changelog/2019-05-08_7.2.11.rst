@@ -1,0 +1,10 @@
+Changed
+-------
+
+* TLSv1.0/v1.1 is now disabled in webserver
+* rotate user webserver logs, enable users to delete them
+
+Fixed
+-----
+* login was slow when initial netns was created by cron
+* wrong MariaDB timezone
