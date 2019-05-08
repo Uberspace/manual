@@ -1,8 +1,13 @@
+Added
+-----
+* We now provide boost-devel
+
 Changed
 -------
 
 * TLSv1.0/v1.1 is now disabled in webserver
 * rotate user webserver logs, enable users to delete them
+* We removed Ruby 2.3
 
 Fixed
 -----
