@@ -71,7 +71,7 @@ because uberspaces are not directly connected to the internet, but are placed
 within their own little `network namespace`_, similarily to how docker handles
 networking for its containers. This gives them their own ``veth_...`` interface
 and funnily enough, their own loopback / ``127.0.0.1``. Connections to the
-outside are then NATed, direct, raw TCP or UDP connections from the internet are
+out are then NATed, direct, raw TCP or UDP connections from the internet are
 currently not supported.
 
 .. note::
@@ -102,7 +102,7 @@ Sidequest: Pluggable authentication modules (PAM)
 .. note::
 
   This section explains the technical implementation of network namespaces in
-  our setup. If you only look for a higher-level understanding of the topic, can
+  our setup. If you only look for a higher-level understanding of the topic, you can
   safely skip to the next one.
 
 To make sure our setup actually works, it is very important that all user
