@@ -13,6 +13,10 @@ Access Log
 Enabling and disabling
 ----------------------
 
+.. note::
+
+   Disabling logs deletes all existing logs!
+
 To enable or disable your access log, use these commands:
 
 .. code-block:: bash
