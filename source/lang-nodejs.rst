@@ -25,7 +25,7 @@ Versions
 Release types 
 -------------
 
-We provide different releases and apply security updates on a regular basis. Currently, these Node.js versions are available: 8, 9 and 10.
+We provide different releases and apply security updates on a regular basis. Currently, these Node.js versions are available: 8 and 10.
 
 Standard version
 ----------------
