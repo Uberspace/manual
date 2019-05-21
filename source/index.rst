@@ -104,6 +104,7 @@ For more information see the :doc:`full changelog <changelog>`.
    :caption: Meta
 
    Changelog <changelog>
+   Changelog Archive <changelog_archive>
    ⚛️ Uberlab <https://lab.uberspace.de/en/>
    Legal Notice <https://uberspace.de/imprint>
    Privacy <https://uberspace.de/privacy>
