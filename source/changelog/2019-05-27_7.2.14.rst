@@ -1,0 +1,22 @@
+7.2.12 and 7.2.13 had no user facing features, we changed and fixed lots of internal stuff.
+
+Added
+-----
+
+* provide calendar
+* provide imlib2, imlib2-devel
+* enable users to compile golang apps
+
+Changed
+-------
+
+* Raise max_connect_errors in MariaDB to 10000
+* use mitogen for on-host ansible
+* remove RequestReadTimeout body=900 to (hopefully) finally fix the issues with big uploads
+Fixed
+-----
+
+* public suffix list gets updated now
+* maillimit crashed with user-set path
+* fixes a typo in "uberspace mail"
+* systemd reload caused deployment timeout
