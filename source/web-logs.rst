@@ -6,16 +6,15 @@ Web server logs
 
 The web server logs are disabled by default. Once you enable them, they are written to ``/home/$USER/logs/webserver`` (so if your user name is `isabell`, this would be ``/home/isabell/logs/webserver``) in real-time.
 
+.. note::
 
+   Disabling logs deletes all existing logs!
+   
 Access Log
 ==========
 
 Enabling and disabling
 ----------------------
-
-.. note::
-
-   Disabling logs deletes all existing logs!
 
 To enable or disable your access log, use these commands:
 
@@ -110,3 +109,5 @@ Privacy
 =======
 
 To protect user's privacy, we only log the first 16 bits of an IPv4 address and the first 32 bits of an IPv6 address, respectively, nulling the rest. Thus, ``uberspace.de``'s IPv4 address, ``82.98.87.93`` and its IPv6 address ``2a02:2e0:3fc:52:0:62:5768:38`` are logged as ``82.98.0.0`` and ``2a02:2e0::`` in the actual log files.
+
+Log files are rotated daily and deleted after 7 days of retention.
