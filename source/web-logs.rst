@@ -96,7 +96,7 @@ To enable or disable your PHP error log, use these commands:
 Contents of the error_log_php
 -----------------------------
 
-The ``error_log_php`` logs errors encountered by PHP on your website:
+The ``/home/$USER/logs/error_log_php`` logs errors encountered by PHP on your website:
 
 .. code-block:: none
 
