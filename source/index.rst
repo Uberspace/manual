@@ -78,6 +78,7 @@ For more information see the :doc:`full changelog <changelog>`.
    Python <lang-python>
    NodeJS <lang-nodejs>
    Ruby <lang-ruby>
+   golang <lang-golang>
    .NET Core <lang-dotnet>
 
 .. toctree::
