@@ -38,6 +38,7 @@ For more information see the :doc:`full changelog <changelog>`.
    resources <basics-resources>
    home directory <basics-home>
    shell <basics-shell>
+   firewall ports <basics-ports>
 
 .. toctree::
    :hidden:
