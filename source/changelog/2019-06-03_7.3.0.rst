@@ -1,0 +1,10 @@
+Added
+-----
+
+* allow users to open a port in the firewall
+
+
+Changed
+-------
+
+* add ~/go/bin to $PATH
