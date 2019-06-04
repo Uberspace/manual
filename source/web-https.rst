@@ -24,3 +24,22 @@ Let's encrypt
 =============
 
 We use `lua-resty-auto-ssl <https://github.com/GUI/lua-resty-auto-ssl>`_ to issue Let's Encrypt certificates for every external domain that is :ref:`connected to a Uberspace <web-domains>`. This happens automagically when a domain is requested by a client for the first time. For privacy reasons every domain gets its own certificate. We also handle the renewal, certificates will be renewed if they expire in less than 30 days.
+
+Certificate Access
+------------------
+
+Once a certificate has been generated, you can find all relevant files in ``~/etc/certificates``.
+This includes your certificate chain - ``<domain>.crt`` - as well as the private
+key - ``<domain>.key``). If you do not make use of our webserver, you can copy
+or directly use these files in your application. If you use PHP, static files or
+:ref:`web backends <web-backends>`, we handle HTTPS for you and there is no need
+to do anything.
+
+.. warning::
+    Certificates issued by let's encrypt have a short live of 90 days. We renew
+    certificates when they are 60 days old. In pratice, the provided files will
+    change every 1-2 months.
+
+    Make sure to either restart your service one a month, or watch the files for
+    changes and restart accordingly. Otherwise your service will use an
+    outdated, invalid certificate.
