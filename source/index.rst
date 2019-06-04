@@ -47,7 +47,8 @@ For more information see the :doc:`full changelog <changelog>`.
 
    DocumentRoot <web-documentroot>
    domains <web-domains>
-   security <web-security>
+   https <web-https>
+   security headers <web-security-headers>
    web backends <web-backends>
    logs <web-logs>
    Tor <web-tor>
