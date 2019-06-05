@@ -8,6 +8,8 @@ Using web backends you can connect your applications directly to our frontend to
 
 .. tip:: The application needs to listen on interface ``::`` or ``0.0.0.0`` (using ``127.0.0.1``, ``localhost`` or ``::1`` does **not** work!) at any port between 1024 and 65535.
 
+.. warning:: If you make use of WebSockets, make sure to send `keep alive`_ packages every few minutes. Idle HTTP connections are shut down after three minutes.
+
 In the background, every Uberspace account gets its own virtual network interface. That enables you to use any port you like. Check out the :ref:`background article <network>` for details.  
 
 Setup
