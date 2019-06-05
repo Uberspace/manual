@@ -4,23 +4,16 @@
 web backends
 ############
 
-.. tip:: The application needs to listen on interface ``::`` or ``0.0.0.0`` (using ``127.0.0.1``, ``localhost`` or ``::1`` does **not** work!) at any port between 1024 and 65535. 
+Using web backends you can connect your applications directly to our frontend to make them accessible from the outside. Traffic is proxied transparently to your application: WebSockets just work and your ``Host`` header is set correctly. If you have prior experience with ``RewriteRule`` proxies, are also much faster.
 
-You can connect your applications directly to our frontend to make them accessible from the outside. We don't limit the number of web backends.
+.. tip:: The application needs to listen on interface ``::`` or ``0.0.0.0`` (using ``127.0.0.1``, ``localhost`` or ``::1`` does **not** work!) at any port between 1024 and 65535.
 
-.. sidebar:: advantages
-
-  Using web backends has several advantages over a proxy RewriteRule: WebSockets work, no X-Forwarded-Host header and it's **much** faster.
-
-Every Uberspace account gets its own virtual network interface, check out the :ref:`background article <network>` for details.  
+In the background, every Uberspace account gets its own virtual network interface. That enables you to use any port you like. Check out the :ref:`background article <network>` for details.  
 
 Setup
 =====
 
-default backend
----------------
-
-In order to use your own backend, you first need to set it up using the ``uberspace`` tool. 
+In order to use your own backend, you first need to set it up using the ``uberspace`` tool. We don't limit the number of web backends.
 
 .. code-block:: shell
 
@@ -34,6 +27,9 @@ In order to use your own backend, you first need to set it up using the ``ubersp
     set — Set web backed for a given domain and path.
 
     [isabell@philae ~]$ 
+
+default backend
+===============
 
 In the default configuration the default backend is :ref:`apache <docroot>`:
 
@@ -203,3 +199,4 @@ The solution for ``/doesnotwork`` is to change the listening interface to ``::``
   [isabell@philae ~]$ 
 
 
+.. _`keep alive`: https://en.wikipedia.org/wiki/Keepalive
