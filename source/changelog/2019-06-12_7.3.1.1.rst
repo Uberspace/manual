@@ -1,0 +1,10 @@
+Added
+-----
+
+* give users access to let's encrypt certificates
+
+
+Fixed
+-----
+
+* newest PHP 7.3 segfaults when opcache is enabled, we downgraded to a working version for now
