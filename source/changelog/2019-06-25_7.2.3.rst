@@ -1,0 +1,9 @@
+Changed
+-------
+* avoid non-ASCII characters in uberspace command
+
+Fixed
+-----
+* certificates for .uber.space domains are not present
+* very long domains crash nginx
+* disabling PHP error log also deletes backup copy of the log
