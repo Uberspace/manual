@@ -1,0 +1,9 @@
+Added
+-----
+
+* add support for TLS 1.3
+
+Fixed
+-----
+
+* regular expresion for user log rotation
