@@ -124,6 +124,10 @@ html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 html_last_updated_fmt = '%b %d, %Y'
 html_context = {
   'css_files': ['_static/css/custom.css'],
+  'display_github': True,
+  'github_user': 'Uberspace',
+  'github_repo': 'manual',
+  'github_version': 'master',
   'changelog_entries': changelog_entries,
   'newest_changelog_entry': changelog_entries[0],
 }
