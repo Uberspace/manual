@@ -128,6 +128,7 @@ html_context = {
   'github_user': 'Uberspace',
   'github_repo': 'manual',
   'github_version': 'master',
+  'conf_py_path': '/source/',
   'changelog_entries': changelog_entries,
   'newest_changelog_entry': changelog_entries[0],
 }
