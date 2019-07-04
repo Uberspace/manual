@@ -21,7 +21,7 @@ In order to use your own domain for mail with your Uberspace, you need to first 
 
 Once you’ve set up your domain using the uberspace mail domain add tool, the tool provides you with the ``MX`` record that needs to be configured in your registrar’s nameserver.
 
-.. warning:: Please use only the provided host name for your ``MX`` record. If you use any other host name for your ``MX``, the mailserver will not accept your domain.
+.. warning:: Please use only the provided host name for your ``MX`` record. If you use any other host name for your ``MX``, the mailserver will not accept your domain. You will also not be able to login to the mailserver using that domain as part of the username before setting up the record.
 
 SPF record
 ----------
