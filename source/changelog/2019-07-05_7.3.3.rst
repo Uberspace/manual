@@ -1,0 +1,13 @@
+Added
+-----
+* we now provide neovim and clang
+* enable HTTP/2 server push
+
+Changed
+-------
+* add prime256v1 for nodejs, nodejs 8 doesn't support secp384r1 yet, as do some others
+* disable RSPAMD_EMAILBL check
+
+Fixed
+-----
+* replace logrotate for user logs with custom script because logrotate doesn't do what it should
