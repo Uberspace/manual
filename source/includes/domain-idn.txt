@@ -2,7 +2,7 @@
 
    If you want to add or remove an `internationalized domain name (IDN) <https://en.wikipedia.org/wiki/Internationalized_domain_name>`_, please use the ASCII representation (“punycode”). For example, please use ``xn--berspace-55a.de`` instead of ``überspace.de``.
    
-   To convert an internationalized domain name to punicode, use the ``idn`` command:
+   To convert an internationalized domain name to punycode, use the ``idn`` command:
    
    .. code-block:: none
 
