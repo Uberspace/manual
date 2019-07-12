@@ -40,6 +40,6 @@ to do anything.
     certificates when they are 60 days old. In pratice, the provided files will
     change every 1-2 months.
 
-    Make sure to either restart your service one a month, or watch the files for
+    Make sure to either restart your service once a month, or watch the files for
     changes and restart accordingly. Otherwise your service will use an
     outdated, invalid certificate.
