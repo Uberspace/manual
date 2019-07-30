@@ -1,0 +1,16 @@
+This was mostly a maintainance release, containing internal CI releated things. But it also contains these…
+
+Fixed
+=====
+
+- We promise a log retention period of 7 days in `our manual <https://manual.uberspace.de/web-logs.html#privacy>`_. For a while we only kept logs for 5 days though. This is now fixed.
+
+Added
+=====
+
+- We provide the Ada compiler `gnat <https://www.gnu.org/software/gnat/>`_.
+
+Changed
+=======
+
+- We include `luarocks <https://luarocks.org/>`_ in ``PATH`` and also set the ``LUA_PATH`` / ``LUA_CPATH`` environment variables.
