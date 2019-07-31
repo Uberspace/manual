@@ -1,0 +1,4 @@
+Fixed
+=====
+
+- On some hosts, we were unable to create new accounts. This is now fixed. There was no user impact, as the affected accounts were relocated.
