@@ -13,6 +13,8 @@ ports and firewalls.
 If your software requires direct TCP or even UDP connections, like XMPP, ZNC or
 mosh, you need to open a port in the firewall.
 
+.. note:: If you plan to use an :ref:`HTTP backend <web-backends>`, you do **not** need to open a port for your application.
+
 Opening ports
 =============
 
