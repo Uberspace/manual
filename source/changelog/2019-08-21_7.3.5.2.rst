@@ -1,0 +1,12 @@
+This release fixes some issues with supervisord and the firewall:
+
+Changed
+-------
+* set dummy user & password for supervisord's http server
+* move `supervisord <https://manual.uberspace.de/daemons-supervisord.html>`_ socket out of users home directory because supervisord became uncontrollable when users deleted ``$HOME/tmp/supervisor.sock``
+
+
+Fixed
+-----
+* fix race condition in mail limiter
+* make `open ports <https://manual.uberspace.de/basics-ports.html>`_ available via IPv6
