@@ -1,0 +1,8 @@
+Added
+-----
+* we now provide php-devel for all PHP versions
+* install colordiff
+
+Fixed
+-----
+* fix account deletion for users with databases with special characters in their names
