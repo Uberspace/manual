@@ -36,7 +36,8 @@ or directly use these files in your application. If you use PHP, static files or
 to do anything.
 
 .. warning::
-    Certificates issued by let's encrypt have a short live of 90 days. We renew
+
+    Certificates issued by let's encrypt have a short life of 90 days. We renew
     certificates when they are 60 days old. In practice, the provided files will
     change every 1-2 months.
 
