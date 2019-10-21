@@ -24,7 +24,7 @@ In many contexts, the tilde ``~`` can be used as a placeholder for your home dir
 etc
 ---
 
-The ``etc`` folder is reserved for configuration files of any kind. Most importantly, this includes your :ref:`supervisord: configuration in ``etc/services.d``.
+The ``etc`` folder is reserved for configuration files of any kind. Most importantly, this includes your :ref:`supervisord` configuration in ``etc/services.d``.
 
 bin
 ---
