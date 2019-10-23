@@ -6,7 +6,7 @@
    
    .. code-block:: none
 
-      [isabell@stardust ~] $ echo "überspace.de" | idn
+      [isabell@stardust ~] $ idn überspace.de
       xn--berspace-55a.de
    
 
