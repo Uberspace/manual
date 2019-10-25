@@ -25,11 +25,11 @@ Versions
 Release types 
 -------------
 
-We provide different releases and apply security updates on a regular basis. Currently, these Node.js versions are available: 8 and 10.
+We provide different releases and apply security updates on a regular basis. Currently, these Node.js versions are available: 8, 10, 12 and 13.
 
 Standard version
 ----------------
-If you don't select a certain version, our default will be used. We decided to default to version 8, which is considered to be stable by the developers.
+If you don't select a certain version, our default will be used. We decided to default to version 12, which is considered to be stable by the developers.
 
 Show available versions
 -----------------------
@@ -41,6 +41,8 @@ Use ``uberspace tools version list node`` to show all selectable versions:
   [eliza@dolittle ~]$ uberspace tools version list node
   - 8
   - 10
+  - 12
+  - 13
   [eliza@dolittle ~]$ 
 
 .. _node-change-version:
@@ -51,8 +53,8 @@ You can select the Node.js version with ``uberspace tools version use node <vers
 
 .. code-block:: bash
 
-  [eliza@dolittle ~]$ uberspace tools version use node 10
-  Selected node version 10
+  [eliza@dolittle ~]$ uberspace tools version use node 13
+  Selected node version 13
   The new configuration is adapted immediately. Patch updates will be applied automatically.
   [eliza@dolittle ~]$ 
 
@@ -64,7 +66,7 @@ You can check the selected version by executing ``uberspace tools version show n
 .. code-block:: bash
 
   [eliza@dolittle ~]$ uberspace tools version show node
-  Using 'node' version: '8
+  Using 'node' version: '12
   [eliza@dolittle ~]$ 
 
 Update policy
@@ -75,10 +77,14 @@ We update all versions on a regular basis. Once the `support <https://github.com
 +--------+-------------------------+------------------+ 
 | Branch | State                   | Supported Until  | 
 +========+=========================+==================+ 
-| 8      | LTS                     | December 2019    |
+| 8      | Maintenance LTS         | December 2019    |
 +--------+-------------------------+------------------+ 
-| 10     | LTS                     | April 2021       |
+| 10     | Active LTS              | April 2021       |
 +--------+-------------------------+------------------+ 
+| 12     | Active LTS              | April 2022       |
++--------+-------------------------+------------------+ 
+| 13     | Current                 | June 2022        |
++--------+-------------------------+------------------+
 
 ----
 
