@@ -1,0 +1,9 @@
+Added
+-----
+* we now provide GeoIP-devel and aspell
+
+Changed
+-------
+* enlarge proxy_buffer_size to send a bigger amount of http headers
+* set http_max_upload_size_mb to 2048mb fof bigger uploads
+* update sqlite to version 3.28
