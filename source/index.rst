@@ -82,6 +82,7 @@ For more information see the :doc:`full changelog <changelog>`.
    Ruby <lang-ruby>
    golang <lang-golang>
    .NET Core <lang-dotnet>
+   Erlang/OTP <lang-erlang>
 
 .. toctree::
    :hidden:
