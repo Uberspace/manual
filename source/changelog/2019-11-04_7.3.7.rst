@@ -2,7 +2,12 @@ Added
 -----
 * NodeJS 12 and 13
 * Erlang/OTP 20, 21 and 22
+* We now provide gnutls-utils
 
 Changed
 -------
 * set NodeJS default version to 12
+
+Fixed
+-----
+* Users can add illegal domains using capital letters
