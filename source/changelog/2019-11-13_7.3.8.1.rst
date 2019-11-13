@@ -1,0 +1,8 @@
+Added
+-----
+* city-fan repo for fresh curl and libssl versions
+
+Changed
+-------
+* set PHP default version to 7.2
+* update curl to version 7.67
