@@ -1,7 +1,0 @@
-Added
------
-* city-fan repo for fresh curl versions
-
-Changed
--------
-* set PHP default version to 7.2
