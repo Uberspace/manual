@@ -33,4 +33,6 @@ To find out which shells are available on Uberspace, run ``chsh -l``:
  /usr/sbin/nologin
  /usr/bin/tmux
  /bin/zsh
+ /usr/bin/fish
+
 
