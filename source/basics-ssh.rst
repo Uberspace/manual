@@ -47,10 +47,10 @@ We're now guiding you through your first successful connection to your account. 
 
 .. _ssh-using-linux:
 
-Using Linux, macOS or any other Unix
-------------------------------------
+Using Linux, macOS, modern Windows 10, or any other Unix
+--------------------------------------------------------
 
-On Linux, macOS and practically every other Unix operating system, `OpenSSH <https://www.openssh.com/>`_
+On Linux, macOS and practically every other Unix operating system, as well as Windows 10 since the September 2017 "Fall Creators Update" version, `OpenSSH <https://www.openssh.com/>`_
 comes preinstalled so you can use it out of the box. This is how your first connection will look like;
 your local workstation is represented by a ``[localuser@localhost ~]$`` prompt:
 
@@ -91,10 +91,10 @@ Entering ``exit`` (or pressing Ctrl+D) leaves the shell, closing your connection
 You're now back on your local workstation.
 
 
-Using Windows
--------------
+Using older versions of Windows
+-------------------------------
 
-No current version of Windows includes a SSH client by default, but there are plenty of options,
+Older versions of Windows do not include a SSH client by default, but there are plenty of options,
 `PuTTY <http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html>`_ probably being the choice of most Windows users.
 Other popular choices include `Git BASH <https://git-for-windows.github.io/>`_ which provides a basic shell including
 the widely-used Git version control system and OpenSSH as an SSH client.
