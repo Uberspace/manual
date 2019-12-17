@@ -33,7 +33,7 @@ In order to use your own backend, you first need to set it up using the ``ubersp
 default backend
 ===============
 
-In the default configuration the default backend is :ref:`apache <docroot>`:
+In the default configuration the default backend is :ref:`Apache <docroot>`:
 
 .. code-block:: shell
 
@@ -132,6 +132,7 @@ Of course you can combine specific paths and domains. This is a more advanced ex
   
   [isabell@philae ~]$ 
 
+The content for /ep/assets in this example must be placed as described under :ref:`DocumentRoot <docroot>`:. 
 The longest matched path for a domain wins so you don't need to worry about the order of the backends.
 
 prefix handling
