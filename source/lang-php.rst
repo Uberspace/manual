@@ -21,7 +21,7 @@ Versions
 
 Release types
 -------------
-Each release branch of PHP is fully supported for two years beginning with its initial stable release. We provide different point releases and apply security updates on a regular basis. Currently, these PHP versions are available: 7.1, 7.2 and 7.3.
+Each release branch of PHP is fully supported for two years beginning with its initial stable release. We provide different point releases and apply security updates on a regular basis. Currently, these PHP versions are available: 7.1, 7.2, 7.3 and 7.4.
 
 Standard version
 ----------------
@@ -38,6 +38,7 @@ Use ``uberspace tools version list php`` to show all selectable versions:
   - 7.1
   - 7.2
   - 7.3
+  - 7.4
   [eliza@dolittle ~]$
 
 .. _php-change-version:
@@ -48,8 +49,8 @@ You can select the PHP version with :code:`uberspace tools version use php <vers
 
 .. code-block:: console
 
-  [eliza@dolittle ~]$ uberspace tools version use php 7.3
-  Selected PHP version 7.3
+  [eliza@dolittle ~]$ uberspace tools version use php 7.4
+  Selected PHP version 7.4
   The new configuration is adapted immediately. Patch updates will be applied automatically.
   [eliza@dolittle ~]$
 
@@ -84,6 +85,8 @@ We update all versions on a regular basis. Once the `security support <http://ph
 | 7.2    | Active support      | 30 Nov 2020            |
 +--------+---------------------+------------------------+
 | 7.3    | Active support      | 6 Dec 2021	            |
++--------+---------------------+------------------------+
+| 7.4    | Acitve support      | 28 Nov 2022	          |
 +--------+---------------------+------------------------+
 
 ----
