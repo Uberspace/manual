@@ -10,7 +10,7 @@ Webmail
 You can access your emails using the webmail interface at `webmail.uberspace.de 
 <https://webmail.uberspace.de>`_. Use your full email address and the corresponding password to login. This works with your ``@uber.space`` address as well as with any addresses using your :ref:`own domains <mail-domains>`.
 
-For your ``@uber.space`` address the passwort will be the one of your linux user. THis means it's the as for SSH access, which you can set in your dashboard `here
+For your ``@uber.space`` address the password is the same as for SSH access, which you can set in your `dashboard
 <https://dashboard.uberspace.de/dashboard/authentication>`_.
 
 Client settings
