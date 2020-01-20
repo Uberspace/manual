@@ -17,7 +17,11 @@ pip-delete-this-directory.txt
 
 # Sphinx
 build
+_build
 
 # ignore generated changelog feeds
 source/changelog_feeds/*
 !source/changelog_feeds/.gitkeep
+
+# Visual Studio
+.vscode
