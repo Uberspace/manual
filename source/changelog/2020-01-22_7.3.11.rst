@@ -1,0 +1,13 @@
+Added
+-----
+* fcgi-devel
+* ``restrictdocroot.so`` to PHP 7.4
+
+Changed
+-------
+* raise max_allowed_packet in MariaDB from 16M to 64M
+
+Fixed
+-----
+* Cloudflare can now access the ``.well-known`` folder via port 443
+* ``REMOTE_ADDR`` is now ``NN.NN.NN.NN`` in case of IPv4
