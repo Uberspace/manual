@@ -47,7 +47,7 @@ We're now guiding you through your first successful connection to your account. 
 
 .. _ssh-using-linux:
 
-Using Linux, macOS, modern Windows 10, or any other Unix
+Using Linux, macOS, any other Unix, or modern Windows 10
 --------------------------------------------------------
 
 On Linux, macOS and practically every other Unix operating system, as well as Windows 10 since the September 2017 "Fall Creators Update" version, `OpenSSH <https://www.openssh.com/>`_
