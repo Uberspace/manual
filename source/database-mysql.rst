@@ -181,10 +181,10 @@ However, if you want to connect somehow "directly" from a remote host, you can d
 
 .. _mysql-ssh-tunnel-using-linux:
 
-Using Linux, macOS or any other Unix
+Using Linux, macOS, any other Unix, or Windows 10
 ------------------------------------
 
-On Linux, macOS and practically every other Unix operating system, `OpenSSH <https://www.openssh.com/>`_
+On Linux, macOS and practically every other Unix operating system, as well as Windows 10 since the September 2017 “Fall Creators Update” version, `OpenSSH <https://www.openssh.com/>`_
 comes preinstalled so you can use it out of the box.
 
 This is how you can initiate a SSH connection offering a tunnel for port 3306,
@@ -198,10 +198,10 @@ From now on, you can talk to 127.0.0.1:3306 on your local host to connect to you
 In fact, it's OpenSSH listening on port 3306 of your local host, tunneling the connection to your uberspace.
 
 
-Using Windows
+Using older versions of Windows
 -------------
 
-No current version of Windows includes a SSH client by default, but there are plenty of options,
+Older version of Windows do not include a SSH client by default, but there are plenty of options,
 `PuTTY <http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html>`_ probably being the choice of most Windows users.
 Other popular choices include `Git BASH <https://git-for-windows.github.io/>`_ which provides a basic shell including
 the widely-used Git version control system and OpenSSH as an SSH client.
