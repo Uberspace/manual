@@ -24,18 +24,22 @@ Versions
 Release types 
 -------------
 
-We provide .NET Core 2.2 and apply security updates on a regular basis. 
+We provide the latest .NET Core LTS and apply security updates on a regular basis.
+
+We also provide older versions; you can get a full list of curently available versions with ``dotnet --list-sdks``.
 
 Update policy
 -------------
 
-We update all versions on a regular basis. Once the `support <https://www.microsoft.com/net/support/policy>`_ ends, the branch reaches its end of life, is no longer supported and will be removed from our servers. 
+We update all `supported versions <https://dotnet.microsoft.com/platform/support/policy/dotnet-core>`_ on a regular basis. 
 
-+--------+-----------+----------------------------+ 
-| Branch | State     | Supported Until            | 
-+========+===========+============================+ 
-| 2.2    | Current   | No date specified          | 
-+--------+-----------+----------------------------+ 
+======  ===========  ===============
+Branch  State        Supported Until 
+======  ===========  ===============
+3.1     current LTS  2022-12-03      
+2.1     old LTS      2021-08-21      
+======  ===========  ===============
+
 
 ----
 
