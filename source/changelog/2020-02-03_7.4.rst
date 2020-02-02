@@ -1,0 +1,9 @@
+Added
+-----
+* php-pecl-redis5
+* spam folder for user mailboxes
+
+Changed
+-------
+* enable rspamd autolearning
+* mail domains MX check: add fallback to SOA records in case a domain does not have NS records
