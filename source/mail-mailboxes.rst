@@ -4,18 +4,18 @@
 Mailboxes
 #########
 
-Main mailbox
-============
+System mailbox
+==============
 
-Every Uberspace account gets its own mailbox in the form of ``$USER@$SERVER.uberspace.de``. For convenience reasons you can use ``$USER@uber.space`` as well to receive mails.
+Every Uberspace account gets its own mailbox in the form of ``$USER@$SERVER.uberspace.de``. For convenience reasons you can use ``$USER@uber.space`` as well to receive mails. You should only use this mailbox for computer generated mails like status updates and such since you can't use it with your own domains and no filtering is done.
 
 .. tip::
   Since every Uberspace account is on a different server, we implement the ``@uber.space`` addresses with a proxy server that forwards mails to the corresponding mailbox on the server.
 
-Additional mailboxes
-====================
+User mailboxes
+==============
 
-You can use additional mailboxes in the form of ``$MAILBOX@$USER.uber.space``. If you have :ref:`set up additional domains <mail-domains>`, ``$MAILBOX@$DOMAIN`` will also work.
+You can use mailboxes in the form of ``$MAILBOX@$USER.uber.space``. If you have :ref:`set up additional domains <mail-domains>`, ``$MAILBOX@$DOMAIN`` will also work.
 
 Setup a new mailbox
 -------------------
