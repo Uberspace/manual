@@ -2,6 +2,7 @@ Added
 -----
 * php-pecl-redis5
 * spam folder for user mailboxes
+* texlive-latex and texlive-dvips
 
 Changed
 -------
