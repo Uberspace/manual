@@ -186,7 +186,7 @@ In this case fix the value and run ``uberspace tools restart php`` again.
 Provided modules
 ----------------
 
-We provide the following modules: ``bcmath``, ``gd``, ``gmp``, ``imagick``, ``imap``, ``intl``, ``json``, ``ldap``, ``mbstring``, ``mcrypt``, ``mysqlnd``, ``pear``, ``pecl-apcu``, ``pecl-gnupg``, ``pecl-zip``, ``phalcon3``, ``pgsql``, ``posix``, ``process``, ``shmop``, ``soap``, ``sysvmsg``, ``sysvsem``, ``sysvshm``, ``tidy``, ``xml``, ``xmlrpc``.
+We provide the following modules: ``bcmath``, ``gd``, ``gmp``, ``imagick``, ``imap``, ``intl``, ``json``, ``ldap``, ``mbstring``, ``mcrypt``, ``mysqlnd``, ``pear``, ``pecl-apcu``, ``pecl-gnupg``, ``pecl-redis5``, ``pecl-zip``, ``phalcon3``, ``pgsql``, ``posix``, ``process``, ``shmop``, ``soap``, ``sysvmsg``, ``sysvsem``, ``sysvshm``, ``tidy``, ``xml``, ``xmlrpc``.
 
 .. _php-popular-software:
 
@@ -201,11 +201,11 @@ Composer may use several sources to look for packages. These sources are called 
 
 .. tip::
   Refer to the `Composer Basic Usage guide <https://getcomposer.org/doc/01-basic-usage.md>`_ for further information. Almost all common PHP projects support Composer nowdays and provide an example installation command.
-  
+
 Update policy
 -------------
 
-We only provide a single version of composer and update it on a regular basis. 
+We only provide a single version of composer and update it on a regular basis.
 
 Popular software
 ================
