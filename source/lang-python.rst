@@ -41,7 +41,7 @@ We update all versions on a regular basis. Once the `security support <https://d
 +--------+---------------------+-----------------------------+
 | Branch | State               | Security Support Until      |
 +========+=====================+=============================+
-| 2.7    | Bug fixes           | January 2020                |
+| 2.7    | Bug fixes           | January 2024 (by CentOS)    |
 +--------+---------------------+-----------------------------+
 | 3.4    | Security fixes only | March 2019                  |
 +--------+---------------------+-----------------------------+
