@@ -12,6 +12,12 @@ Python
 Introduction
 ============
 
+.. warning:: Python applications belong in your :ref:`home`, **not** in your :ref:`docroot`.
+
+Python is an interpreted programming language, created by Guido van Rossum in
+1991. It is used for a wide range of tasks from basic scripting to full-fledged
+web applications.
+
 Versions
 ========
 
