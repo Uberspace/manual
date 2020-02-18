@@ -85,6 +85,7 @@ For more information see the :doc:`full changelog <changelog>`.
    Erlang/OTP <lang-erlang>
    Perl <lang-perl>
    Clojure <lang-clojure>
+   Java <lang-java>
 
 .. toctree::
    :hidden:
