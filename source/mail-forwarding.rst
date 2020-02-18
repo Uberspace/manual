@@ -4,7 +4,13 @@
 forwarding mails
 ################
 
+configure forwarding
+====================
+
 You can use forwardings in the form of ``$MAILBOX@$USER.uber.space``. If you have :ref:`set up additional domains <mail-domains>`, ``$MAILBOX@$DOMAIN`` will also work.
+
+.. warning::
+    We do not forward mails with a :doc:`spam score >= 15 <mail-spam>`. This is crucial due to policy reasons at nearly any mail provider and makes sure the reputation of our servers stays fine.
 
 Add forwards for a mailbox
 --------------------------
@@ -25,7 +31,7 @@ To forward all mails from ``forwardme`` to ``mail@allcolorsarebeautiful.example`
 List existing forwards for a mailbox
 ------------------------------------
 
-You can list your existing forwardings using the ``uberspace mail user forward list`` command, e.g. if you have setup fowardings for `forwardme`:
+You can list your existing forwardings using the ``uberspace mail user forward list`` command, e.g. if you have setup fowardings for ``forwardme``:
 
 .. code-block:: bash
 
@@ -43,3 +49,8 @@ You can delete forwardings using the ``uberspace mail user forward del`` command
  [isabell@philae ~]$ uberspace mail user forward del forwardme
  Mail to forwardme will no longer be forwarded.
  [isabell@philae ~]$
+
+spam filtering
+==============
+
+With enabled :doc:`spam filtering <mail-spam>` we do not forward mails with a spam score greater than 5. These mails get sorted into ``~/users/$MAILBOX/.Spam``.
