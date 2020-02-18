@@ -84,6 +84,7 @@ For more information see the :doc:`full changelog <changelog>`.
    .NET Core <lang-dotnet>
    Erlang/OTP <lang-erlang>
    Perl <lang-perl>
+   Clojure <lang-clojure>
 
 .. toctree::
    :hidden:
