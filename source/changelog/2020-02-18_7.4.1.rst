@@ -2,7 +2,7 @@ Added
 -----
 * :ref:`catchall`
 * implement uberspace command to :ref:`forward mails <mailforwarding>`
-* provide texlive-dvipng, socat
+* provide texlive-dvipng, texlive-cm, texlive-pdfpages, texlive-graphics, texlive-iftex and socat
 
 Changed
 -------
@@ -12,3 +12,4 @@ Changed
 Fixed
 -----
 * add catchall to spam folder maildrop filter
+* user ports now survive firewalld updates and reloads
