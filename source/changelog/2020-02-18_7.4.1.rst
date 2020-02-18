@@ -1,14 +1,14 @@
 Added
 -----
-* give users the opportunity to create a catchall
-* implement uberspace command to forward mails
+* :ref:`catchall`
+* implement uberspace command to :ref:`forward mails <mailforwarding>`
 * provide texlive-dvipng, socat
 
 Changed
 -------
 * spam folder is enabled for new accounts
-* spamfilter is always enabled, remove `uberspace mail spamfilter` commands
+* spamfilter is always enabled, remove ``uberspace mail spamfilter`` commands
 
 Fixed
 -----
-* spam folder maildrop filter now knows catchall
+* add catchall to spam folder maildrop filter

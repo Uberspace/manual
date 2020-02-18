@@ -71,6 +71,8 @@ You can delete a mailbox using the ``uberspace mail user del`` command. To delet
  [isabell@philae ~]$ uberspace mail user del post
  Mailbox for user 'post' deleted.
 
+.. _catchall:
+
 Catch-all mailbox
 =================
 
