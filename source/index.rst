@@ -60,9 +60,9 @@ For more information see the :doc:`full changelog <changelog>`.
 
    access <mail-access>
    domains <mail-domains>
-   SPAM <mail-spam>
    mailboxes <mail-mailboxes>
-   filtering <mail-filter>
+   forwarding <mail-forwarding>
+   spam filter <mail-spam>
 
 .. toctree::
    :hidden:
