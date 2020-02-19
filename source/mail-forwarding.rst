@@ -15,7 +15,7 @@ You can use forwardings in the form of ``$MAILBOX@$USER.uber.space``. If you hav
 Add forwards for a mailbox
 --------------------------
 
-You can configure forwardings with the ``uberspace mail user forward <mailbox> <mail address>`` command. You can specify as many mail address as you like, mails will get forwarded to all given addresses.
+You can configure forwardings with the ``uberspace mail user forward <mailbox> <mail address>`` command.
 
 To forward all mails from ``forwardme`` to ``mail@allcolorsarebeautiful.example`` run the following command:
 
