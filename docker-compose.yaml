@@ -1,0 +1,11 @@
+---
+version: "3"
+
+services:
+  write-good:
+    image: uberspace/tools/write-good
+    build:
+      context: ./
+      dockerfile: Docker/Dockerfile
+    volumes:
+      - ./:/app
