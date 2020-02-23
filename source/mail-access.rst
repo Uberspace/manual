@@ -13,6 +13,8 @@ You can access your emails using the webmail interface at `webmail.uberspace.de
 For your ``@uber.space`` address the password is the same as for SSH access, which you can set in your `dashboard
 <https://dashboard.uberspace.de/dashboard/authentication>`_.
 
+.. warning:: If you never set your password for SSH access it won't be possible to authenticate with the ``@uber.space`` address. You have to explicitly set the password for SSH access once after you have created your uberspace account.
+
 Client settings
 ===============
 
