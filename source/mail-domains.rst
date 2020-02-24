@@ -26,7 +26,7 @@ Once you’ve set up your domain using the uberspace mail domain add tool, the t
 SPF record
 ----------
 
-The `Sender Policy Framework <https://tools.ietf.org/html/rfc4408>`_ (SPF) is a system that allows mailservers to check if another mail server is allowed to send mails for a specific domain. To specify which servers are allowed to send mails for your domain, a ``TXT`` DNS record is set. Adding  Uberspace host to the list of allowed servers for your domain might increase your chances of passing spam filters. Assuming you have set your Uberspace host as your domain's ``MX``, you can set a ``TXT``-type record for your domain using this snippet:
+The `Sender Policy Framwork <https://tools.ietf.org/html/rfc4408>`_ (SPF) is a system that allows mailservers to check if another mail server is allowed to send mails for a specific domain. To specify which servers are allowed to send mails for your domain, a ``TXT`` DNS record is set. Adding  Uberspace host to the list of allowed servers for your domain might increase your chances of passing spam filters. Assuming you have set your Uberspace host as your domain's ``MX``, you can set a ``TXT``-type record for your domain using this snippet:
 
 .. code-block:: none
 
