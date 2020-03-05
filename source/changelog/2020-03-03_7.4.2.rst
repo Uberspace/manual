@@ -1,0 +1,8 @@
+Changed
+-------
+* ban short/bad passwords for mailboxes
+
+Fixed
+-----
+* spam folder filter now works with forwarded catchall
+* we now accept mails on IDN domains without Punycode
