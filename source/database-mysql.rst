@@ -91,6 +91,20 @@ Tools like Adminer or phpMyAdmin provide you with a web-based way of doing that 
 
 If you don't see any output, it's a good thing; MariaDB only complains if something went wrong.
 
+You can list your additional databases using the `SHOW DATABASES <https://mariadb.com/kb/en/show-databases/>`_ SQL statement:
+
+.. code-block:: shell
+
+  [eliza@dolittle ~]$ mysql -e "SHOW DATABASES"
+  +--------------------+
+  | Database           |
+  +--------------------+
+  | information_schema |
+  | eliza              |
+  | eliza_gitea        |
+  | eliza_shopware6    |
+  +--------------------+
+
 To remove databases, use the `DROP DATABASE <https://mariadb.com/kb/en/mariadb/drop-database/>`_ SQL statement:
 
 .. code-block:: shell
