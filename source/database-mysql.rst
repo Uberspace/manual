@@ -53,9 +53,20 @@ Tools like Adminer or phpMyAdmin provide you with a web-based way of doing that 
 
 If you don't see any output, it's a good thing; MariaDB only complains if something went wrong.
 
+Password Requirements
+~~~~~~~~~~~~~~~~~~~~~
+
+We generate a passwords for you on user creation. It consists of 20 random characters, containing a mix of upper and lowercase ASCII letters, the numbers 0-9 and punctuation (``.,:-_``).
+
+But we only *enforce the following rules*, if you want to set your own:
+
+- A minimal length of 16 characters.
+
+Password Configuration
+~~~~~~~~~~~~~~~~~~~~~~
+
 While this step is optional, we strongly suggest to put the new password into your ``~/.my.cnf`` file with a text editor of your choice.
 That way, MariaDB command-line tools are still able to automatically log you in.
-
 
 Read-only user
 --------------
@@ -117,7 +128,7 @@ If you don't see any output, it's a good thing; MariaDB only complains if someth
 Working with dumps
 ==================
 
-Dumps are the default way of exporting/importing databases. 
+Dumps are the default way of exporting/importing databases.
 You can use them as a backup or to migrate an existing database dumped on another host to your Uberspace or vice-versa. We dump all databases every day and keep them as :ref:`backup <mysql_backup>`.
 
 Creating dumps
