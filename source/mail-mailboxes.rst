@@ -10,7 +10,7 @@ System mailbox
 Every Uberspace account gets its own mailbox in the form of ``$USER@$SERVER.uberspace.de``. For convenience reasons you can use ``$USER@uber.space`` as well to receive mails.
 
 .. tip::
-  You should only use the system mailbox for computer generated mails like status updates and such since you can't use it with your own domains and no filtering is done.
+  You should only use the system mailbox for system generated mails like status updates and not for actual communication. It is merely an implementation detail and not a stable feature.
 
 Mailboxes
 =========
