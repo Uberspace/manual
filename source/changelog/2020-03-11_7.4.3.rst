@@ -1,0 +1,3 @@
+Changed
+-------
+* set AllowEncodedSlashes NoDecode in Apache config
