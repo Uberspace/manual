@@ -37,6 +37,19 @@ To add a new mailbox to your Uberspace, run the ``uberspace mail user add`` comm
 
 .. tip:: We strongly recommend to use only `ASCII characters <https://en.wikipedia.org/wiki/ASCII#Printable_characters>`_ in your password. Non-ASCII characters may work in some circumstances, but this depends on the encoding used by your client being compatible with the one used by the mail server.
 
+Password Requirements
+~~~~~~~~~~~~~~~~~~~~~
+
+Your mailbox password has to comply with a set of rules:
+
+- A minimum lenght of 8 characters.
+- Not only letters.
+- Not only numbers.
+
+We also blacklist some passwords we deem too common (like ``test1234``) or too easy to guess, e.g. if your mailbox name should be ``fn0rd``, we will reject ``testfn0rd`` as a password.
+
+If we reject your password, we try to give you an error messages that explains why. Hopefully it will help you to choose a fitting alternative.
+
 List existing mailboxes
 -----------------------
 
