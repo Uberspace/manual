@@ -17,11 +17,14 @@
   from = "/en/*"
   to = "/:splat"
   status = 200
+  force = true
 
 [[redirects]]
   from = "/web-security.html"
   to = "/web-security-headers.html"
+  force = true
 
 [[redirects]]
   from = "/web-security"
   to = "/web-security-headers"
+  force = true
