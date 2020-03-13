@@ -1,4 +1,27 @@
 [[redirects]]
+  # Redirect domain aliases to primary domain
+  from = "https://manual-72.uberspace.de/*"
+  to = "https://manual.uberspace.de/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  # Redirect default Netlify subdomain to primary domain
+  from = "https://manual-uberspace-de.netlify.com/*"
+  to = "https://manual.uberspace.de/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  # Remove `/en` language prefix from path
   from = "/en/*"
   to = "/:splat"
   status = 200
+
+[[redirects]]
+  from = "/web-security.html"
+  to = "/web-security-headers.html"
+
+[[redirects]]
+  from = "/web-security"
+  to = "/web-security-headers"
