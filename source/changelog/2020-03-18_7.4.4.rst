@@ -1,0 +1,3 @@
+Added
+-----
+* we now provide php-mongodb, nasm and gd-devel
