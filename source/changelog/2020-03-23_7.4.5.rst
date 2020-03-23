@@ -1,0 +1,3 @@
+Changed
+-------
+* deleting a non-existent web backend now results in an error message
