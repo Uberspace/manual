@@ -1,0 +1,26 @@
+Added
+-----
+* **Ruby** ``2.7``.
+* `PHP decimal <http://php-decimal.io/>`_ for all **PHP** versions, supported by
+  us.
+* *Sodium* for **PHP** ``7.4``.
+* `ghostscript <https://www.ghostscript.com/>`_.
+* `textpos <https://www.ctan.org/pkg/textpos>`_.
+
+Changed
+-------
+* The default **PHP** version for new users is now ``7.4`` (was ``7.2``).
+* We allow up to 50 **PHP-FPM** workers (up from 10).
+
+Fixed
+-----
+* Enable lingering for user processes. This should prevent processes, that are
+  inside the user slice but outside a session scope, from being killed, when no
+  user sessions are active.
+* Prevent our health-check script from creating empty ``~/.my.cnf`` files, if
+  a user removed it. This will also prevent changed access timestamps on those
+  files.
+
+Deprecated
+----------
+* **Ruby** ``2.4``.
