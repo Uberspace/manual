@@ -1,0 +1,9 @@
+Changed
+-------
+* Added a link to our status page (`is.uberspace.online`_) to the *motd*.
+
+Fixed
+-----
+* Prevented Ansible from automatic type-casting variables (which could lead to
+  errors with ``uberspace`` commands for certain edge cases).
+* We now show an error message, if you try to remove a non existent web backend.
