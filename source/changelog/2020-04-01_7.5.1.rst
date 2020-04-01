@@ -1,0 +1,9 @@
+Added
+-----
+* php74-php-sodium, texlive-textpos, Ruby 2.7, ghostscript and php-decimal
+
+Changed
+-------
+* deprecate Ruby 2.4
+* raise max_children in php-fpm from 20 to 50
+* set default PHP version to 7.4

@@ -99,7 +99,7 @@ We use the `PHP FastCGI Process Manager (FPM) <http://de2.php.net/manual/en/inst
 .. code-block:: ini
 
   pm = ondemand
-  pm.max_children = 10
+  pm.max_children = 50
   pm.process_idle_timeout = 900s;
   ; The number of requests each child process should execute before respawning.
   pm.max_requests = 500
@@ -186,7 +186,7 @@ In this case fix the value and run ``uberspace tools restart php`` again.
 Provided modules
 ----------------
 
-We provide the following modules: ``bcmath``, ``gd``, ``gmp``, ``imagick``, ``imap``, ``intl``, ``json``, ``ldap``, ``mbstring``, ``mcrypt``, ``mysqlnd``, ``pear``, ``pecl-apcu``, ``pecl-gnupg``, ``pecl-redis5``, ``pecl-zip``, ``phalcon3``, ``pgsql``, ``posix``, ``process``, ``shmop``, ``soap``, ``sysvmsg``, ``sysvsem``, ``sysvshm``, ``tidy``, ``xml``, ``xmlrpc``.
+We provide the following modules: ``bcmath``, ``decimal``, ``gd``, ``gmp``, ``imagick``, ``imap``, ``intl``, ``json``, ``ldap``, ``mbstring``, ``mcrypt``, ``mysqlnd``, ``pear``, ``pecl-apcu``, ``pecl-gnupg``, ``php-mongodb``, ``php-sodium``, ``pecl-redis5``, ``pecl-zip``, ``phalcon3``, ``pgsql``, ``posix``, ``process``, ``shmop``, ``soap``, ``sysvmsg``, ``sysvsem``, ``sysvshm``, ``tidy``, ``xml``, ``xmlrpc``.
 
 .. _php-popular-software:
 
