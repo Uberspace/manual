@@ -1,6 +1,6 @@
 Changed
 -------
-* Added a link to our status page (`is.uberspace.online`_) to the *motd*.
+* Added a link to our status page is.uberspace.online to the *motd*.
 
 Fixed
 -----
