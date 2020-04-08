@@ -53,6 +53,10 @@ Tools like Adminer or phpMyAdmin provide you with a web-based way of doing that 
 
 If you don't see any output, it's a good thing; MariaDB only complains if something went wrong.
 
+.. note ::
+  Please put the new password into your ``~/.my.cnf`` file with a text editor of your choice.
+  That way, MariaDB command-line tools are still able to automatically log you in.
+
 Password Requirements
 ~~~~~~~~~~~~~~~~~~~~~
 
@@ -62,11 +66,6 @@ But we only *enforce the following rules*, if you want to set your own:
 
 - A minimal length of 16 characters.
 
-Password Configuration
-~~~~~~~~~~~~~~~~~~~~~~
-
-While this step is optional, we strongly suggest to put the new password into your ``~/.my.cnf`` file with a text editor of your choice.
-That way, MariaDB command-line tools are still able to automatically log you in.
 
 Read-only user
 --------------
