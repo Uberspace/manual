@@ -1,0 +1,10 @@
+Added
+-----
+* Some development packages: ``irssi-devel``, ``jq-devel``, ``libyaml-devel``,
+  ``poppler-devel`` and ``wkhtmltopdf-devel``.
+
+Changed
+-------
+* We decreased ``process_idle_timeout`` for **PHP-FPM** workers to 180 seconds
+  (down from 900). This reduces the time a spawned child has to be idle before
+  it will be killed (to accomodate for the increase in allowed childs).
