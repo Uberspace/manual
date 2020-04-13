@@ -86,6 +86,7 @@ For more information see the :doc:`full changelog <changelog>`.
    Perl <lang-perl>
    Clojure <lang-clojure>
    Java <lang-java>
+   GCC / C(++) <lang-gcc>
 
 .. toctree::
    :hidden:
