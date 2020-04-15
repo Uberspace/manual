@@ -22,7 +22,7 @@ uberspaces for every domain:
    Enforce that the site may only be loaded via HTTPS for the next two days.
 
 ``X-Content-Type-Options: nosniff``
-   Prevent insane browsers from interpreting JavaScript in non-js MIME types.
+   Prevent some browsers from interpreting JavaScript in non-js MIME types.
 
 ``X-Xss-Protection: 1; mode=block``
    Tell the browser to protect against cross-site scripting. 
