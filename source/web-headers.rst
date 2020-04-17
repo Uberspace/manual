@@ -70,6 +70,39 @@ However, it will not show up on ``/`` or any other unrelated URL like ``/etherpa
   [isabell@philae ~]$ curl -I https://isabell.uber.space/etherpad | grep X-Clacks-Overhead
   [isabell@philae ~]$
 
+Targeting
+=========
+
+Exactly like :ref:`web backends <backends>` a header can be set on a path, domain or both to ...
+
+... make the header appear on a domain only:
+
+.. code-block:: console
+
+  [isabell@philae ~]$ uberspace web header set terryfanpage.org/ X-Clacks-Overhead "GNU Terry Pratchett"
+  Set header "X-Clacks-Overhead: GNU Terry Pratchett" for terryfanpage.org/
+
+... make the header appear on a domain within a given path only:
+
+.. code-block:: console
+
+  [isabell@philae ~]$ uberspace web header set terryfanpage.org/blog X-Clacks-Overhead "GNU Terry Pratchett"
+  Set header "X-Clacks-Overhead: GNU Terry Pratchett" for terryfanpage.org/blog
+
+... in a sub path on any domain:
+
+.. code-block:: console
+
+  [isabell@philae ~]$ uberspace web header set /blog X-Clacks-Overhead "GNU Terry Pratchett"
+  Set header "X-Clacks-Overhead: GNU Terry Pratchett" for /blog
+
+... or just everywhere:
+
+.. code-block:: console
+
+  [isabell@philae ~]$ uberspace web header set / X-Clacks-Overhead "GNU Terry Pratchett"
+  Set header "X-Clacks-Overhead: GNU Terry Pratchett" for /
+
 Removing headers
 ================
 
