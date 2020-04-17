@@ -34,7 +34,7 @@ Your MySQL password differs from any other password.
 We've created a strong one and put it into the file ``~/.my.cnf`` which is used by the MariaDB command-line tools to automatically log you in.
 Take a look into that file or execute ``my_print_defaults client`` to show it, like that:
 
-.. code-block:: shell
+.. code-block:: console
 
   [eliza@dolittle ~]$ my_print_defaults client
   --user=eliza
@@ -47,7 +47,7 @@ Changing your password
 Your password can be changed with the `SET PASSWORD <https://mariadb.com/kb/en/mariadb/set-password/>`_ SQL statement.
 Tools like Adminer or phpMyAdmin provide you with a web-based way of doing that (if you installed them), but it can easily be done on the shell as well:
 
-.. code-block:: shell
+.. code-block:: console
 
   [eliza@dolittle ~]$ mysql -e "SET PASSWORD = PASSWORD('YourNewPassword')"
 
@@ -76,7 +76,7 @@ We provide you with a separate user suffixed with ``_ro`` ("read-only") which yo
 This user has a different password than the default read/write user which can also be found in your ``~/.my.cnf`` file;
 you can also execute ``my_print_defaults clientreadonly`` to show it, like that:
 
-.. code-block:: shell
+.. code-block:: console
 
   [eliza@dolittle ~]$ my_print_defaults clientreadonly
   --user=eliza_ro
@@ -95,7 +95,7 @@ prefixed with your username and ``_`` - if your username is ``eliza`` you can cr
 New databases can be created with the `CREATE DATABASE <https://mariadb.com/kb/en/mariadb/create-database/>`_ SQL statement.
 Tools like Adminer or phpMyAdmin provide you with a web-based way of doing that (if you installed them), but it can easily done on the shell as well:
 
-.. code-block:: shell
+.. code-block:: console
 
   [eliza@dolittle ~]$ mysql -e "CREATE DATABASE eliza_blog"
 
@@ -103,7 +103,7 @@ If you don't see any output, it's a good thing; MariaDB only complains if someth
 
 You can list your additional databases using the `SHOW DATABASES <https://mariadb.com/kb/en/show-databases/>`_ SQL statement:
 
-.. code-block:: shell
+.. code-block:: console
 
   [eliza@dolittle ~]$ mysql -e "SHOW DATABASES"
   +--------------------+
@@ -117,7 +117,7 @@ You can list your additional databases using the `SHOW DATABASES <https://mariad
 
 To remove databases, use the `DROP DATABASE <https://mariadb.com/kb/en/mariadb/drop-database/>`_ SQL statement:
 
-.. code-block:: shell
+.. code-block:: console
 
   [eliza@dolittle ~]$ mysql -e "DROP DATABASE eliza_blog"
 
@@ -136,20 +136,20 @@ Creating dumps
 The ``mysqldump`` command allows you to dump tables or whole databases, represented by a bunch of SQL statements that will re-create the table structures and re-insert all data when executed.
 The most common use is to redirect its output into a file, like that:
 
-.. code-block:: shell
+.. code-block:: console
 
   [eliza@dolittle ~]$ mysqldump eliza > eliza.sql
 
 This command dumps all tables of the ``eliza`` database at once. If you just want to dump a single or a few tables, put their names behind the database name:
 
-.. code-block:: shell
+.. code-block:: console
 
   [eliza@dolittle ~]$ mysqldump eliza table1 > eliza.table1.sql
   [eliza@dolittle ~]$ mysqldump eliza table2 table3 > eliza.table2and3.sql
 
 As the resulting files are plain text files (remember, they are just a bunch of SQL statements) you can easily compress them on the fly, e.g. with ``xz``:
 
-.. code-block:: shell
+.. code-block:: console
 
   [eliza@dolittle ~]$ mysqldump eliza | xz > eliza.sql.xz
 
@@ -160,13 +160,13 @@ Importing dumps
 As dumps are just files containing SQL statements you can feed them into the ``mysql`` command, importing them into a database of your choice.
 For example, to import the dump named ``eliza.sql`` into your database ``eliza`` (overwriting existing tables, if any):
 
-.. code-block:: shell
+.. code-block:: console
 
   [eliza@dolittle ~]$ mysql eliza < eliza.sql
 
 Or in case of a compressed dump, use ``xzcat`` to uncompress the data before feeding it into MariaDB:
 
-.. code-block:: shell
+.. code-block:: console
 
   [eliza@dolittle ~]$ xzcat eliza.sql.xz | mysql eliza
 
@@ -177,13 +177,13 @@ Streaming dumps
 In case you want to copy a database into another one, or from one running MySQL or MariaDB host to another, there's no need to write the dump into a file at all.
 Given that you already created a database named ``eliza_copy`` you can copy all data from ``eliza`` over to your new database:
 
-.. code-block:: shell
+.. code-block:: console
 
   [eliza@dolittle ~]$ mysqldump eliza | mysql eliza_copy
 
 This will also work over SSH - for example to dump a database on some other host you're having shell access to as well, this is what you're able to do to import all tables of a remote database named ``otherdatabase`` into your local database ``eliza`` (overwriting existing tables, if any):
 
-.. code-block:: shell
+.. code-block:: console
 
   [eliza@dolittle ~]$ ssh otheruser@some.other.host mysqldump otherdatabase | mysql eliza
 

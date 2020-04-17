@@ -11,7 +11,7 @@ Setup
 
 In order to use your own domain for mail with your Uberspace, you need to first set it up using our ``uberspace`` tool. You can only add fully qualified domain names (`FQDNs <https://en.wikipedia.org/wiki/Fully_qualified_domain_name>`_), wildcard domains are not available. 
 
-.. code-block:: shell
+.. code-block:: console
 
  [isabell@philae ~]$ uberspace mail domain add isabell.example
  The mailserver's configuration has been adapted.
@@ -44,7 +44,7 @@ Removal
 
 To remove a domain, use the ``uberspace`` tool:
 
-.. code-block:: shell
+.. code-block:: console
 
  [isabell@philae ~]$ uberspace mail domain del isabell.example 
  The server's configuration has been adapted.
@@ -54,7 +54,7 @@ Listing
 
 If you want to find out which domains are currently set up for the mail server on your Uberspace account, use the ``uberspace`` command:
 
-.. code-block:: shell
+.. code-block:: console
 
  [isabell@philae ~]$ uberspace mail domain list
  isabell.example

@@ -17,7 +17,7 @@ Setup
 
 In order to use your own backend, you first need to set it up using the ``uberspace`` tool. We don't limit the number of web backends.
 
-.. code-block:: shell
+.. code-block:: console
 
   [isabell@philae ~]$ uberspace web backend 
   
@@ -35,7 +35,7 @@ default backend
 
 In the default configuration the default backend is :ref:`Apache <docroot>`:
 
-.. code-block:: shell
+.. code-block:: console
 
   [isabell@philae ~]$ uberspace web backend set / --apache
   Set backend for / to apache.
@@ -47,7 +47,7 @@ In the default configuration the default backend is :ref:`Apache <docroot>`:
 
 To set the default backend to an application listening on port 1024 (for example your own nginx webserver) run 
 
-.. code-block:: shell
+.. code-block:: console
 
   [isabell@philae ~]$ uberspace web backend set / --http --port 1024   
   Set backend for / to port 1024; please make sure something is listening!
@@ -63,7 +63,7 @@ specific path
 
 In this example requests to ``/ep`` are routed to an application listening on port 9000, everything else is handled by apache:
 
-.. code-block:: shell
+.. code-block:: console
 
   [isabell@philae ~]$ uberspace web backend set /ep --http --port 9000
   Set backend for /ep to port 9000; please make sure something is listening!
@@ -77,7 +77,7 @@ In this example requests to ``/ep`` are routed to an application listening on po
 
 Some applications don't serve assets due to performance reasons. In this example ``/assets`` is served via apache, everything else is routed to the application listening on port 9000:
 
-.. code-block:: shell
+.. code-block:: console
 
   [isabell@philae ~]$ uberspace web backend set / --http --port 9000
   Set backend for / to port 1024; please make sure something is listening!
@@ -96,7 +96,7 @@ specific domain
 
 You also can setup backends for specific domains. Make sure :ref:`your domain <web-domains>` is setup and configured correctly. 
 
-.. code-block:: shell
+.. code-block:: console
 
   [isabell@philae ~]$ uberspace web backend set allcolorsarebeautiful.example --http --port 9000
   Set backend for allcolorsarebeautiful.example/ to port 9000; please make sure something is listening!
@@ -113,7 +113,7 @@ mix and match
 
 Of course you can combine specific paths and domains. This is a more advanced example:
 
-.. code-block:: shell
+.. code-block:: console
 
   [isabell@philae ~]$ uberspace web backend set allcolorsarebeautiful.example/ep/assets --apache
   Set backend for allcolorsarebeautiful.example/ep/assets to apache
@@ -142,7 +142,7 @@ By default, the whole path (e.g. ``/ep/assets/style.css``) is passed onto the ba
 require that only the part after their prefix (``/assets/style.css`` in this case) reaches them. To enable
 this behavior, add ``--remove-prefix``:
 
-.. code-block:: shell
+.. code-block:: console
 
   [isabell@philae ~]$ uberspace web backend set allcolorsarebeautiful.example/ep --http --port 9000 --remove-prefix
   Set backend for allcolorsarebeautiful.example/ep to port 9000; please make sure something is listening!
@@ -159,7 +159,7 @@ Removal
 
 You can remove web backends with ``uberspace web backend del``:
 
-.. code-block:: shell
+.. code-block:: console
 
   [isabell@philae ~]$ uberspace web backend list
   allcolorsarebeautiful.example/ http:9000 => OK, listening: PID 42, node-red
@@ -179,7 +179,7 @@ Debugging
 
 ``uberspace web backend list`` provides information for all your debugging needs. In this example we have three applications, two backends are not working. Let's find out why:
 
-.. code-block:: shell
+.. code-block:: console
 
   [isabell@philae ~]$ uberspace web backend list
   /doesnotwork http:8000 => NOT OK, wrong interface (::1): PID 17767, nc -l localhost 8000
@@ -191,7 +191,7 @@ Debugging
 
 The solution for ``/doesnotwork`` is to change the listening interface to ``::``. The service for ``/notrunning`` is not running or the port is incorrect. Check the configuration and restart the service.
 
-.. code-block:: shell
+.. code-block:: console
 
   [isabell@philae ~]$ uberspace web backend list
   /doesnotwork http:8000 => OK, listening: PID 17767, nc -l :: 8000

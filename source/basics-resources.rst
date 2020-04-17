@@ -13,7 +13,7 @@ Every Uberspace is provided with 10 GB of storage. While this may sound like a l
 
 In order to avoid hitting this limit, you can check your current storage usage using the ``quota`` command:
 
-.. code-block:: shell
+.. code-block:: console
 
  [erna@xenon ~]$ quota -gsl
  Disk quotas for group erna (gid 1000): 

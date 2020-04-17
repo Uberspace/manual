@@ -13,7 +13,7 @@ Setup
 
 In order to use your own domain for web with your Uberspace, you need to first set it up using our ``uberspace`` tool. You can only add fully qualified domain names (`FQDNs <https://en.wikipedia.org/wiki/Fully_qualified_domain_name>`_), wildcard domains are not available. By default, all domains set up on a Uberspace account share the same :ref:`docroot`. Please refer to :ref:`docroot` for instructions on how to use seperate Document Roots for your domains.
 
-.. code-block:: shell
+.. code-block:: console
 
  [isabell@philae ~]$ uberspace web domain add isabell.example
  The webserver's configuration has been adpated.
@@ -34,7 +34,7 @@ Removal
 
 To remove a domain, use the ``uberspace`` tool:
 
-.. code-block:: shell
+.. code-block:: console
 
  [isabell@philae ~]$ uberspace web domain del isabell.example
  The server's configuration has been adapted.
@@ -44,7 +44,7 @@ Listing
 
 If you want to find out which domains are currently set up for the web server on your Uberspace account, use the ``uberspace`` command:
 
-.. code-block:: shell
+.. code-block:: console
 
  [isabell@philae ~]$ uberspace web domain list
  isabell.example
