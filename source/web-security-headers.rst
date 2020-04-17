@@ -33,6 +33,4 @@ uberspaces for every domain:
 
 .. note::
 
-    Changing the above values is currently not possible, but we're working on a
-    feature to enable it. Additional headers like a Content-Security-Policy can
-    be provided by your application.
+    Changing the above values is possible using :ref:`web headers <headers>`.
