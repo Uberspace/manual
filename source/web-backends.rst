@@ -4,7 +4,7 @@
 web backends
 ############
 
-Using web backends you can connect your applications directly to our frontend to make them accessible from the outside. Traffic is proxied transparently to your application: WebSockets just work and your ``Host`` header is set correctly. If you have prior experience with ``RewriteRule`` proxies, are also much faster.
+Using web backends you can connect your applications directly to our frontend to make them accessible from the outside. Traffic is proxied transparently to your application: WebSockets just work and the ``Host`` header is set correctly. If you have prior experience with ``RewriteRule`` proxies, you can also expect backends to be much faster.
 
 .. tip:: The application needs to listen on interface ``::`` or ``0.0.0.0`` (using ``127.0.0.1``, ``localhost`` or ``::1`` does **not** work!) at any port between 1024 and 65535.
 
