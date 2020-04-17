@@ -50,6 +50,7 @@ For more information see the :doc:`full changelog <changelog>`.
    https <web-https>
    security headers <web-security-headers>
    web backends <web-backends>
+   web headers <web-headers>
    logs <web-logs>
    Tor <web-tor>
 
