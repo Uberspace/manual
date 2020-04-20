@@ -1,0 +1,14 @@
+Added
+-----
+* We now support **Python** ``3.7`` (compiled and packaged by us).
+* We now support **Python** ``3.8`` (compiled and packaged by us).
+* We added the `zlib` Plugin to *Dovecot*, to support compressed mailboxes.
+
+Changed
+-------
+* We had previously pinned **PHP** to ``7.3.5``, because newer versions
+  segfault'ed when *opcache* was enabled. This is no longer the case, so we
+  removed the pin.
+* Crashed **PHP-FPM** user instances failed to automatically restart when a
+  user had exceeded their quota. They should now recover on their own, when
+  the user no longer exceeds the quota.
