@@ -175,6 +175,7 @@ Removing security headers
 Just like any header you set yourself, the default headers can be suppressed using ``web header suppress``:
 
 .. code-block:: console
+  :emphasize-lines: 1,5
 
   [isabell@philae ~]$ uberspace web header suppress / Strict-Transport-Security
   Deleted header "Strict-Transport-Security" for /
@@ -196,9 +197,19 @@ Headers of inner directories always override the ones set in outer ones. So you 
 ... for a sub path:
 
 .. code-block:: console
+  :emphasize-lines: 1,5
 
   [isabell@philae ~]$ uberspace web header set /blog Strict-Transport-Security "max-age=31536000"
   Set header "Strict-Transport-Security: max-age=31536000" for /blog
+  [isabell@philae ~]$ uberspace web header list
+  /blog
+    Strict-Transport-Security: max-age=31536000
+  Default Headers:
+    Referrer-Policy: strict-origin-when-cross-origin
+    Strict-Transport-Security: max-age=172800
+    X-Content-Type-Options: nosniff
+    X-Frame-Options: SAMEORIGIN
+    X-Xss-Protection: 1; mode=block
 
 ... or everything in your space:
 
