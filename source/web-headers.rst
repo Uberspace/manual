@@ -160,7 +160,7 @@ To reverse this, use ``web header del``:
 .. code-block:: console
 
   [isabell@philae ~]$ uberspace web header del /blog/iframe X-Frame-Options
-  Unsuppressing header "X-Frame-Options" for /blog/iframe
+  Unsuppressed header "X-Frame-Options" for /blog/iframe
   [isabell@philae ~]$
 
 Which causes to header to appear again:
@@ -246,7 +246,7 @@ If you removed or replaced security headers in the past and would like to restor
   [isabell@philae ~]$ uberspace web header del / Strict-Transport-Security
   Deleted header "Strict-Transport-Security" for /
   [isabell@philae ~]$ uberspace web header del / X-Frame-Options
-  Deleted header "X-Frame-Options" for /
+  Unsuppressed header "X-Frame-Options" for /
   [isabell@philae ~]$ uberspace web header list
   Default Headers:
     Referrer-Policy: strict-origin-when-cross-origin
