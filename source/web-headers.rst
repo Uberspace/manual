@@ -148,6 +148,22 @@ As instructed the header is now present on ``/blog`` but not on ``/blog/iframe``
   [isabell@philae ~]$ curl -I https://isabell.uber.space/blog/iframe | grep X-Frame-Options
   [isabell@philae ~]$
 
+To reverse this, use ``web header del``:
+
+.. code-block:: console
+
+  [isabell@philae ~]$ uberspace web header del /blog/iframe X-Frame-Options
+  Unsuppressing header "X-Frame-Options" for /blog/iframe
+  [isabell@philae ~]$
+
+Which causes to header to appear again:
+
+.. code-block:: console
+
+  [isabell@philae ~]$ curl -I https://isabell.uber.space/blog/iframe | grep X-Frame-Options
+  X-Frame-Options: DENY
+  [isabell@philae ~]$
+
 Default security headers
 ========================
 
