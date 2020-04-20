@@ -14,7 +14,14 @@ All header commands can be found grouped under ``uberspace web header``:
 .. code-block:: console
 
   [isabell@philae ~]$ uberspace web header
-  TODO: help
+
+  Manage which HTTP headers are sent to your clients.
+
+  Possible commands:
+    del - Remove or unsuppress HTTP header for a given domain and path.
+    list - List all configured HTTP headers.
+    set - Set HTTP header for a given domain and path.
+    suppress - Suppress HTTP header that was inherited from a parent path.
 
 In case you get stuck or want to know what's going on, you can always use ``web header list`` to get the big picture:
 
