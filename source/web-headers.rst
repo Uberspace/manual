@@ -206,3 +206,33 @@ Headers of inner directories always override the ones set in outer ones. So you 
 
   [isabell@philae ~]$ uberspace web header set / Strict-Transport-Security "max-age=31536000"
   Set header "Strict-Transport-Security: max-age=31536000" for /
+
+Restoring security headers
+--------------------------
+
+If you removed or replaced security headers in the past and would like to restore the default, use ``web header del``:
+
+.. code-block:: console
+  :emphasize-lines: 3,4,11,13
+
+  [isabell@philae ~]$ uberspace web header list
+  /
+    Strict-Transport-Security: max-age=31536000
+    X-Frame-Options: (suppressed)
+  Default Headers:
+    Referrer-Policy: strict-origin-when-cross-origin
+    Strict-Transport-Security: max-age=172800
+    X-Content-Type-Options: nosniff
+    X-Frame-Options: SAMEORIGIN
+    X-Xss-Protection: 1; mode=block
+  [isabell@philae ~]$ uberspace web header del / Strict-Transport-Security
+  Deleted header "Strict-Transport-Security" for /
+  [isabell@philae ~]$ uberspace web header del / X-Frame-Options
+  Deleted header "X-Frame-Options" for /
+  [isabell@philae ~]$ uberspace web header list
+  Default Headers:
+    Referrer-Policy: strict-origin-when-cross-origin
+    Strict-Transport-Security: max-age=172800
+    X-Content-Type-Options: nosniff
+    X-Frame-Options: SAMEORIGIN
+    X-Xss-Protection: 1; mode=block
