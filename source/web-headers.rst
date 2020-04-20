@@ -156,11 +156,11 @@ Your space comes with a number of :ref:`security headers <web-security-headers>`
 Removing security headers
 -------------------------
 
-Just like any header you set yourself, the default headers can be removed using ``web header del``:
+Just like any header you set yourself, the default headers can be suppressed using ``web header suppress``:
 
 .. code-block:: console
 
-  [isabell@philae ~]$ uberspace web header del / Strict-Transport-Security
+  [isabell@philae ~]$ uberspace web header suppress / Strict-Transport-Security
   Deleted header "Strict-Transport-Security" for /
   [isabell@philae ~]$ uberspace web header list
   /
