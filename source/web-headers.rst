@@ -21,14 +21,14 @@ In case you get stuck or want to know what's going on, you can always use ``web 
 .. code-block:: console
 
   [isabell@philae ~]$ uberspace web header list
-  /
+  Default Headers:
     Referrer-Policy: strict-origin-when-cross-origin
     Strict-Transport-Security: max-age=172800
     X-Content-Type-Options: nosniff
     X-Frame-Options: SAMEORIGIN
     X-Xss-Protection: 1; mode=block
 
-The command displays the current configuration as entered.
+The command displays the current configuration as entered. The "Default Headers" section lists headers set by us. They can be overridden or suppressed in your configuration, but their base value cannot be changed. We take care of updating these to keep up-to-date.
 
 Adding headers and inheritance
 ==============================
@@ -47,7 +47,7 @@ Again, you can take a look using `header list`:
   [isabell@philae ~]$ uberspace web header list
   /blog
     X-Clacks-Overhead: GNU Terry Pratchett
-  /
+  Default Headers:
     Referrer-Policy: strict-origin-when-cross-origin
     Strict-Transport-Security: max-age=172800
     (...)
@@ -134,7 +134,7 @@ Again, you can take a look using `header list`:
     X-Frame-Options: (suppressed)
   /blog
     X-Frame-Options: DENY
-  /
+  Default Headers:
     Referrer-Policy: strict-origin-when-cross-origin
     Strict-Transport-Security: max-age=172800
     (...)
@@ -164,12 +164,13 @@ Just like any header you set yourself, the default headers can be removed using 
   Deleted header "Strict-Transport-Security" for /
   [isabell@philae ~]$ uberspace web header list
   /
+    Strict-Transport-Security: (suppressed)
+  Default Headers:
     Referrer-Policy: strict-origin-when-cross-origin
+    Strict-Transport-Security: max-age=172800
     X-Content-Type-Options: nosniff
     X-Frame-Options: SAMEORIGIN
     X-Xss-Protection: 1; mode=block
-
-Like any invisible thing, ``Strict-Transport-Security`` is a bit hard too see in the output, but it's really gone.
 
 Replacing security headers
 --------------------------
