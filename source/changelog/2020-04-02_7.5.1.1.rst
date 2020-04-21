@@ -1,0 +1,10 @@
+Added
+-----
+* Two new VMs: ``bernardi.uberspace.de`` and ``hernmann.uberspace.de``.
+
+Changed
+-------
+* After increasing the max value for **PHP-FPM** workers to 50 (up from 10) in
+  ``v7.5.1``, we now tuned it down to 20.
+* For *MariDB* we increased ``max_connections`` (to 2000, was 400) and
+  ``max_user_connections`` (to 100, was 20).
