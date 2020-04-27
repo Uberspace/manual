@@ -1,0 +1,19 @@
+Added
+-----
+* `fping <https://fping.org/>`_
+* `pwgen <https://github.com/jbernard/pwgen>`_
+* ``libtool-ltdl-devel``
+
+Updated
+-------
+* Updated our manual and error messages in regards to
+  `xcvbn <https://github.com/dwolfhub/zxcvbn-python>`_. A library, we use to
+  check and enforce password strength for user mailboxes.
+
+Changed
+-------
+* Cleanup _journald_ logs, disabled *split mode* and set a retention time of
+  seven days.
+* Increased the process limit to ``1024`` (up from ``400``). Mostly because this
+  is the lowest limit we can use and still support
+  `Erlang <https://www.erlang.org/>`_.
