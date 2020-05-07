@@ -1,0 +1,13 @@
+Added
+-----
+* Installed `pecl-yaml <https://pecl.php.net/package/yaml>`_ for all our
+  supported *PHP* versions.
+
+Updated
+-------
+* *MariaDB* to `10.3.22 <https://mariadb.com/kb/en/mariadb-10322-changelog/>`_.
+
+Fixed
+-----
+* A regression in our ``uberspace {mail,web} domain del`` commands, that lead
+  to always deleting the given domain for both categories.
