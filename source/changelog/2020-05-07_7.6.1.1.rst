@@ -7,6 +7,17 @@ Updated
 -------
 * *MariaDB* to `10.3.22 <https://mariadb.com/kb/en/mariadb-10322-changelog/>`_.
 
+Changed
+-------
+
+* *Node.js* ``v8`` reached end of life late last year. We deprecated it a
+  while ago and now moved the last remaining users to ``v12`` (the latest LTS,
+  it has security support till April 2022).
+
+* *PHP* ``v7.1`` reached end of life late last year. We deprecated it a
+  while ago and now moved the last remaining users to ``v7.2`` (it has security
+  support till November 2020).
+
 Fixed
 -----
 * A regression in our ``uberspace {mail,web} domain del`` commands, that lead
