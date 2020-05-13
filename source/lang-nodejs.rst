@@ -25,11 +25,11 @@ Versions
 Release types
 -------------
 
-We provide different releases and apply security updates on a regular basis. Currently, these Node.js versions are available: 10, 12 and 13.
+We provide different releases and apply security updates on a regular basis. Currently, these Node.js versions are available: 10, **12**, 13 and 14.
 
 Standard version
 ----------------
-If you don't select a certain version, our default will be used. We decided to default to version 12, which is considered to be stable by the developers.
+If you don't select a certain version, our default will be used. We decided to default to **version 12**, which is considered to be stable by the developers.
 
 Show available versions
 -----------------------
@@ -42,6 +42,7 @@ Use ``uberspace tools version list node`` to show all selectable versions:
   - 10
   - 12
   - 13
+  - 14
   [eliza@dolittle ~]$
 
 .. _node-change-version:
@@ -52,8 +53,8 @@ You can select the Node.js version with ``uberspace tools version use node <vers
 
 .. code-block:: bash
 
-  [eliza@dolittle ~]$ uberspace tools version use node 13
-  Selected node version 13
+  [eliza@dolittle ~]$ uberspace tools version use node 14
+  Selected node version 14
   The new configuration is adapted immediately. Patch updates will be applied automatically.
   [eliza@dolittle ~]$
 
@@ -82,8 +83,8 @@ We update all versions on a regular basis. Once the `support <https://github.com
 +--------+-------------------------+------------------+
 | 13     | Current                 | June 2022        |
 +--------+-------------------------+------------------+
-
-----
+| 14     | Current                 | April 2024       |
++--------+-------------------------+------------------+
 
 Connection to webserver
 =======================
