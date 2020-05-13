@@ -1,0 +1,9 @@
+Added
+-----
+* Better support for web assembly files: set MIME type ``application/wasm``
+  for ``.wasm``, ``.wasm.gz``, ``.wat``, ``.wat.gz`` and enable *gzip*
+  compression.
+
+Updated
+-------
+* Updated *Haraka* to ``2.8.25``.
