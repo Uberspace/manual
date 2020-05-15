@@ -197,6 +197,10 @@ def setup(app):
 
 def _build_feed(changelog_entries, format):
     from feedgen.feed import FeedGenerator
+    from datetime import datetime
+    import pytz
+
+    tz = pytz.timezone('Europe/Berlin')
 
     BASE_URL = 'https://manual.uberspace.de/en/changelog.'
     HTML_URL = BASE_URL + 'html'
@@ -210,10 +214,12 @@ def _build_feed(changelog_entries, format):
 
     for entry in changelog_entries:
         deeplink = '{}#v{}'.format(HTML_URL, entry['version'].replace('.', '-'))
+        date = tz.localize(datetime.strptime(entry['date'], '%Y-%m-%d'))
         fe = fg.add_entry()
         fe.id(deeplink)
         fe.title('[{}] - {}'.format(entry['version'], entry['date']))
         fe.link(href=deeplink)
+        fe.updated(date)
         fe.content(entry['text'].replace('\n', '<br>'))
 
     if format == 'atom':
