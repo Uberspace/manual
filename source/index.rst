@@ -81,6 +81,7 @@ For more information see the :doc:`full changelog <changelog>`.
    NodeJS <lang-nodejs>
    Ruby <lang-ruby>
    golang <lang-golang>
+   Rust <lang-rust>
    .NET Core <lang-dotnet>
    Erlang/OTP <lang-erlang>
    Perl <lang-perl>
