@@ -1,0 +1,16 @@
+Added
+-----
+* `Rust <https://www.rust-lang.org/>`_ ``stable`` channel. You can read about it
+  in `our manual <https://manual.uberspace.de/lang-rust.html>`_.
+* `Node.js <https://nodejs.org/>`_ version ``14``.
+* `mosquitto <https://mosquitto.org/>`_.
+* `ffmpeg <https://ffmpeg.org/>`_.
+* *pipeview* (``pv``).
+* *libnice*.
+* *libwebsockets*.
+
+Changed
+-------
+* The data directory for MariaDB (``/var/lib/mysql``) is now stored on SSD.
+* Also on SSD: *rpm*, *yum* and *journald* data directories (``/var/lib/rpm``,
+  ``/var/lib/yum``, ``/var/cache/yum`` and ``/var/log/journal``).
