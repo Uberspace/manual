@@ -167,7 +167,7 @@ We provide a number of services so you don't have to do everything yourself:
 nginx, MySQL, SSH, POP3, IMAP, SMTP and so on. Like any process, these services
 can only be in one namespace at a time and that is most certainly not the one of
 your uberspace. Sites running in php-fpm or daemons run with supervisord
-therefore cannot connect to MySQL on ``127.0.0.0.1:3306``, because there is none
+therefore cannot connect to MySQL on ``127.0.0.1:3306``, because there is none
 on *their* ``127.0.0.1``. The services can be reached using ``$HOSTNAME:3306``,
 but that seems rather inconvenient.
 
