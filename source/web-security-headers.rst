@@ -18,7 +18,7 @@ uberspaces for every domain:
 ``Referrer-Policy: strict-origin-when-cross-origin``
    Prevents the browser from leaking GET parameters to linked sites via HTTPS or leaking the domain over unencrypted HTTP altogether.
 
-``Strict-Transport-Security: max-age=172800``
+``Strict-Transport-Security: max-age=31536000``
    Enforce that the site may only be loaded via HTTPS for the next two days.
 
 ``X-Content-Type-Options: nosniff``
