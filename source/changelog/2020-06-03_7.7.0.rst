@@ -1,0 +1,18 @@
+Added
+-----
+* HTTP outgoing headers can how be changed and set using ``uberspace web header``
+* MySQL event scheduler is now enabled
+* ImageMagick7 now has HEIC support
+* redis is preinstalled
+
+Changed
+-------
+* Java is now version 14 to 15 and so on and will be updated as EPEL's ``java-latest-openjdk`` updates
+* tmux is now version 2.9a
+* HSTS is enforced for 1 year
+* HTTP=>HTTPS redirects use 301 instead of 302
+
+Fixed
+-----
+* SMTP 587 now no longer accepts mails to local domains without authentication.
+* SMTP 25 now automatically restarts, should it crash for any reason. The recent SSD migrations caused it to crash once on each host leading to a downtime of ~10 minutes. This change mitigates this on future crashes.
