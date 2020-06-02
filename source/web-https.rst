@@ -12,13 +12,6 @@ domains, are automatically provided with a free certificate from
 users always use a secure connection to prevent eavesdropping and injection of
 unwanted content.
 
-.. tip:: We enforce HTTPS and always redirect HTTP to HTTPS. 
-  
-  During the redirect, we use HTTP status code 302 because we do not want to
-  lock external domains into HTTPS forever; if we used 301, it would be much
-  harder for our users to use the domain with another hosting provider with HTTP.
-  Please note that may change in the future.
-
 
 Let's encrypt
 =============
