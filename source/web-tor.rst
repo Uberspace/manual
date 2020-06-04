@@ -25,9 +25,9 @@ http://isabell.onastroidst6krpn.onion.
 Forwarding by Tor-Browser
 =========================
 
-Currently you may mention the address as ``Onion-Location`` for the onion service in your HTML content
-`as a meta-tag in the header <https://community.torproject.org/onion-services/advanced/onion-location/>`.
-The Tor-Browser will `redirect according to the settings <https://tb-manual.torproject.org/onion-services/>`.
+If provided an ``Onion-Location`` will cause the Tor-Browser to `redirect according to the settings <https://tb-manual.torproject.org/onion-services/>`.
+Currently you may manually setup the ``Onion-Location`` as HTTP header using ``uberspace web header <https://manual.uberspace.de/web-headers.html>``.
+An alternative possibility is `a meta-tag in the header <https://community.torproject.org/onion-services/advanced/onion-location/>`, e.g. in case the content is shared with other webservers than uberspace.
 
 Other domains
 =============
