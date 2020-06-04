@@ -22,6 +22,13 @@ available as a hidden service as a sub domain of **onastroids**\ t6krpn.onion.
 For example, content on https://isabell.uber.space is also reachabe via
 http://isabell.onastroidst6krpn.onion.
 
+Forwarding by Tor-Browser
+=========================
+
+Currently you may mention the address as ``Onion-Location`` for the onion service in your HTML content
+`as a meta-tag in the header <https://community.torproject.org/onion-services/advanced/onion-location/>`.
+The Tor-Browser will `redirect according to the settings <https://tb-manual.torproject.org/onion-services/>`.
+
 Other domains
 =============
 
