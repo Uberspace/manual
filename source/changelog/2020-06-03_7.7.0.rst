@@ -24,3 +24,7 @@ Fixed
 * *SMTP* on port 25 now automatically restarts, should it crash for any reason.
   The recent SSD migrations caused it to crash once on each host leading to a
   downtime of ~10 minutes. This change mitigates this on future crashes.
+* *Dovecot* (IMAP/POP3) now gets version updates independently of other
+  packages. This dramatically shortens downtimes during updates, as the
+  package script otherwise waits until all other packages have finished
+  updating before Dovecot can start again.
