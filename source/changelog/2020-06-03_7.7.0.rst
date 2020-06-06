@@ -28,3 +28,4 @@ Fixed
   packages. This dramatically shortens downtimes during updates, as the
   package script otherwise waits until all other packages have finished
   updating before Dovecot can start again.
+* *goaccess* now supports "tcb_btree" again to fix ``--keep-db-files```
