@@ -1,0 +1,31 @@
+Added
+-----
+* *HTTP* outgoing headers can how be changed and set using
+  ``uberspace web header``
+  (`manual entry <https://manual.uberspace.de/web-headers.html>`_).
+* *MySQL* `event scheduler <https://mariadb.com/kb/en/events/>`_ is now enabled.
+* *ImageMagick* v7 now has
+  `HEIC <https://en.wikipedia.org/wiki/High_Efficiency_Image_File_Format>`_
+  support.
+* `Redis <https://redis.io/>`_ is preinstalled.
+
+Changed
+-------
+* *Java* is now version 14 and will be updated as EPEL's
+  ``java-latest-openjdk`` updates.
+* *tmux* is now version 2.9a.
+* *HSTS* is enforced for 1 year.
+* *HTTP⇒HTTPS* redirects use 301 instead of 302.
+
+Fixed
+-----
+* *SMTP* on port 587 now no longer accepts mails to local domains without
+  authentication.
+* *SMTP* on port 25 now automatically restarts, should it crash for any reason.
+  The recent SSD migrations caused it to crash once on each host leading to a
+  downtime of ~10 minutes. This change mitigates this on future crashes.
+* *Dovecot* (IMAP/POP3) now gets version updates independently of other
+  packages. This dramatically shortens downtimes during updates, as the
+  package script otherwise waits until all other packages have finished
+  updating before Dovecot can start again.
+* *goaccess* now supports "tcb_btree" again to fix ``--keep-db-files``.
