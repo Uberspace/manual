@@ -8,6 +8,7 @@ Added
   `HEIC <https://en.wikipedia.org/wiki/High_Efficiency_Image_File_Format>`_
   support.
 * `Redis <https://redis.io/>`_ is preinstalled.
+* *Java* now includes the Java Development Kit (``javac``)
 
 Changed
 -------
