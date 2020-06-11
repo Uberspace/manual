@@ -23,17 +23,17 @@ it.
 Versions
 ========
 
-We only provide the version available in CentOS 7.
+We only provide the version available in EPEL 7 - ``java-latest-openjdk``.
 
 Update Policy
 -------------
 
-Java is updated alongside the rest of CentOS 7 reglarily.
+Java is updated alongside the rest of EPEL 7 reglarily.
 
 +--------+---------------------+--------------------------+
 | Branch | State               | Security Support Until   |
 +========+=====================+==========================+
-| 1.8    | Bug fixes           | January 2024             |
+| 14     | Bug fixes           | September 2020	          |
 +--------+---------------------+--------------------------+
 
 Connection to webserver
