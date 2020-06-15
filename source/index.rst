@@ -43,6 +43,13 @@ For more information see the :doc:`full changelog <changelog>`.
 .. toctree::
    :hidden:
    :maxdepth: 1
+   :caption: Uberspace 6
+
+   Migrating from Uberspace 6 <uberspace2uberspace>
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
    :caption: Web
 
    DocumentRoot <web-documentroot>
