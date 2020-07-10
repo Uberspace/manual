@@ -46,10 +46,10 @@ Your mailbox password has to comply with a set of rules:
 - A minimum lenght of 8 characters.
 - Not only letters.
 - Not only numbers.
-- Not on our blacklist.
+- Not on our deny list.
 - A password score of ``>=4``.
 
-We **blacklist some passwords** we deem too common (like ``test1234``) or too easy to guess, e.g. if your mailbox name should be ``fn0rd``, we will reject ``testfn0rd`` as a password.
+We **prohibit the use of some passwords** we deem too common (like ``test1234``) or too easy to guess, e.g. if your mailbox name should be ``fn0rd``, we will reject ``testfn0rd`` as a password.
 
 In addition to the above, we also run `xcvbn <https://github.com/dwolfhub/zxcvbn-python>`_ over you password. This results in a score for your password, based on how easy it might be guessed and / or cracked (higher results mean a better estimated password strenght). We require a **password score** of at least ``4``.
 
