@@ -43,7 +43,7 @@ Password Requirements
 
 Your mailbox password has to comply with a set of rules:
 
-- A minimum lenght of 8 characters.
+- A minimum length of 8 characters.
 - Not only letters.
 - Not only numbers.
 - Not on our deny list.
