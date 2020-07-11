@@ -19,7 +19,7 @@ uberspaces for every domain:
    Prevents the browser from leaking GET parameters to linked sites via HTTPS or leaking the domain over unencrypted HTTP altogether.
 
 ``Strict-Transport-Security: max-age=31536000``
-   Enforce that the site may only be loaded via HTTPS for the next two days.
+   Enforce that the site may only be loaded via HTTPS for the next (non-leap) year.
 
 ``X-Content-Type-Options: nosniff``
    Prevent some browsers from interpreting JavaScript in non-js MIME types.
