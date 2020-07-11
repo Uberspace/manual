@@ -37,6 +37,7 @@ Take a look into that file or execute ``my_print_defaults client`` to show it, l
 .. code-block:: console
 
   [eliza@dolittle ~]$ my_print_defaults client
+  --default-character-set=utf8mb4
   --user=eliza
   --password=SomeStrongPassword
 
