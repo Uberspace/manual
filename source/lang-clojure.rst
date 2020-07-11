@@ -17,7 +17,7 @@ Clojure is a dynamic, and functional dialect of Lisp on the Java platform.
 Versions
 ========
 
-We only provide the latest version and update it regularily.
+We only provide the latest version and update it regularly.
 
 Connection to webserver
 =======================
