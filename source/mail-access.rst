@@ -78,7 +78,7 @@ Debugging
 
 The most common problems when using a mail client with an Uberspace account:
 
-* Some home routers, especially some *Speedport* models offered by Deutsche Telekom, block SMTP connections to servers that are not on an internal white list. You need to either disable that feature or add your Uberspace host to the white list. Please check your router's manual for instructions.
+* Some home routers, especially some *Speedport* models offered by Deutsche Telekom, block SMTP connections to servers that are not on an internal allow list. You need to either disable that feature or add your Uberspace host to the allow list. Please check your router's manual for instructions.
 * Similarly, some anti-virus applications block SMTP connections or modify the port. 
 * Some mail clients won't allow mail passwords that are longer than 16 characters.
 
