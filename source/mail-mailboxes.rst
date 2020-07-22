@@ -46,7 +46,7 @@ Your mailbox password has to comply with a set of rules:
 - A minimum length of 8 characters.
 - Not only letters.
 - Not only numbers.
-- Not on our deny list.
+- Not prohibited by us.
 - A password score of ``>=4``.
 
 We **prohibit the use of some passwords** we deem too common (like ``test1234``) or too easy to guess, e.g. if your mailbox name should be ``fn0rd``, we will reject ``testfn0rd`` as a password.
