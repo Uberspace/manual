@@ -1,0 +1,4 @@
+Fixed
+-----
+* A case where a **web backend** with the option ``--remove-prefix`` ends up
+  doing nothing.
