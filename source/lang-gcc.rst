@@ -26,7 +26,7 @@ We only provide the version available in CentOS 7.
 Update Policy
 -------------
 
-GCC is updated alongside the rest of CentOS 7 reglarily.
+GCC is updated alongside the rest of CentOS 7 regularly.
 
 +--------+---------------------+--------------------------+
 | Branch | State               | Security Support Until   |
