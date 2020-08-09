@@ -30,7 +30,7 @@ In case you get stuck or want to know what's going on, you can always use ``web 
   [isabell@philae ~]$ uberspace web header list
   Default Headers:
     Referrer-Policy: strict-origin-when-cross-origin
-    Strict-Transport-Security: max-age=172800
+    Strict-Transport-Security: max-age=31536000
     X-Content-Type-Options: nosniff
     X-Frame-Options: SAMEORIGIN
     X-Xss-Protection: 1; mode=block
@@ -56,7 +56,7 @@ Again, you can take a look using `header list`:
     X-Clacks-Overhead: GNU Terry Pratchett
   Default Headers:
     Referrer-Policy: strict-origin-when-cross-origin
-    Strict-Transport-Security: max-age=172800
+    Strict-Transport-Security: max-age=31536000
     (...)
 
 Much like :ref:`web backends <backends>` a header is present on the set path plus all of the paths below. This means the ``X-Clacks-Overhead`` header set on ``/blog`` header will also be present on ``/blog/imprint``, ``/blog/archive/1984`` and so on:
@@ -143,7 +143,7 @@ Again, you can take a look using `header list`:
     X-Frame-Options: DENY
   Default Headers:
     Referrer-Policy: strict-origin-when-cross-origin
-    Strict-Transport-Security: max-age=172800
+    Strict-Transport-Security: max-age=31536000
     (...)
 
 As instructed the header is now present on ``/blog`` but not on ``/blog/iframe``:
@@ -191,7 +191,7 @@ Just like any header you set yourself, the default headers can be suppressed usi
     Strict-Transport-Security: (suppressed)
   Default Headers:
     Referrer-Policy: strict-origin-when-cross-origin
-    Strict-Transport-Security: max-age=172800
+    Strict-Transport-Security: max-age=31536000
     X-Content-Type-Options: nosniff
     X-Frame-Options: SAMEORIGIN
     X-Xss-Protection: 1; mode=block
@@ -206,14 +206,14 @@ Headers of inner directories always override the ones set in outer ones. So you 
 .. code-block:: console
   :emphasize-lines: 1,5
 
-  [isabell@philae ~]$ uberspace web header set /blog Strict-Transport-Security "max-age=31536000"
-  Set header "Strict-Transport-Security: max-age=31536000" for /blog
+  [isabell@philae ~]$ uberspace web header set /blog Strict-Transport-Security "max-age=63072000"
+  Set header "Strict-Transport-Security: max-age=63072000" for /blog
   [isabell@philae ~]$ uberspace web header list
   /blog
-    Strict-Transport-Security: max-age=31536000
+    Strict-Transport-Security: max-age=63072000
   Default Headers:
     Referrer-Policy: strict-origin-when-cross-origin
-    Strict-Transport-Security: max-age=172800
+    Strict-Transport-Security: max-age=31536000
     X-Content-Type-Options: nosniff
     X-Frame-Options: SAMEORIGIN
     X-Xss-Protection: 1; mode=block
@@ -222,8 +222,8 @@ Headers of inner directories always override the ones set in outer ones. So you 
 
 .. code-block:: console
 
-  [isabell@philae ~]$ uberspace web header set / Strict-Transport-Security "max-age=31536000"
-  Set header "Strict-Transport-Security: max-age=31536000" for /
+  [isabell@philae ~]$ uberspace web header set / Strict-Transport-Security "max-age=63072000"
+  Set header "Strict-Transport-Security: max-age=63072000" for /
 
 Restoring security headers
 --------------------------
@@ -235,11 +235,11 @@ If you removed or replaced security headers in the past and would like to restor
 
   [isabell@philae ~]$ uberspace web header list
   /
-    Strict-Transport-Security: max-age=31536000
+    Strict-Transport-Security: max-age=63072000
     X-Frame-Options: (suppressed)
   Default Headers:
     Referrer-Policy: strict-origin-when-cross-origin
-    Strict-Transport-Security: max-age=172800
+    Strict-Transport-Security: max-age=31536000
     X-Content-Type-Options: nosniff
     X-Frame-Options: SAMEORIGIN
     X-Xss-Protection: 1; mode=block
@@ -250,7 +250,7 @@ If you removed or replaced security headers in the past and would like to restor
   [isabell@philae ~]$ uberspace web header list
   Default Headers:
     Referrer-Policy: strict-origin-when-cross-origin
-    Strict-Transport-Security: max-age=172800
+    Strict-Transport-Security: max-age=31536000
     X-Content-Type-Options: nosniff
     X-Frame-Options: SAMEORIGIN
     X-Xss-Protection: 1; mode=block
