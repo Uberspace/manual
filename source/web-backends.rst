@@ -80,7 +80,7 @@ Some applications don't serve assets due to performance reasons. In this example
 .. code-block:: console
 
   [isabell@philae ~]$ uberspace web backend set / --http --port 9000
-  Set backend for / to port 1024; please make sure something is listening!
+  Set backend for / to port 9000; please make sure something is listening!
   You can always check the status of your backend using "uberspace web backend list".
 
   [isabell@philae ~]$ uberspace web backend set /assets --apache
