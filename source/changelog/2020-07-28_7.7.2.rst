@@ -10,6 +10,7 @@ Added
 Fixed
 -----
 * Unified the *regular expression* used to guard **web header** input for the
-  ``uberspace web header …`` command. The one used for the ``set`` and
-  ``suppress`` sub-commands was stricter, than the one used for ``set``. This
-  allowed setting headers, that could neither be deleted nor suppressed.
+  ``uberspace web header …`` command. The ones used for the ``del`` and
+  ``suppress`` sub-commands where unnecessarily stricter, than the one used for
+  ``set``. This allowed setting headers, that could neither be deleted nor
+  suppressed.
