@@ -1,0 +1,18 @@
+Added
+-----
+* *Nginx*  serves images like *favicons* compressed (``image/x-icon``,
+  ``image/svg+xml``).
+
+Changed
+-------
+* We decreased our global `Rspamd <https://rspamd.com/>`_ **reject score** to
+  ``10`` (down from ``15``). This means, that we reject mails percieved as spam
+  sooner.
+
+* When adding new mail domains with ``uberspace mail domain …``, we now first
+  ask the DNS resolver for the ``MX`` records, and only fall back to
+  our old behaviour (i.e. querying the responsible nameservers directly), when
+  this fails (meaning the record does not point to the host).
+
+  This allows for edge cases, like when a person is using the NSEntry service of
+  DENIC where the TLD nameservers directly hands out all records.
