@@ -1,6 +1,6 @@
 Added
 -----
-* *Nginx*  serves images like *favicons* compressed (``image/x-icon``,
+* *Nginx*  serves *favicons* and *SVGs* compressed (``image/x-icon``,
   ``image/svg+xml``).
 
 Changed
