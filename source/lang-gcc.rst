@@ -21,7 +21,7 @@ to build modules for Python, node.js, ruby and others.
 Versions
 ========
 
-We only provide the version available in CentOS 7.
+We only provide the version available in the Red Hat Developer Toolset.
 
 Update Policy
 -------------
@@ -31,7 +31,7 @@ GCC is updated alongside the rest of CentOS 7 regularly.
 +--------+---------------------+--------------------------+
 | Branch | State               | Security Support Until   |
 +========+=====================+==========================+
-| 4.8.5  | Security fixes only | January 2024             |
+| 9.x    | active development  | (no policy published)    |
 +--------+---------------------+--------------------------+
 
 In the future we may provide newer versions.
