@@ -12,6 +12,9 @@ domains, are automatically provided with a free certificate from
 users always use a secure connection to prevent eavesdropping and injection of
 unwanted content.
 
+.. tip::
+
+    Treat sudomains as normal :ref:`external domains <web-domains>` and the certificate will be generated for those, too.
 
 Let's encrypt
 =============
