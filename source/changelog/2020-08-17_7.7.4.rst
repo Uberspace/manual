@@ -1,0 +1,28 @@
+Added
+-----
+- We included the official RPM repository for the **Mercurial SCM**. So ``hg``
+  now comes in version ``5.4.2`` (was ``2.6.2``).
+
+- `Erlang <https://manual.uberspace.de/lang-erlang.html>`_ version ``23``.
+
+- We provide ``devtoolset-9`` (enabled by default). Resulting in more recent
+  versions of development tooling (e.g. ``gcc`` in version ``9.3``).
+
+Changed
+-------
+- Incoming connections directed to a
+  `user's port <https://manual.uberspace.de/basics-ports.html>`_ will no longer
+  be masqueraded, meaning users processes can now acces the *public client IP*.
+
+- We set ``underscores_in_headers on`` in our *Nginx* configuration, so that
+  headers containing underscores are no longer discarded.
+
+- The configuration prefix for **Node.js** is no longer hardcoded to
+  ``/home/$USER``, but mearly defaults to it. This means users can now use the
+  ``NPM_CONFIG_PREFIX`` environment variable, to set their own prefix.
+
+Fixed
+-----
+- We made the part of our ``uberspace`` command that parses user settings from
+  YAML files more resistant, so it should no longer bail over corrupted
+  files.
