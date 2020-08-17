@@ -1,8 +1,8 @@
 .. _erlang:
 
 .. sidebar:: Logo
-  
-  .. image:: _static/images/logo_erlang.png 
+
+  .. image:: _static/images/logo_erlang.png
       :align: center
 
 ##########
@@ -20,7 +20,7 @@ Introduction
 Versions
 ========
 
-Release types 
+Release types
 -------------
 
 We provide different releases and apply security updates on a regular basis. Currently, these versions are available: 20, 21 and 22. All versions include `Elixir <https://elixir-lang.org>`_ and `Mix <https://hexdocs.pm/mix/Mix.html>`_, a build tool that allows you to easily create projects, manage tasks, run tests and more.
@@ -40,7 +40,8 @@ Use ``uberspace tools version list erlang`` to show all selectable versions:
   - 20
   - 21
   - 22
-  [eliza@dolittle ~]$ 
+  - 23
+  [eliza@dolittle ~]$
 
 .. _erlang-change-version:
 
@@ -53,7 +54,7 @@ You can select the Erlang/OTP version with ``uberspace tools version use erlang 
   [eliza@dolittle ~]$ uberspace tools version use erlang 22
   Selected Erlang/OTP version 22
   The new configuration is adapted immediately. Patch updates will be applied automatically.
-  [eliza@dolittle ~]$ 
+  [eliza@dolittle ~]$
 
 Selected version
 ----------------
@@ -64,12 +65,12 @@ You can check the selected version by executing ``uberspace tools version show e
 
   [eliza@dolittle ~]$ uberspace tools version show erlang
   Using 'erlang' version: '21'
-  [eliza@dolittle ~]$ 
+  [eliza@dolittle ~]$
 
 Update policy
 -------------
 
-We update all versions on a regular basis. 
+We update all versions on a regular basis.
 
 ----
 
