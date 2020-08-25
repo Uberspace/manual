@@ -72,7 +72,7 @@ MySQL
 
 .. _mysql_backup:
 
-We dump and backup all databases every day at 4:20 and keep backups of the last 21 days. You can access your hosts database backups at ``/mysql_backup``.
+We dump and backup all databases every night and keep backups of the last 21 days. You can access your hosts database backups at ``/mysql_backup``.
 
 The last backup is stored in ``/mysql_backup/current/$USER`` and not dated:
 
