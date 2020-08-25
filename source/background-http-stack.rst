@@ -145,7 +145,7 @@ only dynamic parts of this configuration is the list of domains in ``ServerName`
 .. note::
 
   Some probably noticed that static files are handled within httpd, instead of
-  nginx. Even through nginx easily outperforms httpd when it comes to serving
+  nginx. Even though nginx easily outperforms httpd when it comes to serving
   static files, we need to use httpd in this case. Many applications like
   wordpress rely on ``.htaccess`` files to rewrite URLs or protect certain
   directories from being accessed. Since those files can only be parsed by
