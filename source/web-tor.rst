@@ -27,7 +27,7 @@ Forwarding by Tor-Browser
 
 If provided an ``Onion-Location`` will cause the Tor-Browser to `redirect according to the settings https://tb-manual.torproject.org/onion-services/`.
 Currently you may manually setup the ``Onion-Location`` as HTTP header using ``uberspace web header set / Onion-Location http://SOMEONE.ahcbagldgzdpa74g2mh74fvk5zjzpfjbvgqin6g3mfuu66tynv2gkiid.onion/``, for more details see https://manual.uberspace.de/web-headers.html .
-An alternative possibility that also overrides the HTTP header is a meta-tag in the header https://community.torproject.org/onion-services/advanced/onion-location/`, e.g. in case the content is shared with other webservers than uberspace.
+An alternative possibility that also overrides the HTTP header is a meta-tag in the header https://community.torproject.org/onion-services/advanced/onion-location/, e.g. in case the content is shared with other webservers than uberspace.
 
 Other domains
 =============
