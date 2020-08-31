@@ -1,0 +1,35 @@
+Added
+-----
+
+* weechat_ - an IRC client
+* yarn_ - a package manage for nodejs
+* protobuf_ - headers and libraries used to comple applications that make use of
+  Google's Protocol Buffers
+* tcsh - a shell compatible with the C shell
+* Cyrillic font support for TeX Live
+
+Changed
+-------
+
+* rspamd now uses the `ZMI ruleset against German spam`_ to improve spam
+  filtering
+
+Internal
+--------
+
+* We prepared our internal U7 repository to play around with AWX, a platform to
+  execute ansible-playbooks reliably. We currently use gitlab-ci to run them.
+* We re-enabled node_exporter to generate fancy graphs and metics, which we
+  intend to share publicly in the future. At the moment we're using icinga2 to
+  collect metrics.
+* We deleted old, dead code that was blocking common ports like 6100 so users
+  cannot use them. This is no longer a concern, as every user has their own
+  network namespace now.
+* Files created by ansible in ``/root/.ansible/tmp`` are now cleaned up
+  regularly. This should speed up the backup process, as there were quite many
+  of them.
+
+.. _weechat: https://weechat.org/
+.. _yarn: https://yarnpkg.com/
+.. _protobuf: https://developers.google.com/protocol-buffers
+.. _`ZMI ruleset against German spam`: http://sa.zmi.at
