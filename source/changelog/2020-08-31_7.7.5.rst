@@ -5,6 +5,7 @@ Added
 * yarn_ - a package manage for nodejs
 * protobuf_ - headers and libraries used to comple applications that make use of
   Google's Protocol Buffers
+* ``js-devel`` - development headers for the installed ``js`` javascript engine
 * tcsh - a shell compatible with the C shell
 * Cyrillic font support for TeX Live
 
