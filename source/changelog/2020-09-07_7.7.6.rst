@@ -1,0 +1,37 @@
+Added
+-----
+
+* libgdiplus
+* libacl
+
+Fixed
+-----
+
+* ``uberspace web header set`` now correctly processes entries with special
+  characters.
+* Web Backends now no longer match `/etherpad_test` for a backend that was
+  set on `/etherpad`. Additionally, requests to `/etherpad` are redirected
+  to `/etherpad/`.
+
+Changed
+-------
+
+* Node.js version 13 is now deprecated
+* HTTP status 500 responses are now replaced with a custom error page
+  showing instructions how to resolve the error. This can be disabled using
+  the new ``uberspace web errorpage`` command.
+
+Internal
+--------
+
+* We started to restructure our repository to split it up into smaller
+  modules in the future. This will enable us to make quicker releases in the
+  future.
+* MySQL backups are now dumped at a random time each night, taking load off
+  our storage system by distributing the resulting peaks better.
+* The NFS mount ``/backup`` is now monitored via icinga2, helping us to
+  fix it faster when it hangs.
+* We use a simple watchdog to restart httpd/nginx automatically in case
+  they do no longer respond to requests. Its checking turned out to be too
+  aggressive, resulting in a restart loop in rare cases. We now wait for
+  the server to recover before attempting another check/restart.
