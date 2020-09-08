@@ -62,6 +62,7 @@ For more information see the :doc:`full changelog <changelog>`.
    security headers <web-security-headers>
    web backends <web-backends>
    web headers <web-headers>
+   web errorpage <web-errorpage>
    logs <web-logs>
    Tor <web-tor>
 
