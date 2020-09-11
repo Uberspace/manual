@@ -73,7 +73,7 @@ To get an overview of your services and their current status, run ``supervisorct
 Logging
 =======
 
-``supervisord`` logs are stored in ``~/logs/``. You can use ``supervisorctl tail my-daemon`` to view the log for ``my-daemon``. 
+``supervisord`` logs are stored in ``~/logs/``. You can use ``supervisorctl tail my-daemon`` and ``supervisorctl tail my-daemon stderr`` to view the log for ``my-daemon``. Type in ``supervisorctl tail`` to see available options.
 
 Further Reading
 ===============
