@@ -1,0 +1,42 @@
+✈
+
+Added
+-----
+
+* support for Sieve, documentation and announcement will follow.
+* rrdtool
+
+Fixed
+-----
+
+* Modification time of files in `~/etc/certificates` now reflects the time the
+  certificate was generated, instead of the current time +/- 1 minute, which was
+  a bit useless.
+* The number of simultaneous SMTP connections is now limited, closing an easy
+  but harmless DoS vector. Additionally, we support added more SMTP connection
+  slots.
+
+Changed
+-------
+
+* New accounts now come with a index.html explaining how to upload content,
+  replacing the 403 Forbidden page that was shown in the past.
+* Web Backends now serve their content at both `/etherpad` and `/etherpad/`,
+  partly reverting the change made in 7.7.6 because of incompatability with
+  web socket libraries.
+* Web Backends can now report a custom `Server:` HTTP response header, which is
+  passed to the client. By default, the server responds `Server: nginx`
+  like before.
+* supervisord is now version 4.2.1
+
+Internal
+--------
+
+* In the past we used two mechanisms to deploy the primary TLS certificate:
+  prepared (put in a bought one) and self-signed (generate one on demand). The
+  former was used for production, the latter for our automatic tests. This
+  caused the production code path only being tested in.. production, which is
+  bad. We changed this to always use "prepared" and removed all of the "self-
+  signed" code.
+* We removed the java installation that was active before 7.7.0
+* General cleanup in our repository removing a total of 800 lines of dead code.
