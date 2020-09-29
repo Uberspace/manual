@@ -92,6 +92,7 @@ For more information see the :doc:`full changelog <changelog>`.
    PHP <lang-php>
    Python <lang-python>
    NodeJS <lang-nodejs>
+   deno <lang-deno>
    Ruby <lang-ruby>
    golang <lang-golang>
    Rust <lang-rust>
