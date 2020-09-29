@@ -10,7 +10,7 @@ configure forwarding
 You can use forwardings in the form of ``$MAILBOX@$USER.uber.space``. If you have :ref:`set up additional domains <mail-domains>`, ``$MAILBOX@$DOMAIN`` will also work.
 
 .. warning::
-    We do not forward mails with a :doc:`spam score >= 15 <mail-spam>`. This is crucial due to policy reasons at nearly any mail provider and makes sure the reputation of our servers stays fine.
+    We do not forward mails with a :doc:`spam score >= 10 <mail-spam>`. This is crucial due to policy reasons at nearly any mail provider and makes sure the reputation of our servers stays fine.
 
 Add forwards for a mailbox
 --------------------------
