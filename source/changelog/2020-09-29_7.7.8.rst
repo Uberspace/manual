@@ -1,0 +1,39 @@
+Added
+-----
+
+* `deno <https://manual.uberspace.de/lang-deno.html>`_ JavaScript/TypeScript runtime
+* ``nagios-plugins-http``
+* ``rclone``
+* re-added support for Sieve. We had to remove it shortly after the rollout in
+  v7.7.7 because it was incompatible with mailboxes that contain a dot, e.g.
+  ``isabell.hacker@something.org``. This is now fixed. Documentation and an
+  announcement will follow.
+
+Fixed
+-----
+
+* When we do not know a domain, we display a helpful "sorry, unknown domain.
+  here is how you add it" page. This page doesn't have a valid certificate,
+  but HTTPS was still enforced. The page can now also be opened using HTTP.
+* ``MX`` records can be in any case, i.e. ``10 TUTTLe.uberspace.DE`` is now
+  considered valid.
+* The default "there is no content" page is no longer shown, if there is a
+  ``index.php`` providing content. In the past the ``index.html`` added by us
+  was considered more important by httpd. We now add a ``nocontent.html``, which
+  is always queried last.
+
+Changed
+-------
+
+* ruby 2.4 users have been migrated to version 2.7.
+* nodejs 13 users have been migrated to version 14.
+* The 500 Internal Server Error page now shows information on how to disable it.
+* Updated HTTPS ciphers and settings to match current mozilla recommendations.
+
+Internal
+--------
+
+* Removed an unused 3rd-party YUM repo
+* We continued to restructure our repository to split it up into smaller
+  modules in the future. This will enable us to make quicker releases in the
+  future.
