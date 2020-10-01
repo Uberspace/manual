@@ -82,3 +82,9 @@ nav li {
   max-width: 55%;
 }
 
+/* highlighted remove paddings */
+.rst-content .highlighted {
+  padding: 0;
+}
+
+
