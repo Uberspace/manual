@@ -19,7 +19,7 @@ performance. It also enabled both the server and the client to remain anonymous.
 
 Content hosted on the default ``.uber.space`` domain is automatically made
 available as a hidden service as a sub domain of **onastroids**\ t6krpn.onion.
-For example, content on https://isabell.uber.space is also reachabe via
+For example, content on https://isabell.uber.space is also reachable via
 http://isabell.onastroidst6krpn.onion.
 
 Forwarding by Tor-Browser
