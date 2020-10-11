@@ -1,0 +1,16 @@
+Added
+-----
+
+* `python v3.9 <https://docs.python.org/3.9/whatsnew/3.9.html>`_
+
+Fixed
+-----
+
+* Apache workers are no restarted after a number of requests to ensure the web
+  sever's RAM usage is low. This increases stability overall.
+
+Internal
+--------
+
+* PHP errors for accounts, which did not have an error log configured, were
+  logged globally by accident. They are now not logged at all.
