@@ -2,6 +2,7 @@ Added
 -----
 
 * `python v3.9 <https://docs.python.org/3.9/whatsnew/3.9.html>`_
+* `tig <https://jonas.github.io/tig/>`_
 
 Fixed
 -----
