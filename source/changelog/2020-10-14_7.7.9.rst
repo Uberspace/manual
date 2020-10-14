@@ -14,5 +14,5 @@ Fixed
 Internal
 --------
 
-* PHP errors for accounts, which did not have an error log configured, were
-  logged globally by accident. They are now not logged at all.
+* PHP errors for accounts were logged globally by accident. They are now never
+  logged globally. But still user-local, if the user enables them.
