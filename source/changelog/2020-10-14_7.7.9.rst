@@ -7,8 +7,9 @@ Added
 Fixed
 -----
 
-* Apache workers are no restarted after a number of requests to ensure the web
-  sever's RAM usage is low. This increases stability overall.
+* Apache workers are now restarted after a number of requests to ensure the web
+  sever's RAM usage does not grow unreasonably fast. This increases stability
+  overall.
 
 Internal
 --------
