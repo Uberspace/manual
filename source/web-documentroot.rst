@@ -45,12 +45,15 @@ We provide the following configuration:
 
 .. code-block:: ini
 
-  DirectoryIndex index.html index.htm index.html.var index.php index.php5 index.cgi index.sh
+  DirectoryIndex index.html index.htm index.html.var index.php index.cgi index.sh nocontent.html
   TypesConfig /etc/mime.types
   AddType application/x-compress .Z
   AddType application/x-gzip .gz .tgz
   AddType text/html .shtml
+  AddType application/wasm .wasm .wasm.gz .wat .wat.gz
   AddOutputFilter INCLUDES .shtml
+
+The full configuration ist provided within the file ``/etc/httpd/conf/httpd.conf`` which is readable by every user.
 
 Own configuration
 -----------------
