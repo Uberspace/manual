@@ -15,12 +15,16 @@ In order to avoid hitting this limit, you can check your current storage usage u
 
 .. code-block:: console
 
- [erna@xenon ~]$ quota -gsl
- Disk quotas for group erna (gid 1000): 
-      Filesystem  blocks   quota   limit   grace   files   quota   limit   grace
-      /dev/xvda1   1564M  10240M  11264M           78728       0       0        
+  [isabell@stardust ~]$ quota -gsl
+  Disk quotas for group isabell (gid 1013): 
+       Filesystem   space   quota   limit   grace   files   quota   limit   grace
+        /dev/sda2    713M  10240M  11264M              38       0       0        
 
-What do these values mean? You can ignore the Filesystem column. The blocks column shows you how much storage you're currently using. Quota shows the 10 GB soft limit and the limit column shows the hard limit of 11 GB. Finally, if you are using more than 10 GB, the grace column shows you how much time you have left to fix this.
+
+* ``space`` shows you how much storage you're currently using.
+* ``quota`` shows the 10 GB *soft* limit.
+* ``limit`` column shows the *hard* limit of 11 GB.
+* ``grace`` column shows you how much time you have left to fix if you are over the soft limit.
 
 .. _ram:
 
