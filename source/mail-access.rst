@@ -92,4 +92,4 @@ If Mail.app complains that the Account or the SMTP server is offline, this is us
 .. glossary::
 
     your Hostname
-      You can find your hostname in the `Datasheet <https://uberspace.de/dashboard/datasheet>`_ section. It's always ``<something>.uberspace.de``.
+      You can find your hostname in the `Datasheet <https://uberspace.de/dashboard/datasheet>`_ section. It's always ``<username>.uber.space``.
