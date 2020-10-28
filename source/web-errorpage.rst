@@ -1,4 +1,4 @@
-.. _errorpage:
+.. _web-errorpage:
 
 #############
 web errorpage
