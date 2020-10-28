@@ -28,7 +28,7 @@ For more information see the :doc:`full changelog <changelog>`.
    :caption: Your first day
 
    for newbies <firstday-newbies>
-   for Ubernauts <firstday-ubernauts>
+   for Ubernauts from U6 <firstday-ubernauts>
    for nerds <firstday-nerds>
 
 .. toctree::
