@@ -45,6 +45,28 @@ Then you can just add the subdomain *first* on the one user and *then* the main 
 
 .. note:: We very much encourage to use separate uberspace accounts for separate projects or apps and so far subdomains. And you shouldn't usually run in this problem because in most cases you won't end up with different users on the same host.
 
+Necessary steps for using a Subdomain
+=====================================
+In order to use the subdomain you will have to complete the following steps as described above and in :ref:`docroot`.
+In the following tutorial we assume you have registered the domain isabell.com at a domain-host. You want to create the subdomain sub.isabell.com
+
+1. Setup the subdomain with the uberspace-tool:
+.. code-block:: console
+ [isabell@stardust ~]$ uberspace web domain add sub.isabell.example
+
+2. Set the necessary DNS-entries at your domain-host. Normally it's sufficient to set the A-Record to the IP provided when setting up the domain with the uberspace-tool (see above, chapter "Setup").
+
+3. Create a new folder where the files reachable under your subdomain will reside:
+.. code-block:: console
+ [isabell@stardust ~]$ mkdir /var/www/virtual/isabell/html/sub.isabell.com
+ # note that in the path "isabell" should be replaced by your username
+
+4. Create a symlink that points to this directory:
+.. code-block:: console
+ [isabell@stardust ~]$ cd /var/www/virtual/isabell/
+ [isabell@stardust ~]$ ln -s html/sub.isabell.com sub.isabell.com
+ # the target for the symlink is the newly created directory /html/sub.isabell.com and the symlink resides in /var/www/virtual/isabell
+
 Removal
 =======
 
