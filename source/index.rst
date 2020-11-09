@@ -124,6 +124,14 @@ For more information see the :doc:`full changelog <changelog>`.
    :hidden:
    :titlesonly:
    :maxdepth: 1
+   :caption: Billing
+
+   General <billing-general>
+
+.. toctree::
+   :hidden:
+   :titlesonly:
+   :maxdepth: 1
    :caption: Meta
 
    Changelog <changelog>
