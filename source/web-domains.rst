@@ -11,7 +11,8 @@ Every Uberspace account gets its own domain in the form of ``$USER.uber.space``.
 Setup
 =====
 
-In order to use your own domain for web with your Uberspace, you need to first set it up using our ``uberspace`` tool. You can only add fully qualified domain names (`FQDNs <https://en.wikipedia.org/wiki/Fully_qualified_domain_name>`_), wildcard domains are not available. By default, all domains set up on a Uberspace account share the same :ref:`docroot`. Please refer to :ref:`docroot` for instructions on how to use seperate Document Roots for your domains.
+In order to use your own domain for web with your Uberspace, you need to first set it up using our ``uberspace`` tool. You can only add fully qualified domain names (`FQDNs <https://en.wikipedia.org/wiki/Fully_qualified_domain_name>`_), wildcard domains are not available, because let's
+encrypt does not support wildcard domains in conjunction with HTTP validation.
 
 .. code-block:: console
 
@@ -21,11 +22,14 @@ In order to use your own domain for web with your Uberspace, you need to first s
      A -> 185.26.156.55
      AAAA -> 2a00:d0c0:200:0:b9:1a:9c:37
 
+.. include:: includes/domain-idn.txt
+
 Once you've set up your domain using the ``uberspace`` tool, the tool provides you with the ``A`` and ``AAAA`` records that need to be configured in your registrar's nameserver.
 
 .. include:: includes/domain-dns.txt
 
-.. include:: includes/domain-idn.txt
+To start publishing content on your new domain, upload it to ``/var/www/virtual/isabell/html`` or ``/home/isabell/html``. By default, all domains
+share the same :ref:`docroot`. Please refer to :ref:`docroot` for instructions on how to use serve different content under a given domain.
 
 Subdomains
 ==========
