@@ -20,7 +20,7 @@ In order to avoid hitting this limit, you can check your current storage usage u
       Filesystem  blocks   quota   limit   grace   files   quota   limit   grace
       /dev/xvda1   1564M  10240M  11264M           78728       0       0        
 
-What do theses values mean? You can ignore the Filesystem column. The blocks column shows you how much storage you're currently using. Quota shows the 10 GB soft limit and the limit column shows the hard limit of 11 GB. Finally, if you are using more than 10 GB, the grace column shows you how much time you have left to fix this.
+What do these values mean? You can ignore the Filesystem column. The blocks column shows you how much storage you're currently using. Quota shows the 10 GB soft limit and the limit column shows the hard limit of 11 GB. Finally, if you are using more than 10 GB, the grace column shows you how much time you have left to fix this.
 
 .. _ram:
 
