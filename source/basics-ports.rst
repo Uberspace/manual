@@ -26,6 +26,8 @@ in the range from 20.000 to 61.000 and cannot be chosen arbitrarily.
  [eliza@doolittle ~]$ uberspace port add
  Port 40132 will be open for TCP and UDP traffic in a few minutes.
 
+.. tip:: Your application needs to listen on interface ``::`` or ``0.0.0.0`` (using ``127.0.0.1``, ``localhost``, ``::1``, the external IP, or the hostname will **not** work).
+
 Listing Ports
 =============
 
