@@ -16,7 +16,12 @@ Additional DocumentRoots
 
 .. warning:: We strongly suggest to use different accounts for different projects due to security reasons. If one of the DocumentRoots gets compromised (e.g. because of a `CVE <http://www.cvedetails.com/product/4096/Wordpress-Wordpress.html?vendor_id=2337>`_), all other files within all other DocumentRoots can be compromised as well.
 
-You can create folders (and symlinks) in the form of ``/var/www/virtual/<username>/<domain>``. Make sure :ref:`your domain <web-domains>` is setup and configured correctly. To use ``RewriteRules``, you have to create a :ref:`.htaccess file <htaccess>` within the DocumentRoot with the following content:
+You can create folders (and symlinks) in the form of ``/var/www/virtual/<username>/<domain>``. Make sure :ref:`your domain <web-domains>` is setup and configured correctly.
+
+.. note:: In case of an `internationalized domain name (IDN) <https://en.wikipedia.org/wiki/Internationalized_domain_name>`, do *not* use the ASCII representation (“punycode”) in `<domain>` but the Unicode variant.
+   
+
+To use ``RewriteRules``, you have to create a :ref:`.htaccess file <htaccess>` within the DocumentRoot with the following content:
 
 .. code-block:: ini
 
