@@ -122,6 +122,15 @@ For more information see the :doc:`full changelog <changelog>`.
 
 .. toctree::
    :hidden:
+   :maxdepth: 1
+   :caption: Policy
+
+   Operations <policy-ops>
+   Conduct <policy-conduct>
+   Abuse & Spam <policy-abuse>
+
+.. toctree::
+   :hidden:
    :titlesonly:
    :maxdepth: 1
    :caption: Meta
