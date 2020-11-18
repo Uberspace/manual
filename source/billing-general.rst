@@ -138,6 +138,27 @@ provider. We won't see or process your credit card information.
   account each month or transfer funds for more than a month, e.g. a quarter or
   a whole year.
 
+Apple Pay
+=========
+
+.. image:: _static/images/apple_pay.svg
+  :align: right
+  :width: 100 px
+
+To top-up your acocunt using Apple Pay, use the "Prepay by Credit Card" feature
+on the `Accounting page <dashboardaccount_>`_. If you're using an iOS or macOS
+device, stripe will offer Apple Pay in addition to a standard credit card.
+
+Google Pay
+==========
+
+.. image:: _static/images/google_pay.svg
+  :align: right
+  :width: 100 px
+
+To top-up your acocunt using Google Pay, use the "Prepay by Credit Card" feature
+on the `Accounting page <dashboardaccount_>`_. On stripe's page, select GPay.
+
 Cash
 ====
 
