@@ -1,3 +1,7 @@
+[build]
+  publish = "build/dirhtml"
+  command = "make dirhtml"
+
 [[redirects]]
   # Redirect domain aliases to primary domain
   from = "https://manual-72.uberspace.de/*"
