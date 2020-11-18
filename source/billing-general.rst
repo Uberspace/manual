@@ -142,6 +142,7 @@ Apple Pay
 =========
 
 .. image:: _static/images/apple_pay.svg
+  :alt: Apple Pay logo
   :align: right
   :width: 100 px
 
@@ -153,6 +154,7 @@ Google Pay
 ==========
 
 .. image:: _static/images/google_pay.svg
+  :alt: Google Pay logo
   :align: right
   :width: 100 px
 
