@@ -127,6 +127,7 @@ For more information see the :doc:`full changelog <changelog>`.
    :caption: Billing
 
    General <billing-general>
+   Bookkeeping <billing-bookkeeping>
 
 .. toctree::
    :hidden:
