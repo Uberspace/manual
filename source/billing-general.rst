@@ -192,7 +192,7 @@ out another email and flag your account for deactivation. If we don't hear from
 you for two weeks after that, we deactivate your account. Finally, if your
 account has been for multiple months without payment, we delete the stored data.
 
-We will not come after your for the missing money, but would highly appriciate
+We will not come after your for the missing money, but would highly appreciate
 it, if you restored your account to a positive or 0€ balance.
 
 Borrowing money
