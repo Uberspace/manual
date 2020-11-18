@@ -122,7 +122,6 @@ For more information see the :doc:`full changelog <changelog>`.
 
 .. toctree::
    :hidden:
-   :titlesonly:
    :maxdepth: 1
    :caption: Billing
 
