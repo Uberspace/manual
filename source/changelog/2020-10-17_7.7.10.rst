@@ -1,0 +1,31 @@
+Added
+-----
+
+* `mg <http://homepage.boetes.org/software/mg/>`_: a tiny Emacs-like editor
+* ``numactl`` command to please MongoDB
+* modern TLS settings for POP3/IMAP/SMTP-SUBMIT (reverted because they block
+  connections from thunderbird)
+* ``opus``, ``opus-tools``, and ``opus-devel``
+* many fonts to support non-western scripts
+
+Fixed
+-----
+
+* MariaDB backups now includestored routines
+* ``table_definition_cache`` is now ``20000`` to meet friendica's requirements
+* The SMTP connection limit introduced in v7.7.7 now actually works.
+* ``$user.uber.space`` is now correctly displayed in ``uberspace mail domain list``
+* ``uberspace * domain list`` output is now sorted
+
+Internal
+--------
+
+* Log rotation is now randomized to happen between 4 and 5 am. The time is
+  constant for each host, so they are always rotated at the same time for a
+  given host. This reduces the IO load on our storage and therefore improves
+  performance and reliabilty at night.
+* Prometheus' node_exporter can now be monitored by our icinga2 setup, leading
+  to more complete graphs for us and better performance for you.
+* Sometimes our internal CI amassed a lot of temporary DNS records, which
+  exceeded the quota of our DNS provider, griding our CI and development to a
+  halt. The records are now purged reguarly.
