@@ -26,6 +26,8 @@ In order to avoid hitting this limit, you can check your current storage usage u
 * ``limit`` column shows the *hard* limit of 11 GB.
 * ``grace`` column shows you how much time you have left to fix if you are over the soft limit.
 
+.. note:: You can upgrade your storage if 10GB are not sufficient, find more informations :ref:`here <billing>`.
+
 .. _ram:
 
 RAM
