@@ -10,3 +10,4 @@
       xn--berspace-55a.de
    
 
+   If locale inside your uberspace shell is not set correctly, this command can fail with a "could not convert" error message. To fix this, either configure your local terminal to use an UTF-8 locale or call ``idn`` like so: ``LANG=en_US.utf8 idn ...``.
