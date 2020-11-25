@@ -34,7 +34,7 @@ for a spin, install your app, and ask us questions.
   31.03., even though that’s more than one month.
 
 Towards the end of the trial period, we'll inform you via email. If you're
-statisfied, go ahead and charge up your account to keep it. If you are not,
+satisfied, go ahead and charge up your account to keep it. If you are not,
 just don't do anything and we'll delete it for you. No questions asked.
 
 Price
