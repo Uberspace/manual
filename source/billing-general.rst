@@ -161,6 +161,12 @@ Google Pay
 To top-up your acocunt using Google Pay, use the "Prepay by Credit Card" feature
 on the `Accounting page <dashboardaccount_>`_. On stripe's page, select GPay.
 
+.. warning::
+
+  For reasons unknown the GPay button does not always appear within the stripe
+  interface. For best results ensure that you are logged into your Google
+  account. If possible, use a Google browser or Android device.
+
 Cash
 ====
 
