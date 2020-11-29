@@ -98,6 +98,8 @@ To change your standard editor, set it in the ``VISUAL`` variable. So to use ``n
 
  export VISUAL='nano'
 
+Afterwards log out of your uberspace and log back in again.
+
 To remove a cronjob, delete the line. If you want to only temporarily disable a cronjob, put a ``#`` at the beginning of the line. You can also use the ``#`` to add comments to the file.
 
 After you've saved the temporary file and exited the editor, the changes will be applied.
