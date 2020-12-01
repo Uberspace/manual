@@ -1,0 +1,25 @@
+Added
+-----
+
+* Support for managed Sieve
+* Mails from spam folder are now auto-expunged after 30 days.
+* Add special RFC 6154 folders to Dovecot config, so mail clients detect trash,
+  spam, and other default folders automatically.
+
+Changed
+-------
+
+* We now keep logs for incoming mails for 10 days instead of one day to aid
+  debugging of missing mails in support.
+* System logs are now kept for one to two days, instead of just one.
+
+Internal
+--------
+
+* MySQL backups are now monitored, alerting us when the process stops working.
+* Optimized log output of our scripts, so we can keep the useful logs for
+  longer.
+* Instead of reloading nginx after log rotation, we now call ``nginx -s reopen``
+  to reduce load spikes and thus increase reliability.
+* We now run fstrim regularly to free unused storage in our ceph cluster. This
+  enables us to use it more efficiently.
