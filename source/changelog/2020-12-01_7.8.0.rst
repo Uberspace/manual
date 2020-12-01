@@ -12,6 +12,10 @@ Changed
 * We now keep logs for incoming mails for 10 days instead of one day to aid
   debugging of missing mails in support.
 * System logs are now kept for one to two days, instead of just one.
+* The default values of ``max_execution_time`` and ``max_input_time`` are now
+  90 seconds and 60 seconds respectively, to free up stuck php-fpm workers more
+  quickly. Higher values can be set using a config file in ``~/etc/php.d``. CLI
+  invocations like cronjobs are not affected.
 
 Internal
 --------
