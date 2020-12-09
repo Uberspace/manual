@@ -13,7 +13,7 @@ Files
 
 We keep daily backups of the last seven days, and weekly backups going back seven weeks.
 
-.. note:: You can exclude files or directories by including the string ``no_backup`` in the path.
+.. note:: You can exclude files or directories by giving them the name ``no_backup``.
 
 Restoring from the backup
 -------------------------
