@@ -7,7 +7,7 @@ forwarding mails
 configure forwarding
 ====================
 
-You can use forwardings in the form of ``$MAILBOX@$USER.uber.space``. If you have :ref:`set up additional domains <mail-domains>`, ``$MAILBOX@$DOMAIN`` will also work.
+You can set up forwardings for addresses that will look like ``$MAILBOX@$USER.uber.space``. If you have :ref:`set up additional domains <mail-domains>`, ``$MAILBOX@$DOMAIN`` will also work.
 
 .. warning::
     We do not forward mails with a :doc:`spam score >= 10 <mail-spam>`. This is crucial due to policy reasons at nearly any mail provider and makes sure the reputation of our servers stays fine.
@@ -15,7 +15,7 @@ You can use forwardings in the form of ``$MAILBOX@$USER.uber.space``. If you hav
 Add forwards for a mailbox
 --------------------------
 
-You can configure forwardings with the ``uberspace mail user forward set <mailbox> <mail address>`` command. You cannot configure forwardings for an existing mailbox that does not already use forwardings.
+You can configure forwardings with the ``uberspace mail user forward set <mailbox> <mail address>`` command. You cannot create a forwarding for an already existing mailbox.
 
 To forward all mails from ``forwardme`` to ``mail@allcolorsarebeautiful.example`` run the following command:
 
