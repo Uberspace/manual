@@ -16,12 +16,12 @@ Every Uberspace account gets its own mailbox in the form of ``$USER@$SERVER.uber
 Mailboxes
 =========
 
-You can use mailboxes in the form of ``$MAILBOX@$USER.uber.space``. If you have :ref:`set up additional domains <mail-domains>`, ``$MAILBOX@$DOMAIN`` will also work.
+The e-mail address of your mailboxes is in the form of ``$MAILBOX@$USER.uber.space``. If you have :ref:`set up additional domains <mail-domains>`, ``$MAILBOX@$DOMAIN`` will also work.
 
 Setup a new mailbox
 -------------------
 
-To add a new mailbox to your Uberspace, run the ``uberspace mail user add`` command and enter your password when prompted. So to add the mailbox ``post``, run this command:
+To add a new mailbox to your Uberspace, run the ``uberspace mail user add <mailbox>`` command and enter your password when prompted. So to add the mailbox ``post``, run this command:
 
 .. code-block:: bash
 
@@ -70,7 +70,7 @@ You can list your existing mailboxes using the ``uberspace mail user list`` comm
 Changing passwords
 ------------------
 
-To change a mailbox's password, run the ``uberspace mail user password`` command, so in order to change the password for the mailbox ``post``, run this command:
+To change a mailbox's password, run the ``uberspace mail user password <mailbox>`` command, so in order to change the password for the mailbox ``post``, run this command:
 
 .. code-block:: bash
 
@@ -82,7 +82,7 @@ To change a mailbox's password, run the ``uberspace mail user password`` command
 Delete a mailbox
 ----------------
 
-You can delete a mailbox using the ``uberspace mail user del`` command. To delete the mailbox ``post``, run the following command:
+You can delete a mailbox using the ``uberspace mail user del <mailbox>`` command. To delete the mailbox ``post``, run the following command:
 
 .. code-block:: bash
 
