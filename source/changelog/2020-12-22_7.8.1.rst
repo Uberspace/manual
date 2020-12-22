@@ -19,7 +19,7 @@ Changed
 * Deprecated **PHP** ``7.2``. It will be removed early next year.
 
 * We added a connection timeout on port 587 (hard capped at two hours, or one
-  hour for idle connections). Our SMTP submit queue suffered from ligering
+  hour for idle connections). Our SMTP submit queue suffered from lingering
   connections, we hope this helps to mitigate it.
 
 * The output of ``uberspace mail domain add`` now ends domain names with a dot
