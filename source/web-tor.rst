@@ -57,7 +57,7 @@ to keep in mind:
 2. We hold the private key to our onion address and could thus theoretically alter
    or drop any content or requests. We will of course not do so; with a notable
    exception being abuse handling. While this is rather obvious, we still wanted
-   to point it our here.
+   to point it out here.
 3. Our hidden service currently only supports HTTP (without the S). Since the
    traffic never leaves the Tor network, this isn't much of a problem. We'd like
    to provide HTTPS anyway, since it would provide additional authentication, but we
