@@ -1,0 +1,43 @@
+Added
+-----
+
+* Support for `R <https://www.r-project.org/about.html>`_ and
+  `CRAN packages <https://cran.r-project.org/>`_.
+
+
+Changed
+-------
+
+* Increased the **Rspamd** reject score to ``15`` (up from ``10``).
+
+* Reduced the **Rspamd** score for ``INVALID_RCPT_8BIT`` to ``3`` (down from
+  ``6``).
+
+* We limit the *Spam Assassin* rules we use with **Rspamd** to
+  `ZMI <https://sa.zmi.at/>`_.
+
+* Deprecated **PHP** ``7.2``. It will be removed early next year.
+
+* We added a connection timeout on port 587 (hard capped at two hours, or one
+  hour for idle connections). Our SMTP submit queue suffered from ligering
+  connections, we hope this helps to mitigate it.
+
+* The output of ``uberspace mail domain add`` now ends domain names with a dot
+  (``.``). We hope this helps avoiding situations, where it could otherwise be
+  interpreted as *relative to an origin* (this mostly effects c/p to *bind*
+  configurations, but also some web based GUIs).
+
+Internal
+--------
+
+* We migrated a lot of hosts to SSD storage.
+
+* *fstrim* now runs about weekly on the hosts. Concrete times are distributed
+  randomly, to minimize the impact on the cluster.
+
+* While creating SQL backup dumps, we now log and monitor *MariaDB* errors.
+
+* We moved the *Rspamd* logs out of the journal (for now). This allows us to
+  have a longer retention policy for those, while still keeping them pretty
+  verbose. We will fine tune our Spam filtering over the next releases, so this
+  might come in handy.
