@@ -5,10 +5,10 @@ Billing
 #######
 
 Servers don't come cheap! While we'd love to give uberspaces away like free
-candy, providing one incures costs that need to be covered. We try our best to
+candy, providing one incurs costs that need to be covered. We try our best to
 make the platform accessible to anyone, regardless of their financial means.
 
-Your **first month is always free** and without any committment. Afterwards you
+Your **first month is always free** and without any commitment. Afterwards you
 can choose, if you'd like to keep your space.
 
 Uberspace is a **prepaid product** with a **monthly fee**. This means you
@@ -46,7 +46,7 @@ On uberspace you can choose a price that fits your budget:
   hardware and people cost, but does not enable us to invest a lot of money into
   future development.
 * **Standard (10€)**: The price range where you're getting a similar amount of
-  computing ressources other hosting companies. With this price you're helping
+  computing resources other hosting companies. With this price you're helping
   us to develop new features more quickly and to invest more time into good and
   qualified support people.
 * **Solidary (15€)**: Thank you! Paying 15 € per month supports our idea that
@@ -78,12 +78,12 @@ Payment Methods
 ---------------
 
 We currently offer **three types of payment**. In any case, money is stored in
-your virtual account. As you go, we substract your choosen price from the
+your virtual account. As you go, we subtract your chosen price from the
 balance.
 
 .. note::
 
-  Please consider transfering more than a month's worth of funds when you top-up
+  Please consider transferring more than a month's worth of funds when you top-up
   your account. The different fees we have to pay for your payment make small
   payments ridiculously more expensive for us. Meaning less of your money will
   actually reach us. If you are able to, **please transfer more than 10€**. You
@@ -111,14 +111,14 @@ respective amounts (e.g. ``uberspace isa 10 bella 20`` for a 30€ transfer).
 .. note::
 
   We never charge your bank account. All payments on your statement were
-  initated by you. If you notice payments that should not be there, check your
-  *bank* accout for a standing order (“Dauerauftrag”) and cancel it. feel free
+  initiated by you. If you notice payments that should not be there, check your
+  *bank* account for a standing order (“Dauerauftrag”) and cancel it. feel free
   to use our refund option afterwards.
 
 .. tip::
 
   If your transfer does not show within 3 business days, don't panic! In some
-  cases the reference gets mangled in transfer. Have a look at the the
+  cases the reference gets mangled in transfer. Have a look at the
   `open transfers page <dashboardopentransfers_>`_ to manually assign the
   transfer to your account. If you are not able to locate your transfer in the
   list, `contact us <support_>`_.
@@ -146,7 +146,7 @@ Apple Pay
   :align: right
   :width: 100 px
 
-To top-up your acocunt using Apple Pay, use the "Prepay by Credit Card" feature
+To top-up your account using Apple Pay, use the "Prepay by Credit Card" feature
 on the `Accounting page <dashboardaccount_>`_. If you're using an iOS or macOS
 device, stripe will offer Apple Pay in addition to a standard credit card.
 
@@ -158,7 +158,7 @@ Google Pay
   :align: right
   :width: 100 px
 
-To top-up your acocunt using Google Pay, use the "Prepay by Credit Card" feature
+To top-up your account using Google Pay, use the "Prepay by Credit Card" feature
 on the `Accounting page <dashboardaccount_>`_. On stripe's page, select GPay.
 
 .. warning::
@@ -200,7 +200,7 @@ out another email and flag your account for deactivation. If we don't hear from
 you for two weeks after that, we deactivate your account. Finally, if your
 account has been for multiple months without payment, we delete the stored data.
 
-We will not come after your for the missing money, but would highly appreciate
+We will not come after you for the missing money, but would highly appreciate
 it, if you restored your account to a positive or 0€ balance.
 
 Borrowing money
@@ -208,13 +208,13 @@ Borrowing money
 
 Once your account has been deactivated, you can reactivate it by borrowing money
 in the `web interface <dashboard_>`_. Please return the money after you
-transfered additional funds. We do not automatically deduct it from your
-balance. Also, note that cannot borrow additional money, if you already owe us.
+transferred additional funds. We do not automatically deduct it from your
+balance. Also, note that you cannot borrow additional money, if you already owe us.
 
 Cancelation
 -----------
 
-If you'd like to delete your account permanently, navgiate to the `delete page <dashboarddelete_>`_
+If you'd like to delete your account permanently, navigate to the `delete page <dashboarddelete_>`_
 in the web interface. Please contact us before deleting your account. Most of
 the time, we're able to accommodate you by installing additional software or
 delaying an open payment.
