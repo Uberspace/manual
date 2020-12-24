@@ -4,7 +4,7 @@
 HTTPS
 #####
 
-Every Uberspace comes with enforced HTTPS its own certificate. Your
+Every Uberspace comes with its own enforced HTTPS certificate. Your
 :ref:`external domains <web-domains>` as well as the ``.uber.space`` default
 domains, are automatically provided with a free certificate from
 `Let's Encrypt <https://letsencrypt.org>`_. In combination with our default
