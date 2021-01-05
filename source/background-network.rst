@@ -185,7 +185,7 @@ own, private IP address, like ``100.64.9.2``. They are the only way to contact
 services running within a uberspace. While these IP adresses are stable, we
 don't think that they're particularly pretty or easy to remember. Most of the
 internet uses hostnames to remember IP adresses, so do we: each uberspace also
-comes with a (locally reachable only) hostname: ``$USERNAME.local.uberspace.de``.
+comes with a (locally reachable only) hostname: ``$USER.local.uberspace.de``.
 This hostname isn't used by us in any way, but can be utilized to write
 ``.htaccess`` proxies, in case web backends do not suffice.
 
