@@ -27,7 +27,7 @@ The Rust project uses a concept called ‘`release channels <https://doc.rust-la
 Crates
 ======
 
-Packaged Rust projects are called **crates**. The `crates.io <https://crates.io/>`_ website serves as an official reposirory for them. You can install binaries from there with the `cargo install`_ command:
+Packaged Rust projects are called **crates**. The `crates.io <https://crates.io/>`_ website serves as an official repository for them. You can install binaries from there with the `cargo install`_ command:
 
 .. code-block:: console
 
