@@ -81,6 +81,7 @@ For more information see the :doc:`full changelog <changelog>`.
    CouchDB <database-couchdb>
    redis <database-redis>
    InfluxDB <database-influxdb>
+   SQLite <database-sqlite>
 
 .. toctree::
    :hidden:
