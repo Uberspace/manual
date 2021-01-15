@@ -77,6 +77,7 @@ For more information see the :doc:`full changelog <changelog>`.
 
    MySQL <database-mysql>
    PostgreSQL <database-postgresql>
+   MongoDB <database-mongodb>
 
 .. toctree::
    :hidden:
