@@ -79,6 +79,7 @@ For more information see the :doc:`full changelog <changelog>`.
    PostgreSQL <database-postgresql>
    MongoDB <database-mongodb>
    CouchDB <database-couchdb>
+   redis <database-redis>
 
 .. toctree::
    :hidden:
