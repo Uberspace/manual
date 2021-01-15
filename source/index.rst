@@ -80,6 +80,7 @@ For more information see the :doc:`full changelog <changelog>`.
    MongoDB <database-mongodb>
    CouchDB <database-couchdb>
    redis <database-redis>
+   InfluxDB <database-influxdb>
 
 .. toctree::
    :hidden:
