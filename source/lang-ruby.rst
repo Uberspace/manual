@@ -41,7 +41,7 @@ Use ``uberspace tools version list ruby`` to show all selectable versions:
   - 2.7
   [eliza@dolittle ~]$ 
 
-.. _node-change-version:
+.. _ruby-change-version:
 
 Change version
 --------------
