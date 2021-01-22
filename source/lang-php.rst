@@ -37,6 +37,7 @@ Use ``uberspace tools version list php`` to show all selectable versions:
   [eliza@dolittle ~]$ uberspace tools version list php
   - 7.3
   - 7.4
+  - 8.0
   [eliza@dolittle ~]$
 
 .. _php-change-version:
@@ -81,6 +82,8 @@ We update all versions on a regular basis. Once the `security support <http://ph
 | 7.3    | Active support      | 6 Dec 2021             |
 +--------+---------------------+------------------------+
 | 7.4    | Active support      | 28 Nov 2022            |
++--------+---------------------+------------------------+
+| 8.0    | Active support      | 26 Nov 2023            |
 +--------+---------------------+------------------------+
 
 ----
