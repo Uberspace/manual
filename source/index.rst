@@ -103,7 +103,6 @@ For more information see the :doc:`full changelog <changelog>`.
 
    supervisord <daemons-supervisord>
    Cron jobs <daemons-cron>
-   runwhen <daemons-runwhen>
 
 .. toctree::
    :hidden:
