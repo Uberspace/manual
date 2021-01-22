@@ -24,9 +24,9 @@ In order to use your own backend, you first need to set it up using the ``ubersp
   Manage backends in web server configuration.
   
   Possible commands:
-    del — Delete web backed for a given domain and path.
-    list — List all configured web backeds.
-    set — Set web backed for a given domain and path.
+    del — Delete web backend for a given domain and path.
+    list — List all configured web backends.
+    set — Set web backend for a given domain and path.
 
     [isabell@philae ~]$ 
 
