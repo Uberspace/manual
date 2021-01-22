@@ -1,0 +1,43 @@
+Added
+-----
+
+* PHP 8.0
+* InfluxDB and ``telegraf``
+* PostgreSQL
+* CouchDB
+* MongoDB
+* .NET 5.0
+* ``gobject-introspection-devel``, ``pango-devel``, ``ripgrep``, ``bat``,
+  ``asciidoc``, ``ledger``
+
+Changed
+-------
+
+* legacy URLs like ``adminer.``, ``pma.``, and ``webmail.host.uberspace.de``
+  redirect to their global counterparts (e.g. https://webmail.uberspace.de)
+* removed PHP 7.2
+* removed .NET 2.0 and 2.2
+* httpd is now allowed to read files with ``user_home_t`` SELinux labels. This
+  fixes usability issues because of files removed from home. It also enables
+  CGI scripts to access libraries installied in ``$HOME/.local`` and similar.
+  There is still no official support for CGI, though.
+
+Fixed
+-----
+
+* tmux sessions no longer break after some time. We mistakenly removed them from
+  ``/tmp`` automatically and now leave them be.
+* MySQL backups sometimes (1 or 3 databases in total on _all_ hosts) fail, so we
+  now retry them once. This increases the reliability of the provided backups
+  and silences our monitoring.
+* Sieve configuration files no longer show up as folders in mail clients.
+
+Internal
+--------
+
+* We migrated additional hosts to SSD storage.
+* Add a test for redis.
+* Add monitoring check for failed user services. This way we will notice, if
+  your supervisord or php-fpm fail.
+* Add monitoring check for individual MySQL backups. Monitoring for the backup
+  process as a whole was already present.
