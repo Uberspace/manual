@@ -39,6 +39,7 @@ Use ``uberspace tools version list ruby`` to show all selectable versions:
   - 2.5
   - 2.6
   - 2.7
+  - 3.0
   [eliza@dolittle ~]$ 
 
 .. _ruby-change-version:
@@ -81,6 +82,8 @@ We update all versions on a regular basis. Once the `support <https://www.ruby-l
 +--------+----------------------+------------------+ 
 | 2.7    | normal maintenance   | To be determined | 
 +--------+----------------------+------------------+ 
+| 3.0    | normal maintenance   | To be determined |
++--------+----------------------+------------------+
 
 ----
 
