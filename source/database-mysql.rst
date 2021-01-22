@@ -207,7 +207,7 @@ However, if you want to connect somehow "directly" from a remote host, you can d
 .. _mysql-ssh-tunnel-using-linux:
 
 Using Linux, macOS, any other Unix, or Windows 10
-------------------------------------
+-------------------------------------------------
 
 On Linux, macOS and practically every other Unix operating system, as well as Windows 10 since the September 2017 “Fall Creators Update” version, `OpenSSH <https://www.openssh.com/>`_
 comes preinstalled so you can use it out of the box.
@@ -224,7 +224,7 @@ In fact, it's OpenSSH listening on port 3306 of your local host, tunneling the c
 
 
 Using older versions of Windows
--------------
+-------------------------------
 
 Older version of Windows do not include a SSH client by default, but there are plenty of options,
 `PuTTY <http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html>`_ probably being the choice of most Windows users.

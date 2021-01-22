@@ -14,10 +14,10 @@ please refer to the :ref:`Changelog Archive <changelogarchive>`.
 
 ----
 
-.. _v{{ entry.version }}:
+.. _v{{ entry.version }}_short:
 
-[{{ entry.version }}] - {{ entry.date }}
-*******
+{{ entry.title }}
+{% for n in range(entry.title|length) %}*{% endfor %}
 
 {{ entry.text }}
 {% endfor %}

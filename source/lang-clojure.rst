@@ -5,9 +5,9 @@
   .. image:: _static/images/logo_clojure.png
       :align: center
 
-####
+#######
 Clojure
-####
+#######
 
 Introduction
 ============

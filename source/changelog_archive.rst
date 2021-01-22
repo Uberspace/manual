@@ -15,8 +15,8 @@ This document contains all changes made to Uberspace 7.
 
 .. _v{{ entry.version }}:
 
-[{{ entry.version }}] - {{ entry.date }}
-*******
+{{ entry.title }}
+{% for n in range(entry.title|length) %}*{% endfor %}
 
 {{ entry.text }}
 {% endfor %}

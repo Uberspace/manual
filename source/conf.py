@@ -68,7 +68,9 @@ language = None
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
-exclude_patterns = []
+exclude_patterns = [
+    'changelog/*',
+]
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
@@ -106,6 +108,7 @@ def _read_changelog_files():
             'date': date,
             'version': version,
             'text': open(path).read(),
+            'title': "[" + version + "] - " + date,
         })
 
     entries.sort(key=lambda e: e['date'], reverse=True)
@@ -151,7 +154,6 @@ release = changelog_entries[0]['version']
 html_static_path = ['_static']
 html_extra_path = [
     'changelog_feeds',
-    '_redirects',
 ]
 
 # Custom sidebar templates, must be a dictionary that maps document names
