@@ -6,6 +6,8 @@ CouchDB
 
 CouchDB is a document-oriented database system. We provide binaries ready to start your own instance.
 
+.. include:: includes/beta-feature.txt
+
 Versions
 ========
 
