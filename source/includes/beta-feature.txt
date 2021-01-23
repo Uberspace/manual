@@ -1,0 +1,4 @@
+.. warning::
+
+  This feature is quite new and still in beta. If something doesn't work the
+  first time you try it, please allow for some additional time for us to fix it.

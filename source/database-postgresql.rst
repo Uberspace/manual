@@ -8,6 +8,8 @@ PostgreSQL (or Postgres) is an open-source relational database. We provide binar
 
 Refer to the `UberLab guide <https://lab.uberspace.de/en/guide_postgresql.html>`_ for details.
 
+.. include:: includes/beta-feature.txt
+
 Versions
 ========
 
