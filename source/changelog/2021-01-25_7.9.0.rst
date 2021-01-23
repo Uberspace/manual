@@ -2,6 +2,7 @@ Added
 -----
 
 * PHP 8.0
+* Ruby 3.0
 * InfluxDB and ``telegraf``
 * PostgreSQL
 * CouchDB
