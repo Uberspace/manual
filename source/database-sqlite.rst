@@ -4,7 +4,7 @@
 SQLite
 ######
 
-SQLite is an open-source, file based relational database.
+SQLite is an open-source, file based relational database. We provide binaries, so you can use it without installing anything.
 
 Versions
 ========
