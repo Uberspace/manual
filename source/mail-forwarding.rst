@@ -54,3 +54,6 @@ spam filtering
 ==============
 
 With enabled :doc:`spam filtering <mail-spam>` we do not forward mails with a spam score greater than 5. These mails get sorted into ``~/users/$MAILBOX/.Spam``.
+
+.. warning::
+    In the past on the outdated product version Uberspace 6 we encouraged users to manipulate ``.qmail`` files for forwarding and controlling the email flow. This is technically still possible on U7 but will strongly interfere with our standard email setup that should be configured by using the ``uberspace mail`` commands. Because of this, we no longer provide support for problems originating from customly changed ``.qmail`` files. Please also be aware, that our setup might change in the future and break your now working custom configurations.
