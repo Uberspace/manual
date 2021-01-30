@@ -36,8 +36,9 @@ We update all `supported versions <https://dotnet.microsoft.com/platform/support
 ======  ===========  ===============
 Branch  State        Supported Until
 ======  ===========  ===============
-3.1     current LTS  2022-12-03
-2.1     old LTS      2021-08-21
+5.0     current      2022-02
+3.1     LTS          2022-12-03
+2.1     LTS          2021-08-21
 ======  ===========  ===============
 
 
