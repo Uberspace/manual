@@ -73,7 +73,7 @@ Miscellaneous
 
 
 New features
-=============
+============
 
 - You can :ref:`upgrade your storage <billing>` and use more storage space than the default 10GB.
 
@@ -84,3 +84,11 @@ New features
 - Managing your uberspace on the command line is now done via our pretty uberspace commands like ``uberspace web domain add example.com``.
 
 - And last but not least, this `Manual <https://manual.uberspace.de>`_ is the documentation for all your Uberspace features and management. We keep it straight and clear and you can always contribute to it on `Github <https://github.com/uberspace/manual>`_. Issues and Pull Requests are very welcome.
+
+
+Unfinished Features
+===================
+
+- On U6 the Spamfilter could be trained specifically for your Uberspace, we are trying to make this feature working again on U7, but at this time the spam filters are only trained per host.
+
+- Because we are working on new monitoring and notification frameworks, there is currently no auto notification mail for a full quota like there had been on U6.
