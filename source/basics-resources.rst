@@ -9,9 +9,7 @@ System Resources
 Storage
 =======
 
-.. note:: You can upgrade your storage, if 10GB are not sufficient. Check the :ref:`billing <billing>` article for more information.
-
-Every Uberspace is provided with 10 GB of storage. While this may sound like a lot for some people, for others, it's not enough. Over-usage of up to 10% (=1 GB) is permitted for up to seven days. If you try to use even more than these combined 11 GB or if you don't free up enough storage within seven days, we will block all write access for your account. This means you won't be able to add any more data, including incoming e-mails or database storage.
+Every Uberspace is provided with 10 GB of storage by default, you can :ref:`upgrade your storage <billing>` up to 50GB. Over-usage of up to 10% is permitted for up to seven days. If you try to use even more than these 110% of your booked storage or if you don't free up enough storage within seven days, we will block all write access for your account. This means you won't be able to add any more data, including incoming e-mails or database storage.
 
 In order to avoid hitting this limit, you can check your current storage usage using the ``quota`` command:
 
@@ -27,6 +25,8 @@ In order to avoid hitting this limit, you can check your current storage usage u
 * ``quota`` shows the 10 GB *soft* limit.
 * ``limit`` column shows the *hard* limit of 11 GB.
 * ``grace`` column shows you how much time you have left to fix if you are over the soft limit.
+
+.. note:: To find files and folders which use a lot of storage, you can use the command ``ncdu`` when logged in to your uberspace.
 
 .. _ram:
 
