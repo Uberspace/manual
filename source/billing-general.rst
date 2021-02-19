@@ -69,11 +69,6 @@ Each uberspace comes with **10GB of storage** out of the box. If you need to sto
 more data than that, head over to the `Accounting page <dashboardaccount_>`_ to
 add more storage to your space. Each increment of 10GB is 3.00€.
 
-.. note::
-
-  Our storage feature is quite new! Therefore we can currently only offer up to
-  20 GB for each account. In the near future, we'll expand this to 100 GB.
-
 Payment Methods
 ---------------
 
