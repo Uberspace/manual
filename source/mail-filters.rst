@@ -13,7 +13,7 @@ Manage Sieve Scripts
 
 Many E-Mail clients support the ManageSieve protocoll. You can find a list of tools and plugins at `sieve.info <http://sieve.info/clients>`_. We plan to implement ManageSieve in our webmailer soon.
 
-.. tip:: We recommend the `https://github.com/thsmi/sieve <Sieve Script Editor>`_ which has a GUI to drag and drop the rules and is availible for many platforms.
+.. tip:: We recommend the `Sieve Script Editor <https://github.com/thsmi/sieve>`_ which has a GUI to drag and drop the rules and is availible for many platforms.
 
 ManageSieve
 ===========
