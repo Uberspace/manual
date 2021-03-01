@@ -69,6 +69,7 @@ For more information see the :doc:`full changelog <changelog>`.
    mailboxes <mail-mailboxes>
    forwarding <mail-forwarding>
    spam filter <mail-spam>
+   filters & rules <mail-filters>
 
 .. toctree::
    :hidden:
