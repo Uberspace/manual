@@ -1,0 +1,51 @@
+Added
+-----
+
+* updated Java 15
+* updated Dovecot to 2.3
+* each users CPU usage is now limited to 6 cores, improving stability.
+* ``pecl-mailparse``
+* HEIC support for ImageMagick 6, and by extension PHP
+
+Changed
+-------
+
+* recommended SPF record is now ``include:spf.uberspace.de`` so we can reoute
+  mails more easily. The corrent records prevents us from relaying mails through
+  another server temporarily.
+* to be consistent with our advice to use ``.uber.space`` domains for mail,
+  ``user.host.uberspace.de`` is now no longer part of ``mail domain list``.
+* ``uberspace mail domain add`` now explains that the trailing dot in MX records
+  is correct, but not necessary or possible to enter in many DNS interfaces.
+* rspamd's ``FORGED_RECIPIENTS`` test now adds fewer points to the spam score
+  to counter many reported false-positive.
+
+Fixed
+-----
+
+* RAM limits for users were not applying consistently, leading to outages in the
+  recent past. We now apply the limits ourselves instead of relying on systemd,
+  increasing stability in the future.
+* Sometimes systemd failed the reload nginx, leading to new domains not being
+  available. We now use the nginx tooling directly instead of relying on
+  systemd's ``$MAINPID`` variable, hopefully fixing this.
+* MySQLs temporary files are now written to SSDs on all hosts, increasing
+  performance for big queries that don't fit into RAM.
+
+Internal
+--------
+
+* there is a dummy ``uberspace-letsencrypt-renew`` script, which does not thing.
+  Many U6 users leave their let's encrypt cronjob in place, even though U7 does
+  not need one. The resulting cron error mails confuse users, which increases
+  our support volume. The dummy script automates those cases.
+* we rewrote the playbook, which updates MariaDB, enabling updates to 10.4 and
+  10.5 in the future.
+* some hosts have additional SSD devices for yum, rpm and the systemd journal.
+  Since we are moving all hosts to SSDs, these are not necessary anymore. We
+  wrote a playbook to remove them in the future, making all hosts consistent
+  again.
+* we now detect and automatically ban more mining tools.
+* MySQL backups now only happen for databases, which changed since the last
+  backup. This reduces the system load at night and further increases storage
+  performance and stability.
