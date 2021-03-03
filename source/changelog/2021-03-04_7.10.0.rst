@@ -1,7 +1,7 @@
 Added
 -----
 
-* updated Java 15
+* updated Java to 15
 * updated Dovecot to 2.3
 * each users CPU usage is now limited to 6 cores, improving stability.
 * ``pecl-mailparse``
@@ -11,7 +11,7 @@ Changed
 -------
 
 * recommended SPF record is now ``include:spf.uberspace.de`` so we can reoute
-  mails more easily. The corrent records prevents us from relaying mails through
+  mails more easily. The current records prevents us from relaying mails through
   another server temporarily.
 * to be consistent with our advice to use ``.uber.space`` domains for mail,
   ``user.host.uberspace.de`` is now no longer part of ``mail domain list``.
@@ -26,7 +26,7 @@ Fixed
 * RAM limits for users were not applying consistently, leading to outages in the
   recent past. We now apply the limits ourselves instead of relying on systemd,
   increasing stability in the future.
-* Sometimes systemd failed the reload nginx, leading to new domains not being
+* Sometimes systemd failed to reload nginx, leading to new domains not being
   available. We now use the nginx tooling directly instead of relying on
   systemd's ``$MAINPID`` variable, hopefully fixing this.
 * MySQLs temporary files are now written to SSDs on all hosts, increasing
@@ -35,7 +35,7 @@ Fixed
 Internal
 --------
 
-* there is a dummy ``uberspace-letsencrypt-renew`` script, which does not thing.
+* there is a dummy ``uberspace-letsencrypt-renew`` script, which does nothing.
   Many U6 users leave their let's encrypt cronjob in place, even though U7 does
   not need one. The resulting cron error mails confuse users, which increases
   our support volume. The dummy script automates those cases.
