@@ -2,7 +2,6 @@ Added
 -----
 
 * updated Java to 15
-* updated Dovecot to 2.3
 * each users CPU usage is now limited to 6 cores, improving stability.
 * ``pecl-mailparse``
 * HEIC support for ImageMagick 6, and by extension PHP
