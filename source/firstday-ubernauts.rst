@@ -86,6 +86,22 @@ New features
 - And last but not least, this `Manual <https://manual.uberspace.de>`_ is the documentation for all your Uberspace features and management. We keep it straight and clear and you can always contribute to it on `Github <https://github.com/uberspace/manual>`_. Issues and Pull Requests are very welcome.
 
 
+Specific changes for automatically migrated hosts
+=================================================
+
+In February 2021 we started to migrate all hosts automatically to U7. This process is still ongoing, you will be informed by mail before your host is migrated. Some changes apply only for accounts on theses hosts:
+
+- Your hostname and the IPv4 address will stay the same, but the IPv6 address will change, you can find the new address in the `Dashboard <https://dashboard.uberspace.de/dashboard/datasheet>`_.
+
+- Even when hostname and IPv6 address will be kept, you might have to change the MX record for your domain if you use it like ``mail.mydomain.tld.``, on U7 you will have to set it always to the hostname like ``stardust.uberspace.de.``
+
+- If you used namespaces on U6, the ``~/.qmail-default`` will redirect all incoming mails to a new Maildir ``~/namespace-collector``. Namespaces are no longer supported on U7 and you will need to distinguish the namespaces in other ways. You will find your old ``.qmail-*`` files in the new folder ``~/old-dot-qmail``.
+
+- If you used the external Marianna DB Server on U6, you will find a dump of your data and structure in the file ``~/UBERSPACE6_marianna.sql``.
+
+- There will be a logfile ``~/UBERSPACE6_MOVE.log`` with output of your account migration process.
+
+
 Unfinished Features
 ===================
 
