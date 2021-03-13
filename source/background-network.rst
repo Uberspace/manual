@@ -195,7 +195,7 @@ Impact on users
 While this architecture shouldn't restrict you in any way (ping us at hallo@uberspace.de,
 if it does!), there a few things to watch out for:
 
-* You have your own separate ``127.0.0.1``. If you services listens on that, it
+* You have your own separate ``127.0.0.1``. If your service listens on that, it
   is only reachable within your uberspace. If you want to make use of our
   :ref:`web backends <backends>`, be sure to listen on ``0.0.0.0``.
 * When using the "classic" ``.htaccess`` method of providing your own web
@@ -210,7 +210,7 @@ does on any other machine: happy pinging!
 Acknowledgements
 ================
 
-Parts of the network namespace explaination are adapted from the article
+Parts of the network namespace explanation are adapted from the article
 `"Introducing Linux Network Namespaces" <networkns article_>`_ by Scott Lowe.
 Thank you!
 
