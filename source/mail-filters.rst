@@ -46,7 +46,7 @@ In this example we sort mails from a mailinglist into a folder, sort mails to ``
     require ["fileinto", "reject", "comparator-i;ascii-numeric","relational"];
 
     # Mails with a spam score greater than 4 are probably SPAM, sort them and stop
-    if header :value "ge" :comparator "i;ascii-numeric" "x-Spam-score" "4"
+    if header :value "ge" :comparator "i;ascii-numeric" "X-Rspamd-Score" "4"
     {
         fileinto "Spam";
         stop;
