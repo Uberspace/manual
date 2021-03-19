@@ -1,15 +1,14 @@
 .. _firstday-ubernauts:
-
 .. note::
-  Looking to move from Uberspace 6 to Uberspace 7 and dont know how to do? Please refer to the `Uberspace 6 documentation <https://wiki.uberspace.de/uberspace2uberspace>`_. It is currently only available in German. If you need any help, please do not hesitate to contact us!
+  Wir führen derzeit automatischen Migrationen der U6 Hosts nach U7 durch und informieren kurz vorher per Email darüber wenn das deinen Account betrifft. Außerdem zeigen wir auf der `Statusseite <https://is.uberspace.online>`_ die aktuellen Migrationen an.
 
-  Möchtest du von Uberspace 6 auf Uberspace 7 umziehen und weißt noch nicht wie? Wirf einen Blick in die `Uberspace 6 Dokumentation <https://wiki.uberspace.de/uberspace2uberspace>`_. Solltest du dabei Unterstützung brauchen, melde dich gerne bei uns!
+  Wir are currently in the process of migrating U6 hosts to U7 and will notify you before by email. We are publishing outages on our `status page <https://is.uberspace.online>`_ if the host ist in progress of migration.
 
 #######################################
 Your first day... for Ubernauts from U6
 #######################################
 
-Congratulations! You have just finished your move from Uberspace 6 to Uberspace 7, or you are still in the process of migration? Ok however, here you can check what changes you will encounter after migration.
+Congratulations! You are now migrated with your old U6 account to a new Uberspace 7 server. Some differences might affect your personal uberspace, see here what has changed or will change after you have been migrated.
 
 
 Web Domains
