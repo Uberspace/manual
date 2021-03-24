@@ -99,3 +99,7 @@ To finish this you might want to remove the old namespaced mailboxes:
   Mailbox for user 'namespace1-arthur' deleted.
 
 Now you have a clean and U7 compatible mail setup.
+
+.. note::
+
+ Between migration and fixing the namespaces, there might have been redirected some emails to ``~/namespace-collector``. You will have to decide by yourself how to deal with them, for example copying them to one of your mailboxes or create an new mailbox ``namespace-collector`` and move them there to check with your email client.
