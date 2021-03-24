@@ -13,7 +13,7 @@ Congratulations! You have just finished your move from Uberspace 6 to Uberspace 
 
 
 Web Domains
-===========
+-----------
 
 - On U7 you will have a new short and nice default domain, independent from your current host: **https://isabell.uber.space** (where ``isabell`` is your username).
 
@@ -29,7 +29,7 @@ Web Domains
 
 
 Mailing
-=======
+-------
 
 - According to your new default domain, you also have an adequate default email address: **isabell@uber.space** (where ``isabell`` is your username).
 
@@ -43,7 +43,7 @@ Mailing
 
 
 Logging and Debugging
-=====================
+---------------------
 
 - Logging is disabled by default and you have to :ref:`enable <web-logs>` different types of logs.
 
@@ -51,7 +51,7 @@ Logging and Debugging
 
 
 Databases
-=========
+---------
 
 - There is now a central instance for Adminer at `https://mysql.uberspace.de/adminer <https://mysql.uberspace.de/adminer>`_
 
@@ -61,7 +61,7 @@ Databases
 
 
 Miscellaneous
-=============
+-------------
 
 - If we had opened a port for your software on U6, you may not be able to get the same port again on U7. You can open random ports by your own, see :ref:`opening ports <basics-ports>`.
 
@@ -73,7 +73,7 @@ Miscellaneous
 
 
 New features
-============
+------------
 
 - You can :ref:`upgrade your storage <billing>` and use more storage space than the default 10GB.
 
@@ -87,7 +87,7 @@ New features
 
 
 Specific changes for automatically migrated hosts
-=================================================
+-------------------------------------------------
 
 In February 2021 we started to migrate all hosts automatically to U7. This process is still ongoing, you will be informed by mail before your host is migrated. Some changes apply only for accounts on theses hosts:
 
@@ -95,7 +95,7 @@ In February 2021 we started to migrate all hosts automatically to U7. This proce
 
 - Even when hostname and IPv6 address will be kept, you might have to change the MX record for your domain if you use it like ``mail.mydomain.tld.``, on U7 you will have to set it always to the hostname like ``stardust.uberspace.de.``
 
-- If you used namespaces on U6, the ``~/.qmail-default`` will redirect all incoming mails to a new Maildir ``~/namespace-collector``. Namespaces are no longer supported on U7 and you will need to distinguish the namespaces in other ways. You will find your old ``.qmail-*`` files in the new folder ``~/old-dot-qmail``.
+- If you used mail namespaces on U6 your mailboxes will no longer work, please read :ref:`here <u6-namespaces>` how to solve this.
 
 - If you used the external Marianna DB Server on U6, you will find a dump of your data and structure in the file ``~/UBERSPACE6_marianna.sql``.
 
@@ -103,7 +103,7 @@ In February 2021 we started to migrate all hosts automatically to U7. This proce
 
 
 Unfinished Features
-===================
+-------------------
 
 - On U6 the Spamfilter could be trained specifically for your Uberspace, we are trying to make this feature working again on U7, but at this time the spam filters are only trained per host.
 
