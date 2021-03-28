@@ -192,7 +192,8 @@ What happens when you stop paying
 If your account is going to run out of funds, we will notify you via email.
 Should the account still be empty by the time we try to charge it, we'll send
 out another email and flag your account for deactivation. If we don't hear from
-you for two weeks after that, we deactivate your account. Finally, if your
+you for two weeks after that, we disable your account. Your web addresses will 
+then return the message ``This account has been disabled``. Finally, if your
 account has been for multiple months without payment, we delete the stored data.
 
 We will not come after you for the missing money, but would highly appreciate
