@@ -75,6 +75,16 @@ You can find many more examples in the `Dovecot Wiki <https://wiki.dovecot.org/P
 Troubleshooting
 ===============
 
+Right now :ref:`spamfolder <mail-spam>` needs to be enabled to have  `sieve working <https://github.com/Uberspace/manual/issues/286>`_
+
+.. code-block:: console
+
+  [eliza@dolittle ~]$ uberspace mail spamfolder enable
+  The spam folder is now enabled.
+  [eliza@dolittle ~]$ uberspace mail spamfolder status
+  The spam folder is enabled.
+
+
 If something does not work check the logs at ``~/users/$MAILBOX/.dovecot.sieve.log``. `Fastmail's Sieve Tester <https://www.fastmail.com/cgi-bin/sievetest.pl>`_ tests the syntax of scripts and checks what actions a script causes to the provided email message.
 
 Background
