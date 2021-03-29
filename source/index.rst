@@ -135,5 +135,6 @@ For more information see the :doc:`full changelog <changelog>`.
    Changelog <changelog>
    Changelog Archive <changelog_archive>
    ⚛️ Uberlab <https://lab.uberspace.de/en/>
+   Policy <policy>
    Legal Notice <https://uberspace.de/imprint>
    Privacy <https://uberspace.de/privacy>
