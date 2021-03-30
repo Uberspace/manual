@@ -38,7 +38,7 @@ Mailing
 
 - Regarding spam management, DSPAM und SpamAssassin is currently not available on U7, training the spam filter with `ham` and `spam` is not possible for users yet. Check the manual page for current :ref:`spam management <mailfilters>`.
 
-- There is no longer native support for domain namespaces, each mail user will work with every connected mail domain, to avoid this you have to create separate uberspace accounts for each domain.
+- There is no longer native support for domain namespaces, each mail user will work with every connected mail domain, to avoid this you have to create separate uberspace accounts for each domain. We documented how you can resolve namespaces migrated from U6 to U7 :ref:`here <u6-namespaces>`.
 
 
 Logging and Debugging
