@@ -75,7 +75,7 @@ You can find many more examples in the `Dovecot Wiki <https://wiki.dovecot.org/P
 Troubleshooting
 ===============
 
-Right now :ref:`spamfolder <mail-spam>` needs to be enabled to have  `sieve working <https://github.com/Uberspace/manual/issues/286>`_
+The :ref:`spamfolder <mail-spam>` needs to be enabled to enable sieve support.
 
 .. code-block:: console
 
