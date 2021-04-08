@@ -90,6 +90,14 @@ If something does not work check the logs at ``~/users/$MAILBOX/.dovecot.sieve.l
 Background
 ==========
 
-Sieve scripts are stored in the file system in the corresponding mailbox ``~/users/$MAILBOX/Sieve/``. A script is enabled by creating a symlink to ``~/users/$MAILBOX/.dovecot.sieve``. 
+Sieve scripts are stored in the file system in the corresponding mailbox ``~/users/$MAILBOX/Sieve/``. To enable a script, you have to create a symlink from  ``~/users/$MAILBOX/.dovecot.sieve`` to the script file: 
+
+.. code-block:: console
+
+  [eliza@dolittle ~]$ ln -s ~/users/$MAILBOX/Sieve/test.sieve ~/users/$MAILBOX/.dovecot.sieve
+  [eliza@dolittle ~/users/anna]$ ls -la
+  [...]
+  lrwxrwxrwx.  1 eliza eliza  42  1. Apr 10:11 .dovecot.sieve -> /home/eliza/users/anna/Sieve/test.sieve
+  [...]
 
 .. tip:: When using ManageSieve scripts are compiled before they are installed, which guarantees that the uploaded script is valid. This can prevent you from inadvertently installing a broken Sieve script.
