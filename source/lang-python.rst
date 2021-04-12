@@ -23,7 +23,7 @@ Versions
 
 Release Types 
 -------------
-Each release branch of Python is fully supported for five years beginning with its initial stable release. For Python 2.7, this has been extended to ten years. We provide different point releases and apply security updates on a regular basis. Currently, these Python versions are available: 2.7, 3.4, 3.5, 3.6, 3.7, and 3.8. 
+Each release branch of Python is fully supported for five years beginning with its initial stable release. For Python 2.7, this has been extended to ten years. We provide different point releases and apply security updates on a regular basis. Currently, these Python versions are available: 2.7, 3.4, 3.5, 3.6, 3.7, 3.8 and 3.9. 
 
 Standard version
 ----------------
@@ -58,6 +58,8 @@ We update all versions on a regular basis. Once the `security support <https://d
 | 3.7    | Bug fixes           | 2023                        |
 +--------+---------------------+-----------------------------+
 | 3.8    | Bug fixes           | 2024                        |
++--------+---------------------+-----------------------------+
+| 3.9    | Bug fixes           | 2025                        |
 +--------+---------------------+-----------------------------+
 
 Connection to webserver
