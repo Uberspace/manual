@@ -254,3 +254,16 @@ If you removed or replaced security headers in the past and would like to restor
     X-Content-Type-Options: nosniff
     X-Frame-Options: SAMEORIGIN
     X-Xss-Protection: 1; mode=block
+
+Generally helpful examples
+==========================
+
+Blocking Google FLoC
+--------------------
+
+As anounced in April of 2021 Google is moving to using a new technology to track users across the web using its maret share with browsers. This is a way to undermine this effort on your site.
+
+.. code-block:: console
+
+  [isabell@philae ~]$ uberspace web header set / Permissions-Policy "interest-cohort=()"
+  Set header "Permissions-Policy: interest-cohort=()" for /
