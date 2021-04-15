@@ -4,16 +4,16 @@
 Mail filter and rules
 #####################
 
-You can filter your incoming mails with `Sieve <http://www.ietf.org/rfc/rfc3028.txt>`_. Sieve scripts can be used to automatically delete or forward messages, to send autoreplies, to sort emails into folders as they arrive, to mark messages as read or flagged or to reject messages at or after delivery. 
+You can filter your incoming mails with `Sieve <http://www.ietf.org/rfc/rfc3028.txt>`_. Sieve scripts can be used to automatically delete or forward messages, to send autoreplies, to sort emails into folders as they arrive, to mark messages as read or flagged or to reject messages at or after delivery.
 
 A Sieve script consists of a number of conditions which are applied to incoming mail; if an email matches a test, then the actions associated with that test are performed.
 
 Manage Sieve Scripts
 ####################
 
-Many E-Mail clients support the ManageSieve protocoll. You can find a list of tools and plugins at `sieve.info <http://sieve.info/clients>`_. We plan to implement a rule editor in our :ref:`webmailer <mail-access>` soon.  
+Many E-Mail clients support the ManageSieve protocoll. You can find a list of tools and plugins at `sieve.info <http://sieve.info/clients>`_. We plan to implement a rule editor in our :ref:`webmailer <mail-access>` soon.
 
-.. tip:: We recommend the `Sieve Script Editor <https://github.com/thsmi/sieve>`_ which has a GUI to drag and drop the rules and is availible for many platforms.
+.. tip:: We recommend the `Sieve Script Editor <https://github.com/thsmi/sieve>`_ which has a GUI to drag and drop the rules and is available for many platforms.
 
 ManageSieve
 ===========
@@ -33,7 +33,7 @@ You can store as many Sieve Scripts as you like but only one can be active at a 
 Scripts
 =======
 
-There's a `good Sieve reference <https://thsmi.github.io/sieve-reference/en/>`_ online which describes the components which make up a script. 
+There's a `good Sieve reference <https://thsmi.github.io/sieve-reference/en/>`_ online which describes the components which make up a script.
 
 Examples
 --------
@@ -68,7 +68,7 @@ In this example we sort mails from a mailinglist into a folder, sort mails to ``
 
     # The command "keep" is executed automatically, if no other action is taken.
 
-.. tip:: ``stop;`` tells the Sieve engine to stop here, without checking for more rules. 
+.. tip:: ``stop;`` tells the Sieve engine to stop here, without checking for more rules.
 
 You can find many more examples in the `Dovecot Wiki <https://wiki.dovecot.org/Pigeonhole/Sieve/Examples>`_.
 
@@ -90,7 +90,7 @@ If something does not work check the logs at ``~/users/$MAILBOX/.dovecot.sieve.l
 Background
 ==========
 
-Sieve scripts are stored in the file system in the corresponding mailbox ``~/users/$MAILBOX/Sieve/``. To enable a script, you have to create a symlink from  ``~/users/$MAILBOX/.dovecot.sieve`` to the script file: 
+Sieve scripts are stored in the file system in the corresponding mailbox ``~/users/$MAILBOX/sieve/``. To enable a script, you have to create a symlink from  ``~/users/$MAILBOX/.dovecot.sieve`` to the script file:
 
 .. code-block:: console
 
