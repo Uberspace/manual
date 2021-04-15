@@ -73,6 +73,11 @@ In this example we sort mails from a mailinglist into a folder, sort mails to ``
 
 You can find many more examples in the `Dovecot Wiki <https://wiki.dovecot.org/Pigeonhole/Sieve/Examples>`_.
 
+Troubleshooting
+===============
+
+If something does not work check the logs at ``~/users/$MAILBOX/.dovecot.sieve.log``. You can also use `Fastmail's Sieve Tester <https://www.fastmail.com/cgi-bin/sievetest.pl>`_ to test the syntax of scripts and checks what actions a script causes to the provided email message.
+
 
 Background
 ##########
@@ -87,9 +92,3 @@ Sieve scripts are stored in the corresponding mailbox folder ``~/users/$MAILBOX/
 Dovecot will compile a ``~/users/$MAILBOX/.dovecot.svbin`` from this script for the first mail delivered to the mailbox. It will also recompile for each new mail if the symlink or the script has been changed and the timestamp is updated. You can also trigger this by using ``sievec /path/to/script.sieve`` and check if it compiles correctly.
 
 .. tip:: When using ManageSieve the scripts are compiled and validated *before* they are uploaded and installed by symlinking. This can prevent you from inadvertently installing a broken Sieve script.
-
-
-Troubleshooting
-###############
-
-If something does not work check the logs at ``~/users/$MAILBOX/.dovecot.sieve.log``. You can also use `Fastmail's Sieve Tester <https://www.fastmail.com/cgi-bin/sievetest.pl>`_ to test the syntax of scripts and checks what actions a script causes to the provided email message.
