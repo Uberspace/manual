@@ -1,0 +1,28 @@
+Added
+-----
+​
+- *HEIC support* for *ImageMagick* v6 (already installed for v7).
+- Mod *FastCGI* for *Lighttpd*.
+- *WebP* tooling via ``libwebp-tools``.
+​
+Updated
+-------
+​
+- We now use the official RPM repo for *Dovecot*, jumping to version ``2.3.14``.
+​
+Changed
+-------
+​
+- We now use TLS v1.2 as minimum version for connections to *Dovecot*.
+- We switched the format of our web server logs from ``COMBINED`` to ``VCOMBINED`` (i.e. added ``$host`` as first field). This changes the format of ``~/logs/webserver/access_log``.
+​
+Fixed
+-----
+​
+- If ``--remove-prefix`` option for **web backends** used for a path not ending in a slash, the prefix was not removed.
+​
+Internal
+--------
+​
+- Updated *node exporter* to ``v1.1.2``.
+- We now log full HTTP client IP addresses for 24 hours for internal abuse and spam handling. Weekly and user logs still use anonymized IPs only.
