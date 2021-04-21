@@ -4,19 +4,21 @@
 Mail filter and rules
 #####################
 
-You can filter your incoming mails with `Sieve <http://www.ietf.org/rfc/rfc3028.txt>`_. Sieve scripts can be used to automatically delete or forward messages, to send autoreplies, to sort emails into folders as they arrive, to mark messages as read or flagged or to reject messages at or after delivery. 
+You can filter your incoming mails with `Sieve <http://www.ietf.org/rfc/rfc3028.txt>`_. Sieve scripts can be used to automatically delete or forward messages, to send autoreplies, to sort emails into folders as they arrive, to mark messages as read or flagged or to reject messages at or after delivery.
 
 A Sieve script consists of a number of conditions which are applied to incoming mail; if an email matches a test, then the actions associated with that test are performed.
 
-Manage Sieve Scripts
-####################
-
-Many E-Mail clients support the ManageSieve protocoll. You can find a list of tools and plugins at `sieve.info <http://sieve.info/clients>`_. We plan to implement a rule editor in our :ref:`webmailer <mail-access>` soon.  
-
-.. tip:: We recommend the `Sieve Script Editor <https://github.com/thsmi/sieve>`_ which has a GUI to drag and drop the rules and is availible for many platforms.
+.. warning:: The :ref:`spamfolder <mailfilters>` needs to be enabled to use Sieve filtering.
 
 ManageSieve
-===========
+###########
+
+Many E-Mail clients support the ManageSieve protocol to control and manage your Sieve filtering scripts. You can find a list of tools and plugins at `sieve.info <http://sieve.info/clients>`_. We plan to implement a rule editor in our :ref:`webmailer <mail-access>` soon.
+
+.. tip:: We recommend the `Sieve Script Editor <https://github.com/thsmi/sieve>`_ which has a GUI to drag and drop the rules and is available for many platforms.
+
+Access
+======
 
 +--------------------+----------------------------------------------+
 |Server              | :term:`your Hostname`                        |
@@ -28,15 +30,14 @@ ManageSieve
 |Password            | Your password for the email address          |
 +--------------------+----------------------------------------------+
 
-You can store as many Sieve Scripts as you like but only one can be active at a time.
-
 Scripts
-=======
+#######
 
-There's a `good Sieve reference <https://thsmi.github.io/sieve-reference/en/>`_ online which describes the components which make up a script. 
+You can store as many Sieve scripts as you like but only one can be active at a time. There's a `good Sieve reference <https://thsmi.github.io/sieve-reference/en/>`_ online which describes the components which make up a script.
+
 
 Examples
---------
+========
 
 
 In this example we sort mails from a mailinglist into a folder, sort mails to ``*@allcolorsarebeautiful.example`` into another folder and lower the maximum spam score to 4.
@@ -68,36 +69,26 @@ In this example we sort mails from a mailinglist into a folder, sort mails to ``
 
     # The command "keep" is executed automatically, if no other action is taken.
 
-.. tip:: ``stop;`` tells the Sieve engine to stop here, without checking for more rules. 
+.. tip:: ``stop;`` tells the Sieve engine to stop here, without checking for more rules.
 
 You can find many more examples in the `Dovecot Wiki <https://doc.dovecot.org/configuration_manual/sieve/examples/>`_.
 
 Troubleshooting
 ===============
 
-The :ref:`spamfolder <mail-spam>` needs to be enabled to enable sieve support.
+If something does not work check the logs at ``~/users/$MAILBOX/.dovecot.sieve.log``. You can also use `Fastmail's Sieve Tester <https://www.fastmail.com/cgi-bin/sievetest.pl>`_ to test the syntax of scripts and checks what actions a script causes to the provided email message.
 
-.. code-block:: console
-
-  [eliza@dolittle ~]$ uberspace mail spamfolder enable
-  The spam folder is now enabled.
-  [eliza@dolittle ~]$ uberspace mail spamfolder status
-  The spam folder is enabled.
-
-
-If something does not work check the logs at ``~/users/$MAILBOX/.dovecot.sieve.log``. `Fastmail's Sieve Tester <https://www.fastmail.com/cgi-bin/sievetest.pl>`_ tests the syntax of scripts and checks what actions a script causes to the provided email message.
 
 Background
-==========
+##########
 
-Sieve scripts are stored in the file system in the corresponding mailbox ``~/users/$MAILBOX/Sieve/``. To enable a script, you have to create a symlink from  ``~/users/$MAILBOX/.dovecot.sieve`` to the script file: 
+Sieve scripts are stored in the corresponding mailbox folder ``~/users/$MAILBOX/sieve/``. The active script is symlinked from ``~/users/$MAILBOX/.dovecot.sieve``:
 
 .. code-block:: console
 
-  [eliza@dolittle ~]$ ln -s ~/users/$MAILBOX/sieve/test.sieve ~/users/$MAILBOX/.dovecot.sieve
-  [eliza@dolittle ~/users/anna]$ ls -la
-  [...]
-  lrwxrwxrwx.  1 eliza eliza  42  1. Apr 10:11 .dovecot.sieve -> /home/eliza/users/anna/sieve/test.sieve
-  [...]
+  [eliza@dolittle ~/users/anna]$ readlink -f .dovecot.sieve
+  /home/utestxx1/users/anna/sieve/test.sieve
 
-.. tip:: When using ManageSieve scripts are compiled before they are installed, which guarantees that the uploaded script is valid. This can prevent you from inadvertently installing a broken Sieve script.
+Dovecot will compile a ``~/users/$MAILBOX/.dovecot.svbin`` from this script for the first mail delivered to the mailbox. It will also recompile for each new mail if the symlink or the script has been changed and the timestamp is updated. You can also trigger this by using ``sievec /path/to/script.sieve`` and check if it compiles correctly.
+
+.. tip:: When using ManageSieve the scripts are compiled and validated *before* they are uploaded and installed by symlinking. This can prevent you from inadvertently installing a broken Sieve script.
