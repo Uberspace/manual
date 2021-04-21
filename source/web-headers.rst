@@ -255,8 +255,8 @@ If you removed or replaced security headers in the past and would like to restor
     X-Frame-Options: SAMEORIGIN
     X-Xss-Protection: 1; mode=block
 
-Generally helpful examples
-==========================
+Examples
+========
 
 Blocking Google FLoC
 --------------------
