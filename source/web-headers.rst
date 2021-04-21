@@ -254,3 +254,16 @@ If you removed or replaced security headers in the past and would like to restor
     X-Content-Type-Options: nosniff
     X-Frame-Options: SAMEORIGIN
     X-Xss-Protection: 1; mode=block
+
+Examples
+========
+
+Disable Google's FLoC
+---------------------
+
+As anounced in April of 2021, Google is moving to use a new technology called FLoC to track users across the web. To disable FLoC for a website, you can add a ``Permissions-Policy`` header:
+
+.. code-block:: console
+
+  [isabell@philae ~]$ uberspace web header set / Permissions-Policy "interest-cohort=()"
+  Set header "Permissions-Policy: interest-cohort=()" for /
