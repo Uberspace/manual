@@ -258,10 +258,10 @@ If you removed or replaced security headers in the past and would like to restor
 Examples
 ========
 
-Blocking Google FLoC
---------------------
+Disable Google's FLoC
+---------------------
 
-As anounced in April of 2021 Google is moving to using a new technology to track users across the web using its maret share with browsers. This is a way to undermine this effort on your site.
+As anounced in April of 2021, Google is moving to use a new technology called FLoC to track users across the web. To disable FLoC for a website, you can add a ``Permissions-Policy`` header:
 
 .. code-block:: console
 
