@@ -70,7 +70,7 @@ In this example we sort mails from a mailinglist into a folder, sort mails to ``
 
 .. tip:: ``stop;`` tells the Sieve engine to stop here, without checking for more rules. 
 
-You can find many more examples in the `Dovecot Wiki <https://wiki.dovecot.org/Pigeonhole/Sieve/Examples>`_.
+You can find many more examples in the `Dovecot Wiki <https://doc.dovecot.org/configuration_manual/sieve/examples/>`_.
 
 Troubleshooting
 ===============
