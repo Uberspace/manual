@@ -8,7 +8,6 @@ InfluxDB is an open-source time series database. We provide binaries ready to st
 
 Refer to the `UberLab guide <https://lab.uberspace.de/en/guide_influxdb2.html>`_ for details.
 
-.. include:: includes/beta-feature.txt
 
 Versions
 ========

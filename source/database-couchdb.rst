@@ -8,7 +8,6 @@ CouchDB is a document-oriented database system. We provide binaries ready to sta
 
 Refer to the `UberLab guide <https://lab.uberspace.de/en/guide_couchdb.html>`_ for details.
 
-.. include:: includes/beta-feature.txt
 
 Versions
 ========
