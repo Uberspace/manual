@@ -76,11 +76,11 @@ We update all versions on a regular basis. Once the `support <https://github.com
 +--------+-------------------------+------------------+
 | Branch | State                   | Supported Until  |
 +========+=========================+==================+
-| 10     | Active LTS              | April 2021       |
+| 10     | Maintenance             | April 2021       |
 +--------+-------------------------+------------------+
-| 12     | Active LTS              | April 2022       |
+| 12     | Maintenance             | April 2022       |
 +--------+-------------------------+------------------+
-| 14     | Current                 | April 2024       |
+| 14     | Active                  | April 2024       |
 +--------+-------------------------+------------------+
 
 Connection to webserver
