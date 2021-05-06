@@ -91,15 +91,7 @@ We update all versions on a regular basis. Once the `security support <http://ph
 Connection to webserver
 =======================
 
-We use the `PHP FastCGI Process Manager (FPM) <http://de2.php.net/manual/en/install.fpm.php>`_ to connect the PHP interpreter to the webserver. Every user has its own PHP-FPM instance that is always running with the following `configuration <http://de2.php.net/manual/en/install.fpm.configuration.php>`_:
-
-.. code-block:: ini
-
-  pm = ondemand
-  pm.max_children = 50
-  pm.process_idle_timeout = 900s;
-  ; The number of requests each child process should execute before respawning.
-  pm.max_requests = 500
+We use the `PHP FastCGI Process Manager (FPM) <http://de2.php.net/manual/en/install.fpm.php>`_ to connect the PHP interpreter to the webserver. Every user has its own PHP-FPM instance. You can check the `configuration <http://de2.php.net/manual/en/install.fpm.configuration.php>`_ in ``/opt/uberspace/etc/$USER/php-fpm.conf``.
 
 How to publish
 --------------
