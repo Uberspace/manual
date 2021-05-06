@@ -53,13 +53,13 @@ You can use standard Linux commands such as ``ls``, ``cp``, ``rsync``, etc. to l
 
 .. code-block:: console
 
-  [eliza@doolittle ~]$ rsync --dry-run --verbose --recursive --links --perms --times --hard-links --acls --xattrs /backup/daily.3/var/www/virtual/eliza/html/blog/ /var/www/virtual/eliza/html/blog/
+  [eliza@doolittle ~]$ rsync --dry-run --verbose --recursive --links --perms --times --hard-links --acls --xattrs --update /backup/daily.3/var/www/virtual/eliza/html/blog/ /var/www/virtual/eliza/html/blog/
 
 If the output of your dry run looks good, you can restore the backup:
 
 .. code-block:: console
 
-  [eliza@doolittle ~]$ rsync --verbose --recursive --links --perms --times --hard-links --acls --xattrs /backup/daily.3/var/www/virtual/eliza/html/blog/ /var/www/virtual/eliza/html/blog/
+  [eliza@doolittle ~]$ rsync --verbose --recursive --links --perms --times --hard-links --acls --xattrs --update /backup/daily.3/var/www/virtual/eliza/html/blog/ /var/www/virtual/eliza/html/blog/
 
 .. note:: Because the backup is mounted as an NFS share, it has a different `SELinux` context than your target directory. To avoid permission problems, run ``restorecon -R`` on your restored data, e.g. ``restorecon -R /var/www/virtual/eliza/html/blog/``.
 
