@@ -42,6 +42,7 @@ Use ``uberspace tools version list node`` to show all selectable versions:
   - 10
   - 12
   - 14
+  - 16
   [eliza@dolittle ~]$
 
 .. _node-change-version:
@@ -81,6 +82,8 @@ We update all versions on a regular basis. Once the `support <https://github.com
 | 12     | Maintenance             | April 2022       |
 +--------+-------------------------+------------------+
 | 14     | Active                  | April 2024       |
++--------+-------------------------+------------------+
+| 16     | Current                 | April 2024       |
 +--------+-------------------------+------------------+
 
 Connection to webserver
