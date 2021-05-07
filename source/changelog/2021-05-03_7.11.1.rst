@@ -1,0 +1,31 @@
+Added
+-----
+
+- *Node.js* v16.
+- ``inotify-tools``
+
+Changed
+-------
+
+- We changed the format of the **user access log** (again) and added the port
+  after the host. Now the format should be compatible with ``VCOMBINED`` /
+  ``NCSA with VHOST`` parsers, e.g. *GoAccess*. E.g.::
+
+    isabell.uber.space:443 10.132.0.0 - - [28/Apr/2021:16:10:23 +0000]
+    "GET /hello/world.php HTTP/1.1" 200 42 "-" "HTTPie/0.9.4"
+
+- When adding **mail domains**, we priviously only accept domains, whose MX
+  record points to the FQDN of the host. Now we also accept domains whose ``MX``
+  record points to a domain, whose ``A`` record resolves to the host.
+
+Fixed
+-----
+
+- Our new **Dovecot** does not play well with *qmail* (*qmail* masks
+  ``SIGCHLD``, Dovecot does not unmasks it). Until this is fixed upstream, we
+  added a workaround.
+
+Internal
+--------
+
+- We added more fields to our internal access log.
