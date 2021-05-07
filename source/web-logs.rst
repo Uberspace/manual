@@ -9,7 +9,7 @@ The web server logs are disabled by default. Once you enable them, they are writ
 .. note::
 
    Disabling logs deletes all existing logs!
-   
+
 Access Log
 ==========
 
@@ -36,10 +36,17 @@ The ``access_log`` logs all connections to your website:
 
 .. code-block:: none
 
-    82.98.0.0 - - [22/Jun/2017:09:42:10 +0200] "GET / HTTP/2.0" 200 136 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+    isabell.uber.space:443 10.132.0.0 - - [28/Apr/2021:16:10:23 +0000] "GET /hello/world.php HTTP/1.1" 200 42 "-" "HTTPie/0.9.4"
 
-Each entry contains the client's (redacted) IP address, date and time of the request, the actual HTTP request sent, the referrer and the ``user agent``, i.e. the browser and operating system used by the client.
-
+Each entry starts with the *server name* of the virtual host handling the
+request and the *port* on which the request was accepted (i.e. 80 or 443). The
+*server_name* is the domain for the request, i.e. one of the ones `you added
+<web-domains.html>`_ or the default (``isabell.uber.space``). These are followed
+by ``-`` and the authorized user (if any, otherwise ``-``), the client's
+(redacted) *IP address*, *date and time* of the request, the actual *HTTP
+request* sent, the *referrer* (if any, otherwise ``-``) and the *user agent*
+string, i.e. the browser and operating system used by the client. This format is
+often called ``VCOMBINED`` or ``NCSA with VHOST``.
 
 .. _web-logs-error:
 
