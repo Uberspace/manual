@@ -23,7 +23,7 @@ Versions
 Release types
 -------------
 
-We provide different releases and apply security updates on a regular basis. Currently, these versions are available: 20, 21 and 22. All versions include `Elixir <https://elixir-lang.org>`_ and `Mix <https://hexdocs.pm/mix/Mix.html>`_, a build tool that allows you to easily create projects, manage tasks, run tests and more.
+We provide different releases and apply security updates on a regular basis. Currently, these versions are available: 20, 21, 22 and 23. All versions include `Elixir <https://elixir-lang.org>`_ and `Mix <https://hexdocs.pm/mix/Mix.html>`_, a build tool that allows you to easily create projects, manage tasks, run tests and more.
 
 Standard version
 ----------------
