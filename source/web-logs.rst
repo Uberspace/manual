@@ -42,9 +42,9 @@ Each entry starts with the *server name* of the virtual host handling the
 request and the *port* on which the request was accepted (i.e. 80 or 443). The
 *server_name* is the domain for the request, i.e. one of the ones `you added
 <web-domains.html>`_ or the default (``isabell.uber.space``). These are followed
-by ``-`` and the authorized user (if any, otherwise ``-``), the client's
-(redacted) *IP address*, *date and time* of the request, the actual *HTTP
-request* sent, the *referrer* (if any, otherwise ``-``) and the *user agent*
+by the client's (redacted) *IP address*, ``-`` and the authorized user (if any,
+otherwise ``-``), *date and time* of the request, the actual *HTTP request*
+sent, the *referrer* (if any, otherwise ``-``) and the *user agent*
 string, i.e. the browser and operating system used by the client. This format is
 often called ``VCOMBINED`` or ``NCSA with VHOST``.
 
