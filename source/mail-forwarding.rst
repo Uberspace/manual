@@ -15,7 +15,7 @@ You can use forwardings in the form of ``$MAILBOX@$USER.uber.space``. If you hav
 Add forwards for a mailbox
 --------------------------
 
-You can configure forwardings with the ``uberspace mail user forward set <mailbox> <mail address>`` command. You cannot configure forwardings for an existing mailbox that does not already use forwardings.
+You can configure forwardings with the ``uberspace mail user forward set <mailbox> <mail address>`` command. This will effectively create an alias for the specified address. There is no way to convert a regular mailbox (without forwarding) to an alias.
 
 To forward all mails from ``forwardme`` to ``mail@allcolorsarebeautiful.example`` run the following command:
 
@@ -42,7 +42,7 @@ You can list your existing forwardings using the ``uberspace mail user forward l
 Delete forwards for a mailbox
 -----------------------------
 
-You can delete forwardings using the ``uberspace mail user forward del`` command. To delete forwarding for ``forwardme``, run the following command:
+You can delete forwardings using the ``uberspace mail user forward del <mailbox>`` command. This will delete the specified alias, so mails sent to it will no longer be delivered (exept if you set up a catchall address). To delete forwarding for ``forwardme``, run the following command:
 
 .. code-block:: bash
 
