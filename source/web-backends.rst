@@ -138,7 +138,7 @@ The longest matched path for a domain wins so you don't need to worry about the 
 prefix handling
 ---------------
 
-By default, the whole path (e.g. ``/ep/assets/style.css``) is passed onto the backend. Some applications
+By default, the whole path (e.g. ``/ep/assets/style.css``) is passed on to the backend. Some applications
 require that only the part after their prefix (``/assets/style.css`` in this case) reaches them. To enable
 this behavior, add ``--remove-prefix``:
 
