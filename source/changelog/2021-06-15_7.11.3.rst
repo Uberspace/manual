@@ -1,0 +1,13 @@
+Added
+-----
+
+- Support for the `editheader` capability for *Sieve*.
+- PHP's `phpize` to the `$PATH`.
+
+Changed
+-------
+
+- *Dovecot* now ignores a size mismatch between the mail file on disk and the
+  size given in its filename. This should prevent errors, occurring when
+  something changes the mail after it was delivered (e.g. writing an extra
+  header to it, like *CRM114*).
