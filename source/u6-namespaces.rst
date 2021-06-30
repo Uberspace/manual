@@ -69,7 +69,8 @@ First you have to add the correct mailboxes:
   anna
   arthur
 
-Then you will have to remove the temporary redirection to ``~/namespace-collector``:
+Then you will have to remove the temporary redirection to ``~/namespace-collector`` and run the spamfolder enable command to create a new ``.qmail-default`` file with our provided maildrop filter which is needed for the new delivering process.
+:
 
 .. code-block:: bash
 
