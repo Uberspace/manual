@@ -13,13 +13,13 @@ In order to use your own domain for mail with your Uberspace, you need to first 
 
 .. code-block:: console
 
- [isabell@philae ~]$ uberspace mail domain add isabell.example
+ [isabell@stardust ~]$ uberspace mail domain add isabell.example
  The mailserver's configuration has been adapted.
  Now you can use the following record for your dns:
-   MX  -> philae.uberspace.de.
+   MX  -> stardust.uberspace.de.
    TXT -> v=spf1 include:spf.uberspace.de
 
-Once you’ve set up your domain using the uberspace mail domain add tool, the tool provides you with the ``MX`` record that needs to be configured in your registrar’s nameserver. Please be aware that the trailing dot in ``philae.uberspace.de.`` is the correct notation of a DNS record to indicate the domains root like here, but you can skip it if the domain hoster UI does not accept it.
+Once you’ve set up your domain using the uberspace mail domain add tool, the tool provides you with the ``MX`` record that needs to be configured in your registrar’s nameserver. Please be aware that the trailing dot in ``stardust.uberspace.de.`` is the correct notation of a DNS record to indicate the domains root like here, but you can skip it if the domain hoster UI does not accept it.
 
 .. warning:: Please use only the provided host name for your ``MX`` record. If you use any other host name for your ``MX``, the mailserver will not accept your domain. You will also not be able to login to the mailserver using that domain as part of the username before setting up the record.
 
@@ -46,7 +46,7 @@ To remove a domain, use the ``uberspace`` tool:
 
 .. code-block:: console
 
- [isabell@philae ~]$ uberspace mail domain del isabell.example
+ [isabell@stardust ~]$ uberspace mail domain del isabell.example
  The server's configuration has been adapted.
 
 Listing
@@ -56,7 +56,7 @@ If you want to find out which domains are currently set up for the mail server o
 
 .. code-block:: console
 
- [isabell@philae ~]$ uberspace mail domain list
+ [isabell@stardust ~]$ uberspace mail domain list
  isabell.example
  isabell.uber.space
 

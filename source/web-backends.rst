@@ -19,7 +19,7 @@ In order to use your own backend, you first need to set it up using the ``ubersp
 
 .. code-block:: console
 
-  [isabell@philae ~]$ uberspace web backend 
+  [isabell@stardust ~]$ uberspace web backend
   
   Manage backends in web server configuration.
   
@@ -28,7 +28,7 @@ In order to use your own backend, you first need to set it up using the ``ubersp
     list — List all configured web backends.
     set — Set web backend for a given domain and path.
 
-    [isabell@philae ~]$ 
+    [isabell@stardust ~]$
 
 default backend
 ===============
@@ -37,26 +37,26 @@ In the default configuration the default backend is :ref:`Apache <docroot>`:
 
 .. code-block:: console
 
-  [isabell@philae ~]$ uberspace web backend set / --apache
+  [isabell@stardust ~]$ uberspace web backend set / --apache
   Set backend for / to apache.
-  
-  [isabell@philae ~]$ uberspace web backend list
+
+  [isabell@stardust ~]$ uberspace web backend list
   / apache (default)
 
-  [isabell@philae ~]$ 
+  [isabell@stardust ~]$
 
-To set the default backend to an application listening on port 1024 (for example your own nginx webserver) run 
+To set the default backend to an application listening on port 1024 (for example your own nginx webserver) run
 
 .. code-block:: console
 
-  [isabell@philae ~]$ uberspace web backend set / --http --port 1024   
+  [isabell@stardust ~]$ uberspace web backend set / --http --port 1024
   Set backend for / to port 1024; please make sure something is listening!
   You can always check the status of your backend using "uberspace web backend list".
 
-  [isabell@philae ~]$ uberspace web backend list
+  [isabell@stardust ~]$ uberspace web backend list
   / http:1024 => OK, listening: PID 42, nginx
 
-  [isabell@philae ~]$ 
+  [isabell@stardust ~]$
 
 specific path
 -------------
@@ -65,28 +65,28 @@ In this example requests to ``/ep`` are routed to an application listening on po
 
 .. code-block:: console
 
-  [isabell@philae ~]$ uberspace web backend set /ep --http --port 9000
+  [isabell@stardust ~]$ uberspace web backend set /ep --http --port 9000
   Set backend for /ep to port 9000; please make sure something is listening!
   You can always check the status of your backend using "uberspace web backend list".
 
-  [isabell@philae ~]$ uberspace web backend list
+  [isabell@stardust ~]$ uberspace web backend list
   /ep http:9000 => OK, listening: PID 42, node-red
   / apache
-  
-  [isabell@philae ~]$ 
+
+  [isabell@stardust ~]$
 
 Some applications don't serve assets due to performance reasons. In this example ``/assets`` is served via apache, everything else is routed to the application listening on port 9000:
 
 .. code-block:: console
 
-  [isabell@philae ~]$ uberspace web backend set / --http --port 9000
+  [isabell@stardust ~]$ uberspace web backend set / --http --port 9000
   Set backend for / to port 9000; please make sure something is listening!
   You can always check the status of your backend using "uberspace web backend list".
 
-  [isabell@philae ~]$ uberspace web backend set /assets --apache
+  [isabell@stardust ~]$ uberspace web backend set /assets --apache
   Set backend for /assets to apache
 
-  [isabell@philae ~]$ uberspace web backend list
+  [isabell@stardust ~]$ uberspace web backend list
   /assets apache
   / http:9000 => OK, listening: PID 42, node-red
 
@@ -98,16 +98,16 @@ You also can setup backends for specific domains. Make sure :ref:`your domain <w
 
 .. code-block:: console
 
-  [isabell@philae ~]$ uberspace web backend set allcolorsarebeautiful.example --http --port 9000
+  [isabell@stardust ~]$ uberspace web backend set allcolorsarebeautiful.example --http --port 9000
   Set backend for allcolorsarebeautiful.example/ to port 9000; please make sure something is listening!
   You can always check the status of your backend using "uberspace web backend list".
 
-  [isabell@philae ~]$ uberspace web backend list                                                      
+  [isabell@stardust ~]$ uberspace web backend list
   allcolorsarebeautiful.example/ http:9000 => OK, listening: PID 42, node-red
   / apache (default)
 
-  [isabell@philae ~]$
-  
+  [isabell@stardust ~]$
+
 mix and match
 -------------
 
@@ -115,24 +115,24 @@ Of course you can combine specific paths and domains. This is a more advanced ex
 
 .. code-block:: console
 
-  [isabell@philae ~]$ uberspace web backend set allcolorsarebeautiful.example/ep/assets --apache
+  [isabell@stardust ~]$ uberspace web backend set allcolorsarebeautiful.example/ep/assets --apache
   Set backend for allcolorsarebeautiful.example/ep/assets to apache
-  
-  [isabell@philae ~]$ uberspace web backend set allcolorsarebeautiful.example/ep --http --port 9000
+
+  [isabell@stardust ~]$ uberspace web backend set allcolorsarebeautiful.example/ep --http --port 9000
   Set backend for allcolorsarebeautiful.example/ep to port 9000; please make sure something is listening!
   You can always check the status of your backend using "uberspace web backend list".
 
-  [isabell@philae ~]$ uberspace web backend set / --http --port 1024
+  [isabell@stardust ~]$ uberspace web backend set / --http --port 1024
   Set backend for / to port 1024, make sure something is listening.
 
-  [isabell@philae ~]$ uberspace web backend list
+  [isabell@stardust ~]$ uberspace web backend list
   allcolorsarebeautiful.example/ep/assets apache
   allcolorsarebeautiful.example/ep http:9000 => OK, listening: PID 23, node-red
   / http:1024 => OK, listening: PID 42, nginx
-  
-  [isabell@philae ~]$ 
 
-The content for /ep/assets in this example must be placed as described under :ref:`DocumentRoot <docroot>`:. 
+  [isabell@stardust ~]$
+
+The content for /ep/assets in this example must be placed as described under :ref:`DocumentRoot <docroot>`:.
 The longest matched path for a domain wins so you don't need to worry about the order of the backends.
 
 prefix handling
@@ -144,15 +144,15 @@ this behavior, add ``--remove-prefix``:
 
 .. code-block:: console
 
-  [isabell@philae ~]$ uberspace web backend set allcolorsarebeautiful.example/ep --http --port 9000 --remove-prefix
+  [isabell@stardust ~]$ uberspace web backend set allcolorsarebeautiful.example/ep --http --port 9000 --remove-prefix
   Set backend for allcolorsarebeautiful.example/ep to port 9000; please make sure something is listening!
   You can always check the status of your backend using "uberspace web backend list".
 
-  [isabell@philae ~]$ uberspace web backend list
+  [isabell@stardust ~]$ uberspace web backend list
   allcolorsarebeautiful.example/ep http:9000, --remove-prefix => OK, listening: PID 23, node-red
   / apache
 
-  [isabell@philae ~]$
+  [isabell@stardust ~]$
 
 Removal
 =======
@@ -161,17 +161,17 @@ You can remove web backends with ``uberspace web backend del``:
 
 .. code-block:: console
 
-  [isabell@philae ~]$ uberspace web backend list
+  [isabell@stardust ~]$ uberspace web backend list
   allcolorsarebeautiful.example/ http:9000 => OK, listening: PID 42, node-red
   / http:9001 => OK, listening: PID 12611, nc -6 -l :: 9001
 
-  [isabell@philae ~]$ uberspace web backend del allcolorsarebeautiful.example
+  [isabell@stardust ~]$ uberspace web backend del allcolorsarebeautiful.example
   The web backend has been deleted.
 
-  [isabell@philae ~]$ uberspace web backend del /
+  [isabell@stardust ~]$ uberspace web backend del /
   The web backend has been deleted.
 
-  [isabell@philae ~]$ uberspace web backend list
+  [isabell@stardust ~]$ uberspace web backend list
   / apache (default)
 
 Debugging
@@ -181,25 +181,25 @@ Debugging
 
 .. code-block:: console
 
-  [isabell@philae ~]$ uberspace web backend list
+  [isabell@stardust ~]$ uberspace web backend list
   /doesnotwork http:8000 => NOT OK, wrong interface (::1): PID 17767, nc -l localhost 8000
   /worksforme http:9000 => OK, listening: PID 12295, nc -l 0.0.0.0 9000
   /notrunning http:1024 => NOT OK, no service
   / apache (default)
 
-  [isabell@philae ~]$ 
+  [isabell@stardust ~]$
 
 The solution for ``/doesnotwork`` is to change the listening interface to ``::``. The service for ``/notrunning`` is not running or the port is incorrect. Check the configuration and restart the service.
 
 .. code-block:: console
 
-  [isabell@philae ~]$ uberspace web backend list
+  [isabell@stardust ~]$ uberspace web backend list
   /doesnotwork http:8000 => OK, listening: PID 17767, nc -l :: 8000
   /worksforme http:9000 => OK, listening: PID 12295, nc -l 0.0.0.0 9000
   /notrunning http:1024 => OK, listening: PID 24213, nginx
   / apache (default)
 
-  [isabell@philae ~]$ 
+  [isabell@stardust ~]$
 
 
 .. _`keep alive`: https://en.wikipedia.org/wiki/Keepalive
