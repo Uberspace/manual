@@ -1,8 +1,8 @@
 .. _python:
 
 .. sidebar:: Logo
-  
-  .. image:: _static/images/logo_python.png 
+
+  .. image:: _static/images/logo_python.png
       :align: center
 
 ######
@@ -21,9 +21,9 @@ web applications.
 Versions
 ========
 
-Release Types 
+Release Types
 -------------
-Each release branch of Python is fully supported for five years beginning with its initial stable release. For Python 2.7, this has been extended to ten years. We provide different point releases and apply security updates on a regular basis. Currently, these Python versions are available: 2.7, 3.4, 3.5, 3.6, 3.7, 3.8 and 3.9. 
+Each release branch of Python is fully supported for five years beginning with its initial stable release. For Python 2.7, this has been extended to ten years. We provide different point releases and apply security updates on a regular basis. Currently, these Python versions are available: 2.7, 3.5, 3.6, 3.7, 3.8 and 3.9.
 
 Standard version
 ----------------
@@ -48,8 +48,6 @@ We update all versions on a regular basis. Once the `security support <https://d
 | Branch | State               | Security Support Until      |
 +========+=====================+=============================+
 | 2.7    | Bug fixes           | January 2024 (by CentOS)    |
-+--------+---------------------+-----------------------------+
-| 3.4    | Security fixes only | March 2019                  |
 +--------+---------------------+-----------------------------+
 | 3.5    | Security fixes only | September 2020              |
 +--------+---------------------+-----------------------------+
@@ -79,13 +77,13 @@ In order to install the correct package corresponding to the Python version you 
 
 .. code-block:: console
 
-  [eliza@dolitte ~] pip2.7 install package-name --user 
+  [eliza@dolitte ~] pip2.7 install package-name --user
 
 To install for Python 3.6, use :code:`pip3.6`:
 
 .. code-block:: console
 
-  [eliza@dolitte ~] pip3.6 install package-name --user 
+  [eliza@dolitte ~] pip3.6 install package-name --user
 
 ----
 
