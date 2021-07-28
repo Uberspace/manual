@@ -13,7 +13,7 @@ All header commands can be found grouped under ``uberspace web header``:
 
 .. code-block:: console
 
-  [isabell@philae ~]$ uberspace web header
+  [isabell@stardust ~]$ uberspace web header
 
   Manage which HTTP headers are sent to your clients.
 
@@ -27,7 +27,7 @@ In case you get stuck or want to know what's going on, you can always use ``web 
 
 .. code-block:: console
 
-  [isabell@philae ~]$ uberspace web header list
+  [isabell@stardust ~]$ uberspace web header list
   Default Headers:
     Referrer-Policy: strict-origin-when-cross-origin
     Strict-Transport-Security: max-age=31536000
@@ -44,14 +44,14 @@ New headers can be added using the `header set` command:
 
 .. code-block:: console
 
-  [isabell@philae ~]$ uberspace web header set /blog X-Clacks-Overhead "GNU Terry Pratchett"
+  [isabell@stardust ~]$ uberspace web header set /blog X-Clacks-Overhead "GNU Terry Pratchett"
   Set header "X-Clacks-Overhead: GNU Terry Pratchett" for /blog
 
 Again, you can take a look using `header list`:
 
 .. code-block:: console
 
-  [isabell@philae ~]$ uberspace web header list
+  [isabell@stardust ~]$ uberspace web header list
   /blog
     X-Clacks-Overhead: GNU Terry Pratchett
   Default Headers:
@@ -63,19 +63,19 @@ Much like :ref:`web backends <backends>` a header is present on the set path plu
 
 .. code-block:: console
 
-  [isabell@philae ~]$ curl -I https://isabell.uber.space/blog | grep X-Clacks-Overhead
+  [isabell@stardust ~]$ curl -I https://isabell.uber.space/blog | grep X-Clacks-Overhead
   X-Clacks-Overhead: GNU Terry Pratchett
-  [isabell@philae ~]$ curl -I https://isabell.uber.space/blog/imprint | grep X-Clacks-Overhead
+  [isabell@stardust ~]$ curl -I https://isabell.uber.space/blog/imprint | grep X-Clacks-Overhead
   X-Clacks-Overhead: GNU Terry Pratchett
-  [isabell@philae ~]$
+  [isabell@stardust ~]$
 
 However, it will not show up on ``/`` or any other unrelated URL like ``/etherpad``:
 
 .. code-block:: console
 
-  [isabell@philae ~]$ curl -I https://isabell.uber.space | grep X-Clacks-Overhead
-  [isabell@philae ~]$ curl -I https://isabell.uber.space/etherpad | grep X-Clacks-Overhead
-  [isabell@philae ~]$
+  [isabell@stardust ~]$ curl -I https://isabell.uber.space | grep X-Clacks-Overhead
+  [isabell@stardust ~]$ curl -I https://isabell.uber.space/etherpad | grep X-Clacks-Overhead
+  [isabell@stardust ~]$
 
 Targeting
 =========
@@ -86,28 +86,28 @@ Exactly like :ref:`web backends <backends>` a header can be set on a path, domai
 
 .. code-block:: console
 
-  [isabell@philae ~]$ uberspace web header set terryfanpage.org/ X-Clacks-Overhead "GNU Terry Pratchett"
+  [isabell@stardust ~]$ uberspace web header set terryfanpage.org/ X-Clacks-Overhead "GNU Terry Pratchett"
   Set header "X-Clacks-Overhead: GNU Terry Pratchett" for terryfanpage.org/
 
 ... make the header appear on a domain within a given path only:
 
 .. code-block:: console
 
-  [isabell@philae ~]$ uberspace web header set terryfanpage.org/blog X-Clacks-Overhead "GNU Terry Pratchett"
+  [isabell@stardust ~]$ uberspace web header set terryfanpage.org/blog X-Clacks-Overhead "GNU Terry Pratchett"
   Set header "X-Clacks-Overhead: GNU Terry Pratchett" for terryfanpage.org/blog
 
 ... in a sub path on any domain:
 
 .. code-block:: console
 
-  [isabell@philae ~]$ uberspace web header set /blog X-Clacks-Overhead "GNU Terry Pratchett"
+  [isabell@stardust ~]$ uberspace web header set /blog X-Clacks-Overhead "GNU Terry Pratchett"
   Set header "X-Clacks-Overhead: GNU Terry Pratchett" for /blog
 
 ... or just everywhere:
 
 .. code-block:: console
 
-  [isabell@philae ~]$ uberspace web header set / X-Clacks-Overhead "GNU Terry Pratchett"
+  [isabell@stardust ~]$ uberspace web header set / X-Clacks-Overhead "GNU Terry Pratchett"
   Set header "X-Clacks-Overhead: GNU Terry Pratchett" for /
 
 Removing headers
@@ -117,7 +117,7 @@ Headers you added using ``set`` can be deleted using ``del``:
 
 .. code-block:: console
 
-  [isabell@philae ~]$ uberspace web header del /blog X-Clacks-Overhead
+  [isabell@stardust ~]$ uberspace web header del /blog X-Clacks-Overhead
   Deleted header "X-Domain-Header" for /blog
 
 Clearing headers from parent paths
@@ -127,16 +127,16 @@ Assume ``web header add /blog X-Frame-Options DENY`` was used to not allow ``/bl
 
 .. code-block:: console
 
-  [isabell@philae ~]$ uberspace web header set /blog X-Frame-Options DENY
-  [isabell@philae ~]$ uberspace web header suppress /blog/iframe X-Frame-Options
+  [isabell@stardust ~]$ uberspace web header set /blog X-Frame-Options DENY
+  [isabell@stardust ~]$ uberspace web header suppress /blog/iframe X-Frame-Options
   Suppressing header "X-Frame-Options" for /blog/iframe
-  [isabell@philae ~]$
+  [isabell@stardust ~]$
 
 Again, you can take a look using `header list`:
 
 .. code-block:: console
 
-  [isabell@philae ~]$ uberspace web header list
+  [isabell@stardust ~]$ uberspace web header list
   /blog/iframe
     X-Frame-Options: (suppressed)
   /blog
@@ -150,26 +150,26 @@ As instructed the header is now present on ``/blog`` but not on ``/blog/iframe``
 
 .. code-block:: console
 
-  [isabell@philae ~]$ curl -I https://isabell.uber.space/blog | grep X-Frame-Options
+  [isabell@stardust ~]$ curl -I https://isabell.uber.space/blog | grep X-Frame-Options
   X-Frame-Options: DENY
-  [isabell@philae ~]$ curl -I https://isabell.uber.space/blog/iframe | grep X-Frame-Options
-  [isabell@philae ~]$
+  [isabell@stardust ~]$ curl -I https://isabell.uber.space/blog/iframe | grep X-Frame-Options
+  [isabell@stardust ~]$
 
 To reverse this, use ``web header del``:
 
 .. code-block:: console
 
-  [isabell@philae ~]$ uberspace web header del /blog/iframe X-Frame-Options
+  [isabell@stardust ~]$ uberspace web header del /blog/iframe X-Frame-Options
   Unsuppressed header "X-Frame-Options" for /blog/iframe
-  [isabell@philae ~]$
+  [isabell@stardust ~]$
 
 Which causes to header to appear again:
 
 .. code-block:: console
 
-  [isabell@philae ~]$ curl -I https://isabell.uber.space/blog/iframe | grep X-Frame-Options
+  [isabell@stardust ~]$ curl -I https://isabell.uber.space/blog/iframe | grep X-Frame-Options
   X-Frame-Options: DENY
-  [isabell@philae ~]$
+  [isabell@stardust ~]$
 
 Default security headers
 ========================
@@ -184,9 +184,9 @@ Just like any header you set yourself, the default headers can be suppressed usi
 .. code-block:: console
   :emphasize-lines: 1,5
 
-  [isabell@philae ~]$ uberspace web header suppress / Strict-Transport-Security
+  [isabell@stardust ~]$ uberspace web header suppress / Strict-Transport-Security
   Deleted header "Strict-Transport-Security" for /
-  [isabell@philae ~]$ uberspace web header list
+  [isabell@stardust ~]$ uberspace web header list
   /
     Strict-Transport-Security: (suppressed)
   Default Headers:
@@ -206,9 +206,9 @@ Headers of inner directories always override the ones set in outer ones. So you 
 .. code-block:: console
   :emphasize-lines: 1,5
 
-  [isabell@philae ~]$ uberspace web header set /blog Strict-Transport-Security "max-age=63072000"
+  [isabell@stardust ~]$ uberspace web header set /blog Strict-Transport-Security "max-age=63072000"
   Set header "Strict-Transport-Security: max-age=63072000" for /blog
-  [isabell@philae ~]$ uberspace web header list
+  [isabell@stardust ~]$ uberspace web header list
   /blog
     Strict-Transport-Security: max-age=63072000
   Default Headers:
@@ -222,7 +222,7 @@ Headers of inner directories always override the ones set in outer ones. So you 
 
 .. code-block:: console
 
-  [isabell@philae ~]$ uberspace web header set / Strict-Transport-Security "max-age=63072000"
+  [isabell@stardust ~]$ uberspace web header set / Strict-Transport-Security "max-age=63072000"
   Set header "Strict-Transport-Security: max-age=63072000" for /
 
 Restoring security headers
@@ -233,7 +233,7 @@ If you removed or replaced security headers in the past and would like to restor
 .. code-block:: console
   :emphasize-lines: 3,4,11,13
 
-  [isabell@philae ~]$ uberspace web header list
+  [isabell@stardust ~]$ uberspace web header list
   /
     Strict-Transport-Security: max-age=63072000
     X-Frame-Options: (suppressed)
@@ -243,11 +243,11 @@ If you removed or replaced security headers in the past and would like to restor
     X-Content-Type-Options: nosniff
     X-Frame-Options: SAMEORIGIN
     X-Xss-Protection: 1; mode=block
-  [isabell@philae ~]$ uberspace web header del / Strict-Transport-Security
+  [isabell@stardust ~]$ uberspace web header del / Strict-Transport-Security
   Deleted header "Strict-Transport-Security" for /
-  [isabell@philae ~]$ uberspace web header del / X-Frame-Options
+  [isabell@stardust ~]$ uberspace web header del / X-Frame-Options
   Unsuppressed header "X-Frame-Options" for /
-  [isabell@philae ~]$ uberspace web header list
+  [isabell@stardust ~]$ uberspace web header list
   Default Headers:
     Referrer-Policy: strict-origin-when-cross-origin
     Strict-Transport-Security: max-age=31536000
@@ -265,5 +265,5 @@ As anounced in April of 2021, Google is moving to use a new technology called FL
 
 .. code-block:: console
 
-  [isabell@philae ~]$ uberspace web header set / Permissions-Policy "interest-cohort=()"
+  [isabell@stardust ~]$ uberspace web header set / Permissions-Policy "interest-cohort=()"
   Set header "Permissions-Policy: interest-cohort=()" for /

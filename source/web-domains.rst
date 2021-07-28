@@ -16,7 +16,7 @@ encrypt does not support wildcard domains in conjunction with HTTP validation.
 
 .. code-block:: console
 
- [isabell@philae ~]$ uberspace web domain add isabell.example
+ [isabell@stardust ~]$ uberspace web domain add isabell.example
  The webserver's configuration has been adpated.
  Now you can use the following records for your dns:
      A -> 185.26.156.55
@@ -56,7 +56,7 @@ To remove a domain, use the ``uberspace`` tool:
 
 .. code-block:: console
 
- [isabell@philae ~]$ uberspace web domain del isabell.example
+ [isabell@stardust ~]$ uberspace web domain del isabell.example
  The server's configuration has been adapted.
 
 Listing
@@ -66,7 +66,7 @@ If you want to find out which domains are currently set up for the web server on
 
 .. code-block:: console
 
- [isabell@philae ~]$ uberspace web domain list
+ [isabell@stardust ~]$ uberspace web domain list
  isabell.example
  isabell.uber.space
 

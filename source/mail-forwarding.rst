@@ -21,9 +21,9 @@ To forward all mails from ``forwardme`` to ``mail@allcolorsarebeautiful.example`
 
 .. code-block:: bash
 
- [isabell@philae ~]$ uberspace mail user forward set forwardme mail@allcolorsarebeautiful.example
+ [isabell@stardust ~]$ uberspace mail user forward set forwardme mail@allcolorsarebeautiful.example
  Mail to forwardme will be forwarded to mail@allcolorsarebeautiful.example.
- [isabell@philae ~]$
+ [isabell@stardust ~]$
 
 .. tip::
     ``uberspace mail user forward set`` overwrites existing configurations.
@@ -35,9 +35,9 @@ You can list your existing forwardings using the ``uberspace mail user forward l
 
 .. code-block:: bash
 
- [isabell@philae ~]$ uberspace mail user forward list forwardme
+ [isabell@stardust ~]$ uberspace mail user forward list forwardme
  mail@allcolorsarebeautiful.example
- [isabell@philae ~]$
+ [isabell@stardust ~]$
 
 Delete forwards for a mailbox
 -----------------------------
@@ -46,9 +46,9 @@ You can delete forwardings using the ``uberspace mail user forward del <mailbox>
 
 .. code-block:: bash
 
- [isabell@philae ~]$ uberspace mail user forward del forwardme
+ [isabell@stardust ~]$ uberspace mail user forward del forwardme
  Mail to forwardme will no longer be forwarded.
- [isabell@philae ~]$
+ [isabell@stardust ~]$
 
 spam filtering
 ==============
