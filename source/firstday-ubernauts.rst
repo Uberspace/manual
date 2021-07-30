@@ -1,8 +1,4 @@
 .. _firstday-ubernauts:
-.. note::
-  Wir führen derzeit automatischen Migrationen der U6 Hosts nach U7 durch und informieren kurz vorher per Email darüber wenn das deinen Account betrifft. Außerdem zeigen wir auf der `Statusseite <https://is.uberspace.online>`_ die aktuellen Migrationen an.
-
-  Wir are currently in the process of migrating U6 hosts to U7 and will notify you before by email. We are publishing outages on our `status page <https://is.uberspace.online>`_ if the host ist in progress of migration.
 
 #######################################
 Your first day... for Ubernauts from U6
