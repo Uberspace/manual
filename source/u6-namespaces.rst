@@ -103,4 +103,4 @@ Now you have a clean and U7 compatible mail setup.
 
 .. note::
 
- Between migration and fixing the namespaces, there might have been redirected some emails to ``~/namespace-collector``. You will have to decide by yourself how to deal with them, for example copying them to one of your mailboxes or create an new mailbox ``namespace-collector`` and move them there to check with your email client.
+ Between migration and fixing the namespaces, some mails might have been redirected to ``~/namespace-collector``. You will have to decide by yourself how to deal with them, for example copying them to one of your mailboxes or creating a new mailbox ``namespace-collector`` and move them there to check with your email client.
