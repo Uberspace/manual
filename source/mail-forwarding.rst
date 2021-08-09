@@ -42,7 +42,7 @@ You can list your existing forwardings using the ``uberspace mail user forward l
 Delete forwards for a mailbox
 -----------------------------
 
-You can delete forwardings using the ``uberspace mail user forward del <mailbox>`` command. This will delete the specified alias, so mails sent to it will no longer be delivered (exept if you set up a catchall address). To delete forwarding for ``forwardme``, run the following command:
+You can delete forwardings using the ``uberspace mail user forward del <mailbox>`` command. This will delete the specified alias, so mails sent to it will no longer be delivered (except if you set up a `catchall address <https://manual.uberspace.de/mail-mailboxes#catch-all-mailbox>`_). To delete forwarding for ``forwardme``, run the following command:
 
 .. code-block:: bash
 
