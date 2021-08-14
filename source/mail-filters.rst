@@ -13,12 +13,14 @@ A Sieve script consists of a number of conditions which are applied to incoming 
 ManageSieve
 ###########
 
-Many E-Mail clients support the ManageSieve protocol to control and manage your Sieve filtering scripts. You can find a list of tools and plugins at `sieve.info <http://sieve.info/clients>`_. We plan to implement a rule editor in our :ref:`webmailer <mail-access>` soon.
+To create and manage scripts, you can use any tool speaking the *ManageSieve protocol*. Many E-Mail clients support the protocol, you can find a list of tools and plugins at `sieve.info <http://sieve.info/clients>`_. We plan to implement a rule editor in our :ref:`webmailer <mail-access>` soon.
 
-.. tip:: We recommend the `Sieve Script Editor <https://github.com/thsmi/sieve>`_ which has a GUI to drag and drop the rules and is available for many platforms.
+.. tip:: We recommend the `Sieve Script Editor <https://github.com/thsmi/sieve>`_ which has a GUI to drag and drop the rules and is available for many platforms and apps.
 
 Access
 ======
+
+If you need to provide access data you can use the following:
 
 +--------------------+----------------------------------------------+
 |Server              | :term:`your Hostname`                        |
