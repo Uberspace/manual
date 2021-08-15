@@ -23,17 +23,17 @@ Client settings
 IMAP
 ----
 
-+--------------------+----------------------------------------------+
-|Server              | :term:`your Hostname`                        |
-+--------------------+----------------------------------------------+
-|Port                | ``993``                                      |
-+--------------------+----------------------------------------------+
-|SSL/TLS Encryption  | Enabled, but not STARTTLS                    |
-+--------------------+----------------------------------------------+
-|Username            | Your email address, including the domain     |
-+--------------------+----------------------------------------------+
-|Password            | Your password for the email address          |
-+--------------------+----------------------------------------------+
++--------------------+-----------------------------------------------------------+
+|Server              | your :term:`Hostname` (``<something>.uberspace.de``)      |
++--------------------+-----------------------------------------------------------+
+|Port                | ``993``                                                   |
++--------------------+-----------------------------------------------------------+
+|SSL/TLS Encryption  | Enabled, but not STARTTLS                                 |
++--------------------+-----------------------------------------------------------+
+|Username            | Your email address, including the domain                  |
++--------------------+-----------------------------------------------------------+
+|Password            | Your password for the email address                       |
++--------------------+-----------------------------------------------------------+
 
 .. tip:: If your mail client does not support TLS encryption, use port ``143`` instead with STARTTLS.
 
@@ -42,34 +42,34 @@ POP
 
 We recommend using IMAP over POP to access your email. By default, POP will pull emails from your inbox. 
 
-+--------------------+----------------------------------------------+
-|Server              | :term:`your Hostname`                        |
-+--------------------+----------------------------------------------+
-|Port                | ``995``                                      |
-+--------------------+----------------------------------------------+
-|SSL/TLS Encryption  | Enabled, but not STARTTLS                    |
-+--------------------+----------------------------------------------+
-|Username            | Your email address, including the domain     |
-+--------------------+----------------------------------------------+
-|Password            | Your password for the email address          |
-+--------------------+----------------------------------------------+
++--------------------+-----------------------------------------------------------+
+|Server              | your :term:`Hostname` (``<something>.uberspace.de``)      |
++--------------------+-----------------------------------------------------------+
+|Port                | ``995``                                                   |
++--------------------+-----------------------------------------------------------+
+|SSL/TLS Encryption  | Enabled, but not STARTTLS                                 |
++--------------------+-----------------------------------------------------------+
+|Username            | Your email address, including the domain                  |
++--------------------+-----------------------------------------------------------+
+|Password            | Your password for the email address                       |
++--------------------+-----------------------------------------------------------+
 
 .. tip:: If your mail client does not support TLS encryption, use port ``110`` instead with STARTTLS.
 
 SMTP
 ----
 
-+--------------------+----------------------------------------------+
-|Server              | :term:`your Hostname`                        |
-+--------------------+----------------------------------------------+
-|Port                | ``587``                                      |
-+--------------------+----------------------------------------------+
-|SSL/TLS Encryption  | STARTTLS                                     |
-+--------------------+----------------------------------------------+
-|Username            | Your email address, including the domain     |
-+--------------------+----------------------------------------------+
-|Password            | Your password for the email address          |
-+--------------------+----------------------------------------------+
++--------------------+-----------------------------------------------------------+
+|Server              | your :term:`Hostname` (``<something>.uberspace.de``)      |
++--------------------+-----------------------------------------------------------+
+|Port                | ``587``                                                   |
++--------------------+-----------------------------------------------------------+
+|SSL/TLS Encryption  | STARTTLS                                                  |
++--------------------+-----------------------------------------------------------+
+|Username            | Your email address, including the domain                  |
++--------------------+-----------------------------------------------------------+
+|Password            | Your password for the email address                       |
++--------------------+-----------------------------------------------------------+
 
 .. warning:: Don't use ports ``25`` or ``465`` for sending mails! Unfortunately many clients try to use these ports, this won't work on Uberspace.
 
@@ -91,5 +91,5 @@ If Mail.app complains that the Account or the SMTP server is offline, this is us
 
 .. glossary::
 
-    your Hostname
+    Hostname
       You can find your hostname in the `Datasheet <https://uberspace.de/dashboard/datasheet>`_ section. It's always ``<something>.uberspace.de``.
