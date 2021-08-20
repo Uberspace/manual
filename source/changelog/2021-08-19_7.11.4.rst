@@ -40,7 +40,7 @@ Changed
 - We now rotate ``/var/log/wtmp`` daily (default was by size), and set the
   retention period to 7 days.
 
-- We now delete TLS certificates now immediately after removal of domains / accounts
+- We now delete TLS certificates immediately after removal of domains / accounts
   (before they where *"garbage collected"* eventually).
 
 - We increased some Pigeonhole settings for **Sieve**: ``sieve_max_redirects``
