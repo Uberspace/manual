@@ -41,6 +41,7 @@ Use ``uberspace tools version list erlang`` to show all selectable versions:
   - 21
   - 22
   - 23
+  - 24
   [eliza@dolittle ~]$
 
 .. _erlang-change-version:
