@@ -1,15 +1,15 @@
 Added
 -----
 
-- We added a rate limit of 10r/s for two common **Worpress** paths:
-  ``~.*/wp-login.php`` and ``~.*/xmlrpc.php``. These are - for now - based on
-  ``$server_name`` only. This was rolled out via hotfix some weeks ago.
+- We added a rate limit of *10 requests/sec* for two common **Wordpress** paths:
+  ``~.*/wp-login.php`` and ``~.*/xmlrpc.php``. These are (*for now*) based on
+  ``$server_name`` only. (This was already rolled out via hotfix some weeks ago)
 
-- We now use a a stricter rate limit of 30r/m for these request. This
+- We now use a a stricter rate limit of *30 requests/min* for these request. This
   is subject to ongoing tweaking and will probably be reduced further in the
   future (and based also on IP).
 
-- We now accept TLS connections for SMTP relaying on port ``465``.
+- We now accept strict TLS connections for SMTP relaying on port ``465``.
 
 - Added `Erlang <https://www.erlang.org/>`_ OTP ``24`` (along with recent
   versions for ``21``, ``22``, ``23``).
@@ -26,21 +26,21 @@ Added
 Changed
 -------
 
-- We limited the number of recipients for SMTP relaying to 100.
+- We now limit the number of recipients for SMTP relaying to 100.
 
-- We limit the max size for mails to 25 MB. This is stated in our
+- We now actually limit the max size for mails to 25 MB. (This is stated in our
   `community rules <https://uberspace.de/about/houserules/>`_ for a long time,
-  but we had not yet enforced it on U7.
+  but we had not yet enforced it on U7)
 
-- The ``uberspace mail domain list`` command now displays *DNS INVALID* next
+- The ``uberspace mail domain list`` command now displays ``DNS INVALID`` next
   to unverified mail domains (along with the time of the last check). While
-  the tool responsible for checking runs ~ every 30 seconds, failed MX checks
+  the tool responsible for checking runs around every 30 seconds, failed MX checks
   will be retried at most every 3 minutes.
 
-- We rotate ``/var/log/wtmp`` daily (default was by size), and set the
+- We now rotate ``/var/log/wtmp`` daily (default was by size), and set the
   retention period to 7 days.
 
-- We now delete TLS certificates for removed domains / accounts immediately
+- We now delete TLS certificates now immediately after removal of domains / accounts
   (before they where *"garbage collected"* eventually).
 
 - We increased some Pigeonhole settings for **Sieve**: ``sieve_max_redirects``
