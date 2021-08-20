@@ -21,7 +21,21 @@ In order to use your own domain for mail with your Uberspace, you need to first 
 
 Once you’ve set up your domain using the uberspace mail domain add tool, the tool provides you with the ``MX`` record that needs to be configured in your registrar’s nameserver. Please be aware that the trailing dot in ``stardust.uberspace.de.`` is the correct notation of a DNS record to indicate the domains root like here, but you can skip it if the domain hoster UI does not accept it.
 
-.. warning:: Please use only the provided host name for your ``MX`` record. If you use any other host name for your ``MX``, the mailserver will not accept your domain. You will also not be able to login to the mailserver using that domain as part of the username before setting up the record.
+Domain validation
+-----------------
+
+We will need to validate that the ``MX DNS`` record of your domain is really set up to the corresponding host with ``HOSTNAME.uberspace.de.``. The automated check will run normally *every 30 seconds* to lookup the DNS records of the domains you added to your account. If the correct value is missing this will be shown as an error next to the specific domain listing:
+
+.. code-block:: console
+
+ [isabell@stardust ~]$ uberspace mail domain list
+ example.com DNS INVALID (checked 2021-08-20 12:00)
+ isabell.uber.space
+
+Until this check has passed successfully, you will not be able to use this domain for receiving mails or to login to your mailbox. After a *failed* check, this domain will be checked again only after *3 minutes*.
+
+.. warning::
+  To get the most accurate record value, we check the responsible domain nameserver directly. But nevertheless it can take some minutes for the correct data to show up after you set up the records at your domain hoster. You can check yourself with ``dig example.com MX +short`` if the host already gets the correct values.
 
 SPF record
 ----------
