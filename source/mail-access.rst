@@ -59,19 +59,19 @@ We recommend using IMAP over POP to access your email. By default, POP will pull
 SMTP
 ----
 
-+--------------------+----------------------------------------------+
-|Server              | :term:`your Hostname`                        |
-+--------------------+----------------------------------------------+
-|Port                | ``587``                                      |
-+--------------------+----------------------------------------------+
-|SSL/TLS Encryption  | STARTTLS                                     |
-+--------------------+----------------------------------------------+
-|Username            | Your email address, including the domain     |
-+--------------------+----------------------------------------------+
-|Password            | Your password for the email address          |
-+--------------------+----------------------------------------------+
++--------------------+---------------------------------------------+
+|Server              | :term:`your Hostname`                       |
++--------------------+----------------------+----------------------+
+|Port                | ``587``              | ``456``              |
++--------------------+----------------------+----------------------+
+|SSL/TLS Encryption  | STARTTLS             | TLS                  |
++--------------------+----------------------+----------------------+
+|Username            | Your email address, including the domain    |
++--------------------+---------------------------------------------+
+|Password            | Your password for the email address         |
++--------------------+---------------------------------------------+
 
-.. warning:: Don't use ports ``25`` or ``465`` for sending mails! Unfortunately many clients try to use these ports, this won't work on Uberspace.
+.. warning:: Don't use ports ``25`` for sending mails! Unfortunately many clients try to use these ports, this won't work on Uberspace.
 
 Debugging
 =========
