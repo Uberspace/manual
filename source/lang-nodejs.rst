@@ -16,7 +16,6 @@ Introduction
 
 `Node.js <https://nodejs.org/en/>`_ is a server-side `JavaScript <https://en.wikipedia.org/wiki/JavaScript>`_ interpreter. Node.js is commonly used to develop server-based applications, i.e. the scripts bind to a network port.
 
-
 ----
 
 Versions
@@ -96,6 +95,15 @@ npm
 ===
 
 ``npm``, or the `node package manager`, is used to install and manage additional packages. We have preconfigured ``npm`` to install packages to your :ref:`home` when using the global (``-g``) option.
+
+----
+
+.. _npx:
+
+npx
+===
+
+You can use ``npx`` to quickly execute and test any ``npm`` package without the need to create a nodejs project around it. Check out `nodejs.dev <https://nodejs.dev/learn/the-npx-nodejs-package-runner>`_ to learn more.
 
 ----
 
