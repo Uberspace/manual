@@ -89,7 +89,7 @@ Sieve scripts are stored in the corresponding mailbox folder ``~/users/$MAILBOX/
 .. code-block:: console
 
   [eliza@dolittle ~/users/anna]$ readlink -f .dovecot.sieve
-  /home/utestxx1/users/anna/sieve/test.sieve
+  /home/eliza/users/anna/sieve/test.sieve
 
 Dovecot will compile a ``~/users/$MAILBOX/.dovecot.svbin`` from this script for the first mail delivered to the mailbox. It will also recompile for each new mail if the symlink or the script has been changed and the timestamp is updated. You can also trigger this by using ``sievec /path/to/script.sieve`` and check if it compiles correctly.
 
