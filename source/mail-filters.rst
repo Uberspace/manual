@@ -69,6 +69,10 @@ In this example we sort mails from a mailinglist into a folder, sort mails to ``
         stop;
     }
 
+    # Forward all incoming mails to multiple recipients
+    redirect "recipient1@example.com";
+    redirect "recipient2@example.com";
+
     # The command "keep" is executed automatically, if no other action is taken.
 
 .. tip:: ``stop;`` tells the Sieve engine to stop here, without checking for more rules.
