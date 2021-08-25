@@ -49,7 +49,7 @@ this will result in the following structure:
   └── my_project
       └── public
 
-because ``my_project`` is not a domain name that can be reached by the webserver, the source code will never be reachable from external.
+because ``my_project`` is not a domain name that can be reached by the webserver, the source code will never be reachable from the outside.
 
 Permissions
 ===========
