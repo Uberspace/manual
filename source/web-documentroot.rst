@@ -26,6 +26,31 @@ You can create folders (and symlinks) in the form of ``/var/www/virtual/<usernam
 
 .. warning:: Do not delete ``/var/www/virtual/<username>/html``. If this folder doesn't exist, the RewriteRules implementing the additional DocumentRoots don't work, so all your domains will be inaccessible.
 
+Example how to change DocumentRoot location
+-------------------------------------------
+
+Many PHP apps like Symfony provide their own public webfolder within their folder structure. It is recommended to only make this folder accessible by the webserver. This can be achieved, for example, with the following procedure:
+
+.. code-block:: console
+
+  # in /var/www/virtual/$USER
+  [eliza@dolittle eliza]$ rm -f html/nocontent.html
+  [eliza@dolittle eliza]$ rmdir html
+  [eliza@dolittle eliza]$ mkdir -p my_project/public
+  [eliza@dolittle eliza]$ ln -s my_project/public html
+
+this will result in the following structure:
+
+.. code-block:: console
+  
+  [eliza@dolittle eliza]$ tree
+  .
+  ├── html -> my_project/public
+  └── my_project
+      └── public
+
+because ``my_project`` is not a domain name that can be reached by the webserver, the source code will never be reachable from the outside.
+
 Permissions
 ===========
 
