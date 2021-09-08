@@ -23,6 +23,9 @@ Use ``uberspace mail spamfolder`` to configure the spam folder for all mailboxes
   [eliza@dolittle ~]$ uberspace mail spamfolder enable
   The spam folder is now enabled.
 
+.. note::
+  Mails within the spam folder are auto-expunged after 30 days.
+
 Background
 ----------
 

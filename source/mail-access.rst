@@ -7,8 +7,7 @@ Accessing Your Mails
 Webmail
 =======
 
-You can access your emails using the webmail interface at `webmail.uberspace.de 
-<https://webmail.uberspace.de>`_. Use your full email address and the corresponding password to login. This works with your ``@uber.space`` address as well as with any addresses using your :ref:`own domains <mail-domains>`.
+You can access your emails using the webmail interface at `webmail.uberspace.de <https://webmail.uberspace.de>`_. Use your full email address and the corresponding password to login. This works with your ``@uber.space`` address as well as with any addresses using your :ref:`own domains <mail-domains>`.
 
 .. tip:: 
    For your ``@uber.space`` address the password is the same as for SSH access, which you can set in your `dashboard <https://dashboard.uberspace.de/dashboard/authentication>`_.
@@ -40,7 +39,7 @@ IMAP
 POP
 ---
 
-We recommend using IMAP over POP to access your email. By default, POP will pull emails from your inbox. 
+We recommend using IMAP over POP to access your email. By default, POP will pull emails from your inbox.
 
 +--------------------+-----------------------------------------------------------+
 |Server              | your :term:`Hostname` (``<something>.uberspace.de``)      |
@@ -61,17 +60,18 @@ SMTP
 
 +--------------------+-----------------------------------------------------------+
 |Server              | your :term:`Hostname` (``<something>.uberspace.de``)      |
-+--------------------+-----------------------------------------------------------+
-|Port                | ``587``                                                   |
-+--------------------+-----------------------------------------------------------+
-|SSL/TLS Encryption  | STARTTLS                                                  |
-+--------------------+-----------------------------------------------------------+
++--------------------+----------------------+------------------------------------+
+|Port                | ``587``              | ``465``                            |
++--------------------+----------------------+------------------------------------+
+|SSL/TLS Encryption  | STARTTLS             | TLS                                |
++--------------------+----------------------+------------------------------------+
 |Username            | Your email address, including the domain                  |
 +--------------------+-----------------------------------------------------------+
 |Password            | Your password for the email address                       |
 +--------------------+-----------------------------------------------------------+
 
-.. warning:: Don't use ports ``25`` or ``465`` for sending mails! Unfortunately many clients try to use these ports, this won't work on Uberspace.
+
+.. warning:: Don't use ports ``25`` for sending mails! Unfortunately many clients try to use these ports, this won't work on Uberspace.
 
 Debugging
 =========
@@ -79,7 +79,7 @@ Debugging
 The most common problems when using a mail client with an Uberspace account:
 
 * Some home routers, especially some *Speedport* models offered by Deutsche Telekom, block SMTP connections to servers that are not on an internal allow list. You need to either disable that feature or add your Uberspace host to the allow list. Please check your router's manual for instructions.
-* Similarly, some anti-virus applications block SMTP connections or modify the port. 
+* Similarly, some anti-virus applications block SMTP connections or modify the port.
 * Some mail clients won't allow mail passwords that are longer than 16 characters.
 
 Apple Mail.app

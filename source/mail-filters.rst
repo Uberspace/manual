@@ -13,12 +13,14 @@ A Sieve script consists of a number of conditions which are applied to incoming 
 ManageSieve
 ###########
 
-Many E-Mail clients support the ManageSieve protocol to control and manage your Sieve filtering scripts. You can find a list of tools and plugins at `sieve.info <http://sieve.info/clients>`_. We plan to implement a rule editor in our :ref:`webmailer <mail-access>` soon.
+To create and manage scripts, you can use any tool speaking the *ManageSieve protocol*. Many E-Mail clients support the protocol, you can find a list of tools and plugins at `sieve.info <http://sieve.info/clients>`_. We plan to implement a rule editor in our :ref:`webmailer <mail-access>` soon.
 
-.. tip:: We recommend the `Sieve Script Editor <https://github.com/thsmi/sieve>`_ which has a GUI to drag and drop the rules and is available for many platforms.
+.. tip:: We recommend the `Sieve Script Editor <https://github.com/thsmi/sieve>`_ which has a GUI to drag and drop the rules and is available for many platforms and apps.
 
 Access
 ======
+
+If you need to provide access data you can use the following:
 
 +--------------------+----------------------------------------------+
 |Server              | :term:`your Hostname`                        |
@@ -67,6 +69,10 @@ In this example we sort mails from a mailinglist into a folder, sort mails to ``
         stop;
     }
 
+    # Forward all incoming mails to multiple recipients
+    redirect "recipient1@example.com";
+    redirect "recipient2@example.com";
+
     # The command "keep" is executed automatically, if no other action is taken.
 
 .. tip:: ``stop;`` tells the Sieve engine to stop here, without checking for more rules.
@@ -87,7 +93,7 @@ Sieve scripts are stored in the corresponding mailbox folder ``~/users/$MAILBOX/
 .. code-block:: console
 
   [eliza@dolittle ~/users/anna]$ readlink -f .dovecot.sieve
-  /home/utestxx1/users/anna/sieve/test.sieve
+  /home/eliza/users/anna/sieve/test.sieve
 
 Dovecot will compile a ``~/users/$MAILBOX/.dovecot.svbin`` from this script for the first mail delivered to the mailbox. It will also recompile for each new mail if the symlink or the script has been changed and the timestamp is updated. You can also trigger this by using ``sievec /path/to/script.sieve`` and check if it compiles correctly.
 
