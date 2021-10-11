@@ -22,7 +22,7 @@ Versions
 Release types 
 -------------
 
-We provide different releases and apply security updates on a regular basis. Currently, these Ruby versions are available: 2.5, 2.6 and 2.7
+We provide different releases and apply security updates on a regular basis. Currently, these Ruby versions are available: 2.5, 2.6, 2.7 and 3.0
 
 Standard version
 ----------------
