@@ -2,7 +2,7 @@ Added
 -----
 
 - Added `fzf <https://github.com/junegunn/fzf>`_.
-- Added `fd <http://xetex.sourceforge.net/>`_.
+- Added `fd <https://github.com/sharkdp/fd>`_.
 - Added `XeTeX <http://xetex.sourceforge.net/>`_.
 - The ``pear`` binary for **PHP** is now exposed, based on your selected version.
 
