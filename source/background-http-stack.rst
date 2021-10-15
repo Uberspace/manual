@@ -43,8 +43,10 @@ uberspace, it might look like this:
 .. code-block:: console
   :emphasize-lines: 13
 
-  [root@stardust ~]# cat /etc/nginx/user.d/marie.conf
+  [marie@stardust ~]# cat /readonly/marie/nginx.conf
   # manged by uberspace-generate-nginx-config
+  
+  [...]
 
   server {
       listen [::]:443;
@@ -60,6 +62,8 @@ uberspace, it might look like this:
       # domain specific backends
       # global backends, minus the ones specified as domain-ones
   }
+  
+  [...]
 
 By default, this ``server`` block only contains a simple proxy_pass_ statement
 processing all requests via a predefined apache upstream: send everything to
@@ -74,11 +78,11 @@ commands.
   [marie@stardust ~]$ uberspace web backend set /etherpad-lite --http --port 51922
   Set backend for /etherpad-lite to port 51922; please make sure something is listening!
   You can always check the status of your backend using "uberspace web backend list".
-  [root@stardust ~]# cat /etc/nginx/user.d/marie.conf
+  [marie@stardust ~]# cat /readonly/marie/nginx.conf
   # manged by uberspace-generate-nginx-config
 
   server {
-      (...)
+      [...]
 
       location / { proxy_pass http://apache; }
 
