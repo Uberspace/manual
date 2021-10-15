@@ -18,14 +18,17 @@ Enabling and disabling
 
 To enable or disable your access log, use these commands:
 
-.. code-block:: bash
+.. code-block:: console
 
  [isabell@doolittle ~]$ uberspace web log access enable
  access log is enabled
+ the logfiles will be saved to ~/logs/webserver/access_log
  [isabell@doolittle ~]$ uberspace web log access status
  access log is enabled
+ the logfiles will be saved to ~/logs/webserver/access_log
  [isabell@doolittle ~]$ uberspace web log access disable
  access log is disabled
+ the logfiles in ~/logs/webserver/access_log have been removed
  [isabell@doolittle ~]$ uberspace web log access status
  access log is disabled
 
@@ -58,14 +61,19 @@ Enabling and disabling
 
 To enable or disable your Apache error log, use these commands:
 
-.. code-block:: bash
+.. code-block:: console
 
  [isabell@doolittle ~]$ uberspace web log apache_error enable
  apache error log is enabled
+ the logfiles will be saved to ~/logs/webserver/error_log_apache
+ NOTE: consider that your app might be writing to its own logfiles and not to the system logs
  [isabell@doolittle ~]$ uberspace web log apache_error status
  apache error log is enabled
+ the logfiles will be saved to ~/logs/webserver/error_log_apache
+ NOTE: consider that your app might be writing to its own logfiles and not to the system logs
  [isabell@doolittle ~]$ uberspace web log apache_error disable
  apache error log is disabled
+ the logfiles in ~/logs/webserver/access_log have been removed
  [isabell@doolittle ~]$ uberspace web log apache_error status
  apache error log is disabled
 
@@ -89,14 +97,19 @@ Enabling and disabling
 
 To enable or disable your PHP error log, use these commands:
 
-.. code-block:: bash
+.. code-block:: console
 
  [isabell@doolittle ~]$ uberspace web log php_error enable
  php error log is enabled
+ the logfiles will be saved to ~/logs/error_log_php
+ NOTE: consider that your app might be writing to its own logfiles and not to the system logs
  [isabell@doolittle ~]$ uberspace web log php_error status
  php error log is enabled
+ the logfiles will be saved to ~/logs/error_log_php
+ NOTE: consider that your app might be writing to its own logfiles and not to the system logs
  [isabell@doolittle ~]$ uberspace web log php_error disable
  php error log is disabled
+ the logfiles in ~/logs/error_log_php have been removed
  [isabell@doolittle ~]$ uberspace web log php_error status
  php error log is disabled
 
