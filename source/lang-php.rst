@@ -93,6 +93,8 @@ Connection to webserver
 
 We use the `PHP FastCGI Process Manager (FPM) <http://de2.php.net/manual/en/install.fpm.php>`_ to connect the PHP interpreter to the webserver. Every user has its own PHP-FPM instance. You can check the `configuration <http://de2.php.net/manual/en/install.fpm.configuration.php>`_ in ``/opt/uberspace/etc/$USER/php-fpm.conf``.
 
+If you have configured your own proxy by using a custom :ref:`port <firewallports>` or :ref:`backend <backends>` you can still use your PHP-FPM instance on the socket ``/run/php-fpm-$USER.sock``
+
 How to publish
 --------------
 
