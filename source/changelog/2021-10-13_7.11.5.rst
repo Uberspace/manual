@@ -9,17 +9,17 @@ Added
 Changed
 -------
 
-- We exposed envelope ``recipient`` and ``sender`` to **Sieve**.
+- We now expose envelope ``recipient`` and ``sender`` to **Sieve**.
 
 - We now grant you direct access to your **PHP FPM** socket at ``/run/php-fpm-{username}.sock`` (e.g. so you can use it from your own proxy).
 
-- We linked your *userfacts* (i.e. your asteroid specific settings) to ``~/etc/userfacts`` for easier access.
+- We now link your *userfacts* (i.e. your asteroid specific settings) to ``~/etc/userfacts`` for easier access.
 
-- We linked your *Nginx* configuration to ``/readonly/<username>/nginx.conf`` for easier access.
+- We now link your *Nginx* configuration to ``/readonly/<username>/nginx.conf`` for easier access.
 
-- We linked your *Apache httpd* configuration to ``/readonly/<username>/httpd.conf`` for easier access.
+- We now link your *Apache httpd* configuration to ``/readonly/<username>/httpd.conf`` for easier access.
 
-- We now show you the path to the affected log file, when you use `uberspace web log ...``.
+- We now show you the path to the affected log file, when you use ``uberspace web log ...``.
 
 - The info page for *disabled accounts* now shows a link to the dashboard.
 
