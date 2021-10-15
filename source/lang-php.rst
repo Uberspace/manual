@@ -123,6 +123,8 @@ We use a standard ``php.ini`` configuration with minimal modifications to fit th
 
 We also set the timezone so error logs have the correct times.
 
+.. _php-custom-configuration:
+
 Own configuration
 -----------------
 
