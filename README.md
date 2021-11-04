@@ -15,9 +15,7 @@ your development process, the manual can be built locally.
 ### Initial Setup
 
 ```
-$ python3.8 -m venv .venv
-$ source .venv/bin/activate
-$ pip install -r requirements.txt
+make setup
 ```
 
 ### Building
@@ -41,4 +39,4 @@ serves the most recent version.
 
 All text and code in this repository is licensed under [CC-BY-NC-SA 4.0][].
 
-[CC-BY-NC-SA 4.0]: https://creativecommons.org/licenses/by-nc-sa/4.0/
+[cc-by-nc-sa 4.0]: https://creativecommons.org/licenses/by-nc-sa/4.0/
