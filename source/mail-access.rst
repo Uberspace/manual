@@ -82,13 +82,6 @@ The most common problems when using a mail client with an Uberspace account:
 * Similarly, some anti-virus applications block SMTP connections or modify the port.
 * Some mail clients won't allow mail passwords that are longer than 16 characters.
 
-Apple Mail.app
---------------
-
-If Mail.app complains that the Account or the SMTP server is offline, this is usually caused by the `Automatically manage connection settings <https://support.apple.com/en-us/HT204208>`_ option. If this option is active, Apple Mail sometimes replaces the correct settings with incorrect ones, blocking access to the account. You can safely turn off the setting and correct the settings.
-
-----
-
 .. glossary::
 
     Hostname
