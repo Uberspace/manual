@@ -28,7 +28,7 @@ In order to avoid hitting this limit, you can check your current storage usage u
 
 .. note:: To find files and folders which use a lot of storage, you can use the command ``ncdu`` when logged in to your uberspace.
 
-.. warning:: Currently there is no automatic notification via email if your quota is going to be overused, you have to check it for your self from time to time or to set up a script triggered by cron.
+.. note:: You will get a daily notification by email if you use more than 90% of your quota.
 
 .. _ram:
 
