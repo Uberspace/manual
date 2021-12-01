@@ -3,6 +3,13 @@
   command = "make dirhtml"
 
 [[redirects]]
+  # Redirect old wiki domain
+  from = "https://wiki.uberspace.de/*"
+  to = "https://manual.uberspace.de/"
+  status = 301
+  force = true
+
+[[redirects]]
   # Redirect domain aliases to primary domain
   from = "https://manual-72.uberspace.de/*"
   to = "https://manual.uberspace.de/:splat"
