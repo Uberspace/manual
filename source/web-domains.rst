@@ -17,8 +17,8 @@ encrypt does not support wildcard domains in conjunction with HTTP validation.
 .. code-block:: console
 
  [isabell@stardust ~]$ uberspace web domain add isabell.example
- The webserver's configuration has been adpated.
- Now you can use the following records for your dns:
+ The webserver's configuration has been adapted.
+ Now you can use the following records for your DNS:
      A -> 185.26.156.55
      AAAA -> 2a00:d0c0:200:0:b9:1a:9c:37
 
