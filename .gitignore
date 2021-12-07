@@ -4,6 +4,7 @@
 
 # virtualenv
 venv
+.venv
 
 # pyenv
 .python-version
