@@ -21,6 +21,8 @@ The e-mail address of your mailboxes is in the form of ``$MAILBOX@$USER.uber.spa
 Setup a new mailbox
 -------------------
 
+.. _new-mailbox:
+
 To add a new mailbox to your Uberspace, run the ``uberspace mail user add <mailbox>`` command and enter your password when prompted. So to add the mailbox ``post``, run this command:
 
 .. code-block:: bash
