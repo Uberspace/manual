@@ -97,7 +97,7 @@ Using older versions of Windows
 Older versions of Windows do not include a SSH client by default, but there are plenty of options,
 `PuTTY <http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html>`_ probably being the choice of most Windows users.
 
-If you want or need to use PuTTY, please refer to our :ref:`PuTTY guide <putty>`.
+If you want or need to use PuTTY, please refer to our :doc:`PuTTY guide <putty>`.
 
 .. _ssh-advanced-topics:
 
@@ -274,14 +274,3 @@ Simply put this into your local `~/.ssh/config` file (in this example we're focu
 When opening a connection as ``eliza`` to ``dolittle.uberspace.de``, OpenSSH will first check if there is a local socket named ``~/.ssh/socket-eliza@dolittle.uberspace.de:22`` and hop on it.
 If there isn't such a local socket, it will connect as usual, *providing* such a socket for any further connection.
 
-Using PuTTY
-~~~~~~~~~~~
-
-Header over to "Connections | SSH" in the tree menu on the left. Enable the checkbox at "Share SSH connections if possible".
-
-If you're working with session profiles, you can also load a session of your choice (don't double-click it, but click its name once, then click "Load"),
-activate the connection sharing setting, then save the session again.
-
-When opening your first connection to a host, PuTTY will ask you for your password as usual (or login with your key).
-If you're now choosing "Duplicate session" from the window menu you'll get another session *immediately*, showing
-"Reusing a shared connection to this server" right before your prompt to indicate you're on a reused connection.
