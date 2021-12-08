@@ -64,3 +64,16 @@ This is what you should be seeing inside the PuTTY terminal window:
 The ``[eliza@dolittle ~]$`` prompt shows that you're now successfully connected. Every command you're about to enter will get executed on your Uberspace.
 
 Entering ``exit`` (or pressing Ctrl+D) leaves the shell, closing your connection.
+
+Using PuTTY
+~~~~~~~~~~~
+
+Header over to "Connections | SSH" in the tree menu on the left. Enable the checkbox at "Share SSH connections if possible".
+
+If you're working with session profiles, you can also load a session of your choice (don't double-click it, but click its name once, then click "Load"),
+activate the connection sharing setting, then save the session again.
+
+When opening your first connection to a host, PuTTY will ask you for your password as usual (or login with your key).
+If you're now choosing "Duplicate session" from the window menu you'll get another session *immediately*, showing
+"Reusing a shared connection to this server" right before your prompt to indicate you're on a reused connection.
+
