@@ -5,11 +5,11 @@ Billing
 #######
 
 Servers don't come cheap! While we'd love to give uberspaces away like free
-candy, providing one incurs costs that need to be covered. We try our best to
-make the platform accessible to anyone, regardless of their financial means.
+candy, providing servers incurs costs that must be covered. We try our best to
+make the platform accessible to anyone, regardless of their financial situation.
 
-Your **first month is always free** and without any commitment. Afterwards you
-can choose, if you'd like to keep your space.
+Your **first month is always free**, without any commitment. Afterwards you
+can choose if you'd like to keep your space.
 
 Uberspace is a **prepaid product** with a **monthly fee**. This means you
 first top-up your virtual account with us. Month after month we deduct the price
@@ -34,7 +34,7 @@ for a spin, install your app, and ask us questions.
   31.03., even though that’s more than one month.
 
 Towards the end of the trial period, we'll inform you via email. If you're
-satisfied, go ahead and charge up your account to keep it. If you are not,
+satisfied, go ahead and top-up your account to keep it. If you are not,
 just don't do anything and we'll delete it for you. No questions asked.
 
 Price
@@ -58,8 +58,8 @@ If none of these options sounds like a good fit for you, you are also free to
 choose a price that works below 5€ or above 15€ on the `Accounting page
 <dashboardaccount_>`_.
 
-However, **the service always stays the same**: We do not shape down traffic of
-users, who aren't able to pay a lot of money, or allocate more CPU to users, who
+However, **the service always stays the same**: We do not cut down traffic of
+users who aren't able to pay a lot of money, or allocate more CPU to users who
 pay more than others. We also strive to answer each support request equally.
 
 Storage
@@ -80,7 +80,7 @@ balance.
 
   Please consider transferring more than a month's worth of funds when you top-up
   your account. The different fees we have to pay for your payment make small
-  payments ridiculously more expensive for us. Meaning less of your money will
+  payments ridiculously more expensive for us, meaning less of your money will
   actually reach us. If you are able to, **please transfer more than 10€**. You
   can always get your unused balance back using a refund.
 
@@ -167,12 +167,12 @@ Cash
 
 If you prefer cold, hard cash, we've got you covered as well. Put your cash into
 an envelope, note your username inside and mail it to the address stated in our
-`imprint <imprint_>`_. Once we get your letter, we'll charge up your account
+`imprint <imprint_>`_. Once we get your letter, we'll top-up up your account
 and inform you via email.
 
 .. note::
 
-  We only experience very few cases of missing envelopes or cash. Nevertheless,
+  We experience very few cases of missing envelopes or cash. Nevertheless,
   sending money through the postal system isn't the most reliable thing. If you
   suspect that you letter got lost, `drop us a line <support_>`_ and we'll figure
   something out.
@@ -189,15 +189,17 @@ days. Feel free to `contact us <support_>`_ with any questions.
 What happens when you stop paying
 ---------------------------------
 
-If your account is going to run out of funds, we will notify you via email.
-Should the account still be empty by the time we try to charge it, we'll send
-out another email and flag your account for deactivation. If we don't hear from
-you for two weeks after that, we disable your account. Your web addresses will 
-then return the message ``This account has been disabled``. Finally, if your
-account has been for multiple months without payment, we delete the stored data.
+If your account is going to run out of funds, we will:
 
-We will not come after you for the missing money, but would highly appreciate
-it, if you restored your account to a positive or 0€ balance.
+1. notify you via email.
+2. we'll send out another email at the dawn of the next month and flag your account 
+for deactivation. 
+3. If we don't hear from you for two weeks after that, we will disable your account.
+This means your web pages will display the message ``This account has been disabled``.
+4. If your account has gone for two months without payment, we delete the stored data.
+
+We will not come after you for borrowed money, but would highly appreciate it if you
+restored your account balance to be positive or 0€.
 
 Borrowing money
 ===============
@@ -205,7 +207,7 @@ Borrowing money
 Once your account has been deactivated, you can reactivate it by borrowing money
 in the `web interface <dashboard_>`_. Please return the money after you
 transferred additional funds. We do not automatically deduct it from your
-balance. Also, note that you cannot borrow additional money, if you already owe us.
+balance. Also, note that you cannot borrow additional money if you already owe us.
 
 Cancelation
 -----------
