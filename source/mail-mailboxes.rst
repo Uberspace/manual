@@ -36,8 +36,6 @@ To add a new mailbox to your Uberspace, run the ``uberspace mail user add <mailb
 .. warning::
   While some special characters such as ``.``, ``+``, ``-``, ``_`` are allowed in mailbox names, there are `rules <https://en.wikipedia.org/wiki/Email_address#Local-part>`_ limiting their usage. Please make sure your mailbox name adheres to these rules.
 
-.. tip:: We strongly recommend to use only `ASCII characters <https://en.wikipedia.org/wiki/ASCII#Printable_characters>`_ in your password. Non-ASCII characters may work in some circumstances, but this depends on the encoding used by your client being compatible with the one used by the mail server.
-
 Password Requirements
 ~~~~~~~~~~~~~~~~~~~~~
 
@@ -54,6 +52,8 @@ We **prohibit the use of some passwords** we deem too common (like ``test1234``)
 In addition to the above, we also check your password using `xcvbn <https://github.com/dwolfhub/zxcvbn-python>`_. This results in a score for your password, based on how easy it might be guessed and / or cracked (higher results mean a better estimated password strenght). We require a **password score** of at least ``4``.
 
 If we reject your password, we try to give you an error messages that explains why. Hopefully it will help you to choose a fitting alternative.
+
+.. warning:: We strongly recommend to use only `ASCII characters <https://en.wikipedia.org/wiki/ASCII#Printable_characters>`_ in your password. Non-ASCII characters may work in some circumstances, but this depends on the encoding used by your client being compatible with the one used by the mail server.
 
 List existing mailboxes
 -----------------------
