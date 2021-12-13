@@ -94,10 +94,10 @@ You can delete a mailbox using the ``uberspace mail user del <mailbox>`` command
 Catch-all mailbox
 =================
 
+A catch-all mailbox will *catch all* of the emails addressed to the domains on your account that do not exist in the mail server - this can help avoid losing emails due to misspelling. Without a catch-all mailbox these mails will get rejected by the server.
+
 You can configure any existing mailbox to be the catch-all mailbox.
 
-.. tip::
-  A catch-all mailbox will "catch all" of the emails addressed to the domains on your account that do not exist in the mail server - this can help avoid losing emails due to misspelling. Without a catch-all mailbox these mails will get rejected by the server.
 
 .. code-block:: bash
 
