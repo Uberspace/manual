@@ -38,6 +38,7 @@ Use ``uberspace tools version list php`` to show all selectable versions:
   - 7.3
   - 7.4
   - 8.0
+  - 8.1
   [eliza@dolittle ~]$
 
 .. _php-change-version:
