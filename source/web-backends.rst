@@ -28,7 +28,7 @@ In order to use your own backend, you first need to set it up using the ``ubersp
     list — List all configured web backends.
     set — Set web backend for a given domain and path.
 
-    [isabell@stardust ~]$
+  [isabell@stardust ~]$
 
 default backend
 ===============
