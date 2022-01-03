@@ -138,6 +138,13 @@ To completely disable any emails for a cronjob, you need to send both the standa
 
   15 * * * * /path/to/your/job/script.pl > /dev/null 2>&1
 
+For avoiding cron spam while still receiving useful failure reports, consider using the ``cronic`` job wrapper, see `<https://habilis.net/cronic/>`__:
+
+.. code-block:: none
+
+  15 * * * * /path/to/cronic /path/to/your/job/script.pl
+
+
 Logging
 -------
 
