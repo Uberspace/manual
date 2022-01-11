@@ -94,7 +94,7 @@ the most common way to top-up your account is using a **classic wire transfer**.
 
     Account holder: Jonas Pasche
     IBAN: DE35 5505 0120 0200 0039 78
-    Bank name: Sparkasse Mainz
+    Bank name: Rheinhessen Sparkasse
     BIC: MALADE51MNZ
     Reference: uberspace <account name>
 
