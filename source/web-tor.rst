@@ -18,9 +18,9 @@ network and, as a result, has stronger privacy guarantees as well as increased
 performance. It also enabled both the server and the client to remain anonymous.
 
 Content hosted on the default ``.uber.space`` domain is automatically made
-available as a hidden service as a sub domain of **onastroids**\ t6krpn.onion.
+available as a hidden service as a sub domain of ahcbagldgzdpa74g2mh74fvk5zjzpfjbvgqin6g3mfuu66tynv2gkiid.onion.
 For example, content on https://isabell.uber.space is also reachable via
-http://isabell.onastroidst6krpn.onion.
+http://isabell.ahcbagldgzdpa74g2mh74fvk5zjzpfjbvgqin6g3mfuu66tynv2gkiid.onion.
 
 Forwarding by Tor-Browser
 =========================
@@ -80,20 +80,12 @@ that this header can be faked very easily. Requests containing the header might
 come from the hidden service. Requests not containing the header certainly did
 not pass through the hidden service.
 
-Next-Gen/V3 Onions
-==================
-
-Since V2 onions and their SHA1/RSA1024 tech is a little dated, we also offer a
-V3 onion address: ``ahcbagldgzdpa74g2mh74fvk5zjzpfjbvgqin6g3mfuu66tynv2gkiid.onion``.
-It can be used just like the V2 one.
-
 uberspace.de
 ============
 
 Just like your sites, our website and the dashboard can of course be directly
-accessed in the Tor network. Use the following addresses:
+accessed in the Tor network. Use the following address:
 
-* http://uberspaceyukm42r.onion
-* http://ubrspc3z5xuzh2iss4xuacpjdqj24orwnuye5hk23cpykd3mcujvygqd.onion
+http://ubrspc3z5xuzh2iss4xuacpjdqj24orwnuye5hk23cpykd3mcujvygqd.onion
 
 .. _Tor: https://www.torproject.org/
