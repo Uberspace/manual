@@ -1,0 +1,4 @@
+Changed:
+--------
+
+  * we reset the maillimit to 500/h
