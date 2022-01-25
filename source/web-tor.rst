@@ -1,7 +1,7 @@
 .. _web-tor:
 
 ##################
-Tor Hidden Service 
+Tor Onion Service 
 ##################
 
 Tor_ is open-source software for anonymous communication. It enables users
@@ -13,12 +13,12 @@ makes surfing a bit slower.
 
 While Tor is quite capable of connecting Tor users to the outside world via
 so-called exit nodes, there is a much nicer way to access content inside Tor:
-hidden services. Traffic to and from Tor hidden services never leaves the Tor
+onion services. Traffic to and from Tor onion services never leaves the Tor
 network and, as a result, has stronger privacy guarantees as well as increased
 performance. It also enabled both the server and the client to remain anonymous.
 
 Content hosted on the default ``.uber.space`` domain is automatically made
-available as a hidden service as a sub domain of ahcbagldgzdpa74g2mh74fvk5zjzpfjbvgqin6g3mfuu66tynv2gkiid.onion.
+available as a onion service as a sub domain of ahcbagldgzdpa74g2mh74fvk5zjzpfjbvgqin6g3mfuu66tynv2gkiid.onion.
 For example, content on https://isabell.uber.space is also reachable via
 http://isabell.ahcbagldgzdpa74g2mh74fvk5zjzpfjbvgqin6g3mfuu66tynv2gkiid.onion.
 
@@ -32,7 +32,7 @@ An alternative possibility that also overrides the HTTP header is a meta-tag in 
 Other domains
 =============
 
-Content on other domains is currently not accessible as a hidden service, but
+Content on other domains is currently not accessible as a onion service, but
 can of course be accessed normally from inside the Tor network. This is mainly
 due a difficulty in matching requests: all requests from
 ``SOMEONE.onastroidst6krpn.onion`` go to ``SOMEONE.uber.space``, which makes
@@ -40,13 +40,13 @@ for a rather simple and roboust setup. While we could implement more
 sophisticated matching like ``my.domain.com.SOMEONE.onastroidst6krpn.onion``, we
 have currently chosen not do so.
 
-You can of course host your own hidden service inside your uberspace to serve
+You can of course host your own onion service inside your uberspace to serve
 other content.
 
 Trust and Security
 ==================
 
-Compared to a normal hidden service run by yourself, there are a few key points
+Compared to a normal onion service run by yourself, there are a few key points
 to keep in mind:
 
 1. Your username is contained in the site domain, which makes it clear, who is
@@ -58,7 +58,7 @@ to keep in mind:
    or drop any content or requests. We will of course not do so; with a notable
    exception being abuse handling. While this is rather obvious, we still wanted
    to point it out here.
-3. Our hidden service currently only supports HTTP (without the S). Since the
+3. Our onion service currently only supports HTTP (without the S). Since the
    traffic never leaves the Tor network, this isn't much of a problem. We'd like
    to provide HTTPS anyway, since it would provide additional authentication, but we
    are currently not able to do so. This is mainly due to high pricing of
@@ -66,7 +66,7 @@ to keep in mind:
    them.
 
 If any of those points constitute a deal breaker for you, you are of course free
-to not use our hidden service and host your own inside your uberspace.
+to not use our onion service and host your own inside your uberspace.
 
 Identifying Requests
 ====================
@@ -74,11 +74,11 @@ Identifying Requests
 Tor makes it impossible to identify which source IP address is sending requests
 to your site. This is by design. Without some extra effort, it isn't even
 obvious that a request passed through the Tor network at all. However, requests
-that arrived on our hidden service and where then proxied through to your
+that arrived on our onion service and where then proxied through to your
 uberspace bear a ``X-Uberspace-Via-Hidden-Service`` HTTP header. Keep in mind
 that this header can be faked very easily. Requests containing the header might
-come from the hidden service. Requests not containing the header certainly did
-not pass through the hidden service.
+come from the onion service. Requests not containing the header certainly did
+not pass through the onion service.
 
 uberspace.de
 ============
