@@ -9,9 +9,12 @@ System Resources
 Storage
 =======
 
-Every Uberspace is provided with 10 GB of storage by default, you can :ref:`upgrade your storage <billing>` up to 50GB. Over-usage of up to 10% is permitted for up to seven days. If you try to use even more than these 110% of your booked storage or if you don't free up enough storage within seven days, we will block all write access for your account. This means you won't be able to add any more data, including incoming e-mails or database storage.
+Every Uberspace is provided with 10 GB of storage by default, you can :ref:`upgrade your storage <billing>` up to 50GB.
+Over-usage of up to 10% is permitted for up to seven days. If you try to use even more than these 110% of your booked
+storage or if you don't free up enough storage within seven days, we will block all write access for your account.
+This means you won't be able to add any more data, including incoming e-mails or database storage.
 
-In order to avoid hitting this limit, you can check your current storage usage using the ``quota`` command:
+You may check your current storage usage with the ``quota`` command:
 
 .. code-block:: console
 
@@ -26,9 +29,25 @@ In order to avoid hitting this limit, you can check your current storage usage u
 * ``limit`` column shows the *hard* limit of 11 GB.
 * ``grace`` column shows you how much time you have left to fix if you are over the soft limit.
 
-.. tip:: To find files and folders which use a lot of storage, you can use the command ``ncdu`` when logged in to your uberspace.
-
 .. note:: You will be notified once in 7 days by e-mail when your free space is less than ``1 GB`` and once again when your quota hits the over-usage grace period above ``100%``.
+
+Find files which use a lot of storage
+-------------------------------------
+
+The beforementioned ``quota`` command calculates the needed storage for files that are owned by your user anywhere on the system not only within your home folder.
+To find these files you should check the most common paths where files can be stored for your user:
+
+.. code-block:: console
+
+  [isabell@stardust ~]$ du -hs /home/$USER /var/www/virtual/$USER /tmp /var/tmp 2> /dev/null
+  120K	/home/isabell
+  2,6M	/var/www/virtual/isabell
+  4,0K	/tmp
+  4,0K	/var/tmp
+
+The ``du`` command is good for an raw overview about your storage usage, but to have a deeper look which files use up a lot of space
+we recommend the interactive tool ``ncdu``. You can use the command just within your working directory or with a path like
+``ncdu /var/www/virtual/$USER`` and then browsing with your *keyboard arrows* and *enter*.
 
 .. _ram:
 
