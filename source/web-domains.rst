@@ -16,9 +16,9 @@ encrypt does not support wildcard domains in conjunction with HTTP validation.
 
 .. code-block:: console
 
- [isabell@philae ~]$ uberspace web domain add isabell.example
- The webserver's configuration has been adpated.
- Now you can use the following records for your dns:
+ [isabell@stardust ~]$ uberspace web domain add isabell.example
+ The webserver's configuration has been adapted.
+ Now you can use the following records for your DNS:
      A -> 185.26.156.55
      AAAA -> 2a00:d0c0:200:0:b9:1a:9c:37
 
@@ -47,7 +47,10 @@ Because we check on each host if a domain is already under control of another us
 
 Then you can just add the subdomain *first* on the one user and *then* the main domain on the other user.
 
-.. note:: We very much encourage to use separate uberspace accounts for separate projects or apps and so far subdomains. And you shouldn't usually run in this problem because in most cases you won't end up with different users on the same host.
+.. note::
+  We very much encourage you to use separate Uberspace accounts for separate projects or apps and so for subdomains. And you shouldn't usually run into this problem because in most cases you won't end up with different users on the same host.
+  
+  Note that you will also encounter this error if the main domain is configured as a mail domain (and not as web domain) on another Uberspace account.
 
 Removal
 =======
@@ -56,7 +59,7 @@ To remove a domain, use the ``uberspace`` tool:
 
 .. code-block:: console
 
- [isabell@philae ~]$ uberspace web domain del isabell.example
+ [isabell@stardust ~]$ uberspace web domain del isabell.example
  The server's configuration has been adapted.
 
 Listing
@@ -66,7 +69,7 @@ If you want to find out which domains are currently set up for the web server on
 
 .. code-block:: console
 
- [isabell@philae ~]$ uberspace web domain list
+ [isabell@stardust ~]$ uberspace web domain list
  isabell.example
  isabell.uber.space
 

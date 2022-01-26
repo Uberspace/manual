@@ -25,7 +25,7 @@ To add a new mailbox to your Uberspace, run the ``uberspace mail user add <mailb
 
 .. code-block:: bash
 
- [isabell@philae ~]$ uberspace mail user add post
+ [isabell@stardust ~]$ uberspace mail user add post
  Enter a password for the mailbox:
  Please confirm your password:
  New mailbox created for user: 'post', it will be live in a few minutes...
@@ -62,7 +62,7 @@ You can list your existing mailboxes using the ``uberspace mail user list`` comm
 
 .. code-block:: bash
 
- [isabell@philae ~]$ uberspace mail user list
+ [isabell@stardust ~]$ uberspace mail user list
  info
  post
 
@@ -74,7 +74,7 @@ To change a mailbox's password, run the ``uberspace mail user password <mailbox>
 
 .. code-block:: bash
 
- [isabell@philae ~]$ uberspace mail user password post
+ [isabell@stardust ~]$ uberspace mail user password post
  Enter a password for the mailbox:
  Please confirm your password:
  New mailbox password set for user 'post'.
@@ -86,7 +86,7 @@ You can delete a mailbox using the ``uberspace mail user del <mailbox>`` command
 
 .. code-block:: bash
 
- [isabell@philae ~]$ uberspace mail user del post
+ [isabell@stardust ~]$ uberspace mail user del post
  Mailbox for user 'post' deleted.
 
 .. _catchall:
@@ -101,22 +101,22 @@ You can configure any existing mailbox to be the catch-all mailbox.
 
 .. code-block:: bash
 
-  [isabell@philae ~]$ uberspace mail catchall status
+  [isabell@stardust ~]$ uberspace mail catchall status
   No catchall configured.
-  [isabell@philae ~]$
+  [isabell@stardust ~]$
 
 To set the catch-all mailbox run ``uberspace mail catchall set <mailbox>``. In this example we make the mailbox ``post`` the catch-all mailbox:
 
 .. code-block:: bash
 
-  [isabell@philae ~]$ uberspace mail catchall set post
+  [isabell@stardust ~]$ uberspace mail catchall set post
   Mails, which cannot be matched to a mailbox, will be sent to post.
-  [isabell@philae ~]$
+  [isabell@stardust ~]$
 
 To remove the catch-all run ``uberspace mail catchall del``:
 
 .. code-block:: bash
 
- [isabell@philae ~]$ uberspace mail catchall del
+ [isabell@stardust ~]$ uberspace mail catchall del
  No catchall configured.
- [isabell@philae ~]$
+ [isabell@stardust ~]$

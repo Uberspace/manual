@@ -1,0 +1,38 @@
+Added
+-----
+
+- Added `fzf <https://github.com/junegunn/fzf>`_.
+- Added `fd <https://github.com/sharkdp/fd>`_.
+- Added `XeTeX <http://xetex.sourceforge.net/>`_.
+- The ``pear`` binary for **PHP** is now exposed, based on your selected version.
+
+Changed
+-------
+
+- We now expose envelope ``recipient`` and ``sender`` to **Sieve**.
+
+- We now grant you direct access to your **PHP FPM** socket at ``/run/php-fpm-{username}.sock`` (e.g. so you can use it from your own proxy).
+
+- We now link your *userfacts* (i.e. your asteroid specific settings) to ``~/etc/userfacts`` for easier access.
+
+- We now link your *Nginx* configuration to ``/readonly/<username>/nginx.conf`` for easier access.
+
+- We now link your *Apache httpd* configuration to ``/readonly/<username>/httpd.conf`` for easier access.
+
+- We now show you the path to the affected log file, when you use ``uberspace web log ...``.
+
+- The info page for *disabled accounts* now shows a link to the dashboard.
+
+- The info page shown for *unknown domains* (shown when you point a domain to the host, but you missed setting it with ``uberspace web domain add ...``), now mentions the hostname.
+
+- We now also show the page for an *unknown domain*, when a non empty path is requested (before this would result in a 404).
+
+Removed
+-------
+
+- We removed **NodeJS** ``10`` (in was already deprecated in the `last release <./2021-08-19_7.11.4>`_).
+
+Fixed
+-----
+
+- In `7.11.4 <./2021-08-19_7.11.4>`_ we added our self compiled **Python** ``3.9`` to the ``$CPATH``. The way we handled it added the current directory (i.e. ``.``) too, when `$CPATH` was empty. That could lead to all kinds of problems when compiling and is now fixed.

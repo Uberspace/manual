@@ -32,7 +32,7 @@ Java is updated alongside the rest of EPEL 7 reglarily.
 +--------+---------------------+--------------------------+
 | Branch | State               | Security Support Until   |
 +========+=====================+==========================+
-| 14     | Bug fixes           | September 2020	          |
+| 16     | Bug fixes           | September 2021	          |
 +--------+---------------------+--------------------------+
 
 Connection to webserver

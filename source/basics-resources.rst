@@ -16,9 +16,9 @@ In order to avoid hitting this limit, you can check your current storage usage u
 .. code-block:: console
 
   [isabell@stardust ~]$ quota -gsl
-  Disk quotas for group isabell (gid 1013): 
+  Disk quotas for group isabell (gid 1013):
        Filesystem   space   quota   limit   grace   files   quota   limit   grace
-        /dev/sda2    713M  10240M  11264M              38       0       0        
+        /dev/sda2    713M  10240M  11264M              38       0       0
 
 
 * ``space`` shows you how much storage you're currently using.
@@ -26,9 +26,9 @@ In order to avoid hitting this limit, you can check your current storage usage u
 * ``limit`` column shows the *hard* limit of 11 GB.
 * ``grace`` column shows you how much time you have left to fix if you are over the soft limit.
 
-.. note:: To find files and folders which use a lot of storage, you can use the command ``ncdu`` when logged in to your uberspace.
+.. tip:: To find files and folders which use a lot of storage, you can use the command ``ncdu`` when logged in to your uberspace.
 
-.. warning:: Currently there is no automatic notification via email if your quota is going to be overused, you have to check it for your self from time to time or to set up a script triggered by cron.
+.. note:: You will be notified once in 7 days by e-mail when your free space is less than ``1 GB`` and once again when your quota hits the over-usage grace period above ``100%``.
 
 .. _ram:
 

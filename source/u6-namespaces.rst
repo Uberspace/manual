@@ -69,7 +69,8 @@ First you have to add the correct mailboxes:
   anna
   arthur
 
-Then you will have to remove the temporary redirection to ``~/namespace-collector``:
+Then you need to remove the temporary redirection to ``~/namespace-collector`` and run the spamfolder enable command to create a new ``.qmail-default`` file with our provided maildrop filter which is needed for the new delivery process.
+:
 
 .. code-block:: bash
 
@@ -102,4 +103,4 @@ Now you have a clean and U7 compatible mail setup.
 
 .. note::
 
- Between migration and fixing the namespaces, there might have been redirected some emails to ``~/namespace-collector``. You will have to decide by yourself how to deal with them, for example copying them to one of your mailboxes or create an new mailbox ``namespace-collector`` and move them there to check with your email client.
+ Between migration and fixing the namespaces, some mails might have been redirected to ``~/namespace-collector``. You will have to decide by yourself how to deal with them, for example copying them to one of your mailboxes or creating a new mailbox ``namespace-collector`` and move them there to check with your email client.

@@ -1,0 +1,26 @@
+🎄 Santa is coming to town
+
+Added
+-----
+* 🎁 you can now train the SPAM filter by moving mails to or out of the SPAM folder
+* 🎁 we now inform by email you when your quota is full or almost full
+* 🎁 we added PHP 8.1
+* 🎁 we include our own ImageMagick v7 with support for AVIF / HEIC
+* 🎁 provide ``sha3sum`` and ``liblua``
+* 🎁 We now provide prolog for all your computational linguistics needs
+
+Changed
+-------
+* 🎁 we switched our outgoing mail server to haraka
+* 🎁 we set the maillimit to 60/h instead of 500/h to combat SPAM
+* 🎁 your new IMAP folders are now subscribed automatically in mail clients
+* 🎁 we implemented the Mozilla TLS recommendations for IMAP/POP3/SMTP-587
+
+Fixed
+-----
+* 🎁 .NET package bailed because of cache
+* 🎁 we fixed a problem with resolv.conf from active Network Manager
+* 🎁 SQL backup dumps were deleted too early in an edge case, we fixed that
+* 🎁 SMTP rate limit now tells you the correct error message in the SMTP dialogue
+* 🎁 Explicitly put CA list into ``php.ini``
+* 🎁 fail soft when running ``uberspace mail user list`` without ``~/users``

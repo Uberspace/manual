@@ -24,7 +24,12 @@ In many contexts, the tilde ``~`` can be used as a placeholder for your home dir
 etc
 ---
 
-The ``etc`` folder is reserved for configuration files of any kind. Most importantly, this includes your :ref:`supervisord` configuration in ``etc/services.d``.
+The ``etc`` folder is reserved for configuration files of any kind: 
+
+    - ``etc/certificates`` shows your certificate files for :ref:`https <web-https>`.
+    - ``etc/php.d`` contains your custom configuration files for your :ref:`php <php-custom-configuration>`.
+    - ``etc/services.d`` contains the configuration files for your :ref:`services <supervisord>`.
+    - ``etc/userfacts`` shows your userfacts where we store specific Uberspace configurations.
 
 bin
 ---

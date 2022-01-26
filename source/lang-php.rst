@@ -38,6 +38,7 @@ Use ``uberspace tools version list php`` to show all selectable versions:
   - 7.3
   - 7.4
   - 8.0
+  - 8.1
   [eliza@dolittle ~]$
 
 .. _php-change-version:
@@ -85,6 +86,8 @@ We update all versions on a regular basis. Once the `security support <http://ph
 +--------+---------------------+------------------------+
 | 8.0    | Active support      | 26 Nov 2023            |
 +--------+---------------------+------------------------+
+| 8.1    | Active support      | 25 Nov 2024            |
++--------+---------------------+------------------------+
 
 ----
 
@@ -92,6 +95,8 @@ Connection to webserver
 =======================
 
 We use the `PHP FastCGI Process Manager (FPM) <http://de2.php.net/manual/en/install.fpm.php>`_ to connect the PHP interpreter to the webserver. Every user has its own PHP-FPM instance. You can check the `configuration <http://de2.php.net/manual/en/install.fpm.configuration.php>`_ in ``/opt/uberspace/etc/$USER/php-fpm.conf``.
+
+If you have configured your own proxy by using a custom :ref:`port <firewallports>` or :ref:`backend <backends>` you can still use your PHP-FPM instance on the socket ``/run/php-fpm-$USER.sock``
 
 How to publish
 --------------
@@ -120,6 +125,8 @@ We use a standard ``php.ini`` configuration with minimal modifications to fit th
  date.timezone = Europe/Berlin
 
 We also set the timezone so error logs have the correct times.
+
+.. _php-custom-configuration:
 
 Own configuration
 -----------------

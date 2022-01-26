@@ -26,14 +26,47 @@ You can create folders (and symlinks) in the form of ``/var/www/virtual/<usernam
 
 .. warning:: Do not delete ``/var/www/virtual/<username>/html``. If this folder doesn't exist, the RewriteRules implementing the additional DocumentRoots don't work, so all your domains will be inaccessible.
 
+Example how to change DocumentRoot location
+-------------------------------------------
+
+Many PHP apps like Symfony provide their own public webfolder within their folder structure. It is recommended to only make this folder accessible by the webserver. This can be achieved, for example, with the following procedure:
+
+.. code-block:: console
+
+  # in /var/www/virtual/$USER
+  [eliza@dolittle eliza]$ rm -f html/nocontent.html
+  [eliza@dolittle eliza]$ rmdir html
+  [eliza@dolittle eliza]$ mkdir -p my_project/public
+  [eliza@dolittle eliza]$ ln -s my_project/public html
+
+this will result in the following structure:
+
+.. code-block:: console
+  
+  [eliza@dolittle eliza]$ tree
+  .
+  ├── html -> my_project/public
+  └── my_project
+      └── public
+
+because ``my_project`` is not a domain name that can be reached by the webserver, the source code will never be reachable from the outside.
+
 Permissions
 ===========
 
-Since the webserver runs with a different user, you need to make sure your files have the right `permissions <https://en.wikipedia.org/wiki/Chmod>`_. The folder ``/var/www/virtual/<username>/html`` and all additional DocumentRoots need to have mode ``0755``, the files within ``0644``.
+Since the webserver runs with a different user, you need to make sure your files have the right `permissions <https://en.wikipedia.org/wiki/Chmod>`_. The folder ``/var/www/virtual/<username>/html`` and all additional DocumentRoots need to have mode ``0755``, the files within ``0644``. To fix this for all files and folders you can use the following code:
+
+.. code-block:: console
+
+  [eliza@dolittle ~]$ chmod -R u=rwX,go=rX ~/html
 
 .. tip:: Since the folder ``/var/www/virtual/<username>`` has mode ``0750``, other users on the same server can't access your files.
 
-In addition to "traditional" permission bits, uberspace uses `SELinux <https://en.wikipedia.org/wiki/Security-Enhanced_Linux>`_. For the webserver user to be able to access the files, they need to have a SELinux type of ``httpd_sys_content_t``. If you create files in your home directory, those files will carry the ``user_home_t`` type instead. Using ``mv`` to move the files will take care of this, as ``mv`` is aliased to ``mv -Z`` by default (``-Z``: *set SELinux security context of destination file to default type*). However, if you move your files in a different way, you might need to set the SELinux label accordingly, for example using `restorecon <https://linux.die.net/man/8/restorecon>`_: ``restorecon -R -v ~/html``.
+In addition to "traditional" permission bits, uberspace uses `SELinux <https://en.wikipedia.org/wiki/Security-Enhanced_Linux>`_. For the webserver user to be able to access the files, they need to have a SELinux type of ``httpd_sys_content_t``. If you create files in your home directory, those files will carry the ``user_home_t`` type instead. Using ``mv`` to move the files will take care of this, as ``mv`` is aliased to ``mv -Z`` by default (``-Z``: *set SELinux security context of destination file to default type*). However, if you move your files in a different way, you might need to set the SELinux label accordingly, for example using `restorecon <https://linux.die.net/man/8/restorecon>`_: 
+
+.. code-block:: console
+
+  [eliza@dolittle ~]$ restorecon -R -v ~/html
 
 Configuration
 =============
