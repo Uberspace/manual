@@ -9,26 +9,26 @@ We use ``supervisord`` to monitor services. A service, or daemon, is a program t
 Create a Service
 ================
 
-To create a new service, place a ``.ini`` file for each new service in ``~/etc/services.d/``. So if you want to add a service called my-daemon that runs an executable located at ``/home/eliza/bin/my-daemon``, place the file ``my-daemon.ini`` in ``~/etc/services.d/`` and edit it:
+To create a new service, place a ``.ini`` file for each new service in ``~/etc/services.d/``. So if you want to add a service called my-daemon that runs an executable located at ``/home/isabell/bin/my-daemon``, place the file ``my-daemon.ini`` in ``~/etc/services.d/`` and edit it:
 
 .. code-block:: ini
 
  [program:my-daemon]
- command=/home/eliza/bin/my-daemon
+ command=/home/isabell/bin/my-daemon
  startsecs=60
 
 Afterwards, ask ``supervisord`` to look for new ``.ini`` files:
 
 .. code-block:: bash
 
- [eliza@doolittle ~]$ supervisorctl reread
+ [isabell@stardust ~]$ supervisorctl reread
  my-daemon: available
 
 And then start your daemon:
 
 .. code-block:: bash
 
- [eliza@doolittle ~]$ supervisorctl update
+ [isabell@stardust ~]$ supervisorctl update
  my-daemon: added process group
 
 Start / Stop a Service
@@ -38,11 +38,11 @@ To start a non-running service or stop a running one, use ``supervisorctl start 
 
 .. code-block:: bash
 
- [eliza@doolittle ~]$ supervisorctl start my-daemon
+ [isabell@stardust ~]$ supervisorctl start my-daemon
  my-daemon: started
- [eliza@doolittle ~]$ supervisorctl stop my-daemon
+ [isabell@stardust ~]$ supervisorctl stop my-daemon
  my-daemon: stopped
- [eliza@doolittle ~]$ supervisorctl restart my-daemon
+ [isabell@stardust ~]$ supervisorctl restart my-daemon
  my-daemon: stopped
  my-daemon: started
 
@@ -54,9 +54,9 @@ To remove a service, you need to stop it first, then you can remove it using ``s
 
 .. code-block:: bash
 
- [eliza@doolittle ~]$ supervisorctl stop my-daemon
+ [isabell@stardust ~]$ supervisorctl stop my-daemon
  my-daemon: stopped
- [eliza@doolittle ~]$ supervisorctl remove my-daemon
+ [isabell@stardust ~]$ supervisorctl remove my-daemon
  my-daemon: removed process group
 
 List Services
@@ -66,7 +66,7 @@ To get an overview of your services and their current status, run ``supervisorct
 
 .. code-block:: bash
 
- [eliza@doolittle ~]$ supervisorctl status
+ [isabell@stardust ~]$ supervisorctl status
  my-daemon                              RUNNING   pid 16337, uptime 0:00:04
 
 Logging

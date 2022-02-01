@@ -30,7 +30,7 @@ does just what you'd expect:
 
 .. code-block:: console
 
-  [eliza@doolittle ~]$ curl https://uberspace.de
+  [isabell@stardust ~]$ curl https://uberspace.de
   <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
   <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
@@ -50,15 +50,15 @@ a few strange IPs:
 .. code-block:: console
   :emphasize-lines: 3,11,13
 
-  [eliza@doolittle ~]$ traceroute uberspace.de
+  [isabell@stardust ~]$ traceroute uberspace.de
   traceroute to uberspace.de (185.26.156.78), 30 hops max, 60 byte packets
   1  gateway (100.64.9.1)  0.047 ms  0.012 ms  0.011 ms
   2  185.26.156.62 (185.26.156.62)  5.281 ms  5.250 ms  5.660 ms
   3  185.26.15 (...)
-  [eliza@doolittle ~]$ ip addr
+  [isabell@stardust ~]$ ip addr
   1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN qlen 1
     (...)
-  3: veth_eliza@if4: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP qlen 1000
+  3: veth_isabell@if4: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP qlen 1000
     link/ether 1a:25:85:03:bc:3a brd ff:ff:ff:ff:ff:ff link-netnsid 0
     inet 100.64.9.2/30 scope global veth_dbcheck
        valid_lft forever preferred_lft forever

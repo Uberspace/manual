@@ -37,11 +37,11 @@ Use ``uberspace tools version list node`` to show all selectable versions:
 
 .. code-block:: bash
 
-  [eliza@dolittle ~]$ uberspace tools version list node
+  [isabell@stardust ~]$ uberspace tools version list node
   - 12
   - 14
   - 16
-  [eliza@dolittle ~]$
+  [isabell@stardust ~]$
 
 .. _node-change-version:
 
@@ -51,10 +51,10 @@ You can select the Node.js version with ``uberspace tools version use node <vers
 
 .. code-block:: bash
 
-  [eliza@dolittle ~]$ uberspace tools version use node 14
+  [isabell@stardust ~]$ uberspace tools version use node 14
   Selected node version 14
   The new configuration is adapted immediately. Patch updates will be applied automatically.
-  [eliza@dolittle ~]$
+  [isabell@stardust ~]$
 
 Selected version
 ----------------
@@ -63,9 +63,9 @@ You can check the selected version by executing ``uberspace tools version show n
 
 .. code-block:: bash
 
-  [eliza@dolittle ~]$ uberspace tools version show node
+  [isabell@stardust ~]$ uberspace tools version show node
   Using 'node' version: '16'
-  [eliza@dolittle ~]$
+  [isabell@stardust ~]$
 
 Update policy
 -------------

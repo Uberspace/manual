@@ -13,8 +13,8 @@ By default, all new Uberspace accounts use the `Bash <https://www.gnu.org/softwa
 
 .. code-block:: bash
 
- [eliza@doolittle ~]$ chsh --shell /bin/zsh 
- Changing shell for eliza.
+ [isabell@stardust ~]$ chsh --shell /bin/zsh 
+ Changing shell for isabell.
  Shell changed.
 
 List Available Shells
@@ -24,7 +24,7 @@ To find out which shells are available on Uberspace, run ``chsh -l``:
 
 .. code-block:: bash
 
- [eliza@doolittle ~]$ chsh -l
+ [isabell@stardust ~]$ chsh -l
  /bin/sh
  /bin/bash
  /sbin/nologin

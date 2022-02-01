@@ -25,9 +25,9 @@ default to the following version:
 
 .. code-block:: bash
 
-  [eliza@dolittle ~]$ uberspace tools version show couchdb
+  [isabell@stardust ~]$ uberspace tools version show couchdb
   Using 'couchdb' version: 3
-  [eliza@dolittle ~]$
+  [isabell@stardust ~]$
 
 Show available versions
 -----------------------
@@ -36,9 +36,9 @@ Use ``uberspace tools version list couchdb`` to show all selectable versions:
 
 .. code-block:: bash
 
-  [eliza@dolittle ~]$ uberspace tools version list couchdb
+  [isabell@stardust ~]$ uberspace tools version list couchdb
   - 3
-  [eliza@dolittle ~]$
+  [isabell@stardust ~]$
 
 Change version
 --------------
@@ -47,10 +47,10 @@ Once a new version is released, you can select it using ``uberspace tools versio
 
 .. code-block:: bash
 
-  [eliza@dolittle ~]$ uberspace tools version use couchdb 3
+  [isabell@stardust ~]$ uberspace tools version use couchdb 3
   Selected couchdb version 3
   The new configuration is adapted immediately. Minor updates will be applied automatically.
-  [eliza@dolittle ~]$
+  [isabell@stardust ~]$
 
 Update policy
 -------------

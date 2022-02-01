@@ -25,9 +25,9 @@ default to the following version:
 
 .. code-block:: bash
 
-  [eliza@dolittle ~]$ uberspace tools version show postgresql
+  [isabell@stardust ~]$ uberspace tools version show postgresql
   Using 'postgresql' version: 13
-  [eliza@dolittle ~]$
+  [isabell@stardust ~]$
 
 Show available versions
 -----------------------
@@ -36,12 +36,12 @@ Use ``uberspace tools version list postgresql`` to show all selectable versions:
 
 .. code-block:: bash
 
-  [eliza@dolittle ~]$ uberspace tools version list postgresql
+  [isabell@stardust ~]$ uberspace tools version list postgresql
   - 10
   - 11
   - 12
   - 13
-  [eliza@dolittle ~]$
+  [isabell@stardust ~]$
 
 Change version
 --------------
@@ -50,10 +50,10 @@ You can select the version using ``uberspace tools version use postgresql <versi
 
 .. code-block:: bash
 
-  [eliza@dolittle ~]$ uberspace tools version use postgresql 12
+  [isabell@stardust ~]$ uberspace tools version use postgresql 12
   Selected postgresql version 12
   The new configuration is adapted immediately. Minor updates will be applied automatically.
-  [eliza@dolittle ~]$
+  [isabell@stardust ~]$
 
 Update policy
 -------------

@@ -35,12 +35,12 @@ Use ``uberspace tools version list ruby`` to show all selectable versions:
 
 .. code-block:: bash
 
-  [eliza@dolittle ~]$ uberspace tools version list ruby
+  [isabell@stardust ~]$ uberspace tools version list ruby
   - 2.5
   - 2.6
   - 2.7
   - 3.0
-  [eliza@dolittle ~]$ 
+  [isabell@stardust ~]$ 
 
 .. _ruby-change-version:
 
@@ -50,10 +50,10 @@ You can select the Ruby version with ``uberspace tools version use ruby <version
 
 .. code-block:: bash
 
-  [eliza@dolittle ~]$ uberspace tools version use ruby 2.6
+  [isabell@stardust ~]$ uberspace tools version use ruby 2.6
   Selected ruby version 2.6
   The new configuration is adapted immediately. Patch updates will be applied automatically.
-  [eliza@dolittle ~]$ 
+  [isabell@stardust ~]$ 
 
 Selected version
 ----------------
@@ -62,9 +62,9 @@ You can check the selected version by executing ``uberspace tools version show r
 
 .. code-block:: bash
 
-  [eliza@dolittle ~]$ uberspace tools version show ruby
+  [isabell@stardust ~]$ uberspace tools version show ruby
   Using 'ruby' version: 2.5
-  [eliza@dolittle ~]$ 
+  [isabell@stardust ~]$ 
 
 Update policy
 -------------
