@@ -36,9 +36,9 @@ Take a look into that file or execute ``my_print_defaults client`` to show it, l
 
 .. code-block:: console
 
-  [eliza@dolittle ~]$ my_print_defaults client
+  [isabell@stardust ~]$ my_print_defaults client
   --default-character-set=utf8mb4
-  --user=eliza
+  --user=isabell
   --password=SomeStrongPassword
 
 
@@ -50,7 +50,7 @@ Tools like Adminer or phpMyAdmin provide you with a web-based way of doing that 
 
 .. code-block:: console
 
-  [eliza@dolittle ~]$ mysql -e "SET PASSWORD = PASSWORD('YourNewPassword')"
+  [isabell@stardust ~]$ mysql -e "SET PASSWORD = PASSWORD('YourNewPassword')"
 
 If you don't see any output, it's a good thing; MariaDB only complains if something went wrong.
 
@@ -79,8 +79,8 @@ you can also execute ``my_print_defaults clientreadonly`` to show it, like that:
 
 .. code-block:: console
 
-  [eliza@dolittle ~]$ my_print_defaults clientreadonly
-  --user=eliza_ro
+  [isabell@stardust ~]$ my_print_defaults clientreadonly
+  --user=isabell_ro
   --password=SomeOtherStrongPassword
 
 Unfortunately you cannot change the password of the read-only user yourself (it's read-only!).
@@ -91,14 +91,14 @@ Additional databases
 ====================
 
 In addition to the default database named like your Uberspace you can also create an unlimited number of additional databases
-prefixed with your username and ``_`` - if your username is ``eliza`` you can create databases named like ``eliza_blog``, ``eliza_shop``.
+prefixed with your username and ``_`` - if your username is ``isabell`` you can create databases named like ``isabell_blog``, ``isabell_shop``.
 
 New databases can be created with the `CREATE DATABASE <https://mariadb.com/kb/en/mariadb/create-database/>`_ SQL statement.
 Tools like Adminer or phpMyAdmin provide you with a web-based way of doing that (if you installed them), but it can easily done on the shell as well:
 
 .. code-block:: console
 
-  [eliza@dolittle ~]$ mysql -e "CREATE DATABASE eliza_blog"
+  [isabell@stardust ~]$ mysql -e "CREATE DATABASE isabell_blog"
 
 If you don't see any output, it's a good thing; MariaDB only complains if something went wrong.
 
@@ -106,21 +106,21 @@ You can list your additional databases using the `SHOW DATABASES <https://mariad
 
 .. code-block:: console
 
-  [eliza@dolittle ~]$ mysql -e "SHOW DATABASES"
+  [isabell@stardust ~]$ mysql -e "SHOW DATABASES"
   +--------------------+
   | Database           |
   +--------------------+
   | information_schema |
-  | eliza              |
-  | eliza_gitea        |
-  | eliza_shopware6    |
+  | isabell              |
+  | isabell_gitea        |
+  | isabell_shopware6    |
   +--------------------+
 
 To remove databases, use the `DROP DATABASE <https://mariadb.com/kb/en/mariadb/drop-database/>`_ SQL statement:
 
 .. code-block:: console
 
-  [eliza@dolittle ~]$ mysql -e "DROP DATABASE eliza_blog"
+  [isabell@stardust ~]$ mysql -e "DROP DATABASE isabell_blog"
 
 If you don't see any output, it's a good thing; MariaDB only complains if something went wrong.
 
@@ -139,54 +139,54 @@ The most common use is to redirect its output into a file, like that:
 
 .. code-block:: console
 
-  [eliza@dolittle ~]$ mysqldump eliza > eliza.sql
+  [isabell@stardust ~]$ mysqldump isabell > isabell.sql
 
-This command dumps all tables of the ``eliza`` database at once. If you just want to dump a single or a few tables, put their names behind the database name:
+This command dumps all tables of the ``isabell`` database at once. If you just want to dump a single or a few tables, put their names behind the database name:
 
 .. code-block:: console
 
-  [eliza@dolittle ~]$ mysqldump eliza table1 > eliza.table1.sql
-  [eliza@dolittle ~]$ mysqldump eliza table2 table3 > eliza.table2and3.sql
+  [isabell@stardust ~]$ mysqldump isabell table1 > isabell.table1.sql
+  [isabell@stardust ~]$ mysqldump isabell table2 table3 > isabell.table2and3.sql
 
 As the resulting files are plain text files (remember, they are just a bunch of SQL statements) you can easily compress them on the fly, e.g. with ``xz``:
 
 .. code-block:: console
 
-  [eliza@dolittle ~]$ mysqldump eliza | xz > eliza.sql.xz
+  [isabell@stardust ~]$ mysqldump isabell | xz > isabell.sql.xz
 
 
 Importing dumps
 ---------------
 
 As dumps are just files containing SQL statements you can feed them into the ``mysql`` command, importing them into a database of your choice.
-For example, to import the dump named ``eliza.sql`` into your database ``eliza`` (overwriting existing tables, if any):
+For example, to import the dump named ``isabell.sql`` into your database ``isabell`` (overwriting existing tables, if any):
 
 .. code-block:: console
 
-  [eliza@dolittle ~]$ mysql eliza < eliza.sql
+  [isabell@stardust ~]$ mysql isabell < isabell.sql
 
 Or in case of a compressed dump, use ``xzcat`` to uncompress the data before feeding it into MariaDB:
 
 .. code-block:: console
 
-  [eliza@dolittle ~]$ xzcat eliza.sql.xz | mysql eliza
+  [isabell@stardust ~]$ xzcat isabell.sql.xz | mysql isabell
 
 
 Streaming dumps
 ---------------
 
 In case you want to copy a database into another one, or from one running MySQL or MariaDB host to another, there's no need to write the dump into a file at all.
-Given that you already created a database named ``eliza_copy`` you can copy all data from ``eliza`` over to your new database:
+Given that you already created a database named ``isabell_copy`` you can copy all data from ``isabell`` over to your new database:
 
 .. code-block:: console
 
-  [eliza@dolittle ~]$ mysqldump eliza | mysql eliza_copy
+  [isabell@stardust ~]$ mysqldump isabell | mysql isabell_copy
 
-This will also work over SSH - for example to dump a database on some other host you're having shell access to as well, this is what you're able to do to import all tables of a remote database named ``otherdatabase`` into your local database ``eliza`` (overwriting existing tables, if any):
+This will also work over SSH - for example to dump a database on some other host you're having shell access to as well, this is what you're able to do to import all tables of a remote database named ``otherdatabase`` into your local database ``isabell`` (overwriting existing tables, if any):
 
 .. code-block:: console
 
-  [eliza@dolittle ~]$ ssh otheruser@some.other.host mysqldump otherdatabase | mysql eliza
+  [isabell@stardust ~]$ ssh otheruser@some.other.host mysqldump otherdatabase | mysql isabell
 
 Custom settings
 ===============
@@ -217,7 +217,7 @@ your local workstation is represented by a ``[localuser@localhost ~]$`` prompt:
 
 .. code-block:: console
 
-  [localuser@localhost ~]$ ssh -L 3306:127.0.0.1:3306 eliza@dolittle.uberspace.de
+  [localuser@localhost ~]$ ssh -L 3306:127.0.0.1:3306 isabell@stardust.uberspace.de
 
 From now on, you can talk to 127.0.0.1:3306 on your local host to connect to your database.
 In fact, it's OpenSSH listening on port 3306 of your local host, tunneling the connection to your uberspace.
@@ -238,15 +238,15 @@ effectively use the OpenSSH command-line utils.
 As an example, here's how you setup a SSH tunnel with PuTTY:
 
 #. Start PuTTY. The configuration dialog automatically opens.
-#. Head over to "Connection | Data" in the tree menu on the left. Enter your username (``eliza`` in our example)
+#. Head over to "Connection | Data" in the tree menu on the left. Enter your username (``isabell`` in our example)
    into the "Auto-login username" text box.
 #. Head over to "Connection | SSH | Tunnels" in the tree menu on the left.
    Enter "3306" into the "Source port:" text box, "127.0.0.1:3306" into the "Destination:" text box, and select "(o) Local".
    Click "Add" to add the tunnel.
-#. Head over to "Session" in the tree menu on the left. Enter your hostname (``dolittle.uberspace.de`` in our example)
+#. Head over to "Session" in the tree menu on the left. Enter your hostname (``stardust.uberspace.de`` in our example)
    into the "Host Name (or IP address)" text box.
    For your convenience, save these settings under a session name of your choice.
-   For that, enter a description (e.g. "eliza on dolitte w/MySQL" or something like "My personal Uberspace w/MySQL") into the "Saved Sessions" text box.
+   For that, enter a description (e.g. "isabell on stardust w/MySQL" or something like "My personal Uberspace w/MySQL") into the "Saved Sessions" text box.
    Click the "Save" button.
 
 If you want to connect to your database, start the connection by double-clicking it to establish the SSH tunnel.

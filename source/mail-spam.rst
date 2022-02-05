@@ -13,11 +13,11 @@ Use ``uberspace mail spamfolder`` to configure the spam folder for all mailboxes
 
 .. code-block:: console
 
-  [eliza@dolittle ~]$ uberspace mail spamfolder status
+  [isabell@stardust ~]$ uberspace mail spamfolder status
   The spam folder is enabled.
-  [eliza@dolittle ~]$ uberspace mail spamfolder disable
+  [isabell@stardust ~]$ uberspace mail spamfolder disable
   The spam folder is now disabled.
-  [eliza@dolittle ~]$ uberspace mail spamfolder enable
+  [isabell@stardust ~]$ uberspace mail spamfolder enable
   The spam folder is now enabled.
 
 .. note::

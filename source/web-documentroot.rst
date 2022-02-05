@@ -34,16 +34,16 @@ Many PHP apps like Symfony provide their own public webfolder within their folde
 .. code-block:: console
 
   # in /var/www/virtual/$USER
-  [eliza@dolittle eliza]$ rm -f html/nocontent.html
-  [eliza@dolittle eliza]$ rmdir html
-  [eliza@dolittle eliza]$ mkdir -p my_project/public
-  [eliza@dolittle eliza]$ ln -s my_project/public html
+  [isabell@stardust isabell]$ rm -f html/nocontent.html
+  [isabell@stardust isabell]$ rmdir html
+  [isabell@stardust isabell]$ mkdir -p my_project/public
+  [isabell@stardust isabell]$ ln -s my_project/public html
 
 this will result in the following structure:
 
 .. code-block:: console
   
-  [eliza@dolittle eliza]$ tree
+  [isabell@stardust isabell]$ tree
   .
   ├── html -> my_project/public
   └── my_project
@@ -58,7 +58,7 @@ Since the webserver runs with a different user, you need to make sure your files
 
 .. code-block:: console
 
-  [eliza@dolittle ~]$ chmod -R u=rwX,go=rX ~/html
+  [isabell@stardust ~]$ chmod -R u=rwX,go=rX ~/html
 
 .. tip:: Since the folder ``/var/www/virtual/<username>`` has mode ``0750``, other users on the same server can't access your files.
 
@@ -66,7 +66,7 @@ In addition to "traditional" permission bits, uberspace uses `SELinux <https://e
 
 .. code-block:: console
 
-  [eliza@dolittle ~]$ restorecon -R -v ~/html
+  [isabell@stardust ~]$ restorecon -R -v ~/html
 
 Configuration
 =============

@@ -34,12 +34,12 @@ Use ``uberspace tools version list php`` to show all selectable versions:
 
 .. code-block:: console
 
-  [eliza@dolittle ~]$ uberspace tools version list php
+  [isabell@stardust ~]$ uberspace tools version list php
   - 7.3
   - 7.4
   - 8.0
   - 8.1
-  [eliza@dolittle ~]$
+  [isabell@stardust ~]$
 
 .. _php-change-version:
 
@@ -49,17 +49,17 @@ You can select the PHP version with :code:`uberspace tools version use php <vers
 
 .. code-block:: console
 
-  [eliza@dolittle ~]$ uberspace tools version use php 7.4
+  [isabell@stardust ~]$ uberspace tools version use php 7.4
   Selected PHP version 7.4
   The new configuration is adapted immediately. Patch updates will be applied automatically.
-  [eliza@dolittle ~]$
+  [isabell@stardust ~]$
 
 .. code-block:: console
 
-  [eliza@dolittle ~]$ uberspace tools version use php 7.3
+  [isabell@stardust ~]$ uberspace tools version use php 7.3
   Selected PHP version 7.3
   The new configuration is adapted immediately. Patch updates will be applied automatically.
-  [eliza@dolittle ~]$
+  [isabell@stardust ~]$
 
 Selected version
 ----------------
@@ -68,9 +68,9 @@ You can check the selected version by executing ``uberspace tools version show p
 
 .. code-block:: console
 
-  [eliza@dolittle ~]$ uberspace tools version show php
+  [isabell@stardust ~]$ uberspace tools version show php
   Using 'PHP' version: '7.3'
-  [eliza@dolittle ~]$
+  [isabell@stardust ~]$
 
 Update policy
 -------------
@@ -162,19 +162,19 @@ In this case fix the value and run ``uberspace tools restart php`` again.
 
 .. code-block:: console
 
- [eliza@dolittle ~]$ php -i | grep date.timezone
+ [isabell@stardust ~]$ php -i | grep date.timezone
  date.timezone => Europe/Berlin => Europe/Berlin
- [eliza@dolittle ~]$ echo "date.timezone = UTC" > ~/etc/php.d/timezone.ini
- [eliza@dolittle ~]$ uberspace tools restart php
+ [isabell@stardust ~]$ echo "date.timezone = UTC" > ~/etc/php.d/timezone.ini
+ [isabell@stardust ~]$ uberspace tools restart php
  Your php configuration has been loaded.
- [eliza@dolittle ~]$ php -i | grep date.timezone
+ [isabell@stardust ~]$ php -i | grep date.timezone
  date.timezone => UTC => UTC
 
 .. code-block:: console
 
- [eliza@dolittle ~]$ cat ~/etc/php.d/timezone.ini
+ [isabell@stardust ~]$ cat ~/etc/php.d/timezone.ini
  date.timezone = idontexist
- [eliza@dolittle ~]$ uberspace tools restart php
+ [isabell@stardust ~]$ uberspace tools restart php
  Your php configuration is invalid an cannot be loaded. Please examine the following output.
 
  PHP Warning:  Unknown: Invalid date.timezone value 'idontexist', we selected the timezone 'UTC' for now. in Unknown on line 0

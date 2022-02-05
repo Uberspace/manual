@@ -35,7 +35,7 @@ To change your python version, run the relevant binary. So if you want to start 
 
 .. code-block:: console
 
-  [eliza@dolitte ~] python3.6 my-python-script.py
+  [isabell@stardust ~] python3.6 my-python-script.py
 
 To specify version 2.7 in a `shebang <https://en.wikipedia.org/wiki/Shebang_(Unix)>`_, use :code:`#!/usr/bin/env python2.7`.
 
@@ -75,13 +75,13 @@ In order to install the correct package corresponding to the Python version you 
 
 .. code-block:: console
 
-  [eliza@dolitte ~] pip2.7 install package-name --user 
+  [isabell@stardust ~] pip2.7 install package-name --user 
 
 To install for Python 3.6, use :code:`pip3.6`:
 
 .. code-block:: console
 
-  [eliza@dolitte ~] pip3.6 install package-name --user 
+  [isabell@stardust ~] pip3.6 install package-name --user 
 
 ----
 

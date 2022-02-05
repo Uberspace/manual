@@ -39,7 +39,7 @@ You'll need three pieces of information to connect with your account by SSH:
 #. A **password** or **private key** - as a newbie, simply set a password under the `Logins <https://uberspace.de/dashboard/authentication>`_ section.
    You can always switch to using SSH keys later, see :ref:`ssh-working-with-keys`.
 
-For this introduction we're assuming your username is ``eliza`` and you're on ``dolittle.uberspace.de``.
+For this introduction we're assuming your username is ``isabell`` and you're on ``stardust.uberspace.de``.
 
 We're now guiding you through your first successful connection to your account. Fasten seat belts!
 
@@ -56,13 +56,13 @@ your local workstation is represented by a ``[localuser@localhost ~]$`` prompt:
 
 .. code-block:: console
 
-  [localuser@localhost ~]$ ssh eliza@dolittle.uberspace.de
-  The authenticity of host 'dolittle.uberspace.de (ip.ip.ip.ip)' can't be established.
+  [localuser@localhost ~]$ ssh isabell@stardust.uberspace.de
+  The authenticity of host 'stardust.uberspace.de (ip.ip.ip.ip)' can't be established.
   ED25519 key fingerprint is SHA256:DtwUpr0MzHCZBej70iWO9CyzxXRDPK3jr14PJPMQIP4.
   Are you sure you want to continue connecting (yes/no)? yes
-  Warning: Permanently added 'dolittle.uberspace.de,ip.ip.ip.ip' (ED25519) to the list of known hosts.
-  eliza@dolittle.uberspace.de's password: 
-  [eliza@dolittle ~]$
+  Warning: Permanently added 'stardust.uberspace.de,ip.ip.ip.ip' (ED25519) to the list of known hosts.
+  isabell@stardust.uberspace.de's password: 
+  [isabell@stardust ~]$
 
 What you're first seeing is the fingerprint of the host key of the server you're about to connect.
 Please check your `Datasheet <https://uberspace.de/dashboard/datasheet>`_ which shows the fingerprint you *should* be seeing here.
@@ -78,14 +78,14 @@ If you ever experience such a situation, please don't continue and `contact us <
 
 Next you're getting asked for your password. Nothing is shown while entering it; that's absolutely correct and works as intended - just **enter it blindly** and press Enter!
 
-The ``[eliza@dolittle ~]$`` prompt shows that you're now successfully connected. Every command you're about to enter will get executed on your Uberspace.
+The ``[isabell@stardust ~]$`` prompt shows that you're now successfully connected. Every command you're about to enter will get executed on your Uberspace.
 
 Entering ``exit`` (or pressing Ctrl+D) leaves the shell, closing your connection:
 
 .. code-block:: console
 
-  [eliza@dolittle ~]$ exit
-  Connection to dolittle.uberspace.de closed.
+  [isabell@stardust ~]$ exit
+  Connection to stardust.uberspace.de closed.
   [localuser@localhost ~]$
 
 You're now back on your local workstation.
@@ -158,7 +158,7 @@ but the conventional SSH password of your Uberspace.
 
 .. code-block:: console
 
-  [localuser@localhost ~]$ ssh-copy-id -i ~/.ssh/id_ed25519.pub eliza@dolittle.uberspace.de
+  [localuser@localhost ~]$ ssh-copy-id -i ~/.ssh/id_ed25519.pub isabell@stardust.uberspace.de
   /usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "id_ed25519.pub"
   /usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
   /usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
@@ -166,7 +166,7 @@ but the conventional SSH password of your Uberspace.
   
   Number of key(s) added: 1
   
-  Now try logging into the machine, with:   "ssh 'eliza@dolittle.uberspace.de'"
+  Now try logging into the machine, with:   "ssh 'isabell@stardust.uberspace.de'"
   and check to make sure that only the key(s) you wanted were added.
 
 From now on you'd have to enter the passphrase of your private key whenever you're about to connect to an account where this key is used, but:
@@ -271,6 +271,6 @@ Simply put this into your local `~/.ssh/config` file (in this example we're focu
     ControlPersist yes
     ControlPath ~/.ssh/socket-%r@%h:%p
 
-When opening a connection as ``eliza`` to ``dolittle.uberspace.de``, OpenSSH will first check if there is a local socket named ``~/.ssh/socket-eliza@dolittle.uberspace.de:22`` and hop on it.
+When opening a connection as ``isabell`` to ``stardust.uberspace.de``, OpenSSH will first check if there is a local socket named ``~/.ssh/socket-isabell@stardust.uberspace.de:22`` and hop on it.
 If there isn't such a local socket, it will connect as usual, *providing* such a socket for any further connection.
 

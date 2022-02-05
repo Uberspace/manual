@@ -31,7 +31,7 @@ Packaged Rust projects are called **crates**. The `crates.io <https://crates.io/
 
 .. code-block:: console
 
-  [eliza@dolitte ~] cargo install package-name
+  [isabell@stardust ~] cargo install package-name
 
 This downloads the source for ``package-name`` and compiles it. The resulting binaries are placed into ``$HOME/.cargo/bin/``. Which is already included in your ``$PATH`` (unless you changed our default setup). You can find ways to configure this in the documentation for `cargo install`_.
 

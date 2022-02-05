@@ -23,7 +23,7 @@ in the range from 20.000 to 61.000 and cannot be chosen arbitrarily.
 
 .. code-block:: bash
 
- [eliza@doolittle ~]$ uberspace port add
+ [isabell@stardust ~]$ uberspace port add
  Port 40132 will be open for TCP and UDP traffic in a few minutes.
 
 .. tip:: Your application needs to listen on interface ``::`` or ``0.0.0.0`` (using ``127.0.0.1``, ``localhost``, ``::1``, the external IP, or the hostname will **not** work).
@@ -35,7 +35,7 @@ To get a list of currently open ports, execute the following command:
 
 .. code-block:: bash
 
- [eliza@doolittle ~]$ uberspace port list
+ [isabell@stardust ~]$ uberspace port list
  40132
  40133
  40134
@@ -48,5 +48,5 @@ using to following command:
 
 .. code-block:: bash
 
- [eliza@doolittle ~]$ uberspace port del 40132
+ [isabell@stardust ~]$ uberspace port del 40132
  Port 40132 will be closed in a few minutes.

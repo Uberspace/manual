@@ -36,14 +36,14 @@ Creating a session profile
 
 Start PuTTY. The configuration dialog automatically opens.
 
-Head over to "Connection | Data" in the tree menu on the left. Enter your username (``eliza`` in our example)
+Head over to "Connection | Data" in the tree menu on the left. Enter your username (``isabell`` in our example)
 into the "Auto-login username" text box.
 
-Head over to "Session" in the tree menu on the left. Enter your hostname (``dolittle.uberspace.de`` in our example)
+Head over to "Session" in the tree menu on the left. Enter your hostname (``stardust.uberspace.de`` in our example)
 into the "Host Name (or IP address)" text box.
 
 For your convenience, save these settings under a session name of your choice.
-For that, enter a description (e.g. "eliza on dolitte" or something like "My personal Uberspace") into the "Saved Sessions" text box.
+For that, enter a description (e.g. "isabell on stardust" or something like "My personal Uberspace") into the "Saved Sessions" text box.
 Click the "Save" button. From now on, you can simply double-click on your saved profile and PuTTY will automatically connect to your Uberspace.
 
 First connection
@@ -56,12 +56,12 @@ This is what you should be seeing inside the PuTTY terminal window:
 
 .. code-block:: console
 
-  Using username "eliza".
+  Using username "isabell".
   Using keyboard-interactive authentication.
   Password:
-  [eliza@dolittle ~]$
+  [isabell@stardust ~]$
 
-The ``[eliza@dolittle ~]$`` prompt shows that you're now successfully connected. Every command you're about to enter will get executed on your Uberspace.
+The ``[isabell@stardust ~]$`` prompt shows that you're now successfully connected. Every command you're about to enter will get executed on your Uberspace.
 
 Entering ``exit`` (or pressing Ctrl+D) leaves the shell, closing your connection.
 

@@ -36,13 +36,13 @@ Use ``uberspace tools version list erlang`` to show all selectable versions:
 
 .. code-block:: bash
 
-  [eliza@dolittle ~]$ uberspace tools version list erlang
+  [isabell@stardust ~]$ uberspace tools version list erlang
   - 20
   - 21
   - 22
   - 23
   - 24
-  [eliza@dolittle ~]$
+  [isabell@stardust ~]$
 
 .. _erlang-change-version:
 
@@ -52,10 +52,10 @@ You can select the Erlang/OTP version with ``uberspace tools version use erlang 
 
 .. code-block:: bash
 
-  [eliza@dolittle ~]$ uberspace tools version use erlang 22
+  [isabell@stardust ~]$ uberspace tools version use erlang 22
   Selected Erlang/OTP version 22
   The new configuration is adapted immediately. Patch updates will be applied automatically.
-  [eliza@dolittle ~]$
+  [isabell@stardust ~]$
 
 Selected version
 ----------------
@@ -64,9 +64,9 @@ You can check the selected version by executing ``uberspace tools version show e
 
 .. code-block:: bash
 
-  [eliza@dolittle ~]$ uberspace tools version show erlang
+  [isabell@stardust ~]$ uberspace tools version show erlang
   Using 'erlang' version: '21'
-  [eliza@dolittle ~]$
+  [isabell@stardust ~]$
 
 Update policy
 -------------
