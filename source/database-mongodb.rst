@@ -15,7 +15,7 @@ Versions
 Release types
 -------------
 
-We provide different releases and apply security updates on a regular basis.
+We provide major releases and apply security updates on a regular basis.
 
 Standard version
 ----------------
@@ -57,14 +57,19 @@ You can select the version using ``uberspace tools version use mongodb <version>
 Update policy
 -------------
 
-We update all versions on a regular basis. Once the `support <https://www.mongodb.com/support-policy/>`_ ends, the branch reaches its end of life (EOL), is no longer supported and will be removed from our servers.
+We update all major versions on a regular basis. Once the `support
+<https://www.mongodb.com/support-policy/lifecycles/>`_ ends, the branch reaches
+its end of life (EOL), is no longer supported and will be removed from our
+servers.
 
 +--------+-------------------------+------------------+
 | Branch | State                   | Supported Until  |
 +========+=========================+==================+
-| 4.0    | Active                  | January 2022     |
+| 4.0    | Active                  | April 2022       |
 +--------+-------------------------+------------------+
 | 4.2    | Active                  | TBD              |
 +--------+-------------------------+------------------+
 | 4.4    | Active                  | TBD              |
++--------+-------------------------+------------------+
+| 5.0    | Active                  | TBD              |
 +--------+-------------------------+------------------+
