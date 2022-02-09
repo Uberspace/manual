@@ -33,9 +33,9 @@ Other domains
 Content on other domains is currently not accessible as a onion service, but
 can of course be accessed normally from inside the Tor network. This is mainly
 due a difficulty in matching requests: all requests from
-``SOMEONE.onastroidst6krpn.onion`` go to ``SOMEONE.uber.space``, which makes
+``SOMEONE.ahcbagldgzdpa74g2mh74fvk5zjzpfjbvgqin6g3mfuu66tynv2gkiid.onion`` go to ``SOMEONE.uber.space``, which makes
 for a rather simple and roboust setup. While we could implement more
-sophisticated matching like ``my.domain.com.SOMEONE.onastroidst6krpn.onion``, we
+sophisticated matching like ``my.domain.com.SOMEONE.ahcbagldgzdpa74g2mh74fvk5zjzpfjbvgqin6g3mfuu66tynv2gkiid.onion``, we
 have currently chosen not do so.
 
 You can of course host your own onion service inside your uberspace to serve
