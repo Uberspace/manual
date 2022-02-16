@@ -7,27 +7,27 @@ Added
 * MongoDB 5
 * Commandline Tools: ``as-tree``, ``skim``, ``bottom``, ``elinks``, ``links``, ``alpine``, ``git-lfs``, ``bash-completion-extras``
 * PHP Modules: ``php-gnupg``
-* lots of lots of lots of metrics to play with in the future
+* Lots of lots of lots of metrics to play with in the future.
 
 Changed
 -------
 * SMTP rate limits: 500/1h for SMTP with auth and 60/h for sendmail
-* add ``~all`` to suggested TXT record for mail domains
-* remove anti-fast-talker delay from Haraka config for SMTP submit
-* decrease Rspamd score for ``SPOOF_REPLYTO```
-* decrease Rspamd score for ``SUBJ_EXCESS_BASE64``
-* increase Rspamd score threshold for SMTP submit
-* disable spam filtering for outgoing mails
+* Add ``~all`` to suggested TXT record for mail domains
+* Remove anti-fast-talker delay from Haraka config for SMTP submit
+* Decrease Rspamd score for ``SPOOF_REPLYTO```
+* Decrease Rspamd score for ``SUBJ_EXCESS_BASE64``
+* Increase Rspamd score threshold for SMTP submit
+* Disable spam filtering for outgoing mails
 * Anonymyze ``Received`` header inbound and outbound
 * Remove MongoDB 3.6 because it's end of life since April 2021
 * Deprecated PHP 7.3
 
 Fixed
 -----
-* a missing symlink ``/usr/local/bin/dotnet``
-* a Dovecot reboot issue
+* A missing symlink ``/usr/local/bin/dotnet``
+* A Dovecot reboot issue
 * ``restrictdocroot.so`` for PHP 8.1
 * MySQL backup for DBs with hyphens in their name
-* no more auth-imap timeouts
-* postfix clients for SMTP now work with our new mail setup
+* No more `auth-imap` timeouts
+* `postfix` clients for SMTP now work with our new mail setup
 * Symlink old ImageMagick to our new one
