@@ -35,7 +35,6 @@ Use ``uberspace tools version list php`` to show all selectable versions:
 .. code-block:: console
 
   [isabell@stardust ~]$ uberspace tools version list php
-  - 7.3
   - 7.4
   - 8.0
   - 8.1
@@ -56,8 +55,8 @@ You can select the PHP version with :code:`uberspace tools version use php <vers
 
 .. code-block:: console
 
-  [isabell@stardust ~]$ uberspace tools version use php 7.3
-  Selected PHP version 7.3
+  [isabell@stardust ~]$ uberspace tools version use php 8.1
+  Selected PHP version 8.1
   The new configuration is adapted immediately. Patch updates will be applied automatically.
   [isabell@stardust ~]$
 
@@ -69,7 +68,7 @@ You can check the selected version by executing ``uberspace tools version show p
 .. code-block:: console
 
   [isabell@stardust ~]$ uberspace tools version show php
-  Using 'PHP' version: '7.3'
+  Using 'PHP' version: '8.1'
   [isabell@stardust ~]$
 
 Update policy
@@ -80,8 +79,6 @@ We update all versions on a regular basis. Once the `security support <http://ph
 +--------+---------------------+------------------------+
 | Branch | State               | Security Support Until |
 +========+=====================+========================+
-| 7.3    | Active support      | 6 Dec 2021             |
-+--------+---------------------+------------------------+
 | 7.4    | Active support      | 28 Nov 2022            |
 +--------+---------------------+------------------------+
 | 8.0    | Active support      | 26 Nov 2023            |

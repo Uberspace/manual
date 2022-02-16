@@ -20,6 +20,7 @@ Changed
 * disable spam filtering for outgoing mails
 * Anonymyze ``Received`` header inbound and outbound
 * Remove MongoDB 3.6 because it's end of life since April 2021
+* Deprecated PHP 7.3
 
 Fixed
 -----
