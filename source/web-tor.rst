@@ -83,7 +83,7 @@ not pass through the onion service.
 uberspace.de
 ============
 
-Just like your sites, our website and the dashboard can of course be directly
+Just like your sites, our dashboard can of course be directly
 accessed in the Tor network. Use the following address:
 
 http://ubrspc3z5xuzh2iss4xuacpjdqj24orwnuye5hk23cpykd3mcujvygqd.onion
