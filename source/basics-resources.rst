@@ -39,15 +39,28 @@ To find these files you should check the most common paths where files can be st
 
 .. code-block:: console
 
-  [isabell@stardust ~]$ du -hs /home/$USER /var/www/virtual/$USER /tmp /var/tmp 2> /dev/null
-  120K	/home/isabell
+  [isabell@stardust ~]$ du -hs /home/$USER /var/www/virtual/$USER /tmp /var/tmp /var/lib/php-sessions/$USER 2> /dev/null
+  6,9M	/home/isabell
   2,6M	/var/www/virtual/isabell
-  4,0K	/tmp
+  36K	/tmp
   4,0K	/var/tmp
+  0	/var/lib/php-sessions/isabell
 
 The ``du`` command is good for an raw overview about your storage usage, but to have a deeper look which files use up a lot of space
 we recommend the interactive tool ``ncdu``. You can use the command just within your working directory or with a path like
 ``ncdu /var/www/virtual/$USER`` and then browsing with your *keyboard arrows* and *enter*.
+
+Deleted but open files
+~~~~~~~~~~~~~~~~~~~~~~
+
+There might also be already deleted files, that are still used by processes. You can check this with:
+
+.. code-block:: console
+
+  [isabell@stardust ~]$ lsof | grep deleted
+  php-fpm   20326 isabell    4u      REG               0,75         666 1088691286 /run/user/1024/.ZendSem.s2qmkH (deleted)
+
+The allocated bytes are shown in the 7th column, here ``666``.
 
 .. _ram:
 
