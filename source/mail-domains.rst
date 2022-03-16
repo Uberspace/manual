@@ -17,7 +17,7 @@ In order to use your own domain for mail with your Uberspace, you need to first 
  The mailserver's configuration has been adapted.
  Now you can use the following record for your dns:
    MX  -> stardust.uberspace.de.
-   TXT -> v=spf1 include:spf.uberspace.de ~all
+   TXT -> v=spf1 include:spf.uberspace.de -all
 
 Once you’ve set up your domain using the uberspace mail domain add tool, the tool provides you with the ``MX`` record that needs to be configured in your registrar’s nameserver. Please be aware that the trailing dot in ``stardust.uberspace.de.`` is the correct notation of a DNS record to indicate the domains root like here, but you can skip it if the domain hoster UI does not accept it.
 
@@ -28,7 +28,8 @@ We will need to validate that the ``MX DNS`` record of your domain is really set
 
 .. code-block:: console
 
- [isabell@stardust ~]$ uberspace mail domain list
+ [isabell@stardust 
+ ]$ uberspace mail domain list
  example.com DNS INVALID (checked 2021-08-20 12:00)
  isabell.uber.space
 
@@ -44,7 +45,7 @@ The `Sender Policy Framework <https://tools.ietf.org/html/rfc4408>`_ (SPF) is a 
 
 .. code-block:: none
 
- v=spf1 include:spf.uberspace.de ~all
+ v=spf1 include:spf.uberspace.de -all
 
 This instructs other mail servers to accept mails from your domain if they originate from our hosts and to deliver any mails that claim to be from your domain but originate from a different server to the spam folder.
 
