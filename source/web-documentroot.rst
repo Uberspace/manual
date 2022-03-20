@@ -86,7 +86,7 @@ We provide the following configuration:
   AddType application/wasm .wasm .wasm.gz .wat .wat.gz
   AddOutputFilter INCLUDES .shtml
 
-The full configuration ist provided within the file ``/etc/httpd/conf/httpd.conf`` which is readable by every user.
+The full configuration is provided within the file ``/etc/httpd/conf/httpd.conf`` which is readable by every user.
 
 Own configuration
 -----------------
