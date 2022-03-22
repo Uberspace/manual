@@ -1,7 +1,7 @@
 Added
 -----
 * `Rust <https://www.rust-lang.org/>`_ ``stable`` channel. You can read about it
-  in `our manual <https://manual.uberspace.de/lang-rust.html>`_.
+  in `our manual <https://manual.uberspace.de/lang-rust.html>`__.
 * `Node.js <https://nodejs.org/>`_ version ``14``.
 * `mosquitto <https://mosquitto.org/>`_.
 * `ffmpeg <https://ffmpeg.org/>`_.

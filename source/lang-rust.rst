@@ -14,7 +14,7 @@ Introduction
 
 .. warning:: Rust applications belong in your :ref:`home`, **not** in your :ref:`docroot`.
 
-`Rust <https://www.rust-lang.org/>`_ is a *multi-paradigm programming language* focused on **performance** and **safety**, especially **safe concurrency**. Rust is syntactically similar to C++, but provides memory safety without using garbage collection. The compiler is *free and open-source software* dual-licensed under the **MIT License** and **Apache License 2.0**.
+`Rust <https://www.rust-lang.org/>`__ is a *multi-paradigm programming language* focused on **performance** and **safety**, especially **safe concurrency**. Rust is syntactically similar to C++, but provides memory safety without using garbage collection. The compiler is *free and open-source software* dual-licensed under the **MIT License** and **Apache License 2.0**.
 
 Versions
 ========

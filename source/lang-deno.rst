@@ -14,7 +14,9 @@ Introduction
 
 .. warning:: Deno scripts belong in your :ref:`home`, **not** in your :ref:`docroot`.
 
-`Deno <https://deno.land/>`_ is a server-side `JavaScript <https://en.wikipedia.org/wiki/JavaScript>`_ and `TypeScript <https://en.wikipedia.org/wiki/TypeScript>`_ interpreter. It is comparable to Node.js, but aims to offer a simple, modern and secure runtime.
+`Deno <https://deno.land/>`__ is a server-side `JavaScript <https://en.wikipedia.org/wiki/JavaScript>`_ and
+`TypeScript <https://en.wikipedia.org/wiki/TypeScript>`_ interpreter.
+It is comparable to Node.js, but aims to offer a simple, modern and secure runtime.
 
 
 ----

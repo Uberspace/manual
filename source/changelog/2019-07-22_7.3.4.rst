@@ -3,7 +3,7 @@ This was mostly a maintainance release, containing internal CI releated things. 
 Fixed
 -----
 
-- We promise a log retention period of 7 days in `our manual <https://manual.uberspace.de/web-logs.html#privacy>`_. For a while we only kept logs for 5 days though. This is now fixed.
+- We promise a log retention period of 7 days in `our manual <https://manual.uberspace.de/web-logs.html#privacy>`__. For a while we only kept logs for 5 days though. This is now fixed.
 
 Added
 -----

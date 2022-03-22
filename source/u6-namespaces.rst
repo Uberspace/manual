@@ -1,8 +1,10 @@
+:orphan:
+
 .. _u6-namespaces:
 
-#######################################################
+############################################################
 Mail namespaces from automatically migrated accounts from U6
-#######################################################
+############################################################
 
 On U6 you had the possibility to use domain namespaces for your mail accounts. Using this feature you could create mailboxes just for a specific domain on your Uberspace like this:
 
