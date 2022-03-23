@@ -186,13 +186,33 @@ This will also work over SSH - for example to dump a database on some other host
 
   [isabell@stardust ~]$ ssh otheruser@some.other.host mysqldump otherdatabase | mysql isabell
 
+
+Monitoring and analysing sql queries
+====================================
+
+You can use the tool ``mtop`` to monitor and analyse your mysql queries easily. You will need to provide your credentials:
+
+.. code-block:: console
+
+  [isabell@stardust ~]$ mtop -dbu $USER -p <MYSQL_PASSWORD>
+
+Alternatively you can create a configuration file ``~/.mtoprc`` and insert your credentials there:
+
+.. code-block::
+
+  --dbuser=isabell
+  --password=<MYSQL_PASSWORD>
+
+You can then just use the command ``mtop`` to start the tool.
+
+
 Custom settings
 ===============
 
 UTF-8
 -----
 
-The default encoding for MySQL is still ``latin-1``, which can cause a lot of problems if you typically use Unicode characters and forget to explicitly set the encoding to UTF-8 every time. Therefore, we changed the default encoding to ``utf8mb4``, which enables you to use all ``UTF-8`` characters, including emojis😊.
+The default encoding for MySQL is still ``latin-1``, which can cause a lot of problems if you typically use Unicode characters and forget to explicitly set the encoding to UTF-8 every time. Therefore, we changed the default encoding to ``utf8mb4``, which enables you to use all ``UTF-8`` characters, including emojis 😊.
 
 
 External connection
