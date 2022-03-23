@@ -4,14 +4,14 @@ Firewall Ports
 
 All uberspaces come with default firewall settings, which do not allow incoming
 connections on ports other than 443 and 80. Some software like Wordpress,
-mailman or seafile can be exposed using :ref:`php-fpm <lang-php>` or
-:ref:`web backends <web-backends>`. Either way, you do not need to think about
+mailman or seafile can be exposed using :doc:`php-fpm <lang-php>` or
+:doc:`web backends <web-backends>`. Either way, you do not need to think about
 ports and firewalls.
 
 If your software requires direct TCP or even UDP connections, like XMPP, ZNC or
 mosh, you need to open a port in the firewall.
 
-.. note:: If you plan to use :ref:`web backends <web-backends>`, you do **not** need to open a port for your application.
+.. note:: If you plan to use :doc:`web backends <web-backends>`, you do **not** need to open a port for your application.
 
 Opening ports
 =============

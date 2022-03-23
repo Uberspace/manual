@@ -31,8 +31,7 @@ nginx
 =====
 
 nginx handles all the nitty gritty of accepting requests from browsers, making
-sure HTTPS works properly and passing requests through to configured :ref:`web
-backends <backends>`. It also connects to apache for more traditional web
+sure HTTPS works properly and passing requests through to configured :doc:`web backends <web-backends>`. It also connects to apache for more traditional web
 development needs.
 
 Within nginx each user domain gets their own ``server`` block. On a fresh

@@ -7,7 +7,7 @@ We filter incoming mails with `Rspamd <https://rspamd.com>`_ which uses `multipl
 Configure spam folder
 =====================
 
-Use ``uberspace mail spamfolder`` to configure the spam folder for all mailboxes in your account. Mails with a spam score greater than 5 will get sorted into the ``Spam`` folder in the according mailbox. If you want to change the rejection score, please have a look at the examples in our description for :ref:`Sieve <mail-filters>`.
+Use ``uberspace mail spamfolder`` to configure the spam folder for all mailboxes in your account. Mails with a spam score greater than 5 will get sorted into the ``Spam`` folder in the according mailbox. If you want to change the rejection score, please have a look at the examples in our description for :doc:`Sieve <mail-filters>`.
 
 .. code-block:: console
 

@@ -37,7 +37,7 @@ Within the ``bin`` directory executables installed by custom tools or written by
 html
 ----
 
-``html`` is a symbolic link to your :ref:`documentroot`. Anything in there is accessible to the web server, and thus to the public.
+``html`` is a symbolic link to your :doc:`documentroot <web-documentroot>`. Anything in there is accessible to the web server, and thus to the public.
 
 logs
 ----

@@ -23,7 +23,7 @@ Once a certificate has been generated, you can find all relevant files in ``~/et
 This includes your certificate chain - ``<domain>.crt`` - as well as the private
 key - ``<domain>.key``. If you do not make use of our webserver, you can copy
 or directly use these files in your application. If you use PHP, static files or
-:ref:`web backends <web-backends>`, we handle HTTPS for you and there is no need
+:doc:`web backends <web-backends>`, we handle HTTPS for you and there is no need
 to do anything.
 
 .. warning::

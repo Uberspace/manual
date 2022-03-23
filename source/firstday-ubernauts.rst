@@ -61,7 +61,7 @@ Databases
 Miscellaneous
 -------------
 
-- If we had opened a port for your software on U6, you may not be able to get the same port again on U7. You can open random ports by your own, see :ref:`opening ports <basics-ports>`.
+- If we had opened a port for your software on U6, you may not be able to get the same port again on U7. You can open random ports by your own, see :doc:`opening ports <basics-ports>`.
 
 - We no longer support outdated software like CGI, PHP5 etc. on U7. You may be able to get these run by installing and setting them up yourself but we cannot support you with problems in doing so.
 

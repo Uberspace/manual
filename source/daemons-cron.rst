@@ -105,7 +105,7 @@ After you've saved the temporary file and exited the editor, the changes will be
 PATH
 ----
 
-``cron`` does not parse your :doc:`.bash_profile <home>` or :ref:`.bashrc <basics-home>`, so ``$PATH`` is different from your shell. You can define ``$PATH`` in the ``crontab``. So if you want to include your ``~/bin`` directory in ``$PATH``, you need to insert this line before your cronjob:
+``cron`` does not parse your :doc:`.bash_profile <basics-home>` or :doc:`.bashrc <basics-home>`, so ``$PATH`` is different from your shell. You can define ``$PATH`` in the ``crontab``. So if you want to include your ``~/bin`` directory in ``$PATH``, you need to insert this line before your cronjob:
 
 .. code-block:: none
 

@@ -2,9 +2,9 @@ Added
 -----
 
 * We now provide ImageMagick commands like “convert” on the command line.
-* We now provide :ref:`Ruby <ruby>` in user selectable versions: 2.3, 2.4 and 2.5.
-  
+* We now provide :doc:`Ruby <lang-ruby>` in user selectable versions: 2.3, 2.4 and 2.5.
+
 Fixed
 -----
 
-* The :doc:`PHP-FPM <php>` and :doc:`supervisor <daemons-supervisord>` user services now run under their user's :ref:`ressource restrictions <basics-resources>`. 
+* The :doc:`PHP-FPM <lang-php>` and :doc:`supervisor <daemons-supervisord>` user services now run under their user's :doc:`resource restrictions <basics-resources>`.

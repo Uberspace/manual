@@ -20,15 +20,15 @@ Access
 
 If you need to provide access data you can use the following:
 
-+--------------------+----------------------------------------------+
-|Server              | :term:`your Hostname`                        |
-+--------------------+----------------------------------------------+
-|Port                | ``4190``                                     |
-+--------------------+----------------------------------------------+
-|Username            | Your email address, including the domain     |
-+--------------------+----------------------------------------------+
-|Password            | Your password for the email address          |
-+--------------------+----------------------------------------------+
++--------------------+-------------------------------------------------------+
+|Server              | your :term:`Hostname`  (``<something>.uberspace.de``) |
++--------------------+-------------------------------------------------------+
+|Port                | ``4190``                                              |
++--------------------+-------------------------------------------------------+
+|Username            | Your email address, including the domain              |
++--------------------+-------------------------------------------------------+
+|Password            | Your password for the email address                   |
++--------------------+-------------------------------------------------------+
 
 Scripts
 #######
@@ -42,7 +42,7 @@ Examples
 
 In this example we sort mails from a mailinglist into a folder, sort mails to ``*@allcolorsarebeautiful.example`` into another folder and lower the maximum spam score to 4.
 
-.. code-block:: sieve
+.. code-block:: cfg
 
     require ["fileinto", "reject", "relational"];
 
