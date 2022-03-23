@@ -4,12 +4,12 @@
 Home Directory
 ##############
 
-Your home directory is your own, private directory on the Uberspace host. It is a directory with the same name as your user account, stored within the ``/home`` directory. So if your Uberspace account is named ``isabell``, you home directory is ``/home/isabell``. 
+Your home directory is your own, private directory on the Uberspace host. It is a directory with the same name as your user account, stored within the ``/home`` directory. So if your Uberspace account is named ``isabell``, you home directory is ``/home/isabell``.
 
 What Should I Put Here?
 =========================
 
-The general rule is: Anything you don't want anyone else to see, especially any files you don't want to be accessible by the web server. 
+The general rule is: Anything you don't want anyone else to see, especially any files you don't want to be accessible by the web server.
 
 Default Files and Folders
 =========================
@@ -24,7 +24,7 @@ In many contexts, the tilde ``~`` can be used as a placeholder for your home dir
 etc
 ---
 
-The ``etc`` folder is reserved for configuration files of any kind: 
+The ``etc`` folder is reserved for configuration files of any kind:
 
     - ``etc/certificates`` shows your certificate files for :ref:`https <web-https>`.
     - ``etc/php.d`` contains your custom configuration files for your :ref:`php <php-custom-configuration>`.
@@ -44,7 +44,7 @@ html
 logs
 ----
 
-A directory to store log files. 
+A directory to store log files.
 
 Maildir
 -------

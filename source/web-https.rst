@@ -1,4 +1,4 @@
-.. _web-https: 
+.. _web-https:
 
 #####
 HTTPS

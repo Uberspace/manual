@@ -49,7 +49,7 @@ Then you can just add the subdomain *first* on the one user and *then* the main 
 
 .. note::
   We very much encourage you to use separate Uberspace accounts for separate projects or apps and so for subdomains. And you shouldn't usually run into this problem because in most cases you won't end up with different users on the same host.
-  
+
   Note that you will also encounter this error if the main domain is configured as a mail domain (and not as web domain) on another Uberspace account.
 
 Removal

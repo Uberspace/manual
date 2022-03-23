@@ -1,8 +1,8 @@
 .. _python:
 
 .. sidebar:: Logo
-  
-  .. image:: _static/images/logo_python.png 
+
+  .. image:: _static/images/logo_python.png
       :align: center
 
 ######
@@ -21,9 +21,9 @@ web applications.
 Versions
 ========
 
-Release Types 
+Release Types
 -------------
-Each release branch of Python is fully supported for five years beginning with its initial stable release. For Python 2.7, this has been extended to ten years. We provide different point releases and apply security updates on a regular basis. Currently, these Python versions are available: 2.7, 3.6, 3.7, 3.8 and 3.9. 
+Each release branch of Python is fully supported for five years beginning with its initial stable release. For Python 2.7, this has been extended to ten years. We provide different point releases and apply security updates on a regular basis. Currently, these Python versions are available: 2.7, 3.6, 3.7, 3.8 and 3.9.
 
 Standard version
 ----------------
@@ -75,13 +75,13 @@ In order to install the correct package corresponding to the Python version you 
 
 .. code-block:: console
 
-  [isabell@stardust ~] pip2.7 install package-name --user 
+  [isabell@stardust ~] pip2.7 install package-name --user
 
 To install for Python 3.6, use :code:`pip3.6`:
 
 .. code-block:: console
 
-  [isabell@stardust ~] pip3.6 install package-name --user 
+  [isabell@stardust ~] pip3.6 install package-name --user
 
 ----
 

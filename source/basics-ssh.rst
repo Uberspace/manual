@@ -61,7 +61,7 @@ your local workstation is represented by a ``[localuser@localhost ~]$`` prompt:
   ED25519 key fingerprint is SHA256:DtwUpr0MzHCZBej70iWO9CyzxXRDPK3jr14PJPMQIP4.
   Are you sure you want to continue connecting (yes/no)? yes
   Warning: Permanently added 'stardust.uberspace.de,ip.ip.ip.ip' (ED25519) to the list of known hosts.
-  isabell@stardust.uberspace.de's password: 
+  isabell@stardust.uberspace.de's password:
   [isabell@stardust ~]$
 
 What you're first seeing is the fingerprint of the host key of the server you're about to connect.
@@ -163,9 +163,9 @@ but the conventional SSH password of your Uberspace.
   /usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
   /usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
   Password:
-  
+
   Number of key(s) added: 1
-  
+
   Now try logging into the machine, with:   "ssh 'isabell@stardust.uberspace.de'"
   and check to make sure that only the key(s) you wanted were added.
 

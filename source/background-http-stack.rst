@@ -1,7 +1,7 @@
 .. _httpstack:
 
 ##########
-HTTP Stack 
+HTTP Stack
 ##########
 
 A couple hundred users per host, a few domains each, security headers, HTTPS
@@ -27,7 +27,7 @@ employing two of them back-to-back: nginx_ and `Apache httpd`_.
                                                             => per-user nginx
                                                             => nodejs, python, ruby, ...
                                                             => gogs, mattermost, matrix, ...
-  .   
+  .
 
 nginx
 =====
@@ -45,7 +45,7 @@ uberspace, it might look like this:
 
   [marie@stardust ~]# cat /readonly/marie/nginx.conf
   # manged by uberspace-generate-nginx-config
-  
+
   [...]
 
   server {
@@ -62,7 +62,7 @@ uberspace, it might look like this:
       # domain specific backends
       # global backends, minus the ones specified as domain-ones
   }
-  
+
   [...]
 
 By default, this ``server`` block only contains a simple proxy_pass_ statement
@@ -70,7 +70,7 @@ processing all requests via a predefined apache upstream: send everything to
 Apache httpd and report back whatever it said.
 
 This configuration can be extended using ":ref:`uberspace web backend set <backends>`"
-commands. 
+commands.
 
 .. code-block:: console
   :emphasize-lines: 14

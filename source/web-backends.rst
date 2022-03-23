@@ -10,7 +10,7 @@ Using web backends you can connect your applications directly to our frontend to
 
 .. warning:: If you make use of WebSockets, make sure to send `keep alive`_ packages every few minutes. Idle HTTP connections are shut down after three minutes.
 
-In the background, every Uberspace account gets its own virtual network interface. That enables you to use any port you like. Check out the :ref:`background article <network>` for details.  
+In the background, every Uberspace account gets its own virtual network interface. That enables you to use any port you like. Check out the :ref:`background article <network>` for details.
 
 Setup
 =====
@@ -20,9 +20,9 @@ In order to use your own backend, you first need to set it up using the ``ubersp
 .. code-block:: console
 
   [isabell@stardust ~]$ uberspace web backend
-  
+
   Manage backends in web server configuration.
-  
+
   Possible commands:
     del — Delete web backend for a given domain and path.
     list — List all configured web backends.
@@ -94,7 +94,7 @@ Some applications don't serve assets due to performance reasons. In this example
 specific domain
 ---------------
 
-You also can setup backends for specific domains. Make sure :ref:`your domain <web-domains>` is setup and configured correctly. 
+You also can setup backends for specific domains. Make sure :ref:`your domain <web-domains>` is setup and configured correctly.
 
 .. code-block:: console
 

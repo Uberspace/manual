@@ -42,7 +42,7 @@ Many PHP apps like Symfony provide their own public webfolder within their folde
 this will result in the following structure:
 
 .. code-block:: console
-  
+
   [isabell@stardust isabell]$ tree
   .
   ├── html -> my_project/public
@@ -62,7 +62,7 @@ Since the webserver runs with a different user, you need to make sure your files
 
 .. tip:: Since the folder ``/var/www/virtual/<username>`` has mode ``0750``, other users on the same server can't access your files.
 
-In addition to "traditional" permission bits, uberspace uses `SELinux <https://en.wikipedia.org/wiki/Security-Enhanced_Linux>`_. For the webserver user to be able to access the files, they need to have a SELinux type of ``httpd_sys_content_t``. If you create files in your home directory, those files will carry the ``user_home_t`` type instead. Using ``mv`` to move the files will take care of this, as ``mv`` is aliased to ``mv -Z`` by default (``-Z``: *set SELinux security context of destination file to default type*). However, if you move your files in a different way, you might need to set the SELinux label accordingly, for example using `restorecon <https://linux.die.net/man/8/restorecon>`_: 
+In addition to "traditional" permission bits, uberspace uses `SELinux <https://en.wikipedia.org/wiki/Security-Enhanced_Linux>`_. For the webserver user to be able to access the files, they need to have a SELinux type of ``httpd_sys_content_t``. If you create files in your home directory, those files will carry the ``user_home_t`` type instead. Using ``mv`` to move the files will take care of this, as ``mv`` is aliased to ``mv -Z`` by default (``-Z``: *set SELinux security context of destination file to default type*). However, if you move your files in a different way, you might need to set the SELinux label accordingly, for example using `restorecon <https://linux.die.net/man/8/restorecon>`_:
 
 .. code-block:: console
 

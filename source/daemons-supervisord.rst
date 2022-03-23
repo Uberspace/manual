@@ -4,7 +4,7 @@
 supervisord
 ###########
 
-We use ``supervisord`` to monitor services. A service, or daemon, is a program that starts automatically and is kept in the background. In case it quits or crashes, it is restarted by ``supervisord``. 
+We use ``supervisord`` to monitor services. A service, or daemon, is a program that starts automatically and is kept in the background. In case it quits or crashes, it is restarted by ``supervisord``.
 
 Create a Service
 ================

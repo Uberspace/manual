@@ -4,7 +4,7 @@
 Cron
 ####
 
-Cron is a system-wide service to run tasks, so-called `cronjobs`, in user-specified intervals. For example, you might want to create a backup of your Uberspace every day. You could then create a cronjob that will copy all files on your account to another server. 
+Cron is a system-wide service to run tasks, so-called `cronjobs`, in user-specified intervals. For example, you might want to create a backup of your Uberspace every day. You could then create a cronjob that will copy all files on your account to another server.
 
 Crontab
 =======
@@ -41,7 +41,7 @@ The job /path/to/your/job/script.pl is started 15 minutes past every full hour.
 
  30 10 * * * /path/to/your/job/script.pl
 
-The job is started every day at 10:30 a.m. 
+The job is started every day at 10:30 a.m.
 
 .. code-block:: none
 
@@ -54,7 +54,7 @@ Special characters: ``/``, ``,`` and ``-``:
 | ``/`` is used to divide a time.
 | ``,`` combines multiple times.
 | ``-`` specifies a range (such as 1-5).
-| 
+|
 
 .. code-block:: none
 
@@ -85,12 +85,12 @@ There are a couple of aliases that can be used instead of the numeric definition
 | ``@monthly``: Once a month (i.e.: ``0 0 1 * *``).
 | ``@yearly`` or ``@annually``: Once a year (i.e.: ``0 0 1 1 *``).
 | ``@reboot``: After every reboot.
-| 
+|
 
 Adding, Modifying, and Deleting a Cronjob
 -----------------------------------------
 
-If you want to add or modify a new cronjob, you need to edit your ``crontab``. To do this, use the command ``crontab -e``. This will launch your standard editor and you can add a new job or modify an existing one. 
+If you want to add or modify a new cronjob, you need to edit your ``crontab``. To do this, use the command ``crontab -e``. This will launch your standard editor and you can add a new job or modify an existing one.
 
 To change your standard editor, set it in the ``VISUAL`` variable. So to use ``nano``, add this line to your :ref:`.bash_profile <home>`:
 
@@ -107,7 +107,7 @@ After you've saved the temporary file and exited the editor, the changes will be
 PATH
 ----
 
-``cron`` does not parse your :ref:`.bash_profile <home>` or :ref:`.bashrc <home>`, so ``$PATH`` is different from your shell. You can define ``$PATH`` in the ``crontab``. So if you want to include your ``~/bin`` directory in ``$PATH``, you need to insert this line before your cronjob: 
+``cron`` does not parse your :ref:`.bash_profile <home>` or :ref:`.bashrc <home>`, so ``$PATH`` is different from your shell. You can define ``$PATH`` in the ``crontab``. So if you want to include your ``~/bin`` directory in ``$PATH``, you need to insert this line before your cronjob:
 
 .. code-block:: none
 

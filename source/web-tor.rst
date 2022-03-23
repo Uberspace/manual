@@ -1,7 +1,7 @@
 .. _web-tor:
 
 ##################
-Tor Onion Service 
+Tor Onion Service
 ##################
 
 Tor_ is open-source software for anonymous communication. It enables users

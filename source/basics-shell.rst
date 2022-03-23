@@ -13,7 +13,7 @@ By default, all new Uberspace accounts use the `Bash <https://www.gnu.org/softwa
 
 .. code-block:: bash
 
- [isabell@stardust ~]$ chsh --shell /bin/zsh 
+ [isabell@stardust ~]$ chsh --shell /bin/zsh
  Changing shell for isabell.
  Shell changed.
 
