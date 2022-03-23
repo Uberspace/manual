@@ -1,5 +1,3 @@
-.. _web-security-headers: 
-
 ####################
 Web Security Headers
 ####################
@@ -25,12 +23,12 @@ uberspaces for every domain:
    Prevent some browsers from interpreting JavaScript in non-js MIME types.
 
 ``X-Xss-Protection: 1; mode=block``
-   Tell the browser to protect against cross-site scripting. 
+   Tell the browser to protect against cross-site scripting.
 
 ``X-Frame-Options: SAMEORIGIN``
-   Prevents the site from being used as a frame from another domain, i.e. to block other sites from calling actions on your site (i.e. deleting a profile). 
+   Prevents the site from being used as a frame from another domain, i.e. to block other sites from calling actions on your site (i.e. deleting a profile).
 
 
 .. note::
 
-    Changing the above values is possible using :ref:`web headers <headers>`.
+    Changing the above values is possible using :doc:`web headers <web-headers>`.

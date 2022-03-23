@@ -1,5 +1,3 @@
-.. _mailfilters:
-
 #####################
 Mail filter and rules
 #####################
@@ -8,12 +6,12 @@ You can filter your incoming mails with `Sieve <http://www.ietf.org/rfc/rfc3028.
 
 A Sieve script consists of a number of conditions which are applied to incoming mail; if an email matches a test, then the actions associated with that test are performed.
 
-.. warning:: The :ref:`spamfolder <mailfilters>` needs to be enabled to use Sieve filtering.
+.. warning:: The :doc:`spamfolder <mail-filters>` needs to be enabled to use Sieve filtering.
 
 ManageSieve
 ###########
 
-To create and manage scripts, you can use any tool speaking the *ManageSieve protocol*. Many E-Mail clients support the protocol, you can find a list of tools and plugins at `sieve.info <http://sieve.info/clients>`_. You can edit your scripts in the :ref:`webmailer <mail-access>`.
+To create and manage scripts, you can use any tool speaking the *ManageSieve protocol*. Many E-Mail clients support the protocol, you can find a list of tools and plugins at `sieve.info <http://sieve.info/clients>`_. You can edit your scripts in the :doc:`webmailer <mail-access>`.
 
 .. tip:: We recommend the `Sieve Script Editor <https://github.com/thsmi/sieve>`_ which has a GUI to drag and drop the rules and is available for many platforms and apps.
 
@@ -22,15 +20,15 @@ Access
 
 If you need to provide access data you can use the following:
 
-+--------------------+----------------------------------------------+
-|Server              | :term:`your Hostname`                        |
-+--------------------+----------------------------------------------+
-|Port                | ``4190``                                     |
-+--------------------+----------------------------------------------+
-|Username            | Your email address, including the domain     |
-+--------------------+----------------------------------------------+
-|Password            | Your password for the email address          |
-+--------------------+----------------------------------------------+
++--------------------+-------------------------------------------------------+
+|Server              | your :term:`Hostname`  (``<something>.uberspace.de``) |
++--------------------+-------------------------------------------------------+
+|Port                | ``4190``                                              |
++--------------------+-------------------------------------------------------+
+|Username            | Your email address, including the domain              |
++--------------------+-------------------------------------------------------+
+|Password            | Your password for the email address                   |
++--------------------+-------------------------------------------------------+
 
 Scripts
 #######
@@ -44,7 +42,7 @@ Examples
 
 In this example we sort mails from a mailinglist into a folder, sort mails to ``*@allcolorsarebeautiful.example`` into another folder and lower the maximum spam score to 4.
 
-.. code-block:: sieve
+.. code-block:: cfg
 
     require ["fileinto", "reject", "relational"];
 

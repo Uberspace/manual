@@ -1,5 +1,3 @@
-.. _resources:
-
 ################
 System Resources
 ################
@@ -9,7 +7,7 @@ System Resources
 Storage
 =======
 
-Every Uberspace is provided with 10 GB of storage by default, you can :ref:`upgrade your storage <billing>` up to 50GB.
+Every Uberspace is provided with 10 GB of storage by default, you can :doc:`upgrade your storage <billing-general>` up to 50GB.
 Over-usage of up to 10% is permitted for up to seven days. If you try to use even more than these 110% of your booked
 storage or if you don't free up enough storage within seven days, we will block all write access for your account.
 This means you won't be able to add any more data, including incoming e-mails or database storage.

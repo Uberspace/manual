@@ -1,5 +1,3 @@
-.. _mailforwarding:
-
 ################
 forwarding mails
 ################
@@ -7,7 +5,7 @@ forwarding mails
 configure forwarding
 ====================
 
-You can use forwardings in the form of ``$MAILUSER@$USER.uber.space``. If you have :ref:`set up additional domains <mail-domains>`, ``$MAILUSER@$DOMAIN`` will also work.
+You can use forwardings in the form of ``$MAILUSER@$USER.uber.space``. If you have :doc:`set up additional domains <mail-domains>`, ``$MAILUSER@$DOMAIN`` will also work.
 
 .. warning::
     We do not forward mails with a :doc:`spam score >= 10 <mail-spam>`. This is crucial due to policy reasons at nearly any mail provider and makes sure the reputation of our servers stays fine.
@@ -56,6 +54,6 @@ spam filtering
 With enabled :doc:`spam filtering <mail-spam>` we do not forward mails with a spam score greater than 5. These mails get sorted into ``~/users/$MAILUSER/.Spam``.
 
 .. warning::
-    In the past, with the outdated product version Uberspace 6 we encouraged users to manipulate ``.qmail`` files for forwarding and controlling the email flow. This is technically still possible on U7 but will strongly interfere with our standard email setup that should be configured by using the ``uberspace mail`` commands. 
-    
+    In the past, with the outdated product version Uberspace 6 we encouraged users to manipulate ``.qmail`` files for forwarding and controlling the email flow. This is technically still possible on U7 but will strongly interfere with our standard email setup that should be configured by using the ``uberspace mail`` commands.
+
     Because of this, we no longer can support you in technical issues with qmail programming but recommend you to move your mail setup to the ``uberspace mail`` tools. The qmail configuration is still available and we also use the ``.qmail-default`` file to configure the spamfolder, but this might change in the future and break your custom configurations.

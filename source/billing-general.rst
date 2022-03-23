@@ -1,5 +1,3 @@
-.. _billing:
-
 #######
 Billing
 #######
@@ -191,12 +189,10 @@ What happens when you stop paying
 
 If your account is going to run out of funds, we will:
 
-1. notify you via email.
-2. we'll send out another email at the dawn of the next month and flag your account 
-for deactivation. 
-3. If we don't hear from you for two weeks after that, we will disable your account.
-This means your web pages will display the message ``This account has been disabled``.
-4. If your account has gone for two months without payment, we delete the stored data.
+1. Notify you via email
+2. We'll send out another email at the dawn of the next month and flag your account for deactivation
+3. If we don't hear from you for two weeks after that, we will disable your account. This means your web pages will display the message ``This account has been disabled``
+4. If your account has gone for two months without payment, we delete the stored data
 
 We will not come after you for borrowed money, but would highly appreciate it if you
 restored your account balance to be positive or 0€.

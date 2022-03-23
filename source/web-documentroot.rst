@@ -1,5 +1,3 @@
-.. _docroot:
-
 ############
 DocumentRoot
 ############
@@ -7,7 +5,7 @@ DocumentRoot
 Publish
 =======
 
-In order for a website to be accessible to visitors, it must be published to the correct directory. :ref:`Upload your files via SFTP <sftp>` and place them in ``/var/www/virtual/<username>/html``. Access the files via :ref:`your domain <web-domains>`.
+In order for a website to be accessible to visitors, it must be published to the correct directory. :doc:`Upload your files via SFTP <basics-sftp>` and place them in ``/var/www/virtual/<username>/html``. Access the files via :doc:`your domain <web-domains>`.
 
 .. _additionaldocroot:
 
@@ -16,7 +14,7 @@ Additional DocumentRoots
 
 .. warning:: We strongly suggest to use different accounts for different projects due to security reasons. If one of the DocumentRoots gets compromised (e.g. because of a `CVE <http://www.cvedetails.com/product/4096/Wordpress-Wordpress.html?vendor_id=2337>`_), all other files within all other DocumentRoots can be compromised as well.
 
-You can create folders (and symlinks) in the form of ``/var/www/virtual/<username>/<domain>``. Make sure :ref:`your domain <web-domains>` is setup and configured correctly. To use ``RewriteRules``, you have to create a :ref:`.htaccess file <htaccess>` within the DocumentRoot with the following content:
+You can create folders (and symlinks) in the form of ``/var/www/virtual/<username>/<domain>``. Make sure :doc:`your domain <web-domains>` is setup and configured correctly. To use ``RewriteRules``, you have to create a :ref:`.htaccess file <htaccess>` within the DocumentRoot with the following content:
 
 .. code-block:: ini
 
@@ -42,7 +40,7 @@ Many PHP apps like Symfony provide their own public webfolder within their folde
 this will result in the following structure:
 
 .. code-block:: console
-  
+
   [isabell@stardust isabell]$ tree
   .
   ├── html -> my_project/public
@@ -62,7 +60,7 @@ Since the webserver runs with a different user, you need to make sure your files
 
 .. tip:: Since the folder ``/var/www/virtual/<username>`` has mode ``0750``, other users on the same server can't access your files.
 
-In addition to "traditional" permission bits, uberspace uses `SELinux <https://en.wikipedia.org/wiki/Security-Enhanced_Linux>`_. For the webserver user to be able to access the files, they need to have a SELinux type of ``httpd_sys_content_t``. If you create files in your home directory, those files will carry the ``user_home_t`` type instead. Using ``mv`` to move the files will take care of this, as ``mv`` is aliased to ``mv -Z`` by default (``-Z``: *set SELinux security context of destination file to default type*). However, if you move your files in a different way, you might need to set the SELinux label accordingly, for example using `restorecon <https://linux.die.net/man/8/restorecon>`_: 
+In addition to "traditional" permission bits, uberspace uses `SELinux <https://en.wikipedia.org/wiki/Security-Enhanced_Linux>`_. For the webserver user to be able to access the files, they need to have a SELinux type of ``httpd_sys_content_t``. If you create files in your home directory, those files will carry the ``user_home_t`` type instead. Using ``mv`` to move the files will take care of this, as ``mv`` is aliased to ``mv -Z`` by default (``-Z``: *set SELinux security context of destination file to default type*). However, if you move your files in a different way, you might need to set the SELinux label accordingly, for example using `restorecon <https://linux.die.net/man/8/restorecon>`_:
 
 .. code-block:: console
 

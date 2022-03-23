@@ -3,7 +3,7 @@ Added
 - We included the official RPM repository for the **Mercurial SCM**. So ``hg``
   now comes in version ``5.4.2`` (was ``2.6.2``).
 
-- `Erlang <https://manual.uberspace.de/lang-erlang.html>`_ version ``23``.
+- `Erlang <https://manual.uberspace.de/lang-erlang.html>`__ version ``23``.
 
 - We provide ``devtoolset-9`` (enabled by default). Resulting in more recent
   versions of development tooling (e.g. ``gcc`` in version ``9.3``).

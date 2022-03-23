@@ -1,5 +1,3 @@
-.. _web-domains:
-
 #######
 Domains
 #######
@@ -29,7 +27,7 @@ Once you've set up your domain using the ``uberspace`` tool, the tool provides y
 .. include:: includes/domain-dns.txt
 
 To start publishing content on your new domain, upload it to ``/var/www/virtual/isabell/html`` or ``/home/isabell/html``. By default, all domains
-share the same :ref:`docroot`. Please refer to :ref:`docroot` for instructions on how to use serve different content under a given domain.
+share the same :doc:`docroot <web-documentroot>`. Please refer to :doc:`docroot <web-documentroot>` for instructions on how to use serve different content under a given domain.
 
 Subdomains
 ==========
@@ -49,7 +47,7 @@ Then you can just add the subdomain *first* on the one user and *then* the main 
 
 .. note::
   We very much encourage you to use separate Uberspace accounts for separate projects or apps and so for subdomains. And you shouldn't usually run into this problem because in most cases you won't end up with different users on the same host.
-  
+
   Note that you will also encounter this error if the main domain is configured as a mail domain (and not as web domain) on another Uberspace account.
 
 Removal

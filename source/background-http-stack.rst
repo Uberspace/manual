@@ -1,11 +1,9 @@
-.. _httpstack:
-
 ##########
-HTTP Stack 
+HTTP Stack
 ##########
 
 A couple hundred users per host, a few domains each, security headers, HTTPS
-with let's encrypt, websocket, pass-through, :ref:`web backends <backends>`,
+with let's encrypt, websocket, pass-through, :doc:`web backends <web-backends>`,
 htaccess.. at some point a web setup reaches a point, when there are too many
 feature to handle them all with just one web server software. That's why we're
 employing two of them back-to-back: nginx_ and `Apache httpd`_.
@@ -27,14 +25,13 @@ employing two of them back-to-back: nginx_ and `Apache httpd`_.
                                                             => per-user nginx
                                                             => nodejs, python, ruby, ...
                                                             => gogs, mattermost, matrix, ...
-  .   
+  .
 
 nginx
 =====
 
 nginx handles all the nitty gritty of accepting requests from browsers, making
-sure HTTPS works properly and passing requests through to configured :ref:`web
-backends <backends>`. It also connects to apache for more traditional web
+sure HTTPS works properly and passing requests through to configured :doc:`web backends <web-backends>`. It also connects to apache for more traditional web
 development needs.
 
 Within nginx each user domain gets their own ``server`` block. On a fresh
@@ -45,7 +42,7 @@ uberspace, it might look like this:
 
   [marie@stardust ~]# cat /readonly/marie/nginx.conf
   # manged by uberspace-generate-nginx-config
-  
+
   [...]
 
   server {
@@ -62,15 +59,15 @@ uberspace, it might look like this:
       # domain specific backends
       # global backends, minus the ones specified as domain-ones
   }
-  
+
   [...]
 
 By default, this ``server`` block only contains a simple proxy_pass_ statement
 processing all requests via a predefined apache upstream: send everything to
 Apache httpd and report back whatever it said.
 
-This configuration can be extended using ":ref:`uberspace web backend set <backends>`"
-commands. 
+This configuration can be extended using ":doc:`uberspace web backend set <web-backends>`"
+commands.
 
 .. code-block:: console
   :emphasize-lines: 14
@@ -100,11 +97,11 @@ connections.
 .. note::
 
   The curious ``100.64.9.2`` IP address above is due to our networking setup.
-  Feel free to :ref:`read up on it <network>`, if you'd like to know more!
+  Feel free to :doc:`read up on it <background-network>`, if you'd like to know more!
 
 
 Other backend types like ``--apache`` or ones specific to a domain work in a
-very similar way. They are documented over in the :ref:`web backends <backends>`
+very similar way. They are documented over in the :doc:`web backends <web-backends>`
 article.
 
 httpd

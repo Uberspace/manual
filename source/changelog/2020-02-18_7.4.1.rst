@@ -1,7 +1,7 @@
 Added
 -----
 * :ref:`catchall`
-* implement uberspace command to :ref:`forward mails <mailforwarding>`
+* implement uberspace command to :doc:`forward mails <mail-forwarding>`
 * provide texlive-dvipng, texlive-cm, texlive-pdfpages, texlive-graphics, texlive-iftex and socat
 
 Changed

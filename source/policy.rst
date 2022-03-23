@@ -1,10 +1,8 @@
-.. _policy:
-
 ######
 Policy
 ######
 
-To ensure smooth service for everyone, we have to intervene on individual accounts in exceptional cases. Of course, we will inform the account owner in each case and in most situations we will find a common solution. 
+To ensure smooth service for everyone, we have to intervene on individual accounts in exceptional cases. Of course, we will inform the account owner in each case and in most situations we will find a common solution.
 
 Deadlines
 =========

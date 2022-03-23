@@ -1,5 +1,3 @@
-.. _perl:
-
 .. sidebar:: Logo
 
   .. image:: _static/images/logo_perl.png

@@ -1,10 +1,8 @@
-.. _sftp:
-
 ####
 SFTP
 ####
 
-The *Secure File Transfer Protocol* is an encrypted protocol to exchange files between two computers, e.g. your own computer and the Uberspace host. 
+The *Secure File Transfer Protocol* is an encrypted protocol to exchange files between two computers, e.g. your own computer and the Uberspace host.
 
 Since SFTP is based on SSH, you can use the SSH :ref:`ssh-login-data`.
 

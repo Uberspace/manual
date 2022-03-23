@@ -1,4 +1,4 @@
-.. _putty:
+:orphan:
 
 #####
 PuTTY

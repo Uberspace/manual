@@ -1,5 +1,3 @@
-.. _clojure:
-
 .. sidebar:: Logo
 
   .. image:: _static/images/logo_clojure.png

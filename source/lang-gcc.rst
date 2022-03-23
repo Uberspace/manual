@@ -1,5 +1,3 @@
-.. _gcc:
-
 .. sidebar:: Logo
 
   .. image:: _static/images/logo_gcc.png

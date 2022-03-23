@@ -1,5 +1,3 @@
-.. _erlang:
-
 .. sidebar:: Logo
 
   .. image:: _static/images/logo_erlang.png
@@ -12,7 +10,7 @@ Erlang OTP
 Introduction
 ============
 
-`Erlang <https://www.erlang.org>`_ is a general-purpose, concurrent, functional programming language, and a garbage-collected runtime system. The term Erlang is used interchangeably with Erlang/OTP, or Open Telecom Platform (OTP), which consists of the Erlang runtime system, several ready-to-use components (OTP) mainly written in Erlang, and a set of design principles for Erlang programs.
+`Erlang <https://www.erlang.org>`__ is a general-purpose, concurrent, functional programming language, and a garbage-collected runtime system. The term Erlang is used interchangeably with Erlang/OTP, or Open Telecom Platform (OTP), which consists of the Erlang runtime system, several ready-to-use components (OTP) mainly written in Erlang, and a set of design principles for Erlang programs.
 
 
 ----

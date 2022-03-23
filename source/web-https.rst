@@ -1,14 +1,12 @@
-.. _web-https: 
-
 #####
 HTTPS
 #####
 
 Every Uberspace comes with its own enforced HTTPS certificate. Your
-:ref:`external domains <web-domains>` as well as the ``.uber.space`` default
+:doc:`external domains <web-domains>` as well as the ``.uber.space`` default
 domains, are automatically provided with a free certificate from
 `Let's Encrypt <https://letsencrypt.org>`_. In combination with our default
-:ref:`security headers <web-security-headers>`, this ensures that you and your
+:doc:`security headers <web-security-headers>`, this ensures that you and your
 users always use a secure connection to prevent eavesdropping and injection of
 unwanted content.
 
@@ -16,7 +14,7 @@ unwanted content.
 Let's encrypt
 =============
 
-We use `lua-resty-auto-ssl <https://github.com/GUI/lua-resty-auto-ssl>`_ to issue Let's Encrypt certificates for every external domain that is :ref:`connected to a Uberspace <web-domains>`. This happens automagically when a domain (``Host`` header) is first seen by our webserver. For privacy reasons every domain gets its own certificate. We also handle the renewal, certificates will be renewed if they expire in less than 30 days.
+We use `lua-resty-auto-ssl <https://github.com/GUI/lua-resty-auto-ssl>`_ to issue Let's Encrypt certificates for every external domain that is :doc:`connected to a Uberspace <web-domains>`. This happens automagically when a domain (``Host`` header) is first seen by our webserver. For privacy reasons every domain gets its own certificate. We also handle the renewal, certificates will be renewed if they expire in less than 30 days.
 
 Certificate Access
 ------------------
@@ -25,7 +23,7 @@ Once a certificate has been generated, you can find all relevant files in ``~/et
 This includes your certificate chain - ``<domain>.crt`` - as well as the private
 key - ``<domain>.key``. If you do not make use of our webserver, you can copy
 or directly use these files in your application. If you use PHP, static files or
-:ref:`web backends <web-backends>`, we handle HTTPS for you and there is no need
+:doc:`web backends <web-backends>`, we handle HTTPS for you and there is no need
 to do anything.
 
 .. warning::

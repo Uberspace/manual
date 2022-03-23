@@ -1,5 +1,3 @@
-.. _golang:
-
 .. sidebar:: Logo
 
   .. image:: _static/images/logo_golang.svg

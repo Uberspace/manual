@@ -16,4 +16,4 @@ Changed
   seven days.
 * Increased the process limit to ``1024`` (up from ``400``). Mostly because this
   is the lowest limit we can use and still support
-  `Erlang <https://www.erlang.org/>`_.
+  `Erlang <https://www.erlang.org/>`__.

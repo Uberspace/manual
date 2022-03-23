@@ -1,5 +1,3 @@
-.. _deno:
-
 .. sidebar:: Logo
 
   .. image:: _static/images/logo_deno.png
@@ -12,9 +10,11 @@ Deno
 Introduction
 ============
 
-.. warning:: Deno scripts belong in your :ref:`home`, **not** in your :ref:`docroot`.
+.. warning:: Deno scripts belong in your :doc:`home <basics-home>`, **not** in your :doc:`docroot <web-documentroot>`.
 
-`Deno <https://deno.land/>`_ is a server-side `JavaScript <https://en.wikipedia.org/wiki/JavaScript>`_ and `TypeScript <https://en.wikipedia.org/wiki/TypeScript>`_ interpreter. It is comparable to Node.js, but aims to offer a simple, modern and secure runtime.
+`Deno <https://deno.land/>`__ is a server-side `JavaScript <https://en.wikipedia.org/wiki/JavaScript>`_ and
+`TypeScript <https://en.wikipedia.org/wiki/TypeScript>`_ interpreter.
+It is comparable to Node.js, but aims to offer a simple, modern and secure runtime.
 
 
 ----
