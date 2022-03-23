@@ -1,5 +1,3 @@
-.. _mailforwarding:
-
 ################
 forwarding mails
 ################
@@ -7,7 +5,7 @@ forwarding mails
 configure forwarding
 ====================
 
-You can use forwardings in the form of ``$MAILUSER@$USER.uber.space``. If you have :ref:`set up additional domains <mail-domains>`, ``$MAILUSER@$DOMAIN`` will also work.
+You can use forwardings in the form of ``$MAILUSER@$USER.uber.space``. If you have :doc:`set up additional domains <mail-domains>`, ``$MAILUSER@$DOMAIN`` will also work.
 
 .. warning::
     We do not forward mails with a :doc:`spam score >= 10 <mail-spam>`. This is crucial due to policy reasons at nearly any mail provider and makes sure the reputation of our servers stays fine.

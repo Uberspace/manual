@@ -1,5 +1,3 @@
-.. _java:
-
 .. sidebar:: Logo
 
   .. image:: _static/images/logo_java.png

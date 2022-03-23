@@ -1,11 +1,9 @@
-.. _changelog:
-
 #########
 Changelog
 #########
 
 Below you can see the 5 most recent changes to Uberspace 7. For older changes,
-please refer to the :ref:`Changelog Archive <changelogarchive>`.
+please refer to the :doc:`Changelog Archive <changelog_archive>`.
 
 .. include:: includes/hotfix-version.rst
 

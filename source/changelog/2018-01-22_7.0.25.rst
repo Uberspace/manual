@@ -7,4 +7,4 @@ Added
 Fixed
 -----
 
-* The :ref:`PHP-FPM <php>` and :ref:`supervisor <supervisord>` user services now run under their user's :ref:`ressource restrictions <resources>`. 
+* The :doc:`PHP-FPM <php>` and :doc:`supervisor <daemons-supervisord>` user services now run under their user's :ref:`ressource restrictions <basics-resources>`. 

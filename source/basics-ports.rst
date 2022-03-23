@@ -1,5 +1,3 @@
-.. _firewallports:
-
 ##############
 Firewall Ports
 ##############

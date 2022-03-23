@@ -1,5 +1,3 @@
-.. _mailfilters:
-
 ###############
 Filtering mails
 ###############

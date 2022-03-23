@@ -1,5 +1,3 @@
-.. _web-domains:
-
 #######
 Domains
 #######
@@ -29,7 +27,7 @@ Once you've set up your domain using the ``uberspace`` tool, the tool provides y
 .. include:: includes/domain-dns.txt
 
 To start publishing content on your new domain, upload it to ``/var/www/virtual/isabell/html`` or ``/home/isabell/html``. By default, all domains
-share the same :ref:`docroot`. Please refer to :ref:`docroot` for instructions on how to use serve different content under a given domain.
+share the same :doc:`docroot <web-documentroot>`. Please refer to :doc:`docroot <web-documentroot>` for instructions on how to use serve different content under a given domain.
 
 Subdomains
 ==========

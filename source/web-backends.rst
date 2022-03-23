@@ -1,5 +1,3 @@
-.. _backends:
-
 ############
 web backends
 ############
@@ -10,7 +8,7 @@ Using web backends you can connect your applications directly to our frontend to
 
 .. warning:: If you make use of WebSockets, make sure to send `keep alive`_ packages every few minutes. Idle HTTP connections are shut down after three minutes.
 
-In the background, every Uberspace account gets its own virtual network interface. That enables you to use any port you like. Check out the :ref:`background article <network>` for details.
+In the background, every Uberspace account gets its own virtual network interface. That enables you to use any port you like. Check out the :doc:`background article <background-network>` for details.
 
 Setup
 =====
@@ -33,7 +31,7 @@ In order to use your own backend, you first need to set it up using the ``ubersp
 default backend
 ===============
 
-In the default configuration the default backend is :ref:`Apache <docroot>`:
+In the default configuration the default backend is :doc:`Apache <web-documentroot>`:
 
 .. code-block:: console
 
@@ -94,7 +92,7 @@ Some applications don't serve assets due to performance reasons. In this example
 specific domain
 ---------------
 
-You also can setup backends for specific domains. Make sure :ref:`your domain <web-domains>` is setup and configured correctly.
+You also can setup backends for specific domains. Make sure :doc:`your domain <web-domains>` is setup and configured correctly.
 
 .. code-block:: console
 
@@ -132,7 +130,7 @@ Of course you can combine specific paths and domains. This is a more advanced ex
 
   [isabell@stardust ~]$
 
-The content for /ep/assets in this example must be placed as described under :ref:`DocumentRoot <docroot>`:.
+The content for /ep/assets in this example must be placed as described under :doc:`DocumentRoot <web-documentroot>`:.
 The longest matched path for a domain wins so you don't need to worry about the order of the backends.
 
 prefix handling

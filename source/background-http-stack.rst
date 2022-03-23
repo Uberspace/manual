@@ -1,11 +1,9 @@
-.. _httpstack:
-
 ##########
 HTTP Stack
 ##########
 
 A couple hundred users per host, a few domains each, security headers, HTTPS
-with let's encrypt, websocket, pass-through, :ref:`web backends <backends>`,
+with let's encrypt, websocket, pass-through, :doc:`web backends <web-backends>`,
 htaccess.. at some point a web setup reaches a point, when there are too many
 feature to handle them all with just one web server software. That's why we're
 employing two of them back-to-back: nginx_ and `Apache httpd`_.
@@ -69,7 +67,7 @@ By default, this ``server`` block only contains a simple proxy_pass_ statement
 processing all requests via a predefined apache upstream: send everything to
 Apache httpd and report back whatever it said.
 
-This configuration can be extended using ":ref:`uberspace web backend set <backends>`"
+This configuration can be extended using ":doc:`uberspace web backend set <web-backends>`"
 commands.
 
 .. code-block:: console
@@ -100,11 +98,11 @@ connections.
 .. note::
 
   The curious ``100.64.9.2`` IP address above is due to our networking setup.
-  Feel free to :ref:`read up on it <network>`, if you'd like to know more!
+  Feel free to :doc:`read up on it <background-network>`, if you'd like to know more!
 
 
 Other backend types like ``--apache`` or ones specific to a domain work in a
-very similar way. They are documented over in the :ref:`web backends <backends>`
+very similar way. They are documented over in the :doc:`web backends <web-backends>`
 article.
 
 httpd

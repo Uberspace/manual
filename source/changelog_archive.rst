@@ -1,5 +1,3 @@
-.. _changelogarchive:
-
 #################
 Changelog Archive
 #################

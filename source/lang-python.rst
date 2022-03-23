@@ -1,5 +1,3 @@
-.. _python:
-
 .. sidebar:: Logo
 
   .. image:: _static/images/logo_python.png
@@ -12,7 +10,7 @@ Python
 Introduction
 ============
 
-.. warning:: Python applications belong in your :ref:`home`, **not** in your :ref:`docroot`.
+.. warning:: Python applications belong in your :doc:`home <basics-home>`, **not** in your :doc:`docroot <web-documentroot>`.
 
 Python is an interpreted programming language, created by Guido van Rossum in
 1991. It is used for a wide range of tasks from basic scripting to full-fledged
@@ -66,7 +64,7 @@ Connection to webserver
 pip
 ===
 
-pip is Python's package manager, used to install and manage additional packages. You can only install software to your :ref:`home directory <home>`, so please always use the :code:`--user` option when running pip.
+pip is Python's package manager, used to install and manage additional packages. You can only install software to your :doc:`home directory <basics-home>`, so please always use the :code:`--user` option when running pip.
 
 Versions
 --------

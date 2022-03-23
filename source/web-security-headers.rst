@@ -1,5 +1,3 @@
-.. _web-security-headers:
-
 ####################
 Web Security Headers
 ####################
@@ -33,4 +31,4 @@ uberspaces for every domain:
 
 .. note::
 
-    Changing the above values is possible using :ref:`web headers <headers>`.
+    Changing the above values is possible using :doc:`web headers <web-headers>`.

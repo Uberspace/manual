@@ -1,5 +1,3 @@
-.. _cron:
-
 ####
 Cron
 ####
@@ -92,7 +90,7 @@ Adding, Modifying, and Deleting a Cronjob
 
 If you want to add or modify a new cronjob, you need to edit your ``crontab``. To do this, use the command ``crontab -e``. This will launch your standard editor and you can add a new job or modify an existing one.
 
-To change your standard editor, set it in the ``VISUAL`` variable. So to use ``nano``, add this line to your :ref:`.bash_profile <home>`:
+To change your standard editor, set it in the ``VISUAL`` variable. So to use ``nano``, add this line to your :doc:`.bash_profile <basics-home>`:
 
 .. code-block:: none
 
@@ -107,7 +105,7 @@ After you've saved the temporary file and exited the editor, the changes will be
 PATH
 ----
 
-``cron`` does not parse your :ref:`.bash_profile <home>` or :ref:`.bashrc <home>`, so ``$PATH`` is different from your shell. You can define ``$PATH`` in the ``crontab``. So if you want to include your ``~/bin`` directory in ``$PATH``, you need to insert this line before your cronjob:
+``cron`` does not parse your :doc:`.bash_profile <home>` or :ref:`.bashrc <basics-home>`, so ``$PATH`` is different from your shell. You can define ``$PATH`` in the ``crontab``. So if you want to include your ``~/bin`` directory in ``$PATH``, you need to insert this line before your cronjob:
 
 .. code-block:: none
 
@@ -118,7 +116,7 @@ PATH
 Mails
 -----
 
-By default, ``cron`` will email the result of your cronjob to your :ref:`primary email address <mailboxes>`. To disable these emails, you can set an empty ``MAILTO`` variable before your actual cronjob. You will still receive emails if there is an error.
+By default, ``cron`` will email the result of your cronjob to your :doc:`primary email address <mail-mailboxes>`. To disable these emails, you can set an empty ``MAILTO`` variable before your actual cronjob. You will still receive emails if there is an error.
 
 .. code-block:: none
 

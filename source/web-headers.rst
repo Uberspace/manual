@@ -1,10 +1,8 @@
-.. _headers:
-
 ###########
 web headers
 ###########
 
-Use the following commands to send HTTP headers to your clients. You can use it to add your own headers like ``X-Clacks-Overhead: GNU Terry Pratchett`` or add a ``Content-Security-Policy``. They can also be used to override or remove the :ref:`security headers <web-security-headers>` we set by default.
+Use the following commands to send HTTP headers to your clients. You can use it to add your own headers like ``X-Clacks-Overhead: GNU Terry Pratchett`` or add a ``Content-Security-Policy``. They can also be used to override or remove the :doc:`security headers <web-security-headers>` we set by default.
 
 Overview
 ========
@@ -59,7 +57,7 @@ Again, you can take a look using `header list`:
     Strict-Transport-Security: max-age=31536000
     (...)
 
-Much like :ref:`web backends <backends>` a header is present on the set path plus all of the paths below. This means the ``X-Clacks-Overhead`` header set on ``/blog`` header will also be present on ``/blog/imprint``, ``/blog/archive/1984`` and so on:
+Much like :doc:`web backends <web-backends>` a header is present on the set path plus all of the paths below. This means the ``X-Clacks-Overhead`` header set on ``/blog`` header will also be present on ``/blog/imprint``, ``/blog/archive/1984`` and so on:
 
 .. code-block:: console
 
@@ -80,7 +78,7 @@ However, it will not show up on ``/`` or any other unrelated URL like ``/etherpa
 Targeting
 =========
 
-Exactly like :ref:`web backends <backends>` a header can be set on a path, domain or both to ...
+Exactly like :doc:`web backends <web-backends>` a header can be set on a path, domain or both to ...
 
 ... make the header appear on a domain only:
 
@@ -174,7 +172,7 @@ Which causes to header to appear again:
 Default security headers
 ========================
 
-Your space comes with a number of :ref:`security headers <web-security-headers>` set by default. While these from a solid base for your projects, you may want to extend or remove them.
+Your space comes with a number of :doc:`security headers <web-security-headers>` set by default. While these from a solid base for your projects, you may want to extend or remove them.
 
 Removing security headers
 -------------------------

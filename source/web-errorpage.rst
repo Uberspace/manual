@@ -1,5 +1,3 @@
-.. _web-errorpage:
-
 #############
 web errorpage
 #############

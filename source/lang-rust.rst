@@ -1,5 +1,3 @@
-.. _rust:
-
 .. sidebar:: Logo
 
   .. image:: _static/images/logo_rust.svg
@@ -12,7 +10,7 @@ Rust
 Introduction
 ============
 
-.. warning:: Rust applications belong in your :ref:`home`, **not** in your :ref:`docroot`.
+.. warning:: Rust applications belong in your :doc:`home <basics-home>`, **not** in your :doc:`docroot <web-documentroot>`.
 
 `Rust <https://www.rust-lang.org/>`__ is a *multi-paradigm programming language* focused on **performance** and **safety**, especially **safe concurrency**. Rust is syntactically similar to C++, but provides memory safety without using garbage collection. The compiler is *free and open-source software* dual-licensed under the **MIT License** and **Apache License 2.0**.
 

@@ -1,5 +1,3 @@
-.. _lang-prolog:
-
 .. sidebar:: Logo
 
   .. image:: _static/images/logo_prolog.png

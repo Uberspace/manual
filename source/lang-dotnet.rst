@@ -1,5 +1,3 @@
-.. _dotnet:
-
 .. sidebar:: Logo
 
   .. image:: _static/images/logo_dotnet.png
@@ -12,7 +10,7 @@
 Introduction
 ============
 
-.. warning:: .NET scripts belong in your :ref:`home`, **not** in your :ref:`docroot`.
+.. warning:: .NET scripts belong in your :doc:`home <basics-home>`, **not** in your :doc:`docroot <web-documentroot>`.
 
 `.NET <https://www.microsoft.com/net>`_ is a server-side runtime implementation of CLR, the virtual machine that manages the execution of .NET programs. While .NET Core shares a subset of .NET Framework APIs, it comes with its own API that is not part of .NET Framework.
 

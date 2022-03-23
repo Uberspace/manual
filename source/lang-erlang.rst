@@ -1,5 +1,3 @@
-.. _erlang:
-
 .. sidebar:: Logo
 
   .. image:: _static/images/logo_erlang.png

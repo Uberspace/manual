@@ -10,7 +10,7 @@ Ruby
 Introduction
 ============
 
-.. warning:: Ruby applications belong in your :ref:`home`, **not** in your :ref:`docroot`.
+.. warning:: Ruby applications belong in your :doc:`home <basics-home>`, **not** in your :doc:`docroot <web-documentroot>`.
 
 `Ruby <https://www.ruby-lang.org/en/>`_ is a programming language known for its easy to use `Ruby on Rails` framework.
 
@@ -99,7 +99,7 @@ Connection to webserver
 gem
 ===
 
-``gem`` is a package manager that can be used to install and manage additional libraries, known as `gems`. We have preconfigured ``gem`` to install libraries to your :ref:`home`.
+``gem`` is a package manager that can be used to install and manage additional libraries, known as `gems`. We have preconfigured ``gem`` to install libraries to your :doc:`home <basics-home>`.
 
 ----
 

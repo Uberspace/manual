@@ -1,5 +1,3 @@
-.. _network:
-
 #######
 Network
 #######
@@ -72,7 +70,7 @@ within their own little `network namespace`_, similarily to how docker handles
 networking for its containers. This gives them their own ``veth_...`` interface
 and funnily enough, their own loopback / ``127.0.0.1``. Connections to the
 out are then NATed, direct, raw TCP or UDP connections from the internet are
-supported on high ports. See :ref:`basics ports <firewallports>` to learn how to set this up.
+supported on high ports. See :doc:`basics ports <basics-ports>` to learn how to set this up.
 
 .. note::
 
@@ -94,7 +92,7 @@ Placing each uberspace in their own networking world has a number of advantages:
   ensuring a safe and comfortable ride for everyone.
 * **Mapping of services**. Since every user has their own ``100.64.x.y`` IP
   address, user services can easily be reached via ``100.64.x.y:63141``. This
-  enables us to provide cool features like :ref:`web backends <backends>`.
+  enables us to provide cool features like :doc:`web backends <web-backends>`.
 
 Sidequest: Pluggable authentication modules (PAM)
 =================================================
@@ -108,7 +106,7 @@ Sidequest: Pluggable authentication modules (PAM)
 To make sure our setup actually works, it is very important that all user
 sessions, processes and services are started within the right network namespace.
 There are many ways to modify the behavior of interactive sessions and a few to
-affect 3rd-party systemd services like :ref:`php-fpm <php>` or :ref:`supervisord`.
+affect 3rd-party systemd services like :doc:`php-fpm <lang-php>` or :doc:`supervisord <daemons-supervisord>`.
 Eventually we decided on a solution, which can handle both use cases in a single
 mechanism: a custom `PAM module <PAM_>`_.
 
@@ -197,7 +195,7 @@ if it does!), there a few things to watch out for:
 
 * You have your own separate ``127.0.0.1``. If your service listens on that, it
   is only reachable within your uberspace. If you want to make use of our
-  :ref:`web backends <backends>`, be sure to listen on ``0.0.0.0``.
+  :doc:`web backends <web-backends>`, be sure to listen on ``0.0.0.0``.
 * When using the "classic" ``.htaccess`` method of providing your own web
   services via apache, using ``127.0.0.1`` won't work for similar reasons.
   Please use web backends instead.
