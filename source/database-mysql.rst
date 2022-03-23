@@ -195,59 +195,24 @@ UTF-8
 The default encoding for MySQL is still ``latin-1``, which can cause a lot of problems if you typically use Unicode characters and forget to explicitly set the encoding to UTF-8 every time. Therefore, we changed the default encoding to ``utf8mb4``, which enables you to use all ``UTF-8`` characters, including emojis😊.
 
 
-Connecting from outside
-=======================
+External connection
+===================
 
 For security reasons we don't allow external connections to your databases.
 However, if you want to connect somehow "directly" from a remote host, you can do so by using a SSH tunnel.
 
-
-.. _mysql-ssh-tunnel-using-linux:
-
-Using Linux, macOS, any other Unix, or Windows 10
--------------------------------------------------
-
-On Linux, macOS and practically every other Unix operating system, as well as Windows 10 since the September 2017 “Fall Creators Update” version, `OpenSSH <https://www.openssh.com/>`_
-comes preinstalled so you can use it out of the box.
-
-This is how you can initiate a SSH connection offering a tunnel for port 3306,
-your local workstation is represented by a ``[localuser@localhost ~]$`` prompt:
+This is how you can initiate a SSH connection offering a tunnel for the mysql port ``3306``:
 
 .. code-block:: console
 
-  [localuser@localhost ~]$ ssh -L 3306:127.0.0.1:3306 isabell@stardust.uberspace.de
+  localuser@localhost ~ $ ssh isabell@stardust.uberspace.de -L 3306:127.0.0.1:3306
 
-From now on, you can talk to 127.0.0.1:3306 on your local host to connect to your database.
-In fact, it's OpenSSH listening on port 3306 of your local host, tunneling the connection to your uberspace.
+From now on, you can talk to ``127.0.0.1:3306`` on your local host to connect to your database.
+(While in fact, it's OpenSSH listening on port ``3306`` of your local host, tunneling the connection to your Uberspace.)
 
 
-Using older versions of Windows
--------------------------------
+.. tip::
 
-Older version of Windows do not include a SSH client by default, but there are plenty of options,
-`PuTTY <http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html>`_ probably being the choice of most Windows users.
-Other popular choices include `Git BASH <https://git-for-windows.github.io/>`_ which provides a basic shell including
-the widely-used Git version control system and OpenSSH as an SSH client.
-If you're looking for a large distribution of GNU and Open Source utils that feels more-or-less like a Linux distribution,
-head over to `Cygwin <https://www.cygwin.com/>`_.
-If you opt for one of the last two, you should better follow :ref:`mysql-ssh-tunnel-using-linux` after installation because you will then
-effectively use the OpenSSH command-line utils.
-
-As an example, here's how you setup a SSH tunnel with PuTTY:
-
-#. Start PuTTY. The configuration dialog automatically opens.
-#. Head over to "Connection | Data" in the tree menu on the left. Enter your username (``isabell`` in our example)
-   into the "Auto-login username" text box.
-#. Head over to "Connection | SSH | Tunnels" in the tree menu on the left.
-   Enter "3306" into the "Source port:" text box, "127.0.0.1:3306" into the "Destination:" text box, and select "(o) Local".
-   Click "Add" to add the tunnel.
-#. Head over to "Session" in the tree menu on the left. Enter your hostname (``stardust.uberspace.de`` in our example)
-   into the "Host Name (or IP address)" text box.
-   For your convenience, save these settings under a session name of your choice.
-   For that, enter a description (e.g. "isabell on stardust w/MySQL" or something like "My personal Uberspace w/MySQL") into the "Saved Sessions" text box.
-   Click the "Save" button.
-
-If you want to connect to your database, start the connection by double-clicking it to establish the SSH tunnel.
-
-From now on, you can talk to 127.0.0.1:3306 on your local host to connect to your database.
-In fact, it's PuTTY listening on port 3306 of your local host, tunneling the connection to your uberspace.
+   When using Windows 8.1 or any other not up-to-date versions of Windows, you will most probably not be able to use SSH as natively as shown here.
+   You will either need to update to a more recent version of Windows or use our `howto for Putty DB connection <https://lab.uberspace.de/howto_ssh-putty.html#connect-via-putty-ssh-tunnel-to-mysql>`_
+   instead of the commands used here.
