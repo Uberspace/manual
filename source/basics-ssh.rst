@@ -24,6 +24,7 @@ This would result with our example user in:
 
   localuser@localhost ~ $ ssh isabell@stardust.uberspace.de
 
+.. _ssh-password:
 
 by Password
 -----------
