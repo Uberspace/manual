@@ -29,7 +29,7 @@ The HTML views are now present in `build/html`. To build automatically on each
 change execute use `sphinx-autobuild`:
 
 ```
-$ make serve
+$ make server
 ```
 
 This will start a local webserver on <http://127.0.0.1:8000>, which always
