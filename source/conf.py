@@ -126,7 +126,6 @@ html_theme_options = {
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 html_last_updated_fmt = '%b %d, %Y'
 html_context = {
-  'css_files': ['_static/css/custom.css'],
   'display_github': True,
   'github_user': 'Uberspace',
   'github_repo': 'manual',
@@ -137,6 +136,9 @@ html_context = {
 }
 html_show_copyright = False
 html_favicon = '_static/favicon.ico'
+html_css_files = [
+    'css/custom.css',
+]
 
 
 release = changelog_entries[0]['version']

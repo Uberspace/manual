@@ -77,6 +77,10 @@ nav li {
     shape-margin: 1em;
 }
 
+.rst-content .noclear {
+  clear: none;
+}
+
 /* logo box for languages */
 .sidebar + .section > .section:first-of-type > div {
   max-width: 55%;
