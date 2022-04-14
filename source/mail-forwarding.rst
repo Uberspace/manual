@@ -1,57 +1,73 @@
 ################
-forwarding mails
+Forwarding mails
 ################
 
-configure forwarding
+You can create a simple forward or alias for arbitrary mailusers like
+
+* ``forwardme@username.uber.space`` → ``mail@example.com``
+* ``hello@yourdomain.com`` → ``support@yourdomain.com``
+
+.. tip::
+    A single forward mailuser will work for **all** mail domains you have setup on your Uberspace.
+
+Configuring forwards
 ====================
 
-You can use forwardings in the form of ``$MAILUSER@$USER.uber.space``. If you have :doc:`set up additional domains <mail-domains>`, ``$MAILUSER@$DOMAIN`` will also work.
+.. note::
 
-.. warning::
-    We do not forward mails with a :doc:`spam score >= 10 <mail-spam>`. This is crucial due to policy reasons at nearly any mail provider and makes sure the reputation of our servers stays fine.
+    It is possible to use the `Dashboard <https://dashboard.uberspace.de/>`_ for creating mail accounts and forwards, to do so login and use the `mail section <https://dashboard.uberspace.de/dashboard/mail>`_. Here we will explain our prefered way using SSH and the ``uberspace mail`` commands.
 
-Add forwards for a mailuser
----------------------------
+Add a forward for a mailuser
+----------------------------
 
-You can configure forwardings with the ``uberspace mail user forward set <mailuser> <mail address>`` command. This will effectively create an alias for the specified address. There is no way to convert a regular mailbox (without forwarding) to an alias.
+You can set up forwards with the ``uberspace mail user forward set <mailuser> <mailaddress>`` command. You may also use this command to create an internal alias, but you always have to specify the full mailaddress.
 
-To forward all mails from ``forwardme`` to ``mail@allcolorsarebeautiful.example`` run the following command:
+To forward all mails from ``forwardme`` to ``mail@example.com`` run the following command:
 
-.. code-block:: bash
+.. code-block:: console
 
- [isabell@stardust ~]$ uberspace mail user forward set forwardme mail@allcolorsarebeautiful.example
- Mail to forwardme will be forwarded to mail@allcolorsarebeautiful.example.
+ [isabell@stardust ~]$ uberspace mail user forward set forwardme mail@example.com
+ Mail to 'forwardme' will be forwarded to 'mail@example.com'.
  [isabell@stardust ~]$
 
 .. tip::
     ``uberspace mail user forward set`` overwrites existing configurations.
 
-List existing forwards for a mailuser
--------------------------------------
 
-You can list your existing forwardings using the ``uberspace mail user forward list`` command, e.g. if you have setup fowardings for ``forwardme``:
+Show an existing forward for a mailuser
+---------------------------------------
 
-.. code-block:: bash
+You can show your existing forward using the ``uberspace mail user forward list`` command, e.g. if you have setup a forwarding for ``forwardme``:
+
+.. code-block:: console
 
  [isabell@stardust ~]$ uberspace mail user forward list forwardme
- mail@allcolorsarebeautiful.example
+ mail@example.com
  [isabell@stardust ~]$
 
-Delete forwards for a mailuser
-------------------------------
 
-You can delete forwardings using the ``uberspace mail user forward del <mailuser>`` command. This will delete the specified alias, so mails sent to it will no longer be delivered (except if you set up a `catchall address <https://manual.uberspace.de/mail-mailboxes#catch-all-mailbox>`_). To delete forwarding for ``forwardme``, run the following command:
+Delete forward for a mailuser
+-----------------------------
 
-.. code-block:: bash
+You can remove a forwarding using the ``uberspace mail user forward del <mailuser>`` command. This will delete the specified alias,
+so mails sent to it will no longer be delivered (except if you set up a `catchall address <https://manual.uberspace.de/mail-mailboxes#catch-all-mailbox>`_).
+To delete a forwarding for ``forwardme``, run the following command:
+
+.. code-block:: console
 
  [isabell@stardust ~]$ uberspace mail user forward del forwardme
- Mail to forwardme will no longer be forwarded.
+ Mail to 'forwardme' will no longer be forwarded.
  [isabell@stardust ~]$
 
-spam filtering
+
+Spam filtering
 ==============
 
-With enabled :doc:`spam filtering <mail-spam>` we do not forward mails with a spam score greater than 5. These mails get sorted into ``~/users/$MAILUSER/.Spam``.
+With enabled :doc:`spam filtering <mail-spam>` we do not forward mails with a spam score greater than ``5``. These mails get sorted into ``~/users/MAILUSER/.Spam``.
+
+
+Using .qmail files
+==================
 
 .. warning::
     In the past, with the outdated product version Uberspace 6 we encouraged users to manipulate ``.qmail`` files for forwarding and controlling the email flow. This is technically still possible on U7 but will strongly interfere with our standard email setup that should be configured by using the ``uberspace mail`` commands.
