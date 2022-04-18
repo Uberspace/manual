@@ -265,3 +265,6 @@ As anounced in April of 2021, Google is moving to use a new technology called FL
 
   [isabell@stardust ~]$ uberspace web header set / Permissions-Policy "interest-cohort=()"
   Set header "Permissions-Policy: interest-cohort=()" for /
+  
+
+As announced in `January 2022 <https://blog.google/products/chrome/get-know-new-topics-api-privacy-sandbox/>` Google "renames" FloC to Google Topics. It is unclear if the mehtod to disable Google Topics will stay the same as with Googles former FLoC.
