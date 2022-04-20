@@ -14,8 +14,8 @@ Configuring forwards
 ====================
 
 .. note::
-
     It is possible to use the `Dashboard <https://dashboard.uberspace.de/>`_ for creating mail accounts and forwards, to do so login and use the `mail section <https://dashboard.uberspace.de/dashboard/mail>`_. Here we will explain our prefered way using SSH and the ``uberspace mail`` commands.
+
 
 Add a forward for a mailuser
 ----------------------------
@@ -60,11 +60,11 @@ To delete a forwarding for ``forwardme``, run the following command:
  [isabell@stardust ~]$
 
 
-Spam filtering
-==============
+Troubleshooting
+===============
 
-With enabled :doc:`spam filtering <mail-spam>` we do not forward mails with a spam score greater than ``5``. These mails get sorted into ``~/users/MAILUSER/.Spam``.
-
+* With enabled :doc:`spam filtering <mail-spam>` we do not forward mails with a spam score greater than ``5``. These mails get sorted into ``~/users/MAILUSER/.Spam``.
+* If you want to test forwardings to Gmail by using the *same* Gmail address as sender, the Google magic will just drop and not deliver the mail because it is already known to this account.
 
 Using .qmail files
 ==================
