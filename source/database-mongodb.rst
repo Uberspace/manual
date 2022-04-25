@@ -38,6 +38,7 @@ Use ``uberspace tools version list mongodb`` to show all selectable versions:
   - 4.0
   - 4.2
   - 4.4
+  - 5.0
   [isabell@stardust ~]$
 
 Change version
