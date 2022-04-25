@@ -69,7 +69,7 @@ For more information see the :doc:`full changelog <changelog>`.
    domains <mail-domains>
    mailboxes <mail-mailboxes>
    forwarding <mail-forwarding>
-   spam filter <mail-spam>
+   spam handling <mail-spam>
    filters & rules <mail-filters>
 
 .. toctree::
