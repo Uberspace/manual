@@ -256,12 +256,12 @@ If you removed or replaced security headers in the past and would like to restor
 Examples
 ========
 
-Disable Google's FLoC
+Disable Google Topics
 ---------------------
 
-As anounced in April of 2021, Google is moving to use a new technology called FLoC to track users across the web. To disable FLoC for a website, you can add a ``Permissions-Policy`` header:
+Google is using a technology called "Topics" (formerly known as FLoC) to track users across the web. To disable this for a website, you can add a ``Permissions-Policy`` header:
 
 .. code-block:: console
 
-  [isabell@stardust ~]$ uberspace web header set / Permissions-Policy "interest-cohort=()"
-  Set header "Permissions-Policy: interest-cohort=()" for /
+  [isabell@stardust ~]$ uberspace web header set / Permissions-Policy "browsing-topics=()"
+  Set header "Permissions-Policy: browsing-topics=()" for /
