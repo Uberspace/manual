@@ -139,6 +139,9 @@ html_favicon = '_static/favicon.ico'
 html_css_files = [
     'css/custom.css',
 ]
+html_js_files = [
+    'js/placeholder_replace.js',
+]
 
 
 release = changelog_entries[0]['version']

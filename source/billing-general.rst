@@ -88,13 +88,18 @@ SEPA Bank Transfer
 If you are living within the EU or rather the Single Euro Payments Area (SEPA),
 the most common way to top-up your account is using a **classic wire transfer**.
 
-::
+.. raw:: html
 
-    Account holder: Jonas Pasche
-    IBAN: DE35 5505 0120 0200 0039 78
-    Bank name: Rheinhessen Sparkasse
-    BIC: MALADE51MNZ
-    Purpose: uberspace <account name>
+  <div class="highlight-default notranslate">
+  <div class="highlight">
+    <pre><span></span><span class="n">Account</span> <span class="n">holder</span><span class="p">:</span> <span class="n">Jonas</span> <span class="n">Pasche</span>
+    <span class="n">IBAN</span><span class="p">:</span> <span class="n">DE35</span> <span class="mi">5505</span> <span class="mi">0120</span> <span class="mi">0200</span> <span class="mi">0039</span> <span class="mi">78</span>
+    <span class="n">Bank</span> <span class="n">name</span><span class="p">:</span> <span class="n">Rheinhessen</span> <span class="n">Sparkasse</span>
+    <span class="n">BIC</span><span class="p">:</span> <span class="n">MALADE51MNZ</span>
+    <span class="n">Purpose</span><span class="p">:</span> <span class="n">uberspace</span> <span class="placeholder-username"><span class="o">&lt;</span><span class="n">account</span> <span class="n">name</span><span class="o">&gt;</span></span>
+    </pre>
+  </div>
+  </div>
 
 Enter ``uberspace <account name>`` (e.g. ``uberspace isabella``) as purpose
 ("Verwendungszweck"), so we can match your transfer to your account. If you'd
