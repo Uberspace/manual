@@ -6,7 +6,7 @@ You can filter your incoming mails with `Sieve <http://www.ietf.org/rfc/rfc3028.
 
 A Sieve script consists of a number of conditions which are applied to incoming mail; if an email matches a test, then the actions associated with that test are performed.
 
-.. warning:: The :doc:`spamfolder <mail-filters>` needs to be enabled to use Sieve filtering.
+.. warning:: The :doc:`spamfolder <mail-spam>` needs to be enabled to use Sieve filtering.
 
 ManageSieve
 ###########
