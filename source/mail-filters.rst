@@ -40,6 +40,9 @@ Examples
 ========
 
 
+Sort mails into folder
+----------------------
+
 In this example we sort mails from a mailinglist into a folder, sort mails to ``*@allcolorsarebeautiful.example`` into another folder and lower the maximum spam score to 4.
 
 .. code-block:: cfg
@@ -74,6 +77,25 @@ In this example we sort mails from a mailinglist into a folder, sort mails to ``
     # The command "keep" is executed automatically, if no other action is taken.
 
 .. tip:: ``stop;`` tells the Sieve engine to stop here, without checking for more rules.
+
+Vacation auto reply
+-------------------
+
+.. code-block:: cfg
+
+    require ["vacation"];
+
+    vacation
+      # Reply at most once a week to a same sender
+      :days 7
+      :subject "Out of office ${subjwas}"
+    "I'm not in the office from 20 May until 31 May.
+
+    Best regards
+    Jane Doe";
+    # The command "keep" is executed automatically, if no other action is taken.
+
+
 
 You can find many more examples in the `Dovecot Wiki <https://doc.dovecot.org/configuration_manual/sieve/examples/>`_.
 
