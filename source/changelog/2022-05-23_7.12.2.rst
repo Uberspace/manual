@@ -1,4 +1,4 @@
-🌱 Spring cleaning: this release we were mostly busy updating and polishing internals, e.g. our CI pipeline and container images. We also took first steps towards a new metric and alerting system. None the less we also have a couple user facing features for you.
+🌱 Spring cleaning: this release we were mostly busy updating and polishing internals, e.g. our CI pipeline and container images. We also took first steps towards a new metric and alerting system. Nonetheless we also have a couple of user facing features for you.
 
 Added
 -----
@@ -9,6 +9,6 @@ Added
 Fixed
 -----
 * *Sieve vacation autoreplies* should now work. You can see `our mail filter documentation <https://manual.uberspace.de/mail-filters/>`_ for an updated example.
-* When you authenticate with SMTP, we implement penalties for failed attemps (further ones are delayed). Because our authentication backend used the proxy's IP (which is the same for all users), not the one for your connection, you could be affected by penalties caused by other users failed login attemps. This is now fixed.
+* When you authenticate with SMTP, we implement penalties for failed attemps (further ones are delayed). Because our authentication backend used the proxy's IP (which is the same for all users), not the one for your connection, you could be affected by penalties caused by other user's failed login attemps. This is now fixed.
 * You can now use the *ErrorDocument* directive in ``.htaccess`` files.
 * *Dovecot* can now correctly handle mailboxes containing colons (``:``), i.e. automatically clean their spam folder.
