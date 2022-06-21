@@ -219,9 +219,9 @@ External connection
 ===================
 
 For security reasons we don't allow external connections to your databases.
-However, if you want to connect somehow "directly" from a remote host, you can do so by using a SSH tunnel.
+However, if you want to connect somehow "directly" from a remote host, you can do so by using an SSH tunnel.
 
-This is how you can initiate a SSH connection offering a tunnel for the mysql port ``3306``:
+This is how you can initiate an SSH connection offering a tunnel for the mysql port ``3306``:
 
 .. code-block:: console
 
