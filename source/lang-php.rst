@@ -177,7 +177,7 @@ In this case fix the value and run ``uberspace tools restart php`` again.
 Provided modules
 ----------------
 
-We provide the following modules: ``bcmath``, ``decimal``, ``gd``, ``gmp``, ``imagick``, ``imap``, ``intl``, ``json``, ``ldap``, ``mbstring``, ``mcrypt``, ``mysqlnd``, ``pear``, ``pecl-apcu``, ``pecl-gnupg``, ``php-mongodb``, ``php-sodium``, ``pecl-redis5``, ``pecl-zip``, ``phalcon3``, ``pgsql``, ``posix``, ``process``, ``shmop``, ``soap``, ``sysvmsg``, ``sysvsem``, ``sysvshm``, ``tidy``, ``xml``, ``xmlrpc``.
+We provide the following modules: ``apcu``, ``bcmath``, ``bz2``, ``calendar``, ``Core``, ``ctype``, ``curl``, ``date``, ``dba``, ``decimal``, ``dom``, ``exif``, ``fileinfo``, ``filter``, ``ftp``, ``gd``, ``gettext``, ``gmp``, ``gnupg``, ``hash``, ``iconv``, ``igbinary``, ``imagick``, ``imap``, ``intl``, ``json``, ``ldap``, ``libxml``, ``mailparse``, ``mbstring``, ``mcrypt``, ``mongodb``, ``msgpack``, ``mysqli``, ``mysqlnd``, ``openssl``, ``pcntl``, ``pcre``, ``PDO``, ``pdo_mysql``, ``pdo_pgsql``, ``pdo_sqlite``, ``pgsql``, ``phalcon``, ``Phar``, ``posix``, ``psr``, ``readline``, ``redis``, ``Reflection``, ``restrictdocroot``, ``session``, ``shmop``, ``SimpleXML``, ``soap``, ``sockets``, ``sodium``, ``SPL``, ``sqlite3``, ``standard``, ``sysvmsg``, ``sysvsem``, ``sysvshm``, ``tidy``, ``tokenizer``, ``xml``, ``xmlreader``, ``xmlrpc``, ``xmlwriter``, ``xsl``, ``yaml``, ``Zend OPcache``, ``zip``, ``zlib``.
 
 .. _php-popular-software:
 
