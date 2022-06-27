@@ -63,7 +63,7 @@ a few strange IPs:
     inet6 fd75:6272:7370:9::2/64 scope global
        valid_lft forever preferred_lft forever
 
-These adresses (``100.64.x.y``, ``fed75::xxx::2``) aren't ordinary public ones,
+These addresses (``100.64.x.y``, ``fed75:xxx::2``) aren't ordinary public ones,
 but rather from the IPv6 ULA_ or IPv4 `Carrier-grade NAT`_ ranges. This is
 because uberspaces are not directly connected to the internet, but are placed
 within their own little `network namespace`_, similarily to how docker handles
