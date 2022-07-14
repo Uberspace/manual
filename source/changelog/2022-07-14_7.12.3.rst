@@ -1,0 +1,9 @@
+Added
+-----
+
+* new command: ``uberspace web traffic`` to check the used web traffic.
+
+Changed
+-------
+
+* we now reject mail where the IP/rDNS or HELO name do not match.
