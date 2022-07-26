@@ -21,7 +21,7 @@ Versions
 
 Release Types
 -------------
-Each release branch of Python is fully supported for five years beginning with its initial stable release. For Python 2.7, this has been extended to ten years. We provide different point releases and apply security updates on a regular basis. Currently, these Python versions are available: 2.7, 3.6, 3.7, 3.8, 3.9 and 3.10.
+Each release branch of Python is fully supported for five years beginning with its initial stable release. For Python 2.7, this has been extended to ten years. For more details see `Update Policy <https://manual.uberspace.de/lang-python/#update-policy>`_.
 
 Standard version
 ----------------
@@ -40,7 +40,7 @@ To specify version 2.7 in a `shebang <https://en.wikipedia.org/wiki/Shebang_(Uni
 Update Policy
 -------------
 
-We update all versions on a regular basis. Once the `security support <https://docs.python.org/devguide/index.html#branchstatus>`_ ends, the branch reaches its end of life, is no longer supported and will be removed from our servers.
+We update all versions of Python on a regular basis. Once the `security support <https://docs.python.org/devguide/index.html#branchstatus>`_ ends, the branch reaches its end of life, is no longer supported and will be removed from our servers.
 
 +--------+---------------------+-----------------------------+
 | Branch | State               | Security Support Until      |
