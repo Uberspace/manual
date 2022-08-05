@@ -80,6 +80,35 @@ We update all versions on a regular basis. Once the `support <https://github.com
 | 16     | Current                 | April 2024       |
 +--------+-------------------------+------------------+
 
+
+----
+
+Run node application in the background
+======================================
+
+To run your node application in the background we use `supervisord <https://manual.uberspace.de/daemons-supervisord/>`_.
+
+
+Assuming your application files are located in the sub folder ``~/my-node-app`` of your home directory.
+Then place a daemon service file called ``my-daemon.ini`` in ``/home/isabell/bin/my-daemon``:
+
+.. code-block:: ini
+
+ [program:my-daemon]
+ directory=/home/isabell/my-node-app
+ command=npm run start
+ autostart=true
+ autorestart=true
+ environment=NODE_ENV=production
+
+.. include:: includes/daemons-supervisord-reread-update.rst
+
+Start / Stop node daemon
+------------------------
+
+.. include:: includes/daemons-supervisord-start-stop.rst
+
+
 Connection to webserver
 =======================
 
@@ -87,19 +116,28 @@ Connection to webserver
 
 ----
 
+Available package managers
+==========================
+
 .. _npm:
 
 npm
-===
+---
 
 ``npm``, or the `node package manager`, is used to install and manage additional packages. We have preconfigured ``npm`` to install packages to your :doc:`home <basics-home>` when using the global (``-g``) option.
 
+
+.. _yarn:
+
+yarn
 ----
+
+``yarn`` is an alternative node package manager. It is used to install and manage additional packages of your node application.
 
 .. _npx:
 
 npx
-===
+---
 
 You can use ``npx`` to quickly execute and test any ``npm`` package without the need to create a nodejs project around it. Check out `nodejs.dev <https://nodejs.dev/learn/the-npx-nodejs-package-runner>`_ to learn more.
 

@@ -15,34 +15,12 @@ To create a new service, place a ``.ini`` file for each new service in ``~/etc/s
  command=/home/isabell/bin/my-daemon
  startsecs=60
 
-Afterwards, ask ``supervisord`` to look for new ``.ini`` files:
-
-.. code-block:: bash
-
- [isabell@stardust ~]$ supervisorctl reread
- my-daemon: available
-
-And then start your daemon:
-
-.. code-block:: bash
-
- [isabell@stardust ~]$ supervisorctl update
- my-daemon: added process group
+.. include:: includes/daemons-supervisord-reread-update.rst
 
 Start / Stop a Service
 ======================
 
-To start a non-running service or stop a running one, use ``supervisorctl start my-daemon`` and ``supervisorctl stop my-daemon``. To restart a service, you can also use ``supervisorctl restart my-daemon``.
-
-.. code-block:: bash
-
- [isabell@stardust ~]$ supervisorctl start my-daemon
- my-daemon: started
- [isabell@stardust ~]$ supervisorctl stop my-daemon
- my-daemon: stopped
- [isabell@stardust ~]$ supervisorctl restart my-daemon
- my-daemon: stopped
- my-daemon: started
+.. include:: includes/daemons-supervisord-start-stop.rst
 
 
 Remove a Service
