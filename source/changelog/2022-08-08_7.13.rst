@@ -1,0 +1,19 @@
+Added
+-----
+
+* provide `espeak`
+* support for `you+someforum@example.org`-style plussed mail addresses
+
+Fixed
+-----
+
+* various stability and performance imporvements for ``uberspace web traffic``
+* handling of mail addresses with dots using `uberspace mail`
+
+Changed
+-------
+
+* changes to make deployments faster by not copying all let's encrypt certs on
+  every deployment.
+* fully removed spamdyke, in favor of haraka/rspamd
+* removed cityfan YUM repository
