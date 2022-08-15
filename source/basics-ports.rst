@@ -17,7 +17,7 @@ Opening ports
 =============
 
 Each uberspace can open 20 ports. The port numbers are generated automatically
-in the range from 20.000 to 61.000 and cannot be chosen arbitrarily.
+in the range from 40.000 to 61.000 and cannot be chosen arbitrarily.
 
 .. code-block:: bash
 
