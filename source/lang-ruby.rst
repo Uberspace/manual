@@ -22,11 +22,11 @@ Versions
 Release types
 -------------
 
-We provide different releases and apply security updates on a regular basis (see below for a list of curently supported versions).
+We provide different releases and apply security updates on a regular basis. Currently available versions are `listed below <#show-available-versions>`_.
 
 Standard version
 ----------------
-If you don't select a certain version, our default will be used. We decided to default to version 2.5, which is considered to be stable by the developers.
+If you don't select a certain version, our default will be used. We decided to default to version ``3.1``, which is considered to be stable by the developers.
 
 Show available versions
 -----------------------
