@@ -80,6 +80,7 @@ We update all versions on a regular basis. Once the `support <https://github.com
 | 16     | Current                 | April 2024       |
 +--------+-------------------------+------------------+
 
+.. include:: includes/deprecation.rst
 
 ----
 

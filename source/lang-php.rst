@@ -84,6 +84,8 @@ We update all versions on a regular basis. Once the `security support <http://ph
 | 8.1    | Active support      | 25 Nov 2024            |
 +--------+---------------------+------------------------+
 
+.. include:: includes/deprecation.rst
+
 ----
 
 Connection to webserver
