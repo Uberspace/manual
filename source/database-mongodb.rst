@@ -24,7 +24,7 @@ default to the following version:
 .. code-block:: bash
 
   [isabell@stardust ~]$ uberspace tools version show mongodb
-  Using 'mongodb' version: 4.4
+  Using 'mongodb' version: 6.0
   [isabell@stardust ~]$
 
 Show available versions
@@ -35,10 +35,10 @@ Use ``uberspace tools version list mongodb`` to show all selectable versions:
 .. code-block:: bash
 
   [isabell@stardust ~]$ uberspace tools version list mongodb
-  - 4.0
   - 4.2
   - 4.4
   - 5.0
+  - 6.0
   [isabell@stardust ~]$
 
 Change version
@@ -70,5 +70,5 @@ servers.
 +--------+------------------+
 | 5.0    | 2024-10-01       |
 +--------+------------------+
-| 6.0    | TBD              |
+| 6.0    | 2025-07-01       |
 +--------+------------------+
