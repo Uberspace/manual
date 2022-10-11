@@ -85,6 +85,8 @@ We update all versions on a regular basis. Once the `support <https://www.ruby-l
 | 3.0    | normal maintenance   | To be determined |
 +--------+----------------------+------------------+
 
+.. include:: includes/deprecation.rst
+
 ----
 
 Connection to webserver

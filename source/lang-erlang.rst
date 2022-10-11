@@ -71,6 +71,8 @@ Update policy
 
 We update all versions on a regular basis.
 
+.. include:: includes/deprecation.rst
+
 ----
 
 Connection to webserver
