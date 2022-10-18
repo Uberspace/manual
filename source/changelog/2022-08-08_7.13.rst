@@ -7,7 +7,7 @@ Added
 Fixed
 -----
 
-* various stability and performance imporvements for ``uberspace web traffic``
+* various stability and performance improvements for ``uberspace web traffic``
 * handling of mail addresses with dots using `uberspace mail`
 
 Changed
