@@ -1,0 +1,24 @@
+Added
+-----
+
+- *Erlang/OTP* version `25`.
+- *Ruby* version `3.1`.
+- *MongoDB* `6`.
+- Development files for *lua* `5.3`.
+- New tools: `gojq`, `gum`, `ldapvi`, `oauthtool`, `pdftk`, `s3cmd`, `usql`.
+
+Changed
+-------
+
+- We disabled the penalty system in *Dovecot*, wich should result in faster `SMTP AUTH` conntection times.
+- If a `user service <https://manual.uberspace.de/daemons-supervisord/>`_ is missing a `startsecs` setting, we add `startsecs=30`, to prevent endless loops, caused by broken services.
+- `rust-analyser` is now part of the "user versioned tools", meaning you can run it, without using the full path to the executeable.
+- Updated *htop* to `3.2`.
+- The default *PHP* version was increased to `8.1`.
+
+Deprecated
+----------
+
+- The Rust language server `rls` is `deprecated <https://blog.rust-lang.org/2022/07/01/RLS-deprecation.html>`_ (but the `rust-analyser` is availabel).
+- *Ruby* `2.5` and `2.6`.
+- *MongoDB* `4`.
