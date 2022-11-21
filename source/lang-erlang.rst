@@ -21,7 +21,7 @@ Versions
 Release types
 -------------
 
-We provide different releases and apply security updates on a regular basis. Currently, these versions are available: 20, 21, 22, 23 and 24. All versions include `Elixir <https://elixir-lang.org>`_ and `Mix <https://hexdocs.pm/mix/Mix.html>`_, a build tool that allows you to easily create projects, manage tasks, run tests and more.
+We provide different releases and apply security updates on a regular basis (see below for a list of curently supported versions). All versions include `Elixir <https://elixir-lang.org>`_ and `Mix <https://hexdocs.pm/mix/Mix.html>`_, a build tool that allows you to easily create projects, manage tasks, run tests and more.
 
 Standard version
 ----------------
@@ -40,6 +40,7 @@ Use ``uberspace tools version list erlang`` to show all selectable versions:
   - 22
   - 23
   - 24
+  - 25
   [isabell@stardust ~]$
 
 .. _erlang-change-version:
@@ -63,7 +64,7 @@ You can check the selected version by executing ``uberspace tools version show e
 .. code-block:: bash
 
   [isabell@stardust ~]$ uberspace tools version show erlang
-  Using 'erlang' version: '21'
+  Using 'erlang' version: '25'
   [isabell@stardust ~]$
 
 Update policy
