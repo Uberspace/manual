@@ -5,7 +5,7 @@ Added
 - *Ruby* version ``3.1``.
 - *MongoDB* ``6``.
 - Development files for *lua* ``5.3``.
-- New tools: ``gojq``, ``gum``, ``ldapvi``, ``oauthtool``, ``pdftk``, ``s3cmd``, ``usql``.
+- New tools: ``cmake3``, ``gojq``, ``gum``, ``ldapvi``, ``oauthtool``, ``pdftk``, ``s3cmd``, ``usql``.
 
 Changed
 -------
