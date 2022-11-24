@@ -10,7 +10,7 @@ Added
 Changed
 -------
 
-- We disabled the penalty system in *Dovecot*, wich should result in faster ``SMTP AUTH`` conntection times.
+- We disabled the penalty system in *Dovecot*, which should result in faster ``SMTP AUTH`` connection times.
 - If a `user service <https://manual.uberspace.de/daemons-supervisord/>`_ is missing a ``startsecs`` setting, we add ``startsecs=30``, to prevent endless loops, caused by broken services.
 - ``rust-analyser`` is now part of the "user versioned tools", meaning you can run it, without using the full path to the executeable.
 - Updated *htop* to ``3.2``.
