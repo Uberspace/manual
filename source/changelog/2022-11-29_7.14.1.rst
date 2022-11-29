@@ -1,0 +1,5 @@
+Changed
+-------
+
+- In preparation for the pending deprecation of *PHP* ``7.4`` (probably in the next Uberspace release, scheduled for December), we set the PHP version for everyone running ``7.4`` to ``8.0``.
+  Until we roll out the deprecation you can still `move back manually <https://manual.uberspace.de/lang-php/#change-version>`_, (i.e. to fix things and prepare for the version update).
