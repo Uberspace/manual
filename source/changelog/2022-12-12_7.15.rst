@@ -1,1 +1,15 @@
 TBA.
+
+Deprecated
+----------
+
+- Deprecate *PHP* ``7.4``, which means you can no longer select this version. If you are already running this version, we will **not** change that with this release.
+
+  But note that we will remove *PHP* ``7.4`` in the next release for good (probably in the first months of 2023). This means **you will have to switch to a supported version soon** (e.g. to ``8.0`` or ``8.1``). Along with the upcoming removal in the next release, we will migrate users still running EOL ``7.4`` to version ``8.0``.
+
+Removed
+-------
+
+- *MongoDB* ``4.0``
+- *Ruby* ``2.5``
+- *Ruby* ``2.6``
