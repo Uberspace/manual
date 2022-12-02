@@ -40,6 +40,7 @@ Use ``uberspace tools version list node`` to show all selectable versions:
   - 14
   - 16
   - 18
+  - 19
   [isabell@stardust ~]$
 
 .. _node-change-version:
@@ -63,7 +64,7 @@ You can check the selected version by executing ``uberspace tools version show n
 .. code-block:: bash
 
   [isabell@stardust ~]$ uberspace tools version show node
-  Using 'node' version: '18'
+  Using 'node' version: '19'
   [isabell@stardust ~]$
 
 Update policy
@@ -81,6 +82,8 @@ We update all versions on a regular basis. Once the `support <https://github.com
 | 16     | Active                  | September 2023   |
 +--------+-------------------------+------------------+
 | 18     | Current                 | April 2025       |
++--------+-------------------------+------------------+
+| 19     | Current                 | June 2023        |
 +--------+-------------------------+------------------+
 
 .. include:: includes/deprecation.rst
