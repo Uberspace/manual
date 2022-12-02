@@ -1,5 +1,11 @@
 TBA.
 
+Added
+-----
+
+- *Node.js* ``18`` (`release notes <https://nodejs.org/de/blog/announcements/v18-release-announce/>`_)
+- *Node.js* ``19`` (`release notes <https://nodejs.org/de/blog/announcements/v19-release-announce/>`_)
+
 Deprecated
 ----------
 
