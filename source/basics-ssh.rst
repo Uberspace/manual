@@ -2,7 +2,7 @@
 SSH
 ###
 
-Unlike other providers, the native way create things and work on your Uberspace is the command-line via SSH. If you are inexperienced how to use this,
+Unlike other providers, the native way to create things and work on your Uberspace is the command-line via SSH. If you are inexperienced how to use this,
 please first head over to our `SSH HOWTO <https://lab.uberspace.de/howto_ssh.html>`_.
 
 
