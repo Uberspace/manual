@@ -47,10 +47,12 @@ In this example we sort mails from a mailinglist into a folder, sort mails to ``
 
 .. code-block:: cfg
 
-    require ["fileinto", "reject", "relational"];
+    require ["fileinto", "reject", "relational", "comparator-i;ascii-numeric"];
 
     # Mails with a spam score greater than 4 are probably SPAM, sort them and stop
-    if header :value "ge" "X-Rspamd-Score" "4"
+    if allof (
+      not header :matches "X-Rspamd-Score" "-*",
+      header :value "ge" :comparator "i;ascii-numeric" "X-Rspamd-Score" "4")
     {
         fileinto "Spam";
         stop;
