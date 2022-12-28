@@ -80,6 +80,7 @@ We update all versions on a regular basis. Once the `support <https://github.com
 | 16     | Current                 | April 2024       |
 +--------+-------------------------+------------------+
 
+.. include:: includes/deprecation.rst
 
 ----
 
@@ -90,7 +91,7 @@ To run your node application in the background we use `supervisord <https://manu
 
 
 Assuming your application files are located in the sub folder ``~/my-node-app`` of your home directory.
-Then place a daemon service file called ``my-daemon.ini`` in ``/home/isabell/bin/my-daemon``:
+Then place a daemon service file called ``my-daemon.ini`` in ``~/etc/services.d/``:
 
 .. code-block:: ini
 
