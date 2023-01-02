@@ -104,7 +104,7 @@ You can find many more examples in the `Dovecot Wiki <https://doc.dovecot.org/co
 Troubleshooting
 ===============
 
-If something does not work check the logs at ``~/users/$MAILBOX/.dovecot.sieve.log``. You can also use `Fastmail's Sieve Tester <https://www.fastmail.com/cgi-bin/sievetest.pl>`_ to test the syntax of scripts and checks what actions a script causes to the provided email message.
+If something does not work check the logs at ``~/users/$MAILBOX/.dovecot.sieve.log``. You can also use `Fastmail's Sieve Tester <https://app.fastmail.com/sievetester>`_ to test the syntax of scripts and checks what actions a script causes to the provided email message.
 
 
 Background
