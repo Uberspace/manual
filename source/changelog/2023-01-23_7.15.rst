@@ -6,6 +6,9 @@ Added
 - *Node.js* ``18`` (`release notes <https://nodejs.org/de/blog/announcements/v18-release-announce/>`_)
 - *Node.js* ``19`` (`release notes <https://nodejs.org/de/blog/announcements/v19-release-announce/>`_)
 - *.Net* ``7`` (`release notes <https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-7>`_)
+- *Postgres* ``14`` (`release notes <https://www.postgresql.org/about/news/postgresql-14-released-2318/>`_)
+- *Postgres* ``15`` (`release notes <https://www.postgresql.org/about/news/postgresql-15-released-2526/>`_)
+
 
 Deprecated
 ----------
