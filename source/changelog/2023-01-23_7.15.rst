@@ -1,3 +1,14 @@
+DKIM
+----
+
+We now create a DKIM key for your account, wich you can use with all your `mail
+domains <https://manual.uberspace.de/mail-domains/>`_. You get the neccesary
+information for your DNS records when adding a new domain, or via the new
+``uberspace records list`` command.
+
+TODO: maybe we want to add a little bit more information here?
+
+
 PHP 7.4
 -------
 
