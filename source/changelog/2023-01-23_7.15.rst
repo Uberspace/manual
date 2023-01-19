@@ -1,4 +1,12 @@
-TBA.
+PHP 7.4
+-------
+
+TODO: add up to date information on how we proceed with *PHP* ``7.4``.
+
+*PHP* ``7.4`` has reached `its end of life last year
+<https://www.php.net/supported-versions.php>`_. This means we will eventually
+remove it. And you should switch to an officially supported version as soon as
+possible (e.g. ``8.0``, ``8.1`` or ``8.2``).
 
 Added
 -----
@@ -10,13 +18,12 @@ Added
 - *Postgres* ``14`` (`release notes <https://www.postgresql.org/about/news/postgresql-14-released-2318/>`_)
 - *Postgres* ``15`` (`release notes <https://www.postgresql.org/about/news/postgresql-15-released-2526/>`_)
 
+Deprecations
+------------
 
-Deprecated
-----------
-
-- Deprecate *PHP* ``7.4``, which means you can no longer select this version. If you are already running this version, we will **not** change that with this release.
-
-  But note that we will remove *PHP* ``7.4`` in the next release for good (probably in the first months of 2023). This means **you will have to switch to a supported version soon** (e.g. to ``8.0`` or ``8.1``). Along with the upcoming removal in the next release, we will migrate users still running EOL ``7.4`` to version ``8.0``.
+- We decided not to deprecate *PHP* ``7.4`` just yet. To detect possible
+  problems we just switched all users still on ``7.4`` to version ``8``. You can
+  manually change the version back with ``uberspace tools version use php 7.4``.
 
 Removed
 -------
