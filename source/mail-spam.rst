@@ -1,6 +1,6 @@
 #############
 Spam handling
-##############
+#############
 
 Incoming mails
 ==============
@@ -56,6 +56,8 @@ DKIM
 `DomainKeys Identified Mail <https://tools.ietf.org/html/rfc6376>`_ (DKIM) allows the receiver to check that an email claimed to have come from a specific domain was indeed authorized by the owner of that domain. It achieves this by affixing a digital signature, linked to a domain name, to each outgoing email message.
 
 We generate a DKIM key for every user, you can get yours with ``uberspace records list``:
+
+.. code-block:: console
 
   [isabell@stardust ~]$ uberspace records list
   $ORIGIN isabell.example
