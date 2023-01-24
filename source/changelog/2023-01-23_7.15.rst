@@ -2,17 +2,13 @@ DKIM
 ----
 
 We now create a DKIM key for your account, wich you can use with all your `mail
-domains <https://manual.uberspace.de/mail-domains/>`_. You get the neccesary
-information for your DNS records when adding a new domain, or via the new
-``uberspace records list`` command.
-
-TODO: maybe we want to add a little bit more information here?
-
+domains </mail-domains/>`_. You get the neccesary information for your DNS
+records when adding a new domain, or via the new ``uberspace records list``
+command. You can check our `Spam protection article </mail-spam/#outgoing-mails>`_
+for some additional information.
 
 PHP 7.4
 -------
-
-TODO: add up to date information on how we proceed with *PHP* ``7.4``.
 
 *PHP* ``7.4`` has reached `its end of life last year
 <https://www.php.net/supported-versions.php>`_. This means we will eventually
