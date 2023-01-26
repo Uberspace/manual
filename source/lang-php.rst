@@ -19,11 +19,17 @@ Versions
 
 Release types
 -------------
-Each release branch of PHP is fully supported for two years beginning with its initial stable release. We provide different point releases and apply security updates on a regular basis.
+Each release branch of PHP is supported by the PHP project for three years following its initial stable release.
+
+The first two years are spent in "Active Support" state in which both bugs and security fixes are being ported.
+After this, the branch transitions to "Security Support" state for one year, in which only critical security fixes are ported.
+Following this the branch is considered "End of life" (EOL).
+
+Uberspace provides different point releases and apply security updates on a regular basis during a branch's three year support period.
 
 Standard version
 ----------------
-If you don't select a certain version, our default will be used. We decided to default to version 7.4, which is considered to be stable by the developers.
+If you don't select a certain version, our default will be used. We will usually default to the first branch released (oldest) which is in "Active Support" state.
 
 Show available versions
 -----------------------
@@ -36,13 +42,14 @@ Use ``uberspace tools version list php`` to show all selectable versions:
   - 7.4
   - 8.0
   - 8.1
+  - 8.2
   [isabell@stardust ~]$
 
 .. _php-change-version:
 
 Change version
 --------------
-You can select the PHP version with :code:`uberspace tools version use php <version>`. You can choose between release branches:
+You can select the PHP version with :code:`uberspace tools version use php <version>`. You can choose between supported release branches:
 
 .. code-block:: console
 
@@ -72,17 +79,20 @@ You can check the selected version by executing ``uberspace tools version show p
 Update policy
 -------------
 
-We update all versions on a regular basis. Once the `security support <http://php.net/supported-versions.php>`_ ends, the branch reaches its end of life, is no longer supported and will be removed from our servers.
+We update all versions on a regular basis. Once the `Security Support <http://php.net/supported-versions.php>`_ period of a branch ends, the branch has reached its End of life, is no longer supported and will be removed from our servers.
 
 +--------+---------------------+------------------------+
 | Branch | State               | Security Support Until |
 +========+=====================+========================+
-| 7.4    | Active support      | 28 Nov 2022            |
+| 7.4    | End of life         | 28 Nov 2022            |
 +--------+---------------------+------------------------+
-| 8.0    | Active support      | 26 Nov 2023            |
+| 8.0    | Security Support    | 26 Nov 2023            |
 +--------+---------------------+------------------------+
-| 8.1    | Active support      | 25 Nov 2024            |
+| 8.1    | Active Support      | 25 Nov 2024            |
 +--------+---------------------+------------------------+
+| 8.2    | Active Support      | 08 Dec 2025            |
++--------+---------------------+------------------------+
+
 
 .. include:: includes/deprecation.rst
 
