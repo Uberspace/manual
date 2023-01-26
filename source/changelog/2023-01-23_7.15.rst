@@ -1,8 +1,8 @@
 DKIM
 ----
 
-We now create a DKIM key for your account, wich you can use with all your `mail
-domains </mail-domains/>`_. You get the neccesary information for your DNS
+We now create a DKIM key for your account, which you can use with all your `mail
+domains </mail-domains/>`_. You get the necessary information for your DNS
 records when adding a new domain, or via the new ``uberspace records list``
 command. You can check our `Spam protection article </mail-spam/#outgoing-mails>`_
 for some additional information.
