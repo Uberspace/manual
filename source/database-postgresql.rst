@@ -24,7 +24,7 @@ default to the following version:
 .. code-block:: bash
 
   [isabell@stardust ~]$ uberspace tools version show postgresql
-  Using 'postgresql' version: 13
+  Using 'postgresql' version: 15
   [isabell@stardust ~]$
 
 Show available versions
@@ -39,6 +39,8 @@ Use ``uberspace tools version list postgresql`` to show all selectable versions:
   - 11
   - 12
   - 13
+  - 14
+  - 15
   [isabell@stardust ~]$
 
 Change version
@@ -61,11 +63,15 @@ We update all versions on a regular basis. Once the `support <https://www.postgr
 +--------+-------------------------+------------------+
 | Branch | State                   | Supported Until  |
 +========+=========================+==================+
-| 10     | Active                  | November 2022    |
+| 10     | Inactive                | November 2022    |
 +--------+-------------------------+------------------+
 | 11     | Active                  | November 2023    |
 +--------+-------------------------+------------------+
 | 12     | Active                  | November 2024    |
 +--------+-------------------------+------------------+
 | 13     | Active                  | November 2025    |
++--------+-------------------------+------------------+
+| 14     | Active                  | November 2026    |
++--------+-------------------------+------------------+
+| 15     | Active                  | November 2027    |
 +--------+-------------------------+------------------+

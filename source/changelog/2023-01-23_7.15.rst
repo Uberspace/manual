@@ -1,0 +1,40 @@
+DKIM
+----
+
+We now create a DKIM key for your account, wich you can use with all your `mail
+domains </mail-domains/>`_. You get the neccesary information for your DNS
+records when adding a new domain, or via the new ``uberspace records list``
+command. You can check our `Spam protection article </mail-spam/#outgoing-mails>`_
+for some additional information.
+
+PHP 7.4
+-------
+
+*PHP* ``7.4`` has reached `its end of life last year
+<https://www.php.net/supported-versions.php>`_. This means we will eventually
+remove it. And you should switch to an officially supported version as soon as
+possible (e.g. ``8.0``, ``8.1`` or ``8.2``).
+
+Added
+-----
+
+- *PHP* ``8.2`` (`release notes <https://www.php.net/releases/8.2/en.php>`_)
+- *Node.js* ``18`` (`release notes <https://nodejs.org/de/blog/announcements/v18-release-announce/>`_)
+- *Node.js* ``19`` (`release notes <https://nodejs.org/de/blog/announcements/v19-release-announce/>`_)
+- *.Net* ``7`` (`release notes <https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-7>`_)
+- *Postgres* ``14`` (`release notes <https://www.postgresql.org/about/news/postgresql-14-released-2318/>`_)
+- *Postgres* ``15`` (`release notes <https://www.postgresql.org/about/news/postgresql-15-released-2526/>`_)
+
+Deprecations
+------------
+
+- We decided not to deprecate *PHP* ``7.4`` just yet. To detect possible
+  problems we just switched all users still on ``7.4`` to version ``8``. You can
+  manually change the version back with ``uberspace tools version use php 7.4``.
+
+Removed
+-------
+
+- *MongoDB* ``4.0``
+- *Ruby* ``2.5``
+- *Ruby* ``2.6``
