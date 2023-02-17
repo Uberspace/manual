@@ -40,20 +40,24 @@ To specify version 2.7 in a `shebang <https://en.wikipedia.org/wiki/Shebang_(Uni
 Update Policy
 -------------
 
-We update all versions of Python on a regular basis. Once the `security support <https://docs.python.org/devguide/index.html#branchstatus>`_ ends, the branch reaches its end of life, is no longer supported and will be removed from our servers.
+We update all versions of Python on a regular basis. Once the `security support <https://devguide.python.org/versions/#versions>`_ ends, the branch reaches its end of life, is no longer supported and will be removed from our servers.
 
 +--------+---------------------+-----------------------------+
 | Branch | State               | Security Support Until      |
 +========+=====================+=============================+
-| 2.7    | Security fixes only | January 2024 (by CentOS)    |
+| 2.7    | End of Life         | January 2024 (by CentOS)    |
 +--------+---------------------+-----------------------------+
-| 3.6    | Security fixes only | January 2024 (by CentOS)    |
+| 3.6    | End of Life         | January 2024 (by CentOS)    |
 +--------+---------------------+-----------------------------+
-| 3.7    | Bug fixes           | 2023                        |
+| 3.7    | Security fixes only | 2023                        |
 +--------+---------------------+-----------------------------+
-| 3.8    | Bug fixes           | 2024                        |
+| 3.8    | Security fixes only | 2024                        |
 +--------+---------------------+-----------------------------+
-| 3.9    | Bug fixes           | 2025                        |
+| 3.9    | Security fixes only | 2025                        |
++--------+---------------------+-----------------------------+
+| 3.10   | Bug fixes           | ?                           |
++--------+---------------------+-----------------------------+
+| 3.11   | Bug fixes           | ?                           |
 +--------+---------------------+-----------------------------+
 
 Connection to webserver
