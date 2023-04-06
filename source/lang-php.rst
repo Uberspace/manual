@@ -33,7 +33,6 @@ Use ``uberspace tools version list php`` to show all selectable versions:
 .. code-block:: console
 
   [isabell@stardust ~]$ uberspace tools version list php
-  - 7.4
   - 8.0
   - 8.1
   - 8.2
@@ -71,7 +70,7 @@ We update all versions on a regular basis. Once the `security support <http://ph
 +--------+---------------------+------------------------+
 | Branch | State               | Security Support Until |
 +========+=====================+========================+
-| 7.4    | EOL - unsupported!  | 28 Nov 2022            |
+| 7.4    | EOL - removed!      | 28 Nov 2022            |
 +--------+---------------------+------------------------+
 | 8.0    | Active support      | 26 Nov 2023            |
 +--------+---------------------+------------------------+
