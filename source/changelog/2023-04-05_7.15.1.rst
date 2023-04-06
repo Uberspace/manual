@@ -11,9 +11,16 @@ PHP 7.4 removal
 We have now removed the outdated PHP 7.4 version from our servers. All users who reverted to version 8.0 after 
 the deprecation period have now been permanently migrated.
 
+MariaDB updates
+---------------
+
+The MariaDB updates we implemented within the last weeks on all hosts are finished now and all instances were 
+updated to version `10.6 <https://mariadb.com/kb/en/mariadb-server-10-6/>`_.
+
 Changed
 -------
 
+- ``mytop`` came with the newer MariaDB versions and is available now as an alternative to ``mtop``
 - the nice editor ``ne`` is now available
 - ``kitty`` terminals should now work since we added the necessary terminfo mail-filters
 - we changed the backup time for mysql databases from ``02:00`` to ``01:59``. You may now fiddle out why this is a much better idea and why we had a lot of alarms for missing backups on a sunday a week and a half before ;-)
