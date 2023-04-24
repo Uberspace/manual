@@ -4,14 +4,14 @@ Backup
 
 We automatically back up your files to another server every night.
 
-.. warning:: We strongly recommend that you do not rely solely on our backup. Keep a backup of your own at another location.
+.. tip:: We strongly recommend that you do not rely solely on our backup. Keep a backup of your own at another location.
+
+.. warning:: We exclude all folders with the following names from backup: ``no_backup`` ``tmp`` ``.cache`` ``cache``
 
 Files
 =====
 
 We keep daily backups of the last seven days, and weekly backups going back seven weeks.
-
-.. note:: You can exclude files or directories by giving them the name ``no_backup``.
 
 Restoring from the backup
 -------------------------
