@@ -66,3 +66,9 @@ We generate a DKIM key for every user, you can get yours with ``uberspace record
   uberspace._domainkey IN  TXT "v=DKIM1;t=s;n=core;p=MIICIj...=="
 
   [isabell@stardust ~]$
+
+Set SPF and DKIM records for your domains
+---
+
+To set SPF and DKIM records for your domain(s), you separately need to add them in the nameserver configuration interface/files for your domain(s).
+Uberspace generates the needed string with ``uberspace records list`` (see above).
