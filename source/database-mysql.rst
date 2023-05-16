@@ -190,21 +190,13 @@ This will also work over SSH - for example to dump a database on some other host
 Monitoring and analysing sql queries
 ====================================
 
-You can use the tool ``mtop`` to monitor and analyse your mysql queries easily. You will need to provide your credentials:
+You can use the tool ``mytop`` to monitor and analyse your mysql queries easily. Just type the command in your terminal:
 
 .. code-block:: console
 
-  [isabell@stardust ~]$ mtop -dbu $USER -p <MYSQL_PASSWORD>
+  [isabell@stardust ~]$ mytop
 
-Alternatively you can create a configuration file ``~/.mtoprc`` and insert your credentials there:
-
-.. code-block::
-
-  --dbuser=isabell
-  --password=<MYSQL_PASSWORD>
-
-You can then just use the command ``mtop`` to start the tool.
-
+The tool will show you all running mysql processes, press ``?`` to show additional options.
 
 Custom settings
 ===============
