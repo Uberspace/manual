@@ -84,6 +84,50 @@ DKIM key in the format ``v=DKIM1;t=s;n=core;p=MIICIj(quite-long-multiple-chars).
   and ``uberspace`` is the selector we use when sending out mails via smtp.
 
 
+Check your records
+==================
+
+To check if you have successfully configured your domain records, you can use the commands below:
+
+.. note::
+
+  Because the records are set up
+  in your custom domain (here ``example.com``) you can check from any system if they are correct. But keep in mind, that the DNS
+  system may need a while – depending on the previous record's Time to Live (TTL) value – to refresh after you adjusted your records.
+
+check MX record
+---------------
+
+.. code-block:: console
+
+  $ dig MX example.com +short
+  0 stardust.uberspace.de.
+
+This should return your hostname which would be different to ``stardust``.
+
+check SPF record
+----------------
+
+.. code-block:: console
+
+  $ dig TXT example.com +short | grep spf
+  "v=spf1 include:spf.uberspace.de ~all"
+
+This should return the given output by default.
+
+
+check DKIM record
+-----------------
+
+.. code-block:: console
+
+  $ dig TXT uberspace._domainkey.example.com +short
+  "v=DKIM1;t=s;n=core;p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1xE5uMU/BgC4djxbCvxTHOUxttAY5TF73TEqyLHrRIBkcrut6K7hM3rvmkNxct85oo/4ZJQN0k/SIW9p88WKymD6iWEaGa6ia0ZgF+qCVa7bB/rLYtPbbI4jVmcAZ1g+x2jiLZCG3lCGf5mOQaM5OaXw+L3si2bHgEK2S+CCJQRFgS4ewatGJAjarJXaJW" "7f1wnMTr+usRw7VQ/u2019zCV2eKnFWoJO+5fH7O+hI5QmXj58dFK7IzhkRBWLJq+sz60k0FSPTFQmJ31u00i0zNRY8FX6Zh7LKFBo5ILcue4v1kVOJCyHqQg3Bx1MK6FKG2kFHWTCha+WkOtx85ihCwIDAQAB"
+
+The output should look similar to this but with different chars for your personal key after ``p=``.
+
+
+
 
 Domain validation
 =================
