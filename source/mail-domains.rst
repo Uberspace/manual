@@ -93,7 +93,7 @@ To check if you have successfully configured your domain records, you can use th
 
   Because the records are set up
   in your custom domain (here ``example.com``) you can check from any system if they are correct. But keep in mind, that the DNS
-  system may need up to 2 hours to refresh after you adjusted your records.
+  system may need a while – depending on the previous record's Time to Live (TTL) value – to refresh after you adjusted your records.
 
 check MX record
 ---------------
