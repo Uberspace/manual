@@ -1,0 +1,21 @@
+
+
+Added
+-----
+
+- We added ``msmtp`` so you can easily switch sending mails over SMTP instead of sendmail. This will give you all the benefits of real mailboxes like DKIM signed mails.
+- NodeJS 20 is now available for you.
+
+Changed
+-------
+
+- We now have a stricter mail outgoing limit for new accounts. Until the first cash top-up, you will only be able to send ``5mails/60min``.
+- The limit for all other outgoing mails has been set to ``200mails/60min`` according to our houserules.
+- We now reject *outgoing* mails with a high spam score.
+
+Deprecations
+------------
+
+- NodeJS 12+14 will be no longer selectable. They will be completeley removed in the end of June.
+- NodeJS 19 will soon be deprecated, please switch to the now added NodeJS 20.
+- Ruby 2.7 will soon be deprecated, please switch to newer versions.
