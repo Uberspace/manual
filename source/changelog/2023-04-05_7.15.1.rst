@@ -1,4 +1,4 @@
-Since yesterday a little relase slipped through our fingers onto the servers, beside the final removement 
+Since yesterday a little release slipped through our fingers onto the servers, beside the final removement 
 of PHP7.4 there are some minor additions to your Asteroids. 
 
 Because our main focus now lies on the development of the `next <https://blog.uberspace.de/ll-4-liebes-logbuch/>`_ 
