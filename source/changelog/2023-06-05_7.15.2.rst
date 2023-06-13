@@ -16,6 +16,6 @@ Changed
 Deprecations
 ------------
 
-- NodeJS 12+14 will be no longer selectable. They will be completeley removed in the end of June.
+- NodeJS 12+14 will be no longer selectable. They will be completely removed in the end of June.
 - NodeJS 19 will soon be deprecated, please switch to the now added NodeJS 20.
 - Ruby 2.7 will soon be deprecated, please switch to newer versions.
