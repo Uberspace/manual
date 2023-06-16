@@ -90,4 +90,4 @@ If Apple Mail complains that the Account or the SMTP server is offline, it is us
 .. glossary::
 
     Hostname
-      You can find your hostname in the `Datasheet <https://uberspace.de/dashboard/datasheet>`_ section. It's always ``<something>.uberspace.de``, e.g. ``sirius.uberspace.de`` and not ``<login>.uber.space``. Using the latter will create a certificate hostname mismatch.
+      You can find your hostname in the `Datasheet <https://uberspace.de/dashboard/datasheet>`_ section. It's always ``<something>.uberspace.de``, e.g. ``stardust.uberspace.de`` and not ``<login>.uber.space``. Using the latter will create a certificate hostname mismatch.
