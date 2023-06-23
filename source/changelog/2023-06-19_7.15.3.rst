@@ -1,0 +1,14 @@
+
+
+Added
+-----
+
+- We added ``lsd`` so you can `tune up <https://github.com/lsd-rs/lsd>`_ your ``ls`` command.
+- We added the ``helix`` editor.
+- We added ``pgvector`` for the postgres versions 12-15.
+
+Changed
+-------
+
+- We increased the ``inotify max user watches`` limit by 10 times so it is now on ``81920``.
+- We fixed a bug where the new ``financed`` state for ratelimiting mails was not working correctly with sieve redirects.
