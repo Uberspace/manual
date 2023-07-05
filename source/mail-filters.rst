@@ -109,19 +109,18 @@ Logging
 
 If something does not work check the logs at ``~/users/$MAILBOX/.dovecot.sieve.log``. You can also use `Fastmail's Sieve Tester <https://app.fastmail.com/sievetester>`_ to test the syntax of scripts and checks what actions a script causes to the provided email message.
 
-Mailaddress wth dots
---------------------
+Mailaddress with dots
+---------------------
 
 .. warning:: In some cases Sieve may not work with mail addresses with a dot in the local part like ``my.address@example.com``.
 
-Old maildirs with a dot in the local part have a path like ``~/users/my:address`` but Sieve expects a double colon like ``~/users/my::address``. The simple workaround
-for existing maildirs is to set a symlink:
+Existing maildirs with a dot in the local part have a path like ``~/users/my:address`` but Sieve expects a double colon like ``~/users/my::address``. The simple workaround for existing maildirs is to set a symlink:
 
 .. code-block:: console
 
   [isabell@stardust ~/users]$ ln -s my\:address my\:\:address
 
-Then Sieve will store and read the scripts from the same folder. For newly created mailboxes, this problem is already fixed and you dont need a workaround.
+Sieve will then store and read the scripts from the linked folder. For newly created mailboxes, this problem is already fixed and you dont need a workaround.
 
 Background
 ##########
