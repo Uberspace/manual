@@ -94,12 +94,12 @@ the most common way to top-up your account is using a **classic wire transfer**.
     IBAN: DE09 5535 0010 0200 0039 78
     Bank name: Rheinhessen Sparkasse
     BIC: MALADE51WOR
-    Purpose: uberspace <account name>
+    Purpose: Uberspace <account name>
 
-Enter ``uberspace <account name>`` (e.g. ``uberspace isabella``) as purpose
-("Verwendungszweck"), so we can match your transfer to your account. If you'd
+Enter ``Uberspace <account name>`` (e.g. ``Uberspace isabell``) as purpose
+(German: "Verwendungszweck"), so we can match your transfer to your account. If you'd
 like to top-up multiple accounts in one go, you can specify them alongside the
-respective amounts (e.g. ``uberspace isa 10 bella 20`` for a 30€ transfer).
+respective amounts (e.g. ``Uberspace isa 10 bella 20`` for a 30€ transfer).
 
 .. note::
 
