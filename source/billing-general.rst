@@ -172,7 +172,7 @@ and inform you via email.
 
   We experience very few cases of missing envelopes or cash. Nevertheless,
   sending money through the postal system isn't the most reliable thing. If you
-  suspect that you letter got lost, `drop us a line <support_>`_ and we'll figure
+  suspect that your letter got lost, `drop us a line <support_>`_ and we'll figure
   something out.
 
 Refunds
