@@ -139,6 +139,8 @@ If your application requires its directives to be loaded before the rest of the 
 
 You can adjust `configuration directives <http://php.net/manual/en/ini.list.php>`_ for all modes: ``PHP_INI_SYSTEM``, ``PHP_INI_USER``, ``PHP_INI_PERDIR`` and ``PHP_INI_ALL``. Put as many directives as you want into these files.
 
+.. tip:: PHP runs with user privileges and therefore has access to the whole user-account. You may add ``open_basedir = "/var/www/virtual/<username>/html"`` to your configuration in order restrict PHP exectution to your :doc:`DocumentRoot <web-documentroot>`.
+
 Example
 ^^^^^^^
 
