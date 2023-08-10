@@ -33,14 +33,12 @@ Show available versions
 
 Use ``uberspace tools version list node`` to show all selectable versions:
 
-.. code-block:: bash
+.. code-block:: console
 
   [isabell@stardust ~]$ uberspace tools version list node
-  - 12
-  - 14
   - 16
   - 18
-  - 19
+  - 20
   [isabell@stardust ~]$
 
 .. _node-change-version:
@@ -49,10 +47,10 @@ Change version
 --------------
 You can select the Node.js version with ``uberspace tools version use node <version>``. You can choose between release branches:
 
-.. code-block:: bash
+.. code-block:: console
 
-  [isabell@stardust ~]$ uberspace tools version use node 14
-  Selected node version 14
+  [isabell@stardust ~]$ uberspace tools version use node 20
+  Selected node version 20
   The new configuration is adapted immediately. Patch updates will be applied automatically.
   [isabell@stardust ~]$
 
@@ -61,10 +59,10 @@ Selected version
 
 You can check the selected version by executing ``uberspace tools version show node`` on the command line:
 
-.. code-block:: bash
+.. code-block:: console
 
   [isabell@stardust ~]$ uberspace tools version show node
-  Using 'node' version: '19'
+  Using 'node' version: '20'
   [isabell@stardust ~]$
 
 Update policy
@@ -75,15 +73,11 @@ We update all versions on a regular basis. Once the `support <https://github.com
 +--------+-------------------------+------------------+
 | Branch | State                   | Supported Until  |
 +========+=========================+==================+
-| 12     | EOL                     | April 2022       |
+| 16     | Maintenance             | September 2023   |
 +--------+-------------------------+------------------+
-| 14     | Maintenance             | April 2023       |
+| 18     | LTS                     | April 2025       |
 +--------+-------------------------+------------------+
-| 16     | Active                  | September 2023   |
-+--------+-------------------------+------------------+
-| 18     | Current                 | April 2025       |
-+--------+-------------------------+------------------+
-| 19     | Current                 | June 2023        |
+| 20     | Current                 | April 2026       |
 +--------+-------------------------+------------------+
 
 .. include:: includes/deprecation.rst
