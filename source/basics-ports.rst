@@ -13,6 +13,8 @@ mosh, you need to open a port in the firewall.
 
 .. note:: If you plan to use :doc:`web backends <web-backends>`, you do **not** need to open a port for your application.
 
+.. warning:: Using custom ports you will need to take care yourself for a secure connection and TLS certificates.
+
 Opening ports
 =============
 
