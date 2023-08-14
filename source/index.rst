@@ -9,7 +9,7 @@ Uberspace is a hosting platform targeted at people who want to look behind the s
 ----
 
 .. rst-class:: noclear
-.. tip:: If you're looking for guides and how to install certain tools like `WordPress <https://lab.uberspace.de/en/guide_wordpress.html>`_ check out the `⚛️ Uberlab <https://lab.uberspace.de/en/>`_!
+.. tip:: If you're looking for guides and how to install certain tools like `WordPress <https://lab.uberspace.de/en/guide_wordpress>`_ or `Nextcloud <https://lab.uberspace.de/en/guide_nextcloud>`_  check out the `⚛️ Uberlab <https://lab.uberspace.de/en/>`_!
 
 #########
 Changelog
