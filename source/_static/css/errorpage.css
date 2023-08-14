@@ -1,0 +1,66 @@
+:root {
+    --color-black: #000;
+    --color-white: #fff;
+    --color-red: #e2001a;
+    --color-gray: #232323;
+  }
+
+  *,
+  ::before,
+  ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-size: 18px;
+    font-family: "alternate_gothic", sans-serif;
+  }
+
+  main {
+    text-align: center;
+    line-height: 1.6;
+  }
+
+  a {
+    outline: 0;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--color-white);
+  }
+
+  a:visited,
+  a:hover,
+  a:focus,
+  a:active {
+    outline: 0;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--color-red);
+  }
+
+  .title {
+    color: var(--color-red);
+    margin: 4rem 0 1rem 0;
+  }
+
+  .errorcode {
+    font-weight: bold;
+    font-size: 800%;
+  }
+
+  .mainlink {
+    text-transform: uppercase;
+  }
