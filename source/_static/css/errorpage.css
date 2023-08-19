@@ -34,7 +34,6 @@
 
   a {
     outline: 0;
-    text-decoration: none;
     cursor: pointer;
     color: var(--color-white);
   }
@@ -44,7 +43,6 @@
   a:focus,
   a:active {
     outline: 0;
-    text-decoration: none;
   }
 
   a:hover {
