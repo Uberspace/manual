@@ -37,7 +37,7 @@ The ``etc`` folder is reserved for configuration files of any kind:
 ~/html
 ------
 
-``html`` is a symbolic link to your :doc:`documentroot <web-documentroot>`. Anything in there isaccessible to the web server, and thus to the public.
+``html`` is a symbolic link to your :doc:`documentroot <web-documentroot>`. Anything in there is accessible to the web server, and thus to the public.
 
 ~/logs
 ------
