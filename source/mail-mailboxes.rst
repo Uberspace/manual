@@ -30,7 +30,7 @@ Setup a new mailbox
 
 To add a new mailbox to your Uberspace, run the ``uberspace mail user add <mailbox>`` command and enter your password when prompted. So to add the mailbox ``post``, run this command:
 
-.. code-block:: bash
+.. code-block:: console
 
  [isabell@stardust ~]$ uberspace mail user add post
  Enter a password for the mailbox:
@@ -67,7 +67,7 @@ List existing mailboxes
 
 You can list your existing mailboxes using the ``uberspace mail user list`` command, e.g. if you have setup mailboxes for `post` and `info`:
 
-.. code-block:: bash
+.. code-block:: console
 
  [isabell@stardust ~]$ uberspace mail user list
  info
@@ -79,7 +79,7 @@ Changing passwords
 
 To change a mailbox's password, run the ``uberspace mail user password <mailbox>`` command, so in order to change the password for the mailbox ``post``, run this command:
 
-.. code-block:: bash
+.. code-block:: console
 
  [isabell@stardust ~]$ uberspace mail user password post
  Enter a password for the mailbox:
@@ -91,7 +91,7 @@ Delete a mailbox
 
 You can delete a mailbox using the ``uberspace mail user del <mailbox>`` command. To delete the mailbox ``post``, run the following command:
 
-.. code-block:: bash
+.. code-block:: console
 
  [isabell@stardust ~]$ uberspace mail user del post
  Mailbox for user 'post' deleted.
@@ -106,7 +106,7 @@ You can configure any existing mailbox to be the catch-all mailbox.
 .. tip::
   A catch-all mailbox will "catch all" of the emails addressed to the domains on your account that do not exist in the mail server - this can help avoid losing emails due to misspelling. Without a catch-all mailbox these mails will get rejected by the server.
 
-.. code-block:: bash
+.. code-block:: console
 
   [isabell@stardust ~]$ uberspace mail catchall status
   No catchall configured.
@@ -114,7 +114,7 @@ You can configure any existing mailbox to be the catch-all mailbox.
 
 To set the catch-all mailbox run ``uberspace mail catchall set <mailbox>``. In this example we make the mailbox ``post`` the catch-all mailbox:
 
-.. code-block:: bash
+.. code-block:: console
 
   [isabell@stardust ~]$ uberspace mail catchall set post
   Mails, which cannot be matched to a mailbox, will be sent to post.
@@ -122,7 +122,7 @@ To set the catch-all mailbox run ``uberspace mail catchall set <mailbox>``. In t
 
 To remove the catch-all run ``uberspace mail catchall del``:
 
-.. code-block:: bash
+.. code-block:: console
 
  [isabell@stardust ~]$ uberspace mail catchall del
  No catchall configured.
