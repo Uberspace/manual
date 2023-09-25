@@ -14,10 +14,16 @@ Every Uberspace account gets its own mailbox in the form of ``$USER@$SERVER.uber
 Mailboxes
 =========
 
-The e-mail address of your mailboxes is in the form of ``$MAILBOX@$USER.uber.space``. If you have :doc:`set up additional domains <mail-domains>`, ``$MAILBOX@$DOMAIN`` will also work. Every mailbox supports plus addressing.
+The e-mail address of your mailboxes is in the form of ``$MAILBOX@$USER.uber.space``. If you have :doc:`set up additional domains <mail-domains>`, ``$MAILBOX@$DOMAIN`` will also work.
 
-.. tip::
-  Plus addressing allows you to give out alternative addresses that still arrive at your mailbox. You can create a filter rule to automatically filter messages sent to plussed addresses, which can be helpful for managing mailing lists and site registrations.
+Plus adressing
+--------------
+
+Plus addressing allows you to give out alternative addresses like ``mailbox+ebay@example.com`` that still arrive at your
+mailbox. You can create a `filter rule <mail-filters>`_ to automatically filter messages sent to plussed addresses,
+which can be helpful for managing mailing lists and site registrations.
+
+.. warning:: The :doc:`spamfolder <mail-spam>` needs to be enabled to use plussed mailaddresses.
 
 Setup a new mailbox
 -------------------
