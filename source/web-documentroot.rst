@@ -22,6 +22,8 @@ You can create folders (and symlinks) in the form of ``/var/www/virtual/<usernam
 
 .. tip:: The ``DOCUMENT_ROOT`` variable set by Apache *always* points to the one and only DocumentRoot ``/var/www/virtual/<username>/html`` so you will get a misleading value. There is no way to change that behaviour.
 
+.. warning:: Symlinking to folders in ``/home`` will not work here because the Apache web server does not have access rights to anything in ``/home``.
+
 .. warning:: Do not delete ``/var/www/virtual/<username>/html``. If this folder doesn't exist, the RewriteRules implementing the additional DocumentRoots don't work, so all your domains will be inaccessible.
 
 Example how to change DocumentRoot location
