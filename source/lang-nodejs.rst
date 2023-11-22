@@ -36,7 +36,6 @@ Use ``uberspace tools version list node`` to show all selectable versions:
 .. code-block:: console
 
   [isabell@stardust ~]$ uberspace tools version list node
-  - 16
   - 18
   - 20
   [isabell@stardust ~]$
@@ -73,8 +72,6 @@ We update all versions on a regular basis. Once the `support <https://github.com
 +--------+-------------------------+------------------+
 | Branch | State                   | Supported Until  |
 +========+=========================+==================+
-| 16     | Maintenance             | September 2023   |
-+--------+-------------------------+------------------+
 | 18     | LTS                     | April 2025       |
 +--------+-------------------------+------------------+
 | 20     | Current                 | April 2026       |
