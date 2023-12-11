@@ -1,0 +1,26 @@
+The following changes will be rolled out until the end of this week:
+
+
+Added
+-----
+
+- We added ``parallel`` `(info) <https://www.gnu.org/software/parallel/>`_
+- We added ``tailspin`` as a `tail alternative <https://github.com/bensadeh/tailspin>`_
+- We added ``Ruby 3.2``
+
+Changed
+-------
+
+- Prepend Haraka ``Received`` instead of appending to comply with `RFC 2821 <https://www.rfc-editor.org/rfc/rfc2821#section-3.8.2>`_
+- We globally restrict web access to ``.git`` folders and ``*.swp`` files.
+
+Removed
+-------
+
+- We removed ``Node.JS 19`` completely after a process of deprecation.
+
+Deprecations
+------------
+
+- ``Node.JS 16`` is deprecated and will be removed in january 2024.
+- ``Ruby 2.7`` is deprecated and will be removed in january 2024.
