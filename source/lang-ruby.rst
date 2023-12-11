@@ -26,7 +26,7 @@ We provide different releases and apply security updates on a regular basis. Cur
 
 Standard version
 ----------------
-If you don't select a certain version, our default will be used. We decided to default to version ``3.1``, which is considered to be stable by the developers.
+If you don't select a certain version, our default will be used. We decided to default to version ``3.2``, which is considered to be stable by the developers.
 
 Show available versions
 -----------------------
@@ -38,6 +38,7 @@ Use ``uberspace tools version list ruby`` to show all selectable versions:
   [isabell@stardust ~]$ uberspace tools version list ruby
   - 3.0
   - 3.1
+  - 3.2
   [isabell@stardust ~]$
 
 .. _ruby-change-version:
@@ -75,6 +76,8 @@ We update all versions on a regular basis. Once the `support <https://www.ruby-l
 | 3.0    | 2024-03-31       |
 +--------+------------------+
 | 3.1    | 2025-12-25       |
++--------+------------------+
+| 3.2    | 2026-03-31       |
 +--------+------------------+
 
 .. include:: includes/deprecation.rst
