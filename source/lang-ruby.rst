@@ -36,7 +36,6 @@ Use ``uberspace tools version list ruby`` to show all selectable versions:
 .. code-block:: bash
 
   [isabell@stardust ~]$ uberspace tools version list ruby
-  - 2.7
   - 3.0
   - 3.1
   [isabell@stardust ~]$
@@ -73,8 +72,6 @@ We update all versions on a regular basis. Once the `support <https://www.ruby-l
 +--------+------------------+
 | Branch | Supported Until  |
 +========+==================+
-| 2.7    | 2023-03-31       |
-+--------+------------------+
 | 3.0    | 2024-03-31       |
 +--------+------------------+
 | 3.1    | 2025-12-25       |
