@@ -35,8 +35,6 @@ Use ``uberspace tools version list postgresql`` to show all selectable versions:
 .. code-block:: bash
 
   [isabell@stardust ~]$ uberspace tools version list postgresql
-  - 10
-  - 11
   - 12
   - 13
   - 14
@@ -63,10 +61,6 @@ We update all versions on a regular basis. Once the `support <https://www.postgr
 +--------+-------------------------+------------------+
 | Branch | State                   | Supported Until  |
 +========+=========================+==================+
-| 10     | Inactive                | November 2022    |
-+--------+-------------------------+------------------+
-| 11     | Active                  | November 2023    |
-+--------+-------------------------+------------------+
 | 12     | Active                  | November 2024    |
 +--------+-------------------------+------------------+
 | 13     | Active                  | November 2025    |
