@@ -25,7 +25,7 @@ We provide different releases and apply security updates on a regular basis. Cur
 
 Standard version
 ----------------
-If you don't select a certain version, our default will be used. We decided to default to version 21
+If you don't select a certain version, our default will be used. We decided to default to version 26
 
 Show available versions
 -----------------------
@@ -41,6 +41,7 @@ Use ``uberspace tools version list erlang`` to show all selectable versions:
   - 23
   - 24
   - 25
+  - 26
   [isabell@stardust ~]$
 
 .. _erlang-change-version:
@@ -64,7 +65,7 @@ You can check the selected version by executing ``uberspace tools version show e
 .. code-block:: bash
 
   [isabell@stardust ~]$ uberspace tools version show erlang
-  Using 'erlang' version: '25'
+  Using 'erlang' version: '26'
   [isabell@stardust ~]$
 
 Update policy
