@@ -1,0 +1,27 @@
+The following changes will be rolled out until the end of this week:
+
+
+Added
+-----
+
+- We added ``Erlang 26`` as a new selectable version.
+- We added development headers ``mosquitto-devel`` ``libsodium-devel`` ``libconfig-devel`` ``lmdb-devel``
+- We added ``powershell`` as a shell `alternative <https://learn.microsoft.com/en-us/powershell/>`_
+- We added ``xmlsec1``
+
+Changed
+-------
+
+- We removed some SSH ciphers to mitigate the `terrapin <https://terrapin-attack.com/>`_ vulnerability.
+
+Removed
+-------
+
+- We removed ``Node.JS 16`` completely after a process of deprecation.
+- We removed ``Ruby 2.7`` completely after a process of deprecation.
+
+Deprecations
+------------
+
+- ``PHP 8.0`` has been migrated to ``8.1``, you may switch back until february before we deprecate.
+- ``Postgres 10``, ``Postgres 11`` are deprecated.
