@@ -22,15 +22,18 @@ To find out which shells are available on Uberspace, run ``chsh -l``:
 
 .. code-block:: bash
 
- [isabell@stardust ~]$ chsh -l
- /bin/sh
- /bin/bash
- /sbin/nologin
- /usr/bin/sh
- /usr/bin/bash
- /usr/sbin/nologin
- /usr/bin/tmux
- /bin/zsh
- /usr/bin/fish
+  [isabell@stardust ~]$ chsh -l
+  /bin/sh
+  /bin/bash
+  /usr/bin/sh
+  /usr/bin/bash
+  /usr/bin/fish
+  /bin/zsh
+  /bin/tmux
+  /bin/ksh
+  /bin/rksh
+  /bin/tcsh
+  /bin/csh
+  /usr/bin/pwsh
 
 
