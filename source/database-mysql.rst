@@ -2,7 +2,7 @@
 MySQL
 #####
 
-We're providing MariaDB 10.3 as a MySQL-compatible database server.
+We're providing MariaDB 10.6 as a MySQL-compatible database server.
 If you're already used to use MySQL, you can lean back calmly:
 To avoid confusion, MariaDB uses the same command names you already know, like ``mysql``, ``mysqldump`` etc. - just use them as usual.
 
