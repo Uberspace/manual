@@ -9,7 +9,7 @@ Plus adressing
 ==============
 
 Plus addressing allows you to give out alternative addresses like ``mailbox+ebay@example.com`` that still arrive at your
-mailbox. You can create a `filter rule <mail-filters>`_ to automatically filter messages sent to plussed addresses,
+mailbox. You can create a :doc:`filter rule <mail-filters>` to automatically filter messages sent to plussed addresses,
 which can be helpful for managing mailing lists and site registrations.
 
 .. warning:: The :doc:`spamfolder <mail-spam>` needs to be enabled to use plussed mailaddresses.
@@ -125,7 +125,7 @@ to the external mailaddress you have given with your registration and we recomme
 
 If you want to use the mailaddress as a mailbox, you need to remove the file ``~/.qmail`` and the Maildir will be
 created under ``~/Maildir`` with the first incoming mail. But as this is no ordinary mailbox, it wont work with the
-:doc:`Spamfolder <mail-spam>` or `Sieve filter rules <mail-filters>`_ or plussed mailaddresses.
+:doc:`Spamfolder <mail-spam>` or :doc:`Sieve filter rules <mail-filters>` or plussed mailaddresses.
 
 .. warning::
   In the past we also promoted mailaddresses in the form ``USERNAME@SERVER.uberspace.de``. This may not be
