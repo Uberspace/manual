@@ -56,6 +56,25 @@ To set the default backend to an application listening on port 1024 (for example
 
   [isabell@stardust ~]$
 
+verify
+===============
+
+You can check that your application is accessible with curl:
+
+.. code-block:: console
+
+  [isabell@stardust ~]$ curl -I isabell.uber.space
+  HTTP/1.1 200 OK
+  Date: Sun, 04 Feb 2024 10:54:07 GMT
+  Content-Type: text/html; charset=UTF-8
+  Content-Length: 444
+  Connection: keep-alive
+  Server: Apache/2.4.58 (Unix)
+  Last-Modified: Tue, 26 Oct 2021 18:45:26 GMT
+  ETag: "1bc-5cf45e182b8f0"
+  Accept-Ranges: bytes
+
+
 specific path
 -------------
 
