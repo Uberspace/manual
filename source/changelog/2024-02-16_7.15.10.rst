@@ -1,0 +1,12 @@
+This week we rolled out only a little user facing changes:
+
+
+Added
+-----
+
+- We added ``PHP 8.3``
+
+Deprecations
+------------
+
+- ``PHP 8.0`` has been been deprecated and is no longer selectable in the version list. It will be remove completely next month
