@@ -9,4 +9,4 @@ Added
 Deprecations
 ------------
 
-- ``PHP 8.0`` has been been deprecated and is no longer selectable in the version list. It will be remove completely next month
+- ``PHP 8.0`` has been been deprecated and is no longer selectable in the version list. It will be removed completely next month
