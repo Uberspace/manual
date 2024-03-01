@@ -23,7 +23,7 @@ Each release branch of PHP is fully supported for two years beginning with its i
 
 Standard version
 ----------------
-If you don't select a certain version, our default will be used. We decided to default to version 8.2, which is considered to be stable by the developers.
+If you don't select a certain version, our default will be used. We decided to default to version 8.3, which is considered to be stable by the developers.
 
 Show available versions
 -----------------------
