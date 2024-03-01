@@ -1,0 +1,17 @@
+🌱 Spring is here 🌱
+
+While we are working at full speed on Uberspace 8, we are of course also finding time to develop for Uberspace 7. Outside the first crocuses are sprouting, inside the pipeline is rolling out the freshest update:
+
+Added
+-----
+* new packages: ``poppler-glib-devel``, ``giflib-devel``
+
+Changed
+-------
+* PHP 8.3 is now default
+* mail: raise ``mail_max_userip_connections`` from 20 to 50
+* mail: sign more headers with DKIM ``from:to:cc:subject:date``
+
+Fixed
+-----
+* with our last release we forgot some extensions for PHP 8.3: ``php-sodium``, ``php-pecl-decimal``, ``php-pecl-gnupgadd``.
