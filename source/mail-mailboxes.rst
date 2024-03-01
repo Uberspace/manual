@@ -5,8 +5,8 @@ Mailboxes
 The e-mail address of your mailboxes can be used in the form of ``mailbox@username.uber.space``. If you have :doc:`set
 up additional domains <mail-domains>` then ``mailbox@example.com`` will also work.
 
-Plus adressing
-==============
+Plus addressing
+===============
 
 Plus addressing allows you to give out alternative addresses like ``mailbox+ebay@example.com`` that still arrive at your
 mailbox. You can create a :doc:`filter rule <mail-filters>` to automatically filter messages sent to plussed addresses,
