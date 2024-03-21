@@ -28,14 +28,11 @@ does just what you'd expect:
 
 .. code-block:: console
 
-  [isabell@stardust ~]$ curl https://uberspace.de
-  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-  <html xmlns="http://www.w3.org/1999/xhtml">
+  [isabell@stardust ~]$ curl https://manual.uberspace.de
+  <!DOCTYPE html>
+  <html class="writer-html5" lang="en" >
   <head>
-  <meta name="description" content="Uberspace.de ist deine Plattform für den
-  Betrieb von Websites und Mail. Wir bieten ungewöhnlich viele Möglichkeiten,
-  engagierte Unterstützung durch erfahrene Linux-Admins - und du suchst dir
-  selbst aus, wieviel du dafür zahlst." />
+    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
   (...)
 
 Network Namespaces
