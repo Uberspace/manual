@@ -110,7 +110,7 @@ We use a standard ``php.ini`` configuration with minimal modifications to fit th
 .. code-block:: ini
 
  realpath_cache_ttl = 300
- max_execution_time = 600
+ max_execution_time = 90
  max_input_time = 600
  max_input_vars = 1500
  memory_limit = 256M
