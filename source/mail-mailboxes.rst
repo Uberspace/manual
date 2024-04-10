@@ -14,6 +14,9 @@ which can be helpful for managing mailing lists and site registrations.
 
 .. warning:: The :doc:`spamfolder <mail-spam>` needs to be enabled to use plussed mailaddresses.
 
+We also provide "minus-adressing" with ``mailbox-ebay@example.com`` to support migrating from outdated ``.qmail`` configurations.
+But we encourage you to use the more common ``+`` notation.
+
 Setup a new mailbox
 ===================
 
