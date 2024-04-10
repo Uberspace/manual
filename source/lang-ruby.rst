@@ -73,7 +73,7 @@ We update all versions on a regular basis. Once the `support <https://www.ruby-l
 +--------+------------------+
 | Branch | Supported Until  |
 +========+==================+
-| 3.0    | 2024-03-31       |
+| 3.0    | 2024-03-31 EOL   |
 +--------+------------------+
 | 3.1    | 2025-12-25       |
 +--------+------------------+
