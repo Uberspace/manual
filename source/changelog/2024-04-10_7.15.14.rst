@@ -1,7 +1,7 @@
 Features
 --------
-* You may now use "minussed" mailaddresses like `hallo-ANYTHING@example.com`. This makes it easier to migrate mailaddresses from `.qmail` configurations (we already provide the more common format `hallo+ANYTHING@example.com`).
-* We run a hourly healthchecks on the userspaces to kill stucked PHP Worker processes. We will notify you by mail and add an entry to the `php_error` log.
+* You may now use "minussed" mailaddresses like ``mailbox-ebay@example.com``. This makes it easier to migrate mailaddresses from ``.qmail`` configurations (we already provide the more common format ``mailbox+ebay@example.com``).
+* We run a hourly healthchecks on the userspaces to kill stucked PHP Worker processes. We will notify you by mail and add an entry to the ``php_error`` log.
 
 Deprecations
 ------------
