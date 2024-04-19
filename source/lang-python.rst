@@ -43,20 +43,24 @@ Update Policy
 .. _update-policy-python:
 
 
-We update all versions of Python on a regular basis. Once the `security support <https://docs.python.org/devguide/index.html#branchstatus>`_ ends, the branch reaches its end of life, is no longer supported and will be removed from our servers.
+We update all versions of Python on a regular basis. Once the `security support <https://devguide.python.org/versions/#versions`_ ends, the branch reaches its end of life, is no longer supported and will be removed from our servers.
 
 +--------+---------------------+-----------------------------+
 | Branch | State               | Security Support Until      |
 +========+=====================+=============================+
-| 2.7    | Security fixes only | January 2024 (by CentOS)    |
+| 2.7    | end of life         | 2020-01-01                  |
 +--------+---------------------+-----------------------------+
-| 3.6    | Security fixes only | January 2024 (by CentOS)    |
+| 3.6    | end of life         | 2021-12-23                  |
 +--------+---------------------+-----------------------------+
-| 3.7    | Bug fixes           | 2023                        |
+| 3.7    | end of life         | 2023-06-27                  |
 +--------+---------------------+-----------------------------+
-| 3.8    | Bug fixes           | 2024                        |
+| 3.8    | security fixes      | 2024-10                     |
 +--------+---------------------+-----------------------------+
-| 3.9    | Bug fixes           | 2025                        |
+| 3.9    | security fixes      | 2025-10                     |
++--------+---------------------+-----------------------------+
+| 3.10   | security fixes      | 2026-10                     |
++--------+---------------------+-----------------------------+
+| 3.11   | security fixes      | 2027-10                     |
 +--------+---------------------+-----------------------------+
 
 Connection to webserver
