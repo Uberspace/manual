@@ -1,0 +1,1 @@
+.. note:: The current setting does not use the spamfilter but it will be enabled in the new mail setup.

@@ -71,6 +71,7 @@ For more information see the :doc:`full changelog <changelog>`.
    forwarding <mail-forwarding>
    spam handling <mail-spam>
    filters & rules <mail-filters>
+   qmail <migration/qmail>
 
 .. toctree::
    :hidden:
