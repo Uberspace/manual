@@ -1,0 +1,11 @@
+Features
+--------
+* New command ``uberspace migration qmail status|check`` that helps you to check and fix your outdated qmail configurations. Also see the `manual page <https://manual.uberspace.de/migration/qmail/>`_ for more details.
+
+Changes
+--------
+* For ``uberspace mail user forward`` the command now only allows full qualified mailaddresses. This was already the documented standard.
+
+Deprecations
+------------
+* Ruby 3.0 has been disabled and can no longer be selected.
