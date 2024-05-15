@@ -42,7 +42,7 @@ Then on the mailbox ``catchall-mailbox`` you need to configure with Sieve filter
 .. code-block::
 
   require ["fileinto", "reject"];
-  if address :matches "to" "hallo-*@*" {
+  if address :matches "to" "shops-*@*" {
     keep;
   } else {
     reject;
