@@ -18,7 +18,7 @@ and mailboxes etc. But it depends very much on how you use these catchall and ot
 Workaround to keep "-" delimiter catchall
 -----------------------------------------
 
-Assuming that you have a ``.qmail-shops-default`` that you want to migrate.
+Assuming that you have a ``.qmail-shop-default``, ``.qmail-shops-default`` ,``.qmail-newsletter-default`` ,``.qmail-newsletters-default`` that you want to migrate.
 
 First you will need to setup a general catchall, therefore you create for example a mailbox named ``catchall-mailbox``:
 
@@ -36,17 +36,16 @@ Then you configure the catchall to forward mails to this mailbox:
  [isabell@stardust ~]$ uberspace mail catchall set catchall-mailbox
  Mails, which cannot be matched to a mailbox, will be sent to catchall-mailbox.
 
-Then on the mailbox ``catchall-mailbox`` you need to configure with Sieve filters, that all mails **except** mails to
-``shops-*@`` will be rejected:
+Then on the mailbox ``catchall-mailbox`` you need to configure with Sieve filters, that all mails **except** mails to matching the correct Delivered-To Header will be rejected ( Using the ``Delivered-To:`` Header ensures forwarded mails are handled correctly ):
 
 .. code-block::
 
-  require ["fileinto", "reject"];
-  if address :matches "to" "shops-*@*" {
-    keep;
-  } else {
-    reject;
-  }
+require ["fileinto", "reject", "regex"];
+if header :regex "Delivered-To" "^[^-]+-(shops?-.+|newsletters?-.+)@.+" {
+  keep;
+} else {
+  reject "";
+}
 
 This example script will keep the mails in the new mailbox, but you can also use ``fileinto`` to store them in specific
 folders or forward them to another mailaddress with ``redirect``.
