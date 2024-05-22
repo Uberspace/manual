@@ -72,11 +72,11 @@ We update all versions on a regular basis. Once the `security support <http://ph
 +========+=====================+========================+
 | 8.0    | Deprecated          | 26 Nov 2023            |
 +--------+---------------------+------------------------+
-| 8.1    | Active support      | 25 Nov 2024            |
+| 8.1    | Active support      | 31 Dec 2025            |
 +--------+---------------------+------------------------+
-| 8.2    | Active support      | 08 Dec 2025            |
+| 8.2    | Active support      | 31 Dec 2026            |
 +--------+---------------------+------------------------+
-| 8.3    | Active support      | 23 Nov 2026            |
+| 8.3    | Active support      | 31 Dec 2027            |
 +--------+---------------------+------------------------+
 
 .. include:: includes/deprecation.rst
