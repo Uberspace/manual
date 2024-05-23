@@ -105,7 +105,10 @@ Send notification about new mails to another mail address
     require ["enotify", "variables"];
 
     # Set notification address
-    set "notify_address" "mailto:notfyme@example.com"
+    set "notify_address" "mailto:notfyme@example.com";
+
+    # Set from address for notification
+    set "notify_from" "mailnotifier@example.com"
 
     # Store From and Subject in variables
     if address :matches "from" "*" {
@@ -116,7 +119,7 @@ Send notification about new mails to another mail address
     }
     
     # Send notification mail
-    notify :message "New mail received from: ${from_address} Subject: ${subject}" "${notify_address}";
+    notify :from "${notify_from}" :message "New mail received from: ${from_address} Subject: ${subject}" "${notify_address}";
 
 You can find many more examples in the `Dovecot Wiki <https://doc.dovecot.org/configuration_manual/sieve/examples/>`_.
 
