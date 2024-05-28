@@ -108,7 +108,7 @@ Send notification about new mails to another mail address
     set "notify_address" "mailto:notfyme@example.com";
 
     # Set from address for notification
-    set "notify_from" "mailnotifier@example.com"
+    set "notify_from" "mailnotifier@example.com";
 
     # Store From and Subject in variables
     if address :matches "from" "*" {
