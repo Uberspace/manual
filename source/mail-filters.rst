@@ -85,9 +85,14 @@ Vacation auto reply
 
 .. code-block:: cfg
 
-    require ["vacation"];
-
+    require ["variables", "vacation"];
+    
+    if header :matches "Subject" "*" {
+      set "subjwas" "${1}";
+    }
+    
     vacation
+
       # Reply at most once a week to a same sender
       :days 7
       :subject "Out of office ${subjwas}"
