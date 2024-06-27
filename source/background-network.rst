@@ -81,7 +81,7 @@ supported on high ports. See :doc:`basics ports <basics-ports>` to learn how to 
 
 Placing each uberspace in their own networking world has a number of advantages:
 
-* Your **networking is seperated**. Even when you run services that open ports,
+* Your **networking is separated**. Even when you run services that open ports,
   other users still cannot connect to them directly, as would be the case on a
   normal linux system.
 * **Traffic accounting**. Since each user has their own network interface,
