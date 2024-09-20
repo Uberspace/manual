@@ -59,6 +59,8 @@ To set the default backend to an application listening on port 1024 (for example
 specific path
 -------------
 
+.. tip:: Note that by default, lots of apps aim to serve the app in the root folder. If a specific path is used in the web backend, then the app might need to be configured to serve from that folder. Alternatively, the app can be served using a subdomain, which does not require re-configuring the app itself.
+
 In this example requests to ``/ep`` are routed to an application listening on port 9000, everything else is handled by apache:
 
 .. code-block:: console
