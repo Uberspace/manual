@@ -30,6 +30,9 @@ To add a new mailbox to your Uberspace, run the ``uberspace mail user add <mailb
   Nothing is shown while entering your password; that’s absolutely correct and works as intended – just enter it blindly and press Enter!
 
 .. warning::
+  The mail server does not check whether the sender (envelope sender, From: header) of an outgoing mail "belongs" to a certain mailbox. Thus if you have two mailboxes ``alice`` and ``eve``, Eve can also send mails from ``alice@username.uber.space``.
+
+.. warning::
   While some special characters such as ``.``, ``+``, ``-``, ``_`` are allowed in mailbox names, there are `rules <https://en.wikipedia.org/wiki/Email_address#Local-part>`_ limiting their usage. Please make sure your mailbox name adheres to these rules.
 
 Password Requirements
