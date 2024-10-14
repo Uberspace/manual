@@ -36,7 +36,7 @@ Then you configure the catchall to forward mails to this mailbox:
  [isabell@stardust ~]$ uberspace mail catchall set catchall-mailbox
  Mails, which cannot be matched to a mailbox, will be sent to catchall-mailbox.
 
-Then on the mailbox ``catchall-mailbox`` you need to configure with Sieve filters, that all mails **except** mails to
+Then on the mailbox ``catchall-mailbox`` you need to configure with :doc:`Sieve filters<mail-filters>`, that all mails **except** mails to
 ``shops-*@`` will be rejected:
 
 .. code-block::
