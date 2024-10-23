@@ -29,6 +29,8 @@ You may check your current storage usage with the ``quota`` command:
 
 .. note:: You will be notified once in 7 days by e-mail when your free space is less than ``1 GB`` and once again when your quota hits the over-usage grace period above ``100%``.
 
+.. note:: In order to work properly, ``quota`` needs an interactive shell, otherwise it produces no output. When running an automated script (and therefore non-interactive shell), this could be achieve by, for example, connecting back to itself via ssh: ``ssh localhost quota -gl``.
+
 Find files which use a lot of storage
 -------------------------------------
 
