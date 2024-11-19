@@ -17,3 +17,10 @@ To re-enable our error page again, execute:
 
   [isabell@stardust ~]$ uberspace web errorpage 500 enable
   Error page for HTTP 500 is enabled.
+
+To check the current configuration, execute:
+
+.. code-block:: console
+
+  [isabell@stardust ~]$ uberspace web errorpage 500 status
+  Error page for HTTP 500 is enabled.
