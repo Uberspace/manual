@@ -79,6 +79,9 @@ has its own private/public key pair, you will need to add the public key to your
 You will need to add a ``TXT`` record to the subdomain ``uberspace._domainkey.example.com`` with the content of your public
 DKIM key in the format ``v=DKIM1;t=s;n=core;p=MIICIj(quite-long-multiple-chars)...==``.
 
+To get the correct ``TXT`` record for your own domain, use the command ``uberspace records show example.com`` as described above.
+
+
 .. hint::
   At the record subdomain ``_domainkey.example.com`` is the part that other mailservers will look up for dkim key selectors
   and ``uberspace`` is the selector we use when sending out mails via smtp.
