@@ -134,7 +134,21 @@ Troubleshooting
 Logging
 -------
 
-If something does not work check the logs at ``~/users/$MAILBOX/.dovecot.sieve.log``. You can also use `Fastmail's Sieve Tester <https://app.fastmail.com/sievetester>`_ to test the syntax of scripts and checks what actions a script causes to the provided email message.
+If something does not work check the log at ``~/users/$MAILBOX/.dovecot.sieve.log``. However, this log is only written if Sieve itself encounters an error. If it does not exist, your script was executed successfully.
+
+Debugging tools
+---------------
+
+You can use the ``sieve-test`` command-line utility to test your Sieve filter script and see which options would be performed:
+
+.. code-block:: console
+
+  [isabell@stardust ~]$ SENDER_ADDRESS=mail@example.com # replace mail@example.com with the sender address to test
+  [isabell@stardust ~]$ TEST_MAILBOX=isa # replace isa with the name of the mailbox to test
+  [isabell@stardust ~]$ EMAIL_FILE=/home/isabell/testmail.eml # replace the path with the path to the mail file you want to test
+  [isabell@stardust ~]$ sieve-test -D -t - -Tlevel=matching -a $SENDER_ADDRESS -l $HOME/users/$TEST_MAILBOX $HOME/users/$TEST_MAILBOX/.dovecot.sieve $EMAIL_FILE
+
+You can also use `Fastmail's Sieve Tester <https://app.fastmail.com/sievetester>`_ to test the syntax of scripts and checks what actions a script causes to the provided email message.
 
 Mailaddress with dots
 ---------------------
