@@ -5,7 +5,7 @@ Spam handling
 Incoming mails
 ==============
 
-We filter incoming mails with `Rspamd <https://rspamd.com>`_ which uses `multiple <https://rspamd.com/comparison.html>`_ filtering and statistical methods to generate a spam score including (but not limited to) SPF, DMARC and DNS blocklists.
+We filter incoming mails with `Rspamd <https://rspamd.com>`_ which uses `multiple <https://rspamd.com/doc/about/comparison.html>`_ filtering and statistical methods to generate a spam score including (but not limited to) SPF, DMARC and DNS blocklists.
 
 You can train the filter by moving mails into the ``Spam`` folder in your mailbox, mails moved out of the ``Spam`` folder will be learned as ``ham`` (= good mails).
 
