@@ -36,6 +36,7 @@ Use ``uberspace tools version list php`` to show all selectable versions:
   - 8.1
   - 8.2
   - 8.3
+  - 8.4
   [isabell@stardust ~]$
 
 .. _php-change-version:
@@ -46,8 +47,8 @@ You can select the PHP version with :code:`uberspace tools version use php <vers
 
 .. code-block:: console
 
-  [isabell@stardust ~]$ uberspace tools version use php 8.3
-  Selected PHP version 8.3
+  [isabell@stardust ~]$ uberspace tools version use php 8.4
+  Selected PHP version 8.4
   The new configuration is adapted immediately. Patch updates will be applied automatically.
   [isabell@stardust ~]$
 
@@ -59,7 +60,7 @@ You can check the selected version by executing ``uberspace tools version show p
 .. code-block:: console
 
   [isabell@stardust ~]$ uberspace tools version show php
-  Using 'PHP' version: '8.2'
+  Using 'PHP' version: '8.3'
   [isabell@stardust ~]$
 
 Update policy
@@ -70,13 +71,13 @@ We update all versions on a regular basis. Once the `security support <http://ph
 +--------+---------------------+------------------------+
 | Branch | State               | Security Support Until |
 +========+=====================+========================+
-| 8.0    | Deprecated          | 26 Nov 2023            |
-+--------+---------------------+------------------------+
 | 8.1    | Active support      | 31 Dec 2025            |
 +--------+---------------------+------------------------+
 | 8.2    | Active support      | 31 Dec 2026            |
 +--------+---------------------+------------------------+
 | 8.3    | Active support      | 31 Dec 2027            |
++--------+---------------------+------------------------+
+| 8.4    | Active support      | 31 Dec 2028            |
 +--------+---------------------+------------------------+
 
 .. include:: includes/deprecation.rst
@@ -111,7 +112,7 @@ We use a standard ``php.ini`` configuration with minimal modifications to fit th
 
  realpath_cache_ttl = 300
  max_execution_time = 90
- max_input_time = 600
+ max_input_time = 60
  max_input_vars = 1500
  memory_limit = 256M
  date.timezone = Europe/Berlin
