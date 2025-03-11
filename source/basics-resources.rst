@@ -60,8 +60,6 @@ There might also be already deleted files, that are still used by processes. You
   [isabell@stardust ~]$ lsof | grep deleted
   php-fpm   20326 isabell    4u      REG               0,75         666 1088691286 /run/user/1024/.ZendSem.s2qmkH (deleted)
 
-The allocated bytes are shown in the 7th column, here ``666``.
-
 .. _ram:
 
 RAM
