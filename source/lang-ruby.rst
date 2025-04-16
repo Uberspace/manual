@@ -38,6 +38,8 @@ Use ``uberspace tools version list ruby`` to show all selectable versions:
   [isabell@stardust ~]$ uberspace tools version list ruby
   - 3.1
   - 3.2
+  - 3.3
+  - 3.4
   [isabell@stardust ~]$
 
 .. _ruby-change-version:
@@ -75,6 +77,10 @@ We update all versions on a regular basis. Once the `support <https://www.ruby-l
 | 3.1    | 2025-12-25       |
 +--------+------------------+
 | 3.2    | 2026-03-31       |
++--------+------------------+
+| 3.3    | 2027-03-31       |
++--------+------------------+
+| 3.4    | TBD              |
 +--------+------------------+
 
 .. include:: includes/deprecation.rst
