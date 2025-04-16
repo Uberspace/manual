@@ -26,7 +26,7 @@ We provide different releases and apply security updates on a regular basis. Cur
 
 Standard version
 ----------------
-If you don't select a certain version, our default will be used. We decided to default to **version 18**, which is considered to be stable by the developers.
+If you don't select a certain version, our default will be used. We decided to default to **version 22**, which is considered to be stable by the developers.
 
 Show available versions
 -----------------------
@@ -38,6 +38,7 @@ Use ``uberspace tools version list node`` to show all selectable versions:
   [isabell@stardust ~]$ uberspace tools version list node
   - 18
   - 20
+  - 22
   [isabell@stardust ~]$
 
 .. _node-change-version:
@@ -74,7 +75,9 @@ We update all versions on a regular basis. Once the `support <https://github.com
 +========+=========================+==================+
 | 18     | LTS                     | April 2025       |
 +--------+-------------------------+------------------+
-| 20     | Current                 | April 2026       |
+| 20     | LTS                     | April 2026       |
++--------+-------------------------+------------------+
+| 22     | Current                 | April 2027       |
 +--------+-------------------------+------------------+
 
 .. include:: includes/deprecation.rst

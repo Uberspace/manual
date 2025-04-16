@@ -1,0 +1,12 @@
+Features
+--------
+* Ruby 3.3 (already since september '24)
+* Ruby 3.4 (already since januar '25)
+* PHP 8.4 (already since february '25)
+* Tools: ``stow``, ``texlive-makecell``, ``texlive-multirow`` (already since march '25)
+* NodeJS 22
+
+Changes
+-------
+* Fix envelope sender for forwarded mails
+* Fix certs for domains requested with uppercase letters
