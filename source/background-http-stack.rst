@@ -160,8 +160,8 @@ Acknowledgements
 The ASCII art cloud has been copied from `asciiart.eu <asciicloud_>`_. The
 artist goes by the name ``a:f``. Thank you!
 
-.. _nginx: http://nginx.org/
-.. _Apache httpd: http://httpd.apache.org/
-.. _proxy_pass: http://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_pass
+.. _nginx: https://nginx.org/
+.. _Apache httpd: https://httpd.apache.org/
+.. _proxy_pass: https://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_pass
 .. _WebSocket: https://en.wikipedia.org/wiki/WebSocket
 .. _asciicloud: https://www.asciiart.eu/nature/clouds
