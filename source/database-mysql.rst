@@ -167,7 +167,7 @@ Or in case of a compressed dump, use ``xzcat`` to uncompress the data before fee
 
 .. code-block:: console
 
-  [isabell@stardust ~]$ xzcat isabell.sql.xz | mysql isabell
+  [isabell@stardust ~]$ xzcat isabell.sql.xz | mysql isabell < isabell.sql
 
 
 Streaming dumps
