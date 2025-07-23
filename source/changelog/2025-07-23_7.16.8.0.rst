@@ -3,4 +3,4 @@ Added
 
 * We now provide Python 3.12 and 3.13
 * We now provide provide libjwt
-* * We now provide perl-Image-ExifTool
+* We now provide perl-Image-ExifTool
