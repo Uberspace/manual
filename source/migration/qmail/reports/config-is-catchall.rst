@@ -42,11 +42,13 @@ Then on the mailbox ``catchall-mailbox`` you need to configure with :doc:`Sieve 
 .. code-block::
 
   require ["fileinto", "reject"];
-  if address :matches "to" "shops-*@*" {
+  if anyof (
+    header :matches "Delivered-To" "*-shops-*",
+    header :matches "Delivered-To" "*-newsletter-*"
+  ) {
     keep;
-  } else {
+ } else {
     reject;
-  }
-
+ }
 This example script will keep the mails in the new mailbox, but you can also use ``fileinto`` to store them in specific
-folders or forward them to another mailaddress with ``redirect``.
+folders or forward them to another mailaddress with ``redirect``. To just get rid of mail not matching the patterns use ``discard`` instead of ``reject``.
