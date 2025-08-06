@@ -41,8 +41,8 @@ Then on the mailbox ``catchall-mailbox`` you need to configure with :doc:`Sieve 
 
 .. code-block::
 
-  require ["fileinto", "reject"];
-  if address :matches "to" "shops-*@*" {
+  require ["reject", "envelope"];
+  if envelope :matches "to" "shops-*@*" {
     keep;
   } else {
     reject;
