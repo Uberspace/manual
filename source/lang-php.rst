@@ -175,7 +175,9 @@ In this case fix the value and run ``uberspace tools restart php`` again.
 Provided modules
 ----------------
 
-We provide the following modules: ``apcu``, ``bcmath``, ``bz2``, ``calendar``, ``Core``, ``ctype``, ``curl``, ``date``, ``dba``, ``decimal``, ``dom``, ``exif``, ``fileinfo``, ``filter``, ``ftp``, ``gd``, ``gettext``, ``gmp``, ``gnupg``, ``hash``, ``iconv``, ``igbinary``, ``imagick``, ``imap``, ``intl``, ``json``, ``ldap``, ``libxml``, ``mailparse``, ``mbstring``, ``mcrypt``, ``mongodb``, ``msgpack``, ``mysqli``, ``mysqlnd``, ``openssl``, ``pcntl``, ``pcre``, ``PDO``, ``pdo_mysql``, ``pdo_pgsql``, ``pdo_sqlite``, ``pgsql``, ``phalcon``, ``Phar``, ``posix``, ``psr``, ``readline``, ``redis``, ``Reflection``, ``restrictdocroot``, ``session``, ``shmop``, ``SimpleXML``, ``soap``, ``sockets``, ``sodium``, ``SPL``, ``sqlite3``, ``standard``, ``sysvmsg``, ``sysvsem``, ``sysvshm``, ``tidy``, ``tokenizer``, ``xml``, ``xmlreader``, ``xmlrpc``, ``xmlwriter``, ``xsl``, ``yaml``, ``Zend OPcache``, ``zip``, ``zlib``.
+We provide the following modules: ``apcu``, ``bcmath``, ``bz2``, ``calendar``, ``Core``, ``ctype``, ``curl``, ``date``, ``dba``, ``decimal``, ``dom``, ``exif``, ``fileinfo``, ``filter``, ``ftp``, ``gd``, ``gettext``, ``gmp``, ``gnupg``, ``hash``, ``iconv``, ``igbinary``, ``imagick``, ``intl``, ``json``, ``ldap``, ``libxml``, ``mailparse``, ``mbstring``, ``mcrypt``, ``mongodb``, ``msgpack``, ``mysqli``, ``mysqlnd``, ``openssl``, ``pcntl``, ``pcre``, ``PDO``, ``pdo_mysql``, ``pdo_pgsql``, ``pdo_sqlite``, ``pgsql``, ``phalcon``, ``Phar``, ``posix``, ``psr``, ``readline``, ``redis``, ``Reflection``, ``restrictdocroot``, ``session``, ``shmop``, ``SimpleXML``, ``soap``, ``sockets``, ``sodium``, ``SPL``, ``sqlite3``, ``standard``, ``sysvmsg``, ``sysvsem``, ``sysvshm``, ``tidy``, ``tokenizer``, ``xml``, ``xmlreader``, ``xmlrpc``, ``xmlwriter``, ``xsl``, ``yaml``, ``Zend OPcache``, ``zip``, ``zlib``.
+
+Versions <= PHP 8.3 also include the ``imap`` module.
 
 .. _php-popular-software:
 
