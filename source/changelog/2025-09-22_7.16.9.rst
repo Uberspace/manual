@@ -1,7 +1,7 @@
 Added
 -----
 * Erlang 27 and Erlang 28
-* `openssl11-devel`
+* added ``openssl11-devel`` for compiling
   
 Changed
 -------
