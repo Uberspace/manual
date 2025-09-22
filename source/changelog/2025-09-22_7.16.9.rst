@@ -1,0 +1,8 @@
+Added
+-----
+* Erlang 27 and Erlang 28
+* added ``openssl11-devel`` for compiling
+  
+Changed
+-------
+* smtp limits for unfinanced accounts
