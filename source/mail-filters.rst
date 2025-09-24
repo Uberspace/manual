@@ -163,6 +163,13 @@ Existing maildirs with a dot in the local part have a path like ``~/users/my:add
 
 Sieve will then store and read the scripts from the linked folder. For newly created mailboxes, this problem is already fixed and you dont need a workaround.
 
+System mailbox
+--------------
+
+The :doc:`system mailbox <mail-mailboxes>` created under ``~/Maildir`` allows to set up Sieve filters, but they are never executed.
+
+To use Sieve filters you need to :doc:`create a regular mailbox <mail-mailboxes>` and enable the :doc:`spamfolder <mail-spam>`.
+
 Background
 ##########
 
