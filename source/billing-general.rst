@@ -40,20 +40,20 @@ Price
 
 On uberspace you can choose a price that fits your budget:
 
-* **Budget (5€)**: You're on a tight budget? No problem! This price covers our
+* **Budget (6€)**: You're on a tight budget? No problem! This price covers our
   hardware and people cost, but does not enable us to invest a lot of money into
   future development.
-* **Standard (10€)**: The price range where you're getting a similar amount of
+* **Standard (9€)**: The price range where you're getting a similar amount of
   computing resources other hosting companies. With this price you're helping
   us to develop new features more quickly and to invest more time into good and
   qualified support people.
-* **Solidary (15€)**: Thank you! Paying 15 € per month supports our idea that
+* **Solidary (12€)**: Thank you! Paying 12 € per month supports our idea that
   everyone should have a say on the net – including those that wouldn't be able
   to afford it otherwise. By choosing this price, you actively support users,
   who are not able to pay for the Standard or Budget option.
 
 If none of these options sounds like a good fit for you, you are also free to
-choose a price that works below 5€ or above 15€ on the `Accounting page
+choose a price that works below 6€ on the `Accounting page
 <dashboardaccount_>`_.
 
 However, **the service always stays the same**: We do not cut down traffic of
