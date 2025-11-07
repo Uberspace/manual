@@ -143,10 +143,11 @@ You can use the ``sieve-test`` command-line utility to test your Sieve filter sc
 
 .. code-block:: console
 
-  [isabell@stardust ~]$ SENDER_ADDRESS=mail@example.com # replace mail@example.com with the sender address to test
+  [isabell@stardust ~]$ ENVELOPE_SENDER=sender@example.com # replace sender@example.com with the sender address to test
+  [isabell@stardust ~]$ ENVELOPE_RECIPIENT=recipient@example.com # replace recipient@example.com with the recipient address to test
   [isabell@stardust ~]$ TEST_MAILBOX=isa # replace isa with the name of the mailbox to test
   [isabell@stardust ~]$ EMAIL_FILE=/home/isabell/testmail.eml # replace the path with the path to the mail file you want to test
-  [isabell@stardust ~]$ sieve-test -D -t - -Tlevel=matching -a $SENDER_ADDRESS -l $HOME/users/$TEST_MAILBOX $HOME/users/$TEST_MAILBOX/.dovecot.sieve $EMAIL_FILE
+  [isabell@stardust ~]$ sieve-test -D -t - -Tlevel=matching -f $ENVELOPE_SENDER -a $ENVELOPE_RECIPIENT -l $HOME/users/$TEST_MAILBOX $HOME/users/$TEST_MAILBOX/.dovecot.sieve $EMAIL_FILE
 
 You can also use `Fastmail's Sieve Tester <https://app.fastmail.com/sievetester>`_ to test the syntax of scripts and checks what actions a script causes to the provided email message.
 
