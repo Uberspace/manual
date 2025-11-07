@@ -126,7 +126,7 @@ Send notification about new mails to another mail address
     # Send notification mail
     notify :from "${notify_from}" :message "New mail received from: ${from_address} Subject: ${subject}" "${notify_address}";
 
-You can find many more examples in the `Dovecot Wiki <https://doc.dovecot.org/configuration_manual/sieve/examples/>`_.
+You can find many more examples in the `Dovecot documentation <https://doc.dovecot.org/2.3/configuration_manual/sieve/examples/>`_.
 
 Troubleshooting
 ===============
