@@ -1,4 +1,4 @@
-As we're getting ready for `Uberspace 8 beta <https://u8manual.uberspace.de>`__ we're of course still working on Uberspace 7. Version 16.10 is more of a maintenance release for your and our peace of mind, here you go:
+As we're getting ready for `Uberspace 8 beta <https://u8manual.uberspace.de>`__ we're of course still working on Uberspace 7. Version 7.17 is more of a maintenance release for your and our peace of mind, here you go:
 
 Changed
 -------
