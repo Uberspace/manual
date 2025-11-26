@@ -1,0 +1,11 @@
+As we're getting ready for `Uberspace 8 beta <https://u8manual.uberspace.de>`__ we're of course still working on Uberspace 7. Version 7.17 is more of a maintenance release for your and our peace of mind, here you go:
+
+Changed
+-------
+* We now **enforce** the mail limit of 60 mails / hour.  Enjoy, spammers!
+* We reboot our servers now automatically under certain conditions. This is nothing new per se, we just did it manually until now.
+* Modern ``Ciphers`` (``chacha20-poly1305@openssh.com,aes256-gcm@openssh.com,aes128-gcm@openssh.com,aes256-ctr,aes192-ctr,aes128-ctr``), ``KexAlgorithms`` (``curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256``) and ``MACs`` (``hmac-sha2-512-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512,hmac-sha2-256``)for ``sshd``.
+
+Fixed
+-----
+* files in ``/var/lib/php-sessions`` now have a maximum age of 7 days
