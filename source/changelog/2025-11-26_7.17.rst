@@ -4,7 +4,7 @@ Changed
 -------
 * We now **enforce** the mail limit of 60 mails / hour.  Enjoy, spammers!
 * We reboot our servers now automatically under certain conditions. This is nothing new per se, we just did it manually until now.
-* Modern ``Ciphers`` (``chacha20-poly1305@openssh.com,aes256-gcm@openssh.com,aes128-gcm@openssh.com,aes256-ctr,aes192-ctr,aes128-ctr``), ``KexAlgorithms`` (``curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256``) and ``MACs`` (``hmac-sha2-512-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512,hmac-sha2-256``)for ``ssdd``.
+* Modern ``Ciphers`` (``chacha20-poly1305@openssh.com,aes256-gcm@openssh.com,aes128-gcm@openssh.com,aes256-ctr,aes192-ctr,aes128-ctr``), ``KexAlgorithms`` (``curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256``) and ``MACs`` (``hmac-sha2-512-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512,hmac-sha2-256``)for ``sshd``.
 
 Fixed
 -----
