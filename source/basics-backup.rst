@@ -59,7 +59,7 @@ If the output of your dry run looks good, you can restore the backup:
 
   [isabell@stardust ~]$ rsync --verbose --recursive --links --perms --times --hard-links --acls --xattrs /backup/daily.3/var/www/virtual/isabell/html/blog/ /var/www/virtual/isabell/html/blog/
 
-.. note:: Because the backup is mounted as an NFS share, it has a different `SELinux` context than your target directory. To avoid permission problems, run ``restorecon -R`` on your restored data, e.g. ``restorecon -R /var/www/virtual/isabell/html/blog/``.
+.. note:: Because the backup is mounted as an NFS share, it has a different `SELinux` context than your target directory. To avoid permission problems, run ``restorecon -R`` on your restored data, e.g. ``restorecon -R /var/www/virtual/isabell/html/blog/``. If you run into I/O errors during `rsync`, just let it run again. I/O errors are quite common in connection with a NFS connection.
 
 If you need help, don't hesitate to contact us at hallo@uberspace.de.
 
