@@ -123,9 +123,12 @@ System mailbox
 With each Uberspace you will get a mailaddress in the form ``USERNAME@uber.space``. By default this mailaddress forwards
 to the external mailaddress you have given with your registration and we recommend to keep it that way.
 
-If you want to use the mailaddress as a mailbox, you need to remove the file ``~/.qmail`` and the Maildir will be
-created under ``~/Maildir`` with the first incoming mail. But as this is no ordinary mailbox, it wont work with the
-:doc:`Spamfolder <mail-spam>` or :doc:`Sieve filter rules <mail-filters>` or plussed mailaddresses.
+If you want to access the system mailbox, you may remove the file ``~/.qmail`` and the Maildir will be
+created under ``~/Maildir`` with the first incoming mail.
+
+.. warning:: As this is no ordinary mailbox, it wont work with the :doc:`Spamfolder <mail-spam>` or :doc:`Sieve filter rules <mail-filters>` or plussed mailaddresses.
+
+The system mailbox is rather intended as a fallback, and we do not recommend using it for regular communication.
 
 .. warning::
   In the past we also promoted mailaddresses in the form ``USERNAME@SERVER.uberspace.de``. This may not be
