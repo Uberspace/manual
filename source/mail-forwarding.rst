@@ -63,7 +63,7 @@ To delete a forwarding for ``forwardme``, run the following command:
 Troubleshooting
 ===============
 
-* Mails received through a `catch-all address <https://manual.uberspace.de/mail-mailboxes#catch-all-mailbox>` will not be forwarded to an external email address. This is because catch-all addresses collect a lot of spam, which, if forwarded to external servers, would damage the reputation of our own mail servers.
+* Mails received through a :ref:`catch-all address <catchall>` will not be forwarded to an external email address. This is because catch-all addresses collect a lot of spam, which, if forwarded to external servers, would damage the reputation of our own mail servers.
 * With enabled :doc:`spam filtering <mail-spam>` we do not forward mails with a spam score greater than ``5``. These mails get sorted into ``~/users/MAILUSER/.Spam``.
 * If you want to test forwardings to Gmail by using the *same* Gmail address as sender, the Google magic will just drop and not deliver the mail because it is already known to this account.
 
