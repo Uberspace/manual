@@ -45,7 +45,7 @@ Then on the mailbox ``catchall-mailbox`` you need to configure with :doc:`Sieve 
   if envelope :matches "to" "shops-*@*" {
     keep;
   } else {
-    reject;
+    reject "Recipient address does not exist.";
   }
 
 This example script will keep the mails in the new mailbox, but you can also use ``fileinto`` to store them in specific
