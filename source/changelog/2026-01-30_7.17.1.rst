@@ -1,0 +1,5 @@
+fixed
+-----
+
+* prevent Haraka from asking for client certs to to (finally!) tackle the `Thunderbird issues <https://is.uberspace.online/incidents/508>`__
+* set mail limit to 60 mails per hour, 200 recipients
