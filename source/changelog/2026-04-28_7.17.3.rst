@@ -1,0 +1,14 @@
+We gave our spam filter a massive update to fend off spam even more reliably while ensuring legitimate emails pass through smoothly:
+
+Added 
+-----
+
+* The spam filter now uses an intelligent reputation system. It tracks the historical behavior of IP addresses and domains (if validated via SPF/DKIM). Reliable senders build a good reputation over time and pass through the filter more easily, while suspicious senders automatically lose trust.
+* We are now using the allowlists from dnswl.org. Senders known for exclusively sending legitimate mail receive a bonus. This noticeably reduces so-called "false positives" (legitimate emails incorrectly marked as spam).
+
+Changed
+-------
+
+* We optimized, reactivated, or re-weighted the integration of various renowned blocklists (RBLs) - including Spamhaus, SpamCop, and Spameatingmonkey. We also made some under-the-hood DNS adjustments to ensure these lists are queried even more reliably.
+* Our own internal mailgates are now exempt from greylisting. This ensures faster, delay-free delivery for internal forwards.
+* We massively expanded our internal tools. As a team, we can now react much more granularly and quickly in the background to acute spam waves and maintain our own targeted filter rules.
