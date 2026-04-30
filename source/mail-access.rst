@@ -85,6 +85,11 @@ Apple Mail
 
 If Apple Mail complains that the Account or the SMTP server is offline, it is usually caused by the `Automatically manage connection settings <https://support.apple.com/guide/mail/cpmlprefacctadv>`_ option. If this option is active, Apple Mail sometimes replaces the correct settings with incorrect ones, blocking access to the account. You can safely turn off the setting.
 
+Outlook (new)
+----------
+
+Since 2024, the **new Outlook for Windows** that ships with new PCs doesn't support setting an account login name different from the email address. Therefore, the account name needs to match the username portion of the email address. If that is not the case for your set-up, you can download the `classic version of Outlook <https://support.microsoft.com/en-us/office/you-can-t-open-classic-outlook-on-a-new-windows-pc-5c94902b-31a5-4274-abb0-b07f4661edf5>` (requires a subscription to Office 365). Outlook classic supports setting a different login name.
+
 ----
 
 .. glossary::
