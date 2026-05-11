@@ -29,11 +29,11 @@ If you don't select a certain version, our default will be used. We decided to d
 
 Change version
 --------------
-To change your python version, run the relevant binary. So if you want to start a script with version 3.6, use the :code:`python3.6` binary:
+To change your python version, run the relevant binary. So if you want to start a script with version 3.14, use the :code:`python3.14` binary:
 
 .. code-block:: console
 
-  [isabell@stardust ~] python3.6 my-python-script.py
+  [isabell@stardust ~] python3.14 my-python-script.py
 
 To specify version 2.7 in a `shebang <https://en.wikipedia.org/wiki/Shebang_(Unix)>`_, use :code:`#!/usr/bin/env python2.7`.
 
@@ -48,15 +48,25 @@ We update all versions of Python on a regular basis. Once the `security support 
 +--------+---------------------+-----------------------------+
 | Branch | State               | Security Support Until      |
 +========+=====================+=============================+
-| 2.7    | Security fixes only | January 2024 (by CentOS)    |
+| 2.7    | Security fixes only | Endless (by TuxCare)        |
 +--------+---------------------+-----------------------------+
-| 3.6    | Security fixes only | January 2024 (by CentOS)    |
+| 3.6    | Security fixes only | Endless (by TuxCare)        |
 +--------+---------------------+-----------------------------+
-| 3.7    | Bug fixes           | 2023                        |
+| 3.7    | EOL                 | 2023-06-27                  |
 +--------+---------------------+-----------------------------+
-| 3.8    | Bug fixes           | 2024                        |
+| 3.8    | EOL                 | 2024-10-07                  |
 +--------+---------------------+-----------------------------+
-| 3.9    | Bug fixes           | 2025                        |
+| 3.9    | EOL                 | 2025-10-31                  |
++--------+---------------------+-----------------------------+
+| 3.10   | Security fixes only | 2026-10                     |
++--------+---------------------+-----------------------------+
+| 3.11   | Security fixes only | 2027-10                     |
++--------+---------------------+-----------------------------+
+| 3.12   | Security fixes only | 2028-10                     |
++--------+---------------------+-----------------------------+
+| 3.13   | Bug fixes           | 2029-10                     |
++--------+---------------------+-----------------------------+
+| 3.14   | Bug fixes           | 2030-10                     |
 +--------+---------------------+-----------------------------+
 
 Connection to webserver
@@ -78,11 +88,11 @@ In order to install the correct package corresponding to the Python version you 
 
   [isabell@stardust ~] pip2.7 install package-name --user
 
-To install for Python 3.6, use :code:`pip3.6`:
+To install for Python 3.14, use :code:`pip3.14`:
 
 .. code-block:: console
 
-  [isabell@stardust ~] pip3.6 install package-name --user
+  [isabell@stardust ~] pip3.14 install package-name --user
 
 ----
 
