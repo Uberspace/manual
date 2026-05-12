@@ -23,7 +23,7 @@ Each release branch of PHP is fully supported for two years beginning with its i
 
 Standard version
 ----------------
-If you don't select a certain version, our default will be used. We decided to default to version 8.3, which is considered to be stable by the developers.
+If you don't select a certain version, our default will be used. We decided to default to version 8.5, which is considered to be stable by the developers.
 
 Show available versions
 -----------------------
@@ -33,10 +33,10 @@ Use ``uberspace tools version list php`` to show all selectable versions:
 .. code-block:: console
 
   [isabell@stardust ~]$ uberspace tools version list php
-  - 8.1
   - 8.2
   - 8.3
   - 8.4
+  - 8.5
   [isabell@stardust ~]$
 
 .. _php-change-version:
@@ -60,7 +60,7 @@ You can check the selected version by executing ``uberspace tools version show p
 .. code-block:: console
 
   [isabell@stardust ~]$ uberspace tools version show php
-  Using 'PHP' version: '8.3'
+  Using 'PHP' version: '8.5'
   [isabell@stardust ~]$
 
 Update policy
@@ -71,13 +71,13 @@ We update all versions on a regular basis. Once the `security support <http://ph
 +--------+---------------------+------------------------+
 | Branch | State               | Security Support Until |
 +========+=====================+========================+
-| 8.1    | Active support      | 31 Dec 2025            |
+| 8.2    | Security fixes only | 31 Dec 2026            |
 +--------+---------------------+------------------------+
-| 8.2    | Active support      | 31 Dec 2026            |
-+--------+---------------------+------------------------+
-| 8.3    | Active support      | 31 Dec 2027            |
+| 8.3    | Security fixes only | 31 Dec 2027            |
 +--------+---------------------+------------------------+
 | 8.4    | Active support      | 31 Dec 2028            |
++--------+---------------------+------------------------+
+| 8.5    | Active support      | 31 Dec 2029            |
 +--------+---------------------+------------------------+
 
 .. include:: includes/deprecation.rst
