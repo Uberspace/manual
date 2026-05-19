@@ -41,7 +41,7 @@ Use ``uberspace tools version list node`` to show all selectable versions:
   - 22
   [isabell@stardust ~]$
 
-.. warning:: With Uberspace 7 we can't provide newer versions of NodeJS than 22 due to the GCC compiler beeing to old. Please migrate to `Uberspace 8 <https://dashboard.uberspace.de/meta>`_.
+.. warning:: With Uberspace 7 we can't provide versions of NodeJS newer than 22 due to the GCC compiler beeing too old. Please migrate to `Uberspace 8 <https://dashboard.uberspace.de/meta>`_.
 
 .. _node-change-version:
 
