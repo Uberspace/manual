@@ -126,7 +126,6 @@ html_theme_options = {
     "navigation_depth": 2,
     "collapse_navigation": True,
 }
-html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 html_last_updated_fmt = "%b %d, %Y"
 html_context = {
     "display_github": True,
