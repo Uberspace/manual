@@ -10,7 +10,7 @@ Java
 Introduction
 ============
 
-Java is a general-purpose, object-oriented programming language. Interally, it
+Java is a general-purpose, object-oriented programming language. Internally, it
 uses a virtual machine, making "compiled" java programs very independent of the
 actual hardware executing them.
 
@@ -25,7 +25,7 @@ We only provide the version available in EPEL 7 - ``java-latest-openjdk``.
 Update Policy
 -------------
 
-Java is updated alongside the rest of EPEL 7 reglarily.
+Java is updated alongside the rest of EPEL 7 regularly.
 
 +--------+---------------------+--------------------------+
 | Branch | State               | Security Support Until   |

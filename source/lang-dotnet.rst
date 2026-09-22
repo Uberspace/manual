@@ -24,7 +24,7 @@ Release types
 
 We provide the latest .NET Core LTS and apply security updates on a regular basis.
 
-We also provide older versions; you can get a full list of curently available versions with ``dotnet --list-sdks``.
+We also provide older versions; you can get a full list of currently available versions with ``dotnet --list-sdks``.
 
 .. note:: Unfortunately, Microsoft has decided not to make .NET 8 available for RHEL 7, on which our operating system CentOS 7 is based. Therefore, we cannot provide .NET 8 or later.
 

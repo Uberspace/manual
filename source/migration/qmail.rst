@@ -73,6 +73,6 @@ error messages and more detailed help pages:
 - `The main qmail file "~/.qmail-default" does not exist </migration/qmail/reports/qmail-default-not-exists.html>`_
 - `The file conflicts with an already existing mail user </migration/qmail/reports/qmail-mailaddr-and-vmailmgr-user-blocking.html>`_
 - `The file conflicts with an already existing mail user </migration/qmail/reports/qmail-username-and-vmailmgr-user-blocking.html>`_
-- `The script file "~/.spamfolder" for the standard mail setup contains unkown content </migration/qmail/reports/spamfolder-file-content-off.html>`_
+- `The script file "~/.spamfolder" for the standard mail setup contains unknown content </migration/qmail/reports/spamfolder-file-content-off.html>`_
 - `There are mailusers with direct forward to a mailbox </migration/qmail/reports/vmailmgr-forward-mailbox.html>`_
 - `The mail database file "~/passwd.cdb" seems to be broken </migration/qmail/reports/vmailmgr-passwd-broken.html>`_

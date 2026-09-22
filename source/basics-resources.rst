@@ -29,12 +29,12 @@ You may check your current storage usage with the ``quota`` command:
 
 .. note:: You will be notified once in 7 days by e-mail when your free space is less than ``1 GB`` and once again when your quota hits the over-usage grace period above ``100%``.
 
-.. note:: In order to work properly, ``quota`` needs an interactive shell, otherwise it produces no output. When running an automated script (and therefore non-interactive shell), this could be achieve by, for example, connecting back to itself via ssh: ``ssh localhost quota -gl``.
+.. note:: In order to work properly, ``quota`` needs an interactive shell, otherwise it produces no output. When running an automated script (and therefore non-interactive shell), this could be achieved by, for example, connecting back to itself via ssh: ``ssh localhost quota -gl``.
 
 Find files which use a lot of storage
 -------------------------------------
 
-The beforementioned ``quota`` command calculates the needed storage for files that are owned by your user anywhere on the system not only within your home folder.
+The aforementioned ``quota`` command calculates the needed storage for files that are owned by your user anywhere on the system not only within your home folder.
 To find these files you should check the most common paths where files can be stored for your user:
 
 .. code-block:: console
@@ -46,7 +46,7 @@ To find these files you should check the most common paths where files can be st
   4,0K	/var/tmp
   0	/var/lib/php-sessions/isabell
 
-The ``du`` command is good for an raw overview about your storage usage, but to have a deeper look which files use up a lot of space
+The ``du`` command is good for a raw overview about your storage usage, but to have a deeper look which files use up a lot of space
 we recommend the interactive tool ``ncdu``. You can use the command just within your working directory or with a path like
 ``ncdu /var/www/virtual/$USER`` and then browsing with your *keyboard arrows* and *enter*.
 

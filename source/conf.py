@@ -229,7 +229,7 @@ def _build_feed(changelog_entries, format):
     if format == 'atom':
         return fg.atom_str(pretty=True)
     else:
-        raise Exception('unkown feed format: ' + str(format))
+        raise Exception('unknown feed format: ' + str(format))
 
 
 def write_changelog_feeds():

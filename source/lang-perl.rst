@@ -11,7 +11,7 @@ Introduction
 ============
 
 Perl is a high-level, general-purpose, interpreted, dynamic programming
-language. Being released in 1987, it has a long history. The langue has been
+language. Being released in 1987, it has a long history. The language has been
 used for almost any purpose. On Uberspace it is mainly used for scripting and
 web applications.
 
@@ -23,7 +23,7 @@ We only provide the version available in CentOS 7.
 Update Policy
 -------------
 
-Perl is updated alongside the rest of CentOS 7 reglarily.
+Perl is updated alongside the rest of CentOS 7 regularly.
 
 +--------+---------------------+--------------------------+
 | Branch | State               | Security Support Until   |

@@ -15,7 +15,7 @@ You can check with the following command, if you see any entries with special ch
    [isabell@stardust ~]$ listvdomain
    mailuser Yes hallo@example.com
 
-If you can already identify any problems there, you could try removing the correspoding mail users (as long as its not
+If you can already identify any problems there, you could try removing the corresponding mail users (as long as it's not
 in use or you can restore it easily).
 
 Of course you can contact our `support <https://uberspace.de/support/>`_ if you need help here.

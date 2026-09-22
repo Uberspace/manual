@@ -14,7 +14,7 @@ Configuring forwards
 ====================
 
 .. note::
-    It is possible to use the `Dashboard <https://dashboard.uberspace.de/>`_ for creating mail accounts and forwards, to do so login and use the `mail section <https://dashboard.uberspace.de/dashboard/mail>`_. Here we will explain our prefered way using SSH and the ``uberspace mail`` commands.
+    It is possible to use the `Dashboard <https://dashboard.uberspace.de/>`_ for creating mail accounts and forwards, to do so login and use the `mail section <https://dashboard.uberspace.de/dashboard/mail>`_. Here we will explain our preferred way using SSH and the ``uberspace mail`` commands.
 
 
 Add a forward for a mailuser

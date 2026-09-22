@@ -1,6 +1,6 @@
 .. _spamfolder-file-content-off:
 
-The script file ~/.spamfolder for the standard mail setup contains unkown content
+The script file ~/.spamfolder for the standard mail setup contains unknown content
 =================================================================================
 
 ``id:spamfolder-file-content-off``
@@ -11,7 +11,7 @@ With a custom script we cannot process mails in the standard way. If you have se
 mails you will need to find workarounds with the standard mail setup, like with Sieve scripts etc.
 
 To restore the standard mail processing with the default spamfolder script, first remove the custom script and run
-the spamfolder enable comand.
+the spamfolder enable command.
 
 .. code-block:: console
 

@@ -161,7 +161,7 @@ To reverse this, use ``web header del``:
   Unsuppressed header "X-Frame-Options" for /blog/iframe
   [isabell@stardust ~]$
 
-Which causes to header to appear again:
+Which causes the header to appear again:
 
 .. code-block:: console
 
@@ -172,7 +172,7 @@ Which causes to header to appear again:
 Default security headers
 ========================
 
-Your space comes with a number of :doc:`security headers <web-security-headers>` set by default. While these from a solid base for your projects, you may want to extend or remove them.
+Your space comes with a number of :doc:`security headers <web-security-headers>` set by default. While these form a solid base for your projects, you may want to extend or remove them.
 
 Removing security headers
 -------------------------
