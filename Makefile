@@ -16,7 +16,7 @@ help:
 
 setup: setup-venv setup-requirements
 
-setup-venv: version ?= $(cat runtime.txt)
+setup-venv: version ?= $(shell cat runtime.txt)
 setup-venv:
 	python$(version) -m venv .venv
 	.venv/bin/pip install --isolated --no-input --quiet --upgrade pip

@@ -14,6 +14,8 @@ your development process, the manual can be built locally.
 
 ### Initial Setup
 
+Install Python 3.14 (the version specified in `runtime.txt`), then run:
+
 ```
 make setup
 ```
