@@ -3,15 +3,16 @@
   command = "make dirhtml"
 
 [[redirects]]
+  # Temporary: this domain will serve the Uberspace 8 manual later.
   from = "https://manual.uberspace.de/*"
   to = "https://u7manual.uberspace.de/:splat"
-  status = 301
+  status = 302
   force = true
 
 [[redirects]]
   from = "http://manual.uberspace.de/*"
   to = "https://u7manual.uberspace.de/:splat"
-  status = 301
+  status = 302
   force = true
 
 [[redirects]]
