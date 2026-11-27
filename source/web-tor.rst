@@ -13,10 +13,10 @@ While Tor is quite capable of connecting Tor users to the outside world via
 so-called exit nodes, there is a much nicer way to access content inside Tor:
 onion services. Traffic to and from Tor onion services never leaves the Tor
 network and, as a result, has stronger privacy guarantees as well as increased
-performance. It also enabled both the server and the client to remain anonymous.
+performance. It also enables both the server and the client to remain anonymous.
 
 Content hosted on the default ``.uber.space`` domain is automatically made
-available as a onion service as a sub domain of ahcbagldgzdpa74g2mh74fvk5zjzpfjbvgqin6g3mfuu66tynv2gkiid.onion.
+available as an onion service as a sub domain of ahcbagldgzdpa74g2mh74fvk5zjzpfjbvgqin6g3mfuu66tynv2gkiid.onion.
 For example, content on https://isabell.uber.space is also reachable via
 http://isabell.ahcbagldgzdpa74g2mh74fvk5zjzpfjbvgqin6g3mfuu66tynv2gkiid.onion.
 
@@ -34,9 +34,9 @@ Content on other domains is currently not accessible as a onion service, but
 can of course be accessed normally from inside the Tor network. This is mainly
 due a difficulty in matching requests: all requests from
 ``SOMEONE.ahcbagldgzdpa74g2mh74fvk5zjzpfjbvgqin6g3mfuu66tynv2gkiid.onion`` go to ``SOMEONE.uber.space``, which makes
-for a rather simple and roboust setup. While we could implement more
+for a rather simple and robust setup. While we could implement more
 sophisticated matching like ``my.domain.com.SOMEONE.ahcbagldgzdpa74g2mh74fvk5zjzpfjbvgqin6g3mfuu66tynv2gkiid.onion``, we
-have currently chosen not do so.
+have currently chosen not to do so.
 
 You can of course host your own onion service inside your uberspace to serve
 other content.
@@ -72,7 +72,7 @@ Identifying Requests
 Tor makes it impossible to identify which source IP address is sending requests
 to your site. This is by design. Without some extra effort, it isn't even
 obvious that a request passed through the Tor network at all. However, requests
-that arrived on our onion service and where then proxied through to your
+that arrived on our onion service and were then proxied through to your
 uberspace bear a ``X-Uberspace-Via-Hidden-Service`` HTTP header. Keep in mind
 that this header can be faked very easily. Requests containing the header might
 come from the onion service. Requests not containing the header certainly did

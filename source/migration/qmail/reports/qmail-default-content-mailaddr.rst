@@ -5,7 +5,7 @@ The content of the main qmail file ~/.qmail-default is a mailaddress
 
 ``id:qmail-default-content-mailaddr``
 
-The file ``~/.qmail-default`` is the only qmail file neccessary for the standard mail setup on U7.
+The file ``~/.qmail-default`` is the only qmail file necessary for the standard mail setup on U7.
 
 When the file is setup with a mailaddress, this will forward all incoming mails to this address and bypasses the
 standard mail system without filtering spam. You can use instead a real catchall with a mailbox.

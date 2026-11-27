@@ -13,7 +13,7 @@ standard mailsetup and you will need to find another way to automatically proces
 Workaround for custom code scripts
 ----------------------------------
 
-The most common tools to workaround this could be ``fetchmail`` oder ``getmail`` which you can use to collect mails
+The most common tools to workaround this could be ``fetchmail`` or ``getmail`` which you can use to collect mails
 from a mailbox and then process them with your code. You could also configure your code to fetch the mails directly
 from the mailbox.
 

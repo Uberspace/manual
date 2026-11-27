@@ -105,7 +105,7 @@ respective amounts (e.g. ``Uberspace isa 10 bella 20`` for a 30€ transfer).
 
   We never charge your bank account. All payments on your statement were
   initiated by you. If you notice payments that should not be there, check your
-  *bank* account for a standing order (“Dauerauftrag”) and cancel it. feel free
+  *bank* account for a standing order (“Dauerauftrag”) and cancel it. Feel free
   to use our refund option afterwards.
 
 .. tip::

@@ -162,7 +162,7 @@ Existing maildirs with a dot in the local part have a path like ``~/users/my:add
 
   [isabell@stardust ~/users]$ ln -s my\:address my\:\:address
 
-Sieve will then store and read the scripts from the linked folder. For newly created mailboxes, this problem is already fixed and you dont need a workaround.
+Sieve will then store and read the scripts from the linked folder. For newly created mailboxes, this problem is already fixed and you don't need a workaround.
 
 Background
 ##########

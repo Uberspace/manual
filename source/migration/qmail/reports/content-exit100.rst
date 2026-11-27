@@ -9,6 +9,6 @@ You have set up this file to bounce incoming mails. But it is better to reject m
 them bounce back to the sender.
 
 You should check if you could just remove this mailaddress from your configuration so it is properly rejected. If this
-is not possble (maybe because of a catchall) you should set up a mailbox with a Sieve script to reject mails.
+is not possible (maybe because of a catchall) you should set up a mailbox with a Sieve script to reject mails.
 
 .. include:: ../includes/levels/error.rst

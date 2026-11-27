@@ -63,7 +63,7 @@ a few strange IPs:
 These addresses (``100.64.x.y``, ``fed75:xxx::2``) aren't ordinary public ones,
 but rather from the IPv6 ULA_ or IPv4 `Carrier-grade NAT`_ ranges. This is
 because uberspaces are not directly connected to the internet, but are placed
-within their own little `network namespace`_, similarily to how docker handles
+within their own little `network namespace`_, similarly to how docker handles
 networking for its containers. This gives them their own ``veth_...`` interface
 and funnily enough, their own loopback / ``127.0.0.1``. Connections to the
 out are then NATed, direct, raw TCP or UDP connections from the internet are
@@ -133,7 +133,7 @@ systemd Services
 ----------------
 
 Placing a generic systemd service into a network namespace is trickier. The
-`nsenter command`_ can execute a command and pace it into the desired namespace.
+`nsenter command`_ can execute a command and place it into the desired namespace.
 There is just one catch: it needs to be executed as root. Since our services
 should run as the user they are for, things get tricky there. Even though its
 main use case is authentication, PAM can also help here:
@@ -172,14 +172,14 @@ library. Since this is all happening locally, it shouldn't behave differently
 than a direct connection. This setup also enables us to move some of those
 services off the uberspace hosts onto dedicated machines in the future.
 
-Uberspace IP adresses
+Uberspace IP addresses
 =====================
 
 As you can see in the graphic all the way up this article, each user gets their
 own, private IP address, like ``100.64.9.2``. They are the only way to contact
-services running within a uberspace. While these IP adresses are stable, we
+services running within a uberspace. While these IP addresses are stable, we
 don't think that they're particularly pretty or easy to remember. Most of the
-internet uses hostnames to remember IP adresses, so do we: each uberspace also
+internet uses hostnames to remember IP addresses, so do we: each uberspace also
 comes with a (locally reachable only) hostname: ``$USER.local.uberspace.de``.
 This hostname isn't used by us in any way, but can be utilized to write
 ``.htaccess`` proxies, in case web backends do not suffice.
@@ -188,7 +188,7 @@ Impact on users
 ===============
 
 While this architecture shouldn't restrict you in any way (ping us at hallo@uberspace.de,
-if it does!), there a few things to watch out for:
+if it does!), there are a few things to watch out for:
 
 * You have your own separate ``127.0.0.1``. If your service listens on that, it
   is only reachable within your uberspace. If you want to make use of our

@@ -129,7 +129,7 @@ There are two configuration directories for ``php.ini`` files in your uberspace 
 ~/etc/php.d
 ^^^^^^^^^^^^^^^
 
-This is the default directory for ``php.ini`` files. Any files inside this directory will be loaded *additonally* to the existing, global configuration and will overwrite the default values.
+This is the default directory for ``php.ini`` files. Any files inside this directory will be loaded *additionally* to the existing, global configuration and will overwrite the default values.
 
 ~/etc/php.early.d
 ^^^^^^^^^^^^^^^^^^^^^
@@ -191,7 +191,7 @@ Every host comes with a preinstalled version of `Composer <https://getcomposer.o
 Composer may use several sources to look for packages. These sources are called repositories. The default repository is `Packagist <https://packagist.org/>`_.
 
 .. tip::
-  Refer to the `Composer Basic Usage guide <https://getcomposer.org/doc/01-basic-usage.md>`_ for further information. Almost all common PHP projects support Composer nowdays and provide an example installation command.
+  Refer to the `Composer Basic Usage guide <https://getcomposer.org/doc/01-basic-usage.md>`_ for further information. Almost all common PHP projects support Composer nowadays and provide an example installation command.
 
 Update policy
 -------------

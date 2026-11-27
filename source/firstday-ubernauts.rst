@@ -26,11 +26,11 @@ Mailing
 
 - According to your new default domain, you also have an adequate default email address: **isabell@uber.space** (where ``isabell`` is your username).
 
-- You will have to change the mailserver address to your new U7 host when you are using mail clients like Thunderbird. Your DNS MX must be adjusted to the new host before beeing able to login to your postbox.
+- You will have to change the mailserver address to your new U7 host when you are using mail clients like Thunderbird. Your DNS MX must be adjusted to the new host before being able to login to your postbox.
 
 - Webmail for U7 is available at the central web address `https://webmail.uberspace.de <https://webmail.uberspace.de>`_. It is no longer possible to use an addressbook at this webmailer, therefore please install your own client from the `Uberspace Lab <https://lab.uberspace.de/tags/webmail>`_.
 
-- Regarding spam management, DSPAM und SpamAssassin is currently not available on U7, training the spam filter with `ham` and `spam` is not possible for users yet. Check the manual page for current :doc:`spam management <mail-filters>`.
+- Regarding spam management, DSPAM and SpamAssassin are currently not available on U7, training the spam filter with `ham` and `spam` is not possible for users yet. Check the manual page for current :doc:`spam management <mail-filters>`.
 
 - There is no longer native support for domain namespaces, each mail user will work with every connected mail domain, to avoid this you have to create separate uberspace accounts for each domain. We documented how you can resolve namespaces migrated from U6 to U7 :ref:`here <u6-namespaces>`.
 
@@ -40,7 +40,7 @@ Logging and Debugging
 
 - Logging is disabled by default and you have to :doc:`enable <web-logs>` different types of logs.
 
-- We show a generic :doc:`Error 500 errorpage <web-errorpage>` with some informations how to debug, you can disable this page if you like.
+- We show a generic :doc:`Error 500 errorpage <web-errorpage>` with some information how to debug, you can disable this page if you like.
 
 
 Databases
@@ -48,7 +48,7 @@ Databases
 
 - There is now a central instance for Adminer at `https://mysql.uberspace.de/adminer <https://mysql.uberspace.de/adminer>`_
 
-- MariaDB is now our default MySQL databaes, if you have used MariaDB on U6 with an external server you will probably need to update the port in your app configs.
+- MariaDB is now our default MySQL database, if you have used MariaDB on U6 with an external server you will probably need to update the port in your app configs.
 
 - If you want to use a PostgreSQL database, you have to install it yourself following the `guide <https://lab.uberspace.de/guide_postgresql.html>`_ in our lab.
 
@@ -82,7 +82,7 @@ New features
 Specific changes for automatically migrated hosts
 -------------------------------------------------
 
-In February 2021 we started to migrate all hosts automatically to U7. This process is still ongoing, you will be informed by mail before your host is migrated. Some changes apply only for accounts on theses hosts:
+In February 2021 we started to migrate all hosts automatically to U7. This process is still ongoing, you will be informed by mail before your host is migrated. Some changes apply only for accounts on these hosts:
 
 - Your hostname and the IPv4 address will stay the same, but the IPv6 address will change, you can find the new address in the `Dashboard <https://dashboard.uberspace.de/dashboard/datasheet>`_.
 

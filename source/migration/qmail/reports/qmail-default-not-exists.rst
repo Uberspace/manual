@@ -5,7 +5,7 @@ The main qmail file ~/.qmail-default does not exist
 
 ``id:qmail-default-not-exists``
 
-The file ``~/.qmail-default`` is the only qmail file neccessary for the standard mail setup on U7.
+The file ``~/.qmail-default`` is the only qmail file necessary for the standard mail setup on U7.
 
 To be able to use the standard mail setup you need to recreate the file with the command:
 

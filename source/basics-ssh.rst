@@ -75,7 +75,7 @@ From then on you will be able to login by simply using:
 
   localuser@localhost ~ $ ssh uberspace.isabell
 
-You are totally free in chosing a name (-schema) for ``Host``, you may also use the asterisk ``*`` for multiple connection types and there are a lot more of
+You are totally free in choosing a name (-schema) for ``Host``, you may also use the asterisk ``*`` for multiple connection types and there are a lot more of
 configuration possibilities. The `internet <https://www.ssh.com/academy/ssh/config#format-of-ssh-client-config-file-ssh_config>`_ will serve you with more information about it.
 
 

@@ -59,7 +59,7 @@ If you don't see any output, it's a good thing; MariaDB only complains if someth
 Password Requirements
 ~~~~~~~~~~~~~~~~~~~~~
 
-We generate a passwords for you on user creation. It consists of 20 random characters, containing a mix of upper and lowercase ASCII letters, the numbers 0-9 and punctuation (``.,:-_``).
+We generate a password for you on user creation. It consists of 20 random characters, containing a mix of upper and lowercase ASCII letters, the numbers 0-9 and punctuation (``.,:-_``).
 
 But we only *enforce the following rules*, if you want to set your own:
 
@@ -92,7 +92,7 @@ In addition to the default database named like your Uberspace you can also creat
 prefixed with your username and ``_`` - if your username is ``isabell`` you can create databases named like ``isabell_blog``, ``isabell_shop``.
 
 New databases can be created with the `CREATE DATABASE <https://mariadb.com/kb/en/mariadb/create-database/>`_ SQL statement.
-Tools like Adminer or phpMyAdmin provide you with a web-based way of doing that (if you installed them), but it can easily done on the shell as well:
+Tools like Adminer or phpMyAdmin provide you with a web-based way of doing that (if you installed them), but it can easily be done on the shell as well:
 
 .. code-block:: console
 
